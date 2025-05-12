@@ -28,7 +28,7 @@ const tankwelten = [
     id: 4,
     title: "Schatz(t)ruhe",
     description: "Für Eltern, Kinder und Einrichtungen, die Beziehung spürbar machen wollen.",
-    image: "/lovable-uploads/1af1ee6a-9bf1-4be3-8fdc-9f2186c26743.png", // New treasure chest image
+    image: "/lovable-uploads/4b878cec-1fcb-4ff6-a1c2-ddce369393a7.png", // New image for Schatz(t)ruhe
     link: "/tankwelten/erleben-verbinden",
   },
 ];

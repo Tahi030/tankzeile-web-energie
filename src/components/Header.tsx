@@ -13,7 +13,7 @@ const NavItem = ({ to, label, dropdown = false, children }: { to: string, label:
       <div className="relative group">
         <button 
           onClick={() => setIsOpen(!isOpen)}
-          className={`px-3 py-2 rounded-md text-lg font-medium hover:bg-primary/10 transition-colors ${isActive ? 'text-primary-dark font-semibold' : ''}`}
+          className={`px-3 py-2 rounded-md text-lg font-medium hover:bg-primary/10 transition-colors ${isActive ? 'text-white font-semibold' : ''}`}
         >
           {label}
           <span className="ml-1">▼</span>
@@ -32,7 +32,7 @@ const NavItem = ({ to, label, dropdown = false, children }: { to: string, label:
   return (
     <Link 
       to={to} 
-      className={`px-3 py-2 rounded-md text-lg font-medium hover:bg-primary/10 transition-colors ${isActive ? 'text-primary-dark font-semibold' : ''}`}
+      className={`px-3 py-2 rounded-md text-lg font-medium hover:bg-primary/10 transition-colors ${isActive ? 'text-white font-semibold' : ''}`}
       onClick={() => window.scrollTo(0, 0)}
     >
       {label}
@@ -54,6 +54,7 @@ const DropdownItem = ({ to, label }: { to: string, label: string }) => {
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const location = useLocation();
 
   return (
     <header className="bg-primary sticky top-0 z-50 shadow-md">
@@ -74,11 +75,12 @@ const Header = () => {
             <NavItem to="/" label="Home" />
             
             <div className="relative group">
-              <div className="px-3 py-2 rounded-md text-lg font-medium hover:bg-primary/20 transition-colors cursor-pointer group-hover:bg-primary/20">
+              <div className={`px-3 py-2 rounded-md text-lg font-medium hover:bg-primary/20 transition-colors cursor-pointer group-hover:bg-primary/20 ${location.pathname.includes('/tankwelten/') ? 'text-white font-semibold' : ''}`}>
                 Tankwelten <span className="ml-1 text-xs">▼</span>
               </div>
               <div className="absolute left-0 invisible group-hover:visible opacity-0 group-hover:opacity-100 mt-2 w-60 rounded-md shadow-lg bg-white ring-1 ring-primary/20 z-50 transition-all duration-150">
                 <div className="py-1" role="menu" aria-orientation="vertical">
+                  <DropdownItem to="/tankwelten/erleben-verbinden" label="Captain Apfel Workshop" />
                   <DropdownItem to="/tankwelten/alltag-leichter-leben" label="Alltag leichter leben" />
                   <DropdownItem to="/tankwelten/verstehen-veraendern" label="Verstehen & Verändern" />
                   <DropdownItem to="/tankwelten/erleben-verbinden" label="Schatz(t)ruhe" />
@@ -90,7 +92,7 @@ const Header = () => {
             <NavItem to="/kontakt" label="Kontakt" />
             <Link 
               to="/kontakt"
-              className="bg-secondary hover:bg-secondary-dark text-white px-5 py-2 rounded-md transition-colors ml-4 text-lg font-medium"
+              className={`bg-secondary hover:bg-secondary-dark ${location.pathname === '/kontakt' ? 'text-white' : 'text-white'} px-5 py-2 rounded-md transition-colors ml-4 text-lg font-medium`}
               onClick={() => window.scrollTo(0, 0)}
             >
               Jetzt anfragen
@@ -115,12 +117,15 @@ const Header = () => {
       {mobileMenuOpen && (
         <div className="md:hidden bg-white shadow-lg">
           <div className="px-2 pt-2 pb-3 space-y-1">
-            <Link to="/" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-primary-light" onClick={() => {setMobileMenuOpen(false); window.scrollTo(0, 0);}}>
+            <Link to="/" className={`block px-3 py-2 rounded-md text-base font-medium hover:bg-primary-light ${location.pathname === '/' ? 'text-primary-dark font-bold' : ''}`} onClick={() => {setMobileMenuOpen(false); window.scrollTo(0, 0);}}>
               Home
             </Link>
             
             <div className="border-t border-gray-200 pt-2">
-              <div className="px-3 py-2 font-medium">Tankwelten</div>
+              <div className={`px-3 py-2 font-medium ${location.pathname.includes('/tankwelten/') ? 'text-primary-dark font-bold' : ''}`}>Tankwelten</div>
+              <Link to="/tankwelten/erleben-verbinden" className="block pl-6 py-2 text-sm" onClick={() => {setMobileMenuOpen(false); window.scrollTo(0, 0);}}>
+                Captain Apfel Workshop
+              </Link>
               <Link to="/tankwelten/alltag-leichter-leben" className="block pl-6 py-2 text-sm" onClick={() => {setMobileMenuOpen(false); window.scrollTo(0, 0);}}>
                 Alltag leichter leben
               </Link>
@@ -132,10 +137,10 @@ const Header = () => {
               </Link>
             </div>
             
-            <Link to="/fuer-einrichtungen" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-primary-light" onClick={() => {setMobileMenuOpen(false); window.scrollTo(0, 0);}}>
+            <Link to="/fuer-einrichtungen" className={`block px-3 py-2 rounded-md text-base font-medium hover:bg-primary-light ${location.pathname === '/fuer-einrichtungen' ? 'text-primary-dark font-bold' : ''}`} onClick={() => {setMobileMenuOpen(false); window.scrollTo(0, 0);}}>
               Für Einrichtungen/Unternehmen
             </Link>
-            <Link to="/kontakt" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-primary-light" onClick={() => {setMobileMenuOpen(false); window.scrollTo(0, 0);}}>
+            <Link to="/kontakt" className={`block px-3 py-2 rounded-md text-base font-medium hover:bg-primary-light ${location.pathname === '/kontakt' ? 'text-primary-dark font-bold' : ''}`} onClick={() => {setMobileMenuOpen(false); window.scrollTo(0, 0);}}>
               Kontakt
             </Link>
             <Link to="/kontakt" className="block mx-3 mt-3 px-3 py-3 bg-secondary text-white rounded-md text-base font-medium" onClick={() => {setMobileMenuOpen(false); window.scrollTo(0, 0);}}>

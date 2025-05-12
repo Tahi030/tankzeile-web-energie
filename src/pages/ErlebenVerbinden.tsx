@@ -45,14 +45,25 @@ const ErlebenVerbinden = () => {
                 </li>
               </ul>
               
-              <div className="my-8">
-                <AspectRatio ratio={16/9} className="bg-muted">
-                  <img 
-                    src="/lovable-uploads/8138e97e-63f6-4434-a88a-13d9b92ff7cb.png" 
-                    alt="Captain Apfel und seine Gemüse-Crew" 
-                    className="rounded-lg shadow-md w-full h-full object-cover"
-                  />
-                </AspectRatio>
+              <div className="my-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                  <AspectRatio ratio={16/9} className="bg-muted">
+                    <img 
+                      src="/lovable-uploads/8138e97e-63f6-4434-a88a-13d9b92ff7cb.png" 
+                      alt="Captain Apfel und seine Gemüse-Crew" 
+                      className="rounded-lg shadow-md w-full h-full object-cover"
+                    />
+                  </AspectRatio>
+                </div>
+                <div>
+                  <AspectRatio ratio={16/9} className="bg-muted">
+                    <img 
+                      src="/lovable-uploads/4b878cec-1fcb-4ff6-a1c2-ddce369393a7.png" 
+                      alt="Mutter und Kind beim Schatz(t)ruhe Ritual" 
+                      className="rounded-lg shadow-md w-full h-full object-cover"
+                    />
+                  </AspectRatio>
+                </div>
               </div>
 
               <div className="my-8 grid gap-8">
