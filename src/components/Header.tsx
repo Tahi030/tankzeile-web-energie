@@ -67,7 +67,6 @@ const Header = () => {
               alt="Tankzeile Logo"
               className="h-12 md:h-14 mr-2"
             />
-            <span className="font-sisterhood text-3xl text-foreground">Tankzeile</span>
           </Link>
 
           {/* Desktop Navigation */}
