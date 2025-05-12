@@ -32,10 +32,10 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <span className="bg-gradient-to-b from-white to-gray-200 bg-clip-text text-transparent md:inline block">
+            <span className="text-white md:inline block">
               Gesundheit, die schmeckt
             </span>{" "}
-            <span className="bg-gradient-to-b from-white to-gray-300 bg-clip-text text-transparent md:inline block">
+            <span className="text-white md:inline block">
               – für Groß und Klein
             </span>
           </motion.h1>
@@ -94,7 +94,7 @@ const HeroSection = () => {
           </Link>
         </div>
       </div>
-      <div className="absolute bottom-0 left-0 w-full h-20 bg-white" />
+      <div className="absolute bottom-0 left-0 w-full h-20 bg-muted" />
     </section>
   );
 };

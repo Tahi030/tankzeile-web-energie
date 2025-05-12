@@ -13,7 +13,7 @@ const NavItem = ({ to, label, dropdown = false, children }: { to: string, label:
       <div className="relative group">
         <button 
           onClick={() => setIsOpen(!isOpen)}
-          className={`px-4 py-2 rounded-md text-lg font-medium hover:bg-primary/10 transition-colors ${isActive ? 'text-primary-dark font-semibold' : ''}`}
+          className={`px-3 py-2 rounded-md text-lg font-medium hover:bg-primary/10 transition-colors ${isActive ? 'text-primary-dark font-semibold' : ''}`}
         >
           {label}
           <span className="ml-1">▼</span>
@@ -32,7 +32,7 @@ const NavItem = ({ to, label, dropdown = false, children }: { to: string, label:
   return (
     <Link 
       to={to} 
-      className={`px-4 py-2 rounded-md text-lg font-medium hover:bg-primary/10 transition-colors ${isActive ? 'text-primary-dark font-semibold' : ''}`}
+      className={`px-3 py-2 rounded-md text-lg font-medium hover:bg-primary/10 transition-colors ${isActive ? 'text-primary-dark font-semibold' : ''}`}
     >
       {label}
     </Link>
@@ -56,7 +56,7 @@ const Header = () => {
   return (
     <header className="bg-primary sticky top-0 z-50 shadow-md">
       <div className="container-custom">
-        <div className="flex justify-between items-center py-3">
+        <div className="flex justify-between items-center py-2">
           {/* Logo */}
           <Link to="/" className="flex items-center">
             <img 
@@ -68,11 +68,11 @@ const Header = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-4">
+          <nav className="hidden md:flex items-center space-x-2">
             <NavItem to="/" label="Home" />
             
             <div className="relative group">
-              <div className="px-4 py-2 rounded-md text-lg font-medium hover:bg-primary/10 transition-colors cursor-pointer">
+              <div className="px-3 py-2 rounded-md text-lg font-medium hover:bg-primary/10 transition-colors cursor-pointer">
                 Tankwelten <span className="ml-1 text-xs">▼</span>
               </div>
               <div className="absolute left-0 hidden group-hover:block mt-2 w-60 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-50">

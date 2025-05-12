@@ -1,26 +1,27 @@
 
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const tankwelten = [
   {
     id: 1,
     title: "Alltag leichter leben",
     description: "Für Familien, die Struktur, Entlastung und neue Energie suchen.",
-    image: "photo-1721322800607-8c38375eef04",
+    image: "https://source.unsplash.com/wJ7yGwz2-00/600x400", // Family cooking together
     link: "/tankwelten/alltag-leichter-leben",
   },
   {
     id: 2,
     title: "Verstehen & Verändern",
     description: "Für alle, die sich ausgelaugt fühlen und eine Balance zwischen Wissenschaft und Intuition suchen.",
-    image: "photo-1506744038136-46273834b3fb",
+    image: "https://source.unsplash.com/9aOswReDKPo/600x400", // Healthy food arrangement
     link: "/tankwelten/verstehen-veraendern",
   },
   {
     id: 3,
     title: "Erleben & Verbinden",
     description: "Für Eltern, Kinder und Einrichtungen, die Beziehung spürbar machen wollen.",
-    image: "photo-1618160702438-9b02ab6515c9",
+    image: "https://source.unsplash.com/6VArIUiY1del/600x400", // Family or group connecting outdoors
     link: "/tankwelten/erleben-verbinden",
   },
 ];
@@ -35,11 +36,19 @@ const TankweltenSection = () => {
         </p>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
-          {tankwelten.map((welt) => (
-            <div key={welt.id} className="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow bg-white">
+          {tankwelten.map((welt, index) => (
+            <motion.div
+              key={welt.id}
+              className="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow bg-white"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.2 }}
+              viewport={{ once: true, margin: "-50px" }}
+              whileHover={{ y: -5 }}
+            >
               <div className="h-48 overflow-hidden">
                 <img 
-                  src={`https://source.unsplash.com/${welt.image}`} 
+                  src={welt.image} 
                   alt={welt.title} 
                   className="w-full h-full object-cover transition-transform hover:scale-105 duration-300"
                 />
@@ -57,7 +66,7 @@ const TankweltenSection = () => {
                   </svg>
                 </Link>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
