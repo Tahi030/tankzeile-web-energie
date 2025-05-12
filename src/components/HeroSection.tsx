@@ -23,8 +23,13 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="relative bg-gradient-to-b from-primary to-primary-light py-16 md:py-24 overflow-hidden">
-      <div className="container-custom">
+    <section className="relative py-16 md:py-24 overflow-hidden bg-cover bg-center bg-no-repeat" 
+      style={{ backgroundImage: "url('/lovable-uploads/80ad77c9-fee0-4350-9613-3311cee384cf.png')" }}>
+      
+      {/* Overlay for better text contrast */}
+      <div className="absolute inset-0 bg-black/30"></div>
+      
+      <div className="container-custom relative z-10">
         <div className="max-w-3xl mx-auto text-center">
           <motion.h1 
             className="text-4xl md:text-6xl font-bold mb-8 text-white"
@@ -46,14 +51,14 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <p className="text-2xl md:text-3xl font-medium mb-4 text-secondary">
+            <p className="text-2xl md:text-3xl font-medium mb-4 text-white">
               Die Tankzeile verbindet.
             </p>
             <div className="h-16 md:h-20 relative overflow-hidden mb-8">
               {connectionSentences.map((sentence, index) => (
                 <motion.p
                   key={index}
-                  className="text-3xl md:text-4xl font-semibold absolute w-full text-secondary"
+                  className="text-3xl md:text-4xl font-semibold absolute w-full text-white"
                   initial={{ opacity: 0, y: 50 }}
                   animate={{
                     opacity: sentenceIndex === index ? 1 : 0,
@@ -68,7 +73,7 @@ const HeroSection = () => {
           </motion.div>
 
           <motion.div 
-            className="modern-box mb-10 mt-32 md:mt-10" // Increased the top margin for mobile
+            className="bg-white/70 backdrop-blur-sm rounded-xl p-8 shadow-md border border-primary/10 relative overflow-hidden mb-10 mt-32 md:mt-10" // Semi-transparent background
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
