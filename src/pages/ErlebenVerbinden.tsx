@@ -43,8 +43,8 @@ const ErlebenVerbinden = () => {
               
               <div className="my-8">
                 <img 
-                  src="https://images.unsplash.com/photo-1542810634-71277d95dcbb?q=80&w=900&auto=format&fit=crop" 
-                  alt="Workshop mit Kindern und Erwachsenen" 
+                  src="https://images.unsplash.com/photo-1576404425423-04394bffd535?q=80&w=900&auto=format&fit=crop" 
+                  alt="Workshop mit europäischen deutschen Vorschulkindern" 
                   className="rounded-lg shadow-md w-full"
                 />
               </div>

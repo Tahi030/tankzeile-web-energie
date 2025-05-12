@@ -21,7 +21,7 @@ const tankwelten = [
     id: 3,
     title: "Erleben & Verbinden",
     description: "Für Eltern, Kinder und Einrichtungen, die Beziehung spürbar machen wollen.",
-    image: "https://images.unsplash.com/photo-1542810634-71277d95dcbb?q=80&w=600&auto=format&fit=crop", // Workshop with children and adults
+    image: "https://images.unsplash.com/photo-1576404425423-04394bffd535?q=80&w=600&auto=format&fit=crop", // Workshop with European German preschool children
     link: "/tankwelten/erleben-verbinden",
   },
 ];
