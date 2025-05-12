@@ -24,7 +24,7 @@ const testimonials = [
     },
   },
   {
-    text: "Ich fand es toll, wie natürlich und unaufgeregt alles war. Kein Druck, kein erhobener Finger – einfach ein Raum zum Auftanken. Auch für mich als Vater war das mal ein Zugang, bei dem ich mich wohlgefühlt habe. Man merkt, dass hier echte Verbindung zählt.",
+    text: "Ich fand es toll, wie natürlich und unaufgeregt alles war. Kein Druck, kein erhobener Finger – einfach ein Raum zum Auftanken. Auch für mich als Mutter war das mal ein Zugang, bei dem ich mich wohlgefühlt habe. Man merkt, dass hier echte Verbindung zählt.",
     author: {
       name: "Nicole Rose",
       avatar: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=150&h=150&fit=crop&crop=face"
