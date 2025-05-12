@@ -6,21 +6,21 @@ const tankwelten = [
   {
     id: 1,
     title: "Captain Apfel Workshop",
-    description: "Für Vorschulkinder, die spielerisch die Welt der gesunden Ernährung entdecken möchten.",
+    description: "Du findest hier:\nWorkshops mit Captain Apfel – Ernährung als Abenteuer für Vorschulkinder\n„Die Schatz(T)ruhe" – Eltern-Kind-Achtsamkeit durch kleine Rituale\nAngebote für Einrichtungen – praxisnah, kindgerecht, wirkungsvoll",
     image: "/lovable-uploads/8138e97e-63f6-4434-a88a-13d9b92ff7cb.png", // Captain Apfel image
-    link: "/tankwelten/erleben-verbinden",
+    link: "/tankwelten/captain-apfel-workshop",
   },
   {
     id: 2,
     title: "Alltag leichter leben",
-    description: "Für Familien, die Struktur, Entlastung und neue Energie suchen.",
+    description: "Du findest hier:\nDie Tankbox – Wochenstruktur mit vorbereiteten Komponenten & Achtsamkeit\nKostenlose PDFs – z. B. zuckerarme Snacks, Kita-Box-Ideen",
     image: "https://images.unsplash.com/photo-1493770348161-369560ae357d?q=80&w=600&auto=format&fit=crop", // Family cooking with colorful vegetables
     link: "/tankwelten/alltag-leichter-leben",
   },
   {
     id: 3,
     title: "Verstehen & Verändern",
-    description: "Für alle, die sich ausgelaugt fühlen und eine Balance zwischen Wissenschaft und Intuition suchen.",
+    description: "(D)ein Wegweiser hinter den Masken des Alltags\nFür Körper, Geist und Seele",
     image: "https://images.unsplash.com/photo-1545205597-3d9d02c29597?q=80&w=600&auto=format&fit=crop", // Person doing meditation/relaxation exercise
     link: "/tankwelten/verstehen-veraendern",
   },
@@ -28,8 +28,8 @@ const tankwelten = [
     id: 4,
     title: "Schatz(t)ruhe",
     description: "Für Eltern, Kinder und Einrichtungen, die Beziehung spürbar machen wollen.",
-    image: "/lovable-uploads/4b878cec-1fcb-4ff6-a1c2-ddce369393a7.png", // New image for Schatz(t)ruhe
-    link: "/tankwelten/erleben-verbinden",
+    image: "/lovable-uploads/4b878cec-1fcb-4ff6-a1c2-ddce369393a7.png", // Schatz(t)ruhe image
+    link: "/tankwelten/schatzruhe",
   },
 ];
 
@@ -62,10 +62,11 @@ const TankweltenSection = () => {
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2 font-sans">{welt.title}</h3>
-                <p className="text-gray-600 mb-4">{welt.description}</p>
+                <p className="text-gray-600 mb-4 whitespace-pre-line">{welt.description}</p>
                 <Link 
                   to={welt.link}
                   className="text-primary-dark hover:text-primary font-medium inline-flex items-center"
+                  onClick={() => window.scrollTo(0, 0)}
                 >
                   Mehr erfahren
                   <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

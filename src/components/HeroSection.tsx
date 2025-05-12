@@ -68,7 +68,7 @@ const HeroSection = () => {
           </motion.div>
 
           <motion.div 
-            className="modern-box mb-10 mt-28 md:mt-10"
+            className="modern-box mb-10 mt-32 md:mt-10" // Increased the top margin for mobile
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}

@@ -12,6 +12,8 @@ import Index from "./pages/Index";
 import AlltagLeichterLeben from "./pages/AlltagLeichterLeben";
 import VerstehenVeraendern from "./pages/VerstehenVeraendern";
 import ErlebenVerbinden from "./pages/ErlebenVerbinden";
+import CaptainApfelWorkshop from "./pages/CaptainApfelWorkshop";
+import Schatzruhe from "./pages/Schatzruhe";
 import FuerEinrichtungen from "./pages/FuerEinrichtungen";
 import FuerUnternehmen from "./pages/FuerUnternehmen";
 import Kontakt from "./pages/Kontakt";
@@ -34,6 +36,8 @@ const App = () => (
             <Route path="/tankwelten/alltag-leichter-leben" element={<AlltagLeichterLeben />} />
             <Route path="/tankwelten/verstehen-veraendern" element={<VerstehenVeraendern />} />
             <Route path="/tankwelten/erleben-verbinden" element={<ErlebenVerbinden />} />
+            <Route path="/tankwelten/captain-apfel-workshop" element={<CaptainApfelWorkshop />} />
+            <Route path="/tankwelten/schatzruhe" element={<Schatzruhe />} />
             <Route path="/fuer-einrichtungen" element={<FuerEinrichtungen />} />
             <Route path="/fuer-unternehmen" element={<FuerUnternehmen />} />
             <Route path="/kontakt" element={<Kontakt />} />
