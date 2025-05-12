@@ -2,6 +2,7 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 const ErlebenVerbinden = () => {
   useEffect(() => {
@@ -42,11 +43,13 @@ const ErlebenVerbinden = () => {
               </ul>
               
               <div className="my-8">
-                <img 
-                  src="https://images.unsplash.com/photo-1602001313318-97a0f40a3759?q=80&w=900&auto=format&fit=crop" 
-                  alt="Lachende Kinder beim Workshop" 
-                  className="rounded-lg shadow-md w-full h-64 object-cover"
-                />
+                <AspectRatio ratio={16/9} className="bg-muted">
+                  <img 
+                    src="https://plus.unsplash.com/premium_photo-1685088113759-2650324df310?q=80&w=900&auto=format&fit=crop" 
+                    alt="Lachende Kinder beim Workshop" 
+                    className="rounded-lg shadow-md w-full h-full object-cover"
+                  />
+                </AspectRatio>
               </div>
 
               <div className="my-8 grid gap-8">
