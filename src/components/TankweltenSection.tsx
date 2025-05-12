@@ -6,7 +6,7 @@ const tankwelten = [
   {
     id: 1,
     title: "Captain Apfel Workshop",
-    description: "Du findest hier:\nWorkshops mit Captain Apfel - Ernährung als Abenteuer für Vorschulkinder\n\"Die Schatz(T)ruhe\" - Eltern-Kind-Achtsamkeit durch kleine Rituale\nAngebote für Einrichtungen - praxisnah, kindgerecht, wirkungsvoll",
+    description: "Du findest hier:\nWorkshop mit Captain Apfel - Ernährung als Abenteuer für Vorschulkinder",
     image: "/lovable-uploads/8138e97e-63f6-4434-a88a-13d9b92ff7cb.png", // Captain Apfel image
     link: "/tankwelten/captain-apfel-workshop",
   },
@@ -42,7 +42,7 @@ const TankweltenSection = () => {
           Entdecke, wie wir uns wieder verbinden können – mit uns selbst, mit unseren Kindern und mit echter Nahrung.
         </p>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
           {tankwelten.map((welt, index) => (
             <motion.div
               key={welt.id}
