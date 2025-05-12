@@ -1,5 +1,6 @@
 
 import { Link } from "react-router-dom";
+import { Instagram, Linkedin } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -18,6 +19,14 @@ const Footer = () => {
               <p>12555 Berlin</p>
               <p className="mt-2">Email: <a href="mailto:tankzeile@gmx.de" className="underline hover:text-gray-100">tankzeile@gmx.de</a></p>
               <p>Tel.: <a href="tel:+4915206339474" className="underline hover:text-gray-100">+49 152 06339474</a></p>
+              <div className="mt-4 flex space-x-4">
+                <a href="https://www.instagram.com/tankzeile?igsh=cjFxdDNrbXNvYnFk" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300 transition-colors">
+                  <Instagram size={24} />
+                </a>
+                <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300 transition-colors">
+                  <Linkedin size={24} />
+                </a>
+              </div>
             </address>
           </div>
 

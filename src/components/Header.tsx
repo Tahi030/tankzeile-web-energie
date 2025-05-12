@@ -68,7 +68,7 @@ const Header = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-6">
+          <nav className="hidden md:flex items-center space-x-4">
             <NavItem to="/" label="Home" />
             
             <div className="relative group">
@@ -85,7 +85,6 @@ const Header = () => {
             </div>
             
             <NavItem to="/fuer-einrichtungen" label="Für Einrichtungen" />
-            <NavItem to="/fuer-unternehmen" label="Für Unternehmen" />
             <NavItem to="/kontakt" label="Kontakt" />
             <Link 
               to="/kontakt"
@@ -133,13 +132,10 @@ const Header = () => {
             <Link to="/fuer-einrichtungen" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-primary-light" onClick={() => setMobileMenuOpen(false)}>
               Für Einrichtungen
             </Link>
-            <Link to="/fuer-unternehmen" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-primary-light" onClick={() => setMobileMenuOpen(false)}>
-              Für Unternehmen
-            </Link>
             <Link to="/kontakt" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-primary-light" onClick={() => setMobileMenuOpen(false)}>
               Kontakt
             </Link>
-            <Link to="/kontakt" className="block mx-3 mt-3 px-3 py-2 bg-secondary text-white rounded-md text-base font-medium" onClick={() => setMobileMenuOpen(false)}>
+            <Link to="/kontakt" className="block mx-3 mt-3 px-3 py-3 bg-secondary text-white rounded-md text-base font-medium" onClick={() => setMobileMenuOpen(false)}>
               Jetzt anfragen
             </Link>
           </div>

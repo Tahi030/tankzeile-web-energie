@@ -32,8 +32,12 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <span className="md:inline block">Gesundheit, die schmeckt</span>{" "}
-            <span className="md:inline block">– für Groß und Klein</span>
+            <span className="bg-gradient-to-b from-white to-gray-200 bg-clip-text text-transparent md:inline block">
+              Gesundheit, die schmeckt
+            </span>{" "}
+            <span className="bg-gradient-to-b from-white to-gray-300 bg-clip-text text-transparent md:inline block">
+              – für Groß und Klein
+            </span>
           </motion.h1>
 
           <motion.div 
@@ -64,7 +68,7 @@ const HeroSection = () => {
           </motion.div>
 
           <motion.div 
-            className="modern-box mb-10"
+            className="modern-box mb-10 mt-24 md:mt-10"
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
@@ -85,7 +89,7 @@ const HeroSection = () => {
             </div>
           </motion.div>
           
-          <Link to="/tankwelten/alltag-leichter-leben" className="btn-secondary inline-flex items-center gap-2 text-lg px-6 py-3">
+          <Link to="/tankwelten/alltag-leichter-leben" className="btn-secondary inline-flex items-center gap-2 text-lg px-6 py-3 mb-10">
             Jetzt eintauchen <ArrowRight size={20} />
           </Link>
         </div>

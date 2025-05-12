@@ -91,7 +91,7 @@
   }
 
   body {
-    @apply bg-background text-foreground font-sans;
+    @apply bg-muted text-foreground font-sans;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -121,7 +121,7 @@
   }
   
   .stylish-box {
-    @apply bg-white rounded-xl p-8 shadow-lg border border-primary/10 relative overflow-hidden;
+    @apply bg-white/90 rounded-xl p-8 shadow-md border border-primary/10 relative overflow-hidden transform transition-all duration-300 hover:shadow-lg hover:scale-[1.01] backdrop-blur-sm;
   }
   
   .stylish-box-effect {
@@ -133,7 +133,7 @@
   }
   
   .modern-box {
-    @apply bg-white/70 backdrop-blur-sm rounded-xl p-8 shadow-md border border-primary/10 relative overflow-hidden transition-all duration-300;
+    @apply bg-white/70 backdrop-blur-sm rounded-xl p-8 shadow-md border border-primary/10 relative overflow-hidden transition-all duration-300 hover:shadow-lg hover:scale-[1.01];
   }
   
   .modern-box::before {
@@ -148,4 +148,3 @@
     font-family: 'Sisterhood', cursive;
   }
 }
-

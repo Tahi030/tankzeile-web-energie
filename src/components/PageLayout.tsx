@@ -8,9 +8,14 @@ type PageLayoutProps = {
 };
 
 const PageLayout = ({ children }: PageLayoutProps) => {
-  // Scroll to top on page change
+  // Scroll to top on page change and apply background color
   useEffect(() => {
     window.scrollTo(0, 0);
+    document.body.classList.add('bg-muted');
+    
+    return () => {
+      document.body.classList.remove('bg-muted');
+    };
   }, []);
 
   return (

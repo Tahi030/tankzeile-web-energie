@@ -12,6 +12,14 @@ const Index = () => {
   useEffect(() => {
     // Set page metadata for SEO
     document.title = "Tankzeile – Ernährung & Lebensenergie";
+    
+    // Apply background color to the body
+    document.body.classList.add('bg-muted');
+    
+    return () => {
+      // Remove background color when component unmounts
+      document.body.classList.remove('bg-muted');
+    };
   }, []);
 
   return (
