@@ -60,43 +60,49 @@ const Header = () => {
     <header className="bg-primary sticky top-0 z-50 shadow-md">
       <div className="container-custom">
         <div className="flex justify-between items-center py-2">
-          {/* Logo */}
+          {/* Logo - adjusted margin */}
           <Link to="/" className="flex items-center" onClick={() => window.scrollTo(0, 0)}>
             <img 
               src="/lovable-uploads/a6f824db-303d-44a3-a67c-b385a9113a8d.png"
               alt="Tankzeile Logo"
-              className="h-12 md:h-14 mr-2"
+              className="h-10 md:h-12 ml-0 md:ml-2" 
             />
           </Link>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-2">
-            <NavItem to="/" label="Home" />
-            
-            <div className="relative group">
-              <div className={`px-3 py-2 rounded-md text-lg font-medium hover:bg-primary/20 transition-colors cursor-pointer group-hover:bg-primary/20 ${location.pathname.includes('/tankwelten/') ? 'text-white font-semibold' : ''}`}>
-                Tankwelten <span className="ml-1 text-xs">▼</span>
-              </div>
-              <div className="absolute left-0 invisible group-hover:visible opacity-0 group-hover:opacity-100 mt-2 w-60 rounded-md shadow-lg bg-white ring-1 ring-primary/20 z-50 transition-all duration-150">
-                <div className="py-1" role="menu" aria-orientation="vertical">
-                  <DropdownItem to="/tankwelten/captain-apfel-workshop" label="Captain Apfel Workshop" />
-                  <DropdownItem to="/tankwelten/schatzruhe" label="Schatz(t)ruhe" />
-                  <DropdownItem to="/tankwelten/alltag-leichter-leben" label="Alltag leichter leben" />
-                  <DropdownItem to="/tankwelten/verstehen-veraendern" label="Verstehen & Verändern" />
+          {/* Desktop Navigation - added more even distribution */}
+          <nav className="hidden md:flex items-center justify-center flex-1 mx-4">
+            <div className="flex items-center justify-center space-x-1 md:space-x-2 lg:space-x-4">
+              <NavItem to="/" label="Home" />
+              
+              <div className="relative group">
+                <div className={`px-3 py-2 rounded-md text-lg font-medium hover:bg-primary/20 transition-colors cursor-pointer group-hover:bg-primary/20 ${location.pathname.includes('/tankwelten/') ? 'text-white font-semibold' : ''}`}>
+                  Tankwelten <span className="ml-1 text-xs">▼</span>
+                </div>
+                <div className="absolute left-0 invisible group-hover:visible opacity-0 group-hover:opacity-100 mt-2 w-60 rounded-md shadow-lg bg-white ring-1 ring-primary/20 z-50 transition-all duration-150">
+                  <div className="py-1" role="menu" aria-orientation="vertical">
+                    <DropdownItem to="/tankwelten/captain-apfel-workshop" label="Captain Apfel Workshop" />
+                    <DropdownItem to="/tankwelten/schatzruhe" label="Schatz(t)ruhe" />
+                    <DropdownItem to="/tankwelten/alltag-leichter-leben" label="Alltag leichter leben" />
+                    <DropdownItem to="/tankwelten/verstehen-veraendern" label="Verstehen & Verändern" />
+                  </div>
                 </div>
               </div>
+              
+              <NavItem to="/fuer-einrichtungen" label="Für Einrichtungen/Unternehmen" />
+              <NavItem to="/kontakt" label="Kontakt" />
             </div>
-            
-            <NavItem to="/fuer-einrichtungen" label="Für Einrichtungen/Unternehmen" />
-            <NavItem to="/kontakt" label="Kontakt" />
+          </nav>
+          
+          {/* CTA Button - moved outside of regular navigation for better spacing */}
+          <div className="hidden md:block">
             <Link 
               to="/kontakt"
-              className={`bg-secondary hover:bg-secondary-dark ${location.pathname === '/kontakt' ? 'text-white' : 'text-white'} px-5 py-2 rounded-md transition-colors ml-4 text-lg font-medium`}
+              className={`bg-secondary hover:bg-secondary-dark text-white px-5 py-2 rounded-md transition-colors text-lg font-medium`}
               onClick={() => window.scrollTo(0, 0)}
             >
               Jetzt anfragen
             </Link>
-          </nav>
+          </div>
 
           {/* Mobile Menu Button */}
           <div className="md:hidden">
