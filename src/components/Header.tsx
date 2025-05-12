@@ -13,7 +13,7 @@ const NavItem = ({ to, label, dropdown = false, children }: { to: string, label:
       <div className="relative group">
         <button 
           onClick={() => setIsOpen(!isOpen)}
-          className={`px-4 py-3 rounded-md text-lg font-medium hover:bg-primary/10 transition-colors ${isActive ? 'text-primary-dark font-semibold' : ''}`}
+          className={`px-4 py-2 rounded-md text-lg font-medium hover:bg-primary/10 transition-colors ${isActive ? 'text-primary-dark font-semibold' : ''}`}
         >
           {label}
           <span className="ml-1">▼</span>
@@ -32,7 +32,7 @@ const NavItem = ({ to, label, dropdown = false, children }: { to: string, label:
   return (
     <Link 
       to={to} 
-      className={`px-4 py-3 rounded-md text-lg font-medium hover:bg-primary/10 transition-colors ${isActive ? 'text-primary-dark font-semibold' : ''}`}
+      className={`px-4 py-2 rounded-md text-lg font-medium hover:bg-primary/10 transition-colors ${isActive ? 'text-primary-dark font-semibold' : ''}`}
     >
       {label}
     </Link>
@@ -56,19 +56,15 @@ const Header = () => {
   return (
     <header className="bg-primary sticky top-0 z-50 shadow-md">
       <div className="container-custom">
-        <div className="flex justify-between items-center py-5">
+        <div className="flex justify-between items-center py-3">
           {/* Logo */}
           <Link to="/" className="flex items-center">
             <img 
               src="/lovable-uploads/b676a4c4-3880-4820-b675-e4a9643b9ab2.png"
               alt="Tankzeile Icon"
-              className="h-14 mr-2"
+              className="h-12 mr-3"
             />
-            <img 
-              src="/lovable-uploads/487c452c-3836-4742-9b3f-e4f747cc32e6.png"
-              alt="Tankzeile Logo"
-              className="h-14"
-            />
+            <span className="font-sisterhood text-3xl text-foreground">Tankzeile</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -76,7 +72,7 @@ const Header = () => {
             <NavItem to="/" label="Home" />
             
             <div className="relative group">
-              <div className="px-4 py-3 rounded-md text-lg font-medium hover:bg-primary/10 transition-colors cursor-pointer">
+              <div className="px-4 py-2 rounded-md text-lg font-medium hover:bg-primary/10 transition-colors cursor-pointer">
                 Tankwelten <span className="ml-1 text-xs">▼</span>
               </div>
               <div className="absolute left-0 hidden group-hover:block mt-2 w-60 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-50">
@@ -93,7 +89,7 @@ const Header = () => {
             <NavItem to="/kontakt" label="Kontakt" />
             <Link 
               to="/kontakt"
-              className="bg-secondary hover:bg-secondary-dark text-white px-5 py-3 rounded-md transition-colors ml-4 text-lg font-medium"
+              className="bg-secondary hover:bg-secondary-dark text-white px-5 py-2 rounded-md transition-colors ml-4 text-lg font-medium"
             >
               Jetzt anfragen
             </Link>

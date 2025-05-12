@@ -23,7 +23,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="relative bg-gradient-to-b from-primary-light to-white py-16 md:py-24">
+    <section className="relative bg-gradient-to-b from-primary to-white py-16 md:py-24">
       <div className="container-custom">
         <div className="max-w-3xl mx-auto text-center">
           <motion.h1 
@@ -32,11 +32,12 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            Gesundheit, die schmeckt – für Groß und Klein
+            <span className="md:inline block">Gesundheit, die schmeckt</span>{" "}
+            <span className="md:inline block">– für Groß und Klein</span>
           </motion.h1>
 
           <motion.div 
-            className="mb-10"
+            className="mb-16 md:mb-10"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
@@ -44,7 +45,7 @@ const HeroSection = () => {
             <p className="text-2xl md:text-3xl font-medium mb-4 text-secondary">
               Die Tankzeile verbindet.
             </p>
-            <div className="h-16 md:h-20 relative overflow-hidden">
+            <div className="h-16 md:h-20 relative overflow-hidden mb-8">
               {connectionSentences.map((sentence, index) => (
                 <motion.p
                   key={index}
