@@ -23,9 +23,9 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="relative py-24 md:py-32 overflow-hidden bg-cover bg-center" style={{ backgroundImage: 'linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url("https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&auto=format&fit=crop")', minHeight: '80vh' }}>
+    <section className="relative bg-gradient-to-b from-primary to-primary-light py-16 md:py-24 overflow-hidden">
       <div className="container-custom">
-        <div className="max-w-3xl text-left ml-0 md:ml-8">
+        <div className="max-w-3xl mx-auto text-center">
           <motion.h1 
             className="text-4xl md:text-6xl font-bold mb-8 text-white"
             initial={{ opacity: 0, y: 30 }}
@@ -46,14 +46,14 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <p className="text-2xl md:text-3xl font-medium mb-4 text-secondary bg-black/40 inline-block px-4 py-2 rounded">
+            <p className="text-2xl md:text-3xl font-medium mb-4 text-secondary">
               Die Tankzeile verbindet.
             </p>
             <div className="h-16 md:h-20 relative overflow-hidden mb-8">
               {connectionSentences.map((sentence, index) => (
                 <motion.p
                   key={index}
-                  className="text-3xl md:text-4xl font-semibold absolute w-full text-secondary bg-black/40 inline-block px-4 py-2 rounded"
+                  className="text-3xl md:text-4xl font-semibold absolute w-full text-secondary"
                   initial={{ opacity: 0, y: 50 }}
                   animate={{
                     opacity: sentenceIndex === index ? 1 : 0,
@@ -68,7 +68,7 @@ const HeroSection = () => {
           </motion.div>
 
           <motion.div 
-            className="modern-box mb-10 mt-32 md:mt-10 bg-white/80" // Added more opacity to the background
+            className="modern-box mb-10 mt-32 md:mt-10" // Increased the top margin for mobile
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
@@ -90,7 +90,7 @@ const HeroSection = () => {
             </div>
           </motion.div>
           
-          <Link to="/tankwelten/alltag-leichter-leben" className="btn-secondary inline-flex items-center gap-2 text-lg px-6 py-3 mb-10 bg-secondary hover:bg-secondary-dark text-white rounded">
+          <Link to="/tankwelten/alltag-leichter-leben" className="btn-secondary inline-flex items-center gap-2 text-lg px-6 py-3 mb-10">
             Jetzt eintauchen <ArrowRight size={20} />
           </Link>
         </div>
