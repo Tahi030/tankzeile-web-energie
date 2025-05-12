@@ -45,9 +45,9 @@ const ErlebenVerbinden = () => {
               <div className="my-8">
                 <AspectRatio ratio={16/9} className="bg-muted">
                   <img 
-                    src="https://plus.unsplash.com/premium_photo-1685088113759-2650324df310?q=80&w=900&auto=format&fit=crop" 
-                    alt="Lachende Kinder beim Workshop" 
-                    className="rounded-lg shadow-md w-full h-full object-cover"
+                    src="/lovable-uploads/1af1ee6a-9bf1-4be3-8fdc-9f2186c26743.png" 
+                    alt="Captain Apfel und seine Crew" 
+                    className="rounded-lg shadow-md w-full h-full object-contain"
                   />
                 </AspectRatio>
               </div>

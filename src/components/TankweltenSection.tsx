@@ -21,7 +21,7 @@ const tankwelten = [
     id: 3,
     title: "Erleben & Verbinden",
     description: "Für Eltern, Kinder und Einrichtungen, die Beziehung spürbar machen wollen.",
-    image: "https://images.unsplash.com/photo-1489710020360-66e504159b43?q=80&w=600&auto=format&fit=crop", // Laughing children
+    image: "/lovable-uploads/1af1ee6a-9bf1-4be3-8fdc-9f2186c26743.png", // Captain Apfel image
     link: "/tankwelten/erleben-verbinden",
   },
 ];
@@ -50,7 +50,7 @@ const TankweltenSection = () => {
                 <img 
                   src={welt.image} 
                   alt={welt.title} 
-                  className="w-full h-full object-cover transition-transform hover:scale-105 duration-300"
+                  className={`w-full h-full ${welt.id === 3 ? 'object-contain' : 'object-cover'} transition-transform hover:scale-105 duration-300`}
                 />
               </div>
               <div className="p-6">
