@@ -13,6 +13,7 @@ import AlltagLeichterLeben from "./pages/AlltagLeichterLeben";
 import VerstehenVeraendern from "./pages/VerstehenVeraendern";
 import ErlebenVerbinden from "./pages/ErlebenVerbinden";
 import FuerEinrichtungen from "./pages/FuerEinrichtungen";
+import FuerUnternehmen from "./pages/FuerUnternehmen";
 import Kontakt from "./pages/Kontakt";
 import Impressum from "./pages/Impressum";
 import Datenschutz from "./pages/Datenschutz";
@@ -33,7 +34,8 @@ const App = () => (
             <Route path="/tankwelten/alltag-leichter-leben" element={<AlltagLeichterLeben />} />
             <Route path="/tankwelten/verstehen-veraendern" element={<VerstehenVeraendern />} />
             <Route path="/tankwelten/erleben-verbinden" element={<ErlebenVerbinden />} />
-            <Route path="/fuer-einrichtungen-unternehmen" element={<FuerEinrichtungen />} />
+            <Route path="/fuer-einrichtungen" element={<FuerEinrichtungen />} />
+            <Route path="/fuer-unternehmen" element={<FuerUnternehmen />} />
             <Route path="/kontakt" element={<Kontakt />} />
             <Route path="/impressum" element={<Impressum />} />
             <Route path="/datenschutz" element={<Datenschutz />} />

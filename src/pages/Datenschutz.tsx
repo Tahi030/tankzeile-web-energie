@@ -14,6 +14,18 @@ const Datenschutz = () => {
           <h1 className="text-3xl font-bold mb-8">Datenschutzerklärung</h1>
           
           <div className="prose max-w-none">
+            {/* New contact form section */}
+            <h2>Kontaktformular</h2>
+            <p>
+              Wenn du uns per Formular Anfragen zukommen lässt, werden deine Angaben inklusive der von dir dort angegebenen Kontaktdaten über den Dienst <a href="https://formsubmit.co" target="_blank" rel="noopener noreferrer">Formsubmit.co</a> an uns übermittelt. Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO (Einwilligung).
+            </p>
+            <p>
+              Anbieter: Formsubmit, 1801 N Tryon St, Charlotte, NC, USA
+            </p>
+            <p>
+              Datenschutzerklärung: <a href="https://formsubmit.co/privacy" target="_blank" rel="noopener noreferrer">https://formsubmit.co/privacy</a>
+            </p>
+            
             <h2>1. Datenschutz auf einen Blick</h2>
             
             <h3>Allgemeine Hinweise</h3>
