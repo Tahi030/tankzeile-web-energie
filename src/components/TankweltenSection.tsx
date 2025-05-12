@@ -6,14 +6,14 @@ const tankwelten = [
   {
     id: 1,
     title: "Captain Apfel Workshop",
-    description: "Du findest hier:\nWorkshop mit Captain Apfel - Ernährung als Abenteuer für Vorschulkinder",
+    description: "Workshop mit Captain Apfel - Ernährung als Abenteuer für Vorschulkinder",
     image: "/lovable-uploads/8138e97e-63f6-4434-a88a-13d9b92ff7cb.png", // Captain Apfel image
     link: "/tankwelten/captain-apfel-workshop",
   },
   {
     id: 2,
     title: "Alltag leichter leben",
-    description: "Du findest hier:\nDie Tankbox - Wochenstruktur mit vorbereiteten Komponenten & Achtsamkeit\nKostenlose PDFs - z. B. zuckerarme Snacks, Kita-Box-Ideen",
+    description: "Die Tankbox - Wochenstruktur mit vorbereiteten Komponenten & Achtsamkeit\nKostenlose PDFs - z. B. zuckerarme Snacks, Kita-Box-Ideen",
     image: "https://images.unsplash.com/photo-1493770348161-369560ae357d?q=80&w=600&auto=format&fit=crop", // Family cooking with colorful vegetables
     link: "/tankwelten/alltag-leichter-leben",
   },
@@ -27,7 +27,7 @@ const tankwelten = [
   {
     id: 4,
     title: "Schatz(t)ruhe",
-    description: "Für Eltern, Kinder und Einrichtungen, die Beziehung spürbar machen wollen.",
+    description: "Eltern und Kinder erleben Ruhe, Nähe und Verbindung durch bewusste Sinneserfahrungen und Achtsamkeitsübungen",
     image: "/lovable-uploads/4b878cec-1fcb-4ff6-a1c2-ddce369393a7.png", // Schatz(t)ruhe image
     link: "/tankwelten/schatzruhe",
   },
