@@ -24,8 +24,17 @@ const HeroSection = () => {
 
   return (
     <section className="relative bg-gradient-to-b from-primary to-primary-light py-16 md:py-24 overflow-hidden">
-      <div className="container-custom">
-        <div className="max-w-3xl mx-auto text-center">
+      {/* Heart-line graphic positioned on the right side */}
+      <div className="absolute right-0 top-0 h-full w-1/2 pointer-events-none flex items-center justify-end overflow-hidden">
+        <img 
+          src="/lovable-uploads/b94ff287-1b76-4dc8-86b0-34b6c90ce1d2.png" 
+          alt="Decorative heart line" 
+          className="h-auto max-h-[80%] object-contain opacity-90"
+        />
+      </div>
+      
+      <div className="container-custom relative z-10">
+        <div className="max-w-3xl mx-auto md:mx-0 md:ml-10 text-center md:text-left">
           <motion.h1 
             className="text-4xl md:text-6xl font-bold mb-8 text-white"
             initial={{ opacity: 0, y: 30 }}
