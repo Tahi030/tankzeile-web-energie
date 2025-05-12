@@ -75,16 +75,17 @@ const HeroSection = () => {
             whileHover={{ scale: 1.02, boxShadow: "0 10px 25px rgba(0,0,0,0.08)" }}
           >
             <div className="relative z-10">
-              <p className="text-lg md:text-xl space-y-4 mb-8">
-                Hallo, schön dass du da bist.<br />
-                Ich heiße Tamara – und ich bin die Tankzeile.<br />
-                Hier verbinde ich, was mir am Herzen liegt:<br />
-                Ernährung, Achtsamkeit und echtes Miteinander.
+              <h3 className="text-xl md:text-2xl font-bold mb-4">Ernährung, Achtsamkeit und Verbindung. Neu gedacht.</h3>
+              <p className="text-lg md:text-xl mb-4">
+                Die Tankzeile ist ein Bildungs- und Gesundheitskonzept, das moderne Ernährung, alltagsnahe Achtsamkeit und soziale Verbindung miteinander vereint – praxisnah, kindgerecht und nachhaltig.
+              </p>
+              <p className="text-lg md:text-xl mb-4">
+                In einer Gesellschaft, in der Fertiggerichte, Zeitdruck und Reizüberflutung den Alltag prägen, fehlt es an fundierten, greifbaren Angeboten, die ganzheitliches Wohlbefinden frühzeitig fördern.<br />
+                Die Tankzeile schließt diese Lücke – mit interaktiven Workshops, strukturierten Wochenkonzepten und hochwertigen Inhalten für Familien, Kinder und pädagogische Einrichtungen.
               </p>
               <p className="text-lg md:text-xl">
-                Ich möchte einen Ort schaffen, an dem sich jeder einzelne wieder<br />
-                ganzheitlich wohlfühlen darf<br />
-                und damit etwas bewegen.
+                Das Ziel: ein gesunder Alltag, der verbindet – mit Freude, Klarheit und Wirkung.<br />
+                Von Anfang an. Für Groß und Klein.
               </p>
             </div>
           </motion.div>
