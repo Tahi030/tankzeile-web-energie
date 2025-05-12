@@ -1,12 +1,18 @@
 
+import { motion } from "framer-motion";
+
 const TargetGroupSection = () => {
   return (
     <section className="py-16 bg-muted">
       <div className="container-custom">
-        <div className="bg-white rounded-xl p-8 shadow-lg border border-primary/10 relative overflow-hidden max-w-4xl mx-auto">
-          <div className="absolute -right-20 -top-20 w-64 h-64 rounded-full bg-secondary-light/30 blur-3xl pointer-events-none"></div>
-          <div className="absolute -left-20 -bottom-20 w-64 h-64 rounded-full bg-primary-light/30 blur-3xl pointer-events-none"></div>
-          
+        <motion.div 
+          className="modern-box max-w-4xl mx-auto"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true, margin: "-100px" }}
+          whileHover={{ scale: 1.02, boxShadow: "0 10px 25px rgba(0,0,0,0.08)" }}
+        >
           <div className="relative z-10">
             <h2 className="section-title text-center mb-6">Für wen ist das hier?</h2>
             
@@ -34,14 +40,20 @@ const TargetGroupSection = () => {
                 Denn echtes Wohlfühlen beginnt dort, wo wir uns nicht mehr allein fühlen.
               </p>
               
-              <div className="mt-10 text-xl font-medium">
+              <motion.div 
+                className="mt-10 text-xl font-medium"
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ delay: 0.4, duration: 0.6 }}
+                viewport={{ once: true }}
+              >
                 <p>👉 Willst du wissen, wie das geht?</p>
                 <p>Lern die Tankwelten kennen –</p>
                 <p>und entdecke, wie wir uns wieder verbinden können.</p>
-              </div>
+              </motion.div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

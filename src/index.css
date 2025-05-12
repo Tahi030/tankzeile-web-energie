@@ -123,4 +123,17 @@
   .stylish-box-effect-alt {
     @apply absolute -left-20 -bottom-20 w-64 h-64 rounded-full bg-secondary-light/20 blur-3xl pointer-events-none;
   }
+  
+  .modern-box {
+    @apply bg-white/90 backdrop-blur-sm rounded-xl p-8 shadow-md border border-gray-100 relative overflow-hidden transition-all duration-300;
+  }
+  
+  .modern-box::before {
+    @apply content-[''] absolute -right-20 -top-20 w-64 h-64 rounded-full bg-primary-light/20 blur-3xl pointer-events-none;
+  }
+  
+  .modern-box::after {
+    @apply content-[''] absolute -left-20 -bottom-20 w-64 h-64 rounded-full bg-secondary-light/20 blur-3xl pointer-events-none;
+  }
 }
+

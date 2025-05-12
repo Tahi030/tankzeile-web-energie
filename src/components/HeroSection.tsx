@@ -26,19 +26,29 @@ const HeroSection = () => {
     <section className="relative bg-gradient-to-b from-primary-light to-white py-16 md:py-24">
       <div className="container-custom">
         <div className="max-w-3xl mx-auto text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-8 animate-fade-in">
+          <motion.h1 
+            className="text-4xl md:text-6xl font-bold mb-8"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+          >
             Gesundheit, die schmeckt – für Groß und Klein
-          </h1>
+          </motion.h1>
 
-          <div className="mb-10">
-            <p className="text-2xl md:text-3xl font-medium mb-4">
+          <motion.div 
+            className="mb-10"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+          >
+            <p className="text-2xl md:text-3xl font-medium mb-4 text-secondary">
               Die Tankzeile verbindet.
             </p>
             <div className="h-16 md:h-20 relative overflow-hidden">
               {connectionSentences.map((sentence, index) => (
                 <motion.p
                   key={index}
-                  className="text-2xl md:text-3xl font-semibold absolute w-full text-secondary-dark"
+                  className="text-3xl md:text-4xl font-semibold absolute w-full text-secondary"
                   initial={{ opacity: 0, y: 50 }}
                   animate={{
                     opacity: sentenceIndex === index ? 1 : 0,
@@ -50,11 +60,15 @@ const HeroSection = () => {
                 </motion.p>
               ))}
             </div>
-          </div>
+          </motion.div>
 
-          <div className="bg-white rounded-xl p-8 shadow-lg border border-primary/10 relative overflow-hidden mb-10">
-            <div className="absolute -right-20 -top-20 w-64 h-64 rounded-full bg-primary-light/20 blur-3xl pointer-events-none"></div>
-            <div className="absolute -left-20 -bottom-20 w-64 h-64 rounded-full bg-secondary-light/20 blur-3xl pointer-events-none"></div>
+          <motion.div 
+            className="modern-box mb-10"
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            whileHover={{ scale: 1.02, boxShadow: "0 10px 25px rgba(0,0,0,0.08)" }}
+          >
             <div className="relative z-10">
               <p className="text-lg md:text-xl space-y-4 mb-8">
                 Hallo, schön dass du da bist.<br />
@@ -68,7 +82,7 @@ const HeroSection = () => {
                 und damit etwas bewegen.
               </p>
             </div>
-          </div>
+          </motion.div>
           
           <Link to="/tankwelten/alltag-leichter-leben" className="btn-secondary inline-flex items-center gap-2 text-lg px-6 py-3">
             Jetzt eintauchen <ArrowRight size={20} />

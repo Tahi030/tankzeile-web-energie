@@ -62,12 +62,12 @@ const Header = () => {
             <img 
               src="/lovable-uploads/b676a4c4-3880-4820-b675-e4a9643b9ab2.png"
               alt="Tankzeile Icon"
-              className="h-12 mr-2"
+              className="h-14 mr-2"
             />
             <img 
               src="/lovable-uploads/487c452c-3836-4742-9b3f-e4f747cc32e6.png"
               alt="Tankzeile Logo"
-              className="h-10"
+              className="h-14"
             />
           </Link>
 
