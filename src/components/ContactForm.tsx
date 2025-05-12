@@ -50,12 +50,21 @@ const ContactForm = () => {
       const response = await supabase.functions.invoke('send-contact-form', {
         body: formData,
       });
+      
+      const responseData = response.data;
 
-      if (!response.data?.success) {
+      if (!responseData?.success) {
         throw new Error('Es gab einen Fehler beim Senden der E-Mail');
       }
 
-      toast.success("Deine Nachricht wurde erfolgreich gesendet!");
+      // Show success message but with additional info if emails had issues
+      if (!responseData.emailSent) {
+        toast.success("Nachricht gespeichert, aber E-Mail konnte nicht gesendet werden. Wir werden Sie trotzdem kontaktieren.");
+      } else {
+        toast.success("Deine Nachricht wurde erfolgreich gesendet!");
+      }
+      
+      // Reset form
       setFormData({
         name: "",
         email: "",
