@@ -43,7 +43,7 @@ const ErlebenVerbinden = () => {
               
               <div className="my-8">
                 <img 
-                  src="https://images.unsplash.com/photo-1501286353178-1ec881214838?w=900&auto=format&fit=crop" 
+                  src="https://images.unsplash.com/photo-1602001313318-97a0f40a3759?q=80&w=900&auto=format&fit=crop" 
                   alt="Lachende Kinder beim Workshop" 
                   className="rounded-lg shadow-md w-full h-64 object-cover"
                 />
