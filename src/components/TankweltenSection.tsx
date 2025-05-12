@@ -5,23 +5,30 @@ import { motion } from "framer-motion";
 const tankwelten = [
   {
     id: 1,
+    title: "Captain Apfel Workshop",
+    description: "Für Vorschulkinder, die spielerisch die Welt der gesunden Ernährung entdecken möchten.",
+    image: "/lovable-uploads/8138e97e-63f6-4434-a88a-13d9b92ff7cb.png", // Captain Apfel image
+    link: "/tankwelten/erleben-verbinden",
+  },
+  {
+    id: 2,
     title: "Alltag leichter leben",
     description: "Für Familien, die Struktur, Entlastung und neue Energie suchen.",
     image: "https://images.unsplash.com/photo-1493770348161-369560ae357d?q=80&w=600&auto=format&fit=crop", // Family cooking with colorful vegetables
     link: "/tankwelten/alltag-leichter-leben",
   },
   {
-    id: 2,
+    id: 3,
     title: "Verstehen & Verändern",
     description: "Für alle, die sich ausgelaugt fühlen und eine Balance zwischen Wissenschaft und Intuition suchen.",
     image: "https://images.unsplash.com/photo-1545205597-3d9d02c29597?q=80&w=600&auto=format&fit=crop", // Person doing meditation/relaxation exercise
     link: "/tankwelten/verstehen-veraendern",
   },
   {
-    id: 3,
-    title: "Erleben & Verbinden",
+    id: 4,
+    title: "Schatz(t)ruhe",
     description: "Für Eltern, Kinder und Einrichtungen, die Beziehung spürbar machen wollen.",
-    image: "/lovable-uploads/8138e97e-63f6-4434-a88a-13d9b92ff7cb.png", // New Captain Apfel and crew image
+    image: "/lovable-uploads/1af1ee6a-9bf1-4be3-8fdc-9f2186c26743.png", // New treasure chest image
     link: "/tankwelten/erleben-verbinden",
   },
 ];
@@ -35,7 +42,7 @@ const TankweltenSection = () => {
           Entdecke, wie wir uns wieder verbinden können – mit uns selbst, mit unseren Kindern und mit echter Nahrung.
         </p>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-8">
           {tankwelten.map((welt, index) => (
             <motion.div
               key={welt.id}
@@ -50,11 +57,11 @@ const TankweltenSection = () => {
                 <img 
                   src={welt.image} 
                   alt={welt.title} 
-                  className={`w-full h-full ${welt.id === 3 ? 'object-cover' : 'object-cover'} transition-transform hover:scale-105 duration-300`}
+                  className="w-full h-full object-cover transition-transform hover:scale-105 duration-300"
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">{welt.title}</h3>
+                <h3 className="text-xl font-bold mb-2 font-sans">{welt.title}</h3>
                 <p className="text-gray-600 mb-4">{welt.description}</p>
                 <Link 
                   to={welt.link}

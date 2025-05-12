@@ -1,5 +1,5 @@
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 
@@ -33,6 +33,7 @@ const NavItem = ({ to, label, dropdown = false, children }: { to: string, label:
     <Link 
       to={to} 
       className={`px-3 py-2 rounded-md text-lg font-medium hover:bg-primary/10 transition-colors ${isActive ? 'text-primary-dark font-semibold' : ''}`}
+      onClick={() => window.scrollTo(0, 0)}
     >
       {label}
     </Link>
@@ -44,6 +45,7 @@ const DropdownItem = ({ to, label }: { to: string, label: string }) => {
     <Link 
       to={to} 
       className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-dark"
+      onClick={() => window.scrollTo(0, 0)}
     >
       {label}
     </Link>
@@ -58,7 +60,7 @@ const Header = () => {
       <div className="container-custom">
         <div className="flex justify-between items-center py-2">
           {/* Logo */}
-          <Link to="/" className="flex items-center">
+          <Link to="/" className="flex items-center" onClick={() => window.scrollTo(0, 0)}>
             <img 
               src="/lovable-uploads/b676a4c4-3880-4820-b675-e4a9643b9ab2.png"
               alt="Tankzeile Icon"
@@ -79,7 +81,7 @@ const Header = () => {
                 <div className="py-1" role="menu" aria-orientation="vertical">
                   <DropdownItem to="/tankwelten/alltag-leichter-leben" label="Alltag leichter leben" />
                   <DropdownItem to="/tankwelten/verstehen-veraendern" label="Verstehen & Verändern" />
-                  <DropdownItem to="/tankwelten/erleben-verbinden" label="Erleben & Verbinden" />
+                  <DropdownItem to="/tankwelten/erleben-verbinden" label="Schatz(t)ruhe" />
                 </div>
               </div>
             </div>
@@ -89,6 +91,7 @@ const Header = () => {
             <Link 
               to="/kontakt"
               className="bg-secondary hover:bg-secondary-dark text-white px-5 py-2 rounded-md transition-colors ml-4 text-lg font-medium"
+              onClick={() => window.scrollTo(0, 0)}
             >
               Jetzt anfragen
             </Link>
@@ -112,30 +115,30 @@ const Header = () => {
       {mobileMenuOpen && (
         <div className="md:hidden bg-white shadow-lg">
           <div className="px-2 pt-2 pb-3 space-y-1">
-            <Link to="/" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-primary-light" onClick={() => setMobileMenuOpen(false)}>
+            <Link to="/" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-primary-light" onClick={() => {setMobileMenuOpen(false); window.scrollTo(0, 0);}}>
               Home
             </Link>
             
             <div className="border-t border-gray-200 pt-2">
               <div className="px-3 py-2 font-medium">Tankwelten</div>
-              <Link to="/tankwelten/alltag-leichter-leben" className="block pl-6 py-2 text-sm" onClick={() => setMobileMenuOpen(false)}>
+              <Link to="/tankwelten/alltag-leichter-leben" className="block pl-6 py-2 text-sm" onClick={() => {setMobileMenuOpen(false); window.scrollTo(0, 0);}}>
                 Alltag leichter leben
               </Link>
-              <Link to="/tankwelten/verstehen-veraendern" className="block pl-6 py-2 text-sm" onClick={() => setMobileMenuOpen(false)}>
+              <Link to="/tankwelten/verstehen-veraendern" className="block pl-6 py-2 text-sm" onClick={() => {setMobileMenuOpen(false); window.scrollTo(0, 0);}}>
                 Verstehen & Verändern
               </Link>
-              <Link to="/tankwelten/erleben-verbinden" className="block pl-6 py-2 text-sm" onClick={() => setMobileMenuOpen(false)}>
-                Erleben & Verbinden
+              <Link to="/tankwelten/erleben-verbinden" className="block pl-6 py-2 text-sm" onClick={() => {setMobileMenuOpen(false); window.scrollTo(0, 0);}}>
+                Schatz(t)ruhe
               </Link>
             </div>
             
-            <Link to="/fuer-einrichtungen" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-primary-light" onClick={() => setMobileMenuOpen(false)}>
+            <Link to="/fuer-einrichtungen" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-primary-light" onClick={() => {setMobileMenuOpen(false); window.scrollTo(0, 0);}}>
               Für Einrichtungen/Unternehmen
             </Link>
-            <Link to="/kontakt" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-primary-light" onClick={() => setMobileMenuOpen(false)}>
+            <Link to="/kontakt" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-primary-light" onClick={() => {setMobileMenuOpen(false); window.scrollTo(0, 0);}}>
               Kontakt
             </Link>
-            <Link to="/kontakt" className="block mx-3 mt-3 px-3 py-3 bg-secondary text-white rounded-md text-base font-medium" onClick={() => setMobileMenuOpen(false)}>
+            <Link to="/kontakt" className="block mx-3 mt-3 px-3 py-3 bg-secondary text-white rounded-md text-base font-medium" onClick={() => {setMobileMenuOpen(false); window.scrollTo(0, 0);}}>
               Jetzt anfragen
             </Link>
           </div>
