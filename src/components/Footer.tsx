@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="absolute -right-20 -top-20 w-64 h-64 rounded-full bg-primary-light/20 blur-3xl pointer-events-none"></div>
         <div className="absolute -left-20 -bottom-20 w-80 h-80 rounded-full bg-primary-light/20 blur-3xl pointer-events-none"></div>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 relative z-10">
           {/* Contact Information */}
           <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 shadow-lg border border-white/5">
             <h3 className="text-xl font-semibold mb-4">Kontakt</h3>
@@ -38,25 +38,6 @@ const Footer = () => {
               <li><Link to="/datenschutz" className="hover:underline transition-all">Datenschutz</Link></li>
               <li><Link to="/kontakt" className="hover:underline transition-all">Kontakt</Link></li>
             </ul>
-          </div>
-
-          {/* Newsletter Signup */}
-          <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 shadow-lg border border-white/5">
-            <h3 className="text-xl font-semibold mb-4">Newsletter</h3>
-            <p className="mb-4">Erhalte Neuigkeiten und Impulse direkt in dein Postfach.</p>
-            <div className="flex">
-              <input 
-                type="email" 
-                placeholder="E-Mail-Adresse" 
-                className="px-4 py-2 rounded-l-md text-gray-800 w-full focus:outline-none focus:ring-2 focus:ring-secondary"
-              />
-              <button 
-                type="button"
-                className="bg-secondary hover:bg-secondary-dark text-white px-4 py-2 rounded-r-md transition-colors"
-              >
-                Anmelden
-              </button>
-            </div>
           </div>
         </div>
 

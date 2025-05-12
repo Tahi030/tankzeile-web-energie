@@ -72,10 +72,10 @@ const Header = () => {
             <NavItem to="/" label="Home" />
             
             <div className="relative group">
-              <div className="px-3 py-2 rounded-md text-lg font-medium hover:bg-primary/10 transition-colors cursor-pointer">
+              <div className="px-3 py-2 rounded-md text-lg font-medium hover:bg-primary/20 transition-colors cursor-pointer">
                 Tankwelten <span className="ml-1 text-xs">▼</span>
               </div>
-              <div className="absolute left-0 hidden group-hover:block mt-2 w-60 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-50">
+              <div className="absolute left-0 hidden group-hover:block mt-2 w-60 rounded-md shadow-lg bg-white ring-1 ring-primary/20 z-50">
                 <div className="py-1" role="menu" aria-orientation="vertical">
                   <DropdownItem to="/tankwelten/alltag-leichter-leben" label="Alltag leichter leben" />
                   <DropdownItem to="/tankwelten/verstehen-veraendern" label="Verstehen & Verändern" />
@@ -84,7 +84,7 @@ const Header = () => {
               </div>
             </div>
             
-            <NavItem to="/fuer-einrichtungen" label="Für Einrichtungen" />
+            <NavItem to="/fuer-einrichtungen" label="Für Einrichtungen/Unternehmen" />
             <NavItem to="/kontakt" label="Kontakt" />
             <Link 
               to="/kontakt"
@@ -130,7 +130,7 @@ const Header = () => {
             </div>
             
             <Link to="/fuer-einrichtungen" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-primary-light" onClick={() => setMobileMenuOpen(false)}>
-              Für Einrichtungen
+              Für Einrichtungen/Unternehmen
             </Link>
             <Link to="/kontakt" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-primary-light" onClick={() => setMobileMenuOpen(false)}>
               Kontakt

@@ -7,21 +7,21 @@ const tankwelten = [
     id: 1,
     title: "Alltag leichter leben",
     description: "Für Familien, die Struktur, Entlastung und neue Energie suchen.",
-    image: "https://source.unsplash.com/wJ7yGwz2-00/600x400", // Family cooking together
+    image: "https://images.unsplash.com/photo-1493770348161-369560ae357d?q=80&w=600&auto=format&fit=crop", // Family cooking with colorful vegetables
     link: "/tankwelten/alltag-leichter-leben",
   },
   {
     id: 2,
     title: "Verstehen & Verändern",
     description: "Für alle, die sich ausgelaugt fühlen und eine Balance zwischen Wissenschaft und Intuition suchen.",
-    image: "https://source.unsplash.com/9aOswReDKPo/600x400", // Healthy food arrangement
+    image: "https://images.unsplash.com/photo-1490818387583-1baba5e638af?q=80&w=600&auto=format&fit=crop", // Beautiful healthy food arrangement
     link: "/tankwelten/verstehen-veraendern",
   },
   {
     id: 3,
     title: "Erleben & Verbinden",
     description: "Für Eltern, Kinder und Einrichtungen, die Beziehung spürbar machen wollen.",
-    image: "https://source.unsplash.com/6VArIUiY1del/600x400", // Family or group connecting outdoors
+    image: "https://images.unsplash.com/photo-1464454709131-ffd692591ee5?q=80&w=600&auto=format&fit=crop", // Family or group connecting outdoors with nature
     link: "/tankwelten/erleben-verbinden",
   },
 ];
