@@ -13,7 +13,7 @@ const NavItem = ({ to, label, dropdown = false, children }: { to: string, label:
       <div className="relative group">
         <button 
           onClick={() => setIsOpen(!isOpen)}
-          className={`px-3 py-2 rounded-md text-base font-medium hover:bg-primary/10 transition-colors ${isActive ? 'text-primary-dark font-semibold' : ''}`}
+          className={`px-4 py-3 rounded-md text-lg font-medium hover:bg-primary/10 transition-colors ${isActive ? 'text-primary-dark font-semibold' : ''}`}
         >
           {label}
           <span className="ml-1">▼</span>
@@ -32,7 +32,7 @@ const NavItem = ({ to, label, dropdown = false, children }: { to: string, label:
   return (
     <Link 
       to={to} 
-      className={`px-3 py-2 rounded-md text-base font-medium hover:bg-primary/10 transition-colors ${isActive ? 'text-primary-dark font-semibold' : ''}`}
+      className={`px-4 py-3 rounded-md text-lg font-medium hover:bg-primary/10 transition-colors ${isActive ? 'text-primary-dark font-semibold' : ''}`}
     >
       {label}
     </Link>
@@ -56,23 +56,27 @@ const Header = () => {
   return (
     <header className="bg-primary sticky top-0 z-50 shadow-md">
       <div className="container-custom">
-        <div className="flex justify-between items-center py-4">
+        <div className="flex justify-between items-center py-5">
           {/* Logo */}
           <Link to="/" className="flex items-center">
             <img 
               src="/lovable-uploads/b676a4c4-3880-4820-b675-e4a9643b9ab2.png"
-              alt="Tankzeile Logo"
-              className="h-10 mr-2"
+              alt="Tankzeile Icon"
+              className="h-12 mr-2"
             />
-            <span className="text-xl font-playfair font-bold text-white">Tankzeile</span>
+            <img 
+              src="/lovable-uploads/487c452c-3836-4742-9b3f-e4f747cc32e6.png"
+              alt="Tankzeile Logo"
+              className="h-10"
+            />
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-4">
+          <nav className="hidden md:flex items-center space-x-6">
             <NavItem to="/" label="Home" />
             
             <div className="relative group">
-              <div className="px-3 py-2 rounded-md text-base font-medium hover:bg-primary/10 transition-colors cursor-pointer">
+              <div className="px-4 py-3 rounded-md text-lg font-medium hover:bg-primary/10 transition-colors cursor-pointer">
                 Tankwelten <span className="ml-1 text-xs">▼</span>
               </div>
               <div className="absolute left-0 hidden group-hover:block mt-2 w-60 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-50">
@@ -89,7 +93,7 @@ const Header = () => {
             <NavItem to="/kontakt" label="Kontakt" />
             <Link 
               to="/kontakt"
-              className="bg-secondary hover:bg-secondary-dark text-white px-4 py-2 rounded-md transition-colors ml-4 font-medium"
+              className="bg-secondary hover:bg-secondary-dark text-white px-5 py-3 rounded-md transition-colors ml-4 text-lg font-medium"
             >
               Jetzt anfragen
             </Link>
@@ -103,7 +107,7 @@ const Header = () => {
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             >
               <span className="sr-only">Menü öffnen</span>
-              {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+              {mobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
             </button>
           </div>
         </div>

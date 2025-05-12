@@ -26,19 +26,19 @@ const HeroSection = () => {
     <section className="relative bg-gradient-to-b from-primary-light to-white py-16 md:py-24">
       <div className="container-custom">
         <div className="max-w-3xl mx-auto text-center">
-          <h1 className="text-3xl md:text-5xl font-bold mb-6 animate-fade-in">
+          <h1 className="text-4xl md:text-6xl font-bold mb-8 animate-fade-in">
             Gesundheit, die schmeckt – für Groß und Klein
           </h1>
 
-          <div className="mb-8">
-            <p className="text-xl md:text-2xl font-medium mb-2">
+          <div className="mb-10">
+            <p className="text-2xl md:text-3xl font-medium mb-4">
               Die Tankzeile verbindet.
             </p>
-            <div className="h-12 md:h-14 relative overflow-hidden">
+            <div className="h-16 md:h-20 relative overflow-hidden">
               {connectionSentences.map((sentence, index) => (
                 <motion.p
                   key={index}
-                  className="text-lg md:text-xl absolute w-full"
+                  className="text-2xl md:text-3xl font-semibold absolute w-full text-secondary-dark"
                   initial={{ opacity: 0, y: 50 }}
                   animate={{
                     opacity: sentenceIndex === index ? 1 : 0,
@@ -70,8 +70,8 @@ const HeroSection = () => {
             </div>
           </div>
           
-          <Link to="/tankwelten/alltag-leichter-leben" className="btn-secondary inline-flex items-center gap-2">
-            Jetzt eintauchen <ArrowRight size={18} />
+          <Link to="/tankwelten/alltag-leichter-leben" className="btn-secondary inline-flex items-center gap-2 text-lg px-6 py-3">
+            Jetzt eintauchen <ArrowRight size={20} />
           </Link>
         </div>
       </div>
