@@ -6,12 +6,18 @@ import { toast } from "@/components/ui/sonner";
 const CookieConsent = () => {
   const [open, setOpen] = useState(false);
 
+  // Force the banner to be visible on component mount
   useEffect(() => {
-    // Check if user has already made a cookie choice
     const cookieConsent = localStorage.getItem("cookieConsent");
-    if (!cookieConsent) {
-      setOpen(true);
-    }
+    
+    // Always show the banner (for testing)
+    // Remove this override later if needed
+    setOpen(true);
+    
+    // Original logic (uncomment when needed)
+    // if (!cookieConsent) {
+    //   setOpen(true);
+    // }
   }, []);
 
   const handleAccept = () => {
