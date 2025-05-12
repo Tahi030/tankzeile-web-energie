@@ -59,6 +59,11 @@ const Header = () => {
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <Link to="/" className="flex items-center">
+            <img 
+              src="/lovable-uploads/b676a4c4-3880-4820-b675-e4a9643b9ab2.png"
+              alt="Tankzeile Logo"
+              className="h-10 mr-2"
+            />
             <span className="text-xl font-playfair font-bold text-white">Tankzeile</span>
           </Link>
 

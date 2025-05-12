@@ -97,7 +97,7 @@
   }
   
   .btn-primary {
-    @apply inline-flex items-center justify-center rounded-md bg-primary text-foreground hover:bg-primary-dark transition-colors px-6 py-3 text-base font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-primary disabled:pointer-events-none disabled:opacity-50;
+    @apply inline-flex items-center justify-center rounded-md bg-secondary text-secondary-foreground hover:bg-secondary-dark transition-colors px-6 py-3 text-base font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-secondary disabled:pointer-events-none disabled:opacity-50;
   }
   
   .btn-secondary {
@@ -110,5 +110,17 @@
   
   .section-subtitle {
     @apply text-xl md:text-2xl font-medium mb-4 text-foreground;
+  }
+  
+  .stylish-box {
+    @apply bg-white rounded-xl p-8 shadow-lg border border-primary/10 relative overflow-hidden;
+  }
+  
+  .stylish-box-effect {
+    @apply absolute -right-20 -top-20 w-64 h-64 rounded-full bg-primary-light/20 blur-3xl pointer-events-none;
+  }
+  
+  .stylish-box-effect-alt {
+    @apply absolute -left-20 -bottom-20 w-64 h-64 rounded-full bg-secondary-light/20 blur-3xl pointer-events-none;
   }
 }

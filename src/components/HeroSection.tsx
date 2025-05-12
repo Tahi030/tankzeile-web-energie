@@ -52,20 +52,25 @@ const HeroSection = () => {
             </div>
           </div>
 
-          <div className="text-lg md:text-xl space-y-4 mb-8 animate-fade-up">
-            <p className="mb-6">
-              Hallo, schön dass du da bist.<br />
-              Ich heiße Tamara – und ich bin die Tankzeile.<br />
-              Hier verbinde ich, was mir am Herzen liegt:<br />
-              Ernährung, Achtsamkeit und echtes Miteinander.
-            </p>
-            <p>
-              Ich möchte einen Ort schaffen, an dem sich jeder einzelne wieder<br />
-              ganzheitlich wohlfühlen darf<br />
-              und damit etwas bewegen.
-            </p>
+          <div className="bg-white rounded-xl p-8 shadow-lg border border-primary/10 relative overflow-hidden mb-10">
+            <div className="absolute -right-20 -top-20 w-64 h-64 rounded-full bg-primary-light/20 blur-3xl pointer-events-none"></div>
+            <div className="absolute -left-20 -bottom-20 w-64 h-64 rounded-full bg-secondary-light/20 blur-3xl pointer-events-none"></div>
+            <div className="relative z-10">
+              <p className="text-lg md:text-xl space-y-4 mb-8">
+                Hallo, schön dass du da bist.<br />
+                Ich heiße Tamara – und ich bin die Tankzeile.<br />
+                Hier verbinde ich, was mir am Herzen liegt:<br />
+                Ernährung, Achtsamkeit und echtes Miteinander.
+              </p>
+              <p className="text-lg md:text-xl">
+                Ich möchte einen Ort schaffen, an dem sich jeder einzelne wieder<br />
+                ganzheitlich wohlfühlen darf<br />
+                und damit etwas bewegen.
+              </p>
+            </div>
           </div>
-          <Link to="/tankwelten/alltag-leichter-leben" className="btn-primary inline-flex items-center gap-2">
+          
+          <Link to="/tankwelten/alltag-leichter-leben" className="btn-secondary inline-flex items-center gap-2">
             Jetzt eintauchen <ArrowRight size={18} />
           </Link>
         </div>
