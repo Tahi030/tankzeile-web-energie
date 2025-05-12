@@ -63,9 +63,9 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center" onClick={() => window.scrollTo(0, 0)}>
             <img 
-              src="/lovable-uploads/27408c70-fd83-4ea3-b67f-5eb345b64959.png"
+              src="/lovable-uploads/a6f824db-303d-44a3-a67c-b385a9113a8d.png"
               alt="Tankzeile Logo"
-              className="h-12 mr-2"
+              className="h-12 md:h-14 mr-2"
             />
             <span className="font-sisterhood text-3xl text-foreground">Tankzeile</span>
           </Link>
