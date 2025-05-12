@@ -50,10 +50,21 @@ const VerstehenVeraendern = () => {
                 </Link>
               </div>
 
-              <h3>Der Zusammenhang zwischen Ernährung und Energie</h3>
-              <p>
-                Was wir essen, bestimmt maßgeblich, wie wir uns fühlen. Aber es geht nicht nur um einzelne Nährstoffe, sondern um das große Ganze: Wie wir essen, wann wir essen und mit wem wir essen. In diesem Bereich der Tankzeile erfährst du, wie echte Nahrung deine Lebensenergie nachhaltig steigern kann.
-              </p>
+              <div className="flex flex-col md:flex-row gap-8 items-center my-8">
+                <div className="md:w-1/2">
+                  <img 
+                    src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?q=80&w=900&auto=format&fit=crop" 
+                    alt="Person bei einer Entspannungsübung" 
+                    className="rounded-lg shadow-md w-full max-w-md mx-auto"
+                  />
+                </div>
+                <div className="md:w-1/2">
+                  <h3>Der Zusammenhang zwischen Ernährung und Energie</h3>
+                  <p>
+                    Was wir essen, bestimmt maßgeblich, wie wir uns fühlen. Aber es geht nicht nur um einzelne Nährstoffe, sondern um das große Ganze: Wie wir essen, wann wir essen und mit wem wir essen. In diesem Bereich der Tankzeile erfährst du, wie echte Nahrung deine Lebensenergie nachhaltig steigern kann.
+                  </p>
+                </div>
+              </div>
               
               <h3>Hinter den Masken des Alltags</h3>
               <p>

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const TargetGroupSection = () => {
   return (
-    <section className="py-16 bg-gradient-to-b from-primary-light to-muted">
+    <section className="py-16 bg-gradient-to-b from-primary-light/50 to-muted">
       <div className="container-custom">
         <motion.div 
           className="bg-white/70 backdrop-blur-sm rounded-xl p-8 shadow-md border border-primary/10 max-w-4xl mx-auto relative overflow-hidden"

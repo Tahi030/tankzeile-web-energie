@@ -72,10 +72,10 @@ const Header = () => {
             <NavItem to="/" label="Home" />
             
             <div className="relative group">
-              <div className="px-3 py-2 rounded-md text-lg font-medium hover:bg-primary/20 transition-colors cursor-pointer">
+              <div className="px-3 py-2 rounded-md text-lg font-medium hover:bg-primary/20 transition-colors cursor-pointer group-hover:bg-primary/20">
                 Tankwelten <span className="ml-1 text-xs">▼</span>
               </div>
-              <div className="absolute left-0 hidden group-hover:block mt-2 w-60 rounded-md shadow-lg bg-white ring-1 ring-primary/20 z-50">
+              <div className="absolute left-0 invisible group-hover:visible opacity-0 group-hover:opacity-100 mt-2 w-60 rounded-md shadow-lg bg-white ring-1 ring-primary/20 z-50 transition-all duration-150">
                 <div className="py-1" role="menu" aria-orientation="vertical">
                   <DropdownItem to="/tankwelten/alltag-leichter-leben" label="Alltag leichter leben" />
                   <DropdownItem to="/tankwelten/verstehen-veraendern" label="Verstehen & Verändern" />

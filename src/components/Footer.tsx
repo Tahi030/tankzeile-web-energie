@@ -23,7 +23,7 @@ const Footer = () => {
                 <a href="https://www.instagram.com/tankzeile?igsh=cjFxdDNrbXNvYnFk" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300 transition-colors">
                   <Instagram size={24} />
                 </a>
-                <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300 transition-colors">
+                <a href="https://www.linkedin.com/in/tamara-hillmann" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300 transition-colors">
                   <Linkedin size={24} />
                 </a>
               </div>

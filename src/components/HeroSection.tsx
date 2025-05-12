@@ -23,19 +23,19 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="relative bg-gradient-to-b from-primary to-white py-16 md:py-24">
+    <section className="relative bg-gradient-to-b from-primary to-primary-light py-16 md:py-24 overflow-hidden">
       <div className="container-custom">
         <div className="max-w-3xl mx-auto text-center">
           <motion.h1 
-            className="text-4xl md:text-6xl font-bold mb-8"
+            className="text-4xl md:text-6xl font-bold mb-8 text-white"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <span className="text-white md:inline block">
+            <span className="md:inline block">
               Gesundheit, die schmeckt
             </span>{" "}
-            <span className="text-white md:inline block">
+            <span className="md:inline block">
               – für Groß und Klein
             </span>
           </motion.h1>
@@ -68,7 +68,7 @@ const HeroSection = () => {
           </motion.div>
 
           <motion.div 
-            className="modern-box mb-10 mt-24 md:mt-10"
+            className="modern-box mb-10 mt-28 md:mt-10"
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
@@ -94,7 +94,6 @@ const HeroSection = () => {
           </Link>
         </div>
       </div>
-      <div className="absolute bottom-0 left-0 w-full h-20 bg-muted" />
     </section>
   );
 };

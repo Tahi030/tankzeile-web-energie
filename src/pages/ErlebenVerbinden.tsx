@@ -40,6 +40,14 @@ const ErlebenVerbinden = () => {
                   <strong>Angebote für Einrichtungen</strong> – praxisnah, kindgerecht, wirkungsvoll
                 </li>
               </ul>
+              
+              <div className="my-8">
+                <img 
+                  src="https://images.unsplash.com/photo-1542810634-71277d95dcbb?q=80&w=900&auto=format&fit=crop" 
+                  alt="Workshop mit Kindern und Erwachsenen" 
+                  className="rounded-lg shadow-md w-full"
+                />
+              </div>
 
               <div className="my-8 grid gap-8">
                 <div className="bg-primary-light p-6 rounded-lg">

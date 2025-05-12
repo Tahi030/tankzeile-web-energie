@@ -14,14 +14,14 @@ const tankwelten = [
     id: 2,
     title: "Verstehen & Verändern",
     description: "Für alle, die sich ausgelaugt fühlen und eine Balance zwischen Wissenschaft und Intuition suchen.",
-    image: "https://images.unsplash.com/photo-1490818387583-1baba5e638af?q=80&w=600&auto=format&fit=crop", // Beautiful healthy food arrangement
+    image: "https://images.unsplash.com/photo-1545205597-3d9d02c29597?q=80&w=600&auto=format&fit=crop", // Person doing meditation/relaxation exercise
     link: "/tankwelten/verstehen-veraendern",
   },
   {
     id: 3,
     title: "Erleben & Verbinden",
     description: "Für Eltern, Kinder und Einrichtungen, die Beziehung spürbar machen wollen.",
-    image: "https://images.unsplash.com/photo-1464454709131-ffd692591ee5?q=80&w=600&auto=format&fit=crop", // Family or group connecting outdoors with nature
+    image: "https://images.unsplash.com/photo-1542810634-71277d95dcbb?q=80&w=600&auto=format&fit=crop", // Workshop with children and adults
     link: "/tankwelten/erleben-verbinden",
   },
 ];
