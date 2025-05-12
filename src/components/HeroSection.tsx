@@ -29,12 +29,21 @@ const HeroSection = () => {
         <img 
           src="/lovable-uploads/b94ff287-1b76-4dc8-86b0-34b6c90ce1d2.png" 
           alt="Decorative heart line" 
-          className="h-auto max-h-[80%] object-contain opacity-90"
+          className="h-auto max-h-[90%] md:max-h-[95%] object-contain opacity-90 pr-0"
+        />
+      </div>
+      
+      {/* Mobile-specific heart graphic */}
+      <div className="absolute right-0 top-10 h-1/2 w-full md:hidden pointer-events-none flex justify-end overflow-hidden">
+        <img 
+          src="/lovable-uploads/b94ff287-1b76-4dc8-86b0-34b6c90ce1d2.png" 
+          alt="Decorative heart line" 
+          className="h-auto w-3/4 object-contain opacity-90 pr-4"
         />
       </div>
       
       <div className="container-custom relative z-10">
-        <div className="max-w-3xl mx-auto md:mx-0 md:ml-10 text-center md:text-left">
+        <div className="max-w-3xl mx-auto md:mx-0 md:ml-8 text-center md:text-left">
           <motion.h1 
             className="text-4xl md:text-6xl font-bold mb-8 text-white"
             initial={{ opacity: 0, y: 30 }}
@@ -50,7 +59,7 @@ const HeroSection = () => {
           </motion.h1>
 
           <motion.div 
-            className="mb-16 md:mb-10"
+            className="mb-8 md:mb-8"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
@@ -58,7 +67,7 @@ const HeroSection = () => {
             <p className="text-2xl md:text-3xl font-medium mb-4 text-secondary">
               Die Tankzeile verbindet.
             </p>
-            <div className="h-16 md:h-20 relative overflow-hidden mb-8">
+            <div className="h-16 md:h-20 relative overflow-hidden mb-6">
               {connectionSentences.map((sentence, index) => (
                 <motion.p
                   key={index}
@@ -76,12 +85,24 @@ const HeroSection = () => {
             </div>
           </motion.div>
 
+          {/* CTA Button */}
+          <motion.div
+            className="mb-10"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+          >
+            <Link to="/tankwelten/alltag-leichter-leben" className="btn-secondary inline-flex items-center gap-2 text-lg px-6 py-3">
+              Jetzt eintauchen <ArrowRight size={20} />
+            </Link>
+          </motion.div>
+
           <motion.div 
-            className="modern-box mb-10 mt-32 md:mt-10" // Increased the top margin for mobile
+            className="bg-white/80 backdrop-blur-sm rounded-xl p-6 md:p-8 shadow-lg border border-primary/20 mb-10 transition-all duration-300 hover:shadow-xl" 
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            whileHover={{ scale: 1.02, boxShadow: "0 10px 25px rgba(0,0,0,0.08)" }}
+            whileHover={{ scale: 1.02 }}
           >
             <div className="relative z-10">
               <h3 className="text-xl md:text-2xl font-bold mb-4">Ernährung, Achtsamkeit und Verbindung. Neu gedacht.</h3>
@@ -98,10 +119,6 @@ const HeroSection = () => {
               </p>
             </div>
           </motion.div>
-          
-          <Link to="/tankwelten/alltag-leichter-leben" className="btn-secondary inline-flex items-center gap-2 text-lg px-6 py-3 mb-10">
-            Jetzt eintauchen <ArrowRight size={20} />
-          </Link>
         </div>
       </div>
     </section>

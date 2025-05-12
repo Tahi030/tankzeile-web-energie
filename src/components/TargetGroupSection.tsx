@@ -17,31 +17,33 @@ const TargetGroupSection = () => {
           <div className="absolute -left-20 -bottom-20 w-64 h-64 rounded-full bg-secondary-light/10 blur-3xl pointer-events-none"></div>
           
           <div className="relative z-10">
-            <h2 className="section-title text-center mb-6">Für wen ist das hier?</h2>
+            <h2 className="section-title text-center mb-6">Für Familien, PädagogInnen und alle, die gesunde Wege im Alltag suchen.</h2>
             
             <div className="max-w-3xl mx-auto space-y-6 text-lg">
               <p>
-                Für Menschen mit Visionen, 
+                <strong>Für Menschen mit Visionen</strong>, 
                 die zurück zum Ursprung wollen – zu echter Nahrung, Verbindung und Gesundheit, jenseits von starren Vorgaben und Industrie-Dominanz.
               </p>
               
               <p>
-                Für Eltern, die ihren Kindern zeigen möchten, was wirklich gut tut – ohne Druck, ohne Verbote.
+                <strong>Für Eltern</strong>, die ihren Kindern zeigen möchten, was wirklich gut tut – ohne Druck, ohne Verbote.
               </p>
               
               <p>
-                Für alle, die neue Wege suchen, statt alte Muster zu wiederholen.
+                <strong>Für alle</strong>, die neue Wege suchen, statt alte Muster zu wiederholen.
               </p>
               
-              <p>
-                Ich glaube: Veränderung ist einfach, wenn wir wieder spüren, was uns stärkt. 
-                Nicht durch Müssen, sondern durch kleine Impulse, die sich gut anfühlen.
-              </p>
-              
-              <p>
-                Und unsere Kinder sind der beste Anfang. 
-                Denn echtes Wohlfühlen beginnt dort, wo wir uns nicht mehr allein fühlen.
-              </p>
+              <ul className="list-disc pl-6 space-y-4">
+                <li>
+                  Ich glaube: <strong>Veränderung ist einfach</strong>, wenn wir wieder spüren, was uns stärkt. 
+                  Nicht durch Müssen, sondern durch kleine Impulse, die sich gut anfühlen.
+                </li>
+                
+                <li>
+                  <strong>Unsere Kinder sind der beste Anfang</strong>. 
+                  Denn echtes Wohlfühlen beginnt dort, wo wir uns nicht mehr allein fühlen.
+                </li>
+              </ul>
               
               <motion.div 
                 className="mt-10 text-xl font-medium"
