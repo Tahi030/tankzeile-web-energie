@@ -1,48 +1,48 @@
 
+import { TestimonialsWithMarquee } from "./ui/testimonials-with-marquee";
+
 const testimonials = [
   {
-    id: 1,
-    content: "Die Tankbox hat unseren Familienalltag komplett verändert. Die Mahlzeiten sind nicht mehr stressig, sondern ein schöner gemeinsamer Moment.",
-    author: "Franziska, Mutter von zwei Kindern",
+    text: "Ich wusste an dem Nachmittag nicht, wie ich die Zeit mit meiner Tochter sinnvoll gestalten soll – und dann kam der Achtsamkeitskurs wie gerufen. Es war so einfach und gleichzeitig so intensiv. Seitdem fühlen wir uns wieder näher und ich nehme mir viel bewusster kleine Momente mit ihr.",
+    author: {
+      name: "Marie Schneider",
+      role: "Mutter einer 4-jährigen Tochter",
+      avatar: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=150&h=150&fit=crop&crop=face"
+    },
   },
   {
-    id: 2,
-    content: "Der Captain Apfel Workshop war ein voller Erfolg in unserer Kita. Die Kinder sprechen noch Wochen später davon und probieren jetzt viel mehr Gemüse.",
-    author: "Maria, Erzieherin",
+    text: "Die Schatz(t)ruhe hat unsere Kinder richtig berührt. So viel Ruhe, Nähe und echtes Miteinander – das erlebt man im Kita-Alltag selten. Frau Hillmann ist sehr warmherzig und bringt die Inhalte mit so viel Gefühl rüber, dass die Kinder sich sofort öffnen.",
+    author: {
+      name: "Katrin Weber",
+      role: "Erzieherin, Kita Sonnenschein",
+      avatar: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=150&h=150&fit=crop&crop=face"
+    },
   },
   {
-    id: 3,
-    content: "Durch Tamaras Ratgeber habe ich endlich verstanden, wie Ernährung und meine Energie zusammenhängen. Das hat mein Leben verändert.",
-    author: "Thomas, 42",
+    text: "Die Kinder waren völlig begeistert von Captain Apfel – sie waren aktiv dabei, haben viel gefragt und richtig mitgelebt. Man spürt bei Frau Hillmann sofort, dass sie das mit Herz macht. Es war nicht nur lehrreich, sondern auch richtig schön und lebendig.",
+    author: {
+      name: "Michael Bauer",
+      role: "Leiter, Familienzentrum Berlin",
+      avatar: "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?w=150&h=150&fit=crop&crop=face"
+    },
+  },
+  {
+    text: "Ich fand es toll, wie natürlich und unaufgeregt alles war. Kein Druck, kein erhobener Finger – einfach ein Raum zum Auftanken. Auch für mich als Vater war das mal ein Zugang, bei dem ich mich wohlgefühlt habe. Man merkt, dass hier echte Verbindung zählt.",
+    author: {
+      name: "Thomas Müller",
+      role: "Vater von zwei Kindern",
+      avatar: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=150&h=150&fit=crop&crop=face"
+    },
   },
 ];
 
 const TestimonialSection = () => {
   return (
-    <section className="py-16 bg-muted">
-      <div className="container-custom">
-        <h2 className="section-title text-center mb-12">Was andere sagen</h2>
-        
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {testimonials.map((testimonial) => (
-            <div 
-              key={testimonial.id} 
-              className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow"
-            >
-              <div className="flex mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <svg key={i} className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                  </svg>
-                ))}
-              </div>
-              <blockquote className="italic mb-4">"{testimonial.content}"</blockquote>
-              <p className="text-right font-medium text-gray-600">— {testimonial.author}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
+    <TestimonialsWithMarquee
+      title="Was andere sagen"
+      description="Erfahrungen von Eltern, Erziehern und Einrichtungen mit der Tankzeile"
+      testimonials={testimonials}
+    />
   );
 };
 

@@ -79,6 +79,9 @@ export default {
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
 			},
+			maxWidth: {
+				container: "1280px",
+			},
 			keyframes: {
 				'accordion-down': {
 					from: {
@@ -103,13 +106,18 @@ export default {
 				'fade-up': {
 					from: { opacity: '0', transform: 'translateY(20px)' },
 					to: { opacity: '1', transform: 'translateY(0)' }
+				},
+				marquee: {
+					from: { transform: 'translateX(0)' },
+					to: { transform: 'translateX(calc(-100% - var(--gap)))' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'fade-in': 'fade-in 0.5s ease-out',
-				'fade-up': 'fade-up 0.7s ease-out'
+				'fade-up': 'fade-up 0.7s ease-out',
+				marquee: 'marquee var(--duration) linear infinite'
 			}
 		}
 	},
