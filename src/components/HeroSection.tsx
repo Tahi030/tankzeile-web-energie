@@ -67,11 +67,12 @@ const HeroSection = () => {
             <p className="text-2xl md:text-3xl font-medium mb-4 text-secondary">
               Die Tankzeile verbindet.
             </p>
-            <div className="h-16 md:h-20 relative overflow-hidden mb-6">
+            {/* Increase height of container to ensure enough space for all animated sentences */}
+            <div className="h-20 md:h-20 relative overflow-visible mb-6">
               {connectionSentences.map((sentence, index) => (
                 <motion.p
                   key={index}
-                  className="text-3xl md:text-4xl font-semibold absolute w-full text-secondary"
+                  className="text-3xl md:text-4xl font-semibold absolute w-full text-secondary leading-normal"
                   initial={{ opacity: 0, y: 50 }}
                   animate={{
                     opacity: sentenceIndex === index ? 1 : 0,
