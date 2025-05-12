@@ -82,8 +82,12 @@ const Header = () => {
             <NavItem to="/fuer-einrichtungen" label="Für Einrichtungen" />
             <NavItem to="/fuer-unternehmen" label="Für Unternehmen" />
             <NavItem to="/kontakt" label="Kontakt" />
-            <NavItem to="/impressum" label="Impressum" />
-            <NavItem to="/datenschutz" label="Datenschutz" />
+            <Link 
+              to="/kontakt"
+              className="bg-secondary hover:bg-secondary-dark text-white px-4 py-2 rounded-md transition-colors ml-4 font-medium"
+            >
+              Jetzt anfragen
+            </Link>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -130,11 +134,8 @@ const Header = () => {
             <Link to="/kontakt" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-primary-light" onClick={() => setMobileMenuOpen(false)}>
               Kontakt
             </Link>
-            <Link to="/impressum" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-primary-light" onClick={() => setMobileMenuOpen(false)}>
-              Impressum
-            </Link>
-            <Link to="/datenschutz" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-primary-light" onClick={() => setMobileMenuOpen(false)}>
-              Datenschutz
+            <Link to="/kontakt" className="block mx-3 mt-3 px-3 py-2 bg-secondary text-white rounded-md text-base font-medium" onClick={() => setMobileMenuOpen(false)}>
+              Jetzt anfragen
             </Link>
           </div>
         </div>

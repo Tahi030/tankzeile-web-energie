@@ -26,12 +26,16 @@ export function TestimonialsWithMarquee({
     )}>
       <div className="mx-auto flex max-w-container flex-col items-center gap-4 text-center sm:gap-12">
         <div className="flex flex-col items-center gap-4 px-4 sm:gap-6">
-          <h2 className="max-w-[720px] text-3xl font-semibold leading-tight sm:text-4xl sm:leading-tight">
-            {title}
-          </h2>
-          <p className="text-md max-w-[600px] font-medium text-muted-foreground sm:text-xl">
-            {description}
-          </p>
+          <div className="bg-white rounded-xl p-8 shadow-lg border border-primary/10 relative overflow-hidden mb-4">
+            <div className="relative z-10">
+              <h2 className="max-w-[720px] text-3xl font-semibold leading-tight sm:text-4xl sm:leading-tight">
+                {title}
+              </h2>
+              <p className="text-md max-w-[600px] font-medium text-muted-foreground sm:text-xl mt-2">
+                {description}
+              </p>
+            </div>
+          </div>
         </div>
 
         <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">
