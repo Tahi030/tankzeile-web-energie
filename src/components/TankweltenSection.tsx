@@ -24,6 +24,13 @@ const tankwelten = [
     image: "https://images.unsplash.com/photo-1545205597-3d9d02c29597?q=80&w=600&auto=format&fit=crop", // Person doing meditation/relaxation exercise
     link: "/tankwelten/verstehen-veraendern",
   },
+  {
+    id: 4,
+    title: "Schatz(t)ruhe",
+    description: "Für Eltern, Kinder und Einrichtungen, die Beziehung spürbar machen wollen.",
+    image: "/lovable-uploads/4b878cec-1fcb-4ff6-a1c2-ddce369393a7.png", // Schatz(t)ruhe image
+    link: "/tankwelten/schatzruhe",
+  },
 ];
 
 const TankweltenSection = () => {
@@ -35,7 +42,7 @@ const TankweltenSection = () => {
           Entdecke, wie wir uns wieder verbinden können – mit uns selbst, mit unseren Kindern und mit echter Nahrung.
         </p>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-8">
           {tankwelten.map((welt, index) => (
             <motion.div
               key={welt.id}

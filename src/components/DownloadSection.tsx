@@ -14,12 +14,6 @@ const downloads = [
     description: "Kreative und gesunde Ideen für die Verpflegung der Kleinen in der Kita oder Schule.",
     filename: "kita-box-ideen.pdf",
   },
-  {
-    id: 3,
-    title: "Ernährung als Familienabenteuer",
-    description: "Ratgeber zum gemeinsamen Entdecken gesunder Ernährung mit Kindern.",
-    filename: "ernaehrung-als-familienabenteuer.pdf",
-  },
 ];
 
 const DownloadSection = () => {
@@ -39,7 +33,7 @@ const DownloadSection = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {downloads.map((item) => (
             <div 
               key={item.id}
