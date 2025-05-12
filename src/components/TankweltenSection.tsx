@@ -35,14 +35,31 @@ const tankwelten = [
 
 const TankweltenSection = () => {
   return (
-    <section className="py-16">
+    <section className="py-16 bg-white">
       <div className="container-custom">
-        <h2 className="section-title text-center mb-3">Tankwelten</h2>
-        <p className="text-center text-lg mb-12 max-w-2xl mx-auto">
-          Entdecke, wie wir uns wieder verbinden können – mit uns selbst, mit unseren Kindern und mit echter Nahrung.
-        </p>
+        <div className="max-w-3xl mx-auto text-center mb-16">
+          <h2 className="text-2xl md:text-3xl font-bold mb-6">Ernährung, Achtsamkeit und Verbindung. Neu gedacht.</h2>
+          
+          <div className="space-y-6 text-lg">
+            <p>
+              Die Tankzeile ist ein Bildungs- und Gesundheitskonzept, das moderne Ernährung, alltagsnahe Achtsamkeit und soziale Verbindung miteinander vereint – praxisnah, kindgerecht und nachhaltig.
+            </p>
+            
+            <p>
+              In einer Gesellschaft, in der Fertiggerichte, Zeitdruck und Reizüberflutung den Alltag prägen, fehlt es an fundierten, greifbaren Angeboten, die ganzheitliches Wohlbefinden frühzeitig fördern.<br />
+              Die Tankzeile schließt diese Lücke – mit interaktiven Workshops, strukturierten Wochenkonzepten und hochwertigen Inhalten für Familien, Kinder und pädagogische Einrichtungen.
+            </p>
+            
+            <p>
+              Das Ziel: ein gesunder Alltag, der verbindet – mit Freude, Klarheit und Wirkung.<br />
+              Von Anfang an. Für Groß und Klein.
+            </p>
+          </div>
+        </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-8">
+        <h3 className="text-xl md:text-2xl font-semibold mb-10 text-center">Unsere Angebote</h3>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {tankwelten.map((welt, index) => (
             <motion.div
               key={welt.id}
