@@ -60,6 +60,17 @@ const Header = () => {
     <header className="bg-primary sticky top-0 z-50 shadow-md">
       <div className="container-custom">
         <div className="flex justify-between items-center py-2">
+          {/* Logo */}
+          <div className="flex-shrink-0">
+            <Link to="/" onClick={() => window.scrollTo(0, 0)}>
+              <img 
+                src="/lovable-uploads/a7e3dd75-9e76-4f71-9584-34e99d3353a8.png" 
+                alt="Tankzeile Logo" 
+                className="h-12 w-auto"
+              />
+            </Link>
+          </div>
+
           {/* Desktop Navigation - centered */}
           <nav className="hidden md:flex items-center justify-center flex-1">
             <div className="flex items-center justify-center space-x-1 md:space-x-2 lg:space-x-4">
