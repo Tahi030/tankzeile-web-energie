@@ -10,7 +10,13 @@ import { useEffect } from "react";
 const Index = () => {
   useEffect(() => {
     // Set page metadata for SEO
-    document.title = "Tankzeile – Ernährung & Lebensenergie";
+    document.title = "Tankzeile – Tamara Hillmann | Workshops & inspiration for families in Berlin";
+    
+    // Set meta description
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', 'Tankzeile is an educational and health-based concept from Berlin. Founder Tamara Hillmann offers workshops, ideas and impulses around nutrition, mindfulness and connection – for children, parents and everyone who lives or works with kids.');
+    }
     
     // Apply background color to the body
     document.body.classList.add('bg-muted');
