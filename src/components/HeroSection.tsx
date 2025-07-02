@@ -42,6 +42,15 @@ const HeroSection = () => {
       </div>
       
       <div className="container-custom relative z-10">
+        {/* Heart line graphic under header - prominent position */}
+        <div className="flex justify-center mb-8">
+          <img 
+            src="/lovable-uploads/8202ee9c-d083-4702-8e02-ea5c894959e0.png" 
+            alt="Heart line decoration" 
+            className="h-20 md:h-32 w-auto object-contain opacity-80"
+          />
+        </div>
+        
         <div className="max-w-3xl mx-auto md:mx-0 md:ml-8 text-center md:text-left">
           <motion.h1 
             className="text-4xl md:text-6xl font-bold mb-8 text-white drop-shadow-lg"
@@ -86,24 +95,6 @@ const HeroSection = () => {
           </motion.div>
 
           <div className="relative">
-            {/* Heart line graphic behind the box - more visible */}
-            <div className="absolute inset-0 pointer-events-none flex items-center justify-center overflow-hidden">
-              <img 
-                src="/lovable-uploads/8202ee9c-d083-4702-8e02-ea5c894959e0.png" 
-                alt="Decorative heart line behind content" 
-                className="h-full w-full object-contain opacity-30 scale-125"
-              />
-            </div>
-            
-            {/* Heart line graphic next to the box - positioned to the right and more visible */}
-            <div className="absolute -right-32 top-1/2 -translate-y-1/2 pointer-events-none hidden md:flex items-center overflow-visible z-0">
-              <img 
-                src="/lovable-uploads/8202ee9c-d083-4702-8e02-ea5c894959e0.png" 
-                alt="Decorative heart line beside content" 
-                className="h-80 w-80 object-contain opacity-40"
-              />
-            </div>
-
             <motion.div 
               className="bg-white/90 backdrop-blur-sm rounded-xl p-6 md:p-8 shadow-xl border border-primary/20 mb-0 transition-all duration-300 hover:shadow-2xl relative z-10" 
               initial={{ opacity: 0, y: 40 }}
