@@ -108,17 +108,17 @@ const HeroSection = () => {
             <div className="relative z-10">
               <h3 className="text-xl md:text-2xl font-bold mb-4">Ernährung, Achtsamkeit und Verbindung</h3>
               <p className="text-lg md:text-xl mb-4">
-                Great to have you here! I'm Tamara Hillmann - founder of Tankzeile, an education and health concept from Berlin.
+                Schön, dass du hier bist! Ich bin Tamara Hillmann - Gründerin der Tankzeile, einem Bildungs- und Gesundheitskonzept aus Berlin.
               </p>
               <p className="text-lg md:text-xl mb-4">
-                With Tankzeile, I combine my heart's desire to show children, families and people who live or work with children new ways of bringing healthy eating, child-friendly mindfulness and genuine connection to life in everyday life - in a practical, playful and sustainable way.
+                Mit der Tankzeile verbinde ich mein Herzensanliegen, Kindern, Familien und Menschen, die mit Kindern leben oder arbeiten, neue Wege zu zeigen, wie gesunde Ernährung, kindgerechte Achtsamkeit und echte Verbindung im Alltag lebendig werden - praxisnah, spielerisch und nachhaltig.
               </p>
               <p className="text-lg md:text-xl mb-4">
-                In a world where convenience food, time pressure and sensory overload often set the tone, there is a lack of offers that really resonate in everyday life. Tankzeile fills this gap - with an interactive workshop experience and other impulses that support healthy feeling and growth from an early age.
+                In einer Welt, in der Fertiggerichte, Zeitdruck und Reizüberflutung oft den Ton angeben, fehlt es an Angeboten, die wirklich im Alltag ankommen. Die Tankzeile schließt diese Lücke - mit interaktiver Workshop-Erfahrung und anderen Impulsen, die gesundes Fühlen und Wachstum von klein auf unterstützen.
               </p>
               <p className="text-lg md:text-xl">
-                The goal: an everyday life that does you good and connects you - with joy, clarity and impact.<br />
-                Right from the start. For young and old.
+                Das Ziel: ein Alltag, der dir gut tut und verbindet - mit Freude, Klarheit und Wirkung.<br />
+                Von Anfang an. Für Groß und Klein.
               </p>
             </div>
           </motion.div>
