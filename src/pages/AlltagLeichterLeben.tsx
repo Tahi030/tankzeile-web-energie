@@ -2,6 +2,8 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
+import DownloadSection from "../components/DownloadSection";
+import TestimonialSection from "../components/TestimonialSection";
 
 const AlltagLeichterLeben = () => {
   useEffect(() => {
@@ -74,6 +76,12 @@ const AlltagLeichterLeben = () => {
           </div>
         </div>
       </section>
+
+      {/* Download Section */}
+      <DownloadSection />
+
+      {/* Testimonials Section */}
+      <TestimonialSection />
     </div>
   );
 };
