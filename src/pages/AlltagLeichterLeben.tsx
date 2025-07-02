@@ -2,7 +2,6 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
-import DownloadSection from "../components/DownloadSection";
 import TestimonialSection from "../components/TestimonialSection";
 
 const AlltagLeichterLeben = () => {
@@ -66,11 +65,6 @@ const AlltagLeichterLeben = () => {
               <p>
                 Du musst nicht deinen kompletten Lebensstil umwerfen. Mit kleinen, konsequenten Schritten kannst du bereits spürbare Veränderungen erreichen. Die Tankbox-Methode setzt genau hier an: Durch kluge Vorbereitung und achtsame Rituale wird dein Alltag leichter und energiereicher.
               </p>
-            </div>
-
-            {/* Download Section integrated within the content */}
-            <div className="mt-12">
-              <DownloadSection />
             </div>
 
             <div className="mt-12 text-center">
