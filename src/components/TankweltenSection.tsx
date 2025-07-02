@@ -5,8 +5,8 @@ import { motion } from "framer-motion";
 const tankwelten = [
   {
     id: 1,
-    title: "Captain Apfel Workshop",
-    description: "Workshop mit Captain Apfel - Ernährung als Abenteuer für Vorschulkinder",
+    title: "Captain Apfel - auf gesunder Mission",
+    description: "Workshop mit Captain Apfel - Ernährung als Abenteuer für Vorschulkinder\n\nVollgas voraus! Captain Apfel lädt ein auf eine Mission ins Körperinnere. Im Fokus: das geheimnisvolle Kraftwerk, das erst mit dem richtigen Treibstoff so richtig in Fahrt kommt. Was tut unserem Körper gut – und was bremst ihn aus? Schafft es die Crew, die Kraftzentrale zu aktivieren?\nEin Workshop voller Bewegung – voller Spaß, Teamgeist und überraschender Entdeckungen rund um unseren Körper.",
     image: "/lovable-uploads/8138e97e-63f6-4434-a88a-13d9b92ff7cb.png", // Captain Apfel image
     link: "/tankwelten/captain-apfel-workshop",
   },
@@ -25,7 +25,7 @@ const TankweltenSection = () => {
       <div className="container-custom">
         <h3 className="text-xl md:text-2xl font-semibold mb-10 text-center">Die Tankwelten</h3>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="flex flex-col gap-8 max-w-4xl mx-auto">
           {tankwelten.map((welt, index) => (
             <motion.div
               key={welt.id}
