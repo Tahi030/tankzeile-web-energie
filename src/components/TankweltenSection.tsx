@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
@@ -35,7 +36,7 @@ const TankweltenSection = () => {
               viewport={{ once: true, margin: "-50px" }}
               whileHover={{ y: -5 }}
             >
-              <div className="h-48 overflow-hidden">
+              <div className={index === 0 ? "h-80" : "h-48"}>
                 <img 
                   src={welt.image} 
                   alt={welt.title} 
@@ -43,7 +44,7 @@ const TankweltenSection = () => {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-2 font-sans">{welt.title}</h3>
+                <h3 className={`font-bold mb-2 font-sans ${index === 0 ? 'text-3xl text-red-600' : 'text-xl'}`}>{welt.title}</h3>
                 <p className="text-gray-600 mb-4 whitespace-pre-line">{welt.description}</p>
                 <Link 
                   to={welt.link}
