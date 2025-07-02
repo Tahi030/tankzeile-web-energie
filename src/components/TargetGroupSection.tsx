@@ -1,11 +1,12 @@
+
 import { motion } from "framer-motion";
 
 const TargetGroupSection = () => {
   return (
-    <section className="py-16 bg-gradient-to-b from-primary-light/50 to-muted">
+    <section className="py-0 bg-gradient-to-b from-primary-light/50 to-muted">
       <div className="container-custom">
         <motion.div 
-          className="bg-white/70 backdrop-blur-sm rounded-xl p-8 shadow-md border border-primary/10 max-w-4xl mx-auto relative overflow-hidden"
+          className="bg-white/80 backdrop-blur-sm rounded-xl p-6 md:p-8 shadow-lg border border-primary/20 max-w-4xl mx-auto relative overflow-hidden -mt-6"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -16,9 +17,9 @@ const TargetGroupSection = () => {
           <div className="absolute -left-20 -bottom-20 w-64 h-64 rounded-full bg-secondary-light/10 blur-3xl pointer-events-none"></div>
           
           <div className="relative z-10">
-            <h2 className="section-title text-center mb-6">Für alle, die gesunde Wege im Alltag suchen.</h2>
+            <h2 className="text-2xl md:text-3xl font-bold mb-6 text-primary-dark text-center">Für alle, die gesunde Wege im Alltag suchen.</h2>
             
-            <div className="max-w-3xl mx-auto space-y-6 text-lg">
+            <div className="max-w-3xl mx-auto space-y-4 text-base md:text-lg">
               <p>
                 <strong>Für Menschen mit Visionen</strong>, 
                 die zurück zum Ursprung wollen – zu echter Nahrung, Verbindung und Gesundheit, jenseits von starren Vorgaben und Industrie-Dominanz.
@@ -32,7 +33,7 @@ const TargetGroupSection = () => {
                 <strong>Für alle</strong>, die neue Wege suchen, statt alte Muster zu wiederholen.
               </p>
               
-              <ul className="list-disc pl-6 space-y-4">
+              <ul className="list-disc pl-6 space-y-3">
                 <li>
                   Ich glaube: <strong>Veränderung ist einfach</strong>, wenn wir wieder spüren, was uns stärkt. 
                   Nicht durch Müssen, sondern durch kleine Impulse, die sich gut anfühlen.
@@ -45,7 +46,7 @@ const TargetGroupSection = () => {
               </ul>
               
               <motion.div 
-                className="mt-10 text-xl font-medium"
+                className="mt-8 text-lg md:text-xl font-medium text-center border-t border-primary/20 pt-6"
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ delay: 0.4, duration: 0.6 }}

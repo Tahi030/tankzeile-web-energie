@@ -99,24 +99,24 @@ const HeroSection = () => {
           </motion.div>
 
           <motion.div 
-            className="bg-white/80 backdrop-blur-sm rounded-xl p-6 md:p-8 shadow-lg border border-primary/20 mb-10 transition-all duration-300 hover:shadow-xl" 
+            className="bg-white/80 backdrop-blur-sm rounded-xl p-6 md:p-8 shadow-lg border border-primary/20 mb-0 transition-all duration-300 hover:shadow-xl" 
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
             whileHover={{ scale: 1.02 }}
           >
             <div className="relative z-10">
-              <h3 className="text-xl md:text-2xl font-bold mb-4">Ernährung, Achtsamkeit und Verbindung</h3>
-              <p className="text-lg md:text-xl mb-4">
+              <h3 className="text-2xl md:text-3xl font-bold mb-6 text-primary-dark">Ernährung, Achtsamkeit und Verbindung</h3>
+              <p className="text-base md:text-lg mb-4">
                 Schön, dass du hier bist! Ich bin Tamara Hillmann - Gründerin der Tankzeile, einem Bildungs- und Gesundheitskonzept aus Berlin.
               </p>
-              <p className="text-lg md:text-xl mb-4">
+              <p className="text-base md:text-lg mb-4">
                 Mit der Tankzeile verbinde ich mein Herzensanliegen, Kindern, Familien und Menschen, die mit Kindern leben oder arbeiten, neue Wege zu zeigen, wie gesunde Ernährung, kindgerechte Achtsamkeit und echte Verbindung im Alltag lebendig werden - praxisnah, spielerisch und nachhaltig.
               </p>
-              <p className="text-lg md:text-xl mb-4">
+              <p className="text-base md:text-lg mb-4">
                 In einer Welt, in der Fertiggerichte, Zeitdruck und Reizüberflutung oft den Ton angeben, fehlt es an Angeboten, die wirklich im Alltag ankommen. Die Tankzeile schließt diese Lücke - mit interaktiver Workshop-Erfahrung und anderen Impulsen, die gesundes Fühlen und Wachstum von klein auf unterstützen.
               </p>
-              <p className="text-lg md:text-xl">
+              <p className="text-base md:text-lg">
                 Das Ziel: ein Alltag, der dir gut tut und verbindet - mit Freude, Klarheit und Wirkung.<br />
                 Von Anfang an. Für Groß und Klein.
               </p>
