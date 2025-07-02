@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { useEffect, useState } from "react";
@@ -42,16 +43,16 @@ const HeroSection = () => {
       </div>
       
       <div className="container-custom relative z-10">
-        {/* Heart line graphic under header - prominent position */}
-        <div className="flex justify-center mb-8">
+        {/* Large heart line graphic under header - positioned to also appear behind main text */}
+        <div className="absolute top-0 left-1/2 transform -translate-x-1/2 pointer-events-none z-0">
           <img 
             src="/lovable-uploads/8202ee9c-d083-4702-8e02-ea5c894959e0.png" 
             alt="Heart line decoration" 
-            className="h-20 md:h-32 w-auto object-contain opacity-80"
+            className="h-48 md:h-80 w-auto object-contain opacity-60"
           />
         </div>
         
-        <div className="max-w-3xl mx-auto md:mx-0 md:ml-8 text-center md:text-left">
+        <div className="max-w-3xl mx-auto md:mx-0 md:ml-8 text-center md:text-left relative z-10">
           <motion.h1 
             className="text-4xl md:text-6xl font-bold mb-8 text-white drop-shadow-lg"
             initial={{ opacity: 0, y: 30 }}
