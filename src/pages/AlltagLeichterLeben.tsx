@@ -68,6 +68,11 @@ const AlltagLeichterLeben = () => {
               </p>
             </div>
 
+            {/* Download Section integrated within the content */}
+            <div className="mt-12">
+              <DownloadSection />
+            </div>
+
             <div className="mt-12 text-center">
               <Link to="/kontakt" className="btn-primary">
                 Interesse geweckt? Kontaktiere mich
@@ -76,9 +81,6 @@ const AlltagLeichterLeben = () => {
           </div>
         </div>
       </section>
-
-      {/* Download Section */}
-      <DownloadSection />
 
       {/* Testimonials Section */}
       <TestimonialSection />
