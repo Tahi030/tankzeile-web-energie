@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
@@ -14,7 +13,7 @@ const tankwelten = [
     id: 2,
     title: "Alltag leichter leben",
     description: "Die Tankbox - Wochenstruktur mit vorbereiteten Komponenten & Achtsamkeit\nKostenlose PDFs - z. B. zuckerarme Snacks, Kita-Box-Ideen",
-    image: "/lovable-uploads/e9e7091e-8bf9-4dd3-b386-ebbc5f9942f7.png",
+    image: "/lovable-uploads/a7b8b38c-22c9-4f39-8b85-d9174013bc67.png",
     link: "/tankwelten/alltag-leichter-leben",
   },
 ];
@@ -49,7 +48,7 @@ const TankweltenSection = () => {
               viewport={{ once: true, margin: "-50px" }}
               whileHover={{ y: -5 }}
             >
-              <div className={index === 0 ? "h-96" : "h-64"}>
+              <div className={index === 0 ? "h-96" : "h-80"}>
                 <img 
                   src={welt.image} 
                   alt={welt.title} 
