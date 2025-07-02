@@ -36,7 +36,7 @@ const TestimonialSection = () => {
   return (
     <TestimonialsWithMarquee
       title="Was andere sagen"
-      description="Erfahrungen von Eltern, Erziehern und Einrichtungen mit der Tankzeile"
+      description="Erfahrungen von Eltern und Einrichtungen mit der Tankzeile"
       testimonials={testimonials}
     />
   );
