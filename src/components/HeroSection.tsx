@@ -86,18 +86,6 @@ const HeroSection = () => {
             </div>
           </motion.div>
 
-          {/* CTA Button */}
-          <motion.div
-            className="mb-10"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
-          >
-            <Link to="/tankwelten/alltag-leichter-leben" className="btn-secondary inline-flex items-center gap-2 text-lg px-6 py-3 shadow-lg">
-              Jetzt eintauchen <ArrowRight size={20} />
-            </Link>
-          </motion.div>
-
           <motion.div 
             className="bg-white/90 backdrop-blur-sm rounded-xl p-6 md:p-8 shadow-xl border border-primary/20 mb-0 transition-all duration-300 hover:shadow-2xl" 
             initial={{ opacity: 0, y: 40 }}
@@ -106,7 +94,7 @@ const HeroSection = () => {
             whileHover={{ scale: 1.02 }}
           >
             <div className="relative z-10">
-              <h3 className="text-2xl md:text-3xl font-bold mb-6 text-primary-dark">Ernährung, Achtsamkeit und Verbindung</h3>
+              <h3 className="text-2xl md:text-3xl font-bold mb-6 text-primary-dark uppercase">ERNÄHRUNG, ACHTSAMKEIT UND VERBINDUNG</h3>
               <p className="text-base md:text-lg mb-4">
                 Schön, dass du hier bist! Ich bin Tamara Hillmann - Gründerin der Tankzeile, einem Bildungs- und Gesundheitskonzept aus Berlin.
               </p>

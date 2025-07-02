@@ -17,7 +17,7 @@ const TargetGroupSection = () => {
           <div className="absolute -left-20 -bottom-20 w-64 h-64 rounded-full bg-secondary-light/10 blur-3xl pointer-events-none"></div>
           
           <div className="relative z-10">
-            <h2 className="text-2xl md:text-3xl font-bold mb-6 text-primary-dark text-left">Für alle, die gesunde Wege im Alltag suchen.</h2>
+            <h2 className="text-2xl md:text-3xl font-bold mb-6 text-primary-dark text-left uppercase">FÜR ALLE, DIE GESUNDE WEGE IM ALLTAG SUCHEN</h2>
             
             <div className="max-w-3xl mx-auto space-y-4 text-base md:text-lg">
               <p>
