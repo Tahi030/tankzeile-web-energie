@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
@@ -7,14 +6,14 @@ const tankwelten = [
     id: 1,
     title: "Captain Apfel - auf gesunder Mission",
     description: "Workshop mit Captain Apfel - Ernährung als Abenteuer für Vorschulkinder\n\nVolle Obst- und Gemüsekraft voraus! Captain Apfel lädt ein auf eine Mission ins Körperinnere. Im Fokus: das geheimnisvolle Kraftwerk, das erst mit dem richtigen Treibstoff so richtig in Fahrt kommt. Was tut unserem Körper gut – und was bremst ihn aus? Schafft es die Crew, die Kraftzentrale zu aktivieren?\nEin Workshop voller Bewegung – voller Spaß, Teamgeist und überraschender Entdeckungen rund um unseren Körper.",
-    image: "/lovable-uploads/ff6c74d3-5da5-4a82-b20b-97843a8db26a.png", // New Captain Apfel image
+    image: "/lovable-uploads/ff6c74d3-5da5-4a82-b20b-97843a8db26a.png",
     link: "/tankwelten/captain-apfel-workshop",
   },
   {
     id: 2,
     title: "Alltag leichter leben",
     description: "Die Tankbox - Wochenstruktur mit vorbereiteten Komponenten & Achtsamkeit\nKostenlose PDFs - z. B. zuckerarme Snacks, Kita-Box-Ideen",
-    image: "https://images.unsplash.com/photo-1493770348161-369560ae357d?q=80&w=600&auto=format&fit=crop", // Family cooking with colorful vegetables
+    image: "https://images.unsplash.com/photo-1493770348161-369560ae357d?q=80&w=600&auto=format&fit=crop",
     link: "/tankwelten/alltag-leichter-leben",
   },
 ];
@@ -23,7 +22,20 @@ const TankweltenSection = () => {
   return (
     <section className="py-16 bg-white">
       <div className="container-custom">
-        <h3 className="text-xl md:text-2xl font-semibold mb-10 text-center">Die Tankwelten</h3>
+        {/* Special styled headline */}
+        <div className="relative mb-16 text-center">
+          <div className="inline-block relative px-12 py-6 bg-gradient-to-r from-primary-light via-accent to-primary-light rounded-3xl shadow-lg transform rotate-1">
+            <div className="absolute inset-0 bg-white/20 rounded-3xl transform -rotate-2"></div>
+            <div className="absolute inset-0 bg-secondary/10 rounded-3xl transform rotate-1"></div>
+            <h2 className="relative text-3xl md:text-4xl font-bold text-primary-dark font-sisterhood transform -rotate-1 drop-shadow-sm">
+              Die Tankwelten
+            </h2>
+            {/* Decorative elements */}
+            <div className="absolute -top-2 -left-2 w-4 h-4 bg-secondary rounded-full opacity-80"></div>
+            <div className="absolute -bottom-1 -right-3 w-3 h-3 bg-primary rounded-full opacity-60"></div>
+            <div className="absolute top-1 right-8 w-2 h-2 bg-accent-dark rounded-full opacity-70"></div>
+          </div>
+        </div>
         
         <div className="flex flex-col gap-8 max-w-4xl mx-auto">
           {tankwelten.map((welt, index) => (
