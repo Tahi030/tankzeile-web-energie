@@ -32,7 +32,7 @@ const HeroSection = () => {
           </motion.div>
 
           {/* Two Main Boxes with Equal Spacing */}
-          <div className="space-y-16">
+          <div className="space-y-20">
             {/* First Box */}
             <motion.div
               initial={{ opacity: 0, y: 50 }}
