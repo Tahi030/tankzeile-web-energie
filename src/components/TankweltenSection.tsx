@@ -30,11 +30,28 @@ const TankweltenSection = () => {
               <h2 className="text-4xl md:text-5xl font-bold text-primary-dark font-playfair mb-2">
                 Die Tankwelten
               </h2>
-              {/* Decorative dots */}
-              <div className="flex justify-center mt-4 space-x-2">
-                <div className="w-2 h-2 rounded-full bg-primary"></div>
-                <div className="w-2 h-2 rounded-full bg-secondary"></div>
-                <div className="w-2 h-2 rounded-full bg-accent"></div>
+              {/* Hand-drawn line effect */}
+              <div className="flex justify-center mt-4">
+                <svg width="120" height="8" viewBox="0 0 120 8" className="text-primary">
+                  <path
+                    d="M2,4 Q8,2 15,4 T30,3 Q40,5 50,4 T70,3 Q80,5 90,4 T110,3 Q115,2 118,4"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    fill="none"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="opacity-70"
+                    style={{
+                      filter: 'url(#roughPaper)',
+                    }}
+                  />
+                  <defs>
+                    <filter id="roughPaper">
+                      <feTurbulence baseFrequency="0.04" numOctaves="3" result="noise" seed="1" />
+                      <feDisplacementMap in="SourceGraphic" in2="noise" scale="0.8" />
+                    </filter>
+                  </defs>
+                </svg>
               </div>
             </div>
           </div>
