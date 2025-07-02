@@ -56,8 +56,9 @@ const Kontakt = () => {
                 
                 <div className="space-y-4 mb-8">
                   <div>
+                    <p className="font-medium mb-1">Tamara Hillmann</p>
                     <h3 className="font-medium mb-1">E-Mail:</h3>
-                    <p><a href="mailto:tankzeile@gmx.de" className="text-primary-dark hover:underline">Tamara Hillmann - tankzeile@gmx.de</a></p>
+                    <p><a href="mailto:tankzeile@gmx.de" className="text-primary-dark hover:underline">tankzeile@gmx.de</a></p>
                   </div>
                   
                   <div>
