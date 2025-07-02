@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { useEffect, useState } from "react";
@@ -87,21 +86,21 @@ const HeroSection = () => {
           </motion.div>
 
           <div className="relative">
-            {/* Heart line graphic behind the box - large size */}
+            {/* Heart line graphic behind the box - more visible */}
             <div className="absolute inset-0 pointer-events-none flex items-center justify-center overflow-hidden">
               <img 
                 src="/lovable-uploads/8202ee9c-d083-4702-8e02-ea5c894959e0.png" 
                 alt="Decorative heart line behind content" 
-                className="h-full w-full object-contain opacity-15 scale-150"
+                className="h-full w-full object-contain opacity-30 scale-125"
               />
             </div>
             
-            {/* Heart line graphic next to the box - positioned to the right */}
-            <div className="absolute -right-20 top-0 bottom-0 pointer-events-none hidden md:flex items-center overflow-hidden">
+            {/* Heart line graphic next to the box - positioned to the right and more visible */}
+            <div className="absolute -right-32 top-1/2 -translate-y-1/2 pointer-events-none hidden md:flex items-center overflow-visible z-0">
               <img 
                 src="/lovable-uploads/8202ee9c-d083-4702-8e02-ea5c894959e0.png" 
                 alt="Decorative heart line beside content" 
-                className="h-96 w-96 object-contain opacity-25"
+                className="h-80 w-80 object-contain opacity-40"
               />
             </div>
 
