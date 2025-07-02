@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { useEffect, useState } from "react";
@@ -43,11 +44,25 @@ const HeroSection = () => {
       
       <div className="container-custom relative z-10">
         <div className="max-w-3xl mx-auto md:mx-0 md:ml-8 text-center md:text-left relative z-10">
+          {/* Heart logo above headline */}
+          <motion.div 
+            className="flex justify-center md:justify-start mb-6"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+          >
+            <img 
+              src="/lovable-uploads/175d63c8-5464-46be-9648-405ae7a0c86d.png" 
+              alt="Tankzeile Heart Logo" 
+              className="h-16 w-16 md:h-20 md:w-20 object-contain"
+            />
+          </motion.div>
+
           <motion.h1 
             className="text-4xl md:text-6xl font-bold mb-8 text-white drop-shadow-lg"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.8, delay: 0.1 }}
           >
             <span className="md:inline block">
               Gesundheit, die schmeckt
