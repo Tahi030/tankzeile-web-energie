@@ -86,55 +86,75 @@ const HeroSection = () => {
             </div>
           </motion.div>
 
-          <motion.div 
-            className="bg-white/90 backdrop-blur-sm rounded-xl p-6 md:p-8 shadow-xl border border-primary/20 mb-0 transition-all duration-300 hover:shadow-2xl" 
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            whileHover={{ scale: 1.02 }}
-          >
-            <div className="relative z-10">
-              <div className="mb-6">
-                <h3 className="text-2xl md:text-3xl font-bold mb-4 text-primary-dark uppercase">ERNÄHRUNG, ACHTSAMKEIT UND VERBINDUNG</h3>
-                {/* Hand-drawn line effect */}
-                <div className="flex justify-start">
-                  <svg width="120" height="8" viewBox="0 0 120 8" className="text-primary">
-                    <path
-                      d="M2,4 Q8,2 15,4 T30,3 Q40,5 50,4 T70,3 Q80,5 90,4 T110,3 Q115,2 118,4"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      fill="none"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="opacity-70"
-                      style={{
-                        filter: 'url(#roughPaperHero)',
-                      }}
-                    />
-                    <defs>
-                      <filter id="roughPaperHero">
-                        <feTurbulence baseFrequency="0.04" numOctaves="3" result="noise" seed="3" />
-                        <feDisplacementMap in="SourceGraphic" in2="noise" scale="0.8" />
-                      </filter>
-                    </defs>
-                  </svg>
-                </div>
-              </div>
-              <p className="text-base md:text-lg mb-4">
-                Schön, dass du hier bist! Ich bin Tamara Hillmann - Gründerin der Tankzeile, einem Bildungs- und Gesundheitskonzept aus Berlin.
-              </p>
-              <p className="text-base md:text-lg mb-4">
-                Mit der Tankzeile verbinde ich mein Herzensanliegen, Kindern, Familien und Menschen, die mit Kindern leben oder arbeiten, neue Wege zu zeigen, wie gesunde Ernährung, kindgerechte Achtsamkeit und echte Verbindung im Alltag lebendig werden - praxisnah, spielerisch und nachhaltig.
-              </p>
-              <p className="text-base md:text-lg mb-4">
-                In einer Welt, in der Fertiggerichte, Zeitdruck und Reizüberflutung oft den Ton angeben, fehlt es an Angeboten, die wirklich im Alltag ankommen. Die Tankzeile schließt diese Lücke - mit interaktiver Workshop-Erfahrung und anderen Impulsen, die gesundes Fühlen und Wachstum von klein auf unterstützen.
-              </p>
-              <p className="text-base md:text-lg">
-                Das Ziel: ein Alltag, der dir gut tut und verbindet - mit Freude, Klarheit und Wirkung.<br />
-                Von Anfang an. Für Groß und Klein.
-              </p>
+          <div className="relative">
+            {/* Heart line graphic behind the box - large size */}
+            <div className="absolute inset-0 pointer-events-none flex items-center justify-center overflow-hidden">
+              <img 
+                src="/lovable-uploads/8202ee9c-d083-4702-8e02-ea5c894959e0.png" 
+                alt="Decorative heart line behind content" 
+                className="h-full w-full object-contain opacity-15 scale-150"
+              />
             </div>
-          </motion.div>
+            
+            {/* Heart line graphic next to the box - positioned to the right */}
+            <div className="absolute -right-20 top-0 bottom-0 pointer-events-none hidden md:flex items-center overflow-hidden">
+              <img 
+                src="/lovable-uploads/8202ee9c-d083-4702-8e02-ea5c894959e0.png" 
+                alt="Decorative heart line beside content" 
+                className="h-96 w-96 object-contain opacity-25"
+              />
+            </div>
+
+            <motion.div 
+              className="bg-white/90 backdrop-blur-sm rounded-xl p-6 md:p-8 shadow-xl border border-primary/20 mb-0 transition-all duration-300 hover:shadow-2xl relative z-10" 
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+              whileHover={{ scale: 1.02 }}
+            >
+              <div className="relative z-10">
+                <div className="mb-6">
+                  <h3 className="text-2xl md:text-3xl font-bold mb-4 text-primary-dark uppercase">ERNÄHRUNG, ACHTSAMKEIT UND VERBINDUNG</h3>
+                  {/* Hand-drawn line effect */}
+                  <div className="flex justify-start">
+                    <svg width="120" height="8" viewBox="0 0 120 8" className="text-primary">
+                      <path
+                        d="M2,4 Q8,2 15,4 T30,3 Q40,5 50,4 T70,3 Q80,5 90,4 T110,3 Q115,2 118,4"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        fill="none"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        className="opacity-70"
+                        style={{
+                          filter: 'url(#roughPaperHero)',
+                        }}
+                      />
+                      <defs>
+                        <filter id="roughPaperHero">
+                          <feTurbulence baseFrequency="0.04" numOctaves="3" result="noise" seed="3" />
+                          <feDisplacementMap in="SourceGraphic" in2="noise" scale="0.8" />
+                        </filter>
+                      </defs>
+                    </svg>
+                  </div>
+                </div>
+                <p className="text-base md:text-lg mb-4">
+                  Schön, dass du hier bist! Ich bin Tamara Hillmann - Gründerin der Tankzeile, einem Bildungs- und Gesundheitskonzept aus Berlin.
+                </p>
+                <p className="text-base md:text-lg mb-4">
+                  Mit der Tankzeile verbinde ich mein Herzensanliegen, Kindern, Familien und Menschen, die mit Kindern leben oder arbeiten, neue Wege zu zeigen, wie gesunde Ernährung, kindgerechte Achtsamkeit und echte Verbindung im Alltag lebendig werden - praxisnah, spielerisch und nachhaltig.
+                </p>
+                <p className="text-base md:text-lg mb-4">
+                  In einer Welt, in der Fertiggerichte, Zeitdruck und Reizüberflutung oft den Ton angeben, fehlt es an Angeboten, die wirklich im Alltag ankommen. Die Tankzeile schließt diese Lücke - mit interaktiver Workshop-Erfahrung und anderen Impulsen, die gesundes Fühlen und Wachstum von klein auf unterstützen.
+                </p>
+                <p className="text-base md:text-lg">
+                  Das Ziel: ein Alltag, der dir gut tut und verbindet - mit Freude, Klarheit und Wirkung.<br />
+                  Von Anfang an. Für Groß und Klein.
+                </p>
+              </div>
+            </motion.div>
+          </div>
         </div>
       </div>
     </section>
