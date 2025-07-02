@@ -12,8 +12,32 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 relative z-10">
           {/* Contact Information */}
           <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 shadow-lg border border-white/5">
-            <h3 className="text-xl font-semibold mb-4">Kontakt</h3>
+            <h3 className="text-xl font-semibold mb-2">Kontakt</h3>
+            {/* Hand-drawn line effect */}
+            <div className="flex justify-start mb-4">
+              <svg width="80" height="6" viewBox="0 0 80 6" className="text-white">
+                <path
+                  d="M2,3 Q6,1 10,3 T20,2 Q25,4 30,3 T40,2 Q45,4 50,3 T60,2 Q65,1 70,3 T78,3"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  fill="none"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="opacity-70"
+                  style={{
+                    filter: 'url(#roughPaper)',
+                  }}
+                />
+                <defs>
+                  <filter id="roughPaper">
+                    <feTurbulence baseFrequency="0.04" numOctaves="3" result="noise" seed="1" />
+                    <feDisplacementMap in="SourceGraphic" in2="noise" scale="0.6" />
+                  </filter>
+                </defs>
+              </svg>
+            </div>
             <address className="not-italic">
+              <p className="text-white font-medium">Tamara Hillmann</p>
               <p className="mt-2">Email: <a href="mailto:tankzeile@gmx.de" className="underline hover:text-gray-100">tankzeile@gmx.de</a></p>
               <p>Tel.: <a href="tel:+4915206339474" className="underline hover:text-gray-100">+49 152 06339474</a></p>
               <div className="mt-4 flex space-x-4">
