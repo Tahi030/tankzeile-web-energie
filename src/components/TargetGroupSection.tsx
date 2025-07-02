@@ -46,13 +46,35 @@ const TargetGroupSection = () => {
               </ul>
               
               <motion.div 
-                className="mt-8 text-lg md:text-xl font-medium text-center border-t border-primary/20 pt-6"
+                className="mt-8 text-lg md:text-xl font-medium text-center border-t border-primary/20 pt-6 italic"
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ delay: 0.4, duration: 0.6 }}
                 viewport={{ once: true }}
               >
-                <p>👉 Willst du wissen, wie das geht?</p>
+                <div className="flex items-center justify-center mb-2">
+                  <svg width="12" height="12" viewBox="0 0 12 12" className="text-primary mr-2">
+                    <circle
+                      cx="6"
+                      cy="6"
+                      r="4"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                      fill="none"
+                      className="opacity-70"
+                      style={{
+                        filter: 'url(#roughDot)',
+                      }}
+                    />
+                    <defs>
+                      <filter id="roughDot">
+                        <feTurbulence baseFrequency="0.08" numOctaves="2" result="noise" seed="2" />
+                        <feDisplacementMap in="SourceGraphic" in2="noise" scale="0.6" />
+                      </filter>
+                    </defs>
+                  </svg>
+                  <span>Willst du wissen, wie das geht?</span>
+                </div>
                 <p>Lern die Tankwelten kennen –</p>
                 <p>und entdecke, wie wir uns wieder verbinden können.</p>
               </motion.div>
