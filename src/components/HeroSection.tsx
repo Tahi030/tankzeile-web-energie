@@ -24,15 +24,6 @@ const HeroSection = () => {
 
   return (
     <section className="relative bg-gradient-to-b from-primary to-primary-light py-16 md:py-24 overflow-hidden">
-      {/* Heart-line graphic positioned in background - smaller size */}
-      <div className="absolute inset-0 pointer-events-none flex items-center justify-center overflow-hidden">
-        <img 
-          src="/lovable-uploads/17a7f60a-a1a3-4e82-afda-a989d7696ecb.png" 
-          alt="Decorative heart line" 
-          className="h-3/4 w-3/4 object-contain opacity-20 scale-75"
-        />
-      </div>
-      
       {/* Mobile-specific heart graphic - smaller */}
       <div className="absolute inset-0 md:hidden pointer-events-none flex justify-center items-center overflow-hidden">
         <img 
@@ -59,7 +50,7 @@ const HeroSection = () => {
           </motion.div>
 
           <motion.h1 
-            className="text-4xl md:text-6xl font-bold mb-8 text-white drop-shadow-lg"
+            className="text-4xl md:text-6xl font-bold mb-4 text-white drop-shadow-lg"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.1 }}
@@ -71,6 +62,35 @@ const HeroSection = () => {
               – für Groß und Klein
             </span>
           </motion.h1>
+
+          {/* Hand-drawn line under headline */}
+          <motion.div 
+            className="flex justify-center md:justify-start mb-8"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.15 }}
+          >
+            <svg width="120" height="8" viewBox="0 0 120 8" className="text-white">
+              <path
+                d="M2,4 Q8,2 15,4 T30,3 Q40,5 50,4 T70,3 Q80,5 90,4 T110,3 Q115,2 118,4"
+                stroke="currentColor"
+                strokeWidth="2"
+                fill="none"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="opacity-70"
+                style={{
+                  filter: 'url(#roughPaperHeroLine)',
+                }}
+              />
+              <defs>
+                <filter id="roughPaperHeroLine">
+                  <feTurbulence baseFrequency="0.04" numOctaves="3" result="noise" seed="5" />
+                  <feDisplacementMap in="SourceGraphic" in2="noise" scale="0.8" />
+                </filter>
+              </defs>
+            </svg>
+          </motion.div>
 
           <motion.div 
             className="mb-8 md:mb-8"
