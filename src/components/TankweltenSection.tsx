@@ -23,18 +23,23 @@ const TankweltenSection = () => {
   return (
     <section className="py-16 bg-white">
       <div className="container-custom">
-        {/* Special styled headline */}
-        <div className="relative mb-16 text-center">
-          <div className="inline-block relative px-12 py-6 bg-gradient-to-r from-primary-light via-accent to-primary-light rounded-3xl shadow-lg transform rotate-1">
-            <div className="absolute inset-0 bg-white/20 rounded-3xl transform -rotate-2"></div>
-            <div className="absolute inset-0 bg-secondary/10 rounded-3xl transform rotate-1"></div>
-            <h2 className="relative text-3xl md:text-4xl font-bold text-primary-dark font-sisterhood transform -rotate-1 drop-shadow-sm">
-              Die Tankwelten
-            </h2>
-            {/* Decorative elements */}
-            <div className="absolute -top-2 -left-2 w-4 h-4 bg-secondary rounded-full opacity-80"></div>
-            <div className="absolute -bottom-1 -right-3 w-3 h-3 bg-primary rounded-full opacity-60"></div>
-            <div className="absolute top-1 right-8 w-2 h-2 bg-accent-dark rounded-full opacity-70"></div>
+        {/* Redesigned headline to match page style */}
+        <div className="text-center mb-16">
+          <div className="inline-block relative">
+            <div className="bg-gradient-to-r from-primary/20 via-accent/30 to-secondary/20 rounded-2xl p-8 shadow-lg">
+              <h2 className="text-4xl md:text-5xl font-bold text-primary-dark font-playfair mb-2">
+                Die Tankwelten
+              </h2>
+              <p className="text-lg text-gray-600 font-sans">
+                Meine Angebote für Sie
+              </p>
+              {/* Decorative dots */}
+              <div className="flex justify-center mt-4 space-x-2">
+                <div className="w-2 h-2 rounded-full bg-primary"></div>
+                <div className="w-2 h-2 rounded-full bg-secondary"></div>
+                <div className="w-2 h-2 rounded-full bg-accent"></div>
+              </div>
+            </div>
           </div>
         </div>
         
@@ -54,7 +59,9 @@ const TankweltenSection = () => {
                   src={welt.image} 
                   alt={welt.title} 
                   className={`w-full h-full transition-transform hover:scale-105 duration-300 ${
-                    index === 0 ? 'object-contain bg-white' : 'object-contain bg-white p-4'
+                    index === 0 
+                      ? 'object-contain bg-gradient-to-br from-primary-light/30 via-accent-light/20 to-secondary-light/30' 
+                      : 'object-contain bg-gradient-to-br from-secondary-light/30 via-primary-light/20 to-accent-light/30 p-4'
                   }`}
                 />
               </div>
