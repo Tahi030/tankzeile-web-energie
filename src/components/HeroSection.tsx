@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { useEffect, useState } from "react";
@@ -23,28 +24,28 @@ const HeroSection = () => {
 
   return (
     <section className="relative bg-gradient-to-b from-primary to-primary-light py-16 md:py-24 overflow-hidden">
-      {/* Heart-line graphic positioned on the right side - larger for desktop */}
-      <div className="absolute right-0 top-0 h-full w-1/2 pointer-events-none flex items-center justify-end overflow-hidden">
+      {/* Heart-line graphic positioned to cover almost the entire page */}
+      <div className="absolute inset-0 pointer-events-none flex items-center justify-center overflow-hidden">
         <img 
           src="/lovable-uploads/17a7f60a-a1a3-4e82-afda-a989d7696ecb.png" 
           alt="Decorative heart line" 
-          className="h-auto max-h-full w-auto object-contain opacity-90 scale-110"
+          className="h-full w-full object-cover opacity-30 scale-150"
         />
       </div>
       
-      {/* Mobile-specific heart graphic - larger */}
-      <div className="absolute right-0 top-0 h-full w-full md:hidden pointer-events-none flex justify-end overflow-hidden">
+      {/* Mobile-specific heart graphic - covering more of the screen */}
+      <div className="absolute inset-0 md:hidden pointer-events-none flex justify-center items-center overflow-hidden">
         <img 
           src="/lovable-uploads/17a7f60a-a1a3-4e82-afda-a989d7696ecb.png" 
           alt="Decorative heart line" 
-          className="h-auto max-h-full w-auto object-contain opacity-90 scale-125 pr-2"
+          className="h-full w-full object-cover opacity-30 scale-125"
         />
       </div>
       
       <div className="container-custom relative z-10">
         <div className="max-w-3xl mx-auto md:mx-0 md:ml-8 text-center md:text-left">
           <motion.h1 
-            className="text-4xl md:text-6xl font-bold mb-8 text-white"
+            className="text-4xl md:text-6xl font-bold mb-8 text-white drop-shadow-lg"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -63,7 +64,7 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <p className="text-2xl md:text-3xl font-medium mb-4 text-secondary">
+            <p className="text-2xl md:text-3xl font-medium mb-4 text-secondary drop-shadow-md">
               Die Tankzeile verbindet.
             </p>
             {/* Increase height of container to ensure enough space for all animated sentences */}
@@ -71,7 +72,7 @@ const HeroSection = () => {
               {connectionSentences.map((sentence, index) => (
                 <motion.p
                   key={index}
-                  className="text-3xl md:text-4xl font-semibold absolute w-full text-secondary leading-normal"
+                  className="text-3xl md:text-4xl font-semibold absolute w-full text-secondary leading-normal drop-shadow-md"
                   initial={{ opacity: 0, y: 50 }}
                   animate={{
                     opacity: sentenceIndex === index ? 1 : 0,
@@ -92,13 +93,13 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
           >
-            <Link to="/tankwelten/alltag-leichter-leben" className="btn-secondary inline-flex items-center gap-2 text-lg px-6 py-3">
+            <Link to="/tankwelten/alltag-leichter-leben" className="btn-secondary inline-flex items-center gap-2 text-lg px-6 py-3 shadow-lg">
               Jetzt eintauchen <ArrowRight size={20} />
             </Link>
           </motion.div>
 
           <motion.div 
-            className="bg-white/80 backdrop-blur-sm rounded-xl p-6 md:p-8 shadow-lg border border-primary/20 mb-0 transition-all duration-300 hover:shadow-xl" 
+            className="bg-white/90 backdrop-blur-sm rounded-xl p-6 md:p-8 shadow-xl border border-primary/20 mb-0 transition-all duration-300 hover:shadow-2xl" 
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
