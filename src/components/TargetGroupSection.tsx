@@ -17,7 +17,32 @@ const TargetGroupSection = () => {
           <div className="absolute -left-20 -bottom-20 w-64 h-64 rounded-full bg-secondary-light/10 blur-3xl pointer-events-none"></div>
           
           <div className="relative z-10">
-            <h2 className="text-2xl md:text-3xl font-bold mb-6 text-primary-dark text-left uppercase">FÜR ALLE, DIE GESUNDE WEGE IM ALLTAG SUCHEN</h2>
+            <div className="mb-6">
+              <h2 className="text-2xl md:text-3xl font-bold mb-4 text-primary-dark text-left uppercase">FÜR ALLE, DIE GESUNDE WEGE IM ALLTAG SUCHEN</h2>
+              {/* Hand-drawn line effect */}
+              <div className="flex justify-start">
+                <svg width="120" height="8" viewBox="0 0 120 8" className="text-primary">
+                  <path
+                    d="M2,4 Q8,2 15,4 T30,3 Q40,5 50,4 T70,3 Q80,5 90,4 T110,3 Q115,2 118,4"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    fill="none"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="opacity-70"
+                    style={{
+                      filter: 'url(#roughPaperTarget)',
+                    }}
+                  />
+                  <defs>
+                    <filter id="roughPaperTarget">
+                      <feTurbulence baseFrequency="0.04" numOctaves="3" result="noise" seed="1" />
+                      <feDisplacementMap in="SourceGraphic" in2="noise" scale="0.8" />
+                    </filter>
+                  </defs>
+                </svg>
+              </div>
+            </div>
             
             <div className="max-w-3xl mx-auto space-y-4 text-base md:text-lg">
               <p>

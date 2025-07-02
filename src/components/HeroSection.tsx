@@ -94,7 +94,32 @@ const HeroSection = () => {
             whileHover={{ scale: 1.02 }}
           >
             <div className="relative z-10">
-              <h3 className="text-2xl md:text-3xl font-bold mb-6 text-primary-dark uppercase">ERNÄHRUNG, ACHTSAMKEIT UND VERBINDUNG</h3>
+              <div className="mb-6">
+                <h3 className="text-2xl md:text-3xl font-bold mb-4 text-primary-dark uppercase">ERNÄHRUNG, ACHTSAMKEIT UND VERBINDUNG</h3>
+                {/* Hand-drawn line effect */}
+                <div className="flex justify-start">
+                  <svg width="120" height="8" viewBox="0 0 120 8" className="text-primary">
+                    <path
+                      d="M2,4 Q8,2 15,4 T30,3 Q40,5 50,4 T70,3 Q80,5 90,4 T110,3 Q115,2 118,4"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      fill="none"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="opacity-70"
+                      style={{
+                        filter: 'url(#roughPaperHero)',
+                      }}
+                    />
+                    <defs>
+                      <filter id="roughPaperHero">
+                        <feTurbulence baseFrequency="0.04" numOctaves="3" result="noise" seed="3" />
+                        <feDisplacementMap in="SourceGraphic" in2="noise" scale="0.8" />
+                      </filter>
+                    </defs>
+                  </svg>
+                </div>
+              </div>
               <p className="text-base md:text-lg mb-4">
                 Schön, dass du hier bist! Ich bin Tamara Hillmann - Gründerin der Tankzeile, einem Bildungs- und Gesundheitskonzept aus Berlin.
               </p>

@@ -33,15 +33,6 @@ const Kontakt = () => {
                 
                 <div className="space-y-4 mb-8">
                   <div>
-                    <h3 className="font-medium mb-1">Adresse:</h3>
-                    <address className="not-italic">
-                      Tamara Hillmann<br />
-                      Friedrichshagener Straße 5 G<br />
-                      12555 Berlin
-                    </address>
-                  </div>
-                  
-                  <div>
                     <h3 className="font-medium mb-1">E-Mail:</h3>
                     <p><a href="mailto:tankzeile@gmx.de" className="text-primary-dark hover:underline">tankzeile@gmx.de</a></p>
                   </div>

@@ -89,7 +89,6 @@ const Header = () => {
               </div>
               
               <NavItem to="/fuer-einrichtungen" label="Für Einrichtungen/Unternehmen" />
-              <NavItem to="/kontakt" label="Kontakt" />
             </div>
           </nav>
           
@@ -138,9 +137,6 @@ const Header = () => {
             
             <Link to="/fuer-einrichtungen" className={`block px-3 py-2 rounded-md text-base font-medium hover:bg-primary-light ${location.pathname === '/fuer-einrichtungen' ? 'text-primary-dark font-bold' : ''}`} onClick={() => {setMobileMenuOpen(false); window.scrollTo(0, 0);}}>
               Für Einrichtungen/Unternehmen
-            </Link>
-            <Link to="/kontakt" className={`block px-3 py-2 rounded-md text-base font-medium hover:bg-primary-light ${location.pathname === '/kontakt' ? 'text-primary-dark font-bold' : ''}`} onClick={() => {setMobileMenuOpen(false); window.scrollTo(0, 0);}}>
-              Kontakt
             </Link>
             <Link to="/kontakt" className="block mx-3 mt-3 px-3 py-3 bg-secondary text-white rounded-md text-base font-medium" onClick={() => {setMobileMenuOpen(false); window.scrollTo(0, 0);}}>
               Jetzt anfragen
