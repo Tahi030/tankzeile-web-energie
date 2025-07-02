@@ -106,17 +106,19 @@ const HeroSection = () => {
             whileHover={{ scale: 1.02 }}
           >
             <div className="relative z-10">
-              <h3 className="text-xl md:text-2xl font-bold mb-4">Ernährung, Achtsamkeit und Verbindung. Neu gedacht.</h3>
+              <h3 className="text-xl md:text-2xl font-bold mb-4">Ernährung, Achtsamkeit und Verbindung</h3>
               <p className="text-lg md:text-xl mb-4">
-                Die Tankzeile ist ein Bildungs- und Gesundheitskonzept, das moderne Ernährung, alltagsnahe Achtsamkeit und soziale Verbindung miteinander vereint – praxisnah, kindgerecht und nachhaltig.
+                Great to have you here! I'm Tamara Hillmann - founder of Tankzeile, an education and health concept from Berlin.
               </p>
               <p className="text-lg md:text-xl mb-4">
-                In einer Gesellschaft, in der Fertiggerichte, Zeitdruck und Reizüberflutung den Alltag prägen, fehlt es an fundierten, greifbaren Angeboten, die ganzheitliches Wohlbefinden frühzeitig fördern.<br />
-                Die Tankzeile schließt diese Lücke – mit interaktiven Workshops, strukturierten Wochenkonzepten und hochwertigen Inhalten für Familien, Kinder und pädagogische Einrichtungen.
+                With Tankzeile, I combine my heart's desire to show children, families and people who live or work with children new ways of bringing healthy eating, child-friendly mindfulness and genuine connection to life in everyday life - in a practical, playful and sustainable way.
+              </p>
+              <p className="text-lg md:text-xl mb-4">
+                In a world where convenience food, time pressure and sensory overload often set the tone, there is a lack of offers that really resonate in everyday life. Tankzeile fills this gap - with an interactive workshop experience and other impulses that support healthy feeling and growth from an early age.
               </p>
               <p className="text-lg md:text-xl">
-                Das Ziel: ein gesunder Alltag, der verbindet – mit Freude, Klarheit und Wirkung.<br />
-                Von Anfang an. Für Groß und Klein.
+                The goal: an everyday life that does you good and connects you - with joy, clarity and impact.<br />
+                Right from the start. For young and old.
               </p>
             </div>
           </motion.div>
