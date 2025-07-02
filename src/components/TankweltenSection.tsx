@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
@@ -30,9 +29,6 @@ const TankweltenSection = () => {
               <h2 className="text-4xl md:text-5xl font-bold text-primary-dark font-playfair mb-2">
                 Die Tankwelten
               </h2>
-              <p className="text-lg text-gray-600 font-sans">
-                Meine Angebote für Sie
-              </p>
               {/* Decorative dots */}
               <div className="flex justify-center mt-4 space-x-2">
                 <div className="w-2 h-2 rounded-full bg-primary"></div>
