@@ -7,7 +7,7 @@ const tankwelten = [
     id: 1,
     title: "Captain Apfel - auf gesunder Mission",
     description: "Workshop mit Captain Apfel - Ernährung als Abenteuer für Vorschulkinder\n\nVolle Obst- und Gemüsekraft voraus! Captain Apfel lädt ein auf eine Mission ins Körperinnere. Im Fokus: das geheimnisvolle Kraftwerk, das erst mit dem richtigen Treibstoff so richtig in Fahrt kommt. Was tut unserem Körper gut – und was bremst ihn aus? Schafft es die Crew, die Kraftzentrale zu aktivieren?\nEin Workshop voller Bewegung – voller Spaß, Teamgeist und überraschender Entdeckungen rund um unseren Körper.",
-    image: "/lovable-uploads/8138e97e-63f6-4434-a88a-13d9b92ff7cb.png", // Captain Apfel image
+    image: "/lovable-uploads/ff6c74d3-5da5-4a82-b20b-97843a8db26a.png", // New Captain Apfel image
     link: "/tankwelten/captain-apfel-workshop",
   },
   {
