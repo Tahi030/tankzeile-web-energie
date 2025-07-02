@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
@@ -48,12 +49,12 @@ const TankweltenSection = () => {
               viewport={{ once: true, margin: "-50px" }}
               whileHover={{ y: -5 }}
             >
-              <div className={index === 0 ? "h-96" : "h-80"}>
+              <div className={index === 0 ? "h-96" : "h-64"}>
                 <img 
                   src={welt.image} 
                   alt={welt.title} 
                   className={`w-full h-full transition-transform hover:scale-105 duration-300 ${
-                    index === 0 ? 'object-contain bg-white' : 'object-cover'
+                    index === 0 ? 'object-contain bg-white' : 'object-contain bg-white p-4'
                   }`}
                 />
               </div>
