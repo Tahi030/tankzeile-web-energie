@@ -15,7 +15,7 @@ const Index = () => {
     // Set meta description
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Tankzeile is an educational and health-based concept from Berlin. Founder Tamara Hillmann offers workshops, ideas and impulses around nutrition, mindfulness and connection – for children, parents and everyone who lives or works with kids.');
+      metaDescription.setAttribute('content', 'Bildungs- & Gesundheitskonzept aus Berlin: Workshops & Impulse rund um Ernährung, Achtsamkeit und Verbindung – von Tamara Hillmann.');
     }
     
     // Apply background color to the body
