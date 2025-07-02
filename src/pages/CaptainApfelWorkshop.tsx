@@ -19,7 +19,7 @@ const CaptainApfelWorkshop = () => {
       <section className="bg-accent-light py-16 md:py-24">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
-            <h1 className="text-3xl md:text-4xl font-bold mb-6">CAPTAIN APFEL WORKSHOP</h1>
+            <h1 className="text-3xl md:text-4xl font-bold mb-6">Captain Apfel Workshop</h1>
             <p className="text-lg mb-6">
               Für Vorschulkinder, die spielerisch die Welt der gesunden Ernährung entdecken möchten.
             </p>
