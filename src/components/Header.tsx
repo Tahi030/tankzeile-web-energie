@@ -13,7 +13,7 @@ const NavItem = ({ to, label, dropdown = false, children }: { to: string, label:
       <div className="relative group">
         <button 
           onClick={() => setIsOpen(!isOpen)}
-          className={`px-3 py-2 rounded-md text-lg font-medium hover:bg-primary/10 transition-colors ${isActive ? 'text-white font-semibold' : ''}`}
+          className={`px-2 lg:px-3 py-2 rounded-md text-base lg:text-lg font-medium hover:bg-primary/10 transition-colors whitespace-nowrap ${isActive ? 'text-white font-semibold' : ''}`}
         >
           {label}
           <span className="ml-1">▼</span>
@@ -32,7 +32,7 @@ const NavItem = ({ to, label, dropdown = false, children }: { to: string, label:
   return (
     <Link 
       to={to} 
-      className={`px-3 py-2 rounded-md text-lg font-medium hover:bg-primary/10 transition-colors ${isActive ? 'text-white font-semibold' : ''}`}
+      className={`px-2 lg:px-3 py-2 rounded-md text-base lg:text-lg font-medium hover:bg-primary/10 transition-colors whitespace-nowrap ${isActive ? 'text-white font-semibold' : ''}`}
       onClick={() => window.scrollTo(0, 0)}
     >
       {label}
@@ -73,11 +73,11 @@ const Header = () => {
 
           {/* Desktop Navigation - centered */}
           <nav className="hidden md:flex items-center justify-center flex-1">
-            <div className="flex items-center justify-center space-x-1 md:space-x-2 lg:space-x-4">
+            <div className="flex items-center justify-center space-x-1 lg:space-x-2">
               <NavItem to="/" label="Home" />
               
               <div className="relative group">
-                <div className={`px-3 py-2 rounded-md text-lg font-medium hover:bg-primary/20 transition-colors cursor-pointer group-hover:bg-primary/20 ${location.pathname.includes('/tankwelten/') ? 'text-white font-semibold' : ''}`}>
+                <div className={`px-2 lg:px-3 py-2 rounded-md text-base lg:text-lg font-medium hover:bg-primary/20 transition-colors cursor-pointer group-hover:bg-primary/20 whitespace-nowrap ${location.pathname.includes('/tankwelten/') ? 'text-white font-semibold' : ''}`}>
                   Tankwelten <span className="ml-1 text-xs">▼</span>
                 </div>
                 <div className="absolute left-0 invisible group-hover:visible opacity-0 group-hover:opacity-100 mt-2 w-60 rounded-md shadow-lg bg-white ring-1 ring-primary/20 z-50 transition-all duration-150">
@@ -97,7 +97,7 @@ const Header = () => {
           <div className="hidden md:block">
             <Link 
               to="/kontakt"
-              className={`bg-secondary hover:bg-secondary-dark text-white px-5 py-2 rounded-md transition-colors text-lg font-medium`}
+              className={`bg-secondary hover:bg-secondary-dark text-white px-4 lg:px-5 py-2 rounded-md transition-colors text-base lg:text-lg font-medium whitespace-nowrap`}
               onClick={() => window.scrollTo(0, 0)}
             >
               Jetzt anfragen

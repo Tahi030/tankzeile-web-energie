@@ -24,21 +24,21 @@ const HeroSection = () => {
 
   return (
     <section className="relative bg-gradient-to-b from-primary to-primary-light py-16 md:py-24 overflow-hidden">
-      {/* Heart-line graphic positioned to cover almost the entire page */}
+      {/* Heart-line graphic positioned in background - smaller size */}
       <div className="absolute inset-0 pointer-events-none flex items-center justify-center overflow-hidden">
         <img 
           src="/lovable-uploads/17a7f60a-a1a3-4e82-afda-a989d7696ecb.png" 
           alt="Decorative heart line" 
-          className="h-full w-full object-cover opacity-30 scale-150"
+          className="h-3/4 w-3/4 object-contain opacity-20 scale-75"
         />
       </div>
       
-      {/* Mobile-specific heart graphic - covering more of the screen */}
+      {/* Mobile-specific heart graphic - smaller */}
       <div className="absolute inset-0 md:hidden pointer-events-none flex justify-center items-center overflow-hidden">
         <img 
           src="/lovable-uploads/17a7f60a-a1a3-4e82-afda-a989d7696ecb.png" 
           alt="Decorative heart line" 
-          className="h-full w-full object-cover opacity-30 scale-125"
+          className="h-2/3 w-2/3 object-contain opacity-20 scale-75"
         />
       </div>
       
