@@ -14,9 +14,6 @@ const Footer = () => {
           <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 shadow-lg border border-white/5">
             <h3 className="text-xl font-semibold mb-4">Kontakt</h3>
             <address className="not-italic">
-              <p>Tamara Hillmann</p>
-              <p>Friedrichshagener Straße 5 G</p>
-              <p>12555 Berlin</p>
               <p className="mt-2">Email: <a href="mailto:tankzeile@gmx.de" className="underline hover:text-gray-100">tankzeile@gmx.de</a></p>
               <p>Tel.: <a href="tel:+4915206339474" className="underline hover:text-gray-100">+49 152 06339474</a></p>
               <div className="mt-4 flex space-x-4">

@@ -60,17 +60,8 @@ const Header = () => {
     <header className="bg-primary sticky top-0 z-50 shadow-md">
       <div className="container-custom">
         <div className="flex justify-between items-center py-2">
-          {/* Logo - adjusted margin */}
-          <Link to="/" className="flex items-center" onClick={() => window.scrollTo(0, 0)}>
-            <img 
-              src="/lovable-uploads/a6f824db-303d-44a3-a67c-b385a9113a8d.png"
-              alt="Tankzeile Logo"
-              className="h-10 md:h-12 ml-0 md:ml-2" 
-            />
-          </Link>
-
-          {/* Desktop Navigation - added more even distribution */}
-          <nav className="hidden md:flex items-center justify-center flex-1 mx-4">
+          {/* Desktop Navigation - centered */}
+          <nav className="hidden md:flex items-center justify-center flex-1">
             <div className="flex items-center justify-center space-x-1 md:space-x-2 lg:space-x-4">
               <NavItem to="/" label="Home" />
               
@@ -81,9 +72,7 @@ const Header = () => {
                 <div className="absolute left-0 invisible group-hover:visible opacity-0 group-hover:opacity-100 mt-2 w-60 rounded-md shadow-lg bg-white ring-1 ring-primary/20 z-50 transition-all duration-150">
                   <div className="py-1" role="menu" aria-orientation="vertical">
                     <DropdownItem to="/tankwelten/captain-apfel-workshop" label="Captain Apfel Workshop" />
-                    <DropdownItem to="/tankwelten/schatzruhe" label="Schatz(t)ruhe" />
                     <DropdownItem to="/tankwelten/alltag-leichter-leben" label="Alltag leichter leben" />
-                    <DropdownItem to="/tankwelten/verstehen-veraendern" label="Verstehen & Verändern" />
                   </div>
                 </div>
               </div>
@@ -93,7 +82,7 @@ const Header = () => {
             </div>
           </nav>
           
-          {/* CTA Button - moved outside of regular navigation for better spacing */}
+          {/* CTA Button */}
           <div className="hidden md:block">
             <Link 
               to="/kontakt"
@@ -131,14 +120,8 @@ const Header = () => {
               <Link to="/tankwelten/captain-apfel-workshop" className="block pl-6 py-2 text-sm" onClick={() => {setMobileMenuOpen(false); window.scrollTo(0, 0);}}>
                 Captain Apfel Workshop
               </Link>
-              <Link to="/tankwelten/schatzruhe" className="block pl-6 py-2 text-sm" onClick={() => {setMobileMenuOpen(false); window.scrollTo(0, 0);}}>
-                Schatz(t)ruhe
-              </Link>
               <Link to="/tankwelten/alltag-leichter-leben" className="block pl-6 py-2 text-sm" onClick={() => {setMobileMenuOpen(false); window.scrollTo(0, 0);}}>
                 Alltag leichter leben
-              </Link>
-              <Link to="/tankwelten/verstehen-veraendern" className="block pl-6 py-2 text-sm" onClick={() => {setMobileMenuOpen(false); window.scrollTo(0, 0);}}>
-                Verstehen & Verändern
               </Link>
             </div>
             

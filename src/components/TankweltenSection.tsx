@@ -17,29 +17,15 @@ const tankwelten = [
     image: "https://images.unsplash.com/photo-1493770348161-369560ae357d?q=80&w=600&auto=format&fit=crop", // Family cooking with colorful vegetables
     link: "/tankwelten/alltag-leichter-leben",
   },
-  {
-    id: 3,
-    title: "Verstehen & Verändern",
-    description: "(D)ein Wegweiser hinter den Masken des Alltags\nFür Körper, Geist und Seele",
-    image: "https://images.unsplash.com/photo-1545205597-3d9d02c29597?q=80&w=600&auto=format&fit=crop", // Person doing meditation/relaxation exercise
-    link: "/tankwelten/verstehen-veraendern",
-  },
-  {
-    id: 4,
-    title: "Schatz(t)ruhe",
-    description: "Eltern und Kinder erleben Ruhe, Nähe und Verbindung durch bewusste Sinneserfahrungen und Achtsamkeitsübungen",
-    image: "/lovable-uploads/4b878cec-1fcb-4ff6-a1c2-ddce369393a7.png", // Schatz(t)ruhe image
-    link: "/tankwelten/schatzruhe",
-  },
 ];
 
 const TankweltenSection = () => {
   return (
     <section className="py-16 bg-white">
       <div className="container-custom">
-        <h3 className="text-xl md:text-2xl font-semibold mb-10 text-center">Unsere Angebote</h3>
+        <h3 className="text-xl md:text-2xl font-semibold mb-10 text-center">Die Tankwelten</h3>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {tankwelten.map((welt, index) => (
             <motion.div
               key={welt.id}

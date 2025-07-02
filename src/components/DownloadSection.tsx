@@ -89,18 +89,6 @@ const DownloadSection = () => {
             </motion.div>
           ))}
         </div>
-
-        <motion.div 
-          className="mt-10 text-center text-gray-700 max-w-2xl mx-auto"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.5 }}
-          viewport={{ once: true }}
-        >
-          <p className="italic">
-            "Schon über 100 Eltern haben unsere Tipps heruntergeladen – 100 % kostenlos und in der Praxis erprobt."
-          </p>
-        </motion.div>
       </div>
     </section>
   );
