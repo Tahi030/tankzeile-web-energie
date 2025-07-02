@@ -26,7 +26,7 @@ const HeroSection = () => {
       {/* Heart-line graphic positioned on the right side - larger for desktop */}
       <div className="absolute right-0 top-0 h-full w-1/2 pointer-events-none flex items-center justify-end overflow-hidden">
         <img 
-          src="/lovable-uploads/b94ff287-1b76-4dc8-86b0-34b6c90ce1d2.png" 
+          src="/lovable-uploads/17a7f60a-a1a3-4e82-afda-a989d7696ecb.png" 
           alt="Decorative heart line" 
           className="h-auto max-h-full w-auto object-contain opacity-90 scale-110"
         />
@@ -35,7 +35,7 @@ const HeroSection = () => {
       {/* Mobile-specific heart graphic - larger */}
       <div className="absolute right-0 top-0 h-full w-full md:hidden pointer-events-none flex justify-end overflow-hidden">
         <img 
-          src="/lovable-uploads/b94ff287-1b76-4dc8-86b0-34b6c90ce1d2.png" 
+          src="/lovable-uploads/17a7f60a-a1a3-4e82-afda-a989d7696ecb.png" 
           alt="Decorative heart line" 
           className="h-auto max-h-full w-auto object-contain opacity-90 scale-125 pr-2"
         />
