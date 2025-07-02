@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { useEffect, useState } from "react";
@@ -24,21 +23,21 @@ const HeroSection = () => {
 
   return (
     <section className="relative bg-gradient-to-b from-primary to-primary-light py-16 md:py-24 overflow-hidden">
-      {/* Heart-line graphic positioned on the right side */}
+      {/* Heart-line graphic positioned on the right side - larger for desktop */}
       <div className="absolute right-0 top-0 h-full w-1/2 pointer-events-none flex items-center justify-end overflow-hidden">
         <img 
           src="/lovable-uploads/b94ff287-1b76-4dc8-86b0-34b6c90ce1d2.png" 
           alt="Decorative heart line" 
-          className="h-auto max-h-[90%] md:max-h-[95%] object-contain opacity-90 pr-0"
+          className="h-auto max-h-full w-auto object-contain opacity-90 scale-110"
         />
       </div>
       
-      {/* Mobile-specific heart graphic */}
-      <div className="absolute right-0 top-10 h-1/2 w-full md:hidden pointer-events-none flex justify-end overflow-hidden">
+      {/* Mobile-specific heart graphic - larger */}
+      <div className="absolute right-0 top-0 h-full w-full md:hidden pointer-events-none flex justify-end overflow-hidden">
         <img 
           src="/lovable-uploads/b94ff287-1b76-4dc8-86b0-34b6c90ce1d2.png" 
           alt="Decorative heart line" 
-          className="h-auto w-3/4 object-contain opacity-90 pr-4"
+          className="h-auto max-h-full w-auto object-contain opacity-90 scale-125 pr-2"
         />
       </div>
       
