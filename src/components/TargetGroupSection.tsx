@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 
 const TargetGroupSection = () => {
@@ -17,7 +16,7 @@ const TargetGroupSection = () => {
           <div className="absolute -left-20 -bottom-20 w-64 h-64 rounded-full bg-secondary-light/10 blur-3xl pointer-events-none"></div>
           
           <div className="relative z-10">
-            <h2 className="section-title text-center mb-6">Für Familien, PädagogInnen und alle, die gesunde Wege im Alltag suchen.</h2>
+            <h2 className="section-title text-center mb-6">Für alle, die gesunde Wege im Alltag suchen.</h2>
             
             <div className="max-w-3xl mx-auto space-y-6 text-lg">
               <p>
