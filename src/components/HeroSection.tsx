@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { useEffect, useState } from "react";
@@ -8,7 +7,7 @@ const HeroSection = () => {
   const [sentenceIndex, setSentenceIndex] = useState(0);
   const connectionSentences = [
     "Eltern mit Kindern.",
-    "Menschen mit Menschen.",
+    "Menschen mit Menschen.", 
     "Dich mit dir."
   ];
 
@@ -43,7 +42,7 @@ const HeroSection = () => {
             transition={{ duration: 0.8 }}
           >
             <img 
-              src="/lovable-uploads/175d63c8-5464-46be-9648-405ae7a0c86d.png" 
+              src="/lovable-uploads/61605cec-c854-4aab-95b5-f78274325f7e.png" 
               alt="Tankzeile Heart Logo" 
               className="h-16 w-16 md:h-20 md:w-20 object-contain"
             />
