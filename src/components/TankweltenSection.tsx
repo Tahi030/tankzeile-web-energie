@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
@@ -23,38 +22,54 @@ const TankweltenSection = () => {
   return (
     <section className="py-16 bg-white">
       <div className="container-custom">
-        {/* Redesigned headline to match page style */}
+        {/* Enhanced headline design that matches the page style */}
         <div className="text-center mb-16">
-          <div className="inline-block relative">
-            <div className="bg-gradient-to-r from-primary/20 via-accent/30 to-secondary/20 rounded-2xl p-8 shadow-lg">
-              <h2 className="text-4xl md:text-5xl font-bold text-primary-dark font-playfair mb-2">
-                Die Tankwelten
-              </h2>
-              {/* Hand-drawn line effect */}
-              <div className="flex justify-center mt-4">
-                <svg width="120" height="8" viewBox="0 0 120 8" className="text-primary">
-                  <path
-                    d="M2,4 Q8,2 15,4 T30,3 Q40,5 50,4 T70,3 Q80,5 90,4 T110,3 Q115,2 118,4"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    fill="none"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="opacity-70"
-                    style={{
-                      filter: 'url(#roughPaper)',
-                    }}
-                  />
-                  <defs>
-                    <filter id="roughPaper">
-                      <feTurbulence baseFrequency="0.04" numOctaves="3" result="noise" seed="1" />
-                      <feDisplacementMap in="SourceGraphic" in2="noise" scale="0.8" />
-                    </filter>
-                  </defs>
-                </svg>
+          <motion.div 
+            className="inline-block relative"
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-8 md:p-12 shadow-xl border border-primary/30 relative overflow-hidden">
+              {/* Background decorative elements */}
+              <div className="absolute -right-16 -top-16 w-48 h-48 rounded-full bg-primary-light/20 blur-3xl pointer-events-none"></div>
+              <div className="absolute -left-16 -bottom-16 w-48 h-48 rounded-full bg-accent-light/20 blur-3xl pointer-events-none"></div>
+              
+              <div className="relative z-10">
+                <h2 className="text-4xl md:text-6xl font-bold text-primary-dark font-playfair mb-4 uppercase italic">
+                  Die Tankwelten
+                </h2>
+                <p className="text-lg md:text-xl text-primary-dark/80 italic font-medium max-w-2xl mx-auto">
+                  Mein Angebot für dich
+                </p>
               </div>
             </div>
-          </div>
+            
+            {/* Hand-drawn line effect - keeping as requested */}
+            <div className="flex justify-center mt-6">
+              <svg width="120" height="8" viewBox="0 0 120 8" className="text-primary">
+                <path
+                  d="M2,4 Q8,2 15,4 T30,3 Q40,5 50,4 T70,3 Q80,5 90,4 T110,3 Q115,2 118,4"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  fill="none"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="opacity-70"
+                  style={{
+                    filter: 'url(#roughPaper)',
+                  }}
+                />
+                <defs>
+                  <filter id="roughPaper">
+                    <feTurbulence baseFrequency="0.04" numOctaves="3" result="noise" seed="1" />
+                    <feDisplacementMap in="SourceGraphic" in2="noise" scale="0.8" />
+                  </filter>
+                </defs>
+              </svg>
+            </div>
+          </motion.div>
         </div>
         
         <div className="flex flex-col gap-8 max-w-4xl mx-auto">
