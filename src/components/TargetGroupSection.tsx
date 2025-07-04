@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 
 const TargetGroupSection = () => {
@@ -18,7 +17,6 @@ const TargetGroupSection = () => {
           
           <div className="relative z-10">
             <div className="mb-6">
-              <h2 className="text-2xl md:text-3xl mb-4 text-primary-dark text-left uppercase italic font-normal">ERNÄHRUNG, ACHTSAMKEIT UND VERBINDUNG</h2>
               <h2 className="text-2xl md:text-3xl mb-4 text-primary-dark text-left uppercase italic font-normal">FÜR ALLE, DIE GESUNDE WEGE IM ALLTAG SUCHEN</h2>
               {/* Hand-drawn line effect */}
               <div className="flex justify-start">
