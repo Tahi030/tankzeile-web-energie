@@ -18,7 +18,7 @@ const TargetGroupSection = () => {
           
           <div className="relative z-10">
             <div className="mb-6">
-              <h2 className="text-2xl md:text-3xl font-bold mb-4 text-primary-dark text-left uppercase">FÜR ALLE, DIE GESUNDE WEGE IM ALLTAG SUCHEN</h2>
+              <h2 className="text-2xl md:text-3xl font-bold mb-4 text-primary-dark text-left uppercase italic">FÜR ALLE, DIE GESUNDE WEGE IM ALLTAG SUCHEN</h2>
               {/* Hand-drawn line effect */}
               <div className="flex justify-start">
                 <svg width="120" height="8" viewBox="0 0 120 8" className="text-primary">
@@ -78,26 +78,28 @@ const TargetGroupSection = () => {
                 viewport={{ once: true }}
               >
                 <div className="flex items-center justify-center mb-2">
-                  <svg width="12" height="12" viewBox="0 0 12 12" className="text-primary mr-2">
-                    <circle
-                      cx="6"
-                      cy="6"
-                      r="4"
-                      stroke="currentColor"
-                      strokeWidth="1.5"
-                      fill="none"
-                      className="opacity-70"
-                      style={{
-                        filter: 'url(#roughDot)',
-                      }}
-                    />
-                    <defs>
-                      <filter id="roughDot">
-                        <feTurbulence baseFrequency="0.08" numOctaves="2" result="noise" seed="2" />
-                        <feDisplacementMap in="SourceGraphic" in2="noise" scale="0.6" />
-                      </filter>
-                    </defs>
-                  </svg>
+                  <div className="flex justify-center">
+                    <svg width="120" height="8" viewBox="0 0 120 8" className="text-primary mr-2">
+                      <path
+                        d="M2,4 Q8,2 15,4 T30,3 Q40,5 50,4 T70,3 Q80,5 90,4 T110,3 Q115,2 118,4"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        fill="none"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        className="opacity-70"
+                        style={{
+                          filter: 'url(#roughDashTarget)',
+                        }}
+                      />
+                      <defs>
+                        <filter id="roughDashTarget">
+                          <feTurbulence baseFrequency="0.04" numOctaves="3" result="noise" seed="1" />
+                          <feDisplacementMap in="SourceGraphic" in2="noise" scale="0.8" />
+                        </filter>
+                      </defs>
+                    </svg>
+                  </div>
                   <span>Willst du wissen, wie das geht?</span>
                 </div>
                 <p>Lern die Tankwelten kennen –</p>
