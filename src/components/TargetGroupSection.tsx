@@ -1,3 +1,4 @@
+
 import { motion } from "framer-motion";
 
 const TargetGroupSection = () => {
@@ -45,26 +46,26 @@ const TargetGroupSection = () => {
             
             <div className="max-w-3xl mx-auto space-y-4 text-base md:text-lg">
               <p>
-                <strong>Für Menschen mit Visionen</strong>, 
+                <em>Für Menschen mit Visionen</em>, 
                 die zurück zum Ursprung wollen – zu echter Nahrung, Verbindung und Gesundheit, jenseits von starren Vorgaben und Industrie-Dominanz.
               </p>
               
               <p>
-                <strong>Für Eltern</strong>, die ihren Kindern zeigen möchten, was wirklich gut tut – ohne Druck, ohne Verbote.
+                <em>Für Eltern</em>, die ihren Kindern zeigen möchten, was wirklich gut tut – ohne Druck, ohne Verbote.
               </p>
               
               <p>
-                <strong>Für alle</strong>, die neue Wege suchen, statt alte Muster zu wiederholen.
+                <em>Für alle</em>, die neue Wege suchen, statt alte Muster zu wiederholen.
               </p>
               
               <ul className="list-disc pl-6 space-y-3">
                 <li>
-                  Ich glaube: <strong>Veränderung ist einfach</strong>, wenn wir wieder spüren, was uns stärkt. 
+                  Ich glaube: <em>Veränderung ist einfach</em>, wenn wir wieder spüren, was uns stärkt. 
                   Nicht durch Müssen, sondern durch kleine Impulse, die sich gut anfühlen.
                 </li>
                 
                 <li>
-                  <strong>Unsere Kinder sind der beste Anfang</strong>. 
+                  <em>Unsere Kinder sind der beste Anfang</em>. 
                   Denn echtes Wohlfühlen beginnt dort, wo wir uns nicht mehr allein fühlen.
                 </li>
               </ul>
