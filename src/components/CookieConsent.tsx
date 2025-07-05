@@ -6,18 +6,18 @@ import { toast } from "@/components/ui/sonner";
 const CookieConsent = () => {
   const [open, setOpen] = useState(false);
 
-  // Force the banner to be visible on component mount
   useEffect(() => {
     const cookieConsent = localStorage.getItem("cookieConsent");
     
-    // Always show the banner (for testing)
-    // Remove this override later if needed
-    setOpen(true);
-    
-    // Original logic (uncomment when needed)
-    // if (!cookieConsent) {
-    //   setOpen(true);
-    // }
+    // Only show if user hasn't made a choice yet
+    if (!cookieConsent) {
+      // Small delay to ensure page is loaded
+      const timer = setTimeout(() => {
+        setOpen(true);
+      }, 1000);
+      
+      return () => clearTimeout(timer);
+    }
   }, []);
 
   const handleAccept = () => {
@@ -26,6 +26,9 @@ const CookieConsent = () => {
     toast.success("Cookie-Einstellungen gespeichert", {
       description: "Sie haben alle Cookies akzeptiert.",
     });
+    
+    // Enable analytics and other tracking here if needed
+    // Example: window.gtag && window.gtag('consent', 'update', { analytics_storage: 'granted' });
   };
 
   const handleDecline = () => {
@@ -35,7 +38,14 @@ const CookieConsent = () => {
       description: "Sie haben nur notwendige Cookies akzeptiert.",
     });
     
-    // When declined, we would normally disable analytics and other tracking here
+    // Disable analytics and other tracking
+    // Example: window.gtag && window.gtag('consent', 'update', { analytics_storage: 'denied' });
+  };
+
+  const handleSettings = () => {
+    // For now, just show the decline option
+    // In the future, this could open a detailed cookie settings modal
+    handleDecline();
   };
 
   if (!open) return null;
@@ -47,7 +57,7 @@ const CookieConsent = () => {
           <div className="flex-1">
             <h3 className="font-semibold text-lg mb-1">Cookie-Einstellungen</h3>
             <p className="text-sm text-gray-600 mb-2">
-              Wir verwenden Cookies, um die Funktionalität unserer Website zu verbessern und Ihr Erlebnis zu personalisieren.
+              Wir verwenden notwendige Cookies für die Funktionalität unserer Website. Optional können Sie uns erlauben, zusätzliche Cookies zu verwenden, um Ihr Erlebnis zu verbessern.
             </p>
             <p className="text-xs text-gray-500">
               Weitere Informationen finden Sie in unserer <a href="/datenschutz" className="text-primary underline hover:text-primary-dark">Datenschutzerklärung</a>.
@@ -55,10 +65,13 @@ const CookieConsent = () => {
           </div>
           <div className="flex flex-col sm:flex-row gap-2">
             <Button variant="outline" onClick={handleDecline} className="whitespace-nowrap">
-              Nur notwendige Cookies
+              Nur notwendige
+            </Button>
+            <Button variant="ghost" onClick={handleSettings} className="whitespace-nowrap text-sm">
+              Einstellungen
             </Button>
             <Button onClick={handleAccept} className="whitespace-nowrap">
-              Alle Cookies akzeptieren
+              Alle akzeptieren
             </Button>
           </div>
         </div>
