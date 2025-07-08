@@ -10,12 +10,12 @@ import { useEffect } from "react";
 const Index = () => {
   useEffect(() => {
     // Set page metadata for SEO
-    document.title = "Tankzeile – Tamara Hillmann | Workshops & inspiration for families in Berlin";
+    document.title = "Ganzheitlich wohlfühlen - Achtsamkeit & Ernährung für Klein & Groß";
     
     // Set meta description
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Bildungs- & Gesundheitskonzept aus Berlin: Workshops & Impulse rund um Ernährung, Achtsamkeit und Verbindung – von Tamara Hillmann.');
+      metaDescription.setAttribute('content', 'Captain Apple, Achtsamkeit & Ernährung: Erlebnisangebote für Kinder & Erwachsene, die Körper, Herz & Bauch stärken - ganzheitlich, spielerisch & alltagstauglich.');
     }
     
     // Apply background color to the body
