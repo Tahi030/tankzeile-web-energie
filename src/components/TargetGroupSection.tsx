@@ -18,7 +18,7 @@ const TargetGroupSection = () => {
           
           <div className="relative z-10">
             <div className="mb-6">
-              <h2 className="text-2xl md:text-3xl mb-4 text-primary-dark text-left italic font-normal">For Everyone Who Is Looking for Healthy Ways in Everyday Life</h2>
+              <h2 className="text-2xl md:text-3xl mb-4 text-primary-dark text-left italic font-normal">Für alle, die gesunde Wege im Alltag suchen</h2>
               {/* Hand-drawn line effect */}
               <div className="flex justify-start">
                 <svg width="120" height="8" viewBox="0 0 120 8" className="text-primary">
