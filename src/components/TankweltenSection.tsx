@@ -12,7 +12,7 @@ const tankwelten = [
   },
   {
     id: 2,
-    title: "Alltag leichter leben",
+    title: "Alltag Leichter Leben",
     description: "Die Tankbox - Wochenstruktur mit vorbereiteten Komponenten & Achtsamkeit\nKostenlose PDFs - z. B. zuckerarme Snacks, Kita-Box-Ideen",
     image: "/lovable-uploads/a7b8b38c-22c9-4f39-8b85-d9174013bc67.png",
     link: "/tankwelten/alltag-leichter-leben",
@@ -80,7 +80,7 @@ const TankweltenSection = () => {
                 />
               </div>
               <div className="p-6">
-                <h3 className={`font-bold mb-2 font-sans ${index === 0 ? 'text-3xl text-red-600' : 'text-3xl text-green-700 uppercase'}`}>{welt.title}</h3>
+                <h3 className={`font-bold mb-2 font-sans ${index === 0 ? 'text-3xl text-red-600' : 'text-3xl text-green-700'}`}>{welt.title}</h3>
                 <p className="text-gray-600 mb-4 whitespace-pre-line">{welt.description}</p>
                 <Link 
                   to={welt.link}
