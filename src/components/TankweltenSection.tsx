@@ -13,7 +13,7 @@ const tankwelten = [
   {
     id: 2,
     title: "Alltag Leichter Leben",
-    description: "Die Tankbox - Wochenstruktur mit vorbereiteten Komponenten & Achtsamkeit\nKostenlose PDFs - z. B. zuckerarme Snacks, Kita-Box-Ideen",
+    description: "Kleine Helfer für große Entlastung im Familienalltag\n\nEinfach bessere Ideen für Kita-Brotdosen, clevere Alternativen zu süßen Snacks und Inspiration, die wirklich funktioniert. Fertig zum Umsetzen - und kostenfrei für Sie.",
     image: "/lovable-uploads/a7b8b38c-22c9-4f39-8b85-d9174013bc67.png",
     link: "/tankwelten/alltag-leichter-leben",
   },
