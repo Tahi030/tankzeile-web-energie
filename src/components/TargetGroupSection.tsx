@@ -46,19 +46,19 @@ const TargetGroupSection = () => {
             
             <div className="max-w-3xl mx-auto space-y-4 text-base md:text-lg">
               <p>
-                <em>For people</em> who want to feel again what really nourishes them - free from constraints and industry guidelines.
+                <em>Für Menschen</em>, die wieder spüren wollen, was sie wirklich nährt - frei von Zwängen und Industrie-Vorgaben.
               </p>
               
               <p>
-                <em>For parents</em> who want to show their children what health tastes like and is fun - naturally and without prohibitions.
+                <em>Für Eltern</em>, die ihren Kindern zeigen möchten, wie Gesundheit schmeckt und Spaß macht - natürlich und ohne Verbote.
               </p>
               
               <p>
-                <em>For everyone</em> who dares to break new ground instead of living old patterns.
+                <em>Für alle</em>, die es wagen, neue Wege zu gehen, statt alte Muster zu leben.
               </p>
               
               <p className="space-y-3">
-                Change comes from small impulses that feel right. Our children are our best compass - because well-being always begins where we feel connected.
+                Veränderung entsteht durch kleine Impulse, die sich richtig anfühlen. Unsere Kinder sind unser bester Kompass - denn Wohlbefinden beginnt immer dort, wo wir uns verbunden fühlen.
               </p>
               
               <motion.div 
