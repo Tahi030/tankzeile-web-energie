@@ -13,7 +13,7 @@ const tankwelten = [
   {
     id: 2,
     title: "Alltag Leichter Leben",
-    description: "Kleine Helfer für große Entlastung im Familienalltag\n\nEinfach bessere Ideen für Kita-Brotdosen, clevere Alternativen zu süßen Snacks und Inspiration, die wirklich funktioniert. Fertig zum Umsetzen - und kostenfrei für Sie.",
+    description: "Ideen, die sich dem Alltag anpassen\n\nKita-Brotdosen, die schnell gehen – ob einfach oder kreativ. Zuckerarme Snacks, die Kindern schmecken. Alles kostenlos zum Herunterladen – zum Ausprobieren, Anpassen und Mitnehmen.",
     image: "/lovable-uploads/a7b8b38c-22c9-4f39-8b85-d9174013bc67.png",
     link: "/tankwelten/alltag-leichter-leben",
   },
