@@ -46,29 +46,20 @@ const TargetGroupSection = () => {
             
             <div className="max-w-3xl mx-auto space-y-4 text-base md:text-lg">
               <p>
-                <em>Für Menschen mit Visionen</em>, 
-                die zurück zum Ursprung wollen – zu echter Nahrung, Verbindung und Gesundheit, jenseits von starren Vorgaben und Industrie-Dominanz.
+                <em>For people</em> who want to feel again what really nourishes them - free from constraints and industry guidelines.
               </p>
               
               <p>
-                <em>Für Eltern</em>, die ihren Kindern zeigen möchten, was wirklich gut tut – ohne Druck, ohne Verbote.
+                <em>For parents</em> who want to show their children what health tastes like and is fun - naturally and without prohibitions.
               </p>
               
               <p>
-                <em>Für alle</em>, die neue Wege suchen, statt alte Muster zu wiederholen.
+                <em>For everyone</em> who dares to break new ground instead of living old patterns.
               </p>
               
-              <ul className="list-disc pl-6 space-y-3">
-                <li>
-                  Ich glaube: <em>Veränderung ist einfach</em>, wenn wir wieder spüren, was uns stärkt. 
-                  Nicht durch Müssen, sondern durch kleine Impulse, die sich gut anfühlen.
-                </li>
-                
-                <li>
-                  <em>Unsere Kinder sind der beste Anfang</em>. 
-                  Denn echtes Wohlfühlen beginnt dort, wo wir uns nicht mehr allein fühlen.
-                </li>
-              </ul>
+              <p className="space-y-3">
+                Change comes from small impulses that feel right. Our children are our best compass - because well-being always begins where we feel connected.
+              </p>
               
               <motion.div 
                 className="mt-8 text-lg md:text-xl font-medium text-center border-t border-primary/20 pt-6 italic"
