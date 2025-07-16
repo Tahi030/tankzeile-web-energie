@@ -159,7 +159,7 @@ const HeroSection = () => {
                   Schön, dass du hier bist! Ich bin Tamara Hillmann - Gründerin der Tankzeile, einem Bildungs- und Gesundheitsprogramm mitten in Berlin.
                 </p>
                 <p className="text-base md:text-lg mb-4">
-                  Mit der Tankzeile zeige ich Kindern, Familien und allen, die mit Kindern leben oder arbeiten, wie gesunde Ernährung, kindgerechte Achtsamkeit und Nähe im Alltag wirklich funktionieren - praktisch, einfach und mit Freude.
+                  Mit der Tankzeile zeige ich Kindern und Familien, wie sie (wieder) lernen können, ihren Alltag genauer unter die Lupe zu nehmen und wie Ernährung und innere Zufriedenheit dabei eine große Rolle spielen - praktisch, einfach und mit Freude.
                 </p>
                 <p className="text-base md:text-lg mb-4">
                   Denn in einer Welt voller Fertiggerichte, Hektik und zu viel von allem fehlt genau das oft: Angebote, die ins Leben passen. Die Tankzeile schließt diese Lücke - mit lebendigen Workshops und einfachen Ideen, die Gesundheit und ein gutes Gefühl schon bei den Kleinsten fördern.
