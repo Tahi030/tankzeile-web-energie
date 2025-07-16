@@ -21,8 +21,8 @@ const tankwelten = [
   },
   {
     id: 3,
-    title: "Available soon",
-    description: "Take off, please! - The mask. invites you to look behind your everyday roles - to where the real you is waiting. With impulses for nutrition, mental clarity and inner balance, you will find ways to lovingly take yourself seriously again and recharge your batteries.",
+    title: "Demnächst verfügbar",
+    description: "„Ausziehen, bitte! – Die Maske." lädt dich ein, hinter deine alltäglichen Rollen zu schauen – dorthin, wo das echte Du wartet. Mit Impulsen für Ernährung, geistige Klarheit und innere Balance findest du Wege, dich wieder liebevoll ernst zu nehmen und aufzutanken.",
     image: "/lovable-uploads/36ba656f-ced5-4afb-a9ba-a75f553fb0de.png",
     link: "#",
     isActive: false,
