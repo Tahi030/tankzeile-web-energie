@@ -156,16 +156,16 @@ const HeroSection = () => {
                   </div>
                 </div>
                 <p className="text-base md:text-lg mb-4">
-                  Schön, dass du hier bist! Ich bin Tamara Hillmann - Gründerin der Tankzeile, einem Bildungs- und Gesundheitsprogramm mitten in Berlin.
+                  Schön, dass du hier bist! Ich bin Tamara Hillmann – Gründerin der Tankzeile, einem Bildungs- und Gesundheitsprogramm mitten in Berlin.
                 </p>
                 <p className="text-base md:text-lg mb-4">
-                  Mit der Tankzeile zeige ich Kindern und Familien, wie sie (wieder) lernen können, ihren Alltag genauer unter die Lupe zu nehmen und wie Ernährung und innere Zufriedenheit dabei eine große Rolle spielen - praktisch, einfach und mit Freude.
+                  Mit der Tankzeile zeige ich Kindern und Familien, wie sie im Alltag (wieder) lernen, genauer hinzuschauen, und wie Nahrung und innere Zufriedenheit dabei eine große Rolle spielen – praktisch, einfach und mit Freude.
                 </p>
                 <p className="text-base md:text-lg mb-4">
-                  Denn in einer Welt voller Fertiggerichte, Hektik und zu viel von allem fehlt genau das oft: Angebote, die ins Leben passen. Die Tankzeile schließt diese Lücke - mit lebendigen Workshops und einfachen Ideen, die Gesundheit und ein gutes Gefühl schon bei den Kleinsten fördern.
+                  Denn in einer Welt voller Fertiggerichte, Hektik und zu viel von allem fehlt oft genau das: Angebote, die ins Leben passen. Die Tankzeile schließt diese Lücke – mit lebendigen Workshops und einfachen Ideen, die Gesundheit und ein gutes Gefühl schon bei den Kleinsten fördern.
                 </p>
                 <p className="text-base md:text-lg">
-                  Das Ziel ist klar: ein Alltag, der dir gut tut, dich verbindet und dir Kraft gibt. Von Anfang an - für Jung und Alt.
+                  Das Ziel ist klar: ein Alltag, der dir gut tut, dich verbindet und dir Kraft gibt. Von Anfang an – für Groß und Klein.
                 </p>
               </div>
             </motion.div>
