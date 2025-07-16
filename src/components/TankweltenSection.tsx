@@ -9,6 +9,7 @@ const tankwelten = [
     description: "Workshop mit Captain Apfel - Ernährung als Abenteuer für Vorschulkinder\n\nVolle Obst- und Gemüsekraft voraus! Captain Apfel lädt ein auf eine Mission ins Körperinnere. Im Fokus: das geheimnisvolle Kraftwerk, das erst mit dem richtigen Treibstoff so richtig in Fahrt kommt. Was tut unserem Körper gut – und was bremst ihn aus? Schafft es die Crew, die Kraftzentrale zu aktivieren?\nEin Workshop voller Bewegung – voller Spaß, Teamgeist und überraschender Entdeckungen rund um unseren Körper.",
     image: "/lovable-uploads/ff6c74d3-5da5-4a82-b20b-97843a8db26a.png",
     link: "/tankwelten/captain-apfel-workshop",
+    isActive: true,
   },
   {
     id: 2,
@@ -16,6 +17,15 @@ const tankwelten = [
     description: "Ideen, die sich dem Alltag anpassen\n\nKita-Brotdosen, die schnell gehen – ob einfach oder kreativ. Zuckerarme Snacks, die Kindern schmecken. Alles kostenlos zum Herunterladen – zum Ausprobieren, Anpassen und Mitnehmen.",
     image: "/lovable-uploads/a7b8b38c-22c9-4f39-8b85-d9174013bc67.png",
     link: "/tankwelten/alltag-leichter-leben",
+    isActive: true,
+  },
+  {
+    id: 3,
+    title: "Demnächst verfügbar",
+    description: "„Ausziehen, bitte! – Die Maske." lädt dich ein, hinter deine alltäglichen Rollen zu schauen – dorthin, wo das echte Du wartet. Mit Impulsen für Ernährung, geistige Klarheit und innere Balance findest du Wege, dich wieder liebevoll ernst zu nehmen und aufzutanken.",
+    image: "/lovable-uploads/05df12ea-c1ae-4da2-b754-d117f70e2317.png",
+    link: "#",
+    isActive: false,
   },
 ];
 
@@ -75,23 +85,37 @@ const TankweltenSection = () => {
                   className={`w-full h-full transition-transform hover:scale-105 duration-300 ${
                     index === 0 
                       ? 'object-contain bg-gradient-to-br from-primary-light/30 via-accent-light/20 to-secondary-light/30' 
-                      : 'object-contain bg-gradient-to-br from-secondary-light/30 via-primary-light/20 to-accent-light/30 p-4'
+                      : index === 1
+                      ? 'object-contain bg-gradient-to-br from-secondary-light/30 via-primary-light/20 to-accent-light/30 p-4'
+                      : 'object-contain bg-gradient-to-br from-accent-light/20 via-secondary-light/30 to-primary-light/20 p-4'
                   }`}
                 />
               </div>
               <div className="p-6">
-                <h3 className={`font-bold mb-2 font-sans ${index === 0 ? 'text-3xl text-red-600' : 'text-3xl text-green-700'}`}>{welt.title}</h3>
+                <h3 className={`font-bold mb-2 font-sans ${
+                  index === 0 
+                    ? 'text-3xl text-red-600' 
+                    : index === 1
+                    ? 'text-3xl text-green-700'
+                    : 'text-3xl text-teal-500'
+                }`}>
+                  {welt.title}
+                </h3>
                 <p className="text-gray-600 mb-4 whitespace-pre-line">{welt.description}</p>
-                <Link 
-                  to={welt.link}
-                  className="text-primary-dark hover:text-primary font-medium inline-flex items-center"
-                  onClick={() => window.scrollTo(0, 0)}
-                >
-                  Mehr erfahren
-                  <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </Link>
+                {welt.isActive ? (
+                  <Link 
+                    to={welt.link}
+                    className="text-primary-dark hover:text-primary font-medium inline-flex items-center"
+                    onClick={() => window.scrollTo(0, 0)}
+                  >
+                    Mehr erfahren
+                    <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </Link>
+                ) : (
+                  <span className="text-gray-400 font-medium">Bald verfügbar</span>
+                )}
               </div>
             </motion.div>
           ))}
