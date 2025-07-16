@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
@@ -22,7 +21,7 @@ const tankwelten = [
   {
     id: 3,
     title: "Demnächst verfügbar",
-    description: "„Ausziehen, bitte! – Die Maske." lädt dich ein, hinter deine alltäglichen Rollen zu schauen – dorthin, wo das echte Du wartet. Mit Impulsen für Ernährung, geistige Klarheit und innere Balance findest du Wege, dich wieder liebevoll ernst zu nehmen und aufzutanken.",
+    description: "Wer bist du wirklich – hinter all den Masken, die du täglich trägst, und besonders dann, wenn der erste Riss entsteht?\n\nHier findest du:\n\n- Einen Blick hinter deine Alltagsmasken\n- Impulse für Ernährung, geistige Klarheit und innere Balance\n- Alltagstaugliche Wege, deine Batterien wieder aufzuladen\n- Inklusive Wohlfühltag\n\nFür alle, die:\n\n- sich oft erschöpft fühlen – aber trotzdem weitermachen\n- eine Brücke zwischen Kopf und Bauch, Wissenschaft und Intuition suchen\n- bereit sind, sich wieder liebevoller und ernster zu nehmen",
     image: "/lovable-uploads/36ba656f-ced5-4afb-a9ba-a75f553fb0de.png",
     link: "#",
     isActive: false,
