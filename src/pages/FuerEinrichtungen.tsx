@@ -46,23 +46,18 @@ const FuerEinrichtungen = () => {
               
               
               
-              <h3>Fancy working together? Me too!</h3>
+              <h3>Lust auf Zusammenarbeit? Ich auch!</h3>
               <p>
-                I love bringing ideas to life together - with heart, creativity and an eye for the essentials.
+                Ich liebe es, Ideen gemeinsam zum Leben zu erwecken – mit Herz, Kreativität und Blick für das Wesentliche.
               </p>
               <p>
-                Whether it's a daycare center, a school, a company or a project close to your heart: If you want to make something meaningful happen that really works - let's talk! I am open to collaborations, new formats and creative approaches.
+                Ob Kita, Schule, Unternehmen oder ein Projekt, das Ihnen am Herzen liegt: Wenn Sie etwas Sinnvolles bewegen möchten, das wirklich funktioniert – lassen Sie uns sprechen! Ich bin offen für Kooperationen, neue Formate und kreative Ansätze.
               </p>
               <p>
-                Do you have an idea, need fresh input or just want to have a spin? I'd love to. Just write to me!
+                Haben Sie eine Idee, brauchen frischen Input oder wollen einfach mal spinnen? Sehr gerne. Schreiben Sie mir einfach!
               </p>
               <p>
-                Because real change starts with cooperation.
-              </p>
-              
-              <h3>Achtsames Essen erleben</h3>
-              <p>
-                Ein ruhiger Workshop, der Kindern beibringt, bewusst zu essen und ihre Sinne wahrzunehmen. Mit einfachen Übungen zur Achtsamkeit entdecken die Kinder, wie sie beim Essen entspannen können und mehr Genuss erfahren.
+                Denn echter Wandel beginnt mit Zusammenarbeit.
               </p>
             </div>
 
