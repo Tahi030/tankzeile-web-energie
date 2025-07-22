@@ -113,7 +113,7 @@ const AlltagLeichterLeben = () => {
                     className="w-40 h-40 object-contain rounded-lg"
                   />
                   <a 
-                    href="/pdfs/lieblingsdose.pdf" 
+                    href="/lieblingsdose.pdf" 
                     download
                     className="inline-flex items-center bg-primary text-white px-6 py-3 rounded-lg hover:bg-primary-dark transition-colors font-medium"
                   >
