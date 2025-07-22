@@ -20,8 +20,8 @@ const tankwelten = [
   },
   {
     id: 3,
-    title: "Demnächst verfügbar",
-    description: "Wer bist du wirklich – hinter all den Masken, die du täglich trägst, und besonders dann, wenn der erste Riss entsteht?\n\nHier findest du:\n\n- Einen Blick hinter deine Alltagsmasken\n- Impulse für Ernährung, geistige Klarheit und innere Balance\n- Alltagstaugliche Wege, deine Batterien wieder aufzuladen\n- Inklusive Wohlfühltag\n\nFür alle, die:\n\n- sich oft erschöpft fühlen – aber trotzdem weitermachen\n- eine Brücke zwischen Kopf und Bauch, Wissenschaft und Intuition suchen\n- bereit sind, sich wieder liebevoller und ernster zu nehmen",
+    title: "Mein erstes Buch demnächst verfügbar",
+    description: "Ich freue mich riesig, dir bald mein erstes Buch zu zeigen! Wer bist du wirklich - hinter all den Masken, die du täglich trägst, und besonders dann, wenn der erste Riss entsteht?\n\nDu kannst dich freuen auf:\n\n- Inspiration für Ernährung und innere Balance\n- Einfache Tipps zum Batterien aufladen\n- Deinen persönlichen Wohlfühltag",
     image: "/lovable-uploads/36ba656f-ced5-4afb-a9ba-a75f553fb0de.png",
     link: "#",
     isActive: false,
@@ -96,7 +96,7 @@ const TankweltenSection = () => {
                     ? 'text-3xl text-red-600' 
                     : index === 1
                     ? 'text-3xl text-green-700'
-                    : 'text-3xl text-teal-500'
+                    : 'text-3xl text-blackberry'
                 }`}>
                   {welt.title}
                 </h3>

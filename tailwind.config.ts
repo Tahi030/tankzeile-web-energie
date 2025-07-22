@@ -43,6 +43,10 @@ export default {
 					dark: '#b59c87',
 					foreground: 'hsl(var(--accent-foreground))'
 				},
+				blackberry: {
+					DEFAULT: 'hsl(var(--blackberry))',
+					foreground: 'hsl(var(--blackberry-foreground))'
+				},
 				muted: {
 					DEFAULT: 'hsl(var(--muted))',
 					foreground: 'hsl(var(--muted-foreground))'
