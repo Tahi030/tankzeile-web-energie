@@ -46,9 +46,18 @@ const FuerEinrichtungen = () => {
               
               
               
-              <h3>Die Zauberkraft gesunder Ernährung</h3>
+              <h3>Fancy working together? Me too!</h3>
               <p>
-                Dieser 90-minütige Workshop verbindet Geschichten, Spiele und praktische Erfahrungen. Die Kinder lernen, welche "Zauberkräfte" in verschiedenen Lebensmitteln stecken und wie diese ihren Körper stark machen. Inklusive einer kleinen gemeinsamen Zubereitung.
+                I love bringing ideas to life together - with heart, creativity and an eye for the essentials.
+              </p>
+              <p>
+                Whether it's a daycare center, a school, a company or a project close to your heart: If you want to make something meaningful happen that really works - let's talk! I am open to collaborations, new formats and creative approaches.
+              </p>
+              <p>
+                Do you have an idea, need fresh input or just want to have a spin? I'd love to. Just write to me!
+              </p>
+              <p>
+                Because real change starts with cooperation.
               </p>
               
               <h3>Achtsames Essen erleben</h3>
