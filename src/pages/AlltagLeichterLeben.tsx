@@ -99,8 +99,8 @@ const AlltagLeichterLeben = () => {
                   Praktische Tipps und kreative Ideen für abwechslungsreiche und gesunde Brotdosen, die Kindern schmecken und Eltern entlasten.
                 </p>
                 <a 
-                  href="/pdfs/kita-brotdosen-ideen.pdf" 
-                  download 
+                  href="/pdfs/lieblingsdose.pdf" 
+                  download
                   className="inline-flex items-center bg-primary text-white px-6 py-3 rounded-lg hover:bg-primary-dark transition-colors font-medium"
                 >
                   Jetzt herunterladen
