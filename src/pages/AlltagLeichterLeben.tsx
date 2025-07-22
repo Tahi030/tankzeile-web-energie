@@ -1,8 +1,7 @@
 
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
-import { ArrowRight } from "lucide-react";
-import TestimonialSection from "../components/TestimonialSection";
+import { ArrowRight, Star } from "lucide-react";
 
 const AlltagLeichterLeben = () => {
   useEffect(() => {
@@ -129,8 +128,28 @@ const AlltagLeichterLeben = () => {
         </div>
       </section>
 
-      {/* Testimonials Section */}
-      <TestimonialSection />
+      {/* Rating Section */}
+      <section className="py-12 md:py-16 bg-muted">
+        <div className="container-custom">
+          <div className="max-w-2xl mx-auto text-center">
+            <div className="bg-white rounded-lg shadow-md p-8">
+              <h3 className="text-xl font-semibold text-primary-dark mb-4">
+                Bewertung unserer Kunden
+              </h3>
+              <div className="flex justify-center items-center gap-1 mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <Star 
+                    key={i} 
+                    className="w-8 h-8 text-yellow-400 fill-current" 
+                  />
+                ))}
+              </div>
+              <p className="text-2xl font-bold text-primary-dark mb-2">5,0</p>
+              <p className="text-muted-foreground">basierend auf Kundenfeedback</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
