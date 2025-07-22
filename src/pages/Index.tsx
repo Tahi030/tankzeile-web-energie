@@ -1,6 +1,5 @@
 
 import HeroSection from "@/components/HeroSection";
-import TestimonialSection from "@/components/TestimonialSection";
 import TankweltenSection from "@/components/TankweltenSection";
 import TargetGroupSection from "@/components/TargetGroupSection";
 import CustomerFeedback from "@/components/CustomerFeedback";
@@ -33,7 +32,6 @@ const Index = () => {
       <HeroSection />
       <TargetGroupSection />
       <TankweltenSection />
-      <TestimonialSection />
       <CustomerFeedback />
       
       {/* Footer CTA */}
