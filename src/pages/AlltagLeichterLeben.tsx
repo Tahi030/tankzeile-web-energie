@@ -41,13 +41,6 @@ const AlltagLeichterLeben = () => {
             <p className="text-lg mb-6">
               Für Familien, die Struktur, Entlastung und neue Energie suchen.
             </p>
-            <div className="flex justify-center">
-              <img 
-                src="/lovable-uploads/nature-peaceful-scene.webp" 
-                alt="Friedliche Naturszene bei goldenem Licht" 
-                className="w-32 h-32 md:w-40 md:h-40 object-cover rounded-full shadow-lg"
-              />
-            </div>
           </div>
         </div>
       </section>
