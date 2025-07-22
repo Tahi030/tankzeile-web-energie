@@ -76,6 +76,44 @@ const AlltagLeichterLeben = () => {
         </div>
       </section>
 
+      {/* PDF Download Section */}
+      <section className="py-12 md:py-16 bg-accent-light">
+        <div className="container-custom">
+          <div className="max-w-3xl mx-auto">
+            <div className="bg-white rounded-lg shadow-md p-8">
+              <h2 className="text-2xl font-bold text-primary-dark mb-6">
+                Deine Alltagshelfer to go!
+              </h2>
+              <p className="text-gray-600 mb-8">
+                Hier findest du regelmäßig kostenlose PDF-Dateien voller Ideen, Tipps und Informationen, die deinen Alltag leichter, gesünder und einfach schöner machen. Hol dir gleich deine erste Datei – und schau gern immer wieder vorbei, bald warten weitere kleine Helfer auf dich.
+              </p>
+              <p className="text-gray-600 mb-8">
+                Viel Spaß beim Entdecken!
+              </p>
+              
+              <div className="bg-gradient-to-r from-primary-light/20 to-secondary-light/20 rounded-lg p-6">
+                <h3 className="text-xl font-semibold text-primary-dark mb-4">
+                  Ideen für Kita-Brotdosen
+                </h3>
+                <p className="text-gray-600 mb-6">
+                  Praktische Tipps und kreative Ideen für abwechslungsreiche und gesunde Brotdosen, die Kindern schmecken und Eltern entlasten.
+                </p>
+                <a 
+                  href="/pdfs/kita-brotdosen-ideen.pdf" 
+                  download 
+                  className="inline-flex items-center bg-primary text-white px-6 py-3 rounded-lg hover:bg-primary-dark transition-colors font-medium"
+                >
+                  Jetzt herunterladen
+                  <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Testimonials Section */}
       <TestimonialSection />
     </div>
