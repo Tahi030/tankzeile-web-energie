@@ -43,9 +43,9 @@ const AlltagLeichterLeben = () => {
             </p>
             <div className="flex justify-center">
               <img 
-                src="/lovable-uploads/76085e0a-e58d-4f90-af1e-37f650a9c99d.png" 
-                alt="Alltag leichter leben Symbol" 
-                className="w-24 h-24 md:w-32 md:h-32 object-contain"
+                src="/lovable-uploads/family-life-easier.webp" 
+                alt="Familie beim entspannten gemeinsamen Essen" 
+                className="w-32 h-32 md:w-40 md:h-40 object-cover rounded-full shadow-lg"
               />
             </div>
           </div>
