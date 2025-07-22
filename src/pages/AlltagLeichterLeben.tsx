@@ -100,8 +100,8 @@ const AlltagLeichterLeben = () => {
                 </p>
                 <div className="flex items-center gap-4">
                   <img 
-                    src="/lovable-uploads/501bee46-234c-4b72-94fa-1f3ffe19becf.png" 
-                    alt="Bunte Kita-Brotdosen mit gesunden Snacks" 
+                    src="/lovable-uploads/08bfbdac-09ed-487b-b043-b67755d1d90a.png" 
+                    alt="Gratis PDF Kita-Brotdosen" 
                     className="w-16 h-16 object-cover rounded-lg"
                   />
                   <a 
