@@ -43,8 +43,8 @@ const AlltagLeichterLeben = () => {
             </p>
             <div className="flex justify-center">
               <img 
-                src="/lovable-uploads/family-life-easier.webp" 
-                alt="Familie beim entspannten gemeinsamen Essen" 
+                src="/lovable-uploads/nature-peaceful-scene.webp" 
+                alt="Friedliche Naturszene bei goldenem Licht" 
                 className="w-32 h-32 md:w-40 md:h-40 object-cover rounded-full shadow-lg"
               />
             </div>
