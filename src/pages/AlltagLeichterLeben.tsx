@@ -79,11 +79,6 @@ const AlltagLeichterLeben = () => {
                   Wenn du weißt, was auf den Tisch kommt, sparst du Energie und Stress. Weniger Entscheidungen im Kopf, mehr Zeit für Quality-Time mit deinen Kindern. Denn genau diese gemeinsamen Momente im Hier und Jetzt zählen wirklich und bleiben in Erinnerung. Genieße sie!
                 </p>
               </div>
-              
-              <h3>Kleine Veränderungen, große Wirkung</h3>
-              <p>
-                Du musst nicht deinen kompletten Lebensstil umwerfen. Mit kleinen, konsequenten Schritten kannst du bereits spürbare Veränderungen erreichen. Die Tankbox-Methode setzt genau hier an: Durch kluge Vorbereitung und achtsame Rituale wird dein Alltag leichter und energiereicher.
-              </p>
             </div>
           </div>
         </div>
