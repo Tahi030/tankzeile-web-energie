@@ -131,21 +131,22 @@ const AlltagLeichterLeben = () => {
       {/* Rating Section */}
       <section className="py-12 md:py-16 bg-muted">
         <div className="container-custom">
-          <div className="max-w-2xl mx-auto text-center">
-            <div className="bg-white rounded-lg shadow-md p-8">
-              <h3 className="text-xl font-semibold text-primary-dark mb-4">
-                Bewertung unserer Kunden
+          <div className="max-w-lg mx-auto text-center">
+            <div className="bg-white/80 rounded-lg shadow-sm p-6 border border-primary/10">
+              <h3 className="text-lg font-medium text-primary-dark mb-3">
+                Rückmeldungen meiner Kunden
               </h3>
-              <div className="flex justify-center items-center gap-1 mb-4">
+              <div className="flex justify-center items-center gap-1 mb-3">
                 {[...Array(5)].map((_, i) => (
                   <Star 
                     key={i} 
-                    className="w-8 h-8 text-yellow-400 fill-current" 
+                    className="w-5 h-5 text-yellow-500 fill-current" 
                   />
                 ))}
               </div>
-              <p className="text-2xl font-bold text-primary-dark mb-2">5,0</p>
-              <p className="text-muted-foreground">basierend auf Kundenfeedback</p>
+              <p className="text-sm text-muted-foreground">
+                "Praktisch umsetzbar und wirklich hilfreich für den Familienalltag"
+              </p>
             </div>
           </div>
         </div>
