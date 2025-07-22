@@ -42,23 +42,9 @@ const FuerEinrichtungen = () => {
                 </ul>
               </div>
               
-              <div className="my-8">
-                <h2>Einsetzbar in:</h2>
-                <ul>
-                  <li>Kitas</li>
-                  <li>Familienzentren</li>
-                  <li>Frühförderstellen</li>
-                  <li>Wohngruppen</li>
-                  <li>und überall, wo Kinder begleitet werden</li>
-                </ul>
-              </div>
               
               
               
-              <h3>Captain Apfel und das Gemüse-Abenteuer</h3>
-              <p>
-                In diesem 60-minütigen Workshop lernen Kinder spielerisch die Vielfalt von Gemüse kennen. Mit Bewegungsspielen und multisensorischen Erfahrungen erleben sie, wie Gemüse schmeckt, riecht und sich anfühlt. Captain Apfel führt die Kinder auf eine spannende Entdeckungsreise.
-              </p>
               
               <h3>Die Zauberkraft gesunder Ernährung</h3>
               <p>
