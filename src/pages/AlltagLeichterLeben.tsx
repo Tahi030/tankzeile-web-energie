@@ -17,29 +17,27 @@ const AlltagLeichterLeben = () => {
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
             <h1 className="text-3xl md:text-4xl font-bold mb-6 text-white">Alltag leichter leben</h1>
-            {/* Hand-drawn line effect */}
-            <div className="flex justify-center mb-6">
-              <svg width="120" height="8" viewBox="0 0 120 8" className="text-white">
-                <path
-                  d="M2,4 Q8,2 15,4 T30,3 Q40,5 50,4 T70,3 Q80,5 90,4 T110,3 Q115,2 118,4"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  fill="none"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="opacity-70"
-                  style={{
-                    filter: 'url(#roughPaperAlltag)',
-                  }}
-                />
-                <defs>
-                  <filter id="roughPaperAlltag">
-                    <feTurbulence baseFrequency="0.04" numOctaves="3" result="noise" seed="1" />
-                    <feDisplacementMap in="SourceGraphic" in2="noise" scale="0.8" />
-                  </filter>
-                </defs>
-              </svg>
-            </div>
+            {/* Hand-drawn line effect directly under heading */}
+            <svg width="120" height="8" viewBox="0 0 120 8" className="text-white mb-6">
+              <path
+                d="M2,4 Q8,2 15,4 T30,3 Q40,5 50,4 T70,3 Q80,5 90,4 T110,3 Q115,2 118,4"
+                stroke="currentColor"
+                strokeWidth="2"
+                fill="none"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="opacity-70"
+                style={{
+                  filter: 'url(#roughPaperAlltag)',
+                }}
+              />
+              <defs>
+                <filter id="roughPaperAlltag">
+                  <feTurbulence baseFrequency="0.04" numOctaves="3" result="noise" seed="1" />
+                  <feDisplacementMap in="SourceGraphic" in2="noise" scale="0.8" />
+                </filter>
+              </defs>
+            </svg>
             <p className="text-lg mb-6">
               Für Familien, die Struktur, Entlastung und neue Energie suchen.
             </p>
@@ -52,21 +50,40 @@ const AlltagLeichterLeben = () => {
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
             <div className="prose prose-lg max-w-none">
-              <h3>Warum Struktur beim Essen hilft</h3>
-              <p>
-                Wenn du weißt, was auf den Tisch kommt, sparst du Energie und Stress. Weniger Entscheidungen im Kopf, mehr Zeit für Quality-Time mit deinen Kindern. Denn genau diese gemeinsamen Momente im Hier und Jetzt zählen wirklich und bleiben in Erinnerung. Genieße sie!
-              </p>
+              <div className="mb-8">
+                <h2 className="text-2xl md:text-3xl mb-4 text-primary-dark text-left italic font-normal">Warum Struktur beim Essen hilft</h2>
+                {/* Hand-drawn line effect */}
+                <div className="flex justify-start mb-6">
+                  <svg width="120" height="8" viewBox="0 0 120 8" className="text-primary">
+                    <path
+                      d="M2,4 Q8,2 15,4 T30,3 Q40,5 50,4 T70,3 Q80,5 90,4 T110,3 Q115,2 118,4"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      fill="none"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="opacity-70"
+                      style={{
+                        filter: 'url(#roughPaperStructure)',
+                      }}
+                    />
+                    <defs>
+                      <filter id="roughPaperStructure">
+                        <feTurbulence baseFrequency="0.04" numOctaves="3" result="noise" seed="1" />
+                        <feDisplacementMap in="SourceGraphic" in2="noise" scale="0.8" />
+                      </filter>
+                    </defs>
+                  </svg>
+                </div>
+                <p>
+                  Wenn du weißt, was auf den Tisch kommt, sparst du Energie und Stress. Weniger Entscheidungen im Kopf, mehr Zeit für Quality-Time mit deinen Kindern. Denn genau diese gemeinsamen Momente im Hier und Jetzt zählen wirklich und bleiben in Erinnerung. Genieße sie!
+                </p>
+              </div>
               
               <h3>Kleine Veränderungen, große Wirkung</h3>
               <p>
                 Du musst nicht deinen kompletten Lebensstil umwerfen. Mit kleinen, konsequenten Schritten kannst du bereits spürbare Veränderungen erreichen. Die Tankbox-Methode setzt genau hier an: Durch kluge Vorbereitung und achtsame Rituale wird dein Alltag leichter und energiereicher.
               </p>
-            </div>
-
-            <div className="mt-12 text-center">
-              <Link to="/kontakt" className="btn-primary">
-                Interesse geweckt? Kontaktiere mich
-              </Link>
             </div>
           </div>
         </div>
