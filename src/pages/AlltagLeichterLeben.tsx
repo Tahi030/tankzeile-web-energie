@@ -110,7 +110,7 @@ const AlltagLeichterLeben = () => {
                   <img 
                     src="/lovable-uploads/08bfbdac-09ed-487b-b043-b67755d1d90a.png" 
                     alt="Gratis PDF Kita-Brotdosen" 
-                    className="w-32 h-32 object-contain rounded-lg"
+                    className="w-40 h-40 object-contain rounded-lg"
                   />
                   <a 
                     href="/pdfs/lieblingsdose.pdf" 
