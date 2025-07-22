@@ -14,19 +14,8 @@ const AlltagLeichterLeben = () => {
       {/* Hero Section */}
       <section className="bg-primary-light py-16 md:py-24">
         <div className="container-custom">
-          <div className="max-w-4xl mx-auto">
-            <div className="flex items-center gap-8 mb-6">
-              <div className="flex-1">
-                <h1 className="text-3xl md:text-4xl font-bold text-white">Alltag leichter leben</h1>
-              </div>
-              <div className="flex-shrink-0">
-                <img 
-                  src="/lovable-uploads/76085e0a-e58d-4f90-af1e-37f650a9c99d.png" 
-                  alt="Alltag leichter leben Symbol" 
-                  className="w-24 h-24 md:w-32 md:h-32 object-contain"
-                />
-              </div>
-            </div>
+          <div className="max-w-3xl mx-auto">
+            <h1 className="text-3xl md:text-4xl font-bold mb-6 text-white">Alltag leichter leben</h1>
             {/* Hand-drawn line effect directly under heading */}
             <svg width="120" height="8" viewBox="0 0 120 8" className="text-white mb-6">
               <path
@@ -51,6 +40,13 @@ const AlltagLeichterLeben = () => {
             <p className="text-lg mb-6">
               Für Familien, die Struktur, Entlastung und neue Energie suchen.
             </p>
+            <div className="flex justify-center">
+              <img 
+                src="/lovable-uploads/76085e0a-e58d-4f90-af1e-37f650a9c99d.png" 
+                alt="Alltag leichter leben Symbol" 
+                className="w-24 h-24 md:w-32 md:h-32 object-contain"
+              />
+            </div>
           </div>
         </div>
       </section>
