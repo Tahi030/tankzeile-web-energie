@@ -46,10 +46,6 @@ const FuerEinrichtungen = () => {
               
               
               
-              <h3>Die Zauberkraft gesunder Ernährung</h3>
-              <p>
-                Dieser 90-minütige Workshop verbindet Geschichten, Spiele und praktische Erfahrungen. Die Kinder lernen, welche "Zauberkräfte" in verschiedenen Lebensmitteln stecken und wie diese ihren Körper stark machen. Inklusive einer kleinen gemeinsamen Zubereitung.
-              </p>
               
               <h3>Achtsames Essen erleben</h3>
               <p>
