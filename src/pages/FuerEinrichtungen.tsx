@@ -63,7 +63,7 @@ const FuerEinrichtungen = () => {
 
             <div className="mt-12 text-center">
               <Link to="/kontakt" className="btn-primary">
-                Interessiert an einem Workshop oder haben Sie weitere Fragen? Dann kontaktieren Sie mich bitte
+                Interessiert an einem Workshop oder haben Sie weitere Fragen? Dann kontaktieren Sie mich
               </Link>
             </div>
 
