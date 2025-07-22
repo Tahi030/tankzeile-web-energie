@@ -1,6 +1,7 @@
 
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
+import CustomerFeedback from "@/components/CustomerFeedback";
 
 const FuerEinrichtungen = () => {
   useEffect(() => {
@@ -69,6 +70,8 @@ const FuerEinrichtungen = () => {
                 Ein ruhiger Workshop, der Kindern beibringt, bewusst zu essen und ihre Sinne wahrzunehmen. Mit einfachen Übungen zur Achtsamkeit entdecken die Kinder, wie sie beim Essen entspannen können und mehr Genuss erfahren.
               </p>
             </div>
+
+            <CustomerFeedback />
 
             <div className="mt-12 text-center">
               <Link to="/kontakt" className="btn-primary">

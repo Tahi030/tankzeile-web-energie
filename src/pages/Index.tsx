@@ -3,6 +3,7 @@ import HeroSection from "@/components/HeroSection";
 import TestimonialSection from "@/components/TestimonialSection";
 import TankweltenSection from "@/components/TankweltenSection";
 import TargetGroupSection from "@/components/TargetGroupSection";
+import CustomerFeedback from "@/components/CustomerFeedback";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
@@ -33,6 +34,7 @@ const Index = () => {
       <TargetGroupSection />
       <TankweltenSection />
       <TestimonialSection />
+      <CustomerFeedback />
       
       {/* Footer CTA */}
       <section className="bg-primary py-16">

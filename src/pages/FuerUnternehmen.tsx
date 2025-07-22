@@ -1,6 +1,7 @@
 
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
+import CustomerFeedback from "@/components/CustomerFeedback";
 
 const FuerUnternehmen = () => {
   useEffect(() => {
@@ -81,6 +82,8 @@ const FuerUnternehmen = () => {
                 Die Tankzeile bietet maßgeschneiderte Lösungen für Unternehmen jeden Umfangs. Gemeinsam entwickeln wir ein Konzept, das zu Ihren Werten und Zielen passt.
               </p>
             </div>
+
+            <CustomerFeedback />
 
             <div className="mt-12 text-center">
               <Link to="/kontakt" className="btn-primary">

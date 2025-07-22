@@ -2,6 +2,7 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
+import CustomerFeedback from "@/components/CustomerFeedback";
 
 const VerstehenVeraendern = () => {
   useEffect(() => {
@@ -76,6 +77,8 @@ const VerstehenVeraendern = () => {
                 Statt starrer Ernährungsregeln geht es hier um ein tieferes Verständnis: Was tut mir wirklich gut? Welche Nahrung gibt mir Kraft? Wie kann ich dieses Wissen im Alltag umsetzen? Mit einer Balance aus fundiertem Wissen und achtsamer Selbstwahrnehmung findest du deinen individuellen Weg.
               </p>
             </div>
+
+            <CustomerFeedback />
 
             <div className="mt-12 text-center">
               <Link to="/kontakt" className="btn-primary">

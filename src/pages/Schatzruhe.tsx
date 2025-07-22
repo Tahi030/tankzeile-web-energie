@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
+import CustomerFeedback from "@/components/CustomerFeedback";
 
 const Schatzruhe = () => {
   useEffect(() => {
@@ -59,6 +60,8 @@ const Schatzruhe = () => {
                 Statt Essensregeln und Verboten setze ich auf Verbindung und Erfahrung. Wenn Kinder selbst erleben dürfen, wie gut sie sich mit gesunder Nahrung fühlen, entsteht eine nachhaltige positive Beziehung zu Ernährung – ganz ohne Zwang und Druck.
               </p>
             </div>
+
+            <CustomerFeedback />
 
             <div className="mt-12 text-center">
               <Link to="/kontakt" className="btn-primary">
