@@ -53,7 +53,7 @@ const FuerEinrichtungen = () => {
                 </ul>
               </div>
               
-              <h2>Die Workshops im Detail</h2>
+              
               
               <h3>Captain Apfel und das Gemüse-Abenteuer</h3>
               <p>
