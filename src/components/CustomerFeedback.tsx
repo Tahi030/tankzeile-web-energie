@@ -18,7 +18,7 @@ const CustomerFeedback = () => {
               ))}
             </div>
             <p className="text-sm text-muted-foreground">
-              "It was a great enrichment for all of us"
+              "Es war eine große Bereicherung für uns alle"
             </p>
           </div>
         </div>
