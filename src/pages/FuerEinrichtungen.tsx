@@ -16,6 +16,7 @@ const FuerEinrichtungen = () => {
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
             <h1 className="text-3xl md:text-4xl font-bold mb-6">Für alle, die mit Kindern arbeiten</h1>
+            <div className="w-16 h-1 bg-primary mx-auto mb-6"></div>
             <p className="text-lg">
               Ob Kita, Familienzentrum oder soziale Einrichtung – die Tankzeile bietet Angebote, die Vorschulkinder stärken: spielerisch, altersgerecht und mit Herz.
             </p>
@@ -28,10 +29,6 @@ const FuerEinrichtungen = () => {
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
             <div className="prose prose-lg max-w-none">
-              <p className="lead text-xl">
-                Captain Apfel und seine Crew nehmen Kinder mit auf eine Reise zur gesunden Ernährung – mit Bewegung, Mitmachgeschichten und einfachen Impulsen für den Alltag.
-              </p>
-              
               <div className="my-8 bg-primary-light p-6 rounded-lg">
                 <h2 className="text-2xl font-semibold mb-4">Was Sie erwarten können:</h2>
                 <ul>
@@ -42,23 +39,37 @@ const FuerEinrichtungen = () => {
                 </ul>
               </div>
               
-              
-              
-              
-              
-              <h3>Lust auf Zusammenarbeit? Ich auch!</h3>
-              <p>
-                Ich liebe es, Ideen gemeinsam zum Leben zu erwecken – mit Herz, Kreativität und Blick für das Wesentliche.
-              </p>
-              <p>
-                Ob Kita, Schule, Unternehmen oder ein Projekt, das Ihnen am Herzen liegt: Wenn Sie etwas Sinnvolles bewegen möchten, das wirklich funktioniert – lassen Sie uns sprechen! Ich bin offen für Kooperationen, neue Formate und kreative Ansätze.
-              </p>
-              <p>
-                Haben Sie eine Idee, brauchen frischen Input oder wollen einfach mal spinnen? Sehr gerne. Schreiben Sie mir einfach!
-              </p>
-              <p>
-                Denn echter Wandel beginnt mit Zusammenarbeit.
-              </p>
+              <div className="my-8 bg-primary-light p-6 rounded-lg">
+                <h2 className="text-2xl font-semibold mb-4">Workshop & Bildungsprogramm: Gesunde Ernährung spielerisch entdecken - mit Captain Apfel & seiner Crew</h2>
+                <p className="mb-4">Was tut dem Körper gut? Und was bremst ihn aus?</p>
+                <p className="mb-4">
+                  In meinem Workshop und Bildungsprogramm entdecken Vorschulkinder auf spielerische Weise, wie gesunde Ernährung im Alltag aussehen kann - ganz ohne erhobenen Zeigefinger. Im Mittelpunkt stehen Fragen wie:
+                </p>
+                <ul className="mb-4">
+                  <li>Wie viele Portionen Obst und Gemüse braucht mein Körper am Tag?</li>
+                  <li>Wie viel Zucker steckt eigentlich in Cola & Co.</li>
+                </ul>
+                <p className="mb-4">
+                  Anhand der 5-Portionen-Regel, kleinen Experimenten und der Fantasiefigur Captain Apfel lernen die Kinder, wie sie ihren Körper liebevoll stärken können - kindgerecht, verständlich und mit Spaß. Mein Angebot richtet sich an Kitas, Vorschulen und Einrichtungen, die Kindern auf einfache und lustige Weise gesunde Essgewohnheiten vermitteln möchten.
+                </p>
+                <p className="mb-4">
+                  Unter dem Titel „Captain Apfel" können Sie erfahren, was das Programm eigentlich beinhaltet. Bei Fragen oder Unsicherheiten kontaktieren Sie mich gerne - ich freue mich auf den Austausch und vielleicht bald auf einen Besuch in Ihrer Einrichtung!
+                </p>
+                <p className="mb-4">
+                  Ich liebe es, mit Kindern zu arbeiten - besonders, wenn man ihnen dabei etwas Sinnvolles mitgeben kann. Denn Kinder sind unsere Zukunft.
+                </p>
+                <p className="mb-4">
+                  <strong>Und noch etwas liegt mir am Herzen:</strong>
+                </p>
+                <p className="mb-4">
+                  Ich setze mich für regionale Lebensmittel und ehrliche Produkte ein - ganz bewusst gegen die großen Industriekonzerne, die unsere Nahrung immer mehr entfremden.
+                  Ich möchte Landwirte aus der Region unterstützen, Start-ups mit gesunden Ideen, z.B. zuckerfreie Süßigkeiten, und Einrichtungen oder Unternehmen, die den gleichen Weg gehen.
+                </p>
+                <p>
+                  Ob Kita, Schulprojekt, Hofladen oder junges Unternehmen - wenn Sie mit Kindern arbeiten oder ein gesundes Angebot schaffen möchten: Ich bin offen für Austausch und Zusammenarbeit.
+                  Denn gemeinsam geht es besser.
+                </p>
+              </div>
             </div>
 
             <div className="mt-12 text-center">
