@@ -15,9 +15,9 @@ const FuerEinrichtungen = () => {
       <section className="bg-secondary-light py-16 md:py-24">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
-            <h1 className="text-3xl md:text-4xl font-bold mb-6">Für alle, die mit Kindern arbeiten</h1>
-            <div className="w-16 h-1 bg-primary mx-auto mb-6"></div>
-            <p className="text-lg">
+            <h1 className="text-3xl md:text-4xl font-bold mb-6 text-white">Für alle, die mit Kindern arbeiten</h1>
+            <div className="w-16 h-1 bg-white mx-auto mb-6"></div>
+            <p className="text-lg text-white">
               Ob Kita, Familienzentrum oder soziale Einrichtung – die Tankzeile bietet Angebote, die Vorschulkinder stärken: spielerisch, altersgerecht und mit Herz.
             </p>
           </div>
@@ -29,18 +29,10 @@ const FuerEinrichtungen = () => {
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
             <div className="prose prose-lg max-w-none">
-              <div className="my-8 bg-primary-light p-6 rounded-lg">
-                <h2 className="text-2xl font-semibold mb-4">Was Sie erwarten können:</h2>
-                <ul>
-                  <li>Workshop-Angebote für Vorschulkinder (z. B. 60–90 Minuten)</li>
-                  <li>Inhalte zum Mitnehmen (Plakate, PDFs, Gesprächsimpulse)</li>
-                  <li>Achtsamkeit spielerisch vermittelt – kindgerecht und praxisnah</li>
-                  <li>Verbindung von Spaß und Gesundheitsbildung</li>
-                </ul>
-              </div>
               
               <div className="my-8 bg-primary-light p-6 rounded-lg">
                 <h2 className="text-2xl font-semibold mb-4">Workshop & Bildungsprogramm: Gesunde Ernährung spielerisch entdecken - mit Captain Apfel & seiner Crew</h2>
+                <div className="w-16 h-1 bg-primary mx-auto mb-6"></div>
                 <p className="mb-4">Was tut dem Körper gut? Und was bremst ihn aus?</p>
                 <p className="mb-4">
                   In meinem Workshop und Bildungsprogramm entdecken Vorschulkinder auf spielerische Weise, wie gesunde Ernährung im Alltag aussehen kann - ganz ohne erhobenen Zeigefinger. Im Mittelpunkt stehen Fragen wie:
