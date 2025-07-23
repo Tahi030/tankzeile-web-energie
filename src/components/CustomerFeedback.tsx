@@ -18,7 +18,7 @@ const CustomerFeedback = () => {
               ))}
             </div>
             <p className="text-sm text-muted-foreground">
-              "Praktisch umsetzbar und wirklich hilfreich für den Familienalltag"
+              "It was a great enrichment for all of us"
             </p>
           </div>
         </div>
