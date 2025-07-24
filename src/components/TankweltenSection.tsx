@@ -14,7 +14,7 @@ const tankwelten = [
     id: 2,
     title: "Alltag Leichter Leben",
     description: "Hier wird das Leben easy-peasy - mit Tipps, Tricks und Brotdosen-Fantasie.\nVon Achtsamkeit bis PDF - stay tuned, hier gibt es immer etwas Neues!",
-    image: "/lovable-uploads/a7b8b38c-22c9-4f39-8b85-d9174013bc67.png",
+    image: "/lovable-uploads/20769271-be9e-4738-8a85-e474b123198d.png",
     link: "/tankwelten/alltag-leichter-leben",
     isActive: true,
   },
