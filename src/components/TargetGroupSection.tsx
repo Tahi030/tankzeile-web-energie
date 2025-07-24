@@ -18,7 +18,7 @@ const TargetGroupSection = () => {
           
           <div className="relative z-10">
             <div className="mb-6">
-              <h2 className="text-2xl md:text-3xl mb-4 text-primary-dark text-left italic font-normal">Für alle, die gesunde Wege im Alltag suchen</h2>
+              <h2 className="text-2xl md:text-3xl mb-4 text-primary-dark text-left italic font-normal">Schön, dass du da bist!</h2>
               {/* Hand-drawn line effect */}
               <div className="flex justify-start">
                 <svg width="120" height="8" viewBox="0 0 120 8" className="text-primary">
@@ -46,19 +46,23 @@ const TargetGroupSection = () => {
             
             <div className="max-w-3xl mx-auto space-y-4 text-base md:text-lg">
               <p>
-                <em>Für Menschen</em>, die wieder spüren wollen, was sie wirklich nährt - frei von Zwängen und Industrie-Vorgaben.
+                Ich bin Tamara Hillmann – Gründerin der Tankzeile, einem Bildungs- und Gesundheitsprogramm im Herzen Berlins.
               </p>
               
               <p>
-                <em>Für Eltern</em>, die ihren Kindern zeigen möchten, wie Gesundheit schmeckt und Spaß macht - natürlich und ohne Verbote.
+                Die Tankzeile richtet sich an Familien mit Vorschulkindern und alle, die täglich Zeit mit Kindern verbringen – ob in Kitas, im privaten Umfeld oder in der frühkindlichen Bildung. Im Mittelpunkt stehen kindgerechte Ernährung, Achtsamkeit im Alltag und einfache Ideen für ein strukturierteres, harmonischeres Familienleben.
               </p>
               
               <p>
-                <em>Für alle</em>, die es wagen, neue Wege zu gehen, statt alte Muster zu leben.
+                Ich zeige, wie Kinder spielerisch verstehen können, was ihrem Körper gut tut – und wie Erwachsene neue Impulse für ihren Alltag mitnehmen können.
+              </p>
+              
+              <p>
+                Besonders liegt mir die Zusammenarbeit mit regionalen Unternehmen und Start-ups am Herzen, die sich für bewusste Ernährung einsetzen – beispielsweise durch frische, unverarbeitete Zutaten, alternative Süßungsmittel oder kindgerechte Produkte ohne Zusatzstoffe. Auch das Thema Lebensmittelunverträglichkeiten bei Kindern liegt mir am Herzen.
               </p>
               
               <p className="space-y-3">
-                Veränderung entsteht durch kleine Impulse, die sich richtig anfühlen. Unsere Kinder sind unser bester Kompass - denn Wohlbefinden beginnt immer dort, wo wir uns verbunden fühlen.
+                Die Tankzeile bringt Gesundheit in Bewegung – für Groß und Klein.
               </p>
               
               <motion.div 
