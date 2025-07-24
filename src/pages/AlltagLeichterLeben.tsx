@@ -129,7 +129,7 @@ const AlltagLeichterLeben = () => {
                 <p className="text-gray-600 mb-6">
                   Praktische Tipps und kreative Ideen für abwechslungsreiche und gesunde Brotdosen, die Kindern schmecken und Eltern entlasten.
                 </p>
-                <div className="flex items-center gap-4">
+                <div className="flex flex-col items-center gap-4">
                   <img 
                     src="/lovable-uploads/08bfbdac-09ed-487b-b043-b67755d1d90a.png" 
                     alt="Gratis PDF Kita-Brotdosen" 
