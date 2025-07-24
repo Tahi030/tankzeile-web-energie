@@ -89,9 +89,32 @@ const AlltagLeichterLeben = () => {
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
             <div className="bg-white rounded-lg shadow-md p-8">
-              <h2 className="text-2xl font-bold text-primary-dark mb-6">
+              <h2 className="text-2xl md:text-3xl mb-4 text-primary-dark text-left italic font-normal">
                 Deine Alltagshelfer to go!
               </h2>
+              {/* Hand-drawn line effect */}
+              <div className="flex justify-start mb-6">
+                <svg width="120" height="8" viewBox="0 0 120 8" className="text-primary">
+                  <path
+                    d="M2,4 Q8,2 15,4 T30,3 Q40,5 50,4 T70,3 Q80,5 90,4 T110,3 Q115,2 118,4"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    fill="none"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="opacity-70"
+                    style={{
+                      filter: 'url(#roughPaperHelper)',
+                    }}
+                  />
+                  <defs>
+                    <filter id="roughPaperHelper">
+                      <feTurbulence baseFrequency="0.04" numOctaves="3" result="noise" seed="2" />
+                      <feDisplacementMap in="SourceGraphic" in2="noise" scale="0.8" />
+                    </filter>
+                  </defs>
+                </svg>
+              </div>
               <p className="text-gray-600 mb-8">
                 Hier findest du regelmäßig kostenlose PDF-Dateien voller Ideen, Tipps und Informationen, die deinen Alltag leichter, gesünder und einfach schöner machen. Hol dir gleich deine erste Datei – und schau gern immer wieder vorbei, bald warten weitere kleine Helfer auf dich.
               </p>
@@ -110,14 +133,14 @@ const AlltagLeichterLeben = () => {
                   <img 
                     src="/lovable-uploads/08bfbdac-09ed-487b-b043-b67755d1d90a.png" 
                     alt="Gratis PDF Kita-Brotdosen" 
-                    className="w-40 h-40 object-contain rounded-lg"
+                    className="w-80 h-80 object-contain rounded-lg"
                   />
                   <a 
                     href="/lieblingsdose.pdf" 
                     download
                     className="inline-flex items-center bg-primary text-white px-6 py-3 rounded-lg hover:bg-primary-dark transition-colors font-medium"
                   >
-                    Deine Lieblingsdose - jetzt herunterladen
+                    Lieblingsdose herunterladen
                     <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                     </svg>
