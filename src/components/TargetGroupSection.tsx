@@ -97,13 +97,13 @@ const TargetGroupSection = () => {
                   </div>
                   <span>Willst du wissen, wie das geht?</span>
                 </div>
-                <div className="flex items-center justify-center">
-                  <span>Lern die Tankwelten kennen</span>
-                  <svg width="20" height="20" viewBox="0 0 20 20" className="text-primary ml-2">
+                <p>Lern die Tankwelten kennen</p>
+                <div className="flex justify-center mt-4">
+                  <svg width="40" height="40" viewBox="0 0 40 40" className="text-primary">
                     <path
-                      d="M10,5 Q9,8 11,12 Q10,15 10,17"
+                      d="M20,8 Q18,15 22,25 Q20,32 20,35"
                       stroke="currentColor"
-                      strokeWidth="2"
+                      strokeWidth="3"
                       fill="none"
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -113,9 +113,9 @@ const TargetGroupSection = () => {
                       }}
                     />
                     <path
-                      d="M7,14 Q9,16 10,17 Q11,16 13,14"
+                      d="M13,28 Q18,33 20,35 Q22,33 27,28"
                       stroke="currentColor"
-                      strokeWidth="2"
+                      strokeWidth="3"
                       fill="none"
                       strokeLinecap="round"
                       strokeLinejoin="round"
