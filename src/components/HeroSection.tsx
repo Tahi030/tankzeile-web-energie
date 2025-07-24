@@ -120,56 +120,6 @@ const HeroSection = () => {
             </div>
           </motion.div>
 
-          <div className="relative">
-            <motion.div 
-              className="bg-white/90 backdrop-blur-sm rounded-xl p-6 md:p-8 shadow-xl border border-primary/20 mb-0 transition-all duration-300 hover:shadow-2xl relative z-10" 
-              initial={{ opacity: 0, y: 40 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-              whileHover={{ scale: 1.02 }}
-            >
-              <div className="relative z-10">
-                <div className="mb-6">
-                  <h3 className="text-2xl md:text-3xl font-normal mb-4 text-primary-dark italic">Ernährung, Achtsamkeit und Verbindung</h3>
-                  {/* Hand-drawn line effect */}
-                  <div className="flex justify-start">
-                    <svg width="120" height="8" viewBox="0 0 120 8" className="text-primary">
-                      <path
-                        d="M2,4 Q8,2 15,4 T30,3 Q40,5 50,4 T70,3 Q80,5 90,4 T110,3 Q115,2 118,4"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        fill="none"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        className="opacity-70"
-                        style={{
-                          filter: 'url(#roughPaperHero)',
-                        }}
-                      />
-                      <defs>
-                        <filter id="roughPaperHero">
-                          <feTurbulence baseFrequency="0.04" numOctaves="3" result="noise" seed="3" />
-                          <feDisplacementMap in="SourceGraphic" in2="noise" scale="0.8" />
-                        </filter>
-                      </defs>
-                    </svg>
-                  </div>
-                </div>
-                <p className="text-base md:text-lg mb-4">
-                  Schön, dass du hier bist! Ich bin Tamara Hillmann – Gründerin der Tankzeile, einem Bildungs- und Gesundheitsprogramm mitten in Berlin.
-                </p>
-                <p className="text-base md:text-lg mb-4">
-                  Mit der Tankzeile zeige ich Kindern und Familien, wie sie im Alltag (wieder) lernen, genauer hinzuschauen, und wie Nahrung und innere Zufriedenheit dabei eine große Rolle spielen – praktisch, einfach und mit Freude.
-                </p>
-                <p className="text-base md:text-lg mb-4">
-                  Denn in einer Welt voller Fertiggerichte, Hektik und zu viel von allem fehlt oft genau das: Angebote, die ins Leben passen. Die Tankzeile schließt diese Lücke – mit lebendigen Workshops und einfachen Ideen, die Gesundheit und ein gutes Gefühl schon bei den Kleinsten fördern.
-                </p>
-                <p className="text-base md:text-lg">
-                  Das Ziel ist klar: ein Alltag, der dir gut tut, dich verbindet und dir Kraft gibt. Von Anfang an – für Groß und Klein.
-                </p>
-              </div>
-            </motion.div>
-          </div>
         </div>
       </div>
     </section>
