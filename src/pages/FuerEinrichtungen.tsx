@@ -96,7 +96,7 @@ const FuerEinrichtungen = () => {
                   Ich setze mich für regionale Lebensmittel und ehrliche Produkte ein – ganz bewusst gegen die großen Industriekonzerne, die unsere Nahrung immer mehr entfremden. Ich möchte Landwirte aus der Region unterstützen, Start-ups mit gesunden Ideen, z. B. zuckerfreie Süßigkeiten, und Einrichtungen oder Unternehmen, die den gleichen Weg gehen.
                 </p>
                 <p>
-                  Ob Kita, Schulprojekt, Hofladen oder junges Unternehmen – wenn Sie mit Kindern arbeiten oder ein gesundes Angebot schaffen möchten: Ich bin offen für Austausch und Zusammenarbeit. Denn gemeinsam geht es besser.
+                  Ob Kita, Schulprojekt, Hofladen oder Start-up – wenn Sie mit Kindern arbeiten oder ein gesundes Angebot schaffen möchten: Ich bin offen für Austausch und Zusammenarbeit. Denn gemeinsam geht es besser.
                 </p>
               </div>
             </div>
