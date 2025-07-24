@@ -81,27 +81,19 @@ const FuerEinrichtungen = () => {
                 </p>
                 <ul className="mb-4">
                   <li>Wie viele Portionen Obst und Gemüse braucht mein Körper am Tag?</li>
-                  <li>Wie viel Zucker steckt eigentlich in Cola & Co.</li>
+                  <li>Wie viel Zucker steckt eigentlich in Cola und anderen Softdrinks?</li>
                 </ul>
                 <p className="mb-4">
                   Anhand der 5-Portionen-Regel, kleinen Experimenten und der Fantasiefigur Captain Apfel lernen die Kinder, wie sie ihren Körper liebevoll stärken können - kindgerecht, verständlich und mit Spaß. Mein Angebot richtet sich an Kitas, Vorschulen und Einrichtungen, die Kindern auf einfache und lustige Weise gesunde Essgewohnheiten vermitteln möchten.
                 </p>
                 <p className="mb-4">
-                  Unter dem Titel „Captain Apfel" können Sie erfahren, was das Programm eigentlich beinhaltet. Bei Fragen oder Unsicherheiten kontaktieren Sie mich gerne - ich freue mich auf den Austausch und vielleicht bald auf einen Besuch in Ihrer Einrichtung!
+                  Unter dem Titel „Captain Apfel" können Sie erfahren, was das Programm eigentlich beinhaltet. Bei Fragen oder Unsicherheiten kontaktieren Sie mich gerne - ich freue mich auf den Austausch und vielleicht bald auf einen Besuch in Ihrer Einrichtung! Ich liebe es, mit Kindern zu arbeiten - besonders, wenn man ihnen dabei etwas Sinnvolles mitgeben kann. Kinder sind unsere Zukunft. Und noch etwas liegt mir am Herzen:
                 </p>
                 <p className="mb-4">
-                  Ich liebe es, mit Kindern zu arbeiten - besonders, wenn man ihnen dabei etwas Sinnvolles mitgeben kann. Denn Kinder sind unsere Zukunft.
-                </p>
-                <p className="mb-4">
-                  <strong>Und noch etwas liegt mir am Herzen:</strong>
-                </p>
-                <p className="mb-4">
-                  Ich setze mich für regionale Lebensmittel und ehrliche Produkte ein - ganz bewusst gegen die großen Industriekonzerne, die unsere Nahrung immer mehr entfremden.
-                  Ich möchte Landwirte aus der Region unterstützen, Start-ups mit gesunden Ideen, z.B. zuckerfreie Süßigkeiten, und Einrichtungen oder Unternehmen, die den gleichen Weg gehen.
+                  Ich setze mich für regionale Lebensmittel und ehrliche Produkte ein - ganz bewusst gegen die großen Industriekonzerne, die uns immer mehr von unseren Lebensmitteln entfremden. Ich möchte Landwirte aus der Region unterstützen, Start-ups mit gesunden Ideen, z.B. zuckerfreie Süßigkeiten, und Einrichtungen oder Unternehmen, die den gleichen Weg gehen.
                 </p>
                 <p>
-                  Ob Kita, Schulprojekt, Hofladen oder junges Unternehmen - wenn Sie mit Kindern arbeiten oder ein gesundes Angebot schaffen möchten: Ich bin offen für Austausch und Zusammenarbeit.
-                  Denn gemeinsam geht es besser.
+                  Ob Kita, Schulprojekt, Hofladen oder junges Unternehmen - wenn Sie mit Kindern arbeiten oder ein gesundes Angebot schaffen möchten: Ich bin offen für Austausch und Zusammenarbeit. Denn gemeinsam können wir es besser machen.
                 </p>
               </div>
             </div>
