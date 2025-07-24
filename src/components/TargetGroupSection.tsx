@@ -97,8 +97,41 @@ const TargetGroupSection = () => {
                   </div>
                   <span>Willst du wissen, wie das geht?</span>
                 </div>
-                <p>Lern die Tankwelten kennen –</p>
-                <p>und entdecke, wie wir uns wieder verbinden können.</p>
+                <div className="flex items-center justify-center">
+                  <span>Lern die Tankwelten kennen</span>
+                  <svg width="20" height="20" viewBox="0 0 20 20" className="text-primary ml-2">
+                    <path
+                      d="M10,5 Q9,8 11,12 Q10,15 10,17"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      fill="none"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="opacity-70"
+                      style={{
+                        filter: 'url(#roughArrowTarget)',
+                      }}
+                    />
+                    <path
+                      d="M7,14 Q9,16 10,17 Q11,16 13,14"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      fill="none"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="opacity-70"
+                      style={{
+                        filter: 'url(#roughArrowTarget)',
+                      }}
+                    />
+                    <defs>
+                      <filter id="roughArrowTarget">
+                        <feTurbulence baseFrequency="0.04" numOctaves="3" result="noise" seed="3" />
+                        <feDisplacementMap in="SourceGraphic" in2="noise" scale="0.8" />
+                      </filter>
+                    </defs>
+                  </svg>
+                </div>
               </motion.div>
             </div>
           </div>
