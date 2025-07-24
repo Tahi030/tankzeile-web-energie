@@ -38,7 +38,7 @@ const AlltagLeichterLeben = () => {
                 </filter>
               </defs>
             </svg>
-            <p className="text-lg mb-6">
+            <p className="text-lg mb-6 text-white">
               Für Familien, die Struktur, Entlastung und neue Energie suchen.
             </p>
           </div>
