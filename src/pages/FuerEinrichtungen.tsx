@@ -87,7 +87,7 @@ const FuerEinrichtungen = () => {
                   Anhand der 5-Portionen-Regel, kleinen Experimenten und der Fantasiefigur Captain Apfel lernen die Kinder, wie sie ihren Körper liebevoll stärken können – kindgerecht, verständlich und mit Spaß. Mein Angebot richtet sich an Kitas, Vorschulen und Einrichtungen, die Kindern auf einfache und lustige Weise gesunde Essgewohnheiten vermitteln möchten.
                 </p>
                 <p className="mb-4">
-                  Unter dem Titel „Captain Apfel" können Sie erfahren, was das Programm eigentlich beinhaltet. Bei Fragen oder Unsicherheiten kontaktieren Sie mich gerne – ich freue mich auf den Austausch und vielleicht bald auf einen Besuch in Ihrer Einrichtung! Denn ich liebe es, mit Kindern zu arbeiten – besonders, wenn man ihnen dabei etwas Sinnvolles mitgeben kann. Kinder sind unsere Zukunft.
+                  Unter dem Titel „Captain Apfel" können Sie erfahren, was das Programm beinhaltet. Bei Fragen oder Unsicherheiten kontaktieren Sie mich gerne – ich freue mich auf den Austausch und vielleicht bald auf einen Besuch in Ihrer Einrichtung! Denn ich liebe es, mit Kindern zu arbeiten – besonders, wenn man ihnen dabei etwas Sinnvolles mitgeben kann. Kinder sind unsere Zukunft.
                 </p>
                 <p className="mb-4">
                   Und noch etwas liegt mir am Herzen:
