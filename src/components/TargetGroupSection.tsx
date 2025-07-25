@@ -98,7 +98,13 @@ const TargetGroupSection = () => {
                   <span>Willst du wissen, wie das geht?</span>
                 </div>
                 <p>Lern die Tankwelten kennen</p>
-                <div className="flex justify-center mt-4">
+                <motion.div 
+                  className="flex justify-center mt-4"
+                  initial={{ opacity: 0, scale: 0.5 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  transition={{ delay: 0.6, duration: 0.6 }}
+                  viewport={{ once: true }}
+                >
                   <svg width="40" height="40" viewBox="0 0 40 40" className="text-primary">
                     <path
                       d="M20,8 Q18,15 22,25 Q20,32 20,35"
@@ -131,7 +137,7 @@ const TargetGroupSection = () => {
                       </filter>
                     </defs>
                   </svg>
-                </div>
+                </motion.div>
               </motion.div>
             </div>
           </div>
