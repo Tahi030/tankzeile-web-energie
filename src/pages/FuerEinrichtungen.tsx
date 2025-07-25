@@ -77,7 +77,7 @@ const FuerEinrichtungen = () => {
                 </div>
                 <p className="mb-4">Was tut dem Körper gut? Und was bremst ihn aus?</p>
                 <p className="mb-4">
-                  Vorschulkinder entdecken in meinem Workshop, wie gesunde Ernährung im Alltag funktioniert – durch Spiele, Mitmachen und kindgerechte Anreize. Im Mittelpunkt stehen Fragen wie:
+                  Vorschulkinder entdecken in meinem Workshop, wie gesunde Ernährung im Alltag funktioniert – durch Spiele, Mitmachen und kindgerechte Impulse. Im Mittelpunkt stehen Fragen wie:
                 </p>
                 <ul className="mb-4">
                   <li>Wie viele Portionen Obst und Gemüse braucht mein Körper am Tag?</li>
