@@ -54,7 +54,7 @@ const TargetGroupSection = () => {
               </p>
               
               <p>
-                Ich zeige, wie Kinder spielerisch verstehen können, was ihrem Körper gut tut – und wie Erwachsene neue Impulse für ihren Alltag mitnehmen können.
+                Durch spielerische Elemente entdecken Kinder, welche Lebensmittel ihren Körper stärken – und welche ihn ausbremsen.
               </p>
               
               <p>
