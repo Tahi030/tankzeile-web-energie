@@ -54,7 +54,7 @@ const TargetGroupSection = () => {
               </p>
               
               <p>
-                Durch spielerische Elemente entdecken Kinder, welche Lebensmittel ihren Körper stärken – und welche ihn ausbremsen.
+                Kinder entdecken durch Spiel und Spaß, welche Lebensmittel ihnen Kraft geben – und Erwachsene finden frische Ideen für ihren Alltag.
               </p>
               
               <p>
