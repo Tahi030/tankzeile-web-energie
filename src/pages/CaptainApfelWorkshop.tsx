@@ -43,22 +43,6 @@ const CaptainApfelWorkshop = () => {
                 </AspectRatio>
               </div>
 
-              <div className="my-8 bg-primary-light p-6 rounded-lg">
-                <h3 className="font-bold text-xl mb-4 font-sans">Captain Apfel Workshops</h3>
-                <p>
-                  Mit Captain Apfel und seiner Crew gehen Vorschulkinder auf eine spannende Entdeckungsreise in die Welt der gesunden Ernährung. Durch Bewegungsspiele, Geschichten und altersgerechte Mitmachaktionen erleben Kinder spielerisch, wie lecker und abenteuerlich gesundes Essen sein kann.
-                </p>
-              </div>
-
-              <h3 className="font-bold font-sans">Gemeinsam wachsen</h3>
-              <p>
-                Wenn wir mit unseren Kindern achtsam und bewusst Essen entdecken, legen wir den Grundstein für ein gesundes Verhältnis zu Nahrung. Die gemeinsamen Erlebnisse stärken nicht nur die Bindung, sondern geben Kindern auch Sicherheit und Orientierung für ihre Zukunft.
-              </p>
-              
-              <h3 className="font-bold font-sans">Verbindung statt Erziehung</h3>
-              <p>
-                Statt Essensregeln und Verboten setze ich auf Verbindung und Erfahrung. Wenn Kinder selbst erleben dürfen, wie gut sie sich mit gesunder Nahrung fühlen, entsteht eine nachhaltige positive Beziehung zu Ernährung – ganz ohne Zwang und Druck.
-              </p>
             </div>
 
             <CustomerFeedback />
