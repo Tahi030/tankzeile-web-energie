@@ -68,6 +68,12 @@ const ErlebenVerbinden = () => {
               </div>
 
               <div className="my-8 grid gap-8">
+                <div className="bg-primary-light p-6 rounded-lg">
+                  <h3 className="font-bold text-xl mb-4 font-sans">Captain Apfel Workshops</h3>
+                  <p>
+                    Mit Captain Apfel und seiner Crew gehen Vorschulkinder auf eine spannende Entdeckungsreise in die Welt der gesunden Ernährung. Durch Bewegungsspiele, Geschichten und altersgerechte Mitmachaktionen erleben Kinder spielerisch, wie lecker und abenteuerlich gesundes Essen sein kann.
+                  </p>
+                </div>
 
                 <div className="bg-secondary-light p-6 rounded-lg">
                   <h3 className="font-bold text-xl mb-4 font-sans">Die Schatz(t)ruhe</h3>
