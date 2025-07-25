@@ -44,8 +44,8 @@ const CaptainApfelWorkshop = () => {
               </div>
 
               <div className="my-8 bg-primary-light p-6 rounded-lg">
-                <h3 className="font-bold text-xl mb-4 font-sans text-white">Captain Apfel Workshops</h3>
-                <p className="text-white">
+                <h3 className="font-bold text-xl mb-4 font-sans text-primary-dark">Captain Apfel Workshops</h3>
+                <p className="text-primary-dark">
                   Mit Captain Apfel und seiner Crew gehen Vorschulkinder auf eine spannende Entdeckungsreise in die Welt der gesunden Ernährung. Durch Bewegungsspiele, Geschichten und altersgerechte Mitmachaktionen erleben Kinder spielerisch, wie lecker und abenteuerlich gesundes Essen sein kann.
                 </p>
               </div>
