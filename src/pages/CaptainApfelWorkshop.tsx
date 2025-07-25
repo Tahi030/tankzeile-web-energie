@@ -58,7 +58,7 @@ const CaptainApfelWorkshop = () => {
 
             <div className="mt-12 text-center">
               <Link to="/kontakt" className="btn-primary">
-                Interested in a workshop?
+                Interesse an einem Workshop?
               </Link>
             </div>
           </div>
