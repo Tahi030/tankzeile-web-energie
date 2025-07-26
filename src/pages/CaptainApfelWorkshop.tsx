@@ -8,10 +8,57 @@ import CustomerFeedback from "@/components/CustomerFeedback";
 const CaptainApfelWorkshop = () => {
   useEffect(() => {
     // Set page metadata for SEO
-    document.title = "Captain Apfel Workshop | Tankzeile";
+    document.title = "Tankzeile – Ernährung & Achtsamkeit für Kinder, Familien & Kitas";
+    
+    // Set meta description
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', 'Workshops mit Captain Apfel für Vorschulkinder. Gesunde Ernährung, Achtsamkeit und spielerisches Wissen rund um Nahrungsmittel-Unverträglichkeiten. Für Familien, Erzieher*innen & alle, die Kinder begleiten.');
+    }
+    
+    // Add schema markup for SEO
+    const schema = {
+      "@context": "https://schema.org",
+      "@type": "EducationalEvent",
+      "name": "Captain Apfel Workshop",
+      "description": "Workshops mit Captain Apfel für Vorschulkinder. Gesunde Ernährung, Achtsamkeit und spielerisches Wissen rund um Nahrungsmittel-Unverträglichkeiten.",
+      "organizer": {
+        "@type": "Organization",
+        "name": "Tankzeile",
+        "url": "https://tankzeile.de"
+      },
+      "audience": {
+        "@type": "EducationalAudience",
+        "audienceType": "Vorschulkinder, Familien, Kitas"
+      },
+      "educationalLevel": "Vorschule",
+      "learningResourceType": "Workshop",
+      "keywords": "Ernährung, Achtsamkeit, Kinder, Captain Apfel, Nahrungsmittel-Unverträglichkeiten, Vorschule"
+    };
+    
+    // Remove existing schema if any
+    const existingSchema = document.querySelector('script[type="application/ld+json"][data-page="captain-apfel"]');
+    if (existingSchema) {
+      existingSchema.remove();
+    }
+    
+    // Add new schema
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.setAttribute('data-page', 'captain-apfel');
+    script.textContent = JSON.stringify(schema);
+    document.head.appendChild(script);
     
     // Scroll to top when component mounts
     window.scrollTo(0, 0);
+    
+    return () => {
+      // Cleanup schema on unmount
+      const schemaToRemove = document.querySelector('script[type="application/ld+json"][data-page="captain-apfel"]');
+      if (schemaToRemove) {
+        schemaToRemove.remove();
+      }
+    };
   }, []);
 
   return (
