@@ -62,7 +62,7 @@ const TargetGroupSection = () => {
               </p>
               
               <p className="space-y-3">
-                Die Tankzeile bringt Gesundheit in Bewegung – für Jung und Alt.
+                Die Tankzeile bringt Gesundheit in Bewegung – für Groß und Klein.
               </p>
               
               <motion.div 
