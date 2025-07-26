@@ -18,7 +18,7 @@ const TargetGroupSection = () => {
           
           <div className="relative z-10">
             <div className="mb-6">
-              <h2 className="text-2xl md:text-3xl mb-4 text-primary-dark text-left italic font-normal">Schön, dass du da bist!</h2>
+              <h2 className="text-2xl md:text-3xl mb-4 text-primary-dark text-left italic font-normal">Willkommen bei Tankzeile – Ernährung & Achtsamkeit für Kinder, Familien & Kitas<br />Schön, dass du da bist!</h2>
               {/* Hand-drawn line effect */}
               <div className="flex justify-start">
                 <svg width="120" height="8" viewBox="0 0 120 8" className="text-primary">
@@ -50,19 +50,19 @@ const TargetGroupSection = () => {
               </p>
               
               <p>
-                Die Tankzeile richtet sich an Familien mit Vorschulkindern und alle, die täglich Zeit mit Kindern verbringen – ob in Kitas, im privaten Umfeld oder in der frühkindlichen Bildung. Im Mittelpunkt stehen kindgerechte Ernährung, Achtsamkeit im Alltag und einfache Ideen für ein strukturierteres, harmonischeres Familienleben.
+                Die Tankzeile richtet sich an Familien mit Vorschulkindern, Kitas und alle, die täglich Zeit mit Kindern verbringen. Im Mittelpunkt stehen gesunde, kindgerechte Ernährung, Achtsamkeit und praktische Tipps für ein harmonischeres Familienleben.
               </p>
               
               <p>
-                Kinder entdecken durch Spiel und Spaß, welche Lebensmittel ihnen Kraft geben – und Erwachsene finden frische Ideen für ihren Alltag.
+                Durch Spiel und Spaß entdecken Kinder, welche Lebensmittel ihnen Energie geben – und Erwachsene finden frische Ideen für ihren Alltag.
               </p>
               
               <p>
-                Besonders liegt mir die Zusammenarbeit mit regionalen Unternehmen und Start-ups am Herzen, die sich für bewusste Ernährung einsetzen – beispielsweise durch frische, unverarbeitete Zutaten, alternative Süßungsmittel oder kindgerechte Produkte ohne Zusatzstoffe. Auch das Thema Lebensmittelunverträglichkeiten bei Kindern liegt mir am Herzen.
+                Besonders interessiert mich die Zusammenarbeit mit regionalen Unternehmen, die auf natürliche Zutaten, alternative Süßungsmittel und kindgerechte Produkte setzen. Auch das Thema Nahrungsmittel-Unverträglichkeiten liegt mir sehr am Herzen.
               </p>
               
               <p className="space-y-3">
-                Die Tankzeile bringt Gesundheit in Bewegung – für Groß und Klein.
+                Die Tankzeile bringt Gesundheit in Bewegung – für Jung und Alt.
               </p>
               
               <motion.div 
