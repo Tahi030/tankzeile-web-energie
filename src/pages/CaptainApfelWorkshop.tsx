@@ -344,14 +344,14 @@ const CaptainApfelWorkshop = () => {
             </div>
 
             <div className="mt-12 md:mt-16 text-center">
-              <div className="bg-gradient-to-r from-green-500 to-emerald-600 rounded-2xl p-6 md:p-8 shadow-xl border-2 border-green-300/30">
-                <h3 className="text-xl md:text-2xl font-bold text-white mb-3 md:mb-4 font-fredoka">
+              <div className="bg-gradient-to-r from-sky-200 via-purple-200 to-pink-200 rounded-2xl p-6 md:p-8 shadow-xl border-2 border-sky-300/30">
+                <h3 className="text-xl md:text-2xl font-bold text-purple-700 mb-3 md:mb-4 font-fredoka">
                   Bereit für das Abenteuer?
                 </h3>
-                <p className="text-white/90 mb-4 md:mb-6 text-base md:text-lg font-fredoka">
+                <p className="text-purple-600/90 mb-4 md:mb-6 text-base md:text-lg font-fredoka">
                   Lasst uns gemeinsam die Welt der gesunden Ernährung entdecken!
                 </p>
-                <Link to="/kontakt" className="bg-white text-green-600 font-bold py-3 px-6 md:py-4 md:px-8 rounded-full hover:bg-green-50 transition-colors duration-300 shadow-lg inline-flex items-center gap-2 font-fredoka text-sm md:text-base">
+                <Link to="/kontakt" className="bg-white/90 text-purple-700 font-bold py-3 px-6 md:py-4 md:px-8 rounded-full hover:bg-white transition-colors duration-300 shadow-lg inline-flex items-center gap-2 font-fredoka text-sm md:text-base border-2 border-purple-300/50">
                   <span className="hidden sm:inline">Interesse an einem Workshop?</span>
                   <span className="sm:hidden">Workshop anfragen</span>
                 </Link>
