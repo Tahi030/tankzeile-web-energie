@@ -13,15 +13,15 @@ const CaptainApfelWorkshop = () => {
     // Set meta description
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Workshops mit Captain Apfel für Vorschulkinder. Gesunde Ernährung, Achtsamkeit und spielerisches Wissen rund um Nahrungsmittel-Unverträglichkeiten. Für Familien, Erzieher*innen & alle, die Kinder begleiten.');
+      metaDescription.setAttribute('content', 'Workshops mit Captain Apfel Zahn für Vorschulkinder. Gesunde Ernährung, Achtsamkeit und spielerisches Wissen rund um Nahrungsmittel-Unverträglichkeiten. Für Familien, Erzieher*innen & alle, die Kinder begleiten.');
     }
     
     // Add schema markup for SEO
     const schema = {
       "@context": "https://schema.org",
       "@type": "EducationalEvent",
-      "name": "Captain Apfel Workshop",
-      "description": "Workshops mit Captain Apfel für Vorschulkinder. Gesunde Ernährung, Achtsamkeit und spielerisches Wissen rund um Nahrungsmittel-Unverträglichkeiten.",
+      "name": "Captain Apfel Zahn Workshop",
+      "description": "Workshops mit Captain Apfel Zahn für Vorschulkinder. Gesunde Ernährung, Achtsamkeit und spielerisches Wissen rund um Nahrungsmittel-Unverträglichkeiten.",
       "organizer": {
         "@type": "Organization",
         "name": "Tankzeile",
@@ -33,7 +33,7 @@ const CaptainApfelWorkshop = () => {
       },
       "educationalLevel": "Vorschule",
       "learningResourceType": "Workshop",
-      "keywords": "Ernährung, Achtsamkeit, Kinder, Captain Apfel, Nahrungsmittel-Unverträglichkeiten, Vorschule"
+      "keywords": "Ernährung, Achtsamkeit, Kinder, Captain Apfel Zahn, Nahrungsmittel-Unverträglichkeiten, Vorschule"
     };
     
     // Remove existing schema if any
@@ -67,7 +67,7 @@ const CaptainApfelWorkshop = () => {
       <section className="bg-accent-light py-16 md:py-24">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
-            <h1 className="text-3xl md:text-4xl font-bold mb-6 text-white">Captain Apfel Workshop</h1>
+            <h1 className="text-3xl md:text-4xl font-bold mb-6 text-white">Captain Apfel Zahn Workshop</h1>
             <p className="text-lg mb-6 text-white">
               Für Vorschulkinder, die spielerisch die Welt der gesunden Ernährung entdecken möchten.
             </p>
@@ -91,8 +91,8 @@ const CaptainApfelWorkshop = () => {
               <div className="my-8">
                 <AspectRatio ratio={16/9} className="bg-muted">
                   <img 
-                    src="/lovable-uploads/dacb4690-c1b7-4b93-97d9-0eb5ff2c2361.png" 
-                    alt="Captain Apfel auf gesunder Mission" 
+                    src="/lovable-uploads/dc82d36f-9591-487d-85d4-249dcbf5e2f3.png" 
+                    alt="Captain Apfel Zahn auf gesunder Mission" 
                     className="rounded-lg shadow-md w-full h-full object-cover"
                   />
                 </AspectRatio>
