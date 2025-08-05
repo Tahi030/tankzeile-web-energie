@@ -64,69 +64,69 @@ const CaptainApfelWorkshop = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section with Character Staging */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-orange-200 via-blue-200 to-green-200 py-20 md:py-32">
+      <section className="relative overflow-hidden bg-gradient-to-br from-orange-200 via-blue-200 to-green-200 py-12 md:py-20 lg:py-32">
         {/* Character Crew - Arranged as a cohesive team */}
-        <div className="absolute inset-0 pointer-events-none opacity-25">
+        <div className="absolute inset-0 pointer-events-none opacity-20 md:opacity-25">
           {/* Hero Character Group - Top Formation */}
-          <div className="absolute top-4 left-4 flex flex-col gap-3">
+          <div className="absolute top-2 left-2 md:top-4 md:left-4 flex flex-col gap-2 md:gap-3">
             <img 
               src="/lovable-uploads/5585f373-ca3c-4c93-8f40-6514268b2080.png" 
               alt="Captain Superheld" 
-              className="w-16 h-16 md:w-20 md:h-20 animate-bounce opacity-90"
+              className="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 animate-bounce opacity-90"
               style={{ animationDelay: '0s', animationDuration: '3s' }}
             />
           </div>
           
-          <div className="absolute top-4 right-4 flex flex-col gap-3">
+          <div className="absolute top-2 right-2 md:top-4 md:right-4 flex flex-col gap-2 md:gap-3">
             <img 
               src="/lovable-uploads/93f05473-274d-4f59-9aa9-06d7eaefa496.png" 
               alt="Bruno Brokkoli" 
-              className="w-16 h-16 md:w-20 md:h-20 animate-bounce opacity-90"
+              className="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 animate-bounce opacity-90"
               style={{ animationDelay: '0.5s', animationDuration: '4.5s' }}
             />
           </div>
           
           {/* Bottom Crew Formation */}
-          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex gap-6">
+          <div className="absolute bottom-4 md:bottom-8 left-1/2 transform -translate-x-1/2 flex gap-4 md:gap-6">
             <img 
               src="/lovable-uploads/3d316574-8e30-4bd5-9ac2-43c62f322d8b.png" 
               alt="Blumi Blumenkohl" 
-              className="w-12 h-12 md:w-16 md:h-16 animate-pulse opacity-80"
+              className="w-10 h-10 md:w-12 md:h-12 lg:w-16 lg:h-16 animate-pulse opacity-80"
               style={{ animationDelay: '1s' }}
             />
           </div>
         </div>
 
-        <div className="container-custom relative z-10">
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="mb-8">
-              <h1 className="text-4xl md:text-6xl font-bold mb-4 text-white drop-shadow-lg font-playfair">
+            <div className="mb-6 md:mb-8">
+              <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold mb-3 md:mb-4 text-white drop-shadow-lg font-playfair leading-tight">
                 Captain Apfelzahn & die Crew – auf gesunder Mission
               </h1>
-              <p className="text-2xl md:text-3xl mb-6 text-white drop-shadow-md font-fredoka font-medium">
+              <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl mb-4 md:mb-6 text-white drop-shadow-md font-fredoka font-medium">
                 Volle Obst- und Gemüsekraft voraus
               </p>
-              <div className="flex justify-center mb-6">
-                <div className="bg-white/20 backdrop-blur-sm rounded-full p-8 shadow-xl">
+              <div className="flex justify-center mb-4 md:mb-6">
+                <div className="bg-white/20 backdrop-blur-sm rounded-full p-4 md:p-6 lg:p-8 shadow-xl">
                   <img 
                     src="/lovable-uploads/d12c4083-e2df-4c05-a5ee-22df82546ed7.png" 
                     alt="Die Powerzentrale" 
-                    className="w-32 h-32 md:w-48 md:h-48 drop-shadow-2xl animate-pulse"
+                    className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 drop-shadow-2xl animate-pulse"
                   />
                 </div>
               </div>
-              <p className="text-xl md:text-2xl mb-8 text-white drop-shadow-md font-medium">
+              <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-6 md:mb-8 text-white drop-shadow-md font-medium px-4">
                 🚀 Für Vorschulkinder, die spielerisch die Welt der gesunden Ernährung entdecken möchten! 🚀
               </p>
               
-              <div className="flex flex-wrap justify-center gap-4 mb-8">
-                <div className="bg-white/15 backdrop-blur-sm rounded-lg px-6 py-3 text-white font-fredoka font-medium shadow-lg">
+              <div className="flex flex-wrap justify-center gap-2 md:gap-4 mb-6 md:mb-8 px-4">
+                <div className="bg-white/15 backdrop-blur-sm rounded-lg px-3 py-2 md:px-6 md:py-3 text-white font-fredoka font-medium shadow-lg text-sm md:text-base">
                   Spielerisches Lernen
                 </div>
-                <div className="bg-white/15 backdrop-blur-sm rounded-lg px-6 py-3 text-white font-fredoka font-medium shadow-lg">
+                <div className="bg-white/15 backdrop-blur-sm rounded-lg px-3 py-2 md:px-6 md:py-3 text-white font-fredoka font-medium shadow-lg text-sm md:text-base">
                   Gesunde Ernährung
                 </div>
-                <div className="bg-white/15 backdrop-blur-sm rounded-lg px-6 py-3 text-white font-fredoka font-medium shadow-lg">
+                <div className="bg-white/15 backdrop-blur-sm rounded-lg px-3 py-2 md:px-6 md:py-3 text-white font-fredoka font-medium shadow-lg text-sm md:text-base">
                   Achtsamkeit
                 </div>
               </div>
@@ -174,60 +174,60 @@ const CaptainApfelWorkshop = () => {
               </div>
             </div>
 
-            <div className="flex flex-wrap justify-center items-center gap-10 mb-16">
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 md:gap-8 mb-16 justify-items-center">
               <div className="text-center group">
-                <div className="bg-gradient-to-br from-green-100 to-green-200 rounded-full shadow-xl mb-4 transform group-hover:scale-110 transition-all duration-300 hover:shadow-2xl w-32 h-32 flex items-center justify-center overflow-hidden">
+                <div className="bg-gradient-to-br from-green-100 to-green-200 rounded-full shadow-xl mb-3 transform group-hover:scale-110 transition-all duration-300 hover:shadow-2xl w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 flex items-center justify-center overflow-hidden">
                   <img 
                     src="/lovable-uploads/d12c4083-e2df-4c05-a5ee-22df82546ed7.png" 
                     alt="Die Powerzentrale" 
-                    className="w-30 h-30 object-contain mx-auto"
+                    className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 object-contain"
                   />
                 </div>
-                <h3 className="text-lg font-bold text-green-600 text-center">Die Powerzentrale</h3>
+                <h3 className="text-sm sm:text-base md:text-lg font-bold text-green-600 text-center">Die Powerzentrale</h3>
               </div>
 
               <div className="text-center group">
-                <div className="bg-gradient-to-br from-blue-100 to-blue-200 rounded-full shadow-xl mb-4 transform group-hover:scale-110 transition-all duration-300 hover:shadow-2xl w-32 h-32 flex items-center justify-center overflow-hidden">
+                <div className="bg-gradient-to-br from-blue-100 to-blue-200 rounded-full shadow-xl mb-3 transform group-hover:scale-110 transition-all duration-300 hover:shadow-2xl w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 flex items-center justify-center overflow-hidden">
                   <img 
                     src="/lovable-uploads/fc011b76-01d0-4e54-87ab-6174605bb7fc.png" 
                     alt="Captain Apfelzahn" 
-                    className="w-30 h-30 object-contain m-auto"
+                    className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 object-contain"
                   />
                 </div>
-                <h3 className="text-lg font-bold text-blue-600 text-center">Captain Apfelzahn</h3>
+                <h3 className="text-sm sm:text-base md:text-lg font-bold text-blue-600 text-center">Captain Apfelzahn</h3>
               </div>
 
               <div className="text-center group">
-                <div className="bg-gradient-to-br from-orange-100 to-orange-200 rounded-full shadow-xl mb-4 transform group-hover:scale-110 transition-all duration-300 hover:shadow-2xl w-32 h-32 flex items-center justify-center overflow-hidden">
+                <div className="bg-gradient-to-br from-orange-100 to-orange-200 rounded-full shadow-xl mb-3 transform group-hover:scale-110 transition-all duration-300 hover:shadow-2xl w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 flex items-center justify-center overflow-hidden">
                   <img 
                     src="/lovable-uploads/3010b863-5b52-4f66-8512-f9ba4b8c3434.png" 
                     alt="Kimmi Schlau" 
-                    className="w-30 h-30 object-contain mx-auto"
+                    className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 object-contain"
                   />
                 </div>
-                <h3 className="text-lg font-bold text-orange-600 text-center">Kimmi Schlau</h3>
+                <h3 className="text-sm sm:text-base md:text-lg font-bold text-orange-600 text-center">Kimmi Schlau</h3>
               </div>
               
               <div className="text-center group">
-                <div className="bg-gradient-to-br from-green-100 to-green-200 rounded-full shadow-xl mb-4 transform group-hover:scale-110 transition-all duration-300 hover:shadow-2xl w-32 h-32 flex items-center justify-center overflow-hidden">
+                <div className="bg-gradient-to-br from-green-100 to-green-200 rounded-full shadow-xl mb-3 transform group-hover:scale-110 transition-all duration-300 hover:shadow-2xl w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 flex items-center justify-center overflow-hidden">
                   <img 
                     src="/lovable-uploads/93f05473-274d-4f59-9aa9-06d7eaefa496.png" 
                     alt="Kai Mutig" 
-                    className="w-30 h-30 object-contain m-auto"
+                    className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 object-contain"
                   />
                 </div>
-                <h3 className="text-lg font-bold text-green-600 text-center">Kai Mutig</h3>
+                <h3 className="text-sm sm:text-base md:text-lg font-bold text-green-600 text-center">Kai Mutig</h3>
               </div>
               
-              <div className="text-center group">
-                <div className="bg-gradient-to-br from-red-100 to-red-200 rounded-full shadow-xl mb-4 transform group-hover:scale-110 transition-all duration-300 hover:shadow-2xl w-32 h-32 flex items-center justify-center overflow-hidden">
+              <div className="text-center group col-span-2 sm:col-span-1">
+                <div className="bg-gradient-to-br from-red-100 to-red-200 rounded-full shadow-xl mb-3 transform group-hover:scale-110 transition-all duration-300 hover:shadow-2xl w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 flex items-center justify-center overflow-hidden mx-auto">
                   <img 
                     src="/lovable-uploads/cefd4c3a-36d6-4898-9a5f-4fca27ee1b7e.png" 
                     alt="Das Tomaten-Raumschiff" 
-                    className="w-30 h-30 object-contain mx-auto"
+                    className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 object-contain"
                   />
                 </div>
-                <h3 className="text-lg font-bold text-red-600 text-center">Das Tomaten-Raumschiff</h3>
+                <h3 className="text-sm sm:text-base md:text-lg font-bold text-red-600 text-center">Das Tomaten-Raumschiff</h3>
               </div>
             </div>
 
@@ -264,16 +264,16 @@ const CaptainApfelWorkshop = () => {
                 </div>
               </div>
               
-              <div className="flex justify-center mt-8">
+              <div className="flex justify-center mt-6 md:mt-8">
                 <div className="text-center group">
-                  <div className="bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-full shadow-lg mb-4 transform group-hover:scale-105 transition-all duration-300 hover:shadow-xl w-28 h-28 flex items-center justify-center overflow-hidden border-2 border-yellow-300/70">
+                  <div className="bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-full shadow-lg mb-3 md:mb-4 transform group-hover:scale-105 transition-all duration-300 hover:shadow-xl w-24 h-24 sm:w-28 sm:h-28 flex items-center justify-center overflow-hidden border-2 border-yellow-300/70">
                     <img 
                       src="/lovable-uploads/3d316574-8e30-4bd5-9ac2-43c62f322d8b.png" 
                       alt="Puffel" 
-                      className="w-26 h-26 object-cover m-auto"
+                      className="w-20 h-20 sm:w-24 sm:h-24 object-cover"
                     />
                   </div>
-                  <h3 className="text-lg font-bold text-yellow-600">Puffel</h3>
+                  <h3 className="text-base sm:text-lg font-bold text-yellow-600">Puffel</h3>
                   <p className="text-sm text-yellow-700 font-medium mt-1">Der freche Saboteur</p>
                 </div>
               </div>
@@ -311,17 +311,18 @@ const CaptainApfelWorkshop = () => {
               <CustomerFeedback />
             </div>
 
-            <div className="mt-16 text-center">
-              <div className="bg-gradient-to-r from-green-400 to-blue-500 rounded-2xl p-8 shadow-xl">
-                <h3 className="text-2xl font-bold text-white mb-4 font-fredoka">
+            <div className="mt-12 md:mt-16 text-center">
+              <div className="bg-gradient-to-r from-green-400 to-blue-500 rounded-2xl p-6 md:p-8 shadow-xl">
+                <h3 className="text-xl md:text-2xl font-bold text-white mb-3 md:mb-4 font-fredoka">
                   Bereit für das Abenteuer?
                 </h3>
-                <p className="text-white/90 mb-6 text-lg font-fredoka">
+                <p className="text-white/90 mb-4 md:mb-6 text-base md:text-lg font-fredoka">
                   Lasst uns gemeinsam die Welt der gesunden Ernährung entdecken!
                 </p>
-                <Link to="/kontakt" className="bg-white text-green-600 font-bold py-4 px-8 rounded-full hover:bg-green-50 transition-colors duration-300 shadow-lg inline-flex items-center gap-2 font-fredoka">
+                <Link to="/kontakt" className="bg-white text-green-600 font-bold py-3 px-6 md:py-4 md:px-8 rounded-full hover:bg-green-50 transition-colors duration-300 shadow-lg inline-flex items-center gap-2 font-fredoka text-sm md:text-base">
                   <span>🚀</span>
-                  Interesse an einem Workshop?
+                  <span className="hidden sm:inline">Interesse an einem Workshop?</span>
+                  <span className="sm:hidden">Workshop anfragen</span>
                   <span>🥕</span>
                 </Link>
               </div>
