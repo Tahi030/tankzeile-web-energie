@@ -65,50 +65,58 @@ const CaptainApfelWorkshop = () => {
     <div className="min-h-screen">
       {/* Hero Section with Character Staging */}
       <section className="relative overflow-hidden bg-gradient-to-br from-green-400 via-blue-400 to-purple-500 py-20 md:py-32">
-        {/* Floating Characters */}
-        <div className="absolute inset-0 pointer-events-none">
-          {/* Top left superhero */}
-          <div className="absolute top-8 left-8 animate-bounce" style={{ animationDelay: '0s', animationDuration: '3s' }}>
+        {/* Character Group - Arranged for better readability */}
+        <div className="absolute inset-0 pointer-events-none opacity-20">
+          {/* Character group positioned to not interfere with text */}
+          <div className="absolute top-4 left-4 flex flex-col gap-2">
             <img 
               src="/lovable-uploads/955d2d0c-a07c-4e9d-b15c-68cdd2df29c3.png" 
               alt="Superheld Kind" 
-              className="w-24 h-24 md:w-32 md:h-32 drop-shadow-lg"
+              className="w-16 h-16 md:w-20 md:h-20 animate-bounce opacity-80"
+              style={{ animationDelay: '0s', animationDuration: '3s' }}
             />
-          </div>
-          
-          {/* Top right carrot */}
-          <div className="absolute top-16 right-16 animate-bounce" style={{ animationDelay: '1s', animationDuration: '4s' }}>
             <img 
               src="/lovable-uploads/f2b15721-f1ff-4dbe-b53b-1775b5f2ff56.png" 
               alt="Karotte" 
-              className="w-20 h-20 md:w-28 md:h-28 drop-shadow-lg"
+              className="w-14 h-14 md:w-18 md:h-18 animate-bounce opacity-80"
+              style={{ animationDelay: '1s', animationDuration: '4s' }}
             />
           </div>
           
-          {/* Bottom left apple */}
-          <div className="absolute bottom-32 left-16 animate-bounce" style={{ animationDelay: '2s', animationDuration: '3.5s' }}>
+          <div className="absolute top-4 right-4 flex flex-col gap-2">
             <img 
               src="/lovable-uploads/139a9860-1723-4e16-9555-29cccb999929.png" 
               alt="Apfel" 
-              className="w-16 h-16 md:w-24 md:h-24 drop-shadow-lg"
+              className="w-12 h-12 md:w-16 md:h-16 animate-bounce opacity-80"
+              style={{ animationDelay: '2s', animationDuration: '3.5s' }}
             />
-          </div>
-          
-          {/* Bottom right broccoli */}
-          <div className="absolute bottom-20 right-8 animate-bounce" style={{ animationDelay: '0.5s', animationDuration: '4.5s' }}>
             <img 
               src="/lovable-uploads/372a9afc-d3dc-4e06-af48-a54b32b6a68d.png" 
               alt="Brokkoli" 
-              className="w-18 h-18 md:w-26 md:h-26 drop-shadow-lg"
+              className="w-14 h-14 md:w-18 md:h-18 animate-bounce opacity-80"
+              style={{ animationDelay: '0.5s', animationDuration: '4.5s' }}
             />
           </div>
           
-          {/* Center floating elements */}
-          <div className="absolute top-24 left-1/4 animate-pulse">
-            <div className="w-3 h-3 bg-white/50 rounded-full"></div>
-          </div>
-          <div className="absolute bottom-40 right-1/4 animate-pulse" style={{ animationDelay: '1s' }}>
-            <div className="w-2 h-2 bg-yellow-300/60 rounded-full"></div>
+          {/* Bottom character group */}
+          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex gap-4">
+            <img 
+              src="/lovable-uploads/e901bf3f-c209-4719-8102-cbebb19a3f9b.png" 
+              alt="Überraschte Karotte" 
+              className="w-12 h-12 md:w-16 md:h-16 animate-pulse opacity-60"
+            />
+            <img 
+              src="/lovable-uploads/50a43f2a-cc68-4b68-a082-6af444ec1f0e.png" 
+              alt="Tomate" 
+              className="w-12 h-12 md:w-16 md:h-16 animate-pulse opacity-60"
+              style={{ animationDelay: '1s' }}
+            />
+            <img 
+              src="/lovable-uploads/380d7c97-de7d-4aba-9f97-dbb820ae29da.png" 
+              alt="Blumenkohl" 
+              className="w-12 h-12 md:w-16 md:h-16 animate-pulse opacity-60"
+              style={{ animationDelay: '2s' }}
+            />
           </div>
         </div>
 
