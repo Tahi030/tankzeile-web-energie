@@ -348,7 +348,7 @@ const CaptainApfelWorkshop = () => {
                 <h3 className="text-xl md:text-2xl font-bold text-purple-700 mb-4 md:mb-6 font-fredoka">
                   Bereit für das Abenteuer?
                 </h3>
-                <Link to="/kontakt" className="bg-white/90 text-purple-700 font-bold py-3 px-6 md:py-4 md:px-8 rounded-full hover:bg-white transition-colors duration-300 shadow-lg inline-flex items-center gap-2 font-fredoka text-sm md:text-base border-2 border-purple-300/50">
+                <Link to="/kontakt" className="bg-gradient-to-r from-rose-200 to-peach-200 text-rose-700 font-bold py-3 px-6 md:py-4 md:px-8 rounded-full hover:from-rose-300 hover:to-peach-300 transition-all duration-300 shadow-lg inline-flex items-center gap-2 font-fredoka text-sm md:text-base border-2 border-rose-300/50">
                   <span className="hidden sm:inline">Interesse an einem Workshop?</span>
                   <span className="sm:hidden">Workshop anfragen</span>
                 </Link>
