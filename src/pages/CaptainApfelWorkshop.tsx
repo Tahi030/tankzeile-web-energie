@@ -85,8 +85,8 @@ const CaptainApfelWorkshop = () => {
           
           <div className="absolute top-4 right-4 flex flex-col gap-3">
             <img 
-              src="/lovable-uploads/8ec988de-b4fb-451b-ad2d-bb92e850e333.png" 
-              alt="Apfel mit Energie" 
+              src="/lovable-uploads/1d09b603-8aca-4629-acbd-8758ca346050.png" 
+              alt="Tomaten-Raumschiff" 
               className="w-14 h-14 md:w-18 md:h-18 animate-bounce opacity-90"
               style={{ animationDelay: '2s', animationDuration: '3.5s' }}
             />
@@ -132,8 +132,8 @@ const CaptainApfelWorkshop = () => {
               <div className="flex justify-center mb-6">
                 <div className="bg-white/20 backdrop-blur-sm rounded-full p-8 shadow-xl">
                   <img 
-                    src="/lovable-uploads/1d09b603-8aca-4629-acbd-8758ca346050.png" 
-                    alt="Captain Apfelzahn" 
+                    src="/lovable-uploads/d12c4083-e2df-4c05-a5ee-22df82546ed7.png" 
+                    alt="Die Powerzentrale" 
                     className="w-32 h-32 md:w-48 md:h-48 drop-shadow-2xl animate-pulse"
                   />
                 </div>
@@ -315,8 +315,8 @@ const CaptainApfelWorkshop = () => {
               
               <div className="absolute -top-6 -right-6 hidden md:block">
                 <img 
-                  src="/lovable-uploads/8ec988de-b4fb-451b-ad2d-bb92e850e333.png" 
-                  alt="The Power Center" 
+                  src="/lovable-uploads/1d09b603-8aca-4629-acbd-8758ca346050.png" 
+                  alt="Tomaten-Raumschiff" 
                   className="w-10 h-10 opacity-40 transform rotate-12 hover:opacity-70 transition-opacity"
                 />
               </div>
