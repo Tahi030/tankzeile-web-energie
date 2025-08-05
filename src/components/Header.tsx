@@ -3,7 +3,14 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 
-const NavItem = ({ to, label, dropdown = false, children }: { to: string, label: string, dropdown?: boolean, children?: React.ReactNode }) => {
+const NavItem = ({ to, label, dropdown = false, children, textColor, hoverColor }: { 
+  to: string, 
+  label: string, 
+  dropdown?: boolean, 
+  children?: React.ReactNode,
+  textColor?: string,
+  hoverColor?: string 
+}) => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
   const isActive = location.pathname === to;
@@ -13,7 +20,7 @@ const NavItem = ({ to, label, dropdown = false, children }: { to: string, label:
       <div className="relative group">
         <button 
           onClick={() => setIsOpen(!isOpen)}
-          className={`px-2 lg:px-3 py-2 rounded-md text-base lg:text-lg font-medium hover:bg-primary/10 transition-colors whitespace-nowrap ${isActive ? 'text-white font-semibold' : ''}`}
+          className={`px-2 lg:px-3 py-2 rounded-md text-base lg:text-lg font-medium ${hoverColor || 'hover:bg-primary/10'} transition-colors whitespace-nowrap ${isActive ? `${textColor || 'text-white'} font-semibold` : textColor || 'text-white'}`}
         >
           {label}
           <span className="ml-1">▼</span>
@@ -32,7 +39,7 @@ const NavItem = ({ to, label, dropdown = false, children }: { to: string, label:
   return (
     <Link 
       to={to} 
-      className={`px-2 lg:px-3 py-2 rounded-md text-base lg:text-lg font-medium hover:bg-primary/10 transition-colors whitespace-nowrap ${isActive ? 'text-white font-semibold' : ''}`}
+      className={`px-2 lg:px-3 py-2 rounded-md text-base lg:text-lg font-medium ${hoverColor || 'hover:bg-primary/10'} transition-colors whitespace-nowrap ${isActive ? `${textColor || 'text-white'} font-semibold` : textColor || 'text-white'}`}
       onClick={() => window.scrollTo(0, 0)}
     >
       {label}
@@ -59,9 +66,24 @@ const Header = () => {
   // Dynamic header color based on current page
   const getHeaderColor = () => {
     if (location.pathname === '/tankwelten/captain-apfel-workshop') {
-      return 'bg-gradient-to-r from-orange-200 via-blue-200 to-green-200';
+      return 'bg-gradient-to-r from-rose-100 via-sky-100 to-purple-100';
     }
     return 'bg-primary';
+  };
+
+  // Dynamic text colors for Captain Apfelzahn page
+  const getTextColor = () => {
+    if (location.pathname === '/tankwelten/captain-apfel-workshop') {
+      return 'text-rose-700';
+    }
+    return 'text-white';
+  };
+
+  const getHoverColor = () => {
+    if (location.pathname === '/tankwelten/captain-apfel-workshop') {
+      return 'hover:bg-rose-200/30';
+    }
+    return 'hover:bg-primary/10';
   };
 
   return (
@@ -82,10 +104,10 @@ const Header = () => {
           {/* Desktop Navigation - centered */}
           <nav className="hidden md:flex items-center justify-center flex-1">
             <div className="flex items-center justify-center space-x-1 lg:space-x-2">
-              <NavItem to="/" label="Home" />
+              <NavItem to="/" label="Home" textColor={getTextColor()} hoverColor={getHoverColor()} />
               
               <div className="relative group">
-                <div className={`px-2 lg:px-3 py-2 rounded-md text-base lg:text-lg font-medium hover:bg-primary/20 transition-colors cursor-pointer group-hover:bg-primary/20 whitespace-nowrap ${location.pathname.includes('/tankwelten/') ? 'text-white font-semibold' : ''}`}>
+                <div className={`px-2 lg:px-3 py-2 rounded-md text-base lg:text-lg font-medium ${getHoverColor()} transition-colors cursor-pointer whitespace-nowrap ${location.pathname.includes('/tankwelten/') ? `${getTextColor()} font-semibold` : getTextColor()}`}>
                   Tankwelten <span className="ml-1 text-xs">▼</span>
                 </div>
                 <div className="absolute left-0 invisible group-hover:visible opacity-0 group-hover:opacity-100 mt-2 w-60 rounded-md shadow-lg bg-white ring-1 ring-primary/20 z-50 transition-all duration-150">
@@ -96,7 +118,7 @@ const Header = () => {
                 </div>
               </div>
               
-              <NavItem to="/fuer-einrichtungen" label="Für Einrichtungen/Unternehmen" />
+              <NavItem to="/fuer-einrichtungen" label="Für Einrichtungen/Unternehmen" textColor={getTextColor()} hoverColor={getHoverColor()} />
             </div>
           </nav>
           
@@ -104,7 +126,10 @@ const Header = () => {
           <div className="hidden md:block">
             <Link 
               to="/kontakt"
-              className={`bg-secondary hover:bg-secondary-dark text-white px-4 lg:px-5 py-2 rounded-md transition-colors text-base lg:text-lg font-medium whitespace-nowrap`}
+              className={location.pathname === '/tankwelten/captain-apfel-workshop' 
+                ? `bg-gradient-to-r from-rose-200 to-sky-200 hover:from-rose-300 hover:to-sky-300 text-rose-700 px-4 lg:px-5 py-2 rounded-md transition-colors text-base lg:text-lg font-medium whitespace-nowrap border border-rose-300/50`
+                : `bg-secondary hover:bg-secondary-dark text-white px-4 lg:px-5 py-2 rounded-md transition-colors text-base lg:text-lg font-medium whitespace-nowrap`
+              }
               onClick={() => window.scrollTo(0, 0)}
             >
               Jetzt anfragen
@@ -115,7 +140,10 @@ const Header = () => {
           <div className="md:hidden">
             <button
               type="button"
-              className="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-white hover:bg-primary-dark"
+              className={location.pathname === '/tankwelten/captain-apfel-workshop'
+                ? `inline-flex items-center justify-center p-2 rounded-md text-rose-700 hover:text-rose-800 hover:bg-rose-200/30`
+                : `inline-flex items-center justify-center p-2 rounded-md text-white hover:text-white hover:bg-primary-dark`
+              }
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             >
               <span className="sr-only">Menü öffnen</span>
