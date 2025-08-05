@@ -236,7 +236,7 @@ const CaptainApfelWorkshop = () => {
               <div className="inline-block relative">
                 <div className="bg-gradient-to-r from-yellow-100/30 via-orange-100/20 to-red-100/10 rounded-xl p-6 shadow-md border-2 border-yellow-300/50">
                   <h3 className="text-xl font-bold text-yellow-700 font-playfair mb-2">
-                    Achtung! Puffel möchte die Crew verlangsamen.
+                    Achtung! Paffel möchte die Crew verlangsamen.
                   </h3>
                   {/* Hand-drawn line effect */}
                   <div className="flex justify-center mt-2">
@@ -269,11 +269,11 @@ const CaptainApfelWorkshop = () => {
                   <div className="bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-full shadow-lg mb-3 md:mb-4 transform group-hover:scale-105 transition-all duration-300 hover:shadow-xl w-24 h-24 sm:w-28 sm:h-28 flex items-center justify-center overflow-hidden border-2 border-yellow-300/70">
                     <img 
                       src="/lovable-uploads/3d316574-8e30-4bd5-9ac2-43c62f322d8b.png" 
-                      alt="Puffel" 
+                      alt="Paffel" 
                       className="w-20 h-20 sm:w-24 sm:h-24 object-cover"
                     />
                   </div>
-                  <h3 className="text-base sm:text-lg font-bold text-yellow-600">Puffel</h3>
+                  <h3 className="text-base sm:text-lg font-bold text-yellow-600">Paffel</h3>
                   <p className="text-sm text-yellow-700 font-medium mt-1">Der freche Saboteur</p>
                 </div>
               </div>
