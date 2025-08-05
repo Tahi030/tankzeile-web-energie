@@ -132,7 +132,7 @@ const CaptainApfelWorkshop = () => {
               <div className="flex justify-center mb-6">
                 <div className="bg-white/20 backdrop-blur-sm rounded-full p-8 shadow-xl">
                   <img 
-                    src="/lovable-uploads/262994cd-1e13-41b8-ba2f-fe702c72679b.png" 
+                    src="/lovable-uploads/1d09b603-8aca-4629-acbd-8758ca346050.png" 
                     alt="Captain Apfelzahn" 
                     className="w-32 h-32 md:w-48 md:h-48 drop-shadow-2xl animate-pulse"
                   />
@@ -214,7 +214,7 @@ const CaptainApfelWorkshop = () => {
                   <img 
                     src="/lovable-uploads/fc011b76-01d0-4e54-87ab-6174605bb7fc.png" 
                     alt="Captain Apfelzahn" 
-                    className="w-30 h-30 object-contain mx-auto"
+                    className="w-30 h-30 object-contain m-auto"
                   />
                 </div>
                 <h3 className="text-lg font-bold text-blue-600 text-center">Captain Apfelzahn</h3>
@@ -236,7 +236,7 @@ const CaptainApfelWorkshop = () => {
                   <img 
                     src="/lovable-uploads/93f05473-274d-4f59-9aa9-06d7eaefa496.png" 
                     alt="Kai Mutig" 
-                    className="w-30 h-30 object-contain mx-auto"
+                    className="w-30 h-30 object-contain m-auto"
                   />
                 </div>
                 <h3 className="text-lg font-bold text-green-600 text-center">Kai Mutig</h3>
@@ -293,7 +293,7 @@ const CaptainApfelWorkshop = () => {
                     <img 
                       src="/lovable-uploads/3d316574-8e30-4bd5-9ac2-43c62f322d8b.png" 
                       alt="Puffel" 
-                      className="w-24 h-24 object-contain mx-auto"
+                      className="w-26 h-26 object-cover m-auto"
                     />
                   </div>
                   <h3 className="text-lg font-bold text-yellow-600">Puffel</h3>
