@@ -165,9 +165,36 @@ const CaptainApfelWorkshop = () => {
             
             {/* Meet the Crew - Character Introduction */}
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-green-600 mb-8 font-playfair">
-                🌟 Lerne die Gesunden Helden kennen! 🌟
-              </h2>
+              <div className="inline-block relative">
+                <div className="bg-gradient-to-r from-green-200/50 via-blue-200/30 to-purple-200/20 rounded-xl p-6 shadow-lg">
+                  <h2 className="text-3xl md:text-4xl font-bold text-green-600 font-playfair mb-2">
+                    🌟 Triff die Gesunde Crew! 🌟
+                  </h2>
+                  {/* Hand-drawn line effect */}
+                  <div className="flex justify-center mt-3">
+                    <svg width="120" height="8" viewBox="0 0 120 8" className="text-green-500">
+                      <path
+                        d="M2,4 Q8,2 15,4 T30,3 Q40,5 50,4 T70,3 Q80,5 90,4 T110,3 Q115,2 118,4"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        fill="none"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        className="opacity-70"
+                        style={{
+                          filter: 'url(#roughPaperCrew)',
+                        }}
+                      />
+                      <defs>
+                        <filter id="roughPaperCrew">
+                          <feTurbulence baseFrequency="0.04" numOctaves="3" result="noise" seed="3" />
+                          <feDisplacementMap in="SourceGraphic" in2="noise" scale="0.8" />
+                        </filter>
+                      </defs>
+                    </svg>
+                  </div>
+                </div>
+              </div>
             </div>
 
             <div className="flex flex-wrap justify-center items-center gap-10 mb-16">
@@ -176,7 +203,7 @@ const CaptainApfelWorkshop = () => {
                   <img 
                     src="/lovable-uploads/fc011b76-01d0-4e54-87ab-6174605bb7fc.png" 
                     alt="Captain Apfelzahn" 
-                    className="w-28 h-28 object-contain"
+                    className="w-24 h-24 object-contain"
                   />
                 </div>
                 <h3 className="text-lg font-bold text-blue-600">Captain Apfelzahn</h3>
@@ -187,7 +214,7 @@ const CaptainApfelWorkshop = () => {
                   <img 
                     src="/lovable-uploads/3010b863-5b52-4f66-8512-f9ba4b8c3434.png" 
                     alt="Kimmi Schlau" 
-                    className="w-28 h-28 object-contain"
+                    className="w-24 h-24 object-contain"
                   />
                 </div>
                 <h3 className="text-lg font-bold text-orange-600">Kimmi Schlau</h3>
@@ -198,7 +225,7 @@ const CaptainApfelWorkshop = () => {
                   <img 
                     src="/lovable-uploads/cefd4c3a-36d6-4898-9a5f-4fca27ee1b7e.png" 
                     alt="Das Tomaten-Raumschiff" 
-                    className="w-28 h-28 object-contain"
+                    className="w-24 h-24 object-contain"
                   />
                 </div>
                 <h3 className="text-lg font-bold text-red-600">Das Tomaten-Raumschiff</h3>
@@ -209,7 +236,7 @@ const CaptainApfelWorkshop = () => {
                   <img 
                     src="/lovable-uploads/93f05473-274d-4f59-9aa9-06d7eaefa496.png" 
                     alt="Kai Mutig" 
-                    className="w-28 h-28 object-contain"
+                    className="w-24 h-24 object-contain"
                   />
                 </div>
                 <h3 className="text-lg font-bold text-green-600">Kai Mutig</h3>
@@ -220,21 +247,60 @@ const CaptainApfelWorkshop = () => {
                   <img 
                     src="/lovable-uploads/7e511dcd-b1cb-443a-a8ae-792a71b82985.png" 
                     alt="Das Kraftzentrum" 
-                    className="w-28 h-28 object-contain"
+                    className="w-24 h-24 object-contain"
                   />
                 </div>
                 <h3 className="text-lg font-bold text-green-600">Das Kraftzentrum</h3>
               </div>
+            </div>
 
-              <div className="text-center group">
-                <div className="bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-full shadow-xl mb-4 transform group-hover:scale-110 transition-all duration-300 hover:shadow-2xl w-32 h-32 flex items-center justify-center overflow-hidden">
-                  <img 
-                    src="/lovable-uploads/3d316574-8e30-4bd5-9ac2-43c62f322d8b.png" 
-                    alt="Puffel" 
-                    className="w-28 h-28 object-contain"
-                  />
+            {/* Separate section for Puffel - the troublemaker */}
+            <div className="bg-yellow-50 rounded-2xl p-8 mb-16 border-2 border-yellow-200">
+              <div className="text-center mb-6">
+                <div className="inline-block relative">
+                  <div className="bg-gradient-to-r from-yellow-200/50 via-orange-200/30 to-red-200/20 rounded-xl p-4 shadow-lg">
+                    <h3 className="text-2xl font-bold text-yellow-700 font-playfair mb-2">
+                      ⚠️ Achtung! Störenfried an Bord! ⚠️
+                    </h3>
+                    {/* Hand-drawn line effect */}
+                    <div className="flex justify-center mt-2">
+                      <svg width="100" height="6" viewBox="0 0 100 6" className="text-yellow-600">
+                        <path
+                          d="M2,3 Q8,1 15,3 T30,2 Q40,4 50,3 T70,2 Q80,4 90,3 T98,3"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          fill="none"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          className="opacity-70"
+                          style={{
+                            filter: 'url(#roughPaperPuffel)',
+                          }}
+                        />
+                        <defs>
+                          <filter id="roughPaperPuffel">
+                            <feTurbulence baseFrequency="0.04" numOctaves="3" result="noise" seed="2" />
+                            <feDisplacementMap in="SourceGraphic" in2="noise" scale="0.6" />
+                          </filter>
+                        </defs>
+                      </svg>
+                    </div>
+                  </div>
                 </div>
-                <h3 className="text-lg font-bold text-yellow-600">Puffel</h3>
+              </div>
+              
+              <div className="flex justify-center">
+                <div className="text-center group">
+                  <div className="bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-full shadow-xl mb-4 transform group-hover:scale-110 transition-all duration-300 hover:shadow-2xl w-32 h-32 flex items-center justify-center overflow-hidden border-4 border-yellow-300">
+                    <img 
+                      src="/lovable-uploads/3d316574-8e30-4bd5-9ac2-43c62f322d8b.png" 
+                      alt="Puffel" 
+                      className="w-24 h-24 object-contain"
+                    />
+                  </div>
+                  <h3 className="text-lg font-bold text-yellow-600">Puffel</h3>
+                  <p className="text-sm text-yellow-700 font-medium mt-2">Der freche Saboteur</p>
+                </div>
               </div>
             </div>
 
