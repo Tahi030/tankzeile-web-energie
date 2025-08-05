@@ -107,6 +107,15 @@ const CaptainApfelWorkshop = () => {
               <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold mb-3 md:mb-4 text-white drop-shadow-lg font-playfair leading-tight">
                 Captain Apfelzahn & die Crew – auf gesunder Mission
               </h1>
+              
+              <div className="flex justify-center mt-6 md:mt-8 mb-6 md:mb-8">
+                <img 
+                  src="/lovable-uploads/99b38d5f-3449-41d1-96c1-6bcf4260e45b.png" 
+                  alt="Captain Apfelzahn mit der gesunden Crew" 
+                  className="w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 drop-shadow-2xl object-contain"
+                />
+              </div>
+              
               <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl mb-4 md:mb-6 text-white drop-shadow-md font-fredoka font-medium">
                 Volle Obst- und Gemüsekraft voraus
               </p>
@@ -154,14 +163,6 @@ const CaptainApfelWorkshop = () => {
                     />
                   </svg>
                 </div>
-              </div>
-              
-              <div className="flex justify-center mt-8 md:mt-12">
-                <img 
-                  src="/lovable-uploads/99b38d5f-3449-41d1-96c1-6bcf4260e45b.png" 
-                  alt="Captain Apfelzahn mit der gesunden Crew" 
-                  className="w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 drop-shadow-2xl object-contain"
-                />
               </div>
             </div>
           </div>
