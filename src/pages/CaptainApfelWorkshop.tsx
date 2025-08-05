@@ -141,17 +141,17 @@ const CaptainApfelWorkshop = () => {
           <div className="max-w-5xl mx-auto">
             
             {/* Meet the Crew - Character Introduction */}
-            <div className="text-center mb-12">
+            <div className="text-center mb-16">
               <div className="inline-block relative">
-                <div className="bg-gradient-to-r from-green-200/50 via-blue-200/30 to-purple-200/20 rounded-xl p-6 shadow-lg">
-                  <h2 className="text-3xl md:text-4xl font-bold text-green-600 font-playfair mb-2">
+                <div className="bg-gradient-to-r from-green-200/50 via-blue-200/30 to-purple-200/20 rounded-xl p-8 shadow-lg">
+                  <h2 className="text-3xl md:text-4xl font-bold text-green-600 font-playfair mb-4">
                     Triff die gesunde Crew!
                   </h2>
                   {/* Hand-drawn line effect */}
-                  <div className="flex justify-center mt-3">
-                    <svg width="120" height="8" viewBox="0 0 120 8" className="text-green-500">
+                  <div className="flex justify-center mt-4">
+                    <svg width="140" height="8" viewBox="0 0 140 8" className="text-green-500">
                       <path
-                        d="M2,4 Q8,2 15,4 T30,3 Q40,5 50,4 T70,3 Q80,5 90,4 T110,3 Q115,2 118,4"
+                        d="M2,4 Q10,2 20,4 T40,3 Q50,5 60,4 T80,3 Q90,5 100,4 T120,3 Q130,2 138,4"
                         stroke="currentColor"
                         strokeWidth="2"
                         fill="none"
@@ -174,75 +174,77 @@ const CaptainApfelWorkshop = () => {
               </div>
             </div>
 
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 md:gap-8 mb-16 justify-items-center">
-              <div className="text-center group">
-                <div className="bg-gradient-to-br from-green-100 to-green-200 rounded-full shadow-xl mb-3 transform group-hover:scale-110 transition-all duration-300 hover:shadow-2xl w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 flex items-center justify-center overflow-hidden">
-                  <img 
-                    src="/lovable-uploads/d12c4083-e2df-4c05-a5ee-22df82546ed7.png" 
-                    alt="Die Powerzentrale" 
-                    className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 object-contain"
-                  />
+            <div className="max-w-4xl mx-auto">
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-8 md:gap-12 mb-20 justify-items-center">
+                <div className="text-center group">
+                  <div className="bg-gradient-to-br from-green-100 to-green-200 rounded-full shadow-xl mb-4 transform group-hover:scale-105 transition-all duration-300 hover:shadow-2xl w-28 h-28 sm:w-32 sm:h-32 md:w-36 md:h-36 flex items-center justify-center overflow-hidden border-2 border-green-300/30">
+                    <img 
+                      src="/lovable-uploads/d12c4083-e2df-4c05-a5ee-22df82546ed7.png" 
+                      alt="Die Powerzentrale" 
+                      className="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 object-contain"
+                    />
+                  </div>
+                  <h3 className="text-base sm:text-lg md:text-xl font-bold text-green-600 font-fredoka leading-tight">Die Powerzentrale</h3>
                 </div>
-                <h3 className="text-sm sm:text-base md:text-lg font-bold text-green-600 text-center">Die Powerzentrale</h3>
-              </div>
 
-              <div className="text-center group">
-                <div className="bg-gradient-to-br from-blue-100 to-blue-200 rounded-full shadow-xl mb-3 transform group-hover:scale-110 transition-all duration-300 hover:shadow-2xl w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 flex items-center justify-center overflow-hidden">
-                  <img 
-                    src="/lovable-uploads/fc011b76-01d0-4e54-87ab-6174605bb7fc.png" 
-                    alt="Captain Apfelzahn" 
-                    className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 object-contain"
-                  />
+                <div className="text-center group">
+                  <div className="bg-gradient-to-br from-blue-100 to-blue-200 rounded-full shadow-xl mb-4 transform group-hover:scale-105 transition-all duration-300 hover:shadow-2xl w-28 h-28 sm:w-32 sm:h-32 md:w-36 md:h-36 flex items-center justify-center overflow-hidden border-2 border-blue-300/30">
+                    <img 
+                      src="/lovable-uploads/fc011b76-01d0-4e54-87ab-6174605bb7fc.png" 
+                      alt="Captain Apfelzahn" 
+                      className="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 object-contain"
+                    />
+                  </div>
+                  <h3 className="text-base sm:text-lg md:text-xl font-bold text-blue-600 font-fredoka leading-tight">Captain Apfelzahn</h3>
                 </div>
-                <h3 className="text-sm sm:text-base md:text-lg font-bold text-blue-600 text-center">Captain Apfelzahn</h3>
-              </div>
 
-              <div className="text-center group">
-                <div className="bg-gradient-to-br from-orange-100 to-orange-200 rounded-full shadow-xl mb-3 transform group-hover:scale-110 transition-all duration-300 hover:shadow-2xl w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 flex items-center justify-center overflow-hidden">
-                  <img 
-                    src="/lovable-uploads/3010b863-5b52-4f66-8512-f9ba4b8c3434.png" 
-                    alt="Kimmi Schlau" 
-                    className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 object-contain"
-                  />
+                <div className="text-center group">
+                  <div className="bg-gradient-to-br from-orange-100 to-orange-200 rounded-full shadow-xl mb-4 transform group-hover:scale-105 transition-all duration-300 hover:shadow-2xl w-28 h-28 sm:w-32 sm:h-32 md:w-36 md:h-36 flex items-center justify-center overflow-hidden border-2 border-orange-300/30">
+                    <img 
+                      src="/lovable-uploads/3010b863-5b52-4f66-8512-f9ba4b8c3434.png" 
+                      alt="Kimmi Schlau" 
+                      className="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 object-contain"
+                    />
+                  </div>
+                  <h3 className="text-base sm:text-lg md:text-xl font-bold text-orange-600 font-fredoka leading-tight">Kimmi Schlau</h3>
                 </div>
-                <h3 className="text-sm sm:text-base md:text-lg font-bold text-orange-600 text-center">Kimmi Schlau</h3>
-              </div>
-              
-              <div className="text-center group">
-                <div className="bg-gradient-to-br from-green-100 to-green-200 rounded-full shadow-xl mb-3 transform group-hover:scale-110 transition-all duration-300 hover:shadow-2xl w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 flex items-center justify-center overflow-hidden">
-                  <img 
-                    src="/lovable-uploads/93f05473-274d-4f59-9aa9-06d7eaefa496.png" 
-                    alt="Kai Mutig" 
-                    className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 object-contain"
-                  />
+                
+                <div className="text-center group">
+                  <div className="bg-gradient-to-br from-green-100 to-green-200 rounded-full shadow-xl mb-4 transform group-hover:scale-105 transition-all duration-300 hover:shadow-2xl w-28 h-28 sm:w-32 sm:h-32 md:w-36 md:h-36 flex items-center justify-center overflow-hidden border-2 border-green-300/30">
+                    <img 
+                      src="/lovable-uploads/93f05473-274d-4f59-9aa9-06d7eaefa496.png" 
+                      alt="Kai Mutig" 
+                      className="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 object-contain"
+                    />
+                  </div>
+                  <h3 className="text-base sm:text-lg md:text-xl font-bold text-green-600 font-fredoka leading-tight">Kai Mutig</h3>
                 </div>
-                <h3 className="text-sm sm:text-base md:text-lg font-bold text-green-600 text-center">Kai Mutig</h3>
-              </div>
-              
-              <div className="text-center group col-span-2 sm:col-span-1">
-                <div className="bg-gradient-to-br from-red-100 to-red-200 rounded-full shadow-xl mb-3 transform group-hover:scale-110 transition-all duration-300 hover:shadow-2xl w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 flex items-center justify-center overflow-hidden mx-auto">
-                  <img 
-                    src="/lovable-uploads/cefd4c3a-36d6-4898-9a5f-4fca27ee1b7e.png" 
-                    alt="Das Tomaten-Raumschiff" 
-                    className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 object-contain"
-                  />
+                
+                <div className="text-center group col-span-2 sm:col-span-1">
+                  <div className="bg-gradient-to-br from-red-100 to-red-200 rounded-full shadow-xl mb-4 transform group-hover:scale-105 transition-all duration-300 hover:shadow-2xl w-28 h-28 sm:w-32 sm:h-32 md:w-36 md:h-36 flex items-center justify-center overflow-hidden mx-auto border-2 border-red-300/30">
+                    <img 
+                      src="/lovable-uploads/cefd4c3a-36d6-4898-9a5f-4fca27ee1b7e.png" 
+                      alt="Das Tomaten-Raumschiff" 
+                      className="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 object-contain"
+                    />
+                  </div>
+                  <h3 className="text-base sm:text-lg md:text-xl font-bold text-red-600 font-fredoka leading-tight">Das Tomaten-Raumschiff</h3>
                 </div>
-                <h3 className="text-sm sm:text-base md:text-lg font-bold text-red-600 text-center">Das Tomaten-Raumschiff</h3>
               </div>
             </div>
 
-            {/* Separate section for Puffel - the troublemaker */}
-            <div className="text-center mb-16">
+            {/* Separate section for Paffel - the troublemaker */}
+            <div className="text-center mb-20">
               <div className="inline-block relative">
-                <div className="bg-gradient-to-r from-yellow-100/30 via-orange-100/20 to-red-100/10 rounded-xl p-6 shadow-md border-2 border-yellow-300/50">
-                  <h3 className="text-xl font-bold text-yellow-700 font-playfair mb-2">
+                <div className="bg-gradient-to-r from-yellow-100/40 via-orange-100/30 to-red-100/20 rounded-xl p-6 md:p-8 shadow-md border-2 border-yellow-300/50">
+                  <h3 className="text-xl md:text-2xl font-bold text-yellow-700 font-playfair mb-3">
                     Achtung! Paffel möchte die Crew verlangsamen.
                   </h3>
                   {/* Hand-drawn line effect */}
-                  <div className="flex justify-center mt-2">
-                    <svg width="100" height="6" viewBox="0 0 100 6" className="text-yellow-600">
+                  <div className="flex justify-center mt-3">
+                    <svg width="120" height="6" viewBox="0 0 120 6" className="text-yellow-600">
                       <path
-                        d="M2,3 Q8,1 15,3 T30,2 Q40,4 50,3 T70,2 Q80,4 90,3 T98,3"
+                        d="M2,3 Q10,1 20,3 T40,2 Q50,4 60,3 T80,2 Q90,4 100,3 T118,3"
                         stroke="currentColor"
                         strokeWidth="2"
                         fill="none"
@@ -250,11 +252,11 @@ const CaptainApfelWorkshop = () => {
                         strokeLinejoin="round"
                         className="opacity-70"
                         style={{
-                          filter: 'url(#roughPaperPuffel)',
+                          filter: 'url(#roughPaperPaffel)',
                         }}
                       />
                       <defs>
-                        <filter id="roughPaperPuffel">
+                        <filter id="roughPaperPaffel">
                           <feTurbulence baseFrequency="0.04" numOctaves="3" result="noise" seed="2" />
                           <feDisplacementMap in="SourceGraphic" in2="noise" scale="0.6" />
                         </filter>
@@ -264,17 +266,17 @@ const CaptainApfelWorkshop = () => {
                 </div>
               </div>
               
-              <div className="flex justify-center mt-6 md:mt-8">
+              <div className="flex justify-center mt-8">
                 <div className="text-center group">
-                  <div className="bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-full shadow-lg mb-3 md:mb-4 transform group-hover:scale-105 transition-all duration-300 hover:shadow-xl w-24 h-24 sm:w-28 sm:h-28 flex items-center justify-center overflow-hidden border-2 border-yellow-300/70">
+                  <div className="bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-full shadow-lg mb-4 transform group-hover:scale-105 transition-all duration-300 hover:shadow-xl w-32 h-32 sm:w-36 sm:h-36 flex items-center justify-center overflow-hidden border-2 border-yellow-300/50">
                     <img 
                       src="/lovable-uploads/3d316574-8e30-4bd5-9ac2-43c62f322d8b.png" 
                       alt="Paffel" 
-                      className="w-20 h-20 sm:w-24 sm:h-24 object-cover"
+                      className="w-28 h-28 sm:w-32 sm:h-32 object-cover"
                     />
                   </div>
-                  <h3 className="text-base sm:text-lg font-bold text-yellow-600">Paffel</h3>
-                  <p className="text-sm text-yellow-700 font-medium mt-1">Der freche Saboteur</p>
+                  <h3 className="text-lg sm:text-xl font-bold text-yellow-600 font-fredoka leading-tight">Paffel</h3>
+                  <p className="text-sm sm:text-base text-yellow-700 font-medium mt-2 font-fredoka">Der freche Saboteur</p>
                 </div>
               </div>
             </div>
