@@ -155,6 +155,14 @@ const CaptainApfelWorkshop = () => {
                   </svg>
                 </div>
               </div>
+              
+              <div className="flex justify-center mt-8 md:mt-12">
+                <img 
+                  src="/lovable-uploads/99b38d5f-3449-41d1-96c1-6bcf4260e45b.png" 
+                  alt="Captain Apfelzahn mit der gesunden Crew" 
+                  className="w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 drop-shadow-2xl object-contain"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -221,13 +229,6 @@ const CaptainApfelWorkshop = () => {
                     />
                   </div>
                   <h3 className="text-base sm:text-lg md:text-xl font-bold text-blue-600 font-fredoka leading-tight">Captain Apfelzahn</h3>
-                  <div className="flex justify-center mt-4">
-                    <img 
-                      src="/lovable-uploads/624d04ef-b07c-4747-83a1-b649e642f9be.png" 
-                      alt="Captain Apfelzahn und Crew" 
-                      className="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 drop-shadow-2xl object-contain"
-                    />
-                  </div>
                 </div>
 
                 <div className="text-center group">
