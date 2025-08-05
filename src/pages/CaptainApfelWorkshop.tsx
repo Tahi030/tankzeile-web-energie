@@ -65,56 +65,56 @@ const CaptainApfelWorkshop = () => {
     <div className="min-h-screen">
       {/* Hero Section with Character Staging */}
       <section className="relative overflow-hidden bg-gradient-to-br from-green-400 via-blue-400 to-purple-500 py-20 md:py-32">
-        {/* Character Group - Arranged for better readability */}
-        <div className="absolute inset-0 pointer-events-none opacity-20">
-          {/* Character group positioned to not interfere with text */}
-          <div className="absolute top-4 left-4 flex flex-col gap-2">
+        {/* Character Crew - Arranged as a cohesive team */}
+        <div className="absolute inset-0 pointer-events-none opacity-25">
+          {/* Hero Character Group - Top Formation */}
+          <div className="absolute top-4 left-4 flex flex-col gap-3">
             <img 
-              src="/lovable-uploads/955d2d0c-a07c-4e9d-b15c-68cdd2df29c3.png" 
-              alt="Superheld Kind" 
-              className="w-16 h-16 md:w-20 md:h-20 animate-bounce opacity-80"
+              src="/lovable-uploads/5585f373-ca3c-4c93-8f40-6514268b2080.png" 
+              alt="Captain Superheld" 
+              className="w-16 h-16 md:w-20 md:h-20 animate-bounce opacity-90"
               style={{ animationDelay: '0s', animationDuration: '3s' }}
             />
             <img 
-              src="/lovable-uploads/f2b15721-f1ff-4dbe-b53b-1775b5f2ff56.png" 
-              alt="Karotte" 
-              className="w-14 h-14 md:w-18 md:h-18 animate-bounce opacity-80"
+              src="/lovable-uploads/3010b863-5b52-4f66-8512-f9ba4b8c3434.png" 
+              alt="Karla Karotte" 
+              className="w-14 h-14 md:w-18 md:h-18 animate-bounce opacity-90"
               style={{ animationDelay: '1s', animationDuration: '4s' }}
             />
           </div>
           
-          <div className="absolute top-4 right-4 flex flex-col gap-2">
+          <div className="absolute top-4 right-4 flex flex-col gap-3">
             <img 
-              src="/lovable-uploads/139a9860-1723-4e16-9555-29cccb999929.png" 
-              alt="Apfel" 
-              className="w-12 h-12 md:w-16 md:h-16 animate-bounce opacity-80"
+              src="/lovable-uploads/8ec988de-b4fb-451b-ad2d-bb92e850e333.png" 
+              alt="Apfel mit Energie" 
+              className="w-14 h-14 md:w-18 md:h-18 animate-bounce opacity-90"
               style={{ animationDelay: '2s', animationDuration: '3.5s' }}
             />
             <img 
-              src="/lovable-uploads/372a9afc-d3dc-4e06-af48-a54b32b6a68d.png" 
-              alt="Brokkoli" 
-              className="w-14 h-14 md:w-18 md:h-18 animate-bounce opacity-80"
+              src="/lovable-uploads/93f05473-274d-4f59-9aa9-06d7eaefa496.png" 
+              alt="Bruno Brokkoli" 
+              className="w-16 h-16 md:w-20 md:h-20 animate-bounce opacity-90"
               style={{ animationDelay: '0.5s', animationDuration: '4.5s' }}
             />
           </div>
           
-          {/* Bottom character group */}
-          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex gap-4">
+          {/* Bottom Crew Formation */}
+          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex gap-6">
             <img 
-              src="/lovable-uploads/e901bf3f-c209-4719-8102-cbebb19a3f9b.png" 
-              alt="Überraschte Karotte" 
-              className="w-12 h-12 md:w-16 md:h-16 animate-pulse opacity-60"
+              src="/lovable-uploads/cefd4c3a-36d6-4898-9a5f-4fca27ee1b7e.png" 
+              alt="Tommy Tomate" 
+              className="w-14 h-14 md:w-18 md:h-18 animate-pulse opacity-80"
             />
             <img 
-              src="/lovable-uploads/50a43f2a-cc68-4b68-a082-6af444ec1f0e.png" 
-              alt="Tomate" 
-              className="w-12 h-12 md:w-16 md:h-16 animate-pulse opacity-60"
+              src="/lovable-uploads/3d316574-8e30-4bd5-9ac2-43c62f322d8b.png" 
+              alt="Blumi Blumenkohl" 
+              className="w-12 h-12 md:w-16 md:h-16 animate-pulse opacity-80"
               style={{ animationDelay: '1s' }}
             />
             <img 
-              src="/lovable-uploads/380d7c97-de7d-4aba-9f97-dbb820ae29da.png" 
-              alt="Blumenkohl" 
-              className="w-12 h-12 md:w-16 md:h-16 animate-pulse opacity-60"
+              src="/lovable-uploads/e9fac2ac-84dd-414f-9272-81a5529764a3.png" 
+              alt="Überraschte Karotte" 
+              className="w-14 h-14 md:w-18 md:h-18 animate-pulse opacity-80"
               style={{ animationDelay: '2s' }}
             />
           </div>
@@ -129,7 +129,7 @@ const CaptainApfelWorkshop = () => {
               <div className="flex justify-center mb-6">
                 <div className="bg-white/20 backdrop-blur-sm rounded-full p-6 shadow-xl">
                   <img 
-                    src="/lovable-uploads/ef49fc2b-7841-446d-a403-1f024178423c.png" 
+                    src="/lovable-uploads/329b45f0-584b-4e48-948c-440129707757.png" 
                     alt="Captain Apfelzahn Superheld" 
                     className="w-32 h-32 md:w-48 md:h-48 drop-shadow-2xl animate-pulse"
                   />
@@ -160,66 +160,98 @@ const CaptainApfelWorkshop = () => {
         <div className="container-custom">
           <div className="max-w-5xl mx-auto">
             
-            {/* Character Introduction Row */}
-            <div className="flex flex-wrap justify-center items-center gap-8 mb-16">
+            {/* Meet the Crew - Character Introduction */}
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-green-600 mb-4 font-playfair">
+                🌟 Meet the Healthy Heroes Crew! 🌟
+              </h2>
+              <p className="text-lg text-gray-600 mb-8">
+                Jeder Charakter bringt seine eigenen Superkräfte mit!
+              </p>
+            </div>
+
+            <div className="flex flex-wrap justify-center items-center gap-10 mb-16">
               <div className="text-center group">
-                <div className="bg-white rounded-full p-4 shadow-lg mb-4 transform group-hover:scale-110 transition-transform duration-300">
+                <div className="bg-gradient-to-br from-orange-100 to-orange-200 rounded-full p-6 shadow-xl mb-4 transform group-hover:scale-110 transition-all duration-300 hover:shadow-2xl">
                   <img 
-                    src="/lovable-uploads/e901bf3f-c209-4719-8102-cbebb19a3f9b.png" 
-                    alt="Überraschte Karotte" 
-                    className="w-20 h-20"
+                    src="/lovable-uploads/3010b863-5b52-4f66-8512-f9ba4b8c3434.png" 
+                    alt="Karla Karotte" 
+                    className="w-24 h-24"
                   />
                 </div>
-                <p className="text-sm font-medium text-green-700">Karla Karotte</p>
+                <h3 className="text-lg font-bold text-orange-600 mb-1">Karla Karotte</h3>
+                <p className="text-sm text-gray-500">Die schlaue Expertin</p>
               </div>
               
               <div className="text-center group">
-                <div className="bg-white rounded-full p-4 shadow-lg mb-4 transform group-hover:scale-110 transition-transform duration-300">
+                <div className="bg-gradient-to-br from-red-100 to-red-200 rounded-full p-6 shadow-xl mb-4 transform group-hover:scale-110 transition-all duration-300 hover:shadow-2xl">
                   <img 
-                    src="/lovable-uploads/50a43f2a-cc68-4b68-a082-6af444ec1f0e.png" 
-                    alt="Tomate" 
-                    className="w-20 h-20"
+                    src="/lovable-uploads/cefd4c3a-36d6-4898-9a5f-4fca27ee1b7e.png" 
+                    alt="Tommy Tomate" 
+                    className="w-24 h-24"
                   />
                 </div>
-                <p className="text-sm font-medium text-red-600">Tommy Tomate</p>
+                <h3 className="text-lg font-bold text-red-600 mb-1">Tommy Tomate</h3>
+                <p className="text-sm text-gray-500">Der Abenteurer</p>
               </div>
               
               <div className="text-center group">
-                <div className="bg-white rounded-full p-4 shadow-lg mb-4 transform group-hover:scale-110 transition-transform duration-300">
+                <div className="bg-gradient-to-br from-green-100 to-green-200 rounded-full p-6 shadow-xl mb-4 transform group-hover:scale-110 transition-all duration-300 hover:shadow-2xl">
                   <img 
-                    src="/lovable-uploads/380d7c97-de7d-4aba-9f97-dbb820ae29da.png" 
-                    alt="Blumenkohl" 
-                    className="w-20 h-20"
+                    src="/lovable-uploads/93f05473-274d-4f59-9aa9-06d7eaefa496.png" 
+                    alt="Bruno Brokkoli" 
+                    className="w-24 h-24"
                   />
                 </div>
-                <p className="text-sm font-medium text-yellow-600">Blumi Blumenkohl</p>
+                <h3 className="text-lg font-bold text-green-600 mb-1">Bruno Brokkoli</h3>
+                <p className="text-sm text-gray-500">Der starke Beschützer</p>
+              </div>
+
+              <div className="text-center group">
+                <div className="bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-full p-6 shadow-xl mb-4 transform group-hover:scale-110 transition-all duration-300 hover:shadow-2xl">
+                  <img 
+                    src="/lovable-uploads/3d316574-8e30-4bd5-9ac2-43c62f322d8b.png" 
+                    alt="Blumi Blumenkohl" 
+                    className="w-24 h-24"
+                  />
+                </div>
+                <h3 className="text-lg font-bold text-yellow-600 mb-1">Blumi Blumenkohl</h3>
+                <p className="text-sm text-gray-500">Die fröhliche Optimistin</p>
               </div>
             </div>
 
             {/* Empty Content Box - Ready for Text */}
             <div className="relative">
-              {/* Decorative Characters around the box */}
+              {/* Crew Members watching over the content box */}
               <div className="absolute -top-8 -left-8 hidden md:block">
                 <img 
-                  src="/lovable-uploads/f2b15721-f1ff-4dbe-b53b-1775b5f2ff56.png" 
-                  alt="Karotte Dekoration" 
-                  className="w-16 h-16 opacity-70 transform -rotate-12"
+                  src="/lovable-uploads/3010b863-5b52-4f66-8512-f9ba4b8c3434.png" 
+                  alt="Karla Karotte schaut zu" 
+                  className="w-16 h-16 opacity-60 transform -rotate-12 hover:opacity-90 transition-opacity"
                 />
               </div>
               
               <div className="absolute -top-6 -right-6 hidden md:block">
                 <img 
-                  src="/lovable-uploads/139a9860-1723-4e16-9555-29cccb999929.png" 
-                  alt="Apfel Dekoration" 
-                  className="w-14 h-14 opacity-70 transform rotate-12"
+                  src="/lovable-uploads/8ec988de-b4fb-451b-ad2d-bb92e850e333.png" 
+                  alt="Energetischer Apfel" 
+                  className="w-14 h-14 opacity-60 transform rotate-12 hover:opacity-90 transition-opacity"
                 />
               </div>
               
               <div className="absolute -bottom-8 -left-6 hidden md:block">
                 <img 
-                  src="/lovable-uploads/372a9afc-d3dc-4e06-af48-a54b32b6a68d.png" 
-                  alt="Brokkoli Dekoration" 
-                  className="w-18 h-18 opacity-70 transform rotate-6"
+                  src="/lovable-uploads/93f05473-274d-4f59-9aa9-06d7eaefa496.png" 
+                  alt="Bruno Brokkoli bewacht" 
+                  className="w-18 h-18 opacity-60 transform rotate-6 hover:opacity-90 transition-opacity"
+                />
+              </div>
+
+              <div className="absolute -bottom-6 -right-8 hidden md:block">
+                <img 
+                  src="/lovable-uploads/cefd4c3a-36d6-4898-9a5f-4fca27ee1b7e.png" 
+                  alt="Tommy Tomate bereit" 
+                  className="w-14 h-14 opacity-60 transform -rotate-6 hover:opacity-90 transition-opacity"
                 />
               </div>
 
