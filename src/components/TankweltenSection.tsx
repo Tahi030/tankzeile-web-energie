@@ -5,7 +5,7 @@ const tankwelten = [
   {
     id: 1,
     title: "Captain Apfelzahn - auf gesunder Mission",
-    description: "Workshop mit Captain Apfelzahn – Ernährung als Abenteuer für Vorschulkinder\n\nVolle Obst- und Gemüsekraft voraus! Captain Apfelzahn lädt euch ein auf eine Mission in den Körper hinein. Im \"Workshop mit Captain Apfelzahn & der Crew – Ernährung als Abenteuer für Vorschulkinder\" geht es mit voller Kraft voraus mit Obst und Gemüse! Captain Apfelzahn und seine Crew laden euch ein auf eine Mission in den Körper hinein.",
+    description: "Workshop mit Captain Apfelzahn - Ernährung als Abenteuer für Vorschulkinder\n\nVolle Obst- und Gemüsekraft voraus! Captain Apfelzahn lädt ein auf eine Mission ins Körperinnere.",
     image: "/lovable-uploads/dc82d36f-9591-487d-85d4-249dcbf5e2f3.png",
     link: "/tankwelten/captain-apfel-workshop",
     isActive: true,
