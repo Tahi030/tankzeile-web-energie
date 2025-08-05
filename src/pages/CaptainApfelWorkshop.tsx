@@ -104,21 +104,19 @@ const CaptainApfelWorkshop = () => {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <div className="mb-6 md:mb-8">
+              <div className="flex justify-center mb-6 md:mb-8">
+                <img 
+                  src="/lovable-uploads/949c4ecd-a2c3-453d-ac82-9ee766563a7d.png" 
+                  alt="Captain Apfelzahn" 
+                  className="w-48 h-48 sm:w-56 sm:h-56 md:w-72 md:h-72 lg:w-80 lg:h-80 drop-shadow-2xl object-cover"
+                />
+              </div>
               <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold mb-3 md:mb-4 text-white drop-shadow-lg font-playfair leading-tight">
                 Captain Apfelzahn & die Crew – auf gesunder Mission
               </h1>
               <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl mb-4 md:mb-6 text-white drop-shadow-md font-fredoka font-medium">
                 Volle Obst- und Gemüsekraft voraus
               </p>
-              <div className="flex justify-center mb-4 md:mb-6">
-                <div className="bg-blue-100 rounded-full p-6 md:p-8 lg:p-10 shadow-xl">
-                  <img 
-                    src="/lovable-uploads/949c4ecd-a2c3-453d-ac82-9ee766563a7d.png" 
-                    alt="Captain Apfelzahn" 
-                    className="w-32 h-32 sm:w-40 sm:h-40 md:w-56 md:h-56 lg:w-64 lg:h-64 drop-shadow-2xl object-cover rounded-full mx-auto"
-                  />
-                </div>
-              </div>
               <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-6 md:mb-8 text-white drop-shadow-md font-medium px-4">
                 Für Vorschulkinder, die spielerisch die Welt der gesunden Ernährung entdecken möchten!
               </p>
