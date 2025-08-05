@@ -111,11 +111,11 @@ const CaptainApfelWorkshop = () => {
                 Volle Obst- und Gemüsekraft voraus
               </p>
               <div className="flex justify-center mb-4 md:mb-6">
-                <div className="bg-white/20 backdrop-blur-sm rounded-full p-4 md:p-6 lg:p-8 shadow-xl">
+                <div className="bg-blue-100 rounded-full p-6 md:p-8 lg:p-10 shadow-xl">
                   <img 
                     src="/lovable-uploads/949c4ecd-a2c3-453d-ac82-9ee766563a7d.png" 
                     alt="Captain Apfelzahn" 
-                    className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 drop-shadow-2xl object-cover"
+                    className="w-32 h-32 sm:w-40 sm:h-40 md:w-56 md:h-56 lg:w-64 lg:h-64 drop-shadow-2xl object-cover rounded-full mx-auto"
                   />
                 </div>
               </div>
