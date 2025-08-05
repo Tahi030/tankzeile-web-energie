@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 const tankwelten = [
   {
     id: 1,
-    title: "Captain Apfel - auf gesunder Mission",
-    description: "Workshop mit Captain Apfel - Ernährung als Abenteuer für Vorschulkinder\n\nVolle Obst- und Gemüsekraft voraus! Captain Apfel lädt ein auf eine Mission ins Körperinnere.",
-    image: "/lovable-uploads/ff6c74d3-5da5-4a82-b20b-97843a8db26a.png",
+    title: "Captain Apfelzahn - auf gesunder Mission",
+    description: "Workshop mit Captain Apfelzahn - Ernährung als Abenteuer für Vorschulkinder\n\nVolle Obst- und Gemüsekraft voraus! Captain Apfelzahn lädt ein auf eine Mission ins Körperinnere.",
+    image: "/lovable-uploads/dc82d36f-9591-487d-85d4-249dcbf5e2f3.png",
     link: "/tankwelten/captain-apfel-workshop",
     isActive: true,
   },

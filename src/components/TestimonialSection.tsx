@@ -17,7 +17,7 @@ const testimonials = [
     },
   },
   {
-    text: "Die Kinder waren völlig begeistert von Captain Apfel – sie waren aktiv dabei, haben viel gefragt und richtig mitgelebt. Man spürt bei Frau Hillmann sofort, dass sie das mit Herz macht. Es war nicht nur lehrreich, sondern auch richtig schön und lebendig.",
+    text: "Die Kinder waren völlig begeistert von Captain Apfelzahn – sie waren aktiv dabei, haben viel gefragt und richtig mitgelebt. Man spürt bei Frau Hillmann sofort, dass sie das mit Herz macht. Es war nicht nur lehrreich, sondern auch richtig schön und lebendig.",
     author: {
       name: "Jan Berner",
       avatar: "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?w=150&h=150&fit=crop&crop=face"

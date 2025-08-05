@@ -82,7 +82,7 @@ const Header = () => {
                 </div>
                 <div className="absolute left-0 invisible group-hover:visible opacity-0 group-hover:opacity-100 mt-2 w-60 rounded-md shadow-lg bg-white ring-1 ring-primary/20 z-50 transition-all duration-150">
                   <div className="py-1" role="menu" aria-orientation="vertical">
-                    <DropdownItem to="/tankwelten/captain-apfel-workshop" label="Captain Apfel Workshop" />
+                    <DropdownItem to="/tankwelten/captain-apfel-workshop" label="Captain Apfelzahn Workshop" />
                     <DropdownItem to="/tankwelten/alltag-leichter-leben" label="Alltag leichter leben" />
                   </div>
                 </div>
@@ -128,7 +128,7 @@ const Header = () => {
             <div className="border-t border-gray-200 pt-2">
               <div className={`px-3 py-2 font-medium ${location.pathname.includes('/tankwelten/') ? 'text-primary-dark font-bold' : ''}`}>Tankwelten</div>
               <Link to="/tankwelten/captain-apfel-workshop" className="block pl-6 py-2 text-sm" onClick={() => {setMobileMenuOpen(false); window.scrollTo(0, 0);}}>
-                Captain Apfel Workshop
+                Captain Apfelzahn Workshop
               </Link>
               <Link to="/tankwelten/alltag-leichter-leben" className="block pl-6 py-2 text-sm" onClick={() => {setMobileMenuOpen(false); window.scrollTo(0, 0);}}>
                 Alltag leichter leben
