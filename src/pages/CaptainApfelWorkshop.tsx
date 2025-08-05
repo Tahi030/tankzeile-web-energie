@@ -202,11 +202,11 @@ const CaptainApfelWorkshop = () => {
                 <div className="bg-gradient-to-br from-green-100 to-green-200 rounded-full shadow-xl mb-4 transform group-hover:scale-110 transition-all duration-300 hover:shadow-2xl w-32 h-32 flex items-center justify-center overflow-hidden">
                   <img 
                     src="/lovable-uploads/262994cd-1e13-41b8-ba2f-fe702c72679b.png" 
-                    alt="The Power Center" 
-                    className="w-30 h-30 object-contain"
+                    alt="Die Powerzentrale" 
+                    className="w-30 h-30 object-contain mx-auto"
                   />
                 </div>
-                <h3 className="text-lg font-bold text-green-600 text-center">The Power Center</h3>
+                <h3 className="text-lg font-bold text-green-600 text-center">Die Powerzentrale</h3>
               </div>
 
               <div className="text-center group">
@@ -214,7 +214,7 @@ const CaptainApfelWorkshop = () => {
                   <img 
                     src="/lovable-uploads/fc011b76-01d0-4e54-87ab-6174605bb7fc.png" 
                     alt="Captain Apfelzahn" 
-                    className="w-30 h-30 object-contain"
+                    className="w-30 h-30 object-contain mx-auto"
                   />
                 </div>
                 <h3 className="text-lg font-bold text-blue-600 text-center">Captain Apfelzahn</h3>
@@ -225,7 +225,7 @@ const CaptainApfelWorkshop = () => {
                   <img 
                     src="/lovable-uploads/3010b863-5b52-4f66-8512-f9ba4b8c3434.png" 
                     alt="Kimmi Schlau" 
-                    className="w-30 h-30 object-contain"
+                    className="w-30 h-30 object-contain mx-auto"
                   />
                 </div>
                 <h3 className="text-lg font-bold text-orange-600 text-center">Kimmi Schlau</h3>
@@ -236,7 +236,7 @@ const CaptainApfelWorkshop = () => {
                   <img 
                     src="/lovable-uploads/93f05473-274d-4f59-9aa9-06d7eaefa496.png" 
                     alt="Kai Mutig" 
-                    className="w-30 h-30 object-contain"
+                    className="w-30 h-30 object-contain mx-auto"
                   />
                 </div>
                 <h3 className="text-lg font-bold text-green-600 text-center">Kai Mutig</h3>
@@ -247,7 +247,7 @@ const CaptainApfelWorkshop = () => {
                   <img 
                     src="/lovable-uploads/cefd4c3a-36d6-4898-9a5f-4fca27ee1b7e.png" 
                     alt="Das Tomaten-Raumschiff" 
-                    className="w-30 h-30 object-contain"
+                    className="w-30 h-30 object-contain mx-auto"
                   />
                 </div>
                 <h3 className="text-lg font-bold text-red-600 text-center">Das Tomaten-Raumschiff</h3>
@@ -259,7 +259,7 @@ const CaptainApfelWorkshop = () => {
               <div className="inline-block relative">
                 <div className="bg-gradient-to-r from-yellow-100/30 via-orange-100/20 to-red-100/10 rounded-xl p-6 shadow-md border-2 border-yellow-300/50">
                   <h3 className="text-xl font-bold text-yellow-700 font-playfair mb-2">
-                    Achtung! Störenfried an Bord!
+                    Achtung! Puffel möchte die Crew verlangsamen.
                   </h3>
                   {/* Hand-drawn line effect */}
                   <div className="flex justify-center mt-2">
@@ -293,7 +293,7 @@ const CaptainApfelWorkshop = () => {
                     <img 
                       src="/lovable-uploads/3d316574-8e30-4bd5-9ac2-43c62f322d8b.png" 
                       alt="Puffel" 
-                      className="w-24 h-24 object-contain"
+                      className="w-24 h-24 object-contain mx-auto"
                     />
                   </div>
                   <h3 className="text-lg font-bold text-yellow-600">Puffel</h3>
