@@ -100,23 +100,12 @@ const CaptainApfelWorkshop = () => {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <div className="mb-6 md:mb-8">
-              <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold mb-3 md:mb-4 text-red-600 drop-shadow-lg font-playfair leading-tight">
-                Captain Apfelzahn & die Crew
-                <br />
-                – auf gesunder Mission
+              <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold mb-3 md:mb-4 text-white drop-shadow-lg font-playfair leading-tight">
+                Captain Apfelzahn & die Crew – auf gesunder Mission
               </h1>
-              <div className="relative mb-4 md:mb-6">
-                <svg className="w-full max-w-md mx-auto" viewBox="0 0 300 300">
-                  <defs>
-                    <path id="circle" d="M 150, 150 m -120, 0 a 120,120 0 1,1 240,0 a 120,120 0 1,1 -240,0" />
-                  </defs>
-                  <text className="fill-white text-lg md:text-xl font-fredoka font-medium drop-shadow-md">
-                    <textPath href="#circle" startOffset="0%">
-                      Volle Obst- und Gemüsekraft voraus
-                    </textPath>
-                  </text>
-                </svg>
-              </div>
+              <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl mb-4 md:mb-6 text-white drop-shadow-md font-fredoka font-medium">
+                Volle Obst- und Gemüsekraft voraus
+              </p>
               <div className="flex justify-center mb-4 md:mb-6">
                 <div className="bg-white/20 backdrop-blur-sm rounded-full p-4 md:p-6 lg:p-8 shadow-xl">
                   <img 
