@@ -123,9 +123,12 @@ const CaptainApfelWorkshop = () => {
         <div className="container-custom relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <div className="mb-8">
-              <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white drop-shadow-lg font-playfair">
-                Captain Apfelzahn Workshop
+              <h1 className="text-4xl md:text-6xl font-bold mb-4 text-white drop-shadow-lg font-playfair">
+                Captain Apfelzahn & the Crew – on a healthy mission
               </h1>
+              <p className="text-2xl md:text-3xl mb-6 text-white drop-shadow-md font-fredoka font-medium">
+                Full fruit and vegetable power ahead
+              </p>
               <div className="flex justify-center mb-6">
                 <div className="bg-white/20 backdrop-blur-sm rounded-full p-8 shadow-xl">
                   <img 
@@ -172,6 +175,18 @@ const CaptainApfelWorkshop = () => {
 
             <div className="flex flex-wrap justify-center items-center gap-10 mb-16">
               <div className="text-center group">
+                <div className="bg-gradient-to-br from-blue-100 to-blue-200 rounded-full p-4 shadow-xl mb-4 transform group-hover:scale-110 transition-all duration-300 hover:shadow-2xl w-32 h-32 flex items-center justify-center">
+                  <img 
+                    src="/lovable-uploads/fc011b76-01d0-4e54-87ab-6174605bb7fc.png" 
+                    alt="Captain Apfelzahn" 
+                    className="w-20 h-20 object-contain"
+                  />
+                </div>
+                <h3 className="text-lg font-bold text-blue-600 mb-1">Captain Apfelzahn</h3>
+                <p className="text-sm text-gray-500">Der mutige Anführer</p>
+              </div>
+
+              <div className="text-center group">
                 <div className="bg-gradient-to-br from-orange-100 to-orange-200 rounded-full p-4 shadow-xl mb-4 transform group-hover:scale-110 transition-all duration-300 hover:shadow-2xl w-32 h-32 flex items-center justify-center">
                   <img 
                     src="/lovable-uploads/3010b863-5b52-4f66-8512-f9ba4b8c3434.png" 
@@ -187,7 +202,7 @@ const CaptainApfelWorkshop = () => {
                 <div className="bg-gradient-to-br from-red-100 to-red-200 rounded-full p-4 shadow-xl mb-4 transform group-hover:scale-110 transition-all duration-300 hover:shadow-2xl w-32 h-32 flex items-center justify-center">
                   <img 
                     src="/lovable-uploads/cefd4c3a-36d6-4898-9a5f-4fca27ee1b7e.png" 
-                    alt="The Tomato Spaceship" 
+                    alt="Das Tomaten-Raumschiff" 
                     className="w-20 h-20 object-contain"
                   />
                 </div>
@@ -208,18 +223,6 @@ const CaptainApfelWorkshop = () => {
               </div>
 
               <div className="text-center group">
-                <div className="bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-full p-4 shadow-xl mb-4 transform group-hover:scale-110 transition-all duration-300 hover:shadow-2xl w-32 h-32 flex items-center justify-center">
-                  <img 
-                    src="/lovable-uploads/3d316574-8e30-4bd5-9ac2-43c62f322d8b.png" 
-                    alt="Puffel" 
-                    className="w-20 h-20 object-contain"
-                  />
-                </div>
-                <h3 className="text-lg font-bold text-yellow-600 mb-1">Puffel</h3>
-                <p className="text-sm text-gray-500">Das fröhliche Popcorn</p>
-              </div>
-
-              <div className="text-center group">
                 <div className="bg-gradient-to-br from-green-100 to-green-200 rounded-full p-4 shadow-xl mb-4 transform group-hover:scale-110 transition-all duration-300 hover:shadow-2xl w-32 h-32 flex items-center justify-center">
                   <img 
                     src="/lovable-uploads/8ec988de-b4fb-451b-ad2d-bb92e850e333.png" 
@@ -229,6 +232,18 @@ const CaptainApfelWorkshop = () => {
                 </div>
                 <h3 className="text-lg font-bold text-green-600 mb-1">Das Kraftzentrum</h3>
                 <p className="text-sm text-gray-500">Das energetische Kraftzentrum</p>
+              </div>
+
+              <div className="text-center group">
+                <div className="bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-full p-4 shadow-xl mb-4 transform group-hover:scale-110 transition-all duration-300 hover:shadow-2xl w-32 h-32 flex items-center justify-center">
+                  <img 
+                    src="/lovable-uploads/3d316574-8e30-4bd5-9ac2-43c62f322d8b.png" 
+                    alt="Puffel" 
+                    className="w-20 h-20 object-contain"
+                  />
+                </div>
+                <h3 className="text-lg font-bold text-yellow-600 mb-1">Puffel</h3>
+                <p className="text-sm text-gray-500">Der freche Saboteur, der das Tomaten-Raumschiff bremsen will</p>
               </div>
             </div>
 

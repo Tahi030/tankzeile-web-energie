@@ -77,6 +77,7 @@ export default {
 			fontFamily: {
 				playfair: ['Playfair Display', 'serif'],
 				sans: ['Open Sans', 'sans-serif'],
+				fredoka: ['Fredoka', 'sans-serif'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
