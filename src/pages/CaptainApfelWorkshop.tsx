@@ -315,10 +315,10 @@ const CaptainApfelWorkshop = () => {
               </div>
             </div>
 
-            {/* Workshop Description Content */}
+            {/* Empty Content Box - Ready for Text */}
             <div className="relative">
               {/* Main Content Box */}
-              <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12 border-4 border-green-200 relative overflow-hidden">
+              <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12 border-4 border-green-200 relative overflow-hidden min-h-[400px]">
                 {/* Decorative background pattern */}
                 <div className="absolute inset-0 opacity-5">
                   <div className="grid grid-cols-8 gap-4 h-full w-full">
@@ -328,37 +328,15 @@ const CaptainApfelWorkshop = () => {
                   </div>
                 </div>
                 
-                {/* Workshop Content */}
-                <div className="relative z-10">
-                  <div className="text-center mb-8">
-                    <h2 className="text-2xl md:text-3xl font-bold text-green-600 font-playfair mb-4">
-                      Workshop mit Captain Apfelzahn – Ernährung als Abenteuer für Vorschulkinder
-                    </h2>
-                    <div className="flex justify-center">
-                      <svg width="120" height="6" viewBox="0 0 120 6" className="text-green-500">
-                        <path
-                          d="M2,3 Q10,1 20,3 T40,2 Q50,4 60,3 T80,2 Q90,4 100,3 T118,3"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          fill="none"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          className="opacity-70"
-                        />
-                      </svg>
+                {/* Content placeholder */}
+                <div className="relative z-10 flex items-center justify-center h-full">
+                  <div className="text-center">
+                    <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <span className="text-2xl">📝</span>
                     </div>
-                  </div>
-                  
-                  <div className="text-center space-y-6">
-                    <p className="text-lg md:text-xl text-green-700 font-fredoka font-medium">
-                      Volle Obst- und Gemüsekraft voraus! Captain Apfelzahn lädt euch ein auf eine Mission in den Körper hinein.
+                    <p className="text-gray-400 text-lg font-fredoka font-medium">
+                      Diese Seite wird gerade aufgebaut.
                     </p>
-                    
-                    <div className="bg-gradient-to-r from-green-100 to-blue-100 rounded-xl p-6 border-2 border-green-200">
-                      <p className="text-base md:text-lg text-green-700 font-fredoka">
-                        Im "Workshop mit Captain Apfelzahn & der Crew – Ernährung als Abenteuer für Vorschulkinder" geht es mit voller Kraft voraus mit Obst und Gemüse! Captain Apfelzahn und seine Crew laden euch ein auf eine Mission in den Körper hinein.
-                      </p>
-                    </div>
                   </div>
                 </div>
               </div>
