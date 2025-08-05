@@ -64,7 +64,7 @@ const CaptainApfelWorkshop = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section with Character Staging */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-green-400 via-blue-400 to-purple-500 py-20 md:py-32">
+      <section className="relative overflow-hidden bg-gradient-to-br from-orange-200 via-blue-200 to-green-200 py-20 md:py-32">
         {/* Character Crew - Arranged as a cohesive team */}
         <div className="absolute inset-0 pointer-events-none opacity-25">
           {/* Hero Character Group - Top Formation */}
@@ -75,21 +75,9 @@ const CaptainApfelWorkshop = () => {
               className="w-16 h-16 md:w-20 md:h-20 animate-bounce opacity-90"
               style={{ animationDelay: '0s', animationDuration: '3s' }}
             />
-            <img 
-              src="/lovable-uploads/3010b863-5b52-4f66-8512-f9ba4b8c3434.png" 
-              alt="Karla Karotte" 
-              className="w-14 h-14 md:w-18 md:h-18 animate-bounce opacity-90"
-              style={{ animationDelay: '1s', animationDuration: '4s' }}
-            />
           </div>
           
           <div className="absolute top-4 right-4 flex flex-col gap-3">
-            <img 
-              src="/lovable-uploads/1d09b603-8aca-4629-acbd-8758ca346050.png" 
-              alt="Tomaten-Raumschiff" 
-              className="w-14 h-14 md:w-18 md:h-18 animate-bounce opacity-90"
-              style={{ animationDelay: '2s', animationDuration: '3.5s' }}
-            />
             <img 
               src="/lovable-uploads/93f05473-274d-4f59-9aa9-06d7eaefa496.png" 
               alt="Bruno Brokkoli" 
@@ -100,11 +88,6 @@ const CaptainApfelWorkshop = () => {
           
           {/* Bottom Crew Formation */}
           <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex gap-6">
-            <img 
-              src="/lovable-uploads/cefd4c3a-36d6-4898-9a5f-4fca27ee1b7e.png" 
-              alt="Tommy Tomate" 
-              className="w-14 h-14 md:w-18 md:h-18 animate-pulse opacity-80"
-            />
             <img 
               src="/lovable-uploads/3d316574-8e30-4bd5-9ac2-43c62f322d8b.png" 
               alt="Blumi Blumenkohl" 
