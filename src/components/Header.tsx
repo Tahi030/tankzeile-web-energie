@@ -59,7 +59,7 @@ const Header = () => {
   // Dynamic header color based on current page
   const getHeaderColor = () => {
     if (location.pathname === '/tankwelten/captain-apfel-workshop') {
-      return 'bg-gradient-to-r from-green-400 via-blue-400 to-purple-500';
+      return 'bg-gradient-to-r from-orange-200 via-blue-200 to-green-200';
     }
     return 'bg-primary';
   };
