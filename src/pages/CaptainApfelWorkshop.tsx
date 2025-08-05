@@ -124,10 +124,10 @@ const CaptainApfelWorkshop = () => {
           <div className="max-w-4xl mx-auto text-center">
             <div className="mb-8">
               <h1 className="text-4xl md:text-6xl font-bold mb-4 text-white drop-shadow-lg font-playfair">
-                Captain Apfelzahn & the Crew – on a healthy mission
+                Captain Apfelzahn & die Crew – auf gesunder Mission
               </h1>
               <p className="text-2xl md:text-3xl mb-6 text-white drop-shadow-md font-fredoka font-medium">
-                Full fruit and vegetable power ahead
+                Volle Obst- und Gemüsekraft voraus
               </p>
               <div className="flex justify-center mb-6">
                 <div className="bg-white/20 backdrop-blur-sm rounded-full p-8 shadow-xl">
@@ -165,12 +165,9 @@ const CaptainApfelWorkshop = () => {
             
             {/* Meet the Crew - Character Introduction */}
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-green-600 mb-4 font-playfair">
+              <h2 className="text-3xl md:text-4xl font-bold text-green-600 mb-8 font-playfair">
                 🌟 Lerne die Gesunden Helden kennen! 🌟
               </h2>
-              <p className="text-lg text-gray-600 mb-8">
-                Jeder Charakter bringt seine eigenen Superkräfte mit!
-              </p>
             </div>
 
             <div className="flex flex-wrap justify-center items-center gap-10 mb-16">
