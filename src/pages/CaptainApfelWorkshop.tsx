@@ -128,40 +128,11 @@ const CaptainApfelWorkshop = () => {
               </h1>
               <div className="flex justify-center mb-6">
                 <div className="bg-white/20 backdrop-blur-sm rounded-full p-8 shadow-xl">
-                  <div className="flex flex-col items-center">
-                    {/* Main Character - Captain Apfelzahn */}
-                    <div className="mb-4">
-                      <img 
-                        src="/lovable-uploads/fc011b76-01d0-4e54-87ab-6174605bb7fc.png" 
-                        alt="Captain Apfelzahn" 
-                        className="w-24 h-24 md:w-32 md:h-32 drop-shadow-2xl animate-pulse"
-                      />
-                    </div>
-                    
-                    {/* Supporting Crew arranged around */}
-                    <div className="grid grid-cols-4 gap-3">
-                      <img 
-                        src="/lovable-uploads/3010b863-5b52-4f66-8512-f9ba4b8c3434.png" 
-                        alt="Kimmi Schlau" 
-                        className="w-10 h-10 md:w-12 md:h-12 drop-shadow-lg opacity-80"
-                      />
-                      <img 
-                        src="/lovable-uploads/8ec988de-b4fb-451b-ad2d-bb92e850e333.png" 
-                        alt="The Power Center" 
-                        className="w-10 h-10 md:w-12 md:h-12 drop-shadow-lg opacity-80"
-                      />
-                      <img 
-                        src="/lovable-uploads/cefd4c3a-36d6-4898-9a5f-4fca27ee1b7e.png" 
-                        alt="The Tomato Spaceship" 
-                        className="w-10 h-10 md:w-12 md:h-12 drop-shadow-lg opacity-80"
-                      />
-                      <img 
-                        src="/lovable-uploads/3d316574-8e30-4bd5-9ac2-43c62f322d8b.png" 
-                        alt="Puffel" 
-                        className="w-10 h-10 md:w-12 md:h-12 drop-shadow-lg opacity-80"
-                      />
-                    </div>
-                  </div>
+                  <img 
+                    src="/lovable-uploads/7e511dcd-b1cb-443a-a8ae-792a71b82985.png" 
+                    alt="Captain Apfelzahn" 
+                    className="w-32 h-32 md:w-48 md:h-48 drop-shadow-2xl animate-pulse"
+                  />
                 </div>
               </div>
               <p className="text-xl md:text-2xl mb-8 text-white drop-shadow-md font-medium">
@@ -192,7 +163,7 @@ const CaptainApfelWorkshop = () => {
             {/* Meet the Crew - Character Introduction */}
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-green-600 mb-4 font-playfair">
-                🌟 Meet the Healthy Heroes Crew! 🌟
+                🌟 Lerne die Gesunden Helden kennen! 🌟
               </h2>
               <p className="text-lg text-gray-600 mb-8">
                 Jeder Charakter bringt seine eigenen Superkräfte mit!
@@ -201,11 +172,11 @@ const CaptainApfelWorkshop = () => {
 
             <div className="flex flex-wrap justify-center items-center gap-10 mb-16">
               <div className="text-center group">
-                <div className="bg-gradient-to-br from-orange-100 to-orange-200 rounded-full p-6 shadow-xl mb-4 transform group-hover:scale-110 transition-all duration-300 hover:shadow-2xl">
+                <div className="bg-gradient-to-br from-orange-100 to-orange-200 rounded-full p-4 shadow-xl mb-4 transform group-hover:scale-110 transition-all duration-300 hover:shadow-2xl w-32 h-32 flex items-center justify-center">
                   <img 
                     src="/lovable-uploads/3010b863-5b52-4f66-8512-f9ba4b8c3434.png" 
                     alt="Kimmi Schlau" 
-                    className="w-24 h-24"
+                    className="w-20 h-20 object-contain"
                   />
                 </div>
                 <h3 className="text-lg font-bold text-orange-600 mb-1">Kimmi Schlau</h3>
@@ -213,23 +184,23 @@ const CaptainApfelWorkshop = () => {
               </div>
               
               <div className="text-center group">
-                <div className="bg-gradient-to-br from-red-100 to-red-200 rounded-full p-6 shadow-xl mb-4 transform group-hover:scale-110 transition-all duration-300 hover:shadow-2xl">
+                <div className="bg-gradient-to-br from-red-100 to-red-200 rounded-full p-4 shadow-xl mb-4 transform group-hover:scale-110 transition-all duration-300 hover:shadow-2xl w-32 h-32 flex items-center justify-center">
                   <img 
                     src="/lovable-uploads/cefd4c3a-36d6-4898-9a5f-4fca27ee1b7e.png" 
                     alt="The Tomato Spaceship" 
-                    className="w-24 h-24"
+                    className="w-20 h-20 object-contain"
                   />
                 </div>
-                <h3 className="text-lg font-bold text-red-600 mb-1">The Tomato Spaceship</h3>
+                <h3 className="text-lg font-bold text-red-600 mb-1">Das Tomaten-Raumschiff</h3>
                 <p className="text-sm text-gray-500">Der Weltraum-Abenteurer</p>
               </div>
               
               <div className="text-center group">
-                <div className="bg-gradient-to-br from-green-100 to-green-200 rounded-full p-6 shadow-xl mb-4 transform group-hover:scale-110 transition-all duration-300 hover:shadow-2xl">
+                <div className="bg-gradient-to-br from-green-100 to-green-200 rounded-full p-4 shadow-xl mb-4 transform group-hover:scale-110 transition-all duration-300 hover:shadow-2xl w-32 h-32 flex items-center justify-center">
                   <img 
                     src="/lovable-uploads/93f05473-274d-4f59-9aa9-06d7eaefa496.png" 
                     alt="Kai Mutig" 
-                    className="w-24 h-24"
+                    className="w-20 h-20 object-contain"
                   />
                 </div>
                 <h3 className="text-lg font-bold text-green-600 mb-1">Kai Mutig</h3>
@@ -237,11 +208,11 @@ const CaptainApfelWorkshop = () => {
               </div>
 
               <div className="text-center group">
-                <div className="bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-full p-6 shadow-xl mb-4 transform group-hover:scale-110 transition-all duration-300 hover:shadow-2xl">
+                <div className="bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-full p-4 shadow-xl mb-4 transform group-hover:scale-110 transition-all duration-300 hover:shadow-2xl w-32 h-32 flex items-center justify-center">
                   <img 
                     src="/lovable-uploads/3d316574-8e30-4bd5-9ac2-43c62f322d8b.png" 
                     alt="Puffel" 
-                    className="w-24 h-24"
+                    className="w-20 h-20 object-contain"
                   />
                 </div>
                 <h3 className="text-lg font-bold text-yellow-600 mb-1">Puffel</h3>
@@ -249,14 +220,14 @@ const CaptainApfelWorkshop = () => {
               </div>
 
               <div className="text-center group">
-                <div className="bg-gradient-to-br from-red-100 to-red-200 rounded-full p-6 shadow-xl mb-4 transform group-hover:scale-110 transition-all duration-300 hover:shadow-2xl">
+                <div className="bg-gradient-to-br from-green-100 to-green-200 rounded-full p-4 shadow-xl mb-4 transform group-hover:scale-110 transition-all duration-300 hover:shadow-2xl w-32 h-32 flex items-center justify-center">
                   <img 
                     src="/lovable-uploads/8ec988de-b4fb-451b-ad2d-bb92e850e333.png" 
-                    alt="The Power Center" 
-                    className="w-24 h-24"
+                    alt="Das Kraftzentrum" 
+                    className="w-20 h-20 object-contain"
                   />
                 </div>
-                <h3 className="text-lg font-bold text-red-600 mb-1">The Power Center</h3>
+                <h3 className="text-lg font-bold text-green-600 mb-1">Das Kraftzentrum</h3>
                 <p className="text-sm text-gray-500">Das energetische Kraftzentrum</p>
               </div>
             </div>
@@ -305,9 +276,9 @@ const CaptainApfelWorkshop = () => {
                     <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                       <span className="text-2xl">📝</span>
                     </div>
-                    <p className="text-gray-400 text-lg font-medium">
-                      Hier wird bald spannender Inhalt eingefügt...
-                    </p>
+                <p className="text-gray-400 text-lg font-medium">
+                  Hier wird bald spannender Inhalt über unsere Workshops eingefügt...
+                </p>
                   </div>
                 </div>
               </div>
@@ -318,7 +289,6 @@ const CaptainApfelWorkshop = () => {
               <CustomerFeedback />
             </div>
 
-            {/* Call to Action */}
             <div className="mt-16 text-center">
               <div className="bg-gradient-to-r from-green-400 to-blue-500 rounded-2xl p-8 shadow-xl">
                 <h3 className="text-2xl font-bold text-white mb-4">
