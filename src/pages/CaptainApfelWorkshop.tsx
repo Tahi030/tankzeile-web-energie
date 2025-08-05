@@ -267,16 +267,19 @@ const CaptainApfelWorkshop = () => {
               </div>
             </div>
 
-            {/* Separate section for Paffel - the troublemaker */}
+            {/* Former Crew Member Paffel */}
             <div className="text-center mb-20">
               <div className="inline-block relative">
-                <div className="bg-gradient-to-r from-yellow-100/40 via-orange-100/30 to-red-100/20 rounded-xl p-6 md:p-8 shadow-md border-2 border-yellow-300/50">
-                  <h3 className="text-xl md:text-2xl font-bold text-yellow-700 font-playfair mb-3">
-                    Achtung! Paffel möchte die Crew ausbremsen.
+                <div className="bg-gradient-to-r from-yellow-50/60 via-orange-50/40 to-amber-50/30 rounded-xl p-6 md:p-8 shadow-md border-2 border-yellow-200/40">
+                  <h3 className="text-xl md:text-2xl font-bold text-amber-700 font-playfair mb-3">
+                    Ehemaliges Crew-Mitglied Paffel
                   </h3>
+                  <p className="text-base md:text-lg text-amber-600 font-medium font-fredoka">
+                    Früher war er Mais und hat sich entschieden, sich verarbeiten zu lassen.
+                  </p>
                   {/* Hand-drawn line effect */}
                   <div className="flex justify-center mt-3">
-                    <svg width="120" height="6" viewBox="0 0 120 6" className="text-yellow-600">
+                    <svg width="120" height="6" viewBox="0 0 120 6" className="text-amber-500">
                       <path
                         d="M2,3 Q10,1 20,3 T40,2 Q50,4 60,3 T80,2 Q90,4 100,3 T118,3"
                         stroke="currentColor"
@@ -302,15 +305,18 @@ const CaptainApfelWorkshop = () => {
               
               <div className="flex justify-center mt-8">
                 <div className="text-center group">
-                  <div className="bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-full shadow-lg mb-4 transform group-hover:scale-105 transition-all duration-300 hover:shadow-xl w-32 h-32 sm:w-36 sm:h-36 flex items-center justify-center overflow-hidden border-2 border-yellow-300/50">
+                  <div className="bg-gradient-to-br from-yellow-100 to-amber-200 rounded-full shadow-lg mb-4 transform group-hover:scale-105 transition-all duration-300 hover:shadow-xl w-32 h-32 sm:w-36 sm:h-36 flex items-center justify-center overflow-hidden border-2 border-yellow-300/50">
                     <img 
                       src="/lovable-uploads/3d316574-8e30-4bd5-9ac2-43c62f322d8b.png" 
                       alt="Paffel" 
                       className="w-28 h-28 sm:w-32 sm:h-32 object-cover"
                     />
                   </div>
-                  <h3 className="text-lg sm:text-xl font-bold text-yellow-600 font-fredoka leading-tight">Paffel</h3>
-                  <p className="text-sm sm:text-base text-yellow-700 font-medium mt-2 font-fredoka">Der freche Saboteur</p>
+                  <h3 className="text-lg sm:text-xl font-bold text-amber-600 font-fredoka leading-tight">Paffel</h3>
+                  <p className="text-sm sm:text-base text-amber-700 font-medium mt-2 font-fredoka">Der freche Tollpatsch</p>
+                  <p className="text-xs sm:text-sm text-amber-600 font-medium mt-1 font-fredoka max-w-xs mx-auto">
+                    Möchte das Tomaten-Raumschiff ausbremsen
+                  </p>
                 </div>
               </div>
             </div>
