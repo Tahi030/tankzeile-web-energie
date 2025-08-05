@@ -299,7 +299,7 @@ const CaptainApfelWorkshop = () => {
                       <span className="text-2xl">📝</span>
                     </div>
                     <p className="text-gray-400 text-lg font-fredoka font-medium">
-                      Hier wird bald spannender Inhalt über unsere Workshops eingefügt...
+                      This page is currently under construction.
                     </p>
                   </div>
                 </div>
