@@ -94,12 +94,6 @@ const CaptainApfelWorkshop = () => {
               className="w-12 h-12 md:w-16 md:h-16 animate-pulse opacity-80"
               style={{ animationDelay: '1s' }}
             />
-            <img 
-              src="/lovable-uploads/e9fac2ac-84dd-414f-9272-81a5529764a3.png" 
-              alt="Überraschte Karotte" 
-              className="w-14 h-14 md:w-18 md:h-18 animate-pulse opacity-80"
-              style={{ animationDelay: '2s' }}
-            />
           </div>
         </div>
 
