@@ -116,7 +116,7 @@ const CaptainApfelWorkshop = () => {
                 </div>
               </div>
               <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-6 md:mb-8 text-white drop-shadow-md font-medium px-4">
-                🚀 Für Vorschulkinder, die spielerisch die Welt der gesunden Ernährung entdecken möchten! 🚀
+                Für Vorschulkinder, die spielerisch die Welt der gesunden Ernährung entdecken möchten!
               </p>
               
               <div className="flex flex-wrap justify-center gap-2 md:gap-4 mb-6 md:mb-8 px-4">
@@ -238,7 +238,7 @@ const CaptainApfelWorkshop = () => {
               <div className="inline-block relative">
                 <div className="bg-gradient-to-r from-yellow-100/40 via-orange-100/30 to-red-100/20 rounded-xl p-6 md:p-8 shadow-md border-2 border-yellow-300/50">
                   <h3 className="text-xl md:text-2xl font-bold text-yellow-700 font-playfair mb-3">
-                    Achtung! Paffel möchte die Crew verlangsamen.
+                    Achtung! Paffel möchte die Crew ausbremsen.
                   </h3>
                   {/* Hand-drawn line effect */}
                   <div className="flex justify-center mt-3">
@@ -301,7 +301,7 @@ const CaptainApfelWorkshop = () => {
                       <span className="text-2xl">📝</span>
                     </div>
                     <p className="text-gray-400 text-lg font-fredoka font-medium">
-                      This page is currently under construction.
+                      Diese Seite wird gerade aufgebaut.
                     </p>
                   </div>
                 </div>
@@ -322,10 +322,8 @@ const CaptainApfelWorkshop = () => {
                   Lasst uns gemeinsam die Welt der gesunden Ernährung entdecken!
                 </p>
                 <Link to="/kontakt" className="bg-white text-green-600 font-bold py-3 px-6 md:py-4 md:px-8 rounded-full hover:bg-green-50 transition-colors duration-300 shadow-lg inline-flex items-center gap-2 font-fredoka text-sm md:text-base">
-                  <span>🚀</span>
                   <span className="hidden sm:inline">Interesse an einem Workshop?</span>
                   <span className="sm:hidden">Workshop anfragen</span>
-                  <span>🥕</span>
                 </Link>
               </div>
             </div>
