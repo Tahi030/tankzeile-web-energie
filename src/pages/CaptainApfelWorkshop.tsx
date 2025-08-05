@@ -199,6 +199,17 @@ const CaptainApfelWorkshop = () => {
 
             <div className="flex flex-wrap justify-center items-center gap-10 mb-16">
               <div className="text-center group">
+                <div className="bg-gradient-to-br from-green-100 to-green-200 rounded-full shadow-xl mb-4 transform group-hover:scale-110 transition-all duration-300 hover:shadow-2xl w-32 h-32 flex items-center justify-center overflow-hidden">
+                  <img 
+                    src="/lovable-uploads/7e511dcd-b1cb-443a-a8ae-792a71b82985.png" 
+                    alt="Das Kraftzentrum" 
+                    className="w-24 h-24 object-contain"
+                  />
+                </div>
+                <h3 className="text-lg font-bold text-green-600 text-center">Das Kraftzentrum</h3>
+              </div>
+
+              <div className="text-center group">
                 <div className="bg-gradient-to-br from-blue-100 to-blue-200 rounded-full shadow-xl mb-4 transform group-hover:scale-110 transition-all duration-300 hover:shadow-2xl w-32 h-32 flex items-center justify-center overflow-hidden">
                   <img 
                     src="/lovable-uploads/fc011b76-01d0-4e54-87ab-6174605bb7fc.png" 
@@ -206,7 +217,7 @@ const CaptainApfelWorkshop = () => {
                     className="w-24 h-24 object-contain"
                   />
                 </div>
-                <h3 className="text-lg font-bold text-blue-600">Captain Apfelzahn</h3>
+                <h3 className="text-lg font-bold text-blue-600 text-center">Captain Apfelzahn</h3>
               </div>
 
               <div className="text-center group">
@@ -217,18 +228,7 @@ const CaptainApfelWorkshop = () => {
                     className="w-24 h-24 object-contain"
                   />
                 </div>
-                <h3 className="text-lg font-bold text-orange-600">Kimmi Schlau</h3>
-              </div>
-              
-              <div className="text-center group">
-                <div className="bg-gradient-to-br from-red-100 to-red-200 rounded-full shadow-xl mb-4 transform group-hover:scale-110 transition-all duration-300 hover:shadow-2xl w-32 h-32 flex items-center justify-center overflow-hidden">
-                  <img 
-                    src="/lovable-uploads/cefd4c3a-36d6-4898-9a5f-4fca27ee1b7e.png" 
-                    alt="Das Tomaten-Raumschiff" 
-                    className="w-24 h-24 object-contain"
-                  />
-                </div>
-                <h3 className="text-lg font-bold text-red-600">Das Tomaten-Raumschiff</h3>
+                <h3 className="text-lg font-bold text-orange-600 text-center">Kimmi Schlau</h3>
               </div>
               
               <div className="text-center group">
@@ -239,18 +239,18 @@ const CaptainApfelWorkshop = () => {
                     className="w-24 h-24 object-contain"
                   />
                 </div>
-                <h3 className="text-lg font-bold text-green-600">Kai Mutig</h3>
+                <h3 className="text-lg font-bold text-green-600 text-center">Kai Mutig</h3>
               </div>
-
+              
               <div className="text-center group">
-                <div className="bg-gradient-to-br from-green-100 to-green-200 rounded-full shadow-xl mb-4 transform group-hover:scale-110 transition-all duration-300 hover:shadow-2xl w-32 h-32 flex items-center justify-center overflow-hidden">
+                <div className="bg-gradient-to-br from-red-100 to-red-200 rounded-full shadow-xl mb-4 transform group-hover:scale-110 transition-all duration-300 hover:shadow-2xl w-32 h-32 flex items-center justify-center overflow-hidden">
                   <img 
-                    src="/lovable-uploads/7e511dcd-b1cb-443a-a8ae-792a71b82985.png" 
-                    alt="Das Kraftzentrum" 
+                    src="/lovable-uploads/cefd4c3a-36d6-4898-9a5f-4fca27ee1b7e.png" 
+                    alt="Das Tomaten-Raumschiff" 
                     className="w-24 h-24 object-contain"
                   />
                 </div>
-                <h3 className="text-lg font-bold text-green-600">Das Kraftzentrum</h3>
+                <h3 className="text-lg font-bold text-red-600 text-center">Das Tomaten-Raumschiff</h3>
               </div>
             </div>
 
