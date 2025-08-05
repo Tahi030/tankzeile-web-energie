@@ -128,41 +128,37 @@ const CaptainApfelWorkshop = () => {
               </h1>
               <div className="flex justify-center mb-6">
                 <div className="bg-white/20 backdrop-blur-sm rounded-full p-8 shadow-xl">
-                  <div className="grid grid-cols-3 gap-4">
-                    <div className="flex flex-col items-center gap-2">
+                  <div className="flex flex-col items-center">
+                    {/* Main Character - Captain Apfelzahn */}
+                    <div className="mb-4">
                       <img 
-                        src="/lovable-uploads/329b45f0-584b-4e48-948c-440129707757.png" 
+                        src="/lovable-uploads/fc011b76-01d0-4e54-87ab-6174605bb7fc.png" 
                         alt="Captain Apfelzahn" 
-                        className="w-16 h-16 md:w-20 md:h-20 drop-shadow-lg"
+                        className="w-24 h-24 md:w-32 md:h-32 drop-shadow-2xl animate-pulse"
                       />
+                    </div>
+                    
+                    {/* Supporting Crew arranged around */}
+                    <div className="grid grid-cols-4 gap-3">
                       <img 
                         src="/lovable-uploads/3010b863-5b52-4f66-8512-f9ba4b8c3434.png" 
                         alt="Kimmi Schlau" 
-                        className="w-12 h-12 md:w-16 md:h-16 drop-shadow-lg"
+                        className="w-10 h-10 md:w-12 md:h-12 drop-shadow-lg opacity-80"
                       />
-                    </div>
-                    <div className="flex flex-col items-center gap-2">
                       <img 
                         src="/lovable-uploads/8ec988de-b4fb-451b-ad2d-bb92e850e333.png" 
                         alt="The Power Center" 
-                        className="w-14 h-14 md:w-18 md:h-18 drop-shadow-lg"
+                        className="w-10 h-10 md:w-12 md:h-12 drop-shadow-lg opacity-80"
                       />
-                      <img 
-                        src="/lovable-uploads/93f05473-274d-4f59-9aa9-06d7eaefa496.png" 
-                        alt="Kai Mutig" 
-                        className="w-12 h-12 md:w-16 md:h-16 drop-shadow-lg"
-                      />
-                    </div>
-                    <div className="flex flex-col items-center gap-2">
                       <img 
                         src="/lovable-uploads/cefd4c3a-36d6-4898-9a5f-4fca27ee1b7e.png" 
                         alt="The Tomato Spaceship" 
-                        className="w-12 h-12 md:w-16 md:h-16 drop-shadow-lg"
+                        className="w-10 h-10 md:w-12 md:h-12 drop-shadow-lg opacity-80"
                       />
                       <img 
                         src="/lovable-uploads/3d316574-8e30-4bd5-9ac2-43c62f322d8b.png" 
                         alt="Puffel" 
-                        className="w-10 h-10 md:w-14 md:h-14 drop-shadow-lg"
+                        className="w-10 h-10 md:w-12 md:h-12 drop-shadow-lg opacity-80"
                       />
                     </div>
                   </div>
