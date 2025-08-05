@@ -144,13 +144,13 @@ const CaptainApfelWorkshop = () => {
               
               <div className="flex flex-wrap justify-center gap-4 mb-8">
                 <div className="bg-white/15 backdrop-blur-sm rounded-lg px-6 py-3 text-white font-fredoka font-medium shadow-lg">
-                  🎯 Spielerisches Lernen
+                  Spielerisches Lernen
                 </div>
                 <div className="bg-white/15 backdrop-blur-sm rounded-lg px-6 py-3 text-white font-fredoka font-medium shadow-lg">
-                  🥕 Gesunde Ernährung
+                  Gesunde Ernährung
                 </div>
                 <div className="bg-white/15 backdrop-blur-sm rounded-lg px-6 py-3 text-white font-fredoka font-medium shadow-lg">
-                  🧘 Achtsamkeit
+                  Achtsamkeit
                 </div>
               </div>
             </div>
@@ -304,31 +304,6 @@ const CaptainApfelWorkshop = () => {
 
             {/* Empty Content Box - Ready for Text */}
             <div className="relative">
-              {/* Crew Members watching over the content box - positioned to not obstruct text */}
-              <div className="absolute -top-8 -left-8 hidden md:block">
-                <img 
-                  src="/lovable-uploads/3010b863-5b52-4f66-8512-f9ba4b8c3434.png" 
-                  alt="Kimmi Schlau schaut zu" 
-                  className="w-12 h-12 opacity-40 transform -rotate-12 hover:opacity-70 transition-opacity"
-                />
-              </div>
-              
-              <div className="absolute -top-6 -right-6 hidden md:block">
-                <img 
-                  src="/lovable-uploads/1d09b603-8aca-4629-acbd-8758ca346050.png" 
-                  alt="Tomaten-Raumschiff" 
-                  className="w-10 h-10 opacity-40 transform rotate-12 hover:opacity-70 transition-opacity"
-                />
-              </div>
-
-              <div className="absolute -bottom-6 -right-8 hidden md:block">
-                <img 
-                  src="/lovable-uploads/cefd4c3a-36d6-4898-9a5f-4fca27ee1b7e.png" 
-                  alt="The Tomato Spaceship bereit" 
-                  className="w-10 h-10 opacity-40 transform -rotate-6 hover:opacity-70 transition-opacity"
-                />
-              </div>
-
               {/* Main Content Box */}
               <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12 border-4 border-green-200 relative overflow-hidden min-h-[400px]">
                 {/* Decorative background pattern */}
