@@ -145,7 +145,7 @@ const CaptainApfelWorkshop = () => {
               <div className="inline-block relative">
                 <div className="bg-gradient-to-r from-green-200/50 via-blue-200/30 to-purple-200/20 rounded-xl p-6 shadow-lg">
                   <h2 className="text-3xl md:text-4xl font-bold text-green-600 font-playfair mb-2">
-                    Triff die Gesunde Crew!
+                    Triff die gesunde Crew!
                   </h2>
                   {/* Hand-drawn line effect */}
                   <div className="flex justify-center mt-3">
