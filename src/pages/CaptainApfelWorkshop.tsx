@@ -255,51 +255,49 @@ const CaptainApfelWorkshop = () => {
             </div>
 
             {/* Separate section for Puffel - the troublemaker */}
-            <div className="bg-yellow-50 rounded-2xl p-8 mb-16 border-2 border-yellow-200">
-              <div className="text-center mb-6">
-                <div className="inline-block relative">
-                  <div className="bg-gradient-to-r from-yellow-200/50 via-orange-200/30 to-red-200/20 rounded-xl p-4 shadow-lg">
-                    <h3 className="text-2xl font-bold text-yellow-700 font-playfair mb-2">
-                      Achtung! Störenfried an Bord!
-                    </h3>
-                    {/* Hand-drawn line effect */}
-                    <div className="flex justify-center mt-2">
-                      <svg width="100" height="6" viewBox="0 0 100 6" className="text-yellow-600">
-                        <path
-                          d="M2,3 Q8,1 15,3 T30,2 Q40,4 50,3 T70,2 Q80,4 90,3 T98,3"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          fill="none"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          className="opacity-70"
-                          style={{
-                            filter: 'url(#roughPaperPuffel)',
-                          }}
-                        />
-                        <defs>
-                          <filter id="roughPaperPuffel">
-                            <feTurbulence baseFrequency="0.04" numOctaves="3" result="noise" seed="2" />
-                            <feDisplacementMap in="SourceGraphic" in2="noise" scale="0.6" />
-                          </filter>
-                        </defs>
-                      </svg>
-                    </div>
+            <div className="text-center mb-16">
+              <div className="inline-block relative">
+                <div className="bg-gradient-to-r from-yellow-100/30 via-orange-100/20 to-red-100/10 rounded-xl p-6 shadow-md border-2 border-yellow-300/50">
+                  <h3 className="text-xl font-bold text-yellow-700 font-playfair mb-2">
+                    Achtung! Störenfried an Bord!
+                  </h3>
+                  {/* Hand-drawn line effect */}
+                  <div className="flex justify-center mt-2">
+                    <svg width="100" height="6" viewBox="0 0 100 6" className="text-yellow-600">
+                      <path
+                        d="M2,3 Q8,1 15,3 T30,2 Q40,4 50,3 T70,2 Q80,4 90,3 T98,3"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        fill="none"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        className="opacity-70"
+                        style={{
+                          filter: 'url(#roughPaperPuffel)',
+                        }}
+                      />
+                      <defs>
+                        <filter id="roughPaperPuffel">
+                          <feTurbulence baseFrequency="0.04" numOctaves="3" result="noise" seed="2" />
+                          <feDisplacementMap in="SourceGraphic" in2="noise" scale="0.6" />
+                        </filter>
+                      </defs>
+                    </svg>
                   </div>
                 </div>
               </div>
               
-              <div className="flex justify-center">
+              <div className="flex justify-center mt-8">
                 <div className="text-center group">
-                  <div className="bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-full shadow-xl mb-4 transform group-hover:scale-110 transition-all duration-300 hover:shadow-2xl w-32 h-32 flex items-center justify-center overflow-hidden border-4 border-yellow-300">
+                  <div className="bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-full shadow-lg mb-4 transform group-hover:scale-105 transition-all duration-300 hover:shadow-xl w-28 h-28 flex items-center justify-center overflow-hidden border-2 border-yellow-300/70">
                     <img 
                       src="/lovable-uploads/3d316574-8e30-4bd5-9ac2-43c62f322d8b.png" 
                       alt="Puffel" 
-                      className="w-32 h-32 object-cover"
+                      className="w-24 h-24 object-contain"
                     />
                   </div>
                   <h3 className="text-lg font-bold text-yellow-600">Puffel</h3>
-                  <p className="text-sm text-yellow-700 font-medium mt-2">Der freche Saboteur</p>
+                  <p className="text-sm text-yellow-700 font-medium mt-1">Der freche Saboteur</p>
                 </div>
               </div>
             </div>
