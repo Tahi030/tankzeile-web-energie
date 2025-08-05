@@ -104,13 +104,6 @@ const CaptainApfelWorkshop = () => {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <div className="mb-6 md:mb-8">
-              <div className="flex justify-center mb-6 md:mb-8">
-                <img 
-                  src="/lovable-uploads/949c4ecd-a2c3-453d-ac82-9ee766563a7d.png" 
-                  alt="Captain Apfelzahn" 
-                  className="w-48 h-48 sm:w-56 sm:h-56 md:w-72 md:h-72 lg:w-80 lg:h-80 drop-shadow-2xl object-cover"
-                />
-              </div>
               <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold mb-3 md:mb-4 text-white drop-shadow-lg font-playfair leading-tight">
                 Captain Apfelzahn & die Crew – auf gesunder Mission
               </h1>
@@ -228,6 +221,13 @@ const CaptainApfelWorkshop = () => {
                     />
                   </div>
                   <h3 className="text-base sm:text-lg md:text-xl font-bold text-blue-600 font-fredoka leading-tight">Captain Apfelzahn</h3>
+                  <div className="flex justify-center mt-4">
+                    <img 
+                      src="/lovable-uploads/624d04ef-b07c-4747-83a1-b649e642f9be.png" 
+                      alt="Captain Apfelzahn und Crew" 
+                      className="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 drop-shadow-2xl object-contain"
+                    />
+                  </div>
                 </div>
 
                 <div className="text-center group">
