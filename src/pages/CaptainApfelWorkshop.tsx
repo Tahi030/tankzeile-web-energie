@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Instagram, Linkedin } from "lucide-react";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import CustomerFeedback from "@/components/CustomerFeedback";
+import Header from "@/components/Header";
 
 const CaptainApfelWorkshop = () => {
   useEffect(() => {
@@ -62,7 +63,10 @@ const CaptainApfelWorkshop = () => {
   }, []);
 
   return (
-    <div className="min-h-screen">
+    <div className="flex flex-col min-h-screen">
+      <Header />
+      <main className="flex-grow">
+        <div className="min-h-screen">
       {/* Hero Section with Character Staging */}
       <section className="relative overflow-hidden bg-gradient-to-br from-orange-200 via-blue-200 to-green-200 py-12 md:py-20 lg:py-32">
         {/* Character Crew - Arranged as a cohesive team */}
@@ -422,6 +426,8 @@ const CaptainApfelWorkshop = () => {
           </div>
         </div>
       </footer>
+        </div>
+      </main>
     </div>
   );
 };

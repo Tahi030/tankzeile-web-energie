@@ -30,22 +30,29 @@ const App = () => (
       <Sonner />
       <CookieConsent />
       <BrowserRouter>
-        <PageLayout>
-          <Routes>
-            <Route path="/" element={<Index />} />
-            <Route path="/tankwelten/alltag-leichter-leben" element={<AlltagLeichterLeben />} />
-            <Route path="/tankwelten/verstehen-veraendern" element={<VerstehenVeraendern />} />
-            <Route path="/tankwelten/erleben-verbinden" element={<ErlebenVerbinden />} />
-            <Route path="/tankwelten/captain-apfel-workshop" element={<CaptainApfelWorkshop />} />
-            <Route path="/tankwelten/schatzruhe" element={<Schatzruhe />} />
-            <Route path="/fuer-einrichtungen" element={<FuerEinrichtungen />} />
-            <Route path="/fuer-unternehmen" element={<FuerUnternehmen />} />
-            <Route path="/kontakt" element={<Kontakt />} />
-            <Route path="/impressum" element={<Impressum />} />
-            <Route path="/datenschutz" element={<Datenschutz />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </PageLayout>
+        <Routes>
+          {/* Captain Apfel Workshop - standalone without PageLayout */}
+          <Route path="/tankwelten/captain-apfel-workshop" element={<CaptainApfelWorkshop />} />
+          
+          {/* All other pages use PageLayout */}
+          <Route path="/*" element={
+            <PageLayout>
+              <Routes>
+                <Route path="/" element={<Index />} />
+                <Route path="/tankwelten/alltag-leichter-leben" element={<AlltagLeichterLeben />} />
+                <Route path="/tankwelten/verstehen-veraendern" element={<VerstehenVeraendern />} />
+                <Route path="/tankwelten/erleben-verbinden" element={<ErlebenVerbinden />} />
+                <Route path="/tankwelten/schatzruhe" element={<Schatzruhe />} />
+                <Route path="/fuer-einrichtungen" element={<FuerEinrichtungen />} />
+                <Route path="/fuer-unternehmen" element={<FuerUnternehmen />} />
+                <Route path="/kontakt" element={<Kontakt />} />
+                <Route path="/impressum" element={<Impressum />} />
+                <Route path="/datenschutz" element={<Datenschutz />} />
+                <Route path="*" element={<NotFound />} />
+              </Routes>
+            </PageLayout>
+          } />
+        </Routes>
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
