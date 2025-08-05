@@ -175,11 +175,11 @@ const CaptainApfelWorkshop = () => {
 
             <div className="flex flex-wrap justify-center items-center gap-10 mb-16">
               <div className="text-center group">
-                <div className="bg-gradient-to-br from-blue-100 to-blue-200 rounded-full p-4 shadow-xl mb-4 transform group-hover:scale-110 transition-all duration-300 hover:shadow-2xl w-32 h-32 flex items-center justify-center">
+                <div className="bg-gradient-to-br from-blue-100 to-blue-200 rounded-full shadow-xl mb-4 transform group-hover:scale-110 transition-all duration-300 hover:shadow-2xl w-32 h-32 flex items-center justify-center overflow-hidden">
                   <img 
                     src="/lovable-uploads/fc011b76-01d0-4e54-87ab-6174605bb7fc.png" 
                     alt="Captain Apfelzahn" 
-                    className="w-20 h-20 object-contain"
+                    className="w-28 h-28 object-contain"
                   />
                 </div>
                 <h3 className="text-lg font-bold text-blue-600 mb-1">Captain Apfelzahn</h3>
@@ -187,11 +187,11 @@ const CaptainApfelWorkshop = () => {
               </div>
 
               <div className="text-center group">
-                <div className="bg-gradient-to-br from-orange-100 to-orange-200 rounded-full p-4 shadow-xl mb-4 transform group-hover:scale-110 transition-all duration-300 hover:shadow-2xl w-32 h-32 flex items-center justify-center">
+                <div className="bg-gradient-to-br from-orange-100 to-orange-200 rounded-full shadow-xl mb-4 transform group-hover:scale-110 transition-all duration-300 hover:shadow-2xl w-32 h-32 flex items-center justify-center overflow-hidden">
                   <img 
                     src="/lovable-uploads/3010b863-5b52-4f66-8512-f9ba4b8c3434.png" 
                     alt="Kimmi Schlau" 
-                    className="w-20 h-20 object-contain"
+                    className="w-28 h-28 object-contain"
                   />
                 </div>
                 <h3 className="text-lg font-bold text-orange-600 mb-1">Kimmi Schlau</h3>
@@ -199,11 +199,11 @@ const CaptainApfelWorkshop = () => {
               </div>
               
               <div className="text-center group">
-                <div className="bg-gradient-to-br from-red-100 to-red-200 rounded-full p-4 shadow-xl mb-4 transform group-hover:scale-110 transition-all duration-300 hover:shadow-2xl w-32 h-32 flex items-center justify-center">
+                <div className="bg-gradient-to-br from-red-100 to-red-200 rounded-full shadow-xl mb-4 transform group-hover:scale-110 transition-all duration-300 hover:shadow-2xl w-32 h-32 flex items-center justify-center overflow-hidden">
                   <img 
                     src="/lovable-uploads/cefd4c3a-36d6-4898-9a5f-4fca27ee1b7e.png" 
                     alt="Das Tomaten-Raumschiff" 
-                    className="w-20 h-20 object-contain"
+                    className="w-28 h-28 object-contain"
                   />
                 </div>
                 <h3 className="text-lg font-bold text-red-600 mb-1">Das Tomaten-Raumschiff</h3>
@@ -211,11 +211,11 @@ const CaptainApfelWorkshop = () => {
               </div>
               
               <div className="text-center group">
-                <div className="bg-gradient-to-br from-green-100 to-green-200 rounded-full p-4 shadow-xl mb-4 transform group-hover:scale-110 transition-all duration-300 hover:shadow-2xl w-32 h-32 flex items-center justify-center">
+                <div className="bg-gradient-to-br from-green-100 to-green-200 rounded-full shadow-xl mb-4 transform group-hover:scale-110 transition-all duration-300 hover:shadow-2xl w-32 h-32 flex items-center justify-center overflow-hidden">
                   <img 
                     src="/lovable-uploads/93f05473-274d-4f59-9aa9-06d7eaefa496.png" 
                     alt="Kai Mutig" 
-                    className="w-20 h-20 object-contain"
+                    className="w-28 h-28 object-contain"
                   />
                 </div>
                 <h3 className="text-lg font-bold text-green-600 mb-1">Kai Mutig</h3>
@@ -223,23 +223,23 @@ const CaptainApfelWorkshop = () => {
               </div>
 
               <div className="text-center group">
-                <div className="bg-gradient-to-br from-green-100 to-green-200 rounded-full p-4 shadow-xl mb-4 transform group-hover:scale-110 transition-all duration-300 hover:shadow-2xl w-32 h-32 flex items-center justify-center">
+                <div className="bg-gradient-to-br from-green-100 to-green-200 rounded-full shadow-xl mb-4 transform group-hover:scale-110 transition-all duration-300 hover:shadow-2xl w-32 h-32 flex items-center justify-center overflow-hidden">
                   <img 
-                    src="/lovable-uploads/8ec988de-b4fb-451b-ad2d-bb92e850e333.png" 
+                    src="/lovable-uploads/7e511dcd-b1cb-443a-a8ae-792a71b82985.png" 
                     alt="Das Kraftzentrum" 
-                    className="w-20 h-20 object-contain"
+                    className="w-28 h-28 object-contain"
                   />
                 </div>
                 <h3 className="text-lg font-bold text-green-600 mb-1">Das Kraftzentrum</h3>
-                <p className="text-sm text-gray-500">Das energetische Kraftzentrum</p>
+                <p className="text-sm text-gray-500">Das Logo im Bauch - das Ziel der Reise</p>
               </div>
 
               <div className="text-center group">
-                <div className="bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-full p-4 shadow-xl mb-4 transform group-hover:scale-110 transition-all duration-300 hover:shadow-2xl w-32 h-32 flex items-center justify-center">
+                <div className="bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-full shadow-xl mb-6 transform group-hover:scale-110 transition-all duration-300 hover:shadow-2xl w-32 h-32 flex items-center justify-center overflow-hidden">
                   <img 
                     src="/lovable-uploads/3d316574-8e30-4bd5-9ac2-43c62f322d8b.png" 
                     alt="Puffel" 
-                    className="w-20 h-20 object-contain"
+                    className="w-28 h-28 object-contain"
                   />
                 </div>
                 <h3 className="text-lg font-bold text-yellow-600 mb-1">Puffel</h3>
