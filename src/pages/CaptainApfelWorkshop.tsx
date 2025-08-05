@@ -127,12 +127,45 @@ const CaptainApfelWorkshop = () => {
                 Captain Apfelzahn Workshop
               </h1>
               <div className="flex justify-center mb-6">
-                <div className="bg-white/20 backdrop-blur-sm rounded-full p-6 shadow-xl">
-                  <img 
-                    src="/lovable-uploads/329b45f0-584b-4e48-948c-440129707757.png" 
-                    alt="Captain Apfelzahn Superheld" 
-                    className="w-32 h-32 md:w-48 md:h-48 drop-shadow-2xl animate-pulse"
-                  />
+                <div className="bg-white/20 backdrop-blur-sm rounded-full p-8 shadow-xl">
+                  <div className="grid grid-cols-3 gap-4">
+                    <div className="flex flex-col items-center gap-2">
+                      <img 
+                        src="/lovable-uploads/329b45f0-584b-4e48-948c-440129707757.png" 
+                        alt="Captain Apfelzahn" 
+                        className="w-16 h-16 md:w-20 md:h-20 drop-shadow-lg"
+                      />
+                      <img 
+                        src="/lovable-uploads/3010b863-5b52-4f66-8512-f9ba4b8c3434.png" 
+                        alt="Kimmi Schlau" 
+                        className="w-12 h-12 md:w-16 md:h-16 drop-shadow-lg"
+                      />
+                    </div>
+                    <div className="flex flex-col items-center gap-2">
+                      <img 
+                        src="/lovable-uploads/8ec988de-b4fb-451b-ad2d-bb92e850e333.png" 
+                        alt="The Power Center" 
+                        className="w-14 h-14 md:w-18 md:h-18 drop-shadow-lg"
+                      />
+                      <img 
+                        src="/lovable-uploads/93f05473-274d-4f59-9aa9-06d7eaefa496.png" 
+                        alt="Kai Mutig" 
+                        className="w-12 h-12 md:w-16 md:h-16 drop-shadow-lg"
+                      />
+                    </div>
+                    <div className="flex flex-col items-center gap-2">
+                      <img 
+                        src="/lovable-uploads/cefd4c3a-36d6-4898-9a5f-4fca27ee1b7e.png" 
+                        alt="The Tomato Spaceship" 
+                        className="w-12 h-12 md:w-16 md:h-16 drop-shadow-lg"
+                      />
+                      <img 
+                        src="/lovable-uploads/3d316574-8e30-4bd5-9ac2-43c62f322d8b.png" 
+                        alt="Puffel" 
+                        className="w-10 h-10 md:w-14 md:h-14 drop-shadow-lg"
+                      />
+                    </div>
+                  </div>
                 </div>
               </div>
               <p className="text-xl md:text-2xl mb-8 text-white drop-shadow-md font-medium">
@@ -175,83 +208,87 @@ const CaptainApfelWorkshop = () => {
                 <div className="bg-gradient-to-br from-orange-100 to-orange-200 rounded-full p-6 shadow-xl mb-4 transform group-hover:scale-110 transition-all duration-300 hover:shadow-2xl">
                   <img 
                     src="/lovable-uploads/3010b863-5b52-4f66-8512-f9ba4b8c3434.png" 
-                    alt="Karla Karotte" 
+                    alt="Kimmi Schlau" 
                     className="w-24 h-24"
                   />
                 </div>
-                <h3 className="text-lg font-bold text-orange-600 mb-1">Karla Karotte</h3>
-                <p className="text-sm text-gray-500">Die schlaue Expertin</p>
+                <h3 className="text-lg font-bold text-orange-600 mb-1">Kimmi Schlau</h3>
+                <p className="text-sm text-gray-500">Die schlaue Karotte</p>
               </div>
               
               <div className="text-center group">
                 <div className="bg-gradient-to-br from-red-100 to-red-200 rounded-full p-6 shadow-xl mb-4 transform group-hover:scale-110 transition-all duration-300 hover:shadow-2xl">
                   <img 
                     src="/lovable-uploads/cefd4c3a-36d6-4898-9a5f-4fca27ee1b7e.png" 
-                    alt="Tommy Tomate" 
+                    alt="The Tomato Spaceship" 
                     className="w-24 h-24"
                   />
                 </div>
-                <h3 className="text-lg font-bold text-red-600 mb-1">Tommy Tomate</h3>
-                <p className="text-sm text-gray-500">Der Abenteurer</p>
+                <h3 className="text-lg font-bold text-red-600 mb-1">The Tomato Spaceship</h3>
+                <p className="text-sm text-gray-500">Der Weltraum-Abenteurer</p>
               </div>
               
               <div className="text-center group">
                 <div className="bg-gradient-to-br from-green-100 to-green-200 rounded-full p-6 shadow-xl mb-4 transform group-hover:scale-110 transition-all duration-300 hover:shadow-2xl">
                   <img 
                     src="/lovable-uploads/93f05473-274d-4f59-9aa9-06d7eaefa496.png" 
-                    alt="Bruno Brokkoli" 
+                    alt="Kai Mutig" 
                     className="w-24 h-24"
                   />
                 </div>
-                <h3 className="text-lg font-bold text-green-600 mb-1">Bruno Brokkoli</h3>
-                <p className="text-sm text-gray-500">Der starke Beschützer</p>
+                <h3 className="text-lg font-bold text-green-600 mb-1">Kai Mutig</h3>
+                <p className="text-sm text-gray-500">Der mutige Brokkoli</p>
               </div>
 
               <div className="text-center group">
                 <div className="bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-full p-6 shadow-xl mb-4 transform group-hover:scale-110 transition-all duration-300 hover:shadow-2xl">
                   <img 
                     src="/lovable-uploads/3d316574-8e30-4bd5-9ac2-43c62f322d8b.png" 
-                    alt="Blumi Blumenkohl" 
+                    alt="Puffel" 
                     className="w-24 h-24"
                   />
                 </div>
-                <h3 className="text-lg font-bold text-yellow-600 mb-1">Blumi Blumenkohl</h3>
-                <p className="text-sm text-gray-500">Die fröhliche Optimistin</p>
+                <h3 className="text-lg font-bold text-yellow-600 mb-1">Puffel</h3>
+                <p className="text-sm text-gray-500">Das fröhliche Popcorn</p>
+              </div>
+
+              <div className="text-center group">
+                <div className="bg-gradient-to-br from-red-100 to-red-200 rounded-full p-6 shadow-xl mb-4 transform group-hover:scale-110 transition-all duration-300 hover:shadow-2xl">
+                  <img 
+                    src="/lovable-uploads/8ec988de-b4fb-451b-ad2d-bb92e850e333.png" 
+                    alt="The Power Center" 
+                    className="w-24 h-24"
+                  />
+                </div>
+                <h3 className="text-lg font-bold text-red-600 mb-1">The Power Center</h3>
+                <p className="text-sm text-gray-500">Das energetische Kraftzentrum</p>
               </div>
             </div>
 
             {/* Empty Content Box - Ready for Text */}
             <div className="relative">
-              {/* Crew Members watching over the content box */}
+              {/* Crew Members watching over the content box - positioned to not obstruct text */}
               <div className="absolute -top-8 -left-8 hidden md:block">
                 <img 
                   src="/lovable-uploads/3010b863-5b52-4f66-8512-f9ba4b8c3434.png" 
-                  alt="Karla Karotte schaut zu" 
-                  className="w-16 h-16 opacity-60 transform -rotate-12 hover:opacity-90 transition-opacity"
+                  alt="Kimmi Schlau schaut zu" 
+                  className="w-12 h-12 opacity-40 transform -rotate-12 hover:opacity-70 transition-opacity"
                 />
               </div>
               
               <div className="absolute -top-6 -right-6 hidden md:block">
                 <img 
                   src="/lovable-uploads/8ec988de-b4fb-451b-ad2d-bb92e850e333.png" 
-                  alt="Energetischer Apfel" 
-                  className="w-14 h-14 opacity-60 transform rotate-12 hover:opacity-90 transition-opacity"
-                />
-              </div>
-              
-              <div className="absolute -bottom-8 -left-6 hidden md:block">
-                <img 
-                  src="/lovable-uploads/93f05473-274d-4f59-9aa9-06d7eaefa496.png" 
-                  alt="Bruno Brokkoli bewacht" 
-                  className="w-18 h-18 opacity-60 transform rotate-6 hover:opacity-90 transition-opacity"
+                  alt="The Power Center" 
+                  className="w-10 h-10 opacity-40 transform rotate-12 hover:opacity-70 transition-opacity"
                 />
               </div>
 
               <div className="absolute -bottom-6 -right-8 hidden md:block">
                 <img 
                   src="/lovable-uploads/cefd4c3a-36d6-4898-9a5f-4fca27ee1b7e.png" 
-                  alt="Tommy Tomate bereit" 
-                  className="w-14 h-14 opacity-60 transform -rotate-6 hover:opacity-90 transition-opacity"
+                  alt="The Tomato Spaceship bereit" 
+                  className="w-10 h-10 opacity-40 transform -rotate-6 hover:opacity-70 transition-opacity"
                 />
               </div>
 

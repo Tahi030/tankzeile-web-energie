@@ -56,8 +56,16 @@ const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const location = useLocation();
 
+  // Dynamic header color based on current page
+  const getHeaderColor = () => {
+    if (location.pathname === '/tankwelten/captain-apfel-workshop') {
+      return 'bg-gradient-to-r from-green-400 via-blue-400 to-purple-500';
+    }
+    return 'bg-primary';
+  };
+
   return (
-    <header className="bg-primary sticky top-0 z-50 shadow-md">
+    <header className={`${getHeaderColor()} sticky top-0 z-50 shadow-md`}>
       <div className="container-custom">
         <div className="flex justify-between items-center py-2">
           {/* Logo */}
