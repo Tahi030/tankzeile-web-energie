@@ -201,7 +201,7 @@ const CaptainApfelWorkshop = () => {
               <div className="text-center group">
                 <div className="bg-gradient-to-br from-green-100 to-green-200 rounded-full shadow-xl mb-4 transform group-hover:scale-110 transition-all duration-300 hover:shadow-2xl w-32 h-32 flex items-center justify-center overflow-hidden">
                   <img 
-                    src="/lovable-uploads/262994cd-1e13-41b8-ba2f-fe702c72679b.png" 
+                    src="/lovable-uploads/cefd4c3a-36d6-4898-9a5f-4fca27ee1b7e.png" 
                     alt="Die Powerzentrale" 
                     className="w-30 h-30 object-contain mx-auto"
                   />
