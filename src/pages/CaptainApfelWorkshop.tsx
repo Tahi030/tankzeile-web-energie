@@ -143,13 +143,13 @@ const CaptainApfelWorkshop = () => {
               </p>
               
               <div className="flex flex-wrap justify-center gap-4 mb-8">
-                <div className="bg-white/15 backdrop-blur-sm rounded-lg px-6 py-3 text-white font-medium shadow-lg">
+                <div className="bg-white/15 backdrop-blur-sm rounded-lg px-6 py-3 text-white font-fredoka font-medium shadow-lg">
                   🎯 Spielerisches Lernen
                 </div>
-                <div className="bg-white/15 backdrop-blur-sm rounded-lg px-6 py-3 text-white font-medium shadow-lg">
+                <div className="bg-white/15 backdrop-blur-sm rounded-lg px-6 py-3 text-white font-fredoka font-medium shadow-lg">
                   🥕 Gesunde Ernährung
                 </div>
-                <div className="bg-white/15 backdrop-blur-sm rounded-lg px-6 py-3 text-white font-medium shadow-lg">
+                <div className="bg-white/15 backdrop-blur-sm rounded-lg px-6 py-3 text-white font-fredoka font-medium shadow-lg">
                   🧘 Achtsamkeit
                 </div>
               </div>
@@ -182,8 +182,7 @@ const CaptainApfelWorkshop = () => {
                     className="w-28 h-28 object-contain"
                   />
                 </div>
-                <h3 className="text-lg font-bold text-blue-600 mb-1">Captain Apfelzahn</h3>
-                <p className="text-sm text-gray-500">Der mutige Anführer</p>
+                <h3 className="text-lg font-bold text-blue-600">Captain Apfelzahn</h3>
               </div>
 
               <div className="text-center group">
@@ -194,8 +193,7 @@ const CaptainApfelWorkshop = () => {
                     className="w-28 h-28 object-contain"
                   />
                 </div>
-                <h3 className="text-lg font-bold text-orange-600 mb-1">Kimmi Schlau</h3>
-                <p className="text-sm text-gray-500">Die schlaue Karotte</p>
+                <h3 className="text-lg font-bold text-orange-600">Kimmi Schlau</h3>
               </div>
               
               <div className="text-center group">
@@ -206,8 +204,7 @@ const CaptainApfelWorkshop = () => {
                     className="w-28 h-28 object-contain"
                   />
                 </div>
-                <h3 className="text-lg font-bold text-red-600 mb-1">Das Tomaten-Raumschiff</h3>
-                <p className="text-sm text-gray-500">Der Weltraum-Abenteurer</p>
+                <h3 className="text-lg font-bold text-red-600">Das Tomaten-Raumschiff</h3>
               </div>
               
               <div className="text-center group">
@@ -218,8 +215,7 @@ const CaptainApfelWorkshop = () => {
                     className="w-28 h-28 object-contain"
                   />
                 </div>
-                <h3 className="text-lg font-bold text-green-600 mb-1">Kai Mutig</h3>
-                <p className="text-sm text-gray-500">Der mutige Brokkoli</p>
+                <h3 className="text-lg font-bold text-green-600">Kai Mutig</h3>
               </div>
 
               <div className="text-center group">
@@ -230,20 +226,18 @@ const CaptainApfelWorkshop = () => {
                     className="w-28 h-28 object-contain"
                   />
                 </div>
-                <h3 className="text-lg font-bold text-green-600 mb-1">Das Kraftzentrum</h3>
-                <p className="text-sm text-gray-500">Das Logo im Bauch - das Ziel der Reise</p>
+                <h3 className="text-lg font-bold text-green-600">Das Kraftzentrum</h3>
               </div>
 
               <div className="text-center group">
-                <div className="bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-full shadow-xl mb-6 transform group-hover:scale-110 transition-all duration-300 hover:shadow-2xl w-32 h-32 flex items-center justify-center overflow-hidden">
+                <div className="bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-full shadow-xl mb-4 transform group-hover:scale-110 transition-all duration-300 hover:shadow-2xl w-32 h-32 flex items-center justify-center overflow-hidden">
                   <img 
                     src="/lovable-uploads/3d316574-8e30-4bd5-9ac2-43c62f322d8b.png" 
                     alt="Puffel" 
                     className="w-28 h-28 object-contain"
                   />
                 </div>
-                <h3 className="text-lg font-bold text-yellow-600 mb-1">Puffel</h3>
-                <p className="text-sm text-gray-500">Der freche Saboteur, der das Tomaten-Raumschiff bremsen will</p>
+                <h3 className="text-lg font-bold text-yellow-600">Puffel</h3>
               </div>
             </div>
 
@@ -291,9 +285,9 @@ const CaptainApfelWorkshop = () => {
                     <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                       <span className="text-2xl">📝</span>
                     </div>
-                <p className="text-gray-400 text-lg font-medium">
-                  Hier wird bald spannender Inhalt über unsere Workshops eingefügt...
-                </p>
+                    <p className="text-gray-400 text-lg font-fredoka font-medium">
+                      Hier wird bald spannender Inhalt über unsere Workshops eingefügt...
+                    </p>
                   </div>
                 </div>
               </div>
@@ -306,13 +300,13 @@ const CaptainApfelWorkshop = () => {
 
             <div className="mt-16 text-center">
               <div className="bg-gradient-to-r from-green-400 to-blue-500 rounded-2xl p-8 shadow-xl">
-                <h3 className="text-2xl font-bold text-white mb-4">
+                <h3 className="text-2xl font-bold text-white mb-4 font-fredoka">
                   Bereit für das Abenteuer?
                 </h3>
-                <p className="text-white/90 mb-6 text-lg">
-                  Lassen Sie uns gemeinsam die Welt der gesunden Ernährung entdecken!
+                <p className="text-white/90 mb-6 text-lg font-fredoka">
+                  Lasst uns gemeinsam die Welt der gesunden Ernährung entdecken!
                 </p>
-                <Link to="/kontakt" className="bg-white text-green-600 font-bold py-4 px-8 rounded-full hover:bg-green-50 transition-colors duration-300 shadow-lg inline-flex items-center gap-2">
+                <Link to="/kontakt" className="bg-white text-green-600 font-bold py-4 px-8 rounded-full hover:bg-green-50 transition-colors duration-300 shadow-lg inline-flex items-center gap-2 font-fredoka">
                   <span>🚀</span>
                   Interesse an einem Workshop?
                   <span>🥕</span>
