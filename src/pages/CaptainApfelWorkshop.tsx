@@ -70,19 +70,19 @@ const CaptainApfelWorkshop = () => {
           {/* Hero Character Group - Top Formation */}
           <div className="absolute top-2 left-2 md:top-4 md:left-4 flex flex-col gap-2 md:gap-3">
             <img 
-              src="/lovable-uploads/5585f373-ca3c-4c93-8f40-6514268b2080.png" 
-              alt="Captain Superheld" 
-              className="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 animate-bounce opacity-90"
-              style={{ animationDelay: '0s', animationDuration: '3s' }}
+              src="/lovable-uploads/fc011b76-01d0-4e54-87ab-6174605bb7fc.png" 
+              alt="Captain Apfelzahn" 
+              className="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 animate-bounce opacity-90"
+              style={{ animationDelay: '0s', animationDuration: '2s' }}
             />
           </div>
           
           <div className="absolute top-2 right-2 md:top-4 md:right-4 flex flex-col gap-2 md:gap-3">
             <img 
               src="/lovable-uploads/93f05473-274d-4f59-9aa9-06d7eaefa496.png" 
-              alt="Bruno Brokkoli" 
-              className="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 animate-bounce opacity-90"
-              style={{ animationDelay: '0.5s', animationDuration: '4.5s' }}
+              alt="Kai Mutig" 
+              className="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 animate-bounce opacity-90"
+              style={{ animationDelay: '0.5s', animationDuration: '2.5s' }}
             />
           </div>
           
@@ -119,15 +119,45 @@ const CaptainApfelWorkshop = () => {
                 Für Vorschulkinder, die spielerisch die Welt der gesunden Ernährung entdecken möchten!
               </p>
               
-              <div className="flex flex-wrap justify-center gap-2 md:gap-4 mb-6 md:mb-8 px-4">
-                <div className="bg-white/15 backdrop-blur-sm rounded-lg px-3 py-2 md:px-6 md:py-3 text-white font-fredoka font-medium shadow-lg text-sm md:text-base">
-                  Spielerisches Lernen
+              <div className="flex flex-wrap justify-center gap-4 md:gap-8 mb-6 md:mb-8 px-4">
+                <div className="relative text-white font-fredoka font-medium text-sm md:text-base">
+                  <span className="relative z-10">Spielerisches Lernen</span>
+                  <svg className="absolute -bottom-1 left-0 w-full h-2" viewBox="0 0 100 8">
+                    <path
+                      d="M2,4 Q10,2 20,4 T40,3 Q50,5 60,4 T80,3 Q90,2 98,4"
+                      stroke="white"
+                      strokeWidth="2"
+                      fill="none"
+                      strokeLinecap="round"
+                      opacity="0.8"
+                    />
+                  </svg>
                 </div>
-                <div className="bg-white/15 backdrop-blur-sm rounded-lg px-3 py-2 md:px-6 md:py-3 text-white font-fredoka font-medium shadow-lg text-sm md:text-base">
-                  Gesunde Ernährung
+                <div className="relative text-white font-fredoka font-medium text-sm md:text-base">
+                  <span className="relative z-10">Gesunde Ernährung</span>
+                  <svg className="absolute -bottom-1 left-0 w-full h-2" viewBox="0 0 100 8">
+                    <path
+                      d="M2,4 Q10,2 20,4 T40,3 Q50,5 60,4 T80,3 Q90,2 98,4"
+                      stroke="white"
+                      strokeWidth="2"
+                      fill="none"
+                      strokeLinecap="round"
+                      opacity="0.8"
+                    />
+                  </svg>
                 </div>
-                <div className="bg-white/15 backdrop-blur-sm rounded-lg px-3 py-2 md:px-6 md:py-3 text-white font-fredoka font-medium shadow-lg text-sm md:text-base">
-                  Achtsamkeit
+                <div className="relative text-white font-fredoka font-medium text-sm md:text-base">
+                  <span className="relative z-10">Achtsamkeit</span>
+                  <svg className="absolute -bottom-1 left-0 w-full h-2" viewBox="0 0 100 8">
+                    <path
+                      d="M2,4 Q10,2 20,4 T40,3 Q50,5 60,4 T80,3 Q90,2 98,4"
+                      stroke="white"
+                      strokeWidth="2"
+                      fill="none"
+                      strokeLinecap="round"
+                      opacity="0.8"
+                    />
+                  </svg>
                 </div>
               </div>
             </div>
@@ -314,7 +344,7 @@ const CaptainApfelWorkshop = () => {
             </div>
 
             <div className="mt-12 md:mt-16 text-center">
-              <div className="bg-gradient-to-r from-green-400 to-blue-500 rounded-2xl p-6 md:p-8 shadow-xl">
+              <div className="bg-gradient-to-r from-green-500 to-emerald-600 rounded-2xl p-6 md:p-8 shadow-xl border-2 border-green-300/30">
                 <h3 className="text-xl md:text-2xl font-bold text-white mb-3 md:mb-4 font-fredoka">
                   Bereit für das Abenteuer?
                 </h3>
