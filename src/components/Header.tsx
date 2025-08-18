@@ -105,19 +105,6 @@ const Header = () => {
           <nav className="hidden md:flex items-center justify-center flex-1">
             <div className="flex items-center justify-center space-x-1 lg:space-x-2">
               <NavItem to="/" label="Startseite" textColor={getTextColor()} hoverColor={getHoverColor()} />
-              
-              <div className="relative group">
-                <div className={`px-2 lg:px-3 py-2 rounded-md text-base lg:text-lg font-medium ${getHoverColor()} transition-colors cursor-pointer whitespace-nowrap ${location.pathname.includes('/tankwelten/') ? `${getTextColor()} font-semibold` : getTextColor()}`}>
-                  Tankwelten <span className="ml-1 text-xs">▼</span>
-                </div>
-                <div className="absolute left-0 invisible group-hover:visible opacity-0 group-hover:opacity-100 mt-2 w-60 rounded-md shadow-lg bg-white ring-1 ring-primary/20 z-50 transition-all duration-150">
-                  <div className="py-1" role="menu" aria-orientation="vertical">
-                    <DropdownItem to="/tankwelten/captain-apfel-workshop" label="Captain Apfelzahn Workshop" />
-                    <DropdownItem to="/tankwelten/alltag-leichter-leben" label="Alltag leichter leben" />
-                  </div>
-                </div>
-              </div>
-              
               <NavItem to="/fuer-einrichtungen" label="Meine Mission" textColor={getTextColor()} hoverColor={getHoverColor()} />
               <NavItem to="/meine-angebote" label="Meine Angebote" textColor={getTextColor()} hoverColor={getHoverColor()} />
               <NavItem to="/regionally-rooted" label="Regional verwurzelt" textColor={getTextColor()} hoverColor={getHoverColor()} />
@@ -163,15 +150,6 @@ const Header = () => {
               Startseite
             </Link>
             
-            <div className="border-t border-gray-200 pt-2">
-              <div className={`px-3 py-2 font-medium ${location.pathname.includes('/tankwelten/') ? 'text-primary-dark font-bold' : ''}`}>Tankwelten</div>
-              <Link to="/tankwelten/captain-apfel-workshop" className="block pl-6 py-2 text-sm" onClick={() => {setMobileMenuOpen(false); window.scrollTo(0, 0);}}>
-                Captain Apfelzahn Workshop
-              </Link>
-              <Link to="/tankwelten/alltag-leichter-leben" className="block pl-6 py-2 text-sm" onClick={() => {setMobileMenuOpen(false); window.scrollTo(0, 0);}}>
-                Alltag leichter leben
-              </Link>
-            </div>
             
             <Link to="/fuer-einrichtungen" className={`block px-3 py-2 rounded-md text-base font-medium hover:bg-primary-light ${location.pathname === '/fuer-einrichtungen' ? 'text-primary-dark font-bold' : ''}`} onClick={() => {setMobileMenuOpen(false); window.scrollTo(0, 0);}}>
               Meine Mission
