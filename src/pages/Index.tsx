@@ -30,7 +30,7 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <HeroSection />
-      <TargetGroupSection />
+      
       <TankweltenSection />
       <CustomerFeedback />
       
