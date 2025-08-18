@@ -85,14 +85,9 @@ const FuerEinrichtungen = () => {
                 <p className="mb-4">
                   Darum setze ich mich für regionale Lebensmittel, ehrliche Produkte und kleine Betriebe ein – gegen Industrie, Zuckerfallen und künstliche Zusätze. Unterstützt werden soll, was Kindern wirklich dient: Landwirte aus der Region, Start-ups mit gesunden Ideen und Einrichtungen, die diesen Weg mitgehen.
                 </p>
-                <p className="mb-6">
+                <p>
                   Bei Fragen oder Unsicherheiten melden Sie sich gerne. Ich freue mich auf Austausch – und vielleicht bald auf einen Besuch mit Captain Apfel & seiner Crew in Ihrer Einrichtung.
                 </p>
-                <div className="text-center">
-                  <Link to="/kontakt" className="btn-primary">
-                    Interessiert an einem Workshop oder haben Sie weitere Fragen? Dann kontaktieren Sie mich
-                  </Link>
-                </div>
               </div>
             </div>
 
