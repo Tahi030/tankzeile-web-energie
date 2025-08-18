@@ -83,6 +83,14 @@ const Impressum = () => {
               Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, 
               bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.
             </p>
+            
+            <h2>Urheberrecht / Geistiges Eigentum</h2>
+            <p>
+              Die Figuren, Namen, Illustrationen und Konzepte – insbesondere „Captain Apfel & seine Crew" sowie alle dazugehörigen Ideen und Geschichten – sind urheberrechtlich geschützt und geistiges Eigentum von Tamara Hillmann.
+            </p>
+            <p>
+              Eine Nutzung, Bearbeitung oder Weitergabe – ganz oder in Teilen – ist nur mit ausdrücklicher schriftlicher Erlaubnis gestattet. Verstöße können rechtliche Schritte nach sich ziehen.
+            </p>
           </div>
         </div>
       </div>
