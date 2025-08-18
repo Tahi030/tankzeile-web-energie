@@ -40,7 +40,7 @@ const FuerEinrichtungen = () => {
               </svg>
             </div>
             <p className="text-lg text-white">
-              Ob Kita, Familienzentrum oder soziale Einrichtung – die Tankzeile bietet Angebote, die Vorschulkinder stärken: spielerisch, altersgerecht und mit Herz.
+              Ob Kita, Familienzentrum oder soziale Einrichtung – Captain Apfel & seine Crew bieten Angebote, die Vorschulkinder und Grundschüler stärken: humorvoll, altersgerecht und mit Herz.
             </p>
           </div>
         </div>
