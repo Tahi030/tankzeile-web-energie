@@ -11,14 +11,6 @@ const tankwelten = [
     isActive: true,
   },
   {
-    id: 2,
-    title: "Alltag Leichter Leben",
-    description: "Hier wird das Leben easy-peasy - mit Tipps, Tricks und Brotdosen-Fantasie.\nVon Achtsamkeit bis PDF - stay tuned, hier gibt es immer etwas Neues!",
-    image: "/lovable-uploads/20769271-be9e-4738-8a85-e474b123198d.png",
-    link: "/tankwelten/alltag-leichter-leben",
-    isActive: true,
-  },
-  {
     id: 3,
     title: "Mein erstes Buch demnächst verfügbar",
     description: "Ich freue mich riesig, dir bald mein erstes Buch zu zeigen! Wer bist du wirklich - hinter all den Masken, die du täglich trägst, und besonders dann, wenn der erste Riss entsteht?\n\nDu kannst dich freuen auf:\n\n- Inspiration für Ernährung und innere Balance\n- Einfache Tipps zum Batterien aufladen\n- Deinen persönlichen Wohlfühltag",
