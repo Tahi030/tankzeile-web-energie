@@ -118,7 +118,9 @@ const Header = () => {
                 </div>
               </div>
               
-              <NavItem to="/fuer-einrichtungen" label="Für Einrichtungen/Unternehmen" textColor={getTextColor()} hoverColor={getHoverColor()} />
+              <NavItem to="/fuer-einrichtungen" label="My Mission" textColor={getTextColor()} hoverColor={getHoverColor()} />
+              <NavItem to="/meine-angebote" label="Meine Angebote" textColor={getTextColor()} hoverColor={getHoverColor()} />
+              <NavItem to="/regionally-rooted" label="Regionally Rooted" textColor={getTextColor()} hoverColor={getHoverColor()} />
             </div>
           </nav>
           
@@ -172,7 +174,13 @@ const Header = () => {
             </div>
             
             <Link to="/fuer-einrichtungen" className={`block px-3 py-2 rounded-md text-base font-medium hover:bg-primary-light ${location.pathname === '/fuer-einrichtungen' ? 'text-primary-dark font-bold' : ''}`} onClick={() => {setMobileMenuOpen(false); window.scrollTo(0, 0);}}>
-              Für Einrichtungen/Unternehmen
+              My Mission
+            </Link>
+            <Link to="/meine-angebote" className={`block px-3 py-2 rounded-md text-base font-medium hover:bg-primary-light ${location.pathname === '/meine-angebote' ? 'text-primary-dark font-bold' : ''}`} onClick={() => {setMobileMenuOpen(false); window.scrollTo(0, 0);}}>
+              Meine Angebote
+            </Link>
+            <Link to="/regionally-rooted" className={`block px-3 py-2 rounded-md text-base font-medium hover:bg-primary-light ${location.pathname === '/regionally-rooted' ? 'text-primary-dark font-bold' : ''}`} onClick={() => {setMobileMenuOpen(false); window.scrollTo(0, 0);}}>
+              Regionally Rooted
             </Link>
             <Link to="/kontakt" className="block mx-3 mt-3 px-3 py-3 bg-secondary text-white rounded-md text-base font-medium" onClick={() => {setMobileMenuOpen(false); window.scrollTo(0, 0);}}>
               Jetzt anfragen
