@@ -95,6 +95,7 @@ const Header = () => {
             <div className="flex items-center justify-center space-x-1 lg:space-x-2">
               <NavItem to="/" label="Startseite" textColor={getTextColor()} hoverColor={getHoverColor()} />
               <NavItem to="/fuer-einrichtungen" label="Die Mission" textColor={getTextColor()} hoverColor={getHoverColor()} />
+              <NavItem to="/regionally-rooted" label="Regional verwurzelt" textColor={getTextColor()} hoverColor={getHoverColor()} />
               
               <div className="relative group">
                 <div className={`px-2 lg:px-3 py-2 rounded-md text-base lg:text-lg font-medium ${getHoverColor()} transition-colors cursor-pointer whitespace-nowrap ${location.pathname.includes('/meine-angebote/') ? `${getTextColor()} font-semibold` : getTextColor()}`}>
@@ -108,24 +109,19 @@ const Header = () => {
                   </div>
                 </div>
               </div>
-              
-              <NavItem to="/regionally-rooted" label="Regional verwurzelt" textColor={getTextColor()} hoverColor={getHoverColor()} />
             </div>
           </nav>
           
-          {/* CTA Button */}
-          <div className="hidden md:block">
-            <Link 
-              to="/kontakt"
-              className={location.pathname === '/tankwelten/captain-apfel-workshop' 
-                ? `bg-gradient-to-r from-rose-200 to-sky-200 hover:from-rose-300 hover:to-sky-300 text-rose-700 px-4 lg:px-5 py-2 rounded-md transition-colors text-base lg:text-lg font-medium whitespace-nowrap border border-rose-300/50`
-                : `bg-secondary hover:bg-secondary-dark text-white px-4 lg:px-5 py-2 rounded-md transition-colors text-base lg:text-lg font-medium whitespace-nowrap`
-              }
-              onClick={() => window.scrollTo(0, 0)}
-            >
-              Jetzt anfragen
-            </Link>
-          </div>
+          <Link 
+            to="/kontakt"
+            className={location.pathname === '/tankwelten/captain-apfel-workshop' 
+              ? `bg-gradient-to-r from-rose-200 to-sky-200 hover:from-rose-300 hover:to-sky-300 text-rose-700 px-4 lg:px-5 py-2 rounded-md transition-colors text-base lg:text-lg font-medium whitespace-nowrap border border-rose-300/50`
+              : `bg-secondary hover:bg-secondary-dark text-white px-4 lg:px-5 py-2 rounded-md transition-colors text-base lg:text-lg font-medium whitespace-nowrap`
+            }
+            onClick={() => window.scrollTo(0, 0)}
+          >
+            Jetzt anfragen
+          </Link>
 
           {/* Mobile Menu Button */}
           <div className="md:hidden">
@@ -152,9 +148,12 @@ const Header = () => {
               Startseite
             </Link>
             
-            
             <Link to="/fuer-einrichtungen" className={`block px-3 py-2 rounded-md text-base font-medium hover:bg-primary-light ${location.pathname === '/fuer-einrichtungen' ? 'text-primary-dark font-bold' : ''}`} onClick={() => {setMobileMenuOpen(false); window.scrollTo(0, 0);}}>
               Die Mission
+            </Link>
+            
+            <Link to="/regionally-rooted" className={`block px-3 py-2 rounded-md text-base font-medium hover:bg-primary-light ${location.pathname === '/regionally-rooted' ? 'text-primary-dark font-bold' : ''}`} onClick={() => {setMobileMenuOpen(false); window.scrollTo(0, 0);}}>
+              Regional verwurzelt
             </Link>
             
             <div className="border-t border-gray-200 pt-2">
@@ -170,9 +169,6 @@ const Header = () => {
               </Link>
             </div>
             
-            <Link to="/regionally-rooted" className={`block px-3 py-2 rounded-md text-base font-medium hover:bg-primary-light ${location.pathname === '/regionally-rooted' ? 'text-primary-dark font-bold' : ''}`} onClick={() => {setMobileMenuOpen(false); window.scrollTo(0, 0);}}>
-              Regional verwurzelt
-            </Link>
             <Link to="/kontakt" className="block mx-3 mt-3 px-3 py-3 bg-secondary text-white rounded-md text-base font-medium" onClick={() => {setMobileMenuOpen(false); window.scrollTo(0, 0);}}>
               Jetzt anfragen
             </Link>
