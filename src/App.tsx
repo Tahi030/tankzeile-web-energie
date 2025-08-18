@@ -41,6 +41,7 @@ const App = () => (
               <Routes>
                 <Route path="/" element={<Index />} />
                 <Route path="/meine-angebote/workshop-gesunde-mission" element={<WorkshopGesundeMission />} />
+                <Route path="/meine-angebote/alltag-leichter-leben" element={<AlltagLeichterLeben />} />
                 <Route path="/tankwelten/alltag-leichter-leben" element={<AlltagLeichterLeben />} />
                 <Route path="/tankwelten/verstehen-veraendern" element={<VerstehenVeraendern />} />
                 <Route path="/tankwelten/erleben-verbinden" element={<ErlebenVerbinden />} />
