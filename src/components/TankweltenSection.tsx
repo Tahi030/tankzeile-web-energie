@@ -29,7 +29,7 @@ const TankweltenSection = () => {
           <div className="inline-block relative">
             <div className="bg-gradient-to-r from-primary/20 via-accent/30 to-secondary/20 rounded-2xl p-8 shadow-lg">
               <h2 className="text-4xl md:text-5xl font-bold text-primary-dark font-playfair mb-2">
-                Die Tankwelten
+                Captain Apfel & Seine Crew
               </h2>
               {/* Hand-drawn line effect */}
               <div className="flex justify-center mt-4">
