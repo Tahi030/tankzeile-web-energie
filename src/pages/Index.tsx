@@ -34,18 +34,6 @@ const Index = () => {
       <TankweltenSection />
       <CustomerFeedback />
       
-      {/* Footer CTA */}
-      <section className="bg-primary py-16">
-        <div className="container-custom">
-          <div className="text-center text-white max-w-2xl mx-auto">
-            <h2 className="text-3xl font-semibold mb-4">Bereit, etwas zu verändern?</h2>
-            <Link to="/kontakt" className="inline-flex items-center justify-center bg-secondary hover:bg-secondary-dark transition-colors px-6 py-3 text-lg font-medium rounded-md text-white mt-8">
-              Kontaktiere mich
-              <ArrowRight className="ml-2" size={20} />
-            </Link>
-          </div>
-        </div>
-      </section>
     </div>
   );
 };
