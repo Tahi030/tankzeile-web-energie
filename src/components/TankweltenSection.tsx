@@ -10,14 +10,6 @@ const tankwelten = [
     link: "/tankwelten/captain-apfel-workshop",
     isActive: true,
   },
-  {
-    id: 3,
-    title: "Mein erstes Buch demnächst verfügbar",
-    description: "Ich freue mich riesig, dir bald mein erstes Buch zu zeigen! Wer bist du wirklich - hinter all den Masken, die du täglich trägst, und besonders dann, wenn der erste Riss entsteht?\n\nDu kannst dich freuen auf:\n\n- Inspiration für Ernährung und innere Balance\n- Einfache Tipps zum Batterien aufladen\n- Deinen persönlichen Wohlfühltag",
-    image: "/lovable-uploads/36ba656f-ced5-4afb-a9ba-a75f553fb0de.png",
-    link: "#",
-    isActive: false,
-  },
 ];
 
 const TankweltenSection = () => {

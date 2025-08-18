@@ -80,6 +80,54 @@ const AlltagLeichterLeben = () => {
                 </p>
               </div>
             </div>
+
+            {/* Mein erstes Buch Section */}
+            <div className="my-8 bg-accent-light p-6 rounded-lg">
+              <h2 className="text-2xl font-semibold mb-4">Mein erstes Buch demnächst verfügbar</h2>
+              <div className="flex justify-center mb-6">
+                <svg width="120" height="8" viewBox="0 0 120 8" className="text-primary">
+                  <path
+                    d="M2,4 Q8,2 15,4 T30,3 Q40,5 50,4 T70,3 Q80,5 90,4 T110,3 Q115,2 118,4"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    fill="none"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="opacity-70"
+                    style={{
+                      filter: 'url(#roughPaperBuch)',
+                    }}
+                  />
+                  <defs>
+                    <filter id="roughPaperBuch">
+                      <feTurbulence baseFrequency="0.04" numOctaves="3" result="noise" seed="3" />
+                      <feDisplacementMap in="SourceGraphic" in2="noise" scale="0.8" />
+                    </filter>
+                  </defs>
+                </svg>
+              </div>
+              <div className="flex flex-col md:flex-row gap-6 items-center">
+                <div className="md:w-1/3">
+                  <img 
+                    src="/lovable-uploads/36ba656f-ced5-4afb-a9ba-a75f553fb0de.png" 
+                    alt="Mein erstes Buch" 
+                    className="w-full max-w-sm mx-auto rounded-lg shadow-md"
+                  />
+                </div>
+                <div className="md:w-2/3">
+                  <p className="mb-4">
+                    Ich freue mich riesig, dir bald mein erstes Buch zu zeigen! Wer bist du wirklich - hinter all den Masken, die du täglich trägst, und besonders dann, wenn der erste Riss entsteht?
+                  </p>
+                  <p className="mb-4">Du kannst dich freuen auf:</p>
+                  <ul className="mb-4 space-y-2">
+                    <li>• Inspiration für Ernährung und innere Balance</li>
+                    <li>• Einfache Tipps zum Batterien aufladen</li>
+                    <li>• Deinen persönlichen Wohlfühltag</li>
+                  </ul>
+                  <span className="text-gray-400 font-medium">Bald verfügbar</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
