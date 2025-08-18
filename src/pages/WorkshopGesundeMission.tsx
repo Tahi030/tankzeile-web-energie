@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 import CustomerFeedback from "@/components/CustomerFeedback";
 
 const WorkshopGesundeMission = () => {
@@ -85,6 +86,12 @@ const WorkshopGesundeMission = () => {
                   Anhand der 5-Portionen-Regel, kleinen Experimenten und der Fantasiefigur Captain Apfel lernen die Kinder, wie sie ihren Körper liebevoll stärken können – kindgerecht, verständlich und mit Spaß. Mein Angebot richtet sich an Kitas, Vorschulen und Einrichtungen, die Kindern auf einfache und lustige Weise gesunde Essgewohnheiten vermitteln möchten.
                 </p>
               </div>
+            </div>
+
+            <div className="mt-12 text-center">
+              <Link to="/kontakt" className="btn-primary">
+                Interesse an einem Workshop? Jetzt anfragen
+              </Link>
             </div>
 
             <CustomerFeedback />
