@@ -104,7 +104,7 @@ const Header = () => {
           {/* Desktop Navigation - centered */}
           <nav className="hidden md:flex items-center justify-center flex-1">
             <div className="flex items-center justify-center space-x-1 lg:space-x-2">
-              <NavItem to="/" label="Home" textColor={getTextColor()} hoverColor={getHoverColor()} />
+              <NavItem to="/" label="Startseite" textColor={getTextColor()} hoverColor={getHoverColor()} />
               
               <div className="relative group">
                 <div className={`px-2 lg:px-3 py-2 rounded-md text-base lg:text-lg font-medium ${getHoverColor()} transition-colors cursor-pointer whitespace-nowrap ${location.pathname.includes('/tankwelten/') ? `${getTextColor()} font-semibold` : getTextColor()}`}>
@@ -118,9 +118,9 @@ const Header = () => {
                 </div>
               </div>
               
-              <NavItem to="/fuer-einrichtungen" label="My Mission" textColor={getTextColor()} hoverColor={getHoverColor()} />
+              <NavItem to="/fuer-einrichtungen" label="Meine Mission" textColor={getTextColor()} hoverColor={getHoverColor()} />
               <NavItem to="/meine-angebote" label="Meine Angebote" textColor={getTextColor()} hoverColor={getHoverColor()} />
-              <NavItem to="/regionally-rooted" label="Regionally Rooted" textColor={getTextColor()} hoverColor={getHoverColor()} />
+              <NavItem to="/regionally-rooted" label="Regional verwurzelt" textColor={getTextColor()} hoverColor={getHoverColor()} />
             </div>
           </nav>
           
@@ -160,7 +160,7 @@ const Header = () => {
         <div className="md:hidden bg-white shadow-lg">
           <div className="px-2 pt-2 pb-3 space-y-1">
             <Link to="/" className={`block px-3 py-2 rounded-md text-base font-medium hover:bg-primary-light ${location.pathname === '/' ? 'text-primary-dark font-bold' : ''}`} onClick={() => {setMobileMenuOpen(false); window.scrollTo(0, 0);}}>
-              Home
+              Startseite
             </Link>
             
             <div className="border-t border-gray-200 pt-2">
@@ -174,13 +174,13 @@ const Header = () => {
             </div>
             
             <Link to="/fuer-einrichtungen" className={`block px-3 py-2 rounded-md text-base font-medium hover:bg-primary-light ${location.pathname === '/fuer-einrichtungen' ? 'text-primary-dark font-bold' : ''}`} onClick={() => {setMobileMenuOpen(false); window.scrollTo(0, 0);}}>
-              My Mission
+              Meine Mission
             </Link>
             <Link to="/meine-angebote" className={`block px-3 py-2 rounded-md text-base font-medium hover:bg-primary-light ${location.pathname === '/meine-angebote' ? 'text-primary-dark font-bold' : ''}`} onClick={() => {setMobileMenuOpen(false); window.scrollTo(0, 0);}}>
               Meine Angebote
             </Link>
             <Link to="/regionally-rooted" className={`block px-3 py-2 rounded-md text-base font-medium hover:bg-primary-light ${location.pathname === '/regionally-rooted' ? 'text-primary-dark font-bold' : ''}`} onClick={() => {setMobileMenuOpen(false); window.scrollTo(0, 0);}}>
-              Regionally Rooted
+              Regional verwurzelt
             </Link>
             <Link to="/kontakt" className="block mx-3 mt-3 px-3 py-3 bg-secondary text-white rounded-md text-base font-medium" onClick={() => {setMobileMenuOpen(false); window.scrollTo(0, 0);}}>
               Jetzt anfragen
