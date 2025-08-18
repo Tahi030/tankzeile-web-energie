@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const tankwelten = [
   {
     id: 1,
-    title: "Captain Apfelzahn - auf gesunder Mission",
+    title: "Captain Apfel - auf gesunder Mission",
     description: "",
     image: "",
     link: "/tankwelten/captain-apfel-workshop",
