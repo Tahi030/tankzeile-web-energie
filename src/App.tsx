@@ -13,6 +13,7 @@ import AlltagLeichterLeben from "./pages/AlltagLeichterLeben";
 import VerstehenVeraendern from "./pages/VerstehenVeraendern";
 import ErlebenVerbinden from "./pages/ErlebenVerbinden";
 import CaptainApfelWorkshop from "./pages/CaptainApfelWorkshop";
+import WorkshopGesundeMission from "./pages/WorkshopGesundeMission";
 import Schatzruhe from "./pages/Schatzruhe";
 import FuerEinrichtungen from "./pages/FuerEinrichtungen";
 import FuerUnternehmen from "./pages/FuerUnternehmen";
@@ -39,6 +40,7 @@ const App = () => (
             <PageLayout>
               <Routes>
                 <Route path="/" element={<Index />} />
+                <Route path="/meine-angebote/workshop-gesunde-mission" element={<WorkshopGesundeMission />} />
                 <Route path="/tankwelten/alltag-leichter-leben" element={<AlltagLeichterLeben />} />
                 <Route path="/tankwelten/verstehen-veraendern" element={<VerstehenVeraendern />} />
                 <Route path="/tankwelten/erleben-verbinden" element={<ErlebenVerbinden />} />
