@@ -115,6 +115,7 @@ const Header = () => {
                   <div className="py-1" role="menu" aria-orientation="vertical">
                     <DropdownItem to="/meine-angebote/workshop-gesunde-mission" label="Workshop Auf gesunder Mission" />
                     <DropdownItem to="/meine-angebote/workshop-lieblingsdose" label="Workshop Lieblingsdose" />
+                    <DropdownItem to="/meine-angebote/alltag-leichter-leben" label="Alltag leichter leben" />
                   </div>
                 </div>
               </div>
@@ -174,6 +175,9 @@ const Header = () => {
               </Link>
               <Link to="/meine-angebote/workshop-lieblingsdose" className="block pl-6 py-2 text-sm" onClick={() => {setMobileMenuOpen(false); window.scrollTo(0, 0);}}>
                 Workshop Lieblingsdose
+              </Link>
+              <Link to="/meine-angebote/alltag-leichter-leben" className="block pl-6 py-2 text-sm" onClick={() => {setMobileMenuOpen(false); window.scrollTo(0, 0);}}>
+                Alltag leichter leben
               </Link>
             </div>
             
