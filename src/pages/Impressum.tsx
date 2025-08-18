@@ -38,7 +38,7 @@ const Impressum = () => {
             <h2>EU-Streitschlichtung</h2>
             <p>
               Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: 
-              <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener noreferrer">https://ec.europa.eu/consumers/odr/</a>.
+              <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener noreferrer">https://ec.europa.eu/consumers/odr/</a>. 
               Unsere E-Mail-Adresse finden Sie oben im Impressum.
             </p>
             
@@ -79,17 +79,12 @@ const Impressum = () => {
               nicht kommerziellen Gebrauch gestattet.
             </p>
             <p>
+              Die entwickelten Figuren, Namen, Illustrationen und Konzepte – insbesondere „Captain Apfel & seine Crew" sowie alle dazugehörigen Ideen und Geschichten – sind urheberrechtlich geschützt und geistiges Eigentum von Tamara Hillmann. Eine Nutzung, Bearbeitung oder Weitergabe – ganz oder in Teilen – ist nur mit ausdrücklicher schriftlicher Erlaubnis gestattet. Verstöße können rechtliche Schritte nach sich ziehen.
+            </p>
+            <p>
               Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. 
               Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, 
-              bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.
-            </p>
-            
-            <h2>Urheberrecht / Geistiges Eigentum</h2>
-            <p>
-              Die Figuren, Namen, Illustrationen und Konzepte – insbesondere „Captain Apfel & seine Crew" sowie alle dazugehörigen Ideen und Geschichten – sind urheberrechtlich geschützt und geistiges Eigentum von Tamara Hillmann.
-            </p>
-            <p>
-              Eine Nutzung, Bearbeitung oder Weitergabe – ganz oder in Teilen – ist nur mit ausdrücklicher schriftlicher Erlaubnis gestattet. Verstöße können rechtliche Schritte nach sich ziehen.
+              bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden derartige Inhalte umgehend entfernt.
             </p>
           </div>
         </div>
