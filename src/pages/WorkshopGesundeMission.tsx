@@ -90,7 +90,7 @@ const WorkshopGesundeMission = () => {
 
             <div className="mt-12 text-center">
               <Link to="/kontakt" className="btn-primary">
-                Interesse an einem Workshop? Jetzt anfragen
+                Interesse an einem Workshop? Jetzt unverbindlich anfragen
               </Link>
             </div>
 
