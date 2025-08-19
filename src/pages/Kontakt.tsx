@@ -13,7 +13,7 @@ const Kontakt = () => {
       <section className="bg-primary py-16">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-3xl md:text-4xl font-bold mb-6 text-white">Kontakt</h1>
+            <h1 className="text-3xl md:text-4xl font-bold mb-6 text-white">So erreichst du mich</h1>
             {/* Hand-drawn line effect */}
             <div className="flex justify-center mb-6">
               <svg width="120" height="8" viewBox="0 0 120 8" className="text-white">
