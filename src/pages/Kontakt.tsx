@@ -67,7 +67,7 @@ const Kontakt = () => {
               </div>
               
               <h2 className="text-2xl font-semibold mb-6">Verbinde dich mit mir</h2>
-              <div className="flex justify-start space-x-4">
+              <div className="flex justify-center space-x-4">
                 {/* Social media icons */}
                 <a href="#" className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white hover:bg-primary-dark transition-colors">
                   <Facebook size={20} />
