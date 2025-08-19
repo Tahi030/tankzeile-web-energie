@@ -38,7 +38,7 @@ const Footer = () => {
             </div>
             <address className="not-italic">
               <p className="text-white font-medium">Tamara Hillmann</p>
-              <p className="mt-2">Email: <a href="mailto:tankzeile@gmx.de" className="underline hover:text-gray-100">tankzeile@gmx.de</a></p>
+              <p className="mt-2">Email: <a href="mailto:kontakt@captain-apfel.de" className="underline hover:text-gray-100">kontakt@captain-apfel.de</a></p>
               <p>Tel.: <a href="tel:+4915206339474" className="underline hover:text-gray-100">+49 152 06339474</a></p>
               <div className="mt-4 flex space-x-4">
                 <a href="https://www.instagram.com/tankzeile?igsh=cjFxdDNrbXNvYnFk" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300 transition-colors">
