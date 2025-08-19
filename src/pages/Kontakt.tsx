@@ -65,7 +65,7 @@ const Kontakt = () => {
                 </div>
               </div>
               
-              <h2 className="text-2xl font-semibold mb-6">Folge mir</h2>
+              <h2 className="text-2xl font-semibold mb-6">Verbinde dich mit mir</h2>
               <div className="flex justify-center space-x-4">
                 {/* Social media icons would go here - using placeholder links */}
                 <a href="#" className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white hover:bg-primary-dark">
