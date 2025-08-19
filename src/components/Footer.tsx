@@ -63,7 +63,7 @@ const Footer = () => {
         </div>
 
         <div className="mt-10 pt-6 border-t border-white/20 text-center relative z-10">
-          <p>&copy; {new Date().getFullYear()} Tankzeile – Ernährung & Lebensenergie. Alle Rechte vorbehalten.</p>
+          <p>&copy; 2025 Captain Apfel. Alle Rechte vorbehalten.</p>
         </div>
       </div>
     </footer>
