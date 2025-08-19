@@ -125,24 +125,34 @@ const WorkshopLieblingsdose = () => {
                 </div>
 
                 <div className="bg-white/80 p-4 rounded-lg mb-4">
-                  <h4 className="font-semibold text-yellow-800 mb-2">🥪 Gesunde Brotboxen erstellen - Workshop für Kitas & Vorschulen</h4>
+                  <h4 className="font-semibold text-yellow-800 mb-2">🍎 Captain Apfel's Gesunde Brotboxen-Abenteuer</h4>
                   <p className="text-yellow-700 mb-3">
-                    Ein speziell entwickelter Workshop für Kindergärten und Vorschulen, in dem Kinder lernen, wie sie gemeinsam gesunde und leckere Brotboxen zusammenstellen können.
+                    Ein spannendes Workshop-Abenteuer mit Captain Apfel für Vorschule und Grundschüler! Gemeinsam mit der beliebten Figur lernen die Kinder spielerisch, wie sie ihre eigenen gesunden und leckeren Brotboxen zusammenstellen können.
                   </p>
                   
                   <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-4">
                     <div className="flex items-center gap-2 text-yellow-700">
                       <Users className="h-4 w-4" />
-                      <span className="text-sm">Für Gruppen 4-6 Jahre</span>
+                      <span className="text-sm">Vorschule & Grundschule</span>
                     </div>
                     <div className="flex items-center gap-2 text-yellow-700">
                       <Clock className="h-4 w-4" />
-                      <span className="text-sm">90 Minuten</span>
+                      <span className="text-sm">60 Minuten</span>
                     </div>
                     <div className="flex items-center gap-2 text-yellow-700">
                       <Calendar className="h-4 w-4" />
                       <span className="text-sm">Ab 2026 verfügbar</span>
                     </div>
+                  </div>
+                  
+                  <div className="bg-yellow-50 p-3 rounded-lg mb-3">
+                    <p className="text-yellow-800 text-sm font-medium mb-2">🌟 Was die Kinder erleben:</p>
+                    <ul className="text-yellow-700 text-sm space-y-1">
+                      <li>• Abenteuer mit Captain Apfel und seiner Crew</li>
+                      <li>• Praktisches Zusammenstellen von Lieblingsdosen</li>
+                      <li>• Spielerisches Lernen über gesunde Zutaten</li>
+                      <li>• Kreative Ideen für abwechslungsreiche Pausensnacks</li>
+                    </ul>
                   </div>
                 </div>
 
