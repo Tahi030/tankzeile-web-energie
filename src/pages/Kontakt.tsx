@@ -50,7 +50,7 @@ const Kontakt = () => {
           <div className="max-w-2xl mx-auto text-center">
             {/* Contact Information */}
             <div>
-              <h2 className="text-2xl font-semibold mb-6 text-white">So erreichst du mich</h2>
+              <h2 className="text-2xl font-semibold mb-6 text-amber-800">So erreichst du mich</h2>
               
               <div className="space-y-4 mb-8">
                 <div>
