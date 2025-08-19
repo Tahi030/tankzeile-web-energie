@@ -120,7 +120,7 @@ const Header = () => {
             }
             onClick={() => window.scrollTo(0, 0)}
           >
-            Jetzt anfragen
+            Kontakt
           </Link>
 
           {/* Mobile Menu Button */}
@@ -170,7 +170,7 @@ const Header = () => {
             </div>
             
             <Link to="/kontakt" className="block mx-3 mt-3 px-3 py-3 bg-secondary text-white rounded-md text-base font-medium" onClick={() => {setMobileMenuOpen(false); window.scrollTo(0, 0);}}>
-              Jetzt anfragen
+              Kontakt
             </Link>
           </div>
         </div>
