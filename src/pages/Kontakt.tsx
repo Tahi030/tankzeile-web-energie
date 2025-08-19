@@ -47,7 +47,7 @@ const Kontakt = () => {
       {/* Contact Info */}
       <section className="py-12 md:py-16">
         <div className="container-custom">
-          <div className="max-w-2xl mx-auto">
+          <div className="max-w-2xl mx-auto text-center">
             {/* Contact Information */}
             <div>
               <h2 className="text-2xl font-semibold mb-6">Kontaktinformationen</h2>
@@ -55,6 +55,7 @@ const Kontakt = () => {
               <div className="space-y-4 mb-8">
                 <div>
                   <p className="font-medium mb-1">Tamara Hillmann</p>
+                  <p className="text-muted-foreground mb-3">Gründerin & kreative Leitung</p>
                   <h3 className="font-medium mb-1">E-Mail:</h3>
                   <p><a href="mailto:kontakt@captain-apfel.de" className="text-primary-dark hover:underline">kontakt@captain-apfel.de</a></p>
                 </div>
@@ -66,7 +67,7 @@ const Kontakt = () => {
               </div>
               
               <h2 className="text-2xl font-semibold mb-6">Folge mir</h2>
-              <div className="flex space-x-4">
+              <div className="flex justify-center space-x-4">
                 {/* Social media icons would go here - using placeholder links */}
                 <a href="#" className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white hover:bg-primary-dark">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
