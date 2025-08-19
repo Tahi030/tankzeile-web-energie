@@ -50,49 +50,7 @@ const WorkshopLieblingsdose = () => {
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
             <div className="prose prose-lg max-w-none">
-              
-              <div className="my-8 bg-primary-light p-6 rounded-lg">
-                <h2 className="text-2xl font-semibold mb-4">Workshop: Lieblingsdose - Gesunde Brotboxen kreativ gestalten</h2>
-                <div className="flex justify-center mb-6">
-                  <svg width="120" height="8" viewBox="0 0 120 8" className="text-primary">
-                    <path
-                      d="M2,4 Q8,2 15,4 T30,3 Q40,5 50,4 T70,3 Q80,5 90,4 T110,3 Q115,2 118,4"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      fill="none"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="opacity-70"
-                      style={{
-                        filter: 'url(#roughPaperWorkshop2)',
-                      }}
-                    />
-                    <defs>
-                      <filter id="roughPaperWorkshop2">
-                        <feTurbulence baseFrequency="0.04" numOctaves="3" result="noise" seed="2" />
-                        <feDisplacementMap in="SourceGraphic" in2="noise" scale="0.8" />
-                      </filter>
-                    </defs>
-                  </svg>
-                </div>
-                <p className="mb-4">
-                  In diesem praktischen Workshop lernen Kinder und Eltern gemeinsam, wie aus der täglichen Brotdose eine "Lieblingsdose" wird - gesund, abwechslungsreich und mit viel Freude am Essen.
-                </p>
-                <p className="mb-4">
-                  Gemeinsam entdecken wir:
-                </p>
-                <ul className="mb-4">
-                  <li>Kreative Ideen für bunte und gesunde Brotboxen</li>
-                  <li>Einfache Rezepte, die Kindern schmecken</li>
-                  <li>Praktische Tipps für den Alltag</li>
-                  <li>Wie Kinder beim Zubereiten mithelfen können</li>
-                </ul>
-                <p className="mb-4">
-                  Der Workshop richtet sich an Familien, Kindergärten und Schulen, die das Thema gesunde Ernährung spielerisch und praktisch angehen möchten.
-                </p>
-              </div>
-
-              {/* New Offer Box for Kitas/Preschool */}
+              {/* Captain Apfel Offer Box for Kitas/Preschool */}
               <div className="my-8 bg-gradient-to-br from-yellow-50 to-orange-50 border-2 border-yellow-200 p-6 rounded-lg shadow-lg">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="bg-yellow-400 rounded-full p-2">
