@@ -25,7 +25,7 @@ const Impressum = () => {
             <h2>Kontakt</h2>
             <p>
               Telefon: +49 152 06339474<br />
-              E-Mail: tankzeile@gmx.de
+              E-Mail: kontakt@captain-apfel.de
             </p>
             
             <h2>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h2>

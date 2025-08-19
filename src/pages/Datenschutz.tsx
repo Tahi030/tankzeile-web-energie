@@ -21,7 +21,7 @@ const Datenschutz = () => {
             <p>
               Tamara Hillmann<br />
               Friedrichshagener Straße 5 G, 12555 Berlin<br />
-              E-Mail: tankzeile@gmx.de
+              E-Mail: kontakt@captain-apfel.de
             </p>
 
             <h2>2. Hosting und Bereitstellung der Website</h2>
