@@ -355,7 +355,7 @@ const Index = () => {
             </p>
             
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
-              {/* Download Platzhalter 1 */}
+              {/* Download Box 1 */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -370,14 +370,25 @@ const Index = () => {
                       className="w-full h-full object-contain"
                     />
                   </div>
-                  <Button size="sm" className="text-sm px-4 py-2">
+                  <Button 
+                    size="sm" 
+                    className="text-sm px-4 py-2"
+                    onClick={() => {
+                      const link = document.createElement('a');
+                      link.href = '/lovable-uploads/8d49addc-737c-4350-bea7-33d0730e81f1.png';
+                      link.download = 'captain-apfel-ausmalbild.png';
+                      document.body.appendChild(link);
+                      link.click();
+                      document.body.removeChild(link);
+                    }}
+                  >
                     <Download className="mr-2 h-3 w-3" />
                     Kostenloser Download
                   </Button>
                 </div>
               </motion.div>
 
-              {/* Download Platzhalter 2 */}
+              {/* Download Box 2 */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -392,14 +403,25 @@ const Index = () => {
                       className="w-full h-full object-contain"
                     />
                   </div>
-                  <Button size="sm" className="text-sm px-4 py-2">
+                  <Button 
+                    size="sm" 
+                    className="text-sm px-4 py-2"
+                    onClick={() => {
+                      const link = document.createElement('a');
+                      link.href = '/lovable-uploads/650cdcba-e091-48fc-932e-92c2ebac211d.png';
+                      link.download = 'obst-gemuese-ausmalbild.png';
+                      document.body.appendChild(link);
+                      link.click();
+                      document.body.removeChild(link);
+                    }}
+                  >
                     <Download className="mr-2 h-3 w-3" />
                     Kostenloser Download
                   </Button>
                 </div>
               </motion.div>
 
-              {/* Download Platzhalter 3 */}
+              {/* Download Box 3 */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -415,7 +437,18 @@ const Index = () => {
                       className="w-full h-full object-contain"
                     />
                   </div>
-                  <Button size="sm" className="text-sm px-4 py-2">
+                  <Button 
+                    size="sm" 
+                    className="text-sm px-4 py-2"
+                    onClick={() => {
+                      const link = document.createElement('a');
+                      link.href = '/lovable-uploads/5788fa5c-f001-4880-ade2-c940c4cd66ad.png';
+                      link.download = 'powerzentrale-ausmalbild.png';
+                      document.body.appendChild(link);
+                      link.click();
+                      document.body.removeChild(link);
+                    }}
+                  >
                     <Download className="mr-2 h-3 w-3" />
                     Kostenloser Download
                   </Button>
