@@ -405,15 +405,15 @@ const Index = () => {
           >
             <h2 className="section-title mb-4 text-white">
               <div className="countdown-numbers">
-                <span className="countdown-number">5</span>
+                <span className="countdown-number text-blue-500">5</span>
                 <span className="text-white/70">,</span>
-                <span className="countdown-number">4</span>
+                <span className="countdown-number text-red-500">4</span>
                 <span className="text-white/70">,</span>
-                <span className="countdown-number">3</span>
+                <span className="countdown-number text-green-500">3</span>
                 <span className="text-white/70">,</span>
-                <span className="countdown-number">2</span>
+                <span className="countdown-number text-yellow-500">2</span>
                 <span className="text-white/70">,</span>
-                <span className="countdown-number">1</span>
+                <span className="countdown-number text-orange-500">1</span>
               </div>
               <div className="text-white mt-2">– Volle Obst- und Gemüsekraft voraus!</div>
             </h2>
