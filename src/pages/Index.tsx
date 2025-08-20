@@ -372,18 +372,17 @@ const Index = () => {
                   </div>
                   <Button 
                     size="sm" 
-                    className="text-sm px-4 py-2"
+                    className="bg-secondary hover:bg-secondary-dark text-white p-2 rounded-md"
                     onClick={() => {
                       const link = document.createElement('a');
                       link.href = '/lovable-uploads/8d49addc-737c-4350-bea7-33d0730e81f1.png';
-                      link.download = 'captain-apfel-ausmalbild.png';
+                      link.download = 'captain-apfel.de1.png';
                       document.body.appendChild(link);
                       link.click();
                       document.body.removeChild(link);
                     }}
                   >
-                    <Download className="mr-2 h-3 w-3" />
-                    Kostenloser Download
+                    <Download className="h-4 w-4" />
                   </Button>
                 </div>
               </motion.div>
@@ -405,18 +404,17 @@ const Index = () => {
                   </div>
                   <Button 
                     size="sm" 
-                    className="text-sm px-4 py-2"
+                    className="bg-secondary hover:bg-secondary-dark text-white p-2 rounded-md"
                     onClick={() => {
                       const link = document.createElement('a');
                       link.href = '/lovable-uploads/650cdcba-e091-48fc-932e-92c2ebac211d.png';
-                      link.download = 'obst-gemuese-ausmalbild.png';
+                      link.download = 'captain-apfel.de2.png';
                       document.body.appendChild(link);
                       link.click();
                       document.body.removeChild(link);
                     }}
                   >
-                    <Download className="mr-2 h-3 w-3" />
-                    Kostenloser Download
+                    <Download className="h-4 w-4" />
                   </Button>
                 </div>
               </motion.div>
@@ -439,18 +437,17 @@ const Index = () => {
                   </div>
                   <Button 
                     size="sm" 
-                    className="text-sm px-4 py-2"
+                    className="bg-secondary hover:bg-secondary-dark text-white p-2 rounded-md"
                     onClick={() => {
                       const link = document.createElement('a');
                       link.href = '/lovable-uploads/5788fa5c-f001-4880-ade2-c940c4cd66ad.png';
-                      link.download = 'powerzentrale-ausmalbild.png';
+                      link.download = 'captain-apfel.de3.png';
                       document.body.appendChild(link);
                       link.click();
                       document.body.removeChild(link);
                     }}
                   >
-                    <Download className="mr-2 h-3 w-3" />
-                    Kostenloser Download
+                    <Download className="h-4 w-4" />
                   </Button>
                 </div>
               </motion.div>
