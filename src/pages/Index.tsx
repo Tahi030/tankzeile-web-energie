@@ -363,16 +363,15 @@ const Index = () => {
                 viewport={{ once: true }}
               >
                 <div className="offer-box text-center">
-                  <div className="bg-secondary/10 rounded-xl h-32 mb-4 flex items-center justify-center overflow-hidden">
+                  <div className="bg-red-500/10 rounded-xl h-32 mb-6 flex items-center justify-center overflow-hidden">
                     <img 
                       src="/lovable-uploads/8d49addc-737c-4350-bea7-33d0730e81f1.png" 
                       alt="Captain Apfel Ausmalbild" 
                       className="w-full h-full object-contain"
                     />
                   </div>
-                  <h3 className="font-semibold mb-4 text-foreground">Captain Apfel</h3>
-                  <Button size="sm" variant="outline" className="w-full border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground">
-                    <Download className="mr-2 h-4 w-4" />
+                  <Button size="sm" className="text-sm px-4 py-2">
+                    <Download className="mr-2 h-3 w-3" />
                     Kostenloser Download
                   </Button>
                 </div>
@@ -386,16 +385,15 @@ const Index = () => {
                 viewport={{ once: true }}
               >
                 <div className="offer-box text-center">
-                  <div className="bg-accent/20 rounded-xl h-32 mb-4 flex items-center justify-center overflow-hidden">
+                  <div className="bg-green-500/10 rounded-xl h-32 mb-6 flex items-center justify-center overflow-hidden">
                     <img 
                       src="/lovable-uploads/650cdcba-e091-48fc-932e-92c2ebac211d.png" 
                       alt="Obst und Gemüse Ausmalbild" 
                       className="w-full h-full object-contain"
                     />
                   </div>
-                  <h3 className="font-semibold mb-4 text-foreground">Die Crew</h3>
-                  <Button size="sm" variant="outline" className="w-full border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground">
-                    <Download className="mr-2 h-4 w-4" />
+                  <Button size="sm" className="text-sm px-4 py-2">
+                    <Download className="mr-2 h-3 w-3" />
                     Kostenloser Download
                   </Button>
                 </div>
@@ -410,16 +408,15 @@ const Index = () => {
                 className="sm:col-span-2 lg:col-span-1"
               >
                 <div className="offer-box text-center">
-                  <div className="bg-primary/20 rounded-xl h-32 mb-4 flex items-center justify-center overflow-hidden">
+                  <div className="bg-yellow-500/10 rounded-xl h-32 mb-6 flex items-center justify-center overflow-hidden">
                     <img 
                       src="/lovable-uploads/5788fa5c-f001-4880-ade2-c940c4cd66ad.png" 
                       alt="Powerzentrale Ausmalbild" 
                       className="w-full h-full object-contain"
                     />
                   </div>
-                  <h3 className="font-semibold mb-4 text-foreground">Powerzentrale</h3>
-                  <Button size="sm" variant="outline" className="w-full border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground">
-                    <Download className="mr-2 h-4 w-4" />
+                  <Button size="sm" className="text-sm px-4 py-2">
+                    <Download className="mr-2 h-3 w-3" />
                     Kostenloser Download
                   </Button>
                 </div>
