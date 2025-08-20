@@ -130,9 +130,9 @@
     @apply text-xl md:text-2xl font-medium mb-4 text-foreground;
   }
   
-  /* Modern crew card styles */
+  /* Smaller, more subtle crew card styles */
   .crew-card {
-    @apply bg-card rounded-2xl p-6 shadow-sm border border-border transition-all duration-300 hover:shadow-md hover:scale-[1.02] relative overflow-hidden;
+    @apply bg-white/50 backdrop-blur-sm rounded-xl p-4 shadow-sm border border-white/30 transition-all duration-300 hover:shadow-md hover:scale-[1.02] relative overflow-hidden;
   }
   
   .crew-card-red {
@@ -160,29 +160,22 @@
     @apply bg-card rounded-2xl p-8 shadow-sm border border-border transition-all duration-300 hover:shadow-md hover:scale-[1.01] relative;
   }
   
-  /* Unified background - subtle gradients throughout */
-  .bg-warm-gradient {
-    background: linear-gradient(135deg, 
-      hsl(35 25% 78%) 0%, 
-      hsl(35 28% 82%) 50%,
-      hsl(35 30% 85%) 100%
+  /* Continuous gradient background throughout */
+  .bg-warm-gradient,
+  .modern-section,
+  .bg-background {
+    background: linear-gradient(180deg, 
+      hsl(35 30% 78%) 0%, 
+      hsl(35 28% 82%) 25%,
+      hsl(35 30% 85%) 50%,
+      hsl(35 32% 87%) 75%,
+      hsl(35 28% 82%) 100%
     );
   }
   
-  .modern-section {
-    background: linear-gradient(180deg, 
-      hsl(35 28% 80%) 0%, 
-      hsl(35 30% 83%) 50%,
-      hsl(35 32% 86%) 100%
-    );
-  }
-
-  .bg-background {
-    background: linear-gradient(180deg, 
-      hsl(35 30% 85%) 0%,
-      hsl(35 32% 87%) 50%,
-      hsl(35 28% 82%) 100%
-    );
+  /* Light text boxes for better readability */
+  .text-box {
+    @apply bg-white/60 backdrop-blur-sm rounded-2xl p-6 shadow-sm border border-white/30;
   }
 
   /* Playful countdown numbers for kids */

@@ -29,7 +29,7 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-primary py-16 md:py-24">
+      <section className="bg-background py-16 md:py-24">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto text-center">
             <motion.h1 
@@ -91,7 +91,7 @@ const Index = () => {
       </section>
 
       {/* Vorstellung */}
-      <section className="py-16">
+      <section className="py-16 bg-background">
         <div className="container-custom">
           <motion.div 
             className="max-w-4xl mx-auto text-center"
@@ -100,57 +100,61 @@ const Index = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <p className="text-lg md:text-xl text-foreground leading-relaxed">
-              Captain Apfel ist nicht allein – gemeinsam mit Kimmi Schlau, Kai Mutig und dem Tomatenraumschiff geht er auf eine gesunde Mission. In der Powerzentrale im Bauch wird Energie gesammelt – während Paffel, der freche Saboteur, immer wieder versucht, Chaos zu stiften.
-            </p>
+            <div className="text-box">
+              <p className="text-lg md:text-xl text-foreground leading-relaxed">
+                Captain Apfel ist nicht allein – gemeinsam mit Kimmi Schlau, Kai Mutig und dem Tomatenraumschiff geht er auf eine gesunde Mission. In der Powerzentrale im Bauch wird Energie gesammelt – während Paffel, der freche Saboteur, immer wieder versucht, Chaos zu stiften.
+              </p>
+            </div>
           </motion.div>
         </div>
       </section>
 
-      {/* CREW-Bereich - Modern und luftig gestaltet */}
-      <section className="py-20 modern-section">        
+      {/* CREW-Bereich - Kompakt und dezent */}
+      <section className="py-12 bg-background">
         <div className="container-custom">
           <motion.div 
-            className="text-center mb-16"
+            className="text-center mb-12"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-              Lerne die Crew kennen!
-            </h2>
-            
-            {/* Hand-drawn line effect */}
-            <div className="flex justify-center mb-6">
-              <svg width="120" height="8" viewBox="0 0 120 8" className="text-white">
-                <path
-                  d="M2,4 Q8,2 15,4 T30,3 Q40,5 50,4 T70,3 Q80,5 90,4 T110,3 Q115,2 118,4"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  fill="none"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="opacity-70"
-                  style={{
-                    filter: 'url(#roughPaperCrew)',
-                  }}
-                />
-                <defs>
-                  <filter id="roughPaperCrew">
-                    <feTurbulence baseFrequency="0.04" numOctaves="3" result="noise" seed="5" />
-                    <feDisplacementMap in="SourceGraphic" in2="noise" scale="0.8" />
-                  </filter>
-                </defs>
-              </svg>
+            <div className="text-box max-w-3xl mx-auto">
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+                Lerne die Crew kennen!
+              </h2>
+              
+              {/* Hand-drawn line effect */}
+              <div className="flex justify-center mb-6">
+                <svg width="120" height="8" viewBox="0 0 120 8" className="text-white">
+                  <path
+                    d="M2,4 Q8,2 15,4 T30,3 Q40,5 50,4 T70,3 Q80,5 90,4 T110,3 Q115,2 118,4"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    fill="none"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="opacity-70"
+                    style={{
+                      filter: 'url(#roughPaperCrew)',
+                    }}
+                  />
+                  <defs>
+                    <filter id="roughPaperCrew">
+                      <feTurbulence baseFrequency="0.04" numOctaves="3" result="noise" seed="5" />
+                      <feDisplacementMap in="SourceGraphic" in2="noise" scale="0.8" />
+                    </filter>
+                  </defs>
+                </svg>
+              </div>
+              
+              <p className="text-lg md:text-xl text-white/90">
+                Jeder hat eine besondere Kraft – gemeinsam sind sie unschlagbar!
+              </p>
             </div>
-            
-            <p className="text-xl md:text-2xl text-white/80">
-              Jeder hat eine besondere Kraft – gemeinsam sind sie unschlagbar!
-            </p>
           </motion.div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto">
             {/* Captain Apfel */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -159,12 +163,12 @@ const Index = () => {
               viewport={{ once: true }}
             >
               <div className="crew-card-red">
-                <div className="bg-red-50 rounded-xl h-32 mb-6 flex items-center justify-center">
-                  <p className="text-sm text-muted-foreground font-medium">Captain Apfel Illustration</p>
+                <div className="bg-red-50 rounded-lg h-20 mb-4 flex items-center justify-center">
+                  <p className="text-xs text-muted-foreground font-medium">Captain Apfel</p>
                 </div>
-                <h3 className="text-xl font-bold text-center mb-3 text-foreground">Captain Apfel</h3>
-                <p className="text-center text-sm text-muted-foreground leading-relaxed">
-                  Captain Apfel führt die Crew auf ihrer gesunden Mission durch den Körper!
+                <h3 className="text-lg font-bold text-center mb-2 text-foreground">Captain Apfel</h3>
+                <p className="text-center text-xs text-muted-foreground leading-relaxed">
+                  Führt die Crew auf ihrer gesunden Mission durch den Körper!
                 </p>
               </div>
             </motion.div>
@@ -177,12 +181,12 @@ const Index = () => {
               viewport={{ once: true }}
             >
               <div className="crew-card-orange">
-                <div className="bg-orange-50 rounded-xl h-32 mb-6 flex items-center justify-center">
-                  <p className="text-sm text-muted-foreground font-medium">Kimmi Schlau Illustration</p>
+                <div className="bg-orange-50 rounded-lg h-20 mb-4 flex items-center justify-center">
+                  <p className="text-xs text-muted-foreground font-medium">Kimmi Schlau</p>
                 </div>
-                <h3 className="text-xl font-bold text-center mb-3 text-foreground">Kimmi Schlau</h3>
-                <p className="text-center text-sm text-muted-foreground leading-relaxed">
-                  Kimmi Schlau kennt die besten Tipps für eine gesunde Powerzentrale!
+                <h3 className="text-lg font-bold text-center mb-2 text-foreground">Kimmi Schlau</h3>
+                <p className="text-center text-xs text-muted-foreground leading-relaxed">
+                  Kennt die besten Tipps für eine gesunde Powerzentrale!
                 </p>
               </div>
             </motion.div>
@@ -195,12 +199,12 @@ const Index = () => {
               viewport={{ once: true }}
             >
               <div className="crew-card-green">
-                <div className="bg-secondary/10 rounded-xl h-32 mb-6 flex items-center justify-center">
-                  <p className="text-sm text-muted-foreground font-medium">Kai Mutig Illustration</p>
+                <div className="bg-secondary/10 rounded-lg h-20 mb-4 flex items-center justify-center">
+                  <p className="text-xs text-muted-foreground font-medium">Kai Mutig</p>
                 </div>
-                <h3 className="text-xl font-bold text-center mb-3 text-foreground">Kai Mutig</h3>
-                <p className="text-center text-sm text-muted-foreground leading-relaxed">
-                  Kai Mutig bringt Stärke und zeigt, wie man mutig neue Sachen probiert!
+                <h3 className="text-lg font-bold text-center mb-2 text-foreground">Kai Mutig</h3>
+                <p className="text-center text-xs text-muted-foreground leading-relaxed">
+                  Bringt Stärke und zeigt, wie man mutig neue Sachen probiert!
                 </p>
               </div>
             </motion.div>
@@ -213,12 +217,12 @@ const Index = () => {
               viewport={{ once: true }}
             >
               <div className="crew-card-terracotta">
-                <div className="bg-orange-100 rounded-xl h-32 mb-6 flex items-center justify-center">
-                  <p className="text-sm text-muted-foreground font-medium">Tomatenraumschiff Illustration</p>
+                <div className="bg-orange-100 rounded-lg h-20 mb-4 flex items-center justify-center">
+                  <p className="text-xs text-muted-foreground font-medium">Tomatenraumschiff</p>
                 </div>
-                <h3 className="text-xl font-bold text-center mb-3 text-foreground">Tomatenraumschiff</h3>
-                <p className="text-center text-sm text-muted-foreground leading-relaxed">
-                  Das Tomatenraumschiff fliegt zur Powerzentrale und bringt wichtige Nährstoffe!
+                <h3 className="text-lg font-bold text-center mb-2 text-foreground">Tomatenraumschiff</h3>
+                <p className="text-center text-xs text-muted-foreground leading-relaxed">
+                  Fliegt zur Powerzentrale und bringt wichtige Nährstoffe!
                 </p>
               </div>
             </motion.div>
@@ -231,12 +235,12 @@ const Index = () => {
               viewport={{ once: true }}
             >
               <div className="crew-card-sand">
-                <div className="bg-amber-50 rounded-xl h-32 mb-6 flex items-center justify-center">
-                  <p className="text-sm text-muted-foreground font-medium">Paffel Illustration</p>
+                <div className="bg-amber-50 rounded-lg h-20 mb-4 flex items-center justify-center">
+                  <p className="text-xs text-muted-foreground font-medium">Paffel</p>
                 </div>
-                <h3 className="text-xl font-bold text-center mb-3 text-foreground">Paffel</h3>
-                <p className="text-center text-sm text-muted-foreground leading-relaxed">
-                  Paffel will Chaos machen – aber die Crew zeigt, wie man ihm standhält!
+                <h3 className="text-lg font-bold text-center mb-2 text-foreground">Paffel</h3>
+                <p className="text-center text-xs text-muted-foreground leading-relaxed">
+                  Will Chaos machen – aber die Crew zeigt, wie man ihm standhält!
                 </p>
               </div>
             </motion.div>
@@ -249,11 +253,11 @@ const Index = () => {
               viewport={{ once: true }}
             >
               <div className="crew-card-green">
-                <div className="bg-secondary/10 rounded-xl h-32 mb-6 flex items-center justify-center">
-                  <p className="text-sm text-muted-foreground font-medium">Die Powerzentrale Illustration</p>
+                <div className="bg-secondary/10 rounded-lg h-20 mb-4 flex items-center justify-center">
+                  <p className="text-xs text-muted-foreground font-medium">Die Powerzentrale</p>
                 </div>
-                <h3 className="text-xl font-bold text-center mb-3 text-foreground">Die Powerzentrale</h3>
-                <p className="text-center text-sm text-muted-foreground leading-relaxed">
+                <h3 className="text-lg font-bold text-center mb-2 text-foreground">Die Powerzentrale</h3>
+                <p className="text-center text-xs text-muted-foreground leading-relaxed">
                   Hier wird die ganze Energie gesammelt und verteilt – das Herzstück jeder Mission!
                 </p>
               </div>
@@ -261,14 +265,14 @@ const Index = () => {
           </div>
 
           <motion.div 
-            className="text-center mt-16"
+            className="text-center mt-8"
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.5 }}
             viewport={{ once: true }}
           >
-            <div className="bg-card rounded-2xl p-8 max-w-2xl mx-auto border border-border shadow-sm">
-              <p className="text-lg text-foreground font-medium">
+            <div className="text-box max-w-2xl mx-auto">
+              <p className="text-base text-foreground font-medium">
                 🌟 Zusammen machen sie jede Einrichtung zu einem Ort voller Energie, Spaß und gesunder Abenteuer! 🌟
               </p>
             </div>
@@ -279,39 +283,43 @@ const Index = () => {
       {/* Angebote */}
       <section className="py-16 bg-background">
         <div className="container-custom">
-          <motion.h2 
-            className="section-title text-center mb-4 text-white"
+          <motion.div 
+            className="text-center mb-12"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            Unsere Angebote
-          </motion.h2>
-          
-          {/* Hand-drawn line effect */}
-          <div className="flex justify-center mb-12">
-            <svg width="120" height="8" viewBox="0 0 120 8" className="text-white">
-              <path
-                d="M2,4 Q8,2 15,4 T30,3 Q40,5 50,4 T70,3 Q80,5 90,4 T110,3 Q115,2 118,4"
-                stroke="currentColor"
-                strokeWidth="2"
-                fill="none"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="opacity-70"
-                style={{
-                  filter: 'url(#roughPaper1)',
-                }}
-              />
-              <defs>
-                <filter id="roughPaper1">
-                  <feTurbulence baseFrequency="0.04" numOctaves="3" result="noise" seed="1" />
-                  <feDisplacementMap in="SourceGraphic" in2="noise" scale="0.8" />
-                </filter>
-              </defs>
-            </svg>
-          </div>
+            <div className="text-box max-w-3xl mx-auto">
+              <h2 className="section-title text-center mb-4 text-white">
+                Unsere Angebote
+              </h2>
+              
+              {/* Hand-drawn line effect */}
+              <div className="flex justify-center">
+                <svg width="120" height="8" viewBox="0 0 120 8" className="text-white">
+                  <path
+                    d="M2,4 Q8,2 15,4 T30,3 Q40,5 50,4 T70,3 Q80,5 90,4 T110,3 Q115,2 118,4"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    fill="none"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="opacity-70"
+                    style={{
+                      filter: 'url(#roughPaper1)',
+                    }}
+                  />
+                  <defs>
+                    <filter id="roughPaper1">
+                      <feTurbulence baseFrequency="0.04" numOctaves="3" result="noise" seed="1" />
+                      <feDisplacementMap in="SourceGraphic" in2="noise" scale="0.8" />
+                    </filter>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+          </motion.div>
           
           <div className="grid md:grid-cols-2 gap-6 lg:gap-8 max-w-6xl mx-auto">
             {/* Box 1: Reise zur Powerzentrale */}
@@ -386,7 +394,7 @@ const Index = () => {
       </section>
 
       {/* Musik & Stimmung */}
-      <section className="py-16 modern-section">
+      <section className="py-16 bg-background">
         <div className="container-custom">
           <motion.div 
             className="max-w-4xl mx-auto text-center"
