@@ -349,9 +349,9 @@ const Index = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="section-title mb-6">Kostenlose Ausmalbilder</h2>
+            <h2 className="section-title mb-6">Mission Buntstift</h2>
             <p className="text-lg md:text-xl text-muted-foreground mb-12 leading-relaxed">
-              Hier können Kinder und Einrichtungen Ausmalbilder von Captain Apfel und seiner Crew kostenlos herunterladen.
+              Jetzt bist du dran: Stifte raus und los!
             </p>
             
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
@@ -363,13 +363,17 @@ const Index = () => {
                 viewport={{ once: true }}
               >
                 <div className="offer-box text-center">
-                  <div className="bg-secondary/10 rounded-xl h-32 mb-4 flex items-center justify-center">
-                    <Download className="h-8 w-8 text-secondary" />
+                  <div className="bg-secondary/10 rounded-xl h-32 mb-4 flex items-center justify-center overflow-hidden">
+                    <img 
+                      src="/lovable-uploads/8d49addc-737c-4350-bea7-33d0730e81f1.png" 
+                      alt="Captain Apfel Ausmalbild" 
+                      className="w-full h-full object-contain"
+                    />
                   </div>
                   <h3 className="font-semibold mb-4 text-foreground">Captain Apfel</h3>
                   <Button size="sm" variant="outline" className="w-full border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground">
                     <Download className="mr-2 h-4 w-4" />
-                    Download PDF
+                    Kostenloser Download
                   </Button>
                 </div>
               </motion.div>
@@ -382,13 +386,17 @@ const Index = () => {
                 viewport={{ once: true }}
               >
                 <div className="offer-box text-center">
-                  <div className="bg-accent/20 rounded-xl h-32 mb-4 flex items-center justify-center">
-                    <Download className="h-8 w-8 text-accent-foreground" />
+                  <div className="bg-accent/20 rounded-xl h-32 mb-4 flex items-center justify-center overflow-hidden">
+                    <img 
+                      src="/lovable-uploads/650cdcba-e091-48fc-932e-92c2ebac211d.png" 
+                      alt="Obst und Gemüse Ausmalbild" 
+                      className="w-full h-full object-contain"
+                    />
                   </div>
                   <h3 className="font-semibold mb-4 text-foreground">Die Crew</h3>
                   <Button size="sm" variant="outline" className="w-full border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground">
                     <Download className="mr-2 h-4 w-4" />
-                    Download PDF
+                    Kostenloser Download
                   </Button>
                 </div>
               </motion.div>
@@ -408,7 +416,7 @@ const Index = () => {
                   <h3 className="font-semibold mb-4 text-foreground">Powerzentrale</h3>
                   <Button size="sm" variant="outline" className="w-full border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground">
                     <Download className="mr-2 h-4 w-4" />
-                    Download PDF
+                    Kostenloser Download
                   </Button>
                 </div>
               </motion.div>
