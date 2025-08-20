@@ -473,7 +473,7 @@ const Index = () => {
                 }}
               >
                 <Download className="h-5 w-5" />
-                Bewegungen als PDF herunterladen
+                Tanz mit! Anleitung herunterladen
               </Button>
             </motion.div>
           </motion.div>
