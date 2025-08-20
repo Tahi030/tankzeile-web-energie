@@ -313,32 +313,38 @@ const Index = () => {
             </svg>
           </div>
           
-          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-6 lg:gap-8 max-w-6xl mx-auto">
             {/* Box 1: Reise zur Powerzentrale */}
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.1 }}
+              transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              <div className="offer-box h-full">
-                {/* Bild Platzhalter */}
-                <div className="bg-secondary/10 rounded-xl h-48 mb-6 flex items-center justify-center">
-                  <p className="text-sm text-muted-foreground">Bild: Reise zur Powerzentrale</p>
+              <div className="offer-box h-full flex flex-col">
+                <div className="bg-secondary/10 rounded-xl h-32 lg:h-40 mb-6 flex items-center justify-center">
+                  <div className="text-center">
+                    <div className="text-4xl lg:text-5xl mb-2">🍎</div>
+                    <p className="text-sm lg:text-base text-muted-foreground">Reise zur Powerzentrale</p>
+                  </div>
                 </div>
-                <h3 className="text-2xl font-bold mb-3 text-foreground">Reise zur Powerzentrale</h3>
-                <div className="bg-secondary/10 rounded-lg px-4 py-2 text-sm font-medium text-secondary w-fit mb-4">
-                  Start: Ende 2025
-                </div>
-                <p className="text-base mb-8 text-muted-foreground leading-relaxed">
-                  Mit Captain Apfel und seiner Crew erleben Kinder ein spannendes Abenteuer: Wie kommt Energie in den Körper, was macht uns stark und konzentriert, und wie bleibt die Powerzentrale hell und aktiv?
-                </p>
-                <Button asChild className="w-full bg-secondary hover:bg-secondary/90 text-secondary-foreground group">
+                
+                <div className="flex-1 flex flex-col">
+                  <h3 className="text-xl lg:text-2xl font-semibold mb-4 text-foreground">Reise zur Powerzentrale</h3>
+                  <div className="bg-secondary/10 rounded-lg px-3 py-2 text-xs lg:text-sm font-medium text-secondary w-fit mb-4">
+                    Start: Ende 2025
+                  </div>
+                  <p className="text-muted-foreground mb-6 flex-1 text-sm lg:text-base leading-relaxed">
+                    Mit Captain Apfel und seiner Crew erleben Kinder ein spannendes Abenteuer: Wie kommt Energie in den Körper, was macht uns stark und konzentriert, und wie bleibt die Powerzentrale hell und aktiv?
+                  </p>
+                  
                   <Link to="/meine-angebote/workshop-gesunde-mission">
-                    Mehr erfahren
-                    <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                    <Button className="w-full bg-secondary hover:bg-secondary-dark text-secondary-foreground rounded-xl py-3 lg:py-4 text-base lg:text-lg">
+                      Mehr erfahren
+                      <ArrowRight className="ml-2 h-4 w-4 lg:h-5 lg:w-5" />
+                    </Button>
                   </Link>
-                </Button>
+                </div>
               </div>
             </motion.div>
 
@@ -346,27 +352,33 @@ const Index = () => {
             <motion.div
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
+              transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              <div className="offer-box h-full">
-                {/* Bild Platzhalter */}
-                <div className="bg-accent/20 rounded-xl h-48 mb-6 flex items-center justify-center">
-                  <p className="text-sm text-muted-foreground">Bild: Lieblingsdose</p>
+              <div className="offer-box h-full flex flex-col">
+                <div className="bg-accent/20 rounded-xl h-32 lg:h-40 mb-6 flex items-center justify-center">
+                  <div className="text-center">
+                    <div className="text-4xl lg:text-5xl mb-2">📦</div>
+                    <p className="text-sm lg:text-base text-muted-foreground">Lieblingsdose</p>
+                  </div>
                 </div>
-                <h3 className="text-2xl font-bold mb-3 text-foreground">Lieblingsdose</h3>
-                <div className="bg-accent/20 rounded-lg px-4 py-2 text-sm font-medium text-accent-foreground w-fit mb-4">
-                  Start: 2026
-                </div>
-                <p className="text-base mb-8 text-muted-foreground leading-relaxed">
-                  Das Angebot ‚Lieblingsdose' bringt gesunde Ernährung direkt in den Alltag von Kitas, Schulen und Freizeiteinrichtungen. Gemeinsam mit Captain Apfel und seiner Crew entstehen bunte Brotdosen, die Kindern Spaß machen und Energie geben.
-                </p>
-                <Button asChild className="w-full bg-secondary hover:bg-secondary/90 text-secondary-foreground group">
+                
+                <div className="flex-1 flex flex-col">
+                  <h3 className="text-xl lg:text-2xl font-semibold mb-4 text-foreground">Lieblingsdose</h3>
+                  <div className="bg-accent/20 rounded-lg px-3 py-2 text-xs lg:text-sm font-medium text-accent-foreground w-fit mb-4">
+                    Start: 2026
+                  </div>
+                  <p className="text-muted-foreground mb-6 flex-1 text-sm lg:text-base leading-relaxed">
+                    Das Angebot ‚Lieblingsdose' bringt gesunde Ernährung direkt in den Alltag von Kitas, Schulen und Freizeiteinrichtungen. Gemeinsam mit Captain Apfel und seiner Crew entstehen bunte Brotdosen, die Kindern Spaß machen und Energie geben.
+                  </p>
+                  
                   <Link to="/meine-angebote/workshop-lieblingsdose">
-                    Mehr erfahren
-                    <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                    <Button className="w-full bg-secondary hover:bg-secondary-dark text-secondary-foreground rounded-xl py-3 lg:py-4 text-base lg:text-lg">
+                      Mehr erfahren
+                      <ArrowRight className="ml-2 h-4 w-4 lg:h-5 lg:w-5" />
+                    </Button>
                   </Link>
-                </Button>
+                </div>
               </div>
             </motion.div>
           </div>
@@ -475,7 +487,7 @@ const Index = () => {
               Jetzt bist du dran: Stifte raus und los!
             </p>
             
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 max-w-5xl mx-auto">
               {/* Download Box 1 */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -483,28 +495,30 @@ const Index = () => {
                 transition={{ duration: 0.6, delay: 0.1 }}
                 viewport={{ once: true }}
               >
-                <div className="offer-box text-center">
-                  <div className="bg-red-500/10 rounded-xl h-32 mb-6 flex items-center justify-center overflow-hidden">
+                <div className="offer-box text-center h-full flex flex-col">
+                  <div className="bg-red-500/10 rounded-xl h-32 lg:h-40 mb-6 flex items-center justify-center overflow-hidden">
                     <img 
                       src="/lovable-uploads/8d49addc-737c-4350-bea7-33d0730e81f1.png" 
                       alt="Captain Apfel Ausmalbild" 
                       className="w-full h-full object-contain"
                     />
                   </div>
-                  <Button 
-                    size="sm" 
-                    className="bg-secondary hover:bg-secondary-dark text-white p-2 rounded-md"
-                    onClick={() => {
-                      const link = document.createElement('a');
-                      link.href = '/lovable-uploads/8d49addc-737c-4350-bea7-33d0730e81f1.png';
-                      link.download = 'captain-apfel.de1.png';
-                      document.body.appendChild(link);
-                      link.click();
-                      document.body.removeChild(link);
-                    }}
-                  >
-                    <Download className="h-4 w-4" />
-                  </Button>
+                  <div className="flex-1 flex items-end">
+                    <Button 
+                      size="sm" 
+                      className="bg-secondary hover:bg-secondary-dark text-white p-3 lg:p-4 rounded-md w-full"
+                      onClick={() => {
+                        const link = document.createElement('a');
+                        link.href = '/lovable-uploads/8d49addc-737c-4350-bea7-33d0730e81f1.png';
+                        link.download = 'captain-apfel.de1.png';
+                        document.body.appendChild(link);
+                        link.click();
+                        document.body.removeChild(link);
+                      }}
+                    >
+                      <Download className="h-4 w-4 lg:h-5 lg:w-5" />
+                    </Button>
+                  </div>
                 </div>
               </motion.div>
 
@@ -515,28 +529,30 @@ const Index = () => {
                 transition={{ duration: 0.6, delay: 0.2 }}
                 viewport={{ once: true }}
               >
-                <div className="offer-box text-center">
-                  <div className="bg-green-500/10 rounded-xl h-32 mb-6 flex items-center justify-center overflow-hidden">
+                <div className="offer-box text-center h-full flex flex-col">
+                  <div className="bg-green-500/10 rounded-xl h-32 lg:h-40 mb-6 flex items-center justify-center overflow-hidden">
                     <img 
                       src="/lovable-uploads/650cdcba-e091-48fc-932e-92c2ebac211d.png" 
                       alt="Obst und Gemüse Ausmalbild" 
                       className="w-full h-full object-contain"
                     />
                   </div>
-                  <Button 
-                    size="sm" 
-                    className="bg-secondary hover:bg-secondary-dark text-white p-2 rounded-md"
-                    onClick={() => {
-                      const link = document.createElement('a');
-                      link.href = '/lovable-uploads/650cdcba-e091-48fc-932e-92c2ebac211d.png';
-                      link.download = 'captain-apfel.de2.png';
-                      document.body.appendChild(link);
-                      link.click();
-                      document.body.removeChild(link);
-                    }}
-                  >
-                    <Download className="h-4 w-4" />
-                  </Button>
+                  <div className="flex-1 flex items-end">
+                    <Button 
+                      size="sm" 
+                      className="bg-secondary hover:bg-secondary-dark text-white p-3 lg:p-4 rounded-md w-full"
+                      onClick={() => {
+                        const link = document.createElement('a');
+                        link.href = '/lovable-uploads/650cdcba-e091-48fc-932e-92c2ebac211d.png';
+                        link.download = 'captain-apfel.de2.png';
+                        document.body.appendChild(link);
+                        link.click();
+                        document.body.removeChild(link);
+                      }}
+                    >
+                      <Download className="h-4 w-4 lg:h-5 lg:w-5" />
+                    </Button>
+                  </div>
                 </div>
               </motion.div>
 
@@ -548,28 +564,30 @@ const Index = () => {
                 viewport={{ once: true }}
                 className="sm:col-span-2 lg:col-span-1"
               >
-                <div className="offer-box text-center">
-                  <div className="bg-yellow-500/10 rounded-xl h-32 mb-6 flex items-center justify-center overflow-hidden">
+                <div className="offer-box text-center h-full flex flex-col">
+                  <div className="bg-yellow-500/10 rounded-xl h-32 lg:h-40 mb-6 flex items-center justify-center overflow-hidden">
                     <img 
                       src="/lovable-uploads/5788fa5c-f001-4880-ade2-c940c4cd66ad.png" 
                       alt="Powerzentrale Ausmalbild" 
                       className="w-full h-full object-contain"
                     />
                   </div>
-                  <Button 
-                    size="sm" 
-                    className="bg-secondary hover:bg-secondary-dark text-white p-2 rounded-md"
-                    onClick={() => {
-                      const link = document.createElement('a');
-                      link.href = '/lovable-uploads/5788fa5c-f001-4880-ade2-c940c4cd66ad.png';
-                      link.download = 'captain-apfel.de3.png';
-                      document.body.appendChild(link);
-                      link.click();
-                      document.body.removeChild(link);
-                    }}
-                  >
-                    <Download className="h-4 w-4" />
-                  </Button>
+                  <div className="flex-1 flex items-end">
+                    <Button 
+                      size="sm" 
+                      className="bg-secondary hover:bg-secondary-dark text-white p-3 lg:p-4 rounded-md w-full"
+                      onClick={() => {
+                        const link = document.createElement('a');
+                        link.href = '/lovable-uploads/5788fa5c-f001-4880-ade2-c940c4cd66ad.png';
+                        link.download = 'captain-apfel.de3.png';
+                        document.body.appendChild(link);
+                        link.click();
+                        document.body.removeChild(link);
+                      }}
+                    >
+                      <Download className="h-4 w-4 lg:h-5 lg:w-5" />
+                    </Button>
+                  </div>
                 </div>
               </motion.div>
             </div>
