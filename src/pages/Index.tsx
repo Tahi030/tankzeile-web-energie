@@ -119,39 +119,37 @@ const Index = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <div className="heading-box max-w-3xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-                Lerne die Crew kennen!
-              </h2>
-              
-              {/* Hand-drawn line effect */}
-              <div className="flex justify-center mb-6">
-                <svg width="120" height="8" viewBox="0 0 120 8" className="text-gray-600">
-                  <path
-                    d="M2,4 Q8,2 15,4 T30,3 Q40,5 50,4 T70,3 Q80,5 90,4 T110,3 Q115,2 118,4"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    fill="none"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="opacity-70"
-                    style={{
-                      filter: 'url(#roughPaperCrew)',
-                    }}
-                  />
-                  <defs>
-                    <filter id="roughPaperCrew">
-                      <feTurbulence baseFrequency="0.04" numOctaves="3" result="noise" seed="5" />
-                      <feDisplacementMap in="SourceGraphic" in2="noise" scale="0.8" />
-                    </filter>
-                  </defs>
-                </svg>
-              </div>
-              
-              <p className="text-lg md:text-xl text-gray-700">
-                Jeder hat eine besondere Kraft – gemeinsam sind sie unschlagbar!
-              </p>
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+              Lerne die Crew kennen!
+            </h2>
+            
+            {/* Hand-drawn line effect */}
+            <div className="flex justify-center mb-6">
+              <svg width="120" height="8" viewBox="0 0 120 8" className="text-white">
+                <path
+                  d="M2,4 Q8,2 15,4 T30,3 Q40,5 50,4 T70,3 Q80,5 90,4 T110,3 Q115,2 118,4"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  fill="none"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="opacity-70"
+                  style={{
+                    filter: 'url(#roughPaperCrew)',
+                  }}
+                />
+                <defs>
+                  <filter id="roughPaperCrew">
+                    <feTurbulence baseFrequency="0.04" numOctaves="3" result="noise" seed="5" />
+                    <feDisplacementMap in="SourceGraphic" in2="noise" scale="0.8" />
+                  </filter>
+                </defs>
+              </svg>
             </div>
+            
+            <p className="text-lg md:text-xl text-white/90 mb-12">
+              Jeder hat eine besondere Kraft – gemeinsam sind sie unschlagbar!
+            </p>
           </motion.div>
 
           <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto">
@@ -314,34 +312,32 @@ const Index = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <div className="heading-box max-w-3xl mx-auto">
-              <h2 className="section-title text-center mb-4 text-gray-800">
-                Unsere Angebote
-              </h2>
-              
-              {/* Hand-drawn line effect */}
-              <div className="flex justify-center">
-                <svg width="120" height="8" viewBox="0 0 120 8" className="text-gray-600">
-                  <path
-                    d="M2,4 Q8,2 15,4 T30,3 Q40,5 50,4 T70,3 Q80,5 90,4 T110,3 Q115,2 118,4"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    fill="none"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="opacity-70"
-                    style={{
-                      filter: 'url(#roughPaper1)',
-                    }}
-                  />
-                  <defs>
-                    <filter id="roughPaper1">
-                      <feTurbulence baseFrequency="0.04" numOctaves="3" result="noise" seed="1" />
-                      <feDisplacementMap in="SourceGraphic" in2="noise" scale="0.8" />
-                    </filter>
-                  </defs>
-                </svg>
-              </div>
+            <h2 className="section-title text-center mb-4 text-white">
+              Unsere Angebote
+            </h2>
+            
+            {/* Hand-drawn line effect */}
+            <div className="flex justify-center mb-12">
+              <svg width="120" height="8" viewBox="0 0 120 8" className="text-white">
+                <path
+                  d="M2,4 Q8,2 15,4 T30,3 Q40,5 50,4 T70,3 Q80,5 90,4 T110,3 Q115,2 118,4"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  fill="none"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="opacity-70"
+                  style={{
+                    filter: 'url(#roughPaper1)',
+                  }}
+                />
+                <defs>
+                  <filter id="roughPaper1">
+                    <feTurbulence baseFrequency="0.04" numOctaves="3" result="noise" seed="1" />
+                    <feDisplacementMap in="SourceGraphic" in2="noise" scale="0.8" />
+                  </filter>
+                </defs>
+              </svg>
             </div>
           </motion.div>
           
