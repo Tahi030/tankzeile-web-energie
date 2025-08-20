@@ -101,16 +101,34 @@ const Index = () => {
             </p>
           </motion.div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
-            {/* Kimmi Schlau */}
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+            {/* Captain Apfel */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.1 }}
               viewport={{ once: true }}
             >
-              <div className="crew-card-yellow">
-                <div className="bg-accent/10 rounded-xl h-32 mb-6 flex items-center justify-center">
+              <div className="crew-card-red">
+                <div className="bg-red-50 rounded-xl h-32 mb-6 flex items-center justify-center">
+                  <p className="text-sm text-muted-foreground font-medium">Captain Apfel Illustration</p>
+                </div>
+                <h3 className="text-xl font-bold text-center mb-3 text-foreground">Captain Apfel</h3>
+                <p className="text-center text-sm text-muted-foreground leading-relaxed">
+                  Captain Apfel führt die Crew auf ihrer gesunden Mission durch den Körper!
+                </p>
+              </div>
+            </motion.div>
+
+            {/* Kimmi Schlau */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              viewport={{ once: true }}
+            >
+              <div className="crew-card-orange">
+                <div className="bg-orange-50 rounded-xl h-32 mb-6 flex items-center justify-center">
                   <p className="text-sm text-muted-foreground font-medium">Kimmi Schlau Illustration</p>
                 </div>
                 <h3 className="text-xl font-bold text-center mb-3 text-foreground">Kimmi Schlau</h3>
@@ -124,7 +142,7 @@ const Index = () => {
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
               viewport={{ once: true }}
             >
               <div className="crew-card-green">
@@ -142,11 +160,11 @@ const Index = () => {
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.3 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
               viewport={{ once: true }}
             >
-              <div className="crew-card-red">
-                <div className="bg-red-50 rounded-xl h-32 mb-6 flex items-center justify-center">
+              <div className="crew-card-terracotta">
+                <div className="bg-orange-100 rounded-xl h-32 mb-6 flex items-center justify-center">
                   <p className="text-sm text-muted-foreground font-medium">Tomatenraumschiff Illustration</p>
                 </div>
                 <h3 className="text-xl font-bold text-center mb-3 text-foreground">Tomatenraumschiff</h3>
@@ -160,16 +178,34 @@ const Index = () => {
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
+              transition={{ duration: 0.8, delay: 0.5 }}
               viewport={{ once: true }}
             >
-              <div className="crew-card-brown">
-                <div className="bg-primary/10 rounded-xl h-32 mb-6 flex items-center justify-center">
+              <div className="crew-card-sand">
+                <div className="bg-amber-50 rounded-xl h-32 mb-6 flex items-center justify-center">
                   <p className="text-sm text-muted-foreground font-medium">Paffel Illustration</p>
                 </div>
                 <h3 className="text-xl font-bold text-center mb-3 text-foreground">Paffel</h3>
                 <p className="text-center text-sm text-muted-foreground leading-relaxed">
                   Paffel will Chaos machen – aber die Crew zeigt, wie man ihm standhält!
+                </p>
+              </div>
+            </motion.div>
+
+            {/* Die Powerzentrale */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.6 }}
+              viewport={{ once: true }}
+            >
+              <div className="crew-card-green">
+                <div className="bg-secondary/10 rounded-xl h-32 mb-6 flex items-center justify-center">
+                  <p className="text-sm text-muted-foreground font-medium">Die Powerzentrale Illustration</p>
+                </div>
+                <h3 className="text-xl font-bold text-center mb-3 text-foreground">Die Powerzentrale</h3>
+                <p className="text-center text-sm text-muted-foreground leading-relaxed">
+                  Hier wird die ganze Energie gesammelt und verteilt – das Herzstück jeder Mission!
                 </p>
               </div>
             </motion.div>

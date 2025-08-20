@@ -135,20 +135,24 @@
     @apply bg-card rounded-2xl p-6 shadow-sm border border-border transition-all duration-300 hover:shadow-md hover:scale-[1.02] relative overflow-hidden;
   }
   
+  .crew-card-red {
+    @apply crew-card border-l-4 border-l-red-500;
+  }
+  
+  .crew-card-orange {
+    @apply crew-card border-l-4 border-l-orange-500;
+  }
+  
   .crew-card-green {
     @apply crew-card border-l-4 border-l-secondary;
   }
   
-  .crew-card-yellow {
-    @apply crew-card border-l-4 border-l-accent;
+  .crew-card-terracotta {
+    @apply crew-card border-l-4 border-l-orange-700;
   }
   
-  .crew-card-brown {
-    @apply crew-card border-l-4 border-l-primary;
-  }
-  
-  .crew-card-red {
-    @apply crew-card border-l-4 border-l-red-400;
+  .crew-card-sand {
+    @apply crew-card border-l-4 border-l-amber-600;
   }
   
   /* Modern offer box styles */
