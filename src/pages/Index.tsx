@@ -407,7 +407,7 @@ const Index = () => {
               <div className="countdown-numbers">
                 <span className="countdown-number text-blue-500">5</span>
                 <span className="text-white/70">,</span>
-                <span className="countdown-number text-red-500">4</span>
+                <span className="countdown-number text-[hsl(var(--blackberry))]">4</span>
                 <span className="text-white/70">,</span>
                 <span className="countdown-number text-green-500">3</span>
                 <span className="text-white/70">,</span>
