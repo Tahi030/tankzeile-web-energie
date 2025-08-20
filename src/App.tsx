@@ -9,6 +9,7 @@ import CookieConsent from "./components/CookieConsent";
 
 // Pages
 import Index from "./pages/Index";
+import CaptainApfelHome from "./pages/CaptainApfelHome";
 import AlltagLeichterLeben from "./pages/AlltagLeichterLeben";
 import VerstehenVeraendern from "./pages/VerstehenVeraendern";
 import ErlebenVerbinden from "./pages/ErlebenVerbinden";
@@ -41,6 +42,7 @@ const App = () => (
             <PageLayout>
               <Routes>
                 <Route path="/" element={<Index />} />
+                <Route path="/captain-apfel" element={<CaptainApfelHome />} />
                 <Route path="/meine-angebote/workshop-gesunde-mission" element={<WorkshopGesundeMission />} />
                 <Route path="/meine-angebote/workshop-lieblingsdose" element={<WorkshopLieblingsdose />} />
                 <Route path="/meine-angebote/alltag-leichter-leben" element={<AlltagLeichterLeben />} />
