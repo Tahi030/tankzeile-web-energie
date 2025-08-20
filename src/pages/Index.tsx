@@ -77,8 +77,127 @@ const Index = () => {
             viewport={{ once: true }}
           >
             <p className="text-lg md:text-xl text-foreground leading-relaxed">
-              Captain Apfel ist nicht allein – zusammen mit Kimmi Schlau, Kai Mutig und dem Tomatenraumschiff geht er auf gesunde Mission. In der Powerzentrale im Bauch wird Energie gesammelt – während Paffel, der freche Saboteur, immer versucht, Chaos zu stiften.
+              Captain Apfel ist nicht allein – gemeinsam mit Kimmi Schlau, Kai Mutig und dem Tomatenraumschiff geht er auf eine gesunde Mission. In der Powerzentrale im Bauch wird Energie gesammelt – während Paffel, der freche Saboteur, immer wieder versucht, Chaos zu stiften.
             </p>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* CREW-Bereich - Besonders auffällig gestaltet */}
+      <section className="py-20 bg-gradient-to-br from-primary via-secondary to-accent relative overflow-hidden">
+        {/* Dekorative Elemente */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-10 left-10 w-20 h-20 bg-white rounded-full animate-pulse"></div>
+          <div className="absolute bottom-20 right-20 w-16 h-16 bg-white rounded-full animate-pulse delay-1000"></div>
+          <div className="absolute top-1/2 left-1/4 w-12 h-12 bg-white rounded-full animate-pulse delay-500"></div>
+        </div>
+        
+        <div className="container-custom relative z-10">
+          <motion.div 
+            className="text-center mb-16"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 drop-shadow-lg">
+              Lerne die Crew kennen!
+            </h2>
+            <p className="text-xl md:text-2xl text-white/90 drop-shadow-md">
+              Jeder hat eine besondere Kraft – gemeinsam sind sie unschlagbar!
+            </p>
+          </motion.div>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+            {/* Kimmi Schlau */}
+            <motion.div
+              initial={{ opacity: 0, y: 50, rotate: -5 }}
+              whileInView={{ opacity: 1, y: 0, rotate: 0 }}
+              transition={{ duration: 0.8, delay: 0.1 }}
+              viewport={{ once: true }}
+              className="hover-scale"
+            >
+              <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-6 shadow-2xl border-4 border-yellow-300 hover:border-yellow-400 transition-all duration-300 hover:shadow-yellow-400/20">
+                <div className="bg-gradient-to-br from-yellow-200 to-orange-200 rounded-xl h-32 mb-4 flex items-center justify-center border-2 border-yellow-400">
+                  <p className="text-sm text-yellow-700 font-medium">Kimmi Schlau</p>
+                </div>
+                <h3 className="text-xl font-bold text-center mb-2 text-primary">Kimmi Schlau</h3>
+                <p className="text-center text-sm text-muted-foreground">
+                  Kimmi Schlau kennt die besten Tipps für eine gesunde Powerzentrale!
+                </p>
+              </div>
+            </motion.div>
+
+            {/* Kai Mutig */}
+            <motion.div
+              initial={{ opacity: 0, y: 50, rotate: 5 }}
+              whileInView={{ opacity: 1, y: 0, rotate: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="hover-scale"
+            >
+              <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-6 shadow-2xl border-4 border-green-400 hover:border-green-500 transition-all duration-300 hover:shadow-green-400/20">
+                <div className="bg-gradient-to-br from-green-200 to-emerald-200 rounded-xl h-32 mb-4 flex items-center justify-center border-2 border-green-400">
+                  <p className="text-sm text-green-700 font-medium">Kai Mutig</p>
+                </div>
+                <h3 className="text-xl font-bold text-center mb-2 text-primary">Kai Mutig</h3>
+                <p className="text-center text-sm text-muted-foreground">
+                  Kai Mutig bringt Stärke und zeigt, wie man mutig neue Sachen probiert!
+                </p>
+              </div>
+            </motion.div>
+
+            {/* Tomatenraumschiff */}
+            <motion.div
+              initial={{ opacity: 0, y: 50, rotate: -3 }}
+              whileInView={{ opacity: 1, y: 0, rotate: 0 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+              viewport={{ once: true }}
+              className="hover-scale"
+            >
+              <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-6 shadow-2xl border-4 border-red-400 hover:border-red-500 transition-all duration-300 hover:shadow-red-400/20">
+                <div className="bg-gradient-to-br from-red-200 to-pink-200 rounded-xl h-32 mb-4 flex items-center justify-center border-2 border-red-400">
+                  <p className="text-sm text-red-700 font-medium">Tomatenraumschiff</p>
+                </div>
+                <h3 className="text-xl font-bold text-center mb-2 text-primary">Tomatenraumschiff</h3>
+                <p className="text-center text-sm text-muted-foreground">
+                  Das Tomatenraumschiff fliegt zur Powerzentrale und bringt wichtige Nährstoffe!
+                </p>
+              </div>
+            </motion.div>
+
+            {/* Paffel */}
+            <motion.div
+              initial={{ opacity: 0, y: 50, rotate: 3 }}
+              whileInView={{ opacity: 1, y: 0, rotate: 0 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+              viewport={{ once: true }}
+              className="hover-scale"
+            >
+              <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-6 shadow-2xl border-4 border-purple-400 hover:border-purple-500 transition-all duration-300 hover:shadow-purple-400/20">
+                <div className="bg-gradient-to-br from-purple-200 to-violet-200 rounded-xl h-32 mb-4 flex items-center justify-center border-2 border-purple-400">
+                  <p className="text-sm text-purple-700 font-medium">Paffel</p>
+                </div>
+                <h3 className="text-xl font-bold text-center mb-2 text-primary">Paffel</h3>
+                <p className="text-center text-sm text-muted-foreground">
+                  Paffel will Chaos machen – aber die Crew zeigt, wie man ihm standhält!
+                </p>
+              </div>
+            </motion.div>
+          </div>
+
+          <motion.div 
+            className="text-center mt-12"
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, delay: 0.5 }}
+            viewport={{ once: true }}
+          >
+            <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-8 max-w-2xl mx-auto border border-white/30">
+              <p className="text-xl text-white font-medium">
+                🌟 Zusammen machen sie jede Einrichtung zu einem Ort voller Energie, Spaß und gesunder Abenteuer! 🌟
+              </p>
+            </div>
           </motion.div>
         </div>
       </section>
@@ -117,7 +236,7 @@ const Index = () => {
                 </CardHeader>
                 <CardContent>
                   <CardDescription className="text-base mb-6">
-                    Zusammen mit Captain Apfel und seiner Crew erleben Kinder ein Abenteuer: Wie kommt Energie in den Körper, was macht uns stark und konzentriert, und wie bleibt die Powerzentrale hell und aktiv?
+                    Mit Captain Apfel und seiner Crew erleben Kinder ein spannendes Abenteuer: Wie kommt Energie in den Körper, was macht uns stark und konzentriert, und wie bleibt die Powerzentrale hell und aktiv?
                   </CardDescription>
                   <Button asChild className="w-full group">
                     <Link to="/meine-angebote/workshop-gesunde-mission">
@@ -149,7 +268,7 @@ const Index = () => {
                 </CardHeader>
                 <CardContent>
                   <CardDescription className="text-base mb-6">
-                    Das Angebot 'Lieblingsdose' bringt gesunde Ernährung in den Alltag von Kindergärten, Schulen und Freizeiteinrichtungen. Zusammen mit Captain Apfel und seiner Crew entstehen bunte und gesunde Brotboxen.
+                    Das Angebot ‚Lieblingsdose' bringt gesunde Ernährung direkt in den Alltag von Kitas, Schulen und Freizeiteinrichtungen. Gemeinsam mit Captain Apfel und seiner Crew entstehen bunte Brotdosen, die Kindern Spaß machen und Energie geben.
                   </CardDescription>
                   <Button asChild className="w-full group">
                     <Link to="/meine-angebote/workshop-lieblingsdose">
@@ -176,7 +295,7 @@ const Index = () => {
           >
             <h2 className="section-title mb-8">Musik & Stimmung</h2>
             <p className="text-lg md:text-xl text-foreground mb-8 leading-relaxed">
-              Mit Captain Apfel und seiner Crew gibt es Musik, gute Stimmung und viel Bewegung.
+              Bei Captain Apfel und seiner Crew gibt's Musik, gute Laune und jede Menge Bewegung.
             </p>
             
             {/* Bild/Illustration Platzhalter */}
@@ -202,7 +321,7 @@ const Index = () => {
           >
             <h2 className="section-title mb-6">Kostenlose Ausmalbilder</h2>
             <p className="text-lg md:text-xl text-foreground mb-12 leading-relaxed">
-              Hier können Kinder und Einrichtungen kostenlose Ausmalbilder von Captain Apfel und seiner Crew herunterladen.
+              Hier können Kinder und Einrichtungen Ausmalbilder von Captain Apfel und seiner Crew kostenlos herunterladen.
             </p>
             
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
