@@ -29,11 +29,11 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-warm-gradient py-16 md:py-24">
+      <section className="bg-primary py-16 md:py-24">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto text-center">
             <motion.h1 
-              className="text-4xl md:text-6xl font-bold mb-4 text-foreground"
+              className="text-4xl md:text-6xl font-bold mb-4 text-white"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.1 }}
@@ -41,8 +41,32 @@ const Index = () => {
               Captain Apfel & seine Crew – auf gesunder Mission
             </motion.h1>
             
+            {/* Hand-drawn line effect */}
+            <div className="flex justify-center mb-6">
+              <svg width="120" height="8" viewBox="0 0 120 8" className="text-white">
+                <path
+                  d="M2,4 Q8,2 15,4 T30,3 Q40,5 50,4 T70,3 Q80,5 90,4 T110,3 Q115,2 118,4"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  fill="none"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="opacity-70"
+                  style={{
+                    filter: 'url(#roughPaper0)',
+                  }}
+                />
+                <defs>
+                  <filter id="roughPaper0">
+                    <feTurbulence baseFrequency="0.04" numOctaves="3" result="noise" seed="0" />
+                    <feDisplacementMap in="SourceGraphic" in2="noise" scale="0.8" />
+                  </filter>
+                </defs>
+              </svg>
+            </div>
+            
             <motion.h2 
-              className="text-2xl md:text-3xl font-medium mb-12 text-muted-foreground"
+              className="text-2xl md:text-3xl font-medium mb-12 text-secondary"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
@@ -93,10 +117,35 @@ const Index = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
               Lerne die Crew kennen!
             </h2>
-            <p className="text-xl md:text-2xl text-muted-foreground">
+            
+            {/* Hand-drawn line effect */}
+            <div className="flex justify-center mb-6">
+              <svg width="120" height="8" viewBox="0 0 120 8" className="text-white">
+                <path
+                  d="M2,4 Q8,2 15,4 T30,3 Q40,5 50,4 T70,3 Q80,5 90,4 T110,3 Q115,2 118,4"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  fill="none"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="opacity-70"
+                  style={{
+                    filter: 'url(#roughPaperCrew)',
+                  }}
+                />
+                <defs>
+                  <filter id="roughPaperCrew">
+                    <feTurbulence baseFrequency="0.04" numOctaves="3" result="noise" seed="5" />
+                    <feDisplacementMap in="SourceGraphic" in2="noise" scale="0.8" />
+                  </filter>
+                </defs>
+              </svg>
+            </div>
+            
+            <p className="text-xl md:text-2xl text-white/80">
               Jeder hat eine besondere Kraft – gemeinsam sind sie unschlagbar!
             </p>
           </motion.div>
