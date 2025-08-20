@@ -231,7 +231,7 @@ const Index = () => {
       <section className="py-16 bg-background">
         <div className="container-custom">
           <motion.h2 
-            className="section-title text-center mb-12"
+            className="section-title text-center mb-4"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -239,6 +239,30 @@ const Index = () => {
           >
             Unsere Angebote
           </motion.h2>
+          
+          {/* Hand-drawn line effect */}
+          <div className="flex justify-center mb-12">
+            <svg width="120" height="8" viewBox="0 0 120 8" className="text-primary">
+              <path
+                d="M2,4 Q8,2 15,4 T30,3 Q40,5 50,4 T70,3 Q80,5 90,4 T110,3 Q115,2 118,4"
+                stroke="currentColor"
+                strokeWidth="2"
+                fill="none"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="opacity-70"
+                style={{
+                  filter: 'url(#roughPaper1)',
+                }}
+              />
+              <defs>
+                <filter id="roughPaper1">
+                  <feTurbulence baseFrequency="0.04" numOctaves="3" result="noise" seed="1" />
+                  <feDisplacementMap in="SourceGraphic" in2="noise" scale="0.8" />
+                </filter>
+              </defs>
+            </svg>
+          </div>
           
           <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
             {/* Box 1: Reise zur Powerzentrale */}
@@ -310,7 +334,7 @@ const Index = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="section-title mb-8">
+            <h2 className="section-title mb-4">
               <div className="countdown-numbers">
                 <span className="countdown-number">5</span>
                 <span className="text-muted-foreground">,</span>
@@ -324,6 +348,30 @@ const Index = () => {
               </div>
               <div className="text-foreground mt-2">– Volle Schubkraft voraus!</div>
             </h2>
+            
+            {/* Hand-drawn line effect */}
+            <div className="flex justify-center mb-8">
+              <svg width="120" height="8" viewBox="0 0 120 8" className="text-primary">
+                <path
+                  d="M2,4 Q8,2 15,4 T30,3 Q40,5 50,4 T70,3 Q80,5 90,4 T110,3 Q115,2 118,4"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  fill="none"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="opacity-70"
+                  style={{
+                    filter: 'url(#roughPaper2)',
+                  }}
+                />
+                <defs>
+                  <filter id="roughPaper2">
+                    <feTurbulence baseFrequency="0.04" numOctaves="3" result="noise" seed="2" />
+                    <feDisplacementMap in="SourceGraphic" in2="noise" scale="0.8" />
+                  </filter>
+                </defs>
+              </svg>
+            </div>
             <p className="text-lg md:text-xl text-muted-foreground mb-12 leading-relaxed">
               Bei Captain Apfel und seiner Crew gibt's Musik, gute Laune und jede Menge Bewegung.
             </p>
@@ -349,7 +397,31 @@ const Index = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="section-title mb-6">Mission Buntstift</h2>
+            <h2 className="section-title mb-4">Mission Buntstift</h2>
+            
+            {/* Hand-drawn line effect */}
+            <div className="flex justify-center mb-6">
+              <svg width="120" height="8" viewBox="0 0 120 8" className="text-primary">
+                <path
+                  d="M2,4 Q8,2 15,4 T30,3 Q40,5 50,4 T70,3 Q80,5 90,4 T110,3 Q115,2 118,4"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  fill="none"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="opacity-70"
+                  style={{
+                    filter: 'url(#roughPaper3)',
+                  }}
+                />
+                <defs>
+                  <filter id="roughPaper3">
+                    <feTurbulence baseFrequency="0.04" numOctaves="3" result="noise" seed="3" />
+                    <feDisplacementMap in="SourceGraphic" in2="noise" scale="0.8" />
+                  </filter>
+                </defs>
+              </svg>
+            </div>
             <p className="text-lg md:text-xl text-muted-foreground mb-12 leading-relaxed">
               Jetzt bist du dran: Stifte raus und los!
             </p>
@@ -466,7 +538,31 @@ const Index = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="section-title mb-8">Das Captain-Apfel-Lied</h2>
+            <h2 className="section-title mb-4">Das Captain-Apfel-Lied</h2>
+            
+            {/* Hand-drawn line effect */}
+            <div className="flex justify-center mb-8">
+              <svg width="120" height="8" viewBox="0 0 120 8" className="text-primary">
+                <path
+                  d="M2,4 Q8,2 15,4 T30,3 Q40,5 50,4 T70,3 Q80,5 90,4 T110,3 Q115,2 118,4"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  fill="none"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="opacity-70"
+                  style={{
+                    filter: 'url(#roughPaper4)',
+                  }}
+                />
+                <defs>
+                  <filter id="roughPaper4">
+                    <feTurbulence baseFrequency="0.04" numOctaves="3" result="noise" seed="4" />
+                    <feDisplacementMap in="SourceGraphic" in2="noise" scale="0.8" />
+                  </filter>
+                </defs>
+              </svg>
+            </div>
             
             {/* YouTube Video Platzhalter */}
             <div className="bg-card rounded-2xl p-8 shadow-sm border border-border">
