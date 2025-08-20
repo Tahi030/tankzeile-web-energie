@@ -38,7 +38,7 @@ const Index = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.1 }}
             >
-              Captain Apfel & seine Crew
+              Captain Apfel & seine Crew - auf gesunder Mission
             </motion.h1>
             
             <motion.h2 
@@ -77,7 +77,7 @@ const Index = () => {
             viewport={{ once: true }}
           >
             <p className="text-lg md:text-xl text-foreground leading-relaxed">
-              Captain Apfel is not alone – together with Kimmi Schlau, Kai Mutig and the Tomato Spaceship he goes on a healthy mission. In the Powerzentrale inside the belly, energy is collected – while Paffel, the cheeky saboteur, always tries to cause chaos.
+              Captain Apfel ist nicht allein – zusammen mit Kimmi Schlau, Kai Mutig und dem Tomatenraumschiff geht er auf gesunde Mission. In der Powerzentrale im Bauch wird Energie gesammelt – während Paffel, der freche Saboteur, immer versucht, Chaos zu stiften.
             </p>
           </motion.div>
         </div>
@@ -117,7 +117,7 @@ const Index = () => {
                 </CardHeader>
                 <CardContent>
                   <CardDescription className="text-base mb-6">
-                    Together with Captain Apfel and his crew, children experience an adventure: How does energy get into the body, what makes us strong and focused, and how does the Powerzentrale stay bright and active?
+                    Zusammen mit Captain Apfel und seiner Crew erleben Kinder ein Abenteuer: Wie kommt Energie in den Körper, was macht uns stark und konzentriert, und wie bleibt die Powerzentrale hell und aktiv?
                   </CardDescription>
                   <Button asChild className="w-full group">
                     <Link to="/meine-angebote/workshop-gesunde-mission">
@@ -149,7 +149,7 @@ const Index = () => {
                 </CardHeader>
                 <CardContent>
                   <CardDescription className="text-base mb-6">
-                    The 'Lieblingsdose' offer brings healthy eating into everyday life in kindergartens, schools and leisure facilities. Together with Captain Apfel and his crew, colorful and healthy lunch boxes are created.
+                    Das Angebot 'Lieblingsdose' bringt gesunde Ernährung in den Alltag von Kindergärten, Schulen und Freizeiteinrichtungen. Zusammen mit Captain Apfel und seiner Crew entstehen bunte und gesunde Brotboxen.
                   </CardDescription>
                   <Button asChild className="w-full group">
                     <Link to="/meine-angebote/workshop-lieblingsdose">
@@ -176,7 +176,7 @@ const Index = () => {
           >
             <h2 className="section-title mb-8">Musik & Stimmung</h2>
             <p className="text-lg md:text-xl text-foreground mb-8 leading-relaxed">
-              With Captain Apfel and his crew there is music, good mood and lots of movement.
+              Mit Captain Apfel und seiner Crew gibt es Musik, gute Stimmung und viel Bewegung.
             </p>
             
             {/* Bild/Illustration Platzhalter */}
@@ -202,7 +202,7 @@ const Index = () => {
           >
             <h2 className="section-title mb-6">Kostenlose Ausmalbilder</h2>
             <p className="text-lg md:text-xl text-foreground mb-12 leading-relaxed">
-              Here children and institutions can download free coloring pictures of Captain Apfel and his crew.
+              Hier können Kinder und Einrichtungen kostenlose Ausmalbilder von Captain Apfel und seiner Crew herunterladen.
             </p>
             
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">

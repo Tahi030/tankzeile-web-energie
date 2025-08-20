@@ -103,7 +103,7 @@ const Header = () => {
                 </div>
                 <div className="absolute left-0 invisible group-hover:visible opacity-0 group-hover:opacity-100 mt-2 w-60 rounded-md shadow-lg bg-white ring-1 ring-primary/20 z-50 transition-all duration-150">
                   <div className="py-1" role="menu" aria-orientation="vertical">
-                    <DropdownItem to="/meine-angebote/workshop-gesunde-mission" label="Workshop - auf gesunder Mission" />
+                    <DropdownItem to="/meine-angebote/workshop-gesunde-mission" label="Workshop - Reise zur Powerzentrale" />
                     <DropdownItem to="/meine-angebote/workshop-lieblingsdose" label="Workshop - Lieblingsdose" />
                     <DropdownItem to="/meine-angebote/alltag-leichter-leben" label="Alltag leichter leben" />
                   </div>
@@ -159,7 +159,7 @@ const Header = () => {
             <div className="border-t border-gray-200 pt-2">
               <div className={`px-3 py-2 font-medium ${location.pathname.includes('/meine-angebote/') ? 'text-primary-dark font-bold' : ''}`}>Alles auf einen Blick</div>
               <Link to="/meine-angebote/workshop-gesunde-mission" className="block pl-6 py-2 text-sm" onClick={() => {setMobileMenuOpen(false); window.scrollTo(0, 0);}}>
-                Workshop - auf gesunder Mission
+                Workshop - Reise zur Powerzentrale
               </Link>
               <Link to="/meine-angebote/workshop-lieblingsdose" className="block pl-6 py-2 text-sm" onClick={() => {setMobileMenuOpen(false); window.scrollTo(0, 0);}}>
                 Workshop - Lieblingsdose
