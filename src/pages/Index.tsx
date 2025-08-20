@@ -120,13 +120,13 @@ const Index = () => {
             viewport={{ once: true }}
           >
             <div className="heading-box max-w-3xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
                 Lerne die Crew kennen!
               </h2>
               
               {/* Hand-drawn line effect */}
               <div className="flex justify-center mb-6">
-                <svg width="120" height="8" viewBox="0 0 120 8" className="text-white">
+                <svg width="120" height="8" viewBox="0 0 120 8" className="text-gray-600">
                   <path
                     d="M2,4 Q8,2 15,4 T30,3 Q40,5 50,4 T70,3 Q80,5 90,4 T110,3 Q115,2 118,4"
                     stroke="currentColor"
@@ -148,7 +148,7 @@ const Index = () => {
                 </svg>
               </div>
               
-              <p className="text-lg md:text-xl text-white/90">
+              <p className="text-lg md:text-xl text-gray-700">
                 Jeder hat eine besondere Kraft – gemeinsam sind sie unschlagbar!
               </p>
             </div>
@@ -163,13 +163,17 @@ const Index = () => {
               viewport={{ once: true }}
             >
               <div className="crew-card-red">
-                <div className="bg-red-50 rounded-lg h-20 mb-4 flex items-center justify-center relative z-10">
-                  <p className="text-xs text-muted-foreground font-medium">Captain Apfel</p>
+                <div className="polaroid-photo">
+                  <div className="w-full h-full bg-red-100 rounded flex items-center justify-center">
+                    <span className="text-2xl">🍎</span>
+                  </div>
+                  <div className="polaroid-name">Captain Apfel</div>
                 </div>
-                <h3 className="text-lg font-bold text-center mb-2 text-foreground relative z-10">Captain Apfel</h3>
-                <p className="text-center text-xs text-muted-foreground leading-relaxed relative z-10">
-                  Führt die Crew auf ihrer gesunden Mission durch den Körper!
-                </p>
+                <div className="text-center px-2">
+                  <p className="text-xs text-gray-600 leading-relaxed">
+                    Führt die Crew auf ihrer gesunden Mission durch den Körper!
+                  </p>
+                </div>
               </div>
             </motion.div>
 
@@ -181,13 +185,17 @@ const Index = () => {
               viewport={{ once: true }}
             >
               <div className="crew-card-orange">
-                <div className="bg-orange-50 rounded-lg h-20 mb-4 flex items-center justify-center relative z-10">
-                  <p className="text-xs text-muted-foreground font-medium">Kimmi Schlau</p>
+                <div className="polaroid-photo">
+                  <div className="w-full h-full bg-orange-100 rounded flex items-center justify-center">
+                    <span className="text-2xl">🧠</span>
+                  </div>
+                  <div className="polaroid-name">Kimmi Schlau</div>
                 </div>
-                <h3 className="text-lg font-bold text-center mb-2 text-foreground relative z-10">Kimmi Schlau</h3>
-                <p className="text-center text-xs text-muted-foreground leading-relaxed relative z-10">
-                  Kennt die besten Tipps für eine gesunde Powerzentrale!
-                </p>
+                <div className="text-center px-2">
+                  <p className="text-xs text-gray-600 leading-relaxed">
+                    Kennt die besten Tipps für eine gesunde Powerzentrale!
+                  </p>
+                </div>
               </div>
             </motion.div>
 
@@ -199,13 +207,17 @@ const Index = () => {
               viewport={{ once: true }}
             >
               <div className="crew-card-green">
-                <div className="bg-secondary/10 rounded-lg h-20 mb-4 flex items-center justify-center relative z-10">
-                  <p className="text-xs text-muted-foreground font-medium">Kai Mutig</p>
+                <div className="polaroid-photo">
+                  <div className="w-full h-full bg-green-100 rounded flex items-center justify-center">
+                    <span className="text-2xl">💪</span>
+                  </div>
+                  <div className="polaroid-name">Kai Mutig</div>
                 </div>
-                <h3 className="text-lg font-bold text-center mb-2 text-foreground relative z-10">Kai Mutig</h3>
-                <p className="text-center text-xs text-muted-foreground leading-relaxed relative z-10">
-                  Bringt Stärke und zeigt, wie man mutig neue Sachen probiert!
-                </p>
+                <div className="text-center px-2">
+                  <p className="text-xs text-gray-600 leading-relaxed">
+                    Bringt Stärke und zeigt, wie man mutig neue Sachen probiert!
+                  </p>
+                </div>
               </div>
             </motion.div>
 
@@ -217,13 +229,17 @@ const Index = () => {
               viewport={{ once: true }}
             >
               <div className="crew-card-terracotta">
-                <div className="bg-orange-100 rounded-lg h-20 mb-4 flex items-center justify-center relative z-10">
-                  <p className="text-xs text-muted-foreground font-medium">Tomatenraumschiff</p>
+                <div className="polaroid-photo">
+                  <div className="w-full h-full bg-red-200 rounded flex items-center justify-center">
+                    <span className="text-2xl">🚀</span>
+                  </div>
+                  <div className="polaroid-name">Tomatenraumschiff</div>
                 </div>
-                <h3 className="text-lg font-bold text-center mb-2 text-foreground relative z-10">Tomatenraumschiff</h3>
-                <p className="text-center text-xs text-muted-foreground leading-relaxed relative z-10">
-                  Fliegt zur Powerzentrale und bringt wichtige Nährstoffe!
-                </p>
+                <div className="text-center px-2">
+                  <p className="text-xs text-gray-600 leading-relaxed">
+                    Fliegt zur Powerzentrale und bringt wichtige Nährstoffe!
+                  </p>
+                </div>
               </div>
             </motion.div>
 
@@ -235,13 +251,17 @@ const Index = () => {
               viewport={{ once: true }}
             >
               <div className="crew-card-sand">
-                <div className="bg-amber-50 rounded-lg h-20 mb-4 flex items-center justify-center relative z-10">
-                  <p className="text-xs text-muted-foreground font-medium">Paffel</p>
+                <div className="polaroid-photo">
+                  <div className="w-full h-full bg-yellow-100 rounded flex items-center justify-center">
+                    <span className="text-2xl">😈</span>
+                  </div>
+                  <div className="polaroid-name">Paffel</div>
                 </div>
-                <h3 className="text-lg font-bold text-center mb-2 text-foreground relative z-10">Paffel</h3>
-                <p className="text-center text-xs text-muted-foreground leading-relaxed relative z-10">
-                  Will Chaos machen – aber die Crew zeigt, wie man ihm standhält!
-                </p>
+                <div className="text-center px-2">
+                  <p className="text-xs text-gray-600 leading-relaxed">
+                    Will Chaos machen – aber die Crew zeigt, wie man ihm standhält!
+                  </p>
+                </div>
               </div>
             </motion.div>
 
@@ -253,13 +273,17 @@ const Index = () => {
               viewport={{ once: true }}
             >
               <div className="crew-card-green">
-                <div className="bg-secondary/10 rounded-lg h-20 mb-4 flex items-center justify-center relative z-10">
-                  <p className="text-xs text-muted-foreground font-medium">Die Powerzentrale</p>
+                <div className="polaroid-photo">
+                  <div className="w-full h-full bg-green-200 rounded flex items-center justify-center">
+                    <span className="text-2xl">⚡</span>
+                  </div>
+                  <div className="polaroid-name">Die Powerzentrale</div>
                 </div>
-                <h3 className="text-lg font-bold text-center mb-2 text-foreground relative z-10">Die Powerzentrale</h3>
-                <p className="text-center text-xs text-muted-foreground leading-relaxed relative z-10">
-                  Hier wird die ganze Energie gesammelt und verteilt – das Herzstück jeder Mission!
-                </p>
+                <div className="text-center px-2">
+                  <p className="text-xs text-gray-600 leading-relaxed">
+                    Hier wird die ganze Energie gesammelt und verteilt – das Herzstück jeder Mission!
+                  </p>
+                </div>
               </div>
             </motion.div>
           </div>
@@ -291,13 +315,13 @@ const Index = () => {
             viewport={{ once: true }}
           >
             <div className="heading-box max-w-3xl mx-auto">
-              <h2 className="section-title text-center mb-4 text-white">
+              <h2 className="section-title text-center mb-4 text-gray-800">
                 Unsere Angebote
               </h2>
               
               {/* Hand-drawn line effect */}
               <div className="flex justify-center">
-                <svg width="120" height="8" viewBox="0 0 120 8" className="text-white">
+                <svg width="120" height="8" viewBox="0 0 120 8" className="text-gray-600">
                   <path
                     d="M2,4 Q8,2 15,4 T30,3 Q40,5 50,4 T70,3 Q80,5 90,4 T110,3 Q115,2 118,4"
                     stroke="currentColor"

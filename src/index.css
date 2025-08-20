@@ -130,39 +130,43 @@
     @apply text-xl md:text-2xl font-medium mb-4 text-foreground;
   }
   
-  /* Moderne, ansprechende crew card styles */
+  /* Polaroid-Style Crew Cards für Kinder */
   .crew-card {
-    @apply bg-white/70 backdrop-blur-sm rounded-2xl p-5 shadow-lg border border-white/40 transition-all duration-300 hover:shadow-xl hover:scale-[1.03] hover:bg-white/80 relative overflow-hidden;
+    @apply bg-white rounded-lg p-3 shadow-lg border-2 border-white transition-all duration-300 hover:shadow-xl hover:scale-[1.05] relative h-full;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
   }
   
-  .crew-card::before {
+  .crew-card::after {
     content: '';
-    @apply absolute inset-0 bg-gradient-to-br from-white/20 to-transparent rounded-2xl pointer-events-none;
+    @apply absolute -bottom-1 -right-1 w-full h-full bg-gray-200/50 rounded-lg -z-10;
+  }
+  
+  .polaroid-photo {
+    @apply bg-gray-100 rounded-md mb-3 p-2 aspect-square flex items-center justify-center relative;
+  }
+  
+  .polaroid-name {
+    @apply absolute bottom-1 left-1 right-1 text-center text-xs font-sisterhood text-gray-700 bg-white/80 rounded px-1 py-0.5;
   }
   
   .crew-card-red {
-    @apply crew-card border-l-4 border-l-red-500;
-    background: linear-gradient(135deg, rgba(239, 68, 68, 0.1) 0%, rgba(255, 255, 255, 0.7) 100%);
+    @apply crew-card;
   }
   
   .crew-card-orange {
-    @apply crew-card border-l-4 border-l-orange-500;
-    background: linear-gradient(135deg, rgba(249, 115, 22, 0.1) 0%, rgba(255, 255, 255, 0.7) 100%);
+    @apply crew-card;
   }
   
   .crew-card-green {
-    @apply crew-card border-l-4 border-l-secondary;
-    background: linear-gradient(135deg, hsl(var(--secondary) / 0.1) 0%, rgba(255, 255, 255, 0.7) 100%);
+    @apply crew-card;
   }
   
   .crew-card-terracotta {
-    @apply crew-card border-l-4 border-l-orange-700;
-    background: linear-gradient(135deg, rgba(194, 65, 12, 0.1) 0%, rgba(255, 255, 255, 0.7) 100%);
+    @apply crew-card;
   }
   
   .crew-card-sand {
-    @apply crew-card border-l-4 border-l-amber-600;
-    background: linear-gradient(135deg, rgba(217, 119, 6, 0.1) 0%, rgba(255, 255, 255, 0.7) 100%);
+    @apply crew-card;
   }
   
   /* Modern offer box styles */
@@ -183,9 +187,9 @@
     );
   }
   
-  /* Bessere Lesbarkeit für Überschriften */
+  /* Dezente Überschriften-Boxen in Brauntönen */
   .heading-box {
-    @apply bg-gradient-to-r from-black/60 via-black/50 to-black/60 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-white/20;
+    @apply bg-gradient-to-r from-amber-50/60 via-orange-50/60 to-amber-50/60 backdrop-blur-sm rounded-2xl p-6 shadow-sm border border-amber-200/40;
   }
 
   /* Playful countdown numbers for kids */
