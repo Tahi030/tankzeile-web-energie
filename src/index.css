@@ -160,13 +160,42 @@
     @apply bg-card rounded-2xl p-8 shadow-sm border border-border transition-all duration-300 hover:shadow-md hover:scale-[1.01] relative;
   }
   
-  /* Subtle background effects */
+  /* Subtitle background effects */
   .bg-warm-gradient {
     @apply bg-gradient-to-br from-background via-muted/30 to-primary/5;
   }
   
   .modern-section {
     @apply bg-gradient-to-b from-background to-muted/20;
+  }
+
+  /* Playful countdown numbers for kids */
+  .countdown-numbers {
+    @apply inline-flex items-center gap-2 md:gap-3;
+  }
+  
+  .countdown-number {
+    @apply font-bold text-secondary transition-all duration-300 hover:scale-110;
+  }
+  
+  .countdown-number:nth-child(1) {
+    @apply text-3xl md:text-4xl transform rotate-3;
+  }
+  
+  .countdown-number:nth-child(3) {
+    @apply text-2xl md:text-3xl transform -rotate-2 relative top-1;
+  }
+  
+  .countdown-number:nth-child(5) {
+    @apply text-3xl md:text-4xl transform rotate-1;
+  }
+  
+  .countdown-number:nth-child(7) {
+    @apply text-2xl md:text-3xl transform -rotate-1 relative -top-1;
+  }
+  
+  .countdown-number:nth-child(9) {
+    @apply text-4xl md:text-5xl transform rotate-2 text-red-500;
   }
 
   .font-sisterhood {

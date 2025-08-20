@@ -310,7 +310,20 @@ const Index = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="section-title mb-8">Musik & Stimmung</h2>
+            <h2 className="section-title mb-8">
+              <span className="countdown-numbers">
+                <span className="countdown-number">5</span>
+                <span className="text-muted-foreground">,</span>
+                <span className="countdown-number">4</span>
+                <span className="text-muted-foreground">,</span>
+                <span className="countdown-number">3</span>
+                <span className="text-muted-foreground">,</span>
+                <span className="countdown-number">2</span>
+                <span className="text-muted-foreground">,</span>
+                <span className="countdown-number">1</span>
+                <span className="text-foreground ml-3">– Volle Schubkraft voraus!</span>
+              </span>
+            </h2>
             <p className="text-lg md:text-xl text-muted-foreground mb-12 leading-relaxed">
               Bei Captain Apfel und seiner Crew gibt's Musik, gute Laune und jede Menge Bewegung.
             </p>
