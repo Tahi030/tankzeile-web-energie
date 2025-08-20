@@ -13,8 +13,8 @@
 
 @layer base {
   :root {
-    /* Modern warm base colors - White and soft brown */
-    --background: 0 0% 100%; /* Pure white */
+    /* Modern warm base colors - Light cream and soft tones */
+    --background: 35 25% 98%; /* Very light cream */
     --foreground: 25 15% 25%; /* Warm dark brown for text */
 
     --card: 0 0% 100%; /* White cards */
@@ -23,20 +23,20 @@
     --popover: 0 0% 100%;
     --popover-foreground: 25 15% 25%;
 
-    /* Soft brown as primary - warm, friendly base */
-    --primary: 28 20% 85%; /* Soft, light brown */
-    --primary-foreground: 25 15% 25%; /* Dark brown text */
+    /* Soft warm brown as primary - much lighter */
+    --primary: 35 30% 75%; /* Much lighter warm brown */
+    --primary-foreground: 0 0% 100%; /* White text on brown */
 
-    /* Natural green as secondary - warm accent color */
-    --secondary: 120 25% 65%; /* Warm natural green */
+    /* Vibrant green as secondary - more prominent */
+    --secondary: 120 40% 55%; /* More vibrant green */
     --secondary-foreground: 0 0% 100%; /* White text on green */
 
-    /* Very light brown for subtle backgrounds */
-    --muted: 30 15% 97%; /* Almost white with brown tint */
+    /* Very light warm backgrounds */
+    --muted: 35 20% 96%; /* Very light warm cream */
     --muted-foreground: 25 12% 45%; /* Medium brown for muted text */
 
-    /* Warm accent colors for highlights */
-    --accent: 45 35% 88%; /* Warm, light yellow-brown */
+    /* Warm accent colors */
+    --accent: 45 35% 90%; /* Light warm accent */
     --accent-foreground: 25 15% 25%;
 
     /* Keep blackberry for special cases */
@@ -162,11 +162,21 @@
   
   /* Subtitle background effects */
   .bg-warm-gradient {
-    @apply bg-gradient-to-br from-background via-muted/30 to-primary/5;
+    background: linear-gradient(135deg, 
+      hsl(35 30% 75%) 0%, 
+      hsl(35 35% 82%) 25%,
+      hsl(40 40% 88%) 50%,
+      hsl(45 35% 92%) 75%,
+      hsl(35 20% 96%) 100%
+    );
   }
   
   .modern-section {
-    @apply bg-gradient-to-b from-background to-muted/20;
+    background: linear-gradient(180deg, 
+      hsl(35 30% 75%) 0%, 
+      hsl(35 25% 80%) 50%,
+      hsl(40 30% 85%) 100%
+    );
   }
 
   /* Playful countdown numbers for kids */
