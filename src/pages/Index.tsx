@@ -495,7 +495,7 @@ const Index = () => {
               Jetzt bist du dran: Stifte raus und los!
             </p>
             
-            <div className="grid sm:grid-cols-3 lg:grid-cols-4 gap-4 max-w-4xl mx-auto">
+            <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-3 max-w-6xl mx-auto">
               {/* Download Box 1 */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -503,18 +503,18 @@ const Index = () => {
                 transition={{ duration: 0.6, delay: 0.1 }}
                 viewport={{ once: true }}
               >
-                <div className="offer-box text-center h-full flex flex-col p-4">
-                  <div className="bg-red-500/10 rounded-xl flex-1 mb-4 flex items-center justify-center overflow-hidden min-h-[80px]">
+                <div className="offer-box text-center h-full flex flex-col p-3">
+                  <div className="bg-red-500/10 rounded-lg flex-1 mb-3 flex items-center justify-center overflow-hidden min-h-[60px]">
                     <img 
                       src="/lovable-uploads/8d49addc-737c-4350-bea7-33d0730e81f1.png" 
                       alt="Captain Apfel Ausmalbild" 
-                      className="w-full h-full object-cover rounded-lg"
+                      className="w-full h-full object-cover rounded-md"
                     />
                   </div>
                   <div className="flex justify-center">
                     <Button 
                       size="sm" 
-                      className="bg-secondary hover:bg-secondary-dark text-white px-4 py-2 rounded-md flex items-center gap-2"
+                      className="bg-secondary hover:bg-secondary-dark text-white px-2 py-1 rounded-md flex items-center gap-1 text-xs"
                       onClick={() => {
                         const link = document.createElement('a');
                         link.href = '/lovable-uploads/8d49addc-737c-4350-bea7-33d0730e81f1.png';
@@ -524,7 +524,7 @@ const Index = () => {
                         document.body.removeChild(link);
                       }}
                     >
-                      <Download className="h-4 w-4" />
+                      <Download className="h-3 w-3" />
                       Download
                     </Button>
                   </div>
@@ -538,18 +538,18 @@ const Index = () => {
                 transition={{ duration: 0.6, delay: 0.2 }}
                 viewport={{ once: true }}
               >
-                <div className="offer-box text-center h-full flex flex-col p-4">
-                  <div className="bg-green-500/10 rounded-xl flex-1 mb-4 flex items-center justify-center overflow-hidden min-h-[80px]">
+                <div className="offer-box text-center h-full flex flex-col p-3">
+                  <div className="bg-green-500/10 rounded-lg flex-1 mb-3 flex items-center justify-center overflow-hidden min-h-[60px]">
                     <img 
                       src="/lovable-uploads/650cdcba-e091-48fc-932e-92c2ebac211d.png" 
                       alt="Obst und Gemüse Ausmalbild" 
-                      className="w-full h-full object-cover rounded-lg"
+                      className="w-full h-full object-cover rounded-md"
                     />
                   </div>
                   <div className="flex justify-center">
                     <Button 
                       size="sm" 
-                      className="bg-secondary hover:bg-secondary-dark text-white px-4 py-2 rounded-md flex items-center gap-2"
+                      className="bg-secondary hover:bg-secondary-dark text-white px-2 py-1 rounded-md flex items-center gap-1 text-xs"
                       onClick={() => {
                         const link = document.createElement('a');
                         link.href = '/lovable-uploads/650cdcba-e091-48fc-932e-92c2ebac211d.png';
@@ -559,7 +559,7 @@ const Index = () => {
                         document.body.removeChild(link);
                       }}
                     >
-                      <Download className="h-4 w-4" />
+                      <Download className="h-3 w-3" />
                       Download
                     </Button>
                   </div>
@@ -573,18 +573,18 @@ const Index = () => {
                 transition={{ duration: 0.6, delay: 0.3 }}
                 viewport={{ once: true }}
               >
-                <div className="offer-box text-center h-full flex flex-col p-4">
-                  <div className="bg-yellow-500/10 rounded-xl flex-1 mb-4 flex items-center justify-center overflow-hidden min-h-[80px]">
+                <div className="offer-box text-center h-full flex flex-col p-3">
+                  <div className="bg-yellow-500/10 rounded-lg flex-1 mb-3 flex items-center justify-center overflow-hidden min-h-[60px]">
                     <img 
                       src="/lovable-uploads/5788fa5c-f001-4880-ade2-c940c4cd66ad.png" 
                       alt="Powerzentrale Ausmalbild" 
-                      className="w-full h-full object-cover rounded-lg"
+                      className="w-full h-full object-cover rounded-md"
                     />
                   </div>
                   <div className="flex justify-center">
                     <Button 
                       size="sm" 
-                      className="bg-secondary hover:bg-secondary-dark text-white px-4 py-2 rounded-md flex items-center gap-2"
+                      className="bg-secondary hover:bg-secondary-dark text-white px-2 py-1 rounded-md flex items-center gap-1 text-xs"
                       onClick={() => {
                         const link = document.createElement('a');
                         link.href = '/lovable-uploads/5788fa5c-f001-4880-ade2-c940c4cd66ad.png';
@@ -594,7 +594,7 @@ const Index = () => {
                         document.body.removeChild(link);
                       }}
                     >
-                      <Download className="h-4 w-4" />
+                      <Download className="h-3 w-3" />
                       Download
                     </Button>
                   </div>
