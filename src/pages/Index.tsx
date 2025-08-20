@@ -100,7 +100,7 @@ const Index = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <div className="bg-card/30 backdrop-blur-sm rounded-2xl p-8 md:p-12 border border-border/50 shadow-sm">
+            <div className="bg-card/30 backdrop-blur-sm rounded-2xl p-8 md:p-12 border border-border/50 shadow-sm relative">
               <div className="max-w-3xl">
                 <p className="text-lg md:text-xl text-foreground leading-relaxed mb-6">
                   Captain Apfel und seine Crew starten ihre Mission in Berlin – direkt in Kitas und Grundschulen. Vorschulkinder und Grundschüler erleben spannende Mitmach-Abenteuer rund um gesunde Ernährung, Bewegung und Musik. In der Powerzentrale entdecken sie, wie Energie entsteht, Konzentration wächst und Gesundheit Freude macht.
@@ -108,6 +108,15 @@ const Index = () => {
                 <p className="text-lg md:text-xl text-foreground leading-relaxed">
                   Und auch außerhalb Berlins können Kinder, Eltern und Familien mitmachen: Mit kostenlosen Ausmalbildern, Tipps für gesunde Gewohnheiten und dem Mitmach-Lied bringen wir gemeinsam die Powerzentrale überall zum Leuchten.
                 </p>
+              </div>
+              
+              {/* Stempel-Platzhalter */}
+              <div className="absolute -bottom-4 -right-4 w-24 h-24 md:w-32 md:h-32 rounded-full bg-red-500/20 border-4 border-red-500/40 shadow-lg transform rotate-12 flex items-center justify-center">
+                <div className="w-16 h-16 md:w-20 md:h-20 rounded-full border-2 border-red-500/60 border-dashed flex items-center justify-center">
+                  <span className="text-red-500/60 text-xs md:text-sm font-bold text-center leading-tight">
+                    STEMPEL<br/>HIER
+                  </span>
+                </div>
               </div>
             </div>
           </motion.div>
