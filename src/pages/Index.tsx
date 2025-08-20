@@ -415,7 +415,7 @@ const Index = () => {
                 <span className="text-white/70">,</span>
                 <span className="countdown-number">1</span>
               </div>
-              <div className="text-white mt-2">– Volle Schubkraft voraus!</div>
+              <div className="text-white mt-2">– Volle Obst- und Gemüsekraft voraus!</div>
             </h2>
             
             {/* Hand-drawn line effect */}
@@ -441,17 +441,41 @@ const Index = () => {
                 </defs>
               </svg>
             </div>
-            <p className="text-lg md:text-xl text-muted-foreground mb-12 leading-relaxed">
-              Bei Captain Apfel und seiner Crew gibt's Musik, gute Laune und jede Menge Bewegung.
+            <p className="text-lg md:text-xl text-white/90 mb-12 leading-relaxed">
+              Unser Mitmach-Lied zum Tanzen, Singen und Spaß haben. Beweg dich mit Captain Apfel & seiner Crew.
             </p>
             
             {/* Bild/Illustration Platzhalter */}
-            <div className="bg-card rounded-2xl p-12 max-w-md mx-auto border border-border shadow-sm">
+            <div className="bg-white/60 backdrop-blur-sm rounded-2xl p-12 max-w-md mx-auto border border-white/30 shadow-sm mb-6">
               <div className="bg-secondary/10 rounded-xl p-8 text-center">
                 <Play className="h-12 w-12 mx-auto mb-4 text-secondary" />
-                <p className="text-muted-foreground">Bild/Illustration: Musik & Bewegung</p>
+                <p className="text-muted-foreground">Video: Captain-Apfel-Lied</p>
               </div>
             </div>
+
+            {/* PDF Download Button */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              viewport={{ once: true }}
+            >
+              <Button 
+                className="bg-secondary hover:bg-secondary-dark text-white px-6 py-3 rounded-xl flex items-center gap-3 mx-auto shadow-lg hover:shadow-xl transition-all duration-300"
+                onClick={() => {
+                  // Platzhalter für PDF-Download
+                  const link = document.createElement('a');
+                  link.href = '#'; // Hier wird später die PDF-Datei verlinkt
+                  link.download = 'captain-apfel-bewegungen.pdf';
+                  document.body.appendChild(link);
+                  link.click();
+                  document.body.removeChild(link);
+                }}
+              >
+                <Download className="h-5 w-5" />
+                Bewegungen als PDF herunterladen
+              </Button>
+            </motion.div>
           </motion.div>
         </div>
       </section>
