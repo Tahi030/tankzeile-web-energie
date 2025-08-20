@@ -120,7 +120,7 @@ const Index = () => {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              Lerne die Crew kennen!
+              Lerne die Crew kennen
             </h2>
             
             {/* Hand-drawn line effect */}
@@ -148,7 +148,7 @@ const Index = () => {
             </div>
             
             <p className="text-lg md:text-xl text-white/90 mb-12">
-              Jeder hat eine besondere Kraft – gemeinsam sind sie unschlagbar!
+              Ob schlau, mutig oder frech – hier erfährst du, wer dabei ist.
             </p>
           </motion.div>
 
