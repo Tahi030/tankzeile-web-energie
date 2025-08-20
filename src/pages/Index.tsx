@@ -280,7 +280,7 @@ const Index = () => {
       <section className="py-16 bg-background">
         <div className="container-custom">
           <motion.h2 
-            className="section-title text-center mb-4"
+            className="section-title text-center mb-4 text-white"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -291,7 +291,7 @@ const Index = () => {
           
           {/* Hand-drawn line effect */}
           <div className="flex justify-center mb-12">
-            <svg width="120" height="8" viewBox="0 0 120 8" className="text-primary">
+            <svg width="120" height="8" viewBox="0 0 120 8" className="text-white">
               <path
                 d="M2,4 Q8,2 15,4 T30,3 Q40,5 50,4 T70,3 Q80,5 90,4 T110,3 Q115,2 118,4"
                 stroke="currentColor"
@@ -383,24 +383,24 @@ const Index = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="section-title mb-4">
+            <h2 className="section-title mb-4 text-white">
               <div className="countdown-numbers">
                 <span className="countdown-number">5</span>
-                <span className="text-muted-foreground">,</span>
+                <span className="text-white/70">,</span>
                 <span className="countdown-number">4</span>
-                <span className="text-muted-foreground">,</span>
+                <span className="text-white/70">,</span>
                 <span className="countdown-number">3</span>
-                <span className="text-muted-foreground">,</span>
+                <span className="text-white/70">,</span>
                 <span className="countdown-number">2</span>
-                <span className="text-muted-foreground">,</span>
+                <span className="text-white/70">,</span>
                 <span className="countdown-number">1</span>
               </div>
-              <div className="text-foreground mt-2">– Volle Schubkraft voraus!</div>
+              <div className="text-white mt-2">– Volle Schubkraft voraus!</div>
             </h2>
             
             {/* Hand-drawn line effect */}
             <div className="flex justify-center mb-8">
-              <svg width="120" height="8" viewBox="0 0 120 8" className="text-primary">
+              <svg width="120" height="8" viewBox="0 0 120 8" className="text-white">
                 <path
                   d="M2,4 Q8,2 15,4 T30,3 Q40,5 50,4 T70,3 Q80,5 90,4 T110,3 Q115,2 118,4"
                   stroke="currentColor"
@@ -446,11 +446,11 @@ const Index = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="section-title mb-4">Mission Buntstift</h2>
+            <h2 className="section-title mb-4 text-white">Mission Buntstift</h2>
             
             {/* Hand-drawn line effect */}
             <div className="flex justify-center mb-6">
-              <svg width="120" height="8" viewBox="0 0 120 8" className="text-primary">
+              <svg width="120" height="8" viewBox="0 0 120 8" className="text-white">
                 <path
                   d="M2,4 Q8,2 15,4 T30,3 Q40,5 50,4 T70,3 Q80,5 90,4 T110,3 Q115,2 118,4"
                   stroke="currentColor"
@@ -471,7 +471,7 @@ const Index = () => {
                 </defs>
               </svg>
             </div>
-            <p className="text-lg md:text-xl text-muted-foreground mb-12 leading-relaxed">
+            <p className="text-lg md:text-xl text-white/80 mb-12 leading-relaxed">
               Jetzt bist du dran: Stifte raus und los!
             </p>
             
@@ -587,11 +587,11 @@ const Index = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="section-title mb-4">Das Captain-Apfel-Lied</h2>
+            <h2 className="section-title mb-4 text-white">Das Captain-Apfel-Lied</h2>
             
             {/* Hand-drawn line effect */}
             <div className="flex justify-center mb-8">
-              <svg width="120" height="8" viewBox="0 0 120 8" className="text-primary">
+              <svg width="120" height="8" viewBox="0 0 120 8" className="text-white">
                 <path
                   d="M2,4 Q8,2 15,4 T30,3 Q40,5 50,4 T70,3 Q80,5 90,4 T110,3 Q115,2 118,4"
                   stroke="currentColor"
