@@ -102,7 +102,7 @@ const Index = () => {
           >
             <div className="text-box">
               <p className="text-lg md:text-xl text-foreground leading-relaxed mb-4">
-                Captain Apfel und seine Crew starten ihre Mission in Berlin – direkt in Kitas und Grundschulen. Vorschulkinder und Grundschüler erleben spannende Mitmach-Abenteuer rund um gesunde Ernährung, Bewegung und Musik. In der Powerzentrale erfahren sie spielerisch, wie Energie entsteht, Konzentration wächst und Gesundheit Freude macht.
+                Captain Apfel und seine Crew starten ihre Mission in Berlin – direkt in Kitas und Grundschulen. Vorschulkinder und Grundschüler erleben spannende Mitmach-Abenteuer rund um gesunde Ernährung, Bewegung und Musik. In der Powerzentrale entdecken sie, wie Energie entsteht, Konzentration wächst und Gesundheit Freude macht.
               </p>
               <p className="text-lg md:text-xl text-foreground leading-relaxed">
                 Und auch außerhalb Berlins können Kinder, Eltern und Familien mitmachen: Mit kostenlosen Ausmalbildern, Tipps für gesunde Gewohnheiten und dem Mitmach-Lied bringen wir gemeinsam die Powerzentrale überall zum Leuchten.
