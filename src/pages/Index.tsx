@@ -119,7 +119,7 @@ const Index = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <div className="text-box max-w-3xl mx-auto">
+            <div className="heading-box max-w-3xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
                 Lerne die Crew kennen!
               </h2>
@@ -154,7 +154,7 @@ const Index = () => {
             </div>
           </motion.div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto">
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto">
             {/* Captain Apfel */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -163,11 +163,11 @@ const Index = () => {
               viewport={{ once: true }}
             >
               <div className="crew-card-red">
-                <div className="bg-red-50 rounded-lg h-20 mb-4 flex items-center justify-center">
+                <div className="bg-red-50 rounded-lg h-20 mb-4 flex items-center justify-center relative z-10">
                   <p className="text-xs text-muted-foreground font-medium">Captain Apfel</p>
                 </div>
-                <h3 className="text-lg font-bold text-center mb-2 text-foreground">Captain Apfel</h3>
-                <p className="text-center text-xs text-muted-foreground leading-relaxed">
+                <h3 className="text-lg font-bold text-center mb-2 text-foreground relative z-10">Captain Apfel</h3>
+                <p className="text-center text-xs text-muted-foreground leading-relaxed relative z-10">
                   Führt die Crew auf ihrer gesunden Mission durch den Körper!
                 </p>
               </div>
@@ -181,11 +181,11 @@ const Index = () => {
               viewport={{ once: true }}
             >
               <div className="crew-card-orange">
-                <div className="bg-orange-50 rounded-lg h-20 mb-4 flex items-center justify-center">
+                <div className="bg-orange-50 rounded-lg h-20 mb-4 flex items-center justify-center relative z-10">
                   <p className="text-xs text-muted-foreground font-medium">Kimmi Schlau</p>
                 </div>
-                <h3 className="text-lg font-bold text-center mb-2 text-foreground">Kimmi Schlau</h3>
-                <p className="text-center text-xs text-muted-foreground leading-relaxed">
+                <h3 className="text-lg font-bold text-center mb-2 text-foreground relative z-10">Kimmi Schlau</h3>
+                <p className="text-center text-xs text-muted-foreground leading-relaxed relative z-10">
                   Kennt die besten Tipps für eine gesunde Powerzentrale!
                 </p>
               </div>
@@ -199,11 +199,11 @@ const Index = () => {
               viewport={{ once: true }}
             >
               <div className="crew-card-green">
-                <div className="bg-secondary/10 rounded-lg h-20 mb-4 flex items-center justify-center">
+                <div className="bg-secondary/10 rounded-lg h-20 mb-4 flex items-center justify-center relative z-10">
                   <p className="text-xs text-muted-foreground font-medium">Kai Mutig</p>
                 </div>
-                <h3 className="text-lg font-bold text-center mb-2 text-foreground">Kai Mutig</h3>
-                <p className="text-center text-xs text-muted-foreground leading-relaxed">
+                <h3 className="text-lg font-bold text-center mb-2 text-foreground relative z-10">Kai Mutig</h3>
+                <p className="text-center text-xs text-muted-foreground leading-relaxed relative z-10">
                   Bringt Stärke und zeigt, wie man mutig neue Sachen probiert!
                 </p>
               </div>
@@ -217,11 +217,11 @@ const Index = () => {
               viewport={{ once: true }}
             >
               <div className="crew-card-terracotta">
-                <div className="bg-orange-100 rounded-lg h-20 mb-4 flex items-center justify-center">
+                <div className="bg-orange-100 rounded-lg h-20 mb-4 flex items-center justify-center relative z-10">
                   <p className="text-xs text-muted-foreground font-medium">Tomatenraumschiff</p>
                 </div>
-                <h3 className="text-lg font-bold text-center mb-2 text-foreground">Tomatenraumschiff</h3>
-                <p className="text-center text-xs text-muted-foreground leading-relaxed">
+                <h3 className="text-lg font-bold text-center mb-2 text-foreground relative z-10">Tomatenraumschiff</h3>
+                <p className="text-center text-xs text-muted-foreground leading-relaxed relative z-10">
                   Fliegt zur Powerzentrale und bringt wichtige Nährstoffe!
                 </p>
               </div>
@@ -235,11 +235,11 @@ const Index = () => {
               viewport={{ once: true }}
             >
               <div className="crew-card-sand">
-                <div className="bg-amber-50 rounded-lg h-20 mb-4 flex items-center justify-center">
+                <div className="bg-amber-50 rounded-lg h-20 mb-4 flex items-center justify-center relative z-10">
                   <p className="text-xs text-muted-foreground font-medium">Paffel</p>
                 </div>
-                <h3 className="text-lg font-bold text-center mb-2 text-foreground">Paffel</h3>
-                <p className="text-center text-xs text-muted-foreground leading-relaxed">
+                <h3 className="text-lg font-bold text-center mb-2 text-foreground relative z-10">Paffel</h3>
+                <p className="text-center text-xs text-muted-foreground leading-relaxed relative z-10">
                   Will Chaos machen – aber die Crew zeigt, wie man ihm standhält!
                 </p>
               </div>
@@ -253,11 +253,11 @@ const Index = () => {
               viewport={{ once: true }}
             >
               <div className="crew-card-green">
-                <div className="bg-secondary/10 rounded-lg h-20 mb-4 flex items-center justify-center">
+                <div className="bg-secondary/10 rounded-lg h-20 mb-4 flex items-center justify-center relative z-10">
                   <p className="text-xs text-muted-foreground font-medium">Die Powerzentrale</p>
                 </div>
-                <h3 className="text-lg font-bold text-center mb-2 text-foreground">Die Powerzentrale</h3>
-                <p className="text-center text-xs text-muted-foreground leading-relaxed">
+                <h3 className="text-lg font-bold text-center mb-2 text-foreground relative z-10">Die Powerzentrale</h3>
+                <p className="text-center text-xs text-muted-foreground leading-relaxed relative z-10">
                   Hier wird die ganze Energie gesammelt und verteilt – das Herzstück jeder Mission!
                 </p>
               </div>
@@ -290,7 +290,7 @@ const Index = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <div className="text-box max-w-3xl mx-auto">
+            <div className="heading-box max-w-3xl mx-auto">
               <h2 className="section-title text-center mb-4 text-white">
                 Unsere Angebote
               </h2>

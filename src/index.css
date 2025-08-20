@@ -130,29 +130,39 @@
     @apply text-xl md:text-2xl font-medium mb-4 text-foreground;
   }
   
-  /* Smaller, more subtle crew card styles */
+  /* Moderne, ansprechende crew card styles */
   .crew-card {
-    @apply bg-white/50 backdrop-blur-sm rounded-xl p-4 shadow-sm border border-white/30 transition-all duration-300 hover:shadow-md hover:scale-[1.02] relative overflow-hidden;
+    @apply bg-white/70 backdrop-blur-sm rounded-2xl p-5 shadow-lg border border-white/40 transition-all duration-300 hover:shadow-xl hover:scale-[1.03] hover:bg-white/80 relative overflow-hidden;
+  }
+  
+  .crew-card::before {
+    content: '';
+    @apply absolute inset-0 bg-gradient-to-br from-white/20 to-transparent rounded-2xl pointer-events-none;
   }
   
   .crew-card-red {
     @apply crew-card border-l-4 border-l-red-500;
+    background: linear-gradient(135deg, rgba(239, 68, 68, 0.1) 0%, rgba(255, 255, 255, 0.7) 100%);
   }
   
   .crew-card-orange {
     @apply crew-card border-l-4 border-l-orange-500;
+    background: linear-gradient(135deg, rgba(249, 115, 22, 0.1) 0%, rgba(255, 255, 255, 0.7) 100%);
   }
   
   .crew-card-green {
     @apply crew-card border-l-4 border-l-secondary;
+    background: linear-gradient(135deg, hsl(var(--secondary) / 0.1) 0%, rgba(255, 255, 255, 0.7) 100%);
   }
   
   .crew-card-terracotta {
     @apply crew-card border-l-4 border-l-orange-700;
+    background: linear-gradient(135deg, rgba(194, 65, 12, 0.1) 0%, rgba(255, 255, 255, 0.7) 100%);
   }
   
   .crew-card-sand {
     @apply crew-card border-l-4 border-l-amber-600;
+    background: linear-gradient(135deg, rgba(217, 119, 6, 0.1) 0%, rgba(255, 255, 255, 0.7) 100%);
   }
   
   /* Modern offer box styles */
@@ -173,9 +183,9 @@
     );
   }
   
-  /* Light text boxes for better readability */
-  .text-box {
-    @apply bg-white/60 backdrop-blur-sm rounded-2xl p-6 shadow-sm border border-white/30;
+  /* Bessere Lesbarkeit für Überschriften */
+  .heading-box {
+    @apply bg-gradient-to-r from-black/60 via-black/50 to-black/60 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-white/20;
   }
 
   /* Playful countdown numbers for kids */
