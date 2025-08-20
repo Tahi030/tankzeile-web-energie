@@ -410,8 +410,12 @@ const Index = () => {
                 className="sm:col-span-2 lg:col-span-1"
               >
                 <div className="offer-box text-center">
-                  <div className="bg-primary/20 rounded-xl h-32 mb-4 flex items-center justify-center">
-                    <Download className="h-8 w-8 text-primary-foreground" />
+                  <div className="bg-primary/20 rounded-xl h-32 mb-4 flex items-center justify-center overflow-hidden">
+                    <img 
+                      src="/lovable-uploads/5788fa5c-f001-4880-ade2-c940c4cd66ad.png" 
+                      alt="Powerzentrale Ausmalbild" 
+                      className="w-full h-full object-contain"
+                    />
                   </div>
                   <h3 className="font-semibold mb-4 text-foreground">Powerzentrale</h3>
                   <Button size="sm" variant="outline" className="w-full border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground">
