@@ -605,8 +605,8 @@ const Index = () => {
         </div>
       </section>
 
-      {/* YouTube Video Footer */}
-      <section className="py-16 modern-section">
+      {/* Captain-Apfel-Lied - Mitmach-Bereich */}
+      <section className="py-16 bg-background">
         <div className="container-custom">
           <motion.div 
             className="max-w-4xl mx-auto text-center"
@@ -615,34 +615,40 @@ const Index = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="section-title mb-4 text-white">Das Captain-Apfel-Lied</h2>
-            
-            {/* Hand-drawn line effect */}
-            <div className="flex justify-center mb-8">
-              <svg width="120" height="8" viewBox="0 0 120 8" className="text-white">
-                <path
-                  d="M2,4 Q8,2 15,4 T30,3 Q40,5 50,4 T70,3 Q80,5 90,4 T110,3 Q115,2 118,4"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  fill="none"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="opacity-70"
-                  style={{
-                    filter: 'url(#roughPaper4)',
-                  }}
-                />
-                <defs>
-                  <filter id="roughPaper4">
-                    <feTurbulence baseFrequency="0.04" numOctaves="3" result="noise" seed="4" />
-                    <feDisplacementMap in="SourceGraphic" in2="noise" scale="0.8" />
-                  </filter>
-                </defs>
-              </svg>
+            <div className="text-box mb-8">
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Volle Obst- und Gemüsekraft voraus!</h2>
+              
+              {/* Hand-drawn line effect */}
+              <div className="flex justify-center mb-6">
+                <svg width="120" height="8" viewBox="0 0 120 8" className="text-white">
+                  <path
+                    d="M2,4 Q8,2 15,4 T30,3 Q40,5 50,4 T70,3 Q80,5 90,4 T110,3 Q115,2 118,4"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    fill="none"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="opacity-70"
+                    style={{
+                      filter: 'url(#roughPaper4)',
+                    }}
+                  />
+                  <defs>
+                    <filter id="roughPaper4">
+                      <feTurbulence baseFrequency="0.04" numOctaves="3" result="noise" seed="4" />
+                      <feDisplacementMap in="SourceGraphic" in2="noise" scale="0.8" />
+                    </filter>
+                  </defs>
+                </svg>
+              </div>
+              
+              <p className="text-lg md:text-xl text-white/90 leading-relaxed">
+                Unser Mitmach-Lied zum Tanzen, Singen und Spaß haben. Beweg dich mit Captain Apfel & seiner Crew!
+              </p>
             </div>
             
             {/* YouTube Video Platzhalter */}
-            <div className="bg-card rounded-2xl p-8 shadow-sm border border-border">
+            <div className="bg-white/60 backdrop-blur-sm rounded-2xl p-8 shadow-sm border border-white/30 mb-6">
               <div className="aspect-video bg-secondary/10 rounded-xl flex items-center justify-center">
                 <div className="text-center">
                   <Play className="h-16 w-16 mx-auto mb-4 text-secondary" />
@@ -651,6 +657,30 @@ const Index = () => {
                 </div>
               </div>
             </div>
+
+            {/* PDF Download Button */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              viewport={{ once: true }}
+            >
+              <Button 
+                className="bg-secondary hover:bg-secondary-dark text-white px-6 py-3 rounded-xl flex items-center gap-3 mx-auto shadow-lg hover:shadow-xl transition-all duration-300"
+                onClick={() => {
+                  // Platzhalter für PDF-Download
+                  const link = document.createElement('a');
+                  link.href = '#'; // Hier wird später die PDF-Datei verlinkt
+                  link.download = 'captain-apfel-bewegungen.pdf';
+                  document.body.appendChild(link);
+                  link.click();
+                  document.body.removeChild(link);
+                }}
+              >
+                <Download className="h-5 w-5" />
+                Bewegungen als PDF herunterladen
+              </Button>
+            </motion.div>
           </motion.div>
         </div>
       </section>
