@@ -504,7 +504,7 @@ const Index = () => {
                 viewport={{ once: true }}
               >
                 <div className="offer-box text-center h-full flex flex-col p-4">
-                  <div className="bg-red-500/10 rounded-xl flex-1 mb-4 flex items-center justify-center overflow-hidden min-h-[160px]">
+                  <div className="bg-red-500/10 rounded-xl flex-1 mb-4 flex items-center justify-center overflow-hidden min-h-[80px]">
                     <img 
                       src="/lovable-uploads/8d49addc-737c-4350-bea7-33d0730e81f1.png" 
                       alt="Captain Apfel Ausmalbild" 
@@ -539,7 +539,7 @@ const Index = () => {
                 viewport={{ once: true }}
               >
                 <div className="offer-box text-center h-full flex flex-col p-4">
-                  <div className="bg-green-500/10 rounded-xl flex-1 mb-4 flex items-center justify-center overflow-hidden min-h-[160px]">
+                  <div className="bg-green-500/10 rounded-xl flex-1 mb-4 flex items-center justify-center overflow-hidden min-h-[80px]">
                     <img 
                       src="/lovable-uploads/650cdcba-e091-48fc-932e-92c2ebac211d.png" 
                       alt="Obst und Gemüse Ausmalbild" 
@@ -574,7 +574,7 @@ const Index = () => {
                 viewport={{ once: true }}
               >
                 <div className="offer-box text-center h-full flex flex-col p-4">
-                  <div className="bg-yellow-500/10 rounded-xl flex-1 mb-4 flex items-center justify-center overflow-hidden min-h-[160px]">
+                  <div className="bg-yellow-500/10 rounded-xl flex-1 mb-4 flex items-center justify-center overflow-hidden min-h-[80px]">
                     <img 
                       src="/lovable-uploads/5788fa5c-f001-4880-ade2-c940c4cd66ad.png" 
                       alt="Powerzentrale Ausmalbild" 
