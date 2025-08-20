@@ -94,19 +94,21 @@ const Index = () => {
       <section className="py-16 bg-background">
         <div className="container-custom">
           <motion.div 
-            className="max-w-4xl mx-auto text-center"
+            className="max-w-4xl mx-auto"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <div className="text-box">
-              <p className="text-lg md:text-xl text-foreground leading-relaxed mb-4">
-                Captain Apfel und seine Crew starten ihre Mission in Berlin – direkt in Kitas und Grundschulen. Vorschulkinder und Grundschüler erleben spannende Mitmach-Abenteuer rund um gesunde Ernährung, Bewegung und Musik. In der Powerzentrale entdecken sie, wie Energie entsteht, Konzentration wächst und Gesundheit Freude macht.
-              </p>
-              <p className="text-lg md:text-xl text-foreground leading-relaxed">
-                Und auch außerhalb Berlins können Kinder, Eltern und Familien mitmachen: Mit kostenlosen Ausmalbildern, Tipps für gesunde Gewohnheiten und dem Mitmach-Lied bringen wir gemeinsam die Powerzentrale überall zum Leuchten.
-              </p>
+            <div className="bg-card/30 backdrop-blur-sm rounded-2xl p-8 md:p-12 border border-border/50 shadow-sm">
+              <div className="max-w-3xl">
+                <p className="text-lg md:text-xl text-foreground leading-relaxed mb-6">
+                  Captain Apfel und seine Crew starten ihre Mission in Berlin – direkt in Kitas und Grundschulen. Vorschulkinder und Grundschüler erleben spannende Mitmach-Abenteuer rund um gesunde Ernährung, Bewegung und Musik. In der Powerzentrale entdecken sie, wie Energie entsteht, Konzentration wächst und Gesundheit Freude macht.
+                </p>
+                <p className="text-lg md:text-xl text-foreground leading-relaxed">
+                  Und auch außerhalb Berlins können Kinder, Eltern und Familien mitmachen: Mit kostenlosen Ausmalbildern, Tipps für gesunde Gewohnheiten und dem Mitmach-Lied bringen wir gemeinsam die Powerzentrale überall zum Leuchten.
+                </p>
+              </div>
             </div>
           </motion.div>
         </div>
