@@ -18,31 +18,31 @@ const Index = () => {
     }
     
     // Apply background color to the body
-    document.body.classList.add('bg-muted');
+    document.body.classList.add('bg-background');
     
     return () => {
       // Remove background color when component unmounts
-      document.body.classList.remove('bg-muted');
+      document.body.classList.remove('bg-background');
     };
   }, []);
 
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-b from-primary to-primary-light py-16 md:py-24 overflow-hidden">
-        <div className="container-custom relative z-10">
+      <section className="bg-warm-gradient py-16 md:py-24">
+        <div className="container-custom">
           <div className="max-w-4xl mx-auto text-center">
             <motion.h1 
-              className="text-4xl md:text-6xl font-bold mb-4 text-white drop-shadow-lg"
+              className="text-4xl md:text-6xl font-bold mb-4 text-foreground"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.1 }}
             >
-              Captain Apfel & seine Crew - auf gesunder Mission
+              Captain Apfel & seine Crew – auf gesunder Mission
             </motion.h1>
             
             <motion.h2 
-              className="text-2xl md:text-3xl font-medium mb-8 text-secondary drop-shadow-md"
+              className="text-2xl md:text-3xl font-medium mb-12 text-muted-foreground"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
@@ -52,14 +52,14 @@ const Index = () => {
 
             {/* Logo Platzhalter */}
             <motion.div 
-              className="bg-white/20 backdrop-blur-sm rounded-xl p-8 max-w-md mx-auto border border-white/30"
+              className="bg-card rounded-2xl p-8 max-w-md mx-auto border border-border shadow-sm"
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, delay: 0.3 }}
             >
-              <div className="bg-white/40 rounded-lg p-6 text-center">
-                <h3 className="text-lg font-semibold text-white mb-2">Powerzentrale</h3>
-                <p className="text-white/80 text-sm">Apfel-Logo kommt hier hin</p>
+              <div className="bg-primary/10 rounded-xl p-6 text-center">
+                <h3 className="text-lg font-semibold text-foreground mb-2">Powerzentrale</h3>
+                <p className="text-muted-foreground text-sm">Apfel-Logo kommt hier hin</p>
               </div>
             </motion.div>
           </div>
@@ -83,16 +83,9 @@ const Index = () => {
         </div>
       </section>
 
-      {/* CREW-Bereich - Besonders auffällig gestaltet */}
-      <section className="py-20 bg-gradient-to-br from-primary via-secondary to-accent relative overflow-hidden">
-        {/* Dekorative Elemente */}
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-10 left-10 w-20 h-20 bg-white rounded-full animate-pulse"></div>
-          <div className="absolute bottom-20 right-20 w-16 h-16 bg-white rounded-full animate-pulse delay-1000"></div>
-          <div className="absolute top-1/2 left-1/4 w-12 h-12 bg-white rounded-full animate-pulse delay-500"></div>
-        </div>
-        
-        <div className="container-custom relative z-10">
+      {/* CREW-Bereich - Modern und luftig gestaltet */}
+      <section className="py-20 modern-section">        
+        <div className="container-custom">
           <motion.div 
             className="text-center mb-16"
             initial={{ opacity: 0, y: 30 }}
@@ -100,10 +93,10 @@ const Index = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 drop-shadow-lg">
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
               Lerne die Crew kennen!
             </h2>
-            <p className="text-xl md:text-2xl text-white/90 drop-shadow-md">
+            <p className="text-xl md:text-2xl text-muted-foreground">
               Jeder hat eine besondere Kraft – gemeinsam sind sie unschlagbar!
             </p>
           </motion.div>
@@ -111,18 +104,17 @@ const Index = () => {
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
             {/* Kimmi Schlau */}
             <motion.div
-              initial={{ opacity: 0, y: 50, rotate: -5 }}
-              whileInView={{ opacity: 1, y: 0, rotate: 0 }}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.1 }}
               viewport={{ once: true }}
-              className="hover-scale"
             >
-              <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-6 shadow-2xl border-4 border-yellow-300 hover:border-yellow-400 transition-all duration-300 hover:shadow-yellow-400/20">
-                <div className="bg-gradient-to-br from-yellow-200 to-orange-200 rounded-xl h-32 mb-4 flex items-center justify-center border-2 border-yellow-400">
-                  <p className="text-sm text-yellow-700 font-medium">Kimmi Schlau</p>
+              <div className="crew-card-yellow">
+                <div className="bg-accent/10 rounded-xl h-32 mb-6 flex items-center justify-center">
+                  <p className="text-sm text-muted-foreground font-medium">Kimmi Schlau Illustration</p>
                 </div>
-                <h3 className="text-xl font-bold text-center mb-2 text-primary">Kimmi Schlau</h3>
-                <p className="text-center text-sm text-muted-foreground">
+                <h3 className="text-xl font-bold text-center mb-3 text-foreground">Kimmi Schlau</h3>
+                <p className="text-center text-sm text-muted-foreground leading-relaxed">
                   Kimmi Schlau kennt die besten Tipps für eine gesunde Powerzentrale!
                 </p>
               </div>
@@ -130,18 +122,17 @@ const Index = () => {
 
             {/* Kai Mutig */}
             <motion.div
-              initial={{ opacity: 0, y: 50, rotate: 5 }}
-              whileInView={{ opacity: 1, y: 0, rotate: 0 }}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
               viewport={{ once: true }}
-              className="hover-scale"
             >
-              <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-6 shadow-2xl border-4 border-green-400 hover:border-green-500 transition-all duration-300 hover:shadow-green-400/20">
-                <div className="bg-gradient-to-br from-green-200 to-emerald-200 rounded-xl h-32 mb-4 flex items-center justify-center border-2 border-green-400">
-                  <p className="text-sm text-green-700 font-medium">Kai Mutig</p>
+              <div className="crew-card-green">
+                <div className="bg-secondary/10 rounded-xl h-32 mb-6 flex items-center justify-center">
+                  <p className="text-sm text-muted-foreground font-medium">Kai Mutig Illustration</p>
                 </div>
-                <h3 className="text-xl font-bold text-center mb-2 text-primary">Kai Mutig</h3>
-                <p className="text-center text-sm text-muted-foreground">
+                <h3 className="text-xl font-bold text-center mb-3 text-foreground">Kai Mutig</h3>
+                <p className="text-center text-sm text-muted-foreground leading-relaxed">
                   Kai Mutig bringt Stärke und zeigt, wie man mutig neue Sachen probiert!
                 </p>
               </div>
@@ -149,18 +140,17 @@ const Index = () => {
 
             {/* Tomatenraumschiff */}
             <motion.div
-              initial={{ opacity: 0, y: 50, rotate: -3 }}
-              whileInView={{ opacity: 1, y: 0, rotate: 0 }}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
               viewport={{ once: true }}
-              className="hover-scale"
             >
-              <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-6 shadow-2xl border-4 border-red-400 hover:border-red-500 transition-all duration-300 hover:shadow-red-400/20">
-                <div className="bg-gradient-to-br from-red-200 to-pink-200 rounded-xl h-32 mb-4 flex items-center justify-center border-2 border-red-400">
-                  <p className="text-sm text-red-700 font-medium">Tomatenraumschiff</p>
+              <div className="crew-card-red">
+                <div className="bg-red-50 rounded-xl h-32 mb-6 flex items-center justify-center">
+                  <p className="text-sm text-muted-foreground font-medium">Tomatenraumschiff Illustration</p>
                 </div>
-                <h3 className="text-xl font-bold text-center mb-2 text-primary">Tomatenraumschiff</h3>
-                <p className="text-center text-sm text-muted-foreground">
+                <h3 className="text-xl font-bold text-center mb-3 text-foreground">Tomatenraumschiff</h3>
+                <p className="text-center text-sm text-muted-foreground leading-relaxed">
                   Das Tomatenraumschiff fliegt zur Powerzentrale und bringt wichtige Nährstoffe!
                 </p>
               </div>
@@ -168,18 +158,17 @@ const Index = () => {
 
             {/* Paffel */}
             <motion.div
-              initial={{ opacity: 0, y: 50, rotate: 3 }}
-              whileInView={{ opacity: 1, y: 0, rotate: 0 }}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
               viewport={{ once: true }}
-              className="hover-scale"
             >
-              <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-6 shadow-2xl border-4 border-purple-400 hover:border-purple-500 transition-all duration-300 hover:shadow-purple-400/20">
-                <div className="bg-gradient-to-br from-purple-200 to-violet-200 rounded-xl h-32 mb-4 flex items-center justify-center border-2 border-purple-400">
-                  <p className="text-sm text-purple-700 font-medium">Paffel</p>
+              <div className="crew-card-brown">
+                <div className="bg-primary/10 rounded-xl h-32 mb-6 flex items-center justify-center">
+                  <p className="text-sm text-muted-foreground font-medium">Paffel Illustration</p>
                 </div>
-                <h3 className="text-xl font-bold text-center mb-2 text-primary">Paffel</h3>
-                <p className="text-center text-sm text-muted-foreground">
+                <h3 className="text-xl font-bold text-center mb-3 text-foreground">Paffel</h3>
+                <p className="text-center text-sm text-muted-foreground leading-relaxed">
                   Paffel will Chaos machen – aber die Crew zeigt, wie man ihm standhält!
                 </p>
               </div>
@@ -187,14 +176,14 @@ const Index = () => {
           </div>
 
           <motion.div 
-            className="text-center mt-12"
+            className="text-center mt-16"
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.5 }}
             viewport={{ once: true }}
           >
-            <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-8 max-w-2xl mx-auto border border-white/30">
-              <p className="text-xl text-white font-medium">
+            <div className="bg-card rounded-2xl p-8 max-w-2xl mx-auto border border-border shadow-sm">
+              <p className="text-lg text-foreground font-medium">
                 🌟 Zusammen machen sie jede Einrichtung zu einem Ort voller Energie, Spaß und gesunder Abenteuer! 🌟
               </p>
             </div>
@@ -203,7 +192,7 @@ const Index = () => {
       </section>
 
       {/* Angebote */}
-      <section className="py-16 bg-white/50">
+      <section className="py-16 bg-background">
         <div className="container-custom">
           <motion.h2 
             className="section-title text-center mb-12"
@@ -223,29 +212,25 @@ const Index = () => {
               transition={{ duration: 0.8, delay: 0.1 }}
               viewport={{ once: true }}
             >
-              <Card className="h-full hover:shadow-lg transition-all duration-300 hover:scale-[1.02]">
-                <CardHeader>
-                  {/* Bild Platzhalter */}
-                  <div className="bg-gradient-to-br from-primary/20 to-secondary/20 rounded-lg h-48 mb-4 flex items-center justify-center">
-                    <p className="text-sm text-muted-foreground">Bild: Reise zur Powerzentrale</p>
-                  </div>
-                  <CardTitle className="text-xl">Reise zur Powerzentrale</CardTitle>
-                  <div className="bg-accent/20 rounded-md px-3 py-1 text-sm font-medium text-accent-foreground w-fit">
-                    Start: Ende 2025
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <CardDescription className="text-base mb-6">
-                    Mit Captain Apfel und seiner Crew erleben Kinder ein spannendes Abenteuer: Wie kommt Energie in den Körper, was macht uns stark und konzentriert, und wie bleibt die Powerzentrale hell und aktiv?
-                  </CardDescription>
-                  <Button asChild className="w-full group">
-                    <Link to="/meine-angebote/workshop-gesunde-mission">
-                      Mehr erfahren
-                      <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                    </Link>
-                  </Button>
-                </CardContent>
-              </Card>
+              <div className="offer-box h-full">
+                {/* Bild Platzhalter */}
+                <div className="bg-secondary/10 rounded-xl h-48 mb-6 flex items-center justify-center">
+                  <p className="text-sm text-muted-foreground">Bild: Reise zur Powerzentrale</p>
+                </div>
+                <h3 className="text-2xl font-bold mb-3 text-foreground">Reise zur Powerzentrale</h3>
+                <div className="bg-secondary/10 rounded-lg px-4 py-2 text-sm font-medium text-secondary w-fit mb-4">
+                  Start: Ende 2025
+                </div>
+                <p className="text-base mb-8 text-muted-foreground leading-relaxed">
+                  Mit Captain Apfel und seiner Crew erleben Kinder ein spannendes Abenteuer: Wie kommt Energie in den Körper, was macht uns stark und konzentriert, und wie bleibt die Powerzentrale hell und aktiv?
+                </p>
+                <Button asChild className="w-full bg-secondary hover:bg-secondary/90 text-secondary-foreground group">
+                  <Link to="/meine-angebote/workshop-gesunde-mission">
+                    Mehr erfahren
+                    <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  </Link>
+                </Button>
+              </div>
             </motion.div>
 
             {/* Box 2: Lieblingsdose */}
@@ -255,36 +240,32 @@ const Index = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               viewport={{ once: true }}
             >
-              <Card className="h-full hover:shadow-lg transition-all duration-300 hover:scale-[1.02]">
-                <CardHeader>
-                  {/* Bild Platzhalter */}
-                  <div className="bg-gradient-to-br from-secondary/20 to-accent/20 rounded-lg h-48 mb-4 flex items-center justify-center">
-                    <p className="text-sm text-muted-foreground">Bild: Lieblingsdose</p>
-                  </div>
-                  <CardTitle className="text-xl">Lieblingsdose</CardTitle>
-                  <div className="bg-accent/20 rounded-md px-3 py-1 text-sm font-medium text-accent-foreground w-fit">
-                    Start: 2026
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <CardDescription className="text-base mb-6">
-                    Das Angebot ‚Lieblingsdose' bringt gesunde Ernährung direkt in den Alltag von Kitas, Schulen und Freizeiteinrichtungen. Gemeinsam mit Captain Apfel und seiner Crew entstehen bunte Brotdosen, die Kindern Spaß machen und Energie geben.
-                  </CardDescription>
-                  <Button asChild className="w-full group">
-                    <Link to="/meine-angebote/workshop-lieblingsdose">
-                      Mehr erfahren
-                      <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                    </Link>
-                  </Button>
-                </CardContent>
-              </Card>
+              <div className="offer-box h-full">
+                {/* Bild Platzhalter */}
+                <div className="bg-accent/20 rounded-xl h-48 mb-6 flex items-center justify-center">
+                  <p className="text-sm text-muted-foreground">Bild: Lieblingsdose</p>
+                </div>
+                <h3 className="text-2xl font-bold mb-3 text-foreground">Lieblingsdose</h3>
+                <div className="bg-accent/20 rounded-lg px-4 py-2 text-sm font-medium text-accent-foreground w-fit mb-4">
+                  Start: 2026
+                </div>
+                <p className="text-base mb-8 text-muted-foreground leading-relaxed">
+                  Das Angebot ‚Lieblingsdose' bringt gesunde Ernährung direkt in den Alltag von Kitas, Schulen und Freizeiteinrichtungen. Gemeinsam mit Captain Apfel und seiner Crew entstehen bunte Brotdosen, die Kindern Spaß machen und Energie geben.
+                </p>
+                <Button asChild className="w-full bg-secondary hover:bg-secondary/90 text-secondary-foreground group">
+                  <Link to="/meine-angebote/workshop-lieblingsdose">
+                    Mehr erfahren
+                    <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  </Link>
+                </Button>
+              </div>
             </motion.div>
           </div>
         </div>
       </section>
 
       {/* Musik & Stimmung */}
-      <section className="py-16">
+      <section className="py-16 modern-section">
         <div className="container-custom">
           <motion.div 
             className="max-w-4xl mx-auto text-center"
@@ -294,14 +275,14 @@ const Index = () => {
             viewport={{ once: true }}
           >
             <h2 className="section-title mb-8">Musik & Stimmung</h2>
-            <p className="text-lg md:text-xl text-foreground mb-8 leading-relaxed">
+            <p className="text-lg md:text-xl text-muted-foreground mb-12 leading-relaxed">
               Bei Captain Apfel und seiner Crew gibt's Musik, gute Laune und jede Menge Bewegung.
             </p>
             
             {/* Bild/Illustration Platzhalter */}
-            <div className="bg-gradient-to-br from-primary/10 to-secondary/10 rounded-xl p-12 max-w-md mx-auto border border-primary/20">
-              <div className="bg-white/60 rounded-lg p-8 text-center">
-                <Play className="h-12 w-12 mx-auto mb-4 text-primary" />
+            <div className="bg-card rounded-2xl p-12 max-w-md mx-auto border border-border shadow-sm">
+              <div className="bg-secondary/10 rounded-xl p-8 text-center">
+                <Play className="h-12 w-12 mx-auto mb-4 text-secondary" />
                 <p className="text-muted-foreground">Bild/Illustration: Musik & Bewegung</p>
               </div>
             </div>
@@ -310,7 +291,7 @@ const Index = () => {
       </section>
 
       {/* Download-Bereich */}
-      <section className="py-16 bg-white/50">
+      <section className="py-16 bg-background">
         <div className="container-custom">
           <motion.div 
             className="max-w-4xl mx-auto text-center"
@@ -320,7 +301,7 @@ const Index = () => {
             viewport={{ once: true }}
           >
             <h2 className="section-title mb-6">Kostenlose Ausmalbilder</h2>
-            <p className="text-lg md:text-xl text-foreground mb-12 leading-relaxed">
+            <p className="text-lg md:text-xl text-muted-foreground mb-12 leading-relaxed">
               Hier können Kinder und Einrichtungen Ausmalbilder von Captain Apfel und seiner Crew kostenlos herunterladen.
             </p>
             
@@ -332,18 +313,16 @@ const Index = () => {
                 transition={{ duration: 0.6, delay: 0.1 }}
                 viewport={{ once: true }}
               >
-                <Card className="hover:shadow-lg transition-all duration-300 hover:scale-[1.02]">
-                  <CardContent className="p-6 text-center">
-                    <div className="bg-gradient-to-br from-primary/20 to-secondary/20 rounded-lg h-32 mb-4 flex items-center justify-center">
-                      <Download className="h-8 w-8 text-primary" />
-                    </div>
-                    <h3 className="font-semibold mb-2">Captain Apfel</h3>
-                    <Button size="sm" variant="outline" className="w-full">
-                      <Download className="mr-2 h-4 w-4" />
-                      Download PDF
-                    </Button>
-                  </CardContent>
-                </Card>
+                <div className="offer-box text-center">
+                  <div className="bg-secondary/10 rounded-xl h-32 mb-4 flex items-center justify-center">
+                    <Download className="h-8 w-8 text-secondary" />
+                  </div>
+                  <h3 className="font-semibold mb-4 text-foreground">Captain Apfel</h3>
+                  <Button size="sm" variant="outline" className="w-full border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground">
+                    <Download className="mr-2 h-4 w-4" />
+                    Download PDF
+                  </Button>
+                </div>
               </motion.div>
 
               {/* Download Platzhalter 2 */}
@@ -353,18 +332,16 @@ const Index = () => {
                 transition={{ duration: 0.6, delay: 0.2 }}
                 viewport={{ once: true }}
               >
-                <Card className="hover:shadow-lg transition-all duration-300 hover:scale-[1.02]">
-                  <CardContent className="p-6 text-center">
-                    <div className="bg-gradient-to-br from-secondary/20 to-accent/20 rounded-lg h-32 mb-4 flex items-center justify-center">
-                      <Download className="h-8 w-8 text-secondary" />
-                    </div>
-                    <h3 className="font-semibold mb-2">Die Crew</h3>
-                    <Button size="sm" variant="outline" className="w-full">
-                      <Download className="mr-2 h-4 w-4" />
-                      Download PDF
-                    </Button>
-                  </CardContent>
-                </Card>
+                <div className="offer-box text-center">
+                  <div className="bg-accent/20 rounded-xl h-32 mb-4 flex items-center justify-center">
+                    <Download className="h-8 w-8 text-accent-foreground" />
+                  </div>
+                  <h3 className="font-semibold mb-4 text-foreground">Die Crew</h3>
+                  <Button size="sm" variant="outline" className="w-full border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground">
+                    <Download className="mr-2 h-4 w-4" />
+                    Download PDF
+                  </Button>
+                </div>
               </motion.div>
 
               {/* Download Platzhalter 3 */}
@@ -375,18 +352,16 @@ const Index = () => {
                 viewport={{ once: true }}
                 className="sm:col-span-2 lg:col-span-1"
               >
-                <Card className="hover:shadow-lg transition-all duration-300 hover:scale-[1.02]">
-                  <CardContent className="p-6 text-center">
-                    <div className="bg-gradient-to-br from-accent/20 to-primary/20 rounded-lg h-32 mb-4 flex items-center justify-center">
-                      <Download className="h-8 w-8 text-accent" />
-                    </div>
-                    <h3 className="font-semibold mb-2">Powerzentrale</h3>
-                    <Button size="sm" variant="outline" className="w-full">
-                      <Download className="mr-2 h-4 w-4" />
-                      Download PDF
-                    </Button>
-                  </CardContent>
-                </Card>
+                <div className="offer-box text-center">
+                  <div className="bg-primary/20 rounded-xl h-32 mb-4 flex items-center justify-center">
+                    <Download className="h-8 w-8 text-primary-foreground" />
+                  </div>
+                  <h3 className="font-semibold mb-4 text-foreground">Powerzentrale</h3>
+                  <Button size="sm" variant="outline" className="w-full border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground">
+                    <Download className="mr-2 h-4 w-4" />
+                    Download PDF
+                  </Button>
+                </div>
               </motion.div>
             </div>
           </motion.div>
@@ -394,7 +369,7 @@ const Index = () => {
       </section>
 
       {/* YouTube Video Footer */}
-      <section className="py-16 bg-gradient-to-b from-primary/10 to-primary/20">
+      <section className="py-16 modern-section">
         <div className="container-custom">
           <motion.div 
             className="max-w-4xl mx-auto text-center"
@@ -406,10 +381,10 @@ const Index = () => {
             <h2 className="section-title mb-8">Das Captain-Apfel-Lied</h2>
             
             {/* YouTube Video Platzhalter */}
-            <div className="bg-white/80 rounded-xl p-8 shadow-lg border border-primary/20">
-              <div className="aspect-video bg-gradient-to-br from-primary/20 to-secondary/20 rounded-lg flex items-center justify-center">
+            <div className="bg-card rounded-2xl p-8 shadow-sm border border-border">
+              <div className="aspect-video bg-secondary/10 rounded-xl flex items-center justify-center">
                 <div className="text-center">
-                  <Play className="h-16 w-16 mx-auto mb-4 text-primary" />
+                  <Play className="h-16 w-16 mx-auto mb-4 text-secondary" />
                   <p className="text-lg font-medium text-foreground">YouTube-Video</p>
                   <p className="text-muted-foreground">Captain-Apfel-Lied</p>
                 </div>

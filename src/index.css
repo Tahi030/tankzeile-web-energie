@@ -13,36 +13,43 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 20 10% 20%;
+    /* Modern warm base colors - White and soft brown */
+    --background: 0 0% 100%; /* Pure white */
+    --foreground: 25 15% 25%; /* Warm dark brown for text */
 
-    --card: 0 0% 100%;
-    --card-foreground: 20 10% 20%;
+    --card: 0 0% 100%; /* White cards */
+    --card-foreground: 25 15% 25%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 20 10% 20%;
+    --popover-foreground: 25 15% 25%;
 
-    --primary: 27 25% 68%;
-    --primary-foreground: 20 10% 20%;
+    /* Soft brown as primary - warm, friendly base */
+    --primary: 28 20% 85%; /* Soft, light brown */
+    --primary-foreground: 25 15% 25%; /* Dark brown text */
 
-    --secondary: 138 8% 58%;
-    --secondary-foreground: 0 0% 98%;
+    /* Natural green as secondary - warm accent color */
+    --secondary: 120 25% 65%; /* Warm natural green */
+    --secondary-foreground: 0 0% 100%; /* White text on green */
 
-    --muted: 30 20% 96%;
-    --muted-foreground: 20 10% 40%;
+    /* Very light brown for subtle backgrounds */
+    --muted: 30 15% 97%; /* Almost white with brown tint */
+    --muted-foreground: 25 12% 45%; /* Medium brown for muted text */
 
-    --accent: 32 35% 75%;
-    --accent-foreground: 20 10% 20%;
+    /* Warm accent colors for highlights */
+    --accent: 45 35% 88%; /* Warm, light yellow-brown */
+    --accent-foreground: 25 15% 25%;
 
+    /* Keep blackberry for special cases */
     --blackberry: 310 35% 35%;
     --blackberry-foreground: 0 0% 98%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 20 10% 85%;
-    --input: 20 10% 85%;
-    --ring: 27 25% 68%;
+    /* Subtle borders and inputs */
+    --border: 25 10% 90%; /* Light brown border */
+    --input: 25 10% 95%; /* Very light brown input bg */
+    --ring: 120 25% 65%; /* Green focus ring */
 
     --radius: 0.5rem;
 
@@ -94,7 +101,7 @@
   }
 
   body {
-    @apply bg-muted text-foreground font-sans;
+    @apply bg-background text-foreground font-sans;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -123,28 +130,39 @@
     @apply text-xl md:text-2xl font-medium mb-4 text-foreground;
   }
   
-  .stylish-box {
-    @apply bg-white/90 rounded-xl p-8 shadow-md border border-primary/10 relative overflow-hidden transform transition-all duration-300 hover:shadow-lg hover:scale-[1.01] backdrop-blur-sm;
+  /* Modern crew card styles */
+  .crew-card {
+    @apply bg-card rounded-2xl p-6 shadow-sm border border-border transition-all duration-300 hover:shadow-md hover:scale-[1.02] relative overflow-hidden;
   }
   
-  .stylish-box-effect {
-    @apply absolute -right-20 -top-20 w-64 h-64 rounded-full bg-primary-light/20 blur-3xl pointer-events-none;
+  .crew-card-green {
+    @apply crew-card border-l-4 border-l-secondary;
   }
   
-  .stylish-box-effect-alt {
-    @apply absolute -left-20 -bottom-20 w-64 h-64 rounded-full bg-secondary-light/20 blur-3xl pointer-events-none;
+  .crew-card-yellow {
+    @apply crew-card border-l-4 border-l-accent;
   }
   
-  .modern-box {
-    @apply bg-white/70 backdrop-blur-sm rounded-xl p-8 shadow-md border border-primary/10 relative overflow-hidden transition-all duration-300 hover:shadow-lg hover:scale-[1.01];
+  .crew-card-brown {
+    @apply crew-card border-l-4 border-l-primary;
   }
   
-  .modern-box::before {
-    @apply content-[''] absolute -right-20 -top-20 w-64 h-64 rounded-full bg-primary-light/10 blur-3xl pointer-events-none;
+  .crew-card-red {
+    @apply crew-card border-l-4 border-l-red-400;
   }
   
-  .modern-box::after {
-    @apply content-[''] absolute -left-20 -bottom-20 w-64 h-64 rounded-full bg-secondary-light/10 blur-3xl pointer-events-none;
+  /* Modern offer box styles */
+  .offer-box {
+    @apply bg-card rounded-2xl p-8 shadow-sm border border-border transition-all duration-300 hover:shadow-md hover:scale-[1.01] relative;
+  }
+  
+  /* Subtle background effects */
+  .bg-warm-gradient {
+    @apply bg-gradient-to-br from-background via-muted/30 to-primary/5;
+  }
+  
+  .modern-section {
+    @apply bg-gradient-to-b from-background to-muted/20;
   }
 
   .font-sisterhood {
