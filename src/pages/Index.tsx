@@ -113,9 +113,9 @@ const Index = () => {
                 </h2>
                 
                 {/* Kleiner erklärender Text */}
-                <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
+                <h3 className="text-sm md:text-base text-muted-foreground leading-relaxed">
                   Mit meiner Crew bin ich unterwegs auf gesunder Mission.
-                </p>
+                </h3>
                 
                 {/* Große Blickfang-Zeile */}
                 <h3 className="text-sm md:text-base text-muted-foreground leading-relaxed">
@@ -124,9 +124,9 @@ const Index = () => {
                 </h3>
                 
                 {/* Kleiner erklärender Text */}
-                <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
+                <h3 className="text-sm md:text-base text-muted-foreground leading-relaxed">
                   Von hier aus hebt das Tomatenraumschiff ab und landet direkt in Einrichtungen mit Kindern im Vorschul- und Grundschulalter.
-                </p>
+                </h3>
                 
                 {/* Starkes Schluss-Statement */}
                 <div className="space-y-1">
