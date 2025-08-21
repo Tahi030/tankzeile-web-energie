@@ -22,6 +22,7 @@ import FuerUnternehmen from "./pages/FuerUnternehmen";
 import Kontakt from "./pages/Kontakt";
 import Impressum from "./pages/Impressum";
 import Datenschutz from "./pages/Datenschutz";
+import RegionallyRooted from "./pages/RegionallyRooted";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -52,6 +53,7 @@ const App = () => (
                 <Route path="/tankwelten/schatzruhe" element={<Schatzruhe />} />
                 <Route path="/fuer-einrichtungen" element={<FuerEinrichtungen />} />
                 <Route path="/fuer-unternehmen" element={<FuerUnternehmen />} />
+                <Route path="/regionally-rooted" element={<RegionallyRooted />} />
                 <Route path="/kontakt" element={<Kontakt />} />
                 <Route path="/impressum" element={<Impressum />} />
                 <Route path="/datenschutz" element={<Datenschutz />} />
