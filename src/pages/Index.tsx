@@ -101,32 +101,44 @@ const Index = () => {
             viewport={{ once: true }}
           >
             <div className="bg-card/30 backdrop-blur-sm rounded-2xl p-8 md:p-12 border border-border/50 shadow-sm relative">
-              <div className="max-w-3xl space-y-6">
-                <div className="space-y-4">
-                  <h3 className="text-2xl md:text-3xl font-bold text-primary mb-4">
-                    Hallo, ich bin Captain Apfel!
-                  </h3>
-                  <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-                    Mit meiner Crew bin ich unterwegs auf gesunder Mission.
-                  </p>
-                </div>
-
-                <div className="space-y-3">
-                  <p className="text-lg md:text-xl font-semibold text-foreground leading-relaxed">
-                    Berlin ist der Startpunkt unserer Reise
-                  </p>
-                  <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-                    Von hier aus hebt das Tomatenraumschiff ab und bringt uns direkt in Einrichtungen mit Kindern im Vorschul- und Grundschulalter.
-                  </p>
-                </div>
-
-                <div className="space-y-3">
-                  <p className="text-lg md:text-xl text-foreground leading-relaxed">
-                    In meinen Workshops erleben wir durch Geschichten und Aktionen, was unserem Körper guttut – und was ihn eher ausbremst.
-                  </p>
-                  <p className="text-xl md:text-2xl font-bold text-primary leading-relaxed">
-                    Denn gesunde Gewohnheiten geben uns Kraft, machen das Denken leichter und lassen uns rundum wohlfühlen.
-                  </p>
+              <div className="max-w-4xl space-y-8">
+                {/* Kleine Einleitung */}
+                <p className="text-base md:text-lg text-muted-foreground font-medium tracking-wide">
+                  Hallo, ich bin
+                </p>
+                
+                {/* Große Hauptzeile */}
+                <h2 className="text-5xl md:text-7xl font-black text-primary leading-none tracking-tight">
+                  Captain Apfel
+                </h2>
+                
+                {/* Kleiner erklärender Text */}
+                <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl">
+                  Mit meiner Crew bin ich unterwegs auf gesunder Mission.
+                </p>
+                
+                {/* Große Blickfang-Zeile */}
+                <h3 className="text-4xl md:text-6xl font-bold text-foreground leading-tight">
+                  Berlin ist der Startpunkt<br className="hidden md:block" /> 
+                  unserer Reise.
+                </h3>
+                
+                {/* Kleiner erklärender Text */}
+                <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl">
+                  Von hier aus hebt das Tomatenraumschiff ab und landet direkt in Einrichtungen mit Kindern im Vorschul- und Grundschulalter.
+                </p>
+                
+                {/* Starkes Schluss-Statement */}
+                <div className="space-y-2">
+                  <h4 className="text-4xl md:text-5xl font-bold text-primary leading-tight">
+                    Denn gesunde Gewohnheiten geben uns Kraft,
+                  </h4>
+                  <h4 className="text-4xl md:text-5xl font-bold text-primary leading-tight">
+                    machen das Denken leichter
+                  </h4>
+                  <h4 className="text-4xl md:text-5xl font-bold text-primary leading-tight">
+                    und lassen uns rundum wohlfühlen.
+                  </h4>
                 </div>
               </div>
             </div>
