@@ -103,20 +103,17 @@ const Index = () => {
             <div className="bg-card/30 backdrop-blur-sm rounded-2xl p-8 md:p-12 border border-border/50 shadow-sm relative">
               <div className="max-w-3xl">
                 <p className="text-lg md:text-xl text-foreground leading-relaxed mb-6">
-                  Captain Apfel und seine Crew starten ihre Mission in Berlin – direkt in Kitas und Grundschulen. Vorschulkinder und Grundschüler erleben spannende Mitmach-Abenteuer rund um gesunde Ernährung, Bewegung und Musik. In der Powerzentrale entdecken sie, wie Energie entsteht, Konzentration wächst und Gesundheit Freude macht.
+                  Hallo, ich bin Captain Apfel und mit meiner Crew unterwegs auf gesunder Mission.
+                </p>
+                <p className="text-lg md:text-xl text-foreground leading-relaxed mb-6">
+                  Berlin ist der Startpunkt unserer Reise. Von hier aus hebt das Tomatenraumschiff ab und bringt uns direkt in Einrichtungen mit Kindern im Vorschul- und Grundschulalter.
+                </p>
+                <p className="text-lg md:text-xl text-foreground leading-relaxed mb-6">
+                  In meinen Workshops erleben wir durch Geschichten und Aktionen, was unserem Körper guttut – und was ihn eher ausbremst.
                 </p>
                 <p className="text-lg md:text-xl text-foreground leading-relaxed">
-                  Und auch außerhalb Berlins können Kinder, Eltern und Familien mitmachen: Mit kostenlosen Ausmalbildern, Tipps für gesunde Gewohnheiten und dem Mitmach-Lied bringen wir gemeinsam die Powerzentrale überall zum Leuchten.
+                  Denn gesunde Gewohnheiten geben uns Kraft, machen das Denken leichter und lassen uns rundum wohlfühlen.
                 </p>
-              </div>
-              
-              {/* Stempel-Platzhalter */}
-              <div className="absolute -bottom-4 -right-4 w-24 h-24 md:w-32 md:h-32 rounded-full bg-red-500/20 border-4 border-red-500/40 shadow-lg transform rotate-12 flex items-center justify-center">
-                <div className="w-16 h-16 md:w-20 md:h-20 rounded-full border-2 border-red-500/60 border-dashed flex items-center justify-center">
-                  <span className="text-red-500/60 text-xs md:text-sm font-bold text-center leading-tight">
-                    STEMPEL<br/>HIER
-                  </span>
-                </div>
               </div>
             </div>
           </motion.div>
