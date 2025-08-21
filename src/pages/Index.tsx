@@ -101,19 +101,33 @@ const Index = () => {
             viewport={{ once: true }}
           >
             <div className="bg-card/30 backdrop-blur-sm rounded-2xl p-8 md:p-12 border border-border/50 shadow-sm relative">
-              <div className="max-w-3xl">
-                <p className="text-lg md:text-xl text-foreground leading-relaxed mb-6">
-                  Hallo, ich bin Captain Apfel und mit meiner Crew unterwegs auf gesunder Mission.
-                </p>
-                <p className="text-lg md:text-xl text-foreground leading-relaxed mb-6">
-                  Berlin ist der Startpunkt unserer Reise. Von hier aus hebt das Tomatenraumschiff ab und bringt uns direkt in Einrichtungen mit Kindern im Vorschul- und Grundschulalter.
-                </p>
-                <p className="text-lg md:text-xl text-foreground leading-relaxed mb-6">
-                  In meinen Workshops erleben wir durch Geschichten und Aktionen, was unserem Körper guttut – und was ihn eher ausbremst.
-                </p>
-                <p className="text-lg md:text-xl text-foreground leading-relaxed">
-                  Denn gesunde Gewohnheiten geben uns Kraft, machen das Denken leichter und lassen uns rundum wohlfühlen.
-                </p>
+              <div className="max-w-3xl space-y-6">
+                <div className="space-y-4">
+                  <h3 className="text-2xl md:text-3xl font-bold text-primary mb-4">
+                    🍎 Hallo, ich bin Captain Apfel!
+                  </h3>
+                  <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
+                    Mit meiner Crew bin ich unterwegs auf gesunder Mission.
+                  </p>
+                </div>
+
+                <div className="bg-primary/10 rounded-xl p-6 border-l-4 border-primary">
+                  <p className="text-lg md:text-xl font-semibold text-foreground leading-relaxed mb-3">
+                    🚀 Berlin ist der Startpunkt unserer Reise
+                  </p>
+                  <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
+                    Von hier aus hebt das Tomatenraumschiff ab und bringt uns direkt in Einrichtungen mit Kindern im Vorschul- und Grundschulalter.
+                  </p>
+                </div>
+
+                <div className="space-y-3">
+                  <p className="text-lg md:text-xl text-foreground leading-relaxed">
+                    ✨ In meinen Workshops erleben wir durch Geschichten und Aktionen, was unserem Körper guttut – und was ihn eher ausbremst.
+                  </p>
+                  <p className="text-xl md:text-2xl font-bold text-primary leading-relaxed">
+                    💪 Denn gesunde Gewohnheiten geben uns Kraft, machen das Denken leichter und lassen uns rundum wohlfühlen.
+                  </p>
+                </div>
               </div>
             </div>
           </motion.div>
