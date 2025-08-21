@@ -94,7 +94,6 @@ const Header = () => {
           <nav className="hidden md:flex items-center justify-center flex-1">
             <div className="flex items-center justify-center space-x-1 lg:space-x-2">
               <NavItem to="/" label="Startseite" textColor={getTextColor()} hoverColor={getHoverColor()} />
-              <NavItem to="/fuer-einrichtungen" label="Die Mission" textColor={getTextColor()} hoverColor={getHoverColor()} />
               <NavItem to="/regionally-rooted" label="Regional verwurzelt" textColor={getTextColor()} hoverColor={getHoverColor()} />
               
               <div className="relative group">
@@ -146,10 +145,6 @@ const Header = () => {
           <div className="px-2 pt-2 pb-3 space-y-1">
             <Link to="/" className={`block px-3 py-2 rounded-md text-base font-medium hover:bg-primary-light ${location.pathname === '/' ? 'text-primary-dark font-bold' : ''}`} onClick={() => {setMobileMenuOpen(false); window.scrollTo(0, 0);}}>
               Startseite
-            </Link>
-            
-            <Link to="/fuer-einrichtungen" className={`block px-3 py-2 rounded-md text-base font-medium hover:bg-primary-light ${location.pathname === '/fuer-einrichtungen' ? 'text-primary-dark font-bold' : ''}`} onClick={() => {setMobileMenuOpen(false); window.scrollTo(0, 0);}}>
-              Die Mission
             </Link>
             
             <Link to="/regionally-rooted" className={`block px-3 py-2 rounded-md text-base font-medium hover:bg-primary-light ${location.pathname === '/regionally-rooted' ? 'text-primary-dark font-bold' : ''}`} onClick={() => {setMobileMenuOpen(false); window.scrollTo(0, 0);}}>
