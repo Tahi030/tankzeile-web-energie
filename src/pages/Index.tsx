@@ -113,12 +113,12 @@ const Index = () => {
                 </h2>
                 
                 {/* Kleiner erklärender Text */}
-                <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
+                <p className="text-2xl md:text-3xl font-normal text-foreground leading-tight">
                   Mit meiner Crew bin ich unterwegs auf gesunder Mission.
                 </p>
                 
                 {/* Große Blickfang-Zeile */}
-                <h3 className="text-2xl md:text-3xl font-normal text-foreground leading-tight">
+                <h3 className="text-base md:text-lg text-muted-foreground leading-relaxed">
                   Berlin ist der Startpunkt <br className="hidden md:block" /> 
                   unserer Reise.
                 </h3>
