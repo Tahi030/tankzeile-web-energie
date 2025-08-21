@@ -129,16 +129,10 @@ const Index = () => {
                 </h3>
                 
                 {/* Starkes Schluss-Statement */}
-                <div className="space-y-1">
-                  <h4 className="text-base md:text-lg font-bold text-primary leading-tight">
-                    Denn gesunde Gewohnheiten geben uns Kraft,
-                  </h4>
-                  <h4 className="text-base md:text-lg font-bold text-primary leading-tight">
-                    machen das Denken leichter
-                  </h4>
-                  <h4 className="text-base md:text-lg font-bold text-primary leading-tight">
-                    und lassen uns rundum wohlfühlen.
-                  </h4>
+                <div className="space-y-1 text-left">
+                  <p className="text-base md:text-lg font-normal text-primary leading-tight">
+                    Denn gesunde Gewohnheiten geben uns Kraft, machen das Denken leichter und lassen uns rundum wohlfühlen.
+                  </p>
                 </div>
               </div>
             </div>
