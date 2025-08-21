@@ -118,8 +118,8 @@ const Index = () => {
                 </p>
                 
                 {/* Große Blickfang-Zeile */}
-                <h3 className="text-2xl md:text-3xl font-bold text-foreground leading-tight">
-                  Berlin ist der Startpunkt<br className="hidden md:block" /> 
+                <h3 className="text-2xl md:text-3xl font-normal text-foreground leading-tight">
+                  Berlin ist der Startpunkt <br className="hidden md:block" /> 
                   unserer Reise.
                 </h3>
                 
