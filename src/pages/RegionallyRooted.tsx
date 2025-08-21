@@ -56,6 +56,39 @@ const RegionallyRooted = () => {
                     Hier wird das Bild von Captain Apfels Apfelbaum eingefügt
                   </p>
                 </div>
+
+                {/* Mission Section */}
+                <div className="mt-16 bg-primary-light/20 rounded-xl p-8 md:p-12">
+                  <h2 className="text-3xl font-bold text-primary mb-6">
+                    Die Mission von Captain Apfel & Crew
+                  </h2>
+                  
+                  <p className="text-xl mb-8 leading-relaxed">
+                    Kinder sind unsere Zukunft. Ich möchte ihnen zeigen, wie wichtig gutes Essen ist – mit Lebensmitteln, die Kraft geben, gesund sind und Herkunft haben.
+                  </p>
+
+                  <div className="mb-8">
+                    <h3 className="text-2xl font-semibold mb-6 flex items-center gap-2">
+                      <span>🌱</span> Werte
+                    </h3>
+                    
+                    <div className="grid md:grid-cols-3 gap-6 mb-8">
+                      <div className="text-center p-6 bg-white/50 rounded-lg">
+                        <h4 className="font-semibold text-lg mb-2">Regionalität statt Industrie</h4>
+                      </div>
+                      <div className="text-center p-6 bg-white/50 rounded-lg">
+                        <h4 className="font-semibold text-lg mb-2">Qualität statt Zuckerfallen</h4>
+                      </div>
+                      <div className="text-center p-6 bg-white/50 rounded-lg">
+                        <h4 className="font-semibold text-lg mb-2">Kinder stärken statt Werbung</h4>
+                      </div>
+                    </div>
+                  </div>
+
+                  <p className="text-lg leading-relaxed">
+                    An der Wurzel können wir etwas verändern: Wenn Kinder früh verstehen, was ihrem Körper guttut, haben sie die Chance, gesunde Gewohnheiten fürs Leben mitzunehmen.
+                  </p>
+                </div>
               </div>
             </div>
           </motion.div>
