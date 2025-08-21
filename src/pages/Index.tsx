@@ -120,12 +120,7 @@ const Index = () => {
                 {/* Große Blickfang-Zeile */}
                 <h3 className="text-sm md:text-base text-muted-foreground leading-relaxed">
                   Berlin ist der Startpunkt <br className="hidden md:block" /> 
-                  unserer Reise.
-                </h3>
-                
-                {/* Kleiner erklärender Text */}
-                <h3 className="text-sm md:text-base text-muted-foreground leading-relaxed">
-                  Von hier aus hebt das Tomatenraumschiff ab und landet direkt in Einrichtungen mit Kindern im Vorschul- und Grundschulalter.
+                  unserer Reise. Von hier aus hebt das Tomatenraumschiff ab und landet direkt in Einrichtungen mit Kindern im Vorschul- und Grundschulalter.
                 </h3>
                 
                 {/* Starkes Schluss-Statement */}
