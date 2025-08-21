@@ -111,8 +111,8 @@ const Index = () => {
                   </p>
                 </div>
 
-                <div className="bg-primary/10 rounded-xl p-6 border-l-4 border-primary">
-                  <p className="text-lg md:text-xl font-semibold text-foreground leading-relaxed mb-3">
+                <div className="space-y-3">
+                  <p className="text-lg md:text-xl font-semibold text-foreground leading-relaxed">
                     Berlin ist der Startpunkt unserer Reise
                   </p>
                   <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
