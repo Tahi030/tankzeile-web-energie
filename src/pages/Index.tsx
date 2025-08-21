@@ -101,42 +101,42 @@ const Index = () => {
             viewport={{ once: true }}
           >
             <div className="bg-card/30 backdrop-blur-sm rounded-2xl p-8 md:p-12 border border-border/50 shadow-sm relative">
-              <div className="max-w-4xl space-y-8">
+              <div className="max-w-3xl space-y-6">
                 {/* Kleine Einleitung */}
-                <p className="text-base md:text-lg text-muted-foreground font-medium tracking-wide">
+                <p className="text-sm md:text-base text-muted-foreground font-medium tracking-wide">
                   Hallo, ich bin
                 </p>
                 
                 {/* Große Hauptzeile */}
-                <h2 className="text-5xl md:text-7xl font-black text-primary leading-none tracking-tight">
+                <h2 className="text-3xl md:text-5xl font-black text-primary leading-none tracking-tight">
                   Captain Apfel
                 </h2>
                 
                 {/* Kleiner erklärender Text */}
-                <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl">
+                <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
                   Mit meiner Crew bin ich unterwegs auf gesunder Mission.
                 </p>
                 
                 {/* Große Blickfang-Zeile */}
-                <h3 className="text-4xl md:text-6xl font-bold text-foreground leading-tight">
+                <h3 className="text-2xl md:text-3xl font-bold text-foreground leading-tight">
                   Berlin ist der Startpunkt<br className="hidden md:block" /> 
                   unserer Reise.
                 </h3>
                 
                 {/* Kleiner erklärender Text */}
-                <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl">
+                <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
                   Von hier aus hebt das Tomatenraumschiff ab und landet direkt in Einrichtungen mit Kindern im Vorschul- und Grundschulalter.
                 </p>
                 
                 {/* Starkes Schluss-Statement */}
-                <div className="space-y-2">
-                  <h4 className="text-4xl md:text-5xl font-bold text-primary leading-tight">
+                <div className="space-y-1">
+                  <h4 className="text-xl md:text-2xl font-bold text-primary leading-tight">
                     Denn gesunde Gewohnheiten geben uns Kraft,
                   </h4>
-                  <h4 className="text-4xl md:text-5xl font-bold text-primary leading-tight">
+                  <h4 className="text-xl md:text-2xl font-bold text-primary leading-tight">
                     machen das Denken leichter
                   </h4>
-                  <h4 className="text-4xl md:text-5xl font-bold text-primary leading-tight">
+                  <h4 className="text-xl md:text-2xl font-bold text-primary leading-tight">
                     und lassen uns rundum wohlfühlen.
                   </h4>
                 </div>
