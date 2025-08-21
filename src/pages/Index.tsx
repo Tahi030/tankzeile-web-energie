@@ -423,7 +423,7 @@ const Index = () => {
             viewport={{ once: true }}
           >
             <h2 className="section-title text-center mb-4 text-white">
-              Unsere Angebote
+              Meine aktuellen Reisen
             </h2>
             
             {/* Hand-drawn line effect */}
