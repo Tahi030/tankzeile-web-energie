@@ -150,7 +150,7 @@ const Index = () => {
             </h2>
             
             {/* Hand-drawn line effect */}
-            <div className="flex justify-center mb-8">
+            <div className="flex justify-center mb-6">
               <svg width="150" height="12" viewBox="0 0 150 12" className="text-white">
                 <path
                   d="M2,6 Q12,3 20,6 T40,5 Q55,8 70,6 T100,5 Q115,8 130,6 T148,6"
@@ -172,6 +172,10 @@ const Index = () => {
                 </defs>
               </svg>
             </div>
+            
+            <p className="text-lg md:text-xl text-white/90 mb-12 font-light">
+              Ob schlau, mutig oder frech – hier erfährst du, wer dabei ist.
+            </p>
           </motion.div>
 
           {/* Clean Magazin-Layout */}
@@ -401,7 +405,7 @@ const Index = () => {
           >
             <div className="border-t border-white/10 pt-8 max-w-md mx-auto">
               <p className="text-white/80 text-sm font-light">
-                Zusammen auf gesunder Mission
+                Zusammen machen sie jede Einrichtung zu einem Ort voller Energie, Spaß und gesunder Abenteuer
               </p>
             </div>
           </motion.div>
