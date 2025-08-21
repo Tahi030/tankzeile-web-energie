@@ -113,7 +113,7 @@ const Index = () => {
                 </h2>
                 
                 {/* Kleiner erklärender Text */}
-                <p className="text-lg md:text-xl font-normal text-foreground leading-tight">
+                <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
                   Mit meiner Crew bin ich unterwegs auf gesunder Mission.
                 </p>
                 
