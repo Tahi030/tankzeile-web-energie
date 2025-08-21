@@ -104,7 +104,7 @@ const Index = () => {
               <div className="max-w-3xl space-y-6">
                 <div className="space-y-4">
                   <h3 className="text-2xl md:text-3xl font-bold text-primary mb-4">
-                    🍎 Hallo, ich bin Captain Apfel!
+                    Hallo, ich bin Captain Apfel!
                   </h3>
                   <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
                     Mit meiner Crew bin ich unterwegs auf gesunder Mission.
@@ -113,7 +113,7 @@ const Index = () => {
 
                 <div className="bg-primary/10 rounded-xl p-6 border-l-4 border-primary">
                   <p className="text-lg md:text-xl font-semibold text-foreground leading-relaxed mb-3">
-                    🚀 Berlin ist der Startpunkt unserer Reise
+                    Berlin ist der Startpunkt unserer Reise
                   </p>
                   <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
                     Von hier aus hebt das Tomatenraumschiff ab und bringt uns direkt in Einrichtungen mit Kindern im Vorschul- und Grundschulalter.
@@ -122,10 +122,10 @@ const Index = () => {
 
                 <div className="space-y-3">
                   <p className="text-lg md:text-xl text-foreground leading-relaxed">
-                    ✨ In meinen Workshops erleben wir durch Geschichten und Aktionen, was unserem Körper guttut – und was ihn eher ausbremst.
+                    In meinen Workshops erleben wir durch Geschichten und Aktionen, was unserem Körper guttut – und was ihn eher ausbremst.
                   </p>
                   <p className="text-xl md:text-2xl font-bold text-primary leading-relaxed">
-                    💪 Denn gesunde Gewohnheiten geben uns Kraft, machen das Denken leichter und lassen uns rundum wohlfühlen.
+                    Denn gesunde Gewohnheiten geben uns Kraft, machen das Denken leichter und lassen uns rundum wohlfühlen.
                   </p>
                 </div>
               </div>
