@@ -130,7 +130,7 @@ const Index = () => {
                 
                 {/* Starkes Schluss-Statement */}
                 <div className="space-y-1 text-left">
-                  <p className="text-base md:text-lg font-normal text-primary leading-tight">
+                  <p className="text-xs md:text-sm text-muted-foreground font-medium tracking-wide">
                     Denn gesunde Gewohnheiten geben uns Kraft, machen das Denken leichter und lassen uns rundum wohlfühlen.
                   </p>
                 </div>
