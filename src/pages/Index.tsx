@@ -135,27 +135,27 @@ const Index = () => {
         </div>
       </section>
 
-      {/* CREW-Bereich - Kompakt und dezent */}
-      <section className="py-12 bg-background">
+      {/* CREW-Bereich - Magazin-Stil */}
+      <section className="py-16 bg-background">
         <div className="container-custom">
           <motion.div 
-            className="text-center mb-12"
+            className="text-center mb-16"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 font-playfair">
               Lerne die Crew kennen
             </h2>
             
             {/* Hand-drawn line effect */}
-            <div className="flex justify-center mb-6">
-              <svg width="120" height="8" viewBox="0 0 120 8" className="text-white">
+            <div className="flex justify-center mb-8">
+              <svg width="150" height="12" viewBox="0 0 150 12" className="text-white">
                 <path
-                  d="M2,4 Q8,2 15,4 T30,3 Q40,5 50,4 T70,3 Q80,5 90,4 T110,3 Q115,2 118,4"
+                  d="M2,6 Q12,3 20,6 T40,5 Q55,8 70,6 T100,5 Q115,8 130,6 T148,6"
                   stroke="currentColor"
-                  strokeWidth="2"
+                  strokeWidth="2.5"
                   fill="none"
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -173,139 +173,318 @@ const Index = () => {
               </svg>
             </div>
             
-            <p className="text-lg md:text-xl text-white/90 mb-12">
+            <p className="text-xl md:text-2xl text-white/90 mb-12 font-light">
               Ob schlau, mutig oder frech – hier erfährst du, wer dabei ist.
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto">
-            {/* Captain Apfel */}
-            <motion.div
+          {/* Magazin-Layout mit handgezeichneten Pfeilen */}
+          <div className="max-w-6xl mx-auto">
+            
+            {/* Erste Reihe - Captain Apfel mit Pfeil */}
+            <motion.div 
+              className="mb-20"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.1 }}
               viewport={{ once: true }}
             >
-              <div className="crew-card-red">
-                <div className="polaroid-photo">
-                  <div className="w-full h-full bg-red-100 rounded flex items-center justify-center">
-                    <span className="text-2xl">🍎</span>
+              <div className="grid md:grid-cols-2 gap-8 items-center">
+                <div className="relative">
+                  {/* Handgezeichneter Pfeil */}
+                  <div className="absolute -top-12 -right-4 md:-right-8">
+                    <svg width="80" height="60" viewBox="0 0 80 60" className="text-primary opacity-70">
+                      <path
+                        d="M15,45 Q25,35 35,25 Q45,15 55,20"
+                        stroke="currentColor"
+                        strokeWidth="2.5"
+                        fill="none"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        style={{ filter: 'url(#roughArrow1)' }}
+                      />
+                      <path
+                        d="M50,15 L55,20 L50,25"
+                        stroke="currentColor"
+                        strokeWidth="2.5"
+                        fill="none"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        style={{ filter: 'url(#roughArrow1)' }}
+                      />
+                      <defs>
+                        <filter id="roughArrow1">
+                          <feTurbulence baseFrequency="0.06" numOctaves="2" result="noise" seed="1" />
+                          <feDisplacementMap in="SourceGraphic" in2="noise" scale="1.2" />
+                        </filter>
+                      </defs>
+                    </svg>
                   </div>
-                  <div className="polaroid-name">Captain Apfel</div>
+                  
+                  <div className="bg-card/50 backdrop-blur-sm rounded-3xl p-8 border border-primary/20">
+                    <div className="text-center mb-6">
+                      <div className="w-24 h-24 mx-auto bg-red-100 rounded-full flex items-center justify-center text-4xl mb-4">
+                        🍎
+                      </div>
+                      <h3 className="text-2xl font-bold text-primary mb-2">Captain Apfel</h3>
+                    </div>
+                  </div>
                 </div>
-                <div className="text-center px-2">
-                  <p className="text-xs text-gray-600 leading-relaxed">
-                    Führt die Crew auf ihrer gesunden Mission durch den Körper!
+                
+                <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
+                  <p className="text-white text-lg leading-relaxed">
+                    <span className="text-primary font-semibold">Der Anführer:</span> Führt die Crew auf ihrer gesunden Mission durch den Körper und sorgt dafür, dass jedes Abenteuer erfolgreich wird!
                   </p>
                 </div>
               </div>
             </motion.div>
 
-            {/* Kimmi Schlau */}
-            <motion.div
+            {/* Zweite Reihe - Kimmi Schlau mit Pfeil (gespiegelt) */}
+            <motion.div 
+              className="mb-20"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
               viewport={{ once: true }}
             >
-              <div className="crew-card-orange">
-                <div className="polaroid-photo">
-                  <div className="w-full h-full bg-orange-100 rounded flex items-center justify-center">
-                    <span className="text-2xl">🧠</span>
-                  </div>
-                  <div className="polaroid-name">Kimmi Schlau</div>
-                </div>
-                <div className="text-center px-2">
-                  <p className="text-xs text-gray-600 leading-relaxed">
-                    Kennt die besten Tipps für eine gesunde Powerzentrale!
+              <div className="grid md:grid-cols-2 gap-8 items-center">
+                <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 md:order-1">
+                  <p className="text-white text-lg leading-relaxed">
+                    <span className="text-secondary font-semibold">Die Schlaue:</span> Kennt die besten Tipps für eine gesunde Powerzentrale und weiß, wie der Körper funktioniert!
                   </p>
+                </div>
+                
+                <div className="relative md:order-2">
+                  {/* Handgezeichneter Pfeil (links zeigend) */}
+                  <div className="absolute -top-12 -left-4 md:-left-8">
+                    <svg width="80" height="60" viewBox="0 0 80 60" className="text-secondary opacity-70">
+                      <path
+                        d="M65,45 Q55,35 45,25 Q35,15 25,20"
+                        stroke="currentColor"
+                        strokeWidth="2.5"
+                        fill="none"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        style={{ filter: 'url(#roughArrow2)' }}
+                      />
+                      <path
+                        d="M30,15 L25,20 L30,25"
+                        stroke="currentColor"
+                        strokeWidth="2.5"
+                        fill="none"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        style={{ filter: 'url(#roughArrow2)' }}
+                      />
+                      <defs>
+                        <filter id="roughArrow2">
+                          <feTurbulence baseFrequency="0.06" numOctaves="2" result="noise" seed="2" />
+                          <feDisplacementMap in="SourceGraphic" in2="noise" scale="1.2" />
+                        </filter>
+                      </defs>
+                    </svg>
+                  </div>
+                  
+                  <div className="bg-card/50 backdrop-blur-sm rounded-3xl p-8 border border-secondary/20">
+                    <div className="text-center mb-6">
+                      <div className="w-24 h-24 mx-auto bg-orange-100 rounded-full flex items-center justify-center text-4xl mb-4">
+                        🧠
+                      </div>
+                      <h3 className="text-2xl font-bold text-secondary mb-2">Kimmi Schlau</h3>
+                    </div>
+                  </div>
                 </div>
               </div>
             </motion.div>
 
-            {/* Kai Mutig */}
-            <motion.div
+            {/* Dritte Reihe - Kai Mutig mit Pfeil */}
+            <motion.div 
+              className="mb-20"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
               viewport={{ once: true }}
             >
-              <div className="crew-card-green">
-                <div className="polaroid-photo">
-                  <div className="w-full h-full bg-green-100 rounded flex items-center justify-center">
-                    <span className="text-2xl">💪</span>
+              <div className="grid md:grid-cols-2 gap-8 items-center">
+                <div className="relative">
+                  {/* Handgezeichneter Pfeil (geschwungen) */}
+                  <div className="absolute -top-16 -right-8">
+                    <svg width="90" height="70" viewBox="0 0 90 70" className="text-accent opacity-70">
+                      <path
+                        d="M20,55 Q30,40 40,30 Q50,20 60,25 Q70,30 65,35"
+                        stroke="currentColor"
+                        strokeWidth="2.5"
+                        fill="none"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        style={{ filter: 'url(#roughArrow3)' }}
+                      />
+                      <path
+                        d="M60,30 L65,35 L60,40"
+                        stroke="currentColor"
+                        strokeWidth="2.5"
+                        fill="none"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        style={{ filter: 'url(#roughArrow3)' }}
+                      />
+                      <defs>
+                        <filter id="roughArrow3">
+                          <feTurbulence baseFrequency="0.06" numOctaves="2" result="noise" seed="3" />
+                          <feDisplacementMap in="SourceGraphic" in2="noise" scale="1.2" />
+                        </filter>
+                      </defs>
+                    </svg>
                   </div>
-                  <div className="polaroid-name">Kai Mutig</div>
+                  
+                  <div className="bg-card/50 backdrop-blur-sm rounded-3xl p-8 border border-accent/20">
+                    <div className="text-center mb-6">
+                      <div className="w-24 h-24 mx-auto bg-green-100 rounded-full flex items-center justify-center text-4xl mb-4">
+                        💪
+                      </div>
+                      <h3 className="text-2xl font-bold text-accent mb-2">Kai Mutig</h3>
+                    </div>
+                  </div>
                 </div>
-                <div className="text-center px-2">
-                  <p className="text-xs text-gray-600 leading-relaxed">
-                    Bringt Stärke und zeigt, wie man mutig neue Sachen probiert!
+                
+                <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
+                  <p className="text-white text-lg leading-relaxed">
+                    <span className="text-accent font-semibold">Der Mutige:</span> Bringt Stärke und zeigt, wie man mutig neue Sachen probiert – auch wenn sie erst ungewöhnlich schmecken!
                   </p>
                 </div>
               </div>
             </motion.div>
 
-            {/* Tomatenraumschiff */}
-            <motion.div
+            {/* Bottom Section - Spezielle Crew-Mitglieder */}
+            <motion.div 
+              className="grid md:grid-cols-3 gap-8 mt-16"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
               viewport={{ once: true }}
             >
-              <div className="crew-card-terracotta">
-                <div className="polaroid-photo">
-                  <div className="w-full h-full bg-red-200 rounded flex items-center justify-center">
-                    <span className="text-2xl">🚀</span>
-                  </div>
-                  <div className="polaroid-name">Tomatenraumschiff</div>
+              {/* Tomatenraumschiff */}
+              <div className="relative">
+                <div className="absolute -top-8 left-1/2 transform -translate-x-1/2">
+                  <svg width="60" height="40" viewBox="0 0 60 40" className="text-primary opacity-60">
+                    <path
+                      d="M30,5 Q25,15 30,25"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      fill="none"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      style={{ filter: 'url(#roughArrow4)' }}
+                    />
+                    <path
+                      d="M25,20 L30,25 L35,20"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      fill="none"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      style={{ filter: 'url(#roughArrow4)' }}
+                    />
+                    <defs>
+                      <filter id="roughArrow4">
+                        <feTurbulence baseFrequency="0.06" numOctaves="2" result="noise" seed="4" />
+                        <feDisplacementMap in="SourceGraphic" in2="noise" scale="1" />
+                      </filter>
+                    </defs>
+                  </svg>
                 </div>
-                <div className="text-center px-2">
-                  <p className="text-xs text-gray-600 leading-relaxed">
-                    Fliegt zur Powerzentrale und bringt wichtige Nährstoffe!
+                
+                <div className="bg-card/30 backdrop-blur-sm rounded-2xl p-6 border border-primary/10 text-center">
+                  <div className="w-16 h-16 mx-auto bg-red-200 rounded-full flex items-center justify-center text-2xl mb-3">
+                    🚀
+                  </div>
+                  <h4 className="text-lg font-bold text-primary mb-2">Tomatenraumschiff</h4>
+                  <p className="text-sm text-muted-foreground">
+                    Das Transportmittel für alle wichtigen Nährstoffe!
                   </p>
                 </div>
               </div>
-            </motion.div>
 
-            {/* Paffel */}
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.5 }}
-              viewport={{ once: true }}
-            >
-              <div className="crew-card-sand">
-                <div className="polaroid-photo">
-                  <div className="w-full h-full bg-yellow-100 rounded flex items-center justify-center">
-                    <span className="text-2xl">😈</span>
-                  </div>
-                  <div className="polaroid-name">Paffel</div>
+              {/* Paffel */}
+              <div className="relative">
+                <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 rotate-12">
+                  <svg width="60" height="40" viewBox="0 0 60 40" className="text-destructive opacity-60">
+                    <path
+                      d="M30,5 Q35,15 30,25"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      fill="none"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      style={{ filter: 'url(#roughArrow5)' }}
+                    />
+                    <path
+                      d="M25,20 L30,25 L35,20"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      fill="none"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      style={{ filter: 'url(#roughArrow5)' }}
+                    />
+                    <defs>
+                      <filter id="roughArrow5">
+                        <feTurbulence baseFrequency="0.06" numOctaves="2" result="noise" seed="5" />
+                        <feDisplacementMap in="SourceGraphic" in2="noise" scale="1" />
+                      </filter>
+                    </defs>
+                  </svg>
                 </div>
-                <div className="text-center px-2">
-                  <p className="text-xs text-gray-600 leading-relaxed">
-                    Will Chaos machen – aber die Crew zeigt, wie man ihm standhält!
+                
+                <div className="bg-card/30 backdrop-blur-sm rounded-2xl p-6 border border-destructive/10 text-center">
+                  <div className="w-16 h-16 mx-auto bg-yellow-100 rounded-full flex items-center justify-center text-2xl mb-3">
+                    😈
+                  </div>
+                  <h4 className="text-lg font-bold text-destructive mb-2">Paffel</h4>
+                  <p className="text-sm text-muted-foreground">
+                    Der Störenfried – aber die Crew weiß, wie man ihm standhält!
                   </p>
                 </div>
               </div>
-            </motion.div>
 
-            {/* Die Powerzentrale */}
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.6 }}
-              viewport={{ once: true }}
-            >
-              <div className="crew-card-green">
-                <div className="polaroid-photo">
-                  <div className="w-full h-full bg-green-200 rounded flex items-center justify-center">
-                    <span className="text-2xl">⚡</span>
-                  </div>
-                  <div className="polaroid-name">Die Powerzentrale</div>
+              {/* Die Powerzentrale */}
+              <div className="relative">
+                <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 -rotate-12">
+                  <svg width="60" height="40" viewBox="0 0 60 40" className="text-secondary opacity-60">
+                    <path
+                      d="M30,5 Q20,15 30,25"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      fill="none"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      style={{ filter: 'url(#roughArrow6)' }}
+                    />
+                    <path
+                      d="M25,20 L30,25 L35,20"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      fill="none"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      style={{ filter: 'url(#roughArrow6)' }}
+                    />
+                    <defs>
+                      <filter id="roughArrow6">
+                        <feTurbulence baseFrequency="0.06" numOctaves="2" result="noise" seed="6" />
+                        <feDisplacementMap in="SourceGraphic" in2="noise" scale="1" />
+                      </filter>
+                    </defs>
+                  </svg>
                 </div>
-                <div className="text-center px-2">
-                  <p className="text-xs text-gray-600 leading-relaxed">
-                    Hier wird die ganze Energie gesammelt und verteilt – das Herzstück jeder Mission!
+                
+                <div className="bg-card/30 backdrop-blur-sm rounded-2xl p-6 border border-secondary/10 text-center">
+                  <div className="w-16 h-16 mx-auto bg-green-200 rounded-full flex items-center justify-center text-2xl mb-3">
+                    ⚡
+                  </div>
+                  <h4 className="text-lg font-bold text-secondary mb-2">Die Powerzentrale</h4>
+                  <p className="text-sm text-muted-foreground">
+                    Das Herzstück jeder Mission – hier wird alle Energie gesammelt!
                   </p>
                 </div>
               </div>
@@ -313,14 +492,14 @@ const Index = () => {
           </div>
 
           <motion.div 
-            className="text-center mt-8"
+            className="text-center mt-16"
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.5 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
             viewport={{ once: true }}
           >
-            <div className="text-box max-w-2xl mx-auto">
-              <p className="text-base text-foreground font-medium">
+            <div className="bg-card/20 backdrop-blur-sm rounded-2xl p-8 max-w-3xl mx-auto border border-primary/20">
+              <p className="text-xl text-white font-medium leading-relaxed">
                 🌟 Zusammen machen sie jede Einrichtung zu einem Ort voller Energie, Spaß und gesunder Abenteuer! 🌟
               </p>
             </div>
