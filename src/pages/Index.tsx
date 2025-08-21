@@ -146,7 +146,7 @@ const Index = () => {
             viewport={{ once: true }}
           >
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 font-playfair">
-              Lerne die Crew kennen
+              Die Crew
             </h2>
             
             {/* Hand-drawn line effect */}
@@ -175,302 +175,233 @@ const Index = () => {
           </motion.div>
 
           {/* Clean Magazin-Layout */}
-          <div className="max-w-7xl mx-auto relative min-h-[600px]">
+          <div className="max-w-6xl mx-auto space-y-16">
             
-            {/* Captain Apfel - Links oben */}
+            {/* Captain Apfel */}
             <motion.div 
-              className="absolute top-0 left-8 md:left-16"
-              initial={{ opacity: 0, scale: 0.8 }}
-              whileInView={{ opacity: 1, scale: 1 }}
+              className="flex items-center justify-start gap-6"
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
               viewport={{ once: true }}
             >
-              <div className="flex items-center gap-4">
-                <div className="w-20 h-20 md:w-24 md:h-24 bg-red-100 rounded-full flex items-center justify-center text-4xl shadow-lg">
-                  🍎
-                </div>
-                
-                {/* Pfeil nach rechts */}
-                <svg width="40" height="20" viewBox="0 0 40 20" className="text-primary">
-                  <path
-                    d="M5,10 L30,10"
-                    stroke="currentColor"
-                    strokeWidth="2.5"
-                    fill="none"
-                    strokeLinecap="round"
-                    style={{ filter: 'url(#roughArrow1)' }}
-                  />
-                  <path
-                    d="M25,5 L30,10 L25,15"
-                    stroke="currentColor"
-                    strokeWidth="2.5"
-                    fill="none"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    style={{ filter: 'url(#roughArrow1)' }}
-                  />
-                  <defs>
-                    <filter id="roughArrow1">
-                      <feTurbulence baseFrequency="0.08" numOctaves="2" result="noise" seed="1" />
-                      <feDisplacementMap in="SourceGraphic" in2="noise" scale="1" />
-                    </filter>
-                  </defs>
+              {/* Einfache Illustration */}
+              <div className="flex-shrink-0">
+                <svg width="80" height="80" viewBox="0 0 80 80" className="text-primary">
+                  <circle cx="40" cy="30" r="18" fill="none" stroke="currentColor" strokeWidth="2"/>
+                  <path d="M30,25 Q40,15 50,25" fill="none" stroke="currentColor" strokeWidth="2"/>
+                  <circle cx="35" cy="28" r="2" fill="currentColor"/>
+                  <circle cx="45" cy="28" r="2" fill="currentColor"/>
+                  <path d="M32,35 Q40,42 48,35" fill="none" stroke="currentColor" strokeWidth="2"/>
+                  <rect x="35" y="48" width="10" height="20" fill="none" stroke="currentColor" strokeWidth="2"/>
+                  <path d="M25,58 L35,58 M45,58 L55,58" stroke="currentColor" strokeWidth="2"/>
+                  <path d="M30,68 L35,68 M45,68 L50,68" stroke="currentColor" strokeWidth="2"/>
                 </svg>
-                
-                <div className="text-white">
-                  <h3 className="text-lg md:text-xl font-bold text-primary">Captain Apfel</h3>
-                  <p className="text-sm md:text-base text-white/80">mutig und führt an</p>
-                </div>
+              </div>
+              
+              {/* Pfeil */}
+              <svg width="40" height="20" viewBox="0 0 40 20" className="text-white/40 flex-shrink-0">
+                <path d="M5,10 L30,10" stroke="currentColor" strokeWidth="1.5" fill="none"/>
+                <path d="M25,6 L30,10 L25,14" stroke="currentColor" strokeWidth="1.5" fill="none"/>
+              </svg>
+              
+              {/* Text */}
+              <div className="text-white">
+                <h3 className="text-xl font-bold text-primary mb-1">Captain Apfel</h3>
+                <p className="text-sm text-white/70">mutig und führt an</p>
               </div>
             </motion.div>
 
-            {/* Kimmi Schlau - Rechts oben */}
+            {/* Kimmi Schlau */}
             <motion.div 
-              className="absolute top-16 right-8 md:right-16"
-              initial={{ opacity: 0, scale: 0.8 }}
-              whileInView={{ opacity: 1, scale: 1 }}
+              className="flex items-center justify-end gap-6 flex-row-reverse"
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
               viewport={{ once: true }}
             >
-              <div className="flex items-center gap-4 flex-row-reverse">
-                <div className="w-20 h-20 md:w-24 md:h-24 bg-orange-100 rounded-full flex items-center justify-center text-4xl shadow-lg">
-                  🧠
-                </div>
-                
-                {/* Pfeil nach links */}
-                <svg width="40" height="20" viewBox="0 0 40 20" className="text-secondary">
-                  <path
-                    d="M35,10 L10,10"
-                    stroke="currentColor"
-                    strokeWidth="2.5"
-                    fill="none"
-                    strokeLinecap="round"
-                    style={{ filter: 'url(#roughArrow2)' }}
-                  />
-                  <path
-                    d="M15,5 L10,10 L15,15"
-                    stroke="currentColor"
-                    strokeWidth="2.5"
-                    fill="none"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    style={{ filter: 'url(#roughArrow2)' }}
-                  />
-                  <defs>
-                    <filter id="roughArrow2">
-                      <feTurbulence baseFrequency="0.08" numOctaves="2" result="noise" seed="2" />
-                      <feDisplacementMap in="SourceGraphic" in2="noise" scale="1" />
-                    </filter>
-                  </defs>
+              {/* Einfache Illustration */}
+              <div className="flex-shrink-0">
+                <svg width="80" height="80" viewBox="0 0 80 80" className="text-secondary">
+                  <circle cx="40" cy="30" r="18" fill="none" stroke="currentColor" strokeWidth="2"/>
+                  <path d="M30,22 L35,27 L50,12" fill="none" stroke="currentColor" strokeWidth="2"/>
+                  <circle cx="35" cy="30" r="1.5" fill="currentColor"/>
+                  <circle cx="45" cy="30" r="1.5" fill="currentColor"/>
+                  <path d="M35,38 Q40,42 45,38" fill="none" stroke="currentColor" strokeWidth="2"/>
+                  <rect x="35" y="48" width="10" height="20" fill="none" stroke="currentColor" strokeWidth="2"/>
+                  <path d="M25,58 L35,58 M45,58 L55,58" stroke="currentColor" strokeWidth="2"/>
+                  <circle cx="25" cy="25" r="8" fill="none" stroke="currentColor" strokeWidth="1.5"/>
+                  <path d="M20,25 L30,25 M25,20 L25,30" stroke="currentColor" strokeWidth="1"/>
                 </svg>
-                
-                <div className="text-white text-right">
-                  <h3 className="text-lg md:text-xl font-bold text-secondary">Kimmi Schlau</h3>
-                  <p className="text-sm md:text-base text-white/80">klug und neugierig</p>
-                </div>
+              </div>
+              
+              {/* Pfeil */}
+              <svg width="40" height="20" viewBox="0 0 40 20" className="text-white/40 flex-shrink-0">
+                <path d="M35,10 L10,10" stroke="currentColor" strokeWidth="1.5" fill="none"/>
+                <path d="M15,6 L10,10 L15,14" stroke="currentColor" strokeWidth="1.5" fill="none"/>
+              </svg>
+              
+              {/* Text */}
+              <div className="text-white text-right">
+                <h3 className="text-xl font-bold text-secondary mb-1">Kimmi Schlau</h3>
+                <p className="text-sm text-white/70">klug und neugierig</p>
               </div>
             </motion.div>
 
-            {/* Kai Mutig - Links Mitte */}
+            {/* Kai Mutig */}
             <motion.div 
-              className="absolute top-48 left-4 md:left-8"
-              initial={{ opacity: 0, scale: 0.8 }}
-              whileInView={{ opacity: 1, scale: 1 }}
+              className="flex items-center justify-start gap-6 ml-12"
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
               viewport={{ once: true }}
             >
-              <div className="flex items-center gap-4">
-                <div className="w-20 h-20 md:w-24 md:h-24 bg-green-100 rounded-full flex items-center justify-center text-4xl shadow-lg">
-                  💪
-                </div>
-                
-                {/* Pfeil nach rechts diagonal */}
-                <svg width="50" height="30" viewBox="0 0 50 30" className="text-accent">
-                  <path
-                    d="M5,15 Q20,10 35,15"
-                    stroke="currentColor"
-                    strokeWidth="2.5"
-                    fill="none"
-                    strokeLinecap="round"
-                    style={{ filter: 'url(#roughArrow3)' }}
-                  />
-                  <path
-                    d="M30,10 L35,15 L30,20"
-                    stroke="currentColor"
-                    strokeWidth="2.5"
-                    fill="none"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    style={{ filter: 'url(#roughArrow3)' }}
-                  />
-                  <defs>
-                    <filter id="roughArrow3">
-                      <feTurbulence baseFrequency="0.08" numOctaves="2" result="noise" seed="3" />
-                      <feDisplacementMap in="SourceGraphic" in2="noise" scale="1" />
-                    </filter>
-                  </defs>
+              {/* Einfache Illustration */}
+              <div className="flex-shrink-0">
+                <svg width="80" height="80" viewBox="0 0 80 80" className="text-accent">
+                  <circle cx="40" cy="30" r="18" fill="none" stroke="currentColor" strokeWidth="2"/>
+                  <path d="M32,26 L38,26 M42,26 L48,26" stroke="currentColor" strokeWidth="2"/>
+                  <circle cx="35" cy="32" r="2" fill="currentColor"/>
+                  <circle cx="45" cy="32" r="2" fill="currentColor"/>
+                  <path d="M33,40 Q40,45 47,40" fill="none" stroke="currentColor" strokeWidth="2"/>
+                  <rect x="33" y="48" width="14" height="20" fill="none" stroke="currentColor" strokeWidth="2"/>
+                  <path d="M22,58 L33,58 M47,58 L58,58" stroke="currentColor" strokeWidth="2"/>
+                  <circle cx="22" cy="35" r="4" fill="none" stroke="currentColor" strokeWidth="2"/>
+                  <circle cx="58" cy="35" r="4" fill="none" stroke="currentColor" strokeWidth="2"/>
                 </svg>
-                
-                <div className="text-white">
-                  <h3 className="text-lg md:text-xl font-bold text-accent">Kai Mutig</h3>
-                  <p className="text-sm md:text-base text-white/80">stark und tapfer</p>
-                </div>
+              </div>
+              
+              {/* Pfeil */}
+              <svg width="40" height="20" viewBox="0 0 40 20" className="text-white/40 flex-shrink-0">
+                <path d="M5,10 L30,10" stroke="currentColor" strokeWidth="1.5" fill="none"/>
+                <path d="M25,6 L30,10 L25,14" stroke="currentColor" strokeWidth="1.5" fill="none"/>
+              </svg>
+              
+              {/* Text */}
+              <div className="text-white">
+                <h3 className="text-xl font-bold text-accent mb-1">Kai Mutig</h3>
+                <p className="text-sm text-white/70">stark und tapfer</p>
               </div>
             </motion.div>
 
-            {/* Tomatenraumschiff - Rechts Mitte */}
+            {/* Tomatenraumschiff */}
             <motion.div 
-              className="absolute top-64 right-12 md:right-20"
-              initial={{ opacity: 0, scale: 0.8 }}
-              whileInView={{ opacity: 1, scale: 1 }}
+              className="flex items-center justify-end gap-6 flex-row-reverse mr-8"
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
               viewport={{ once: true }}
             >
-              <div className="flex items-center gap-4 flex-row-reverse">
-                <div className="w-20 h-20 md:w-24 md:h-24 bg-red-200 rounded-full flex items-center justify-center text-4xl shadow-lg">
-                  🚀
-                </div>
-                
-                {/* Pfeil nach links geschwungen */}
-                <svg width="50" height="30" viewBox="0 0 50 30" className="text-primary">
-                  <path
-                    d="M45,15 Q30,20 15,15"
-                    stroke="currentColor"
-                    strokeWidth="2.5"
-                    fill="none"
-                    strokeLinecap="round"
-                    style={{ filter: 'url(#roughArrow4)' }}
-                  />
-                  <path
-                    d="M20,10 L15,15 L20,20"
-                    stroke="currentColor"
-                    strokeWidth="2.5"
-                    fill="none"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    style={{ filter: 'url(#roughArrow4)' }}
-                  />
-                  <defs>
-                    <filter id="roughArrow4">
-                      <feTurbulence baseFrequency="0.08" numOctaves="2" result="noise" seed="4" />
-                      <feDisplacementMap in="SourceGraphic" in2="noise" scale="1" />
-                    </filter>
-                  </defs>
+              {/* Einfache Illustration */}
+              <div className="flex-shrink-0">
+                <svg width="80" height="80" viewBox="0 0 80 80" className="text-primary">
+                  <ellipse cx="40" cy="45" rx="20" ry="15" fill="none" stroke="currentColor" strokeWidth="2"/>
+                  <path d="M25,35 Q40,25 55,35" fill="none" stroke="currentColor" strokeWidth="2"/>
+                  <circle cx="33" cy="42" r="3" fill="none" stroke="currentColor" strokeWidth="1.5"/>
+                  <circle cx="47" cy="42" r="3" fill="none" stroke="currentColor" strokeWidth="1.5"/>
+                  <path d="M37,20 L40,10 L43,20" fill="none" stroke="currentColor" strokeWidth="2"/>
+                  <path d="M20,50 L15,55 M60,50 L65,55" stroke="currentColor" strokeWidth="2"/>
+                  <path d="M35,60 L32,65 M45,60 L48,65" stroke="currentColor" strokeWidth="2"/>
                 </svg>
-                
-                <div className="text-white text-right">
-                  <h3 className="text-lg md:text-xl font-bold text-primary">Tomatenraumschiff</h3>
-                  <p className="text-sm md:text-base text-white/80">bereit für Abenteuer</p>
-                </div>
+              </div>
+              
+              {/* Pfeil */}
+              <svg width="40" height="20" viewBox="0 0 40 20" className="text-white/40 flex-shrink-0">
+                <path d="M35,10 L10,10" stroke="currentColor" strokeWidth="1.5" fill="none"/>
+                <path d="M15,6 L10,10 L15,14" stroke="currentColor" strokeWidth="1.5" fill="none"/>
+              </svg>
+              
+              {/* Text */}
+              <div className="text-white text-right">
+                <h3 className="text-xl font-bold text-primary mb-1">Tomatenraumschiff</h3>
+                <p className="text-sm text-white/70">bereit für Abenteuer</p>
               </div>
             </motion.div>
 
-            {/* Paffel - Links unten */}
+            {/* Paffel */}
             <motion.div 
-              className="absolute top-96 left-16 md:left-24"
-              initial={{ opacity: 0, scale: 0.8 }}
-              whileInView={{ opacity: 1, scale: 1 }}
+              className="flex items-center justify-start gap-6 ml-6"
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.5 }}
               viewport={{ once: true }}
             >
-              <div className="flex items-center gap-4">
-                <div className="w-20 h-20 md:w-24 md:h-24 bg-yellow-100 rounded-full flex items-center justify-center text-4xl shadow-lg">
-                  😈
-                </div>
-                
-                {/* Pfeil nach rechts schief */}
-                <svg width="45" height="25" viewBox="0 0 45 25" className="text-destructive">
-                  <path
-                    d="M5,20 Q25,5 35,12"
-                    stroke="currentColor"
-                    strokeWidth="2.5"
-                    fill="none"
-                    strokeLinecap="round"
-                    style={{ filter: 'url(#roughArrow5)' }}
-                  />
-                  <path
-                    d="M30,7 L35,12 L30,17"
-                    stroke="currentColor"
-                    strokeWidth="2.5"
-                    fill="none"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    style={{ filter: 'url(#roughArrow5)' }}
-                  />
-                  <defs>
-                    <filter id="roughArrow5">
-                      <feTurbulence baseFrequency="0.08" numOctaves="2" result="noise" seed="5" />
-                      <feDisplacementMap in="SourceGraphic" in2="noise" scale="1" />
-                    </filter>
-                  </defs>
+              {/* Einfache Illustration */}
+              <div className="flex-shrink-0">
+                <svg width="80" height="80" viewBox="0 0 80 80" className="text-destructive">
+                  <circle cx="40" cy="30" r="18" fill="none" stroke="currentColor" strokeWidth="2"/>
+                  <path d="M30,22 L35,27 L30,32" fill="none" stroke="currentColor" strokeWidth="2"/>
+                  <path d="M50,22 L45,27 L50,32" fill="none" stroke="currentColor" strokeWidth="2"/>
+                  <circle cx="35" cy="30" r="2" fill="currentColor"/>
+                  <circle cx="45" cy="30" r="2" fill="currentColor"/>
+                  <path d="M33,38 Q40,33 47,38" fill="none" stroke="currentColor" strokeWidth="2"/>
+                  <rect x="35" y="48" width="10" height="20" fill="none" stroke="currentColor" strokeWidth="2"/>
+                  <path d="M30,15 Q35,8 40,15" fill="none" stroke="currentColor" strokeWidth="2"/>
+                  <path d="M40,15 Q45,8 50,15" fill="none" stroke="currentColor" strokeWidth="2"/>
                 </svg>
-                
-                <div className="text-white">
-                  <h3 className="text-lg md:text-xl font-bold text-destructive">Paffel</h3>
-                  <p className="text-sm md:text-base text-white/80">frech und trickst gern</p>
-                </div>
+              </div>
+              
+              {/* Pfeil */}
+              <svg width="40" height="20" viewBox="0 0 40 20" className="text-white/40 flex-shrink-0">
+                <path d="M5,10 L30,10" stroke="currentColor" strokeWidth="1.5" fill="none"/>
+                <path d="M25,6 L30,10 L25,14" stroke="currentColor" strokeWidth="1.5" fill="none"/>
+              </svg>
+              
+              {/* Text */}
+              <div className="text-white">
+                <h3 className="text-xl font-bold text-destructive mb-1">Paffel</h3>
+                <p className="text-sm text-white/70">frech und trickst gern</p>
               </div>
             </motion.div>
 
-            {/* Die Powerzentrale - Rechts unten */}
+            {/* Die Powerzentrale */}
             <motion.div 
-              className="absolute top-[420px] right-4 md:right-12"
-              initial={{ opacity: 0, scale: 0.8 }}
-              whileInView={{ opacity: 1, scale: 1 }}
+              className="flex items-center justify-end gap-6 flex-row-reverse mr-16"
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.6 }}
               viewport={{ once: true }}
             >
-              <div className="flex items-center gap-4 flex-row-reverse">
-                <div className="w-20 h-20 md:w-24 md:h-24 bg-green-200 rounded-full flex items-center justify-center text-4xl shadow-lg">
-                  ⚡
-                </div>
-                
-                {/* Pfeil nach links */}
-                <svg width="40" height="20" viewBox="0 0 40 20" className="text-secondary">
-                  <path
-                    d="M35,10 L10,10"
-                    stroke="currentColor"
-                    strokeWidth="2.5"
-                    fill="none"
-                    strokeLinecap="round"
-                    style={{ filter: 'url(#roughArrow6)' }}
-                  />
-                  <path
-                    d="M15,5 L10,10 L15,15"
-                    stroke="currentColor"
-                    strokeWidth="2.5"
-                    fill="none"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    style={{ filter: 'url(#roughArrow6)' }}
-                  />
-                  <defs>
-                    <filter id="roughArrow6">
-                      <feTurbulence baseFrequency="0.08" numOctaves="2" result="noise" seed="6" />
-                      <feDisplacementMap in="SourceGraphic" in2="noise" scale="1" />
-                    </filter>
-                  </defs>
+              {/* Einfache Illustration */}
+              <div className="flex-shrink-0">
+                <svg width="80" height="80" viewBox="0 0 80 80" className="text-secondary">
+                  <rect x="25" y="25" width="30" height="30" rx="5" fill="none" stroke="currentColor" strokeWidth="2"/>
+                  <circle cx="40" cy="40" r="8" fill="none" stroke="currentColor" strokeWidth="2"/>
+                  <path d="M36,36 L40,40 L44,36" stroke="currentColor" strokeWidth="2" fill="none"/>
+                  <path d="M36,44 L40,40 L44,44" stroke="currentColor" strokeWidth="2" fill="none"/>
+                  <path d="M20,40 L25,40 M55,40 L60,40" stroke="currentColor" strokeWidth="2"/>
+                  <path d="M40,20 L40,25 M40,55 L40,60" stroke="currentColor" strokeWidth="2"/>
+                  <circle cx="20" cy="40" r="2" fill="currentColor"/>
+                  <circle cx="60" cy="40" r="2" fill="currentColor"/>
+                  <circle cx="40" cy="20" r="2" fill="currentColor"/>
+                  <circle cx="40" cy="60" r="2" fill="currentColor"/>
                 </svg>
-                
-                <div className="text-white text-right">
-                  <h3 className="text-lg md:text-xl font-bold text-secondary">Die Powerzentrale</h3>
-                  <p className="text-sm md:text-base text-white/80">sammelt alle Energie</p>
-                </div>
+              </div>
+              
+              {/* Pfeil */}
+              <svg width="40" height="20" viewBox="0 0 40 20" className="text-white/40 flex-shrink-0">
+                <path d="M35,10 L10,10" stroke="currentColor" strokeWidth="1.5" fill="none"/>
+                <path d="M15,6 L10,10 L15,14" stroke="currentColor" strokeWidth="1.5" fill="none"/>
+              </svg>
+              
+              {/* Text */}
+              <div className="text-white text-right">
+                <h3 className="text-xl font-bold text-secondary mb-1">Die Powerzentrale</h3>
+                <p className="text-sm text-white/70">sammelt alle Energie</p>
               </div>
             </motion.div>
           </div>
 
-          {/* Abschließender Text */}
           <motion.div 
-            className="text-center mt-32"
+            className="text-center mt-20"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.7 }}
             viewport={{ once: true }}
           >
-            <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 max-w-2xl mx-auto border border-white/10">
-              <p className="text-lg text-white font-medium">
-                🌟 Zusammen auf gesunder Mission! 🌟
+            <div className="border-t border-white/10 pt-8 max-w-md mx-auto">
+              <p className="text-white/80 text-sm font-light">
+                Zusammen auf gesunder Mission
               </p>
             </div>
           </motion.div>
