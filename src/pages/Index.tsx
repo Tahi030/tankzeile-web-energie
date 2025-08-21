@@ -136,7 +136,7 @@ const Index = () => {
       </section>
 
       {/* CREW-Bereich - Magazin-Stil */}
-      <section className="py-16 bg-background">
+      <section className="py-20 bg-background">
         <div className="container-custom">
           <motion.div 
             className="text-center mb-16"
@@ -172,335 +172,305 @@ const Index = () => {
                 </defs>
               </svg>
             </div>
-            
-            <p className="text-xl md:text-2xl text-white/90 mb-12 font-light">
-              Ob schlau, mutig oder frech – hier erfährst du, wer dabei ist.
-            </p>
           </motion.div>
 
-          {/* Magazin-Layout mit handgezeichneten Pfeilen */}
-          <div className="max-w-6xl mx-auto">
+          {/* Clean Magazin-Layout */}
+          <div className="max-w-7xl mx-auto relative min-h-[600px]">
             
-            {/* Erste Reihe - Captain Apfel mit Pfeil */}
+            {/* Captain Apfel - Links oben */}
             <motion.div 
-              className="mb-20"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.1 }}
+              className="absolute top-0 left-8 md:left-16"
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6, delay: 0.1 }}
               viewport={{ once: true }}
             >
-              <div className="grid md:grid-cols-2 gap-8 items-center">
-                <div className="relative">
-                  {/* Handgezeichneter Pfeil */}
-                  <div className="absolute -top-12 -right-4 md:-right-8">
-                    <svg width="80" height="60" viewBox="0 0 80 60" className="text-primary opacity-70">
-                      <path
-                        d="M15,45 Q25,35 35,25 Q45,15 55,20"
-                        stroke="currentColor"
-                        strokeWidth="2.5"
-                        fill="none"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        style={{ filter: 'url(#roughArrow1)' }}
-                      />
-                      <path
-                        d="M50,15 L55,20 L50,25"
-                        stroke="currentColor"
-                        strokeWidth="2.5"
-                        fill="none"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        style={{ filter: 'url(#roughArrow1)' }}
-                      />
-                      <defs>
-                        <filter id="roughArrow1">
-                          <feTurbulence baseFrequency="0.06" numOctaves="2" result="noise" seed="1" />
-                          <feDisplacementMap in="SourceGraphic" in2="noise" scale="1.2" />
-                        </filter>
-                      </defs>
-                    </svg>
-                  </div>
-                  
-                  <div className="bg-card/50 backdrop-blur-sm rounded-3xl p-8 border border-primary/20">
-                    <div className="text-center mb-6">
-                      <div className="w-24 h-24 mx-auto bg-red-100 rounded-full flex items-center justify-center text-4xl mb-4">
-                        🍎
-                      </div>
-                      <h3 className="text-2xl font-bold text-primary mb-2">Captain Apfel</h3>
-                    </div>
-                  </div>
+              <div className="flex items-center gap-4">
+                <div className="w-20 h-20 md:w-24 md:h-24 bg-red-100 rounded-full flex items-center justify-center text-4xl shadow-lg">
+                  🍎
                 </div>
                 
-                <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
-                  <p className="text-white text-lg leading-relaxed">
-                    <span className="text-primary font-semibold">Der Anführer:</span> Führt die Crew auf ihrer gesunden Mission durch den Körper und sorgt dafür, dass jedes Abenteuer erfolgreich wird!
-                  </p>
+                {/* Pfeil nach rechts */}
+                <svg width="40" height="20" viewBox="0 0 40 20" className="text-primary">
+                  <path
+                    d="M5,10 L30,10"
+                    stroke="currentColor"
+                    strokeWidth="2.5"
+                    fill="none"
+                    strokeLinecap="round"
+                    style={{ filter: 'url(#roughArrow1)' }}
+                  />
+                  <path
+                    d="M25,5 L30,10 L25,15"
+                    stroke="currentColor"
+                    strokeWidth="2.5"
+                    fill="none"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    style={{ filter: 'url(#roughArrow1)' }}
+                  />
+                  <defs>
+                    <filter id="roughArrow1">
+                      <feTurbulence baseFrequency="0.08" numOctaves="2" result="noise" seed="1" />
+                      <feDisplacementMap in="SourceGraphic" in2="noise" scale="1" />
+                    </filter>
+                  </defs>
+                </svg>
+                
+                <div className="text-white">
+                  <h3 className="text-lg md:text-xl font-bold text-primary">Captain Apfel</h3>
+                  <p className="text-sm md:text-base text-white/80">mutig und führt an</p>
                 </div>
               </div>
             </motion.div>
 
-            {/* Zweite Reihe - Kimmi Schlau mit Pfeil (gespiegelt) */}
+            {/* Kimmi Schlau - Rechts oben */}
             <motion.div 
-              className="mb-20"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
+              className="absolute top-16 right-8 md:right-16"
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
               viewport={{ once: true }}
             >
-              <div className="grid md:grid-cols-2 gap-8 items-center">
-                <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 md:order-1">
-                  <p className="text-white text-lg leading-relaxed">
-                    <span className="text-secondary font-semibold">Die Schlaue:</span> Kennt die besten Tipps für eine gesunde Powerzentrale und weiß, wie der Körper funktioniert!
-                  </p>
+              <div className="flex items-center gap-4 flex-row-reverse">
+                <div className="w-20 h-20 md:w-24 md:h-24 bg-orange-100 rounded-full flex items-center justify-center text-4xl shadow-lg">
+                  🧠
                 </div>
                 
-                <div className="relative md:order-2">
-                  {/* Handgezeichneter Pfeil (links zeigend) */}
-                  <div className="absolute -top-12 -left-4 md:-left-8">
-                    <svg width="80" height="60" viewBox="0 0 80 60" className="text-secondary opacity-70">
-                      <path
-                        d="M65,45 Q55,35 45,25 Q35,15 25,20"
-                        stroke="currentColor"
-                        strokeWidth="2.5"
-                        fill="none"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        style={{ filter: 'url(#roughArrow2)' }}
-                      />
-                      <path
-                        d="M30,15 L25,20 L30,25"
-                        stroke="currentColor"
-                        strokeWidth="2.5"
-                        fill="none"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        style={{ filter: 'url(#roughArrow2)' }}
-                      />
-                      <defs>
-                        <filter id="roughArrow2">
-                          <feTurbulence baseFrequency="0.06" numOctaves="2" result="noise" seed="2" />
-                          <feDisplacementMap in="SourceGraphic" in2="noise" scale="1.2" />
-                        </filter>
-                      </defs>
-                    </svg>
-                  </div>
-                  
-                  <div className="bg-card/50 backdrop-blur-sm rounded-3xl p-8 border border-secondary/20">
-                    <div className="text-center mb-6">
-                      <div className="w-24 h-24 mx-auto bg-orange-100 rounded-full flex items-center justify-center text-4xl mb-4">
-                        🧠
-                      </div>
-                      <h3 className="text-2xl font-bold text-secondary mb-2">Kimmi Schlau</h3>
-                    </div>
-                  </div>
+                {/* Pfeil nach links */}
+                <svg width="40" height="20" viewBox="0 0 40 20" className="text-secondary">
+                  <path
+                    d="M35,10 L10,10"
+                    stroke="currentColor"
+                    strokeWidth="2.5"
+                    fill="none"
+                    strokeLinecap="round"
+                    style={{ filter: 'url(#roughArrow2)' }}
+                  />
+                  <path
+                    d="M15,5 L10,10 L15,15"
+                    stroke="currentColor"
+                    strokeWidth="2.5"
+                    fill="none"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    style={{ filter: 'url(#roughArrow2)' }}
+                  />
+                  <defs>
+                    <filter id="roughArrow2">
+                      <feTurbulence baseFrequency="0.08" numOctaves="2" result="noise" seed="2" />
+                      <feDisplacementMap in="SourceGraphic" in2="noise" scale="1" />
+                    </filter>
+                  </defs>
+                </svg>
+                
+                <div className="text-white text-right">
+                  <h3 className="text-lg md:text-xl font-bold text-secondary">Kimmi Schlau</h3>
+                  <p className="text-sm md:text-base text-white/80">klug und neugierig</p>
                 </div>
               </div>
             </motion.div>
 
-            {/* Dritte Reihe - Kai Mutig mit Pfeil */}
+            {/* Kai Mutig - Links Mitte */}
             <motion.div 
-              className="mb-20"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.3 }}
+              className="absolute top-48 left-4 md:left-8"
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
               viewport={{ once: true }}
             >
-              <div className="grid md:grid-cols-2 gap-8 items-center">
-                <div className="relative">
-                  {/* Handgezeichneter Pfeil (geschwungen) */}
-                  <div className="absolute -top-16 -right-8">
-                    <svg width="90" height="70" viewBox="0 0 90 70" className="text-accent opacity-70">
-                      <path
-                        d="M20,55 Q30,40 40,30 Q50,20 60,25 Q70,30 65,35"
-                        stroke="currentColor"
-                        strokeWidth="2.5"
-                        fill="none"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        style={{ filter: 'url(#roughArrow3)' }}
-                      />
-                      <path
-                        d="M60,30 L65,35 L60,40"
-                        stroke="currentColor"
-                        strokeWidth="2.5"
-                        fill="none"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        style={{ filter: 'url(#roughArrow3)' }}
-                      />
-                      <defs>
-                        <filter id="roughArrow3">
-                          <feTurbulence baseFrequency="0.06" numOctaves="2" result="noise" seed="3" />
-                          <feDisplacementMap in="SourceGraphic" in2="noise" scale="1.2" />
-                        </filter>
-                      </defs>
-                    </svg>
-                  </div>
-                  
-                  <div className="bg-card/50 backdrop-blur-sm rounded-3xl p-8 border border-accent/20">
-                    <div className="text-center mb-6">
-                      <div className="w-24 h-24 mx-auto bg-green-100 rounded-full flex items-center justify-center text-4xl mb-4">
-                        💪
-                      </div>
-                      <h3 className="text-2xl font-bold text-accent mb-2">Kai Mutig</h3>
-                    </div>
-                  </div>
+              <div className="flex items-center gap-4">
+                <div className="w-20 h-20 md:w-24 md:h-24 bg-green-100 rounded-full flex items-center justify-center text-4xl shadow-lg">
+                  💪
                 </div>
                 
-                <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
-                  <p className="text-white text-lg leading-relaxed">
-                    <span className="text-accent font-semibold">Der Mutige:</span> Bringt Stärke und zeigt, wie man mutig neue Sachen probiert – auch wenn sie erst ungewöhnlich schmecken!
-                  </p>
+                {/* Pfeil nach rechts diagonal */}
+                <svg width="50" height="30" viewBox="0 0 50 30" className="text-accent">
+                  <path
+                    d="M5,15 Q20,10 35,15"
+                    stroke="currentColor"
+                    strokeWidth="2.5"
+                    fill="none"
+                    strokeLinecap="round"
+                    style={{ filter: 'url(#roughArrow3)' }}
+                  />
+                  <path
+                    d="M30,10 L35,15 L30,20"
+                    stroke="currentColor"
+                    strokeWidth="2.5"
+                    fill="none"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    style={{ filter: 'url(#roughArrow3)' }}
+                  />
+                  <defs>
+                    <filter id="roughArrow3">
+                      <feTurbulence baseFrequency="0.08" numOctaves="2" result="noise" seed="3" />
+                      <feDisplacementMap in="SourceGraphic" in2="noise" scale="1" />
+                    </filter>
+                  </defs>
+                </svg>
+                
+                <div className="text-white">
+                  <h3 className="text-lg md:text-xl font-bold text-accent">Kai Mutig</h3>
+                  <p className="text-sm md:text-base text-white/80">stark und tapfer</p>
                 </div>
               </div>
             </motion.div>
 
-            {/* Bottom Section - Spezielle Crew-Mitglieder */}
+            {/* Tomatenraumschiff - Rechts Mitte */}
             <motion.div 
-              className="grid md:grid-cols-3 gap-8 mt-16"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
+              className="absolute top-64 right-12 md:right-20"
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
               viewport={{ once: true }}
             >
-              {/* Tomatenraumschiff */}
-              <div className="relative">
-                <div className="absolute -top-8 left-1/2 transform -translate-x-1/2">
-                  <svg width="60" height="40" viewBox="0 0 60 40" className="text-primary opacity-60">
-                    <path
-                      d="M30,5 Q25,15 30,25"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      fill="none"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      style={{ filter: 'url(#roughArrow4)' }}
-                    />
-                    <path
-                      d="M25,20 L30,25 L35,20"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      fill="none"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      style={{ filter: 'url(#roughArrow4)' }}
-                    />
-                    <defs>
-                      <filter id="roughArrow4">
-                        <feTurbulence baseFrequency="0.06" numOctaves="2" result="noise" seed="4" />
-                        <feDisplacementMap in="SourceGraphic" in2="noise" scale="1" />
-                      </filter>
-                    </defs>
-                  </svg>
+              <div className="flex items-center gap-4 flex-row-reverse">
+                <div className="w-20 h-20 md:w-24 md:h-24 bg-red-200 rounded-full flex items-center justify-center text-4xl shadow-lg">
+                  🚀
                 </div>
                 
-                <div className="bg-card/30 backdrop-blur-sm rounded-2xl p-6 border border-primary/10 text-center">
-                  <div className="w-16 h-16 mx-auto bg-red-200 rounded-full flex items-center justify-center text-2xl mb-3">
-                    🚀
-                  </div>
-                  <h4 className="text-lg font-bold text-primary mb-2">Tomatenraumschiff</h4>
-                  <p className="text-sm text-muted-foreground">
-                    Das Transportmittel für alle wichtigen Nährstoffe!
-                  </p>
+                {/* Pfeil nach links geschwungen */}
+                <svg width="50" height="30" viewBox="0 0 50 30" className="text-primary">
+                  <path
+                    d="M45,15 Q30,20 15,15"
+                    stroke="currentColor"
+                    strokeWidth="2.5"
+                    fill="none"
+                    strokeLinecap="round"
+                    style={{ filter: 'url(#roughArrow4)' }}
+                  />
+                  <path
+                    d="M20,10 L15,15 L20,20"
+                    stroke="currentColor"
+                    strokeWidth="2.5"
+                    fill="none"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    style={{ filter: 'url(#roughArrow4)' }}
+                  />
+                  <defs>
+                    <filter id="roughArrow4">
+                      <feTurbulence baseFrequency="0.08" numOctaves="2" result="noise" seed="4" />
+                      <feDisplacementMap in="SourceGraphic" in2="noise" scale="1" />
+                    </filter>
+                  </defs>
+                </svg>
+                
+                <div className="text-white text-right">
+                  <h3 className="text-lg md:text-xl font-bold text-primary">Tomatenraumschiff</h3>
+                  <p className="text-sm md:text-base text-white/80">bereit für Abenteuer</p>
                 </div>
               </div>
+            </motion.div>
 
-              {/* Paffel */}
-              <div className="relative">
-                <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 rotate-12">
-                  <svg width="60" height="40" viewBox="0 0 60 40" className="text-destructive opacity-60">
-                    <path
-                      d="M30,5 Q35,15 30,25"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      fill="none"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      style={{ filter: 'url(#roughArrow5)' }}
-                    />
-                    <path
-                      d="M25,20 L30,25 L35,20"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      fill="none"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      style={{ filter: 'url(#roughArrow5)' }}
-                    />
-                    <defs>
-                      <filter id="roughArrow5">
-                        <feTurbulence baseFrequency="0.06" numOctaves="2" result="noise" seed="5" />
-                        <feDisplacementMap in="SourceGraphic" in2="noise" scale="1" />
-                      </filter>
-                    </defs>
-                  </svg>
+            {/* Paffel - Links unten */}
+            <motion.div 
+              className="absolute top-96 left-16 md:left-24"
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6, delay: 0.5 }}
+              viewport={{ once: true }}
+            >
+              <div className="flex items-center gap-4">
+                <div className="w-20 h-20 md:w-24 md:h-24 bg-yellow-100 rounded-full flex items-center justify-center text-4xl shadow-lg">
+                  😈
                 </div>
                 
-                <div className="bg-card/30 backdrop-blur-sm rounded-2xl p-6 border border-destructive/10 text-center">
-                  <div className="w-16 h-16 mx-auto bg-yellow-100 rounded-full flex items-center justify-center text-2xl mb-3">
-                    😈
-                  </div>
-                  <h4 className="text-lg font-bold text-destructive mb-2">Paffel</h4>
-                  <p className="text-sm text-muted-foreground">
-                    Der Störenfried – aber die Crew weiß, wie man ihm standhält!
-                  </p>
+                {/* Pfeil nach rechts schief */}
+                <svg width="45" height="25" viewBox="0 0 45 25" className="text-destructive">
+                  <path
+                    d="M5,20 Q25,5 35,12"
+                    stroke="currentColor"
+                    strokeWidth="2.5"
+                    fill="none"
+                    strokeLinecap="round"
+                    style={{ filter: 'url(#roughArrow5)' }}
+                  />
+                  <path
+                    d="M30,7 L35,12 L30,17"
+                    stroke="currentColor"
+                    strokeWidth="2.5"
+                    fill="none"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    style={{ filter: 'url(#roughArrow5)' }}
+                  />
+                  <defs>
+                    <filter id="roughArrow5">
+                      <feTurbulence baseFrequency="0.08" numOctaves="2" result="noise" seed="5" />
+                      <feDisplacementMap in="SourceGraphic" in2="noise" scale="1" />
+                    </filter>
+                  </defs>
+                </svg>
+                
+                <div className="text-white">
+                  <h3 className="text-lg md:text-xl font-bold text-destructive">Paffel</h3>
+                  <p className="text-sm md:text-base text-white/80">frech und trickst gern</p>
                 </div>
               </div>
+            </motion.div>
 
-              {/* Die Powerzentrale */}
-              <div className="relative">
-                <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 -rotate-12">
-                  <svg width="60" height="40" viewBox="0 0 60 40" className="text-secondary opacity-60">
-                    <path
-                      d="M30,5 Q20,15 30,25"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      fill="none"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      style={{ filter: 'url(#roughArrow6)' }}
-                    />
-                    <path
-                      d="M25,20 L30,25 L35,20"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      fill="none"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      style={{ filter: 'url(#roughArrow6)' }}
-                    />
-                    <defs>
-                      <filter id="roughArrow6">
-                        <feTurbulence baseFrequency="0.06" numOctaves="2" result="noise" seed="6" />
-                        <feDisplacementMap in="SourceGraphic" in2="noise" scale="1" />
-                      </filter>
-                    </defs>
-                  </svg>
+            {/* Die Powerzentrale - Rechts unten */}
+            <motion.div 
+              className="absolute top-[420px] right-4 md:right-12"
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6, delay: 0.6 }}
+              viewport={{ once: true }}
+            >
+              <div className="flex items-center gap-4 flex-row-reverse">
+                <div className="w-20 h-20 md:w-24 md:h-24 bg-green-200 rounded-full flex items-center justify-center text-4xl shadow-lg">
+                  ⚡
                 </div>
                 
-                <div className="bg-card/30 backdrop-blur-sm rounded-2xl p-6 border border-secondary/10 text-center">
-                  <div className="w-16 h-16 mx-auto bg-green-200 rounded-full flex items-center justify-center text-2xl mb-3">
-                    ⚡
-                  </div>
-                  <h4 className="text-lg font-bold text-secondary mb-2">Die Powerzentrale</h4>
-                  <p className="text-sm text-muted-foreground">
-                    Das Herzstück jeder Mission – hier wird alle Energie gesammelt!
-                  </p>
+                {/* Pfeil nach links */}
+                <svg width="40" height="20" viewBox="0 0 40 20" className="text-secondary">
+                  <path
+                    d="M35,10 L10,10"
+                    stroke="currentColor"
+                    strokeWidth="2.5"
+                    fill="none"
+                    strokeLinecap="round"
+                    style={{ filter: 'url(#roughArrow6)' }}
+                  />
+                  <path
+                    d="M15,5 L10,10 L15,15"
+                    stroke="currentColor"
+                    strokeWidth="2.5"
+                    fill="none"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    style={{ filter: 'url(#roughArrow6)' }}
+                  />
+                  <defs>
+                    <filter id="roughArrow6">
+                      <feTurbulence baseFrequency="0.08" numOctaves="2" result="noise" seed="6" />
+                      <feDisplacementMap in="SourceGraphic" in2="noise" scale="1" />
+                    </filter>
+                  </defs>
+                </svg>
+                
+                <div className="text-white text-right">
+                  <h3 className="text-lg md:text-xl font-bold text-secondary">Die Powerzentrale</h3>
+                  <p className="text-sm md:text-base text-white/80">sammelt alle Energie</p>
                 </div>
               </div>
             </motion.div>
           </div>
 
+          {/* Abschließender Text */}
           <motion.div 
-            className="text-center mt-16"
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.6 }}
+            className="text-center mt-32"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.7 }}
             viewport={{ once: true }}
           >
-            <div className="bg-card/20 backdrop-blur-sm rounded-2xl p-8 max-w-3xl mx-auto border border-primary/20">
-              <p className="text-xl text-white font-medium leading-relaxed">
-                🌟 Zusammen machen sie jede Einrichtung zu einem Ort voller Energie, Spaß und gesunder Abenteuer! 🌟
+            <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 max-w-2xl mx-auto border border-white/10">
+              <p className="text-lg text-white font-medium">
+                🌟 Zusammen auf gesunder Mission! 🌟
               </p>
             </div>
           </motion.div>
