@@ -54,58 +54,90 @@ const HinterCaptainApfel = () => {
                   Hier finden Sie eine Auswahl meiner Fortbildungen und Zertifikate. Weiterbildung ist mir besonders wichtig – gerade im Umgang mit Kindern. So möchte ich Vertrauen schaffen und zeigen, dass ich mein Wissen stetig vertiefe.
                 </p>
                 
-                {/* Certificates */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                {/* Certificates with PDF Previews */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                   <a 
                     href="/pdfs/Kinderschutzkonzept.pdf" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="bg-secondary/20 rounded-lg p-4 text-center hover:bg-secondary/30 transition-colors"
+                    className="bg-secondary/20 rounded-lg p-4 hover:bg-secondary/30 transition-colors border border-border/30"
                   >
-                    <div className="w-full h-24 bg-muted rounded-lg mb-3 flex items-center justify-center">
-                      <span className="text-muted-foreground text-xs">📜 Zertifikat</span>
+                    <div className="w-full h-48 bg-white rounded-lg mb-3 overflow-hidden border">
+                      <object
+                        data="/pdfs/Kinderschutzkonzept.pdf#zoom=50"
+                        type="application/pdf"
+                        className="w-full h-full"
+                      >
+                        <div className="w-full h-full bg-muted rounded-lg flex flex-col items-center justify-center">
+                          <div className="text-4xl mb-2">📜</div>
+                          <span className="text-muted-foreground text-sm text-center">Kinderschutzkonzept<br/>für Kitas erstellen</span>
+                        </div>
+                      </object>
                     </div>
-                    <p className="text-sm font-medium text-foreground">Kinderschutzkonzept</p>
-                    <p className="text-xs text-muted-foreground">2 Zeitstunden (Aug 2025)</p>
+                    <p className="text-sm font-medium text-foreground text-center">Kinderschutzkonzept für Kitas erstellen</p>
                   </a>
                   
                   <a 
                     href="/pdfs/Was_ist_Adultismus.pdf" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="bg-secondary/20 rounded-lg p-4 text-center hover:bg-secondary/30 transition-colors"
+                    className="bg-secondary/20 rounded-lg p-4 hover:bg-secondary/30 transition-colors border border-border/30"
                   >
-                    <div className="w-full h-24 bg-muted rounded-lg mb-3 flex items-center justify-center">
-                      <span className="text-muted-foreground text-xs">📜 Zertifikat</span>
+                    <div className="w-full h-48 bg-white rounded-lg mb-3 overflow-hidden border">
+                      <object
+                        data="/pdfs/Was_ist_Adultismus.pdf#zoom=50"
+                        type="application/pdf"
+                        className="w-full h-full"
+                      >
+                        <div className="w-full h-full bg-muted rounded-lg flex flex-col items-center justify-center">
+                          <div className="text-4xl mb-2">📜</div>
+                          <span className="text-muted-foreground text-sm text-center">Was ist<br/>Adultismus?</span>
+                        </div>
+                      </object>
                     </div>
-                    <p className="text-sm font-medium text-foreground">Was ist Adultismus?</p>
-                    <p className="text-xs text-muted-foreground">1 Zeitstunde (Aug 2025)</p>
+                    <p className="text-sm font-medium text-foreground text-center">Was ist Adultismus?</p>
                   </a>
                   
                   <a 
                     href="/pdfs/Was_ist_Neurodiversität.pdf" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="bg-secondary/20 rounded-lg p-4 text-center hover:bg-secondary/30 transition-colors"
+                    className="bg-secondary/20 rounded-lg p-4 hover:bg-secondary/30 transition-colors border border-border/30"
                   >
-                    <div className="w-full h-24 bg-muted rounded-lg mb-3 flex items-center justify-center">
-                      <span className="text-muted-foreground text-xs">📜 Zertifikat</span>
+                    <div className="w-full h-48 bg-white rounded-lg mb-3 overflow-hidden border">
+                      <object
+                        data="/pdfs/Was_ist_Neurodiversität.pdf#zoom=50"
+                        type="application/pdf"
+                        className="w-full h-full"
+                      >
+                        <div className="w-full h-full bg-muted rounded-lg flex flex-col items-center justify-center">
+                          <div className="text-4xl mb-2">📜</div>
+                          <span className="text-muted-foreground text-sm text-center">Was ist<br/>Neurodiversität?</span>
+                        </div>
+                      </object>
                     </div>
-                    <p className="text-sm font-medium text-foreground">Was ist Neurodiversität?</p>
-                    <p className="text-xs text-muted-foreground">2 Zeitstunden (Aug 2025)</p>
+                    <p className="text-sm font-medium text-foreground text-center">Was ist Neurodiversität?</p>
                   </a>
                   
                   <a 
                     href="/pdfs/Interaktion.pdf" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="bg-secondary/20 rounded-lg p-4 text-center hover:bg-secondary/30 transition-colors"
+                    className="bg-secondary/20 rounded-lg p-4 hover:bg-secondary/30 transition-colors border border-border/30"
                   >
-                    <div className="w-full h-24 bg-muted rounded-lg mb-3 flex items-center justify-center">
-                      <span className="text-muted-foreground text-xs">📜 Zertifikat</span>
+                    <div className="w-full h-48 bg-white rounded-lg mb-3 overflow-hidden border">
+                      <object
+                        data="/pdfs/Interaktion.pdf#zoom=50"
+                        type="application/pdf"
+                        className="w-full h-full"
+                      >
+                        <div className="w-full h-full bg-muted rounded-lg flex flex-col items-center justify-center">
+                          <div className="text-4xl mb-2">📜</div>
+                          <span className="text-muted-foreground text-sm text-center">Fachkraft-Kind-<br/>Interaktion</span>
+                        </div>
+                      </object>
                     </div>
-                    <p className="text-sm font-medium text-foreground">Fachkraft-Kind-Interaktion</p>
-                    <p className="text-xs text-muted-foreground">1,5 Zeitstunden (Aug 2025)</p>
+                    <p className="text-sm font-medium text-foreground text-center">Fachkraft-Kind-Interaktion</p>
                   </a>
                 </div>
                 
