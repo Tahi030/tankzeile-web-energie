@@ -117,13 +117,18 @@ const EssenIstFertig = () => {
                       Einmalig 24,90 €
                     </div>
                     
-                    <motion.button
-                      className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 rounded-lg transition-colors font-medium text-lg w-full"
+                    <motion.a
+                      href="mailto:DEINE-PAYPAL-EMAIL"
+                      className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 rounded-lg transition-colors font-medium text-lg w-full inline-block text-center"
                       whileHover={{ scale: 1.02 }}
                       whileTap={{ scale: 0.98 }}
                     >
                       Jetzt sichern über PayPal
-                    </motion.button>
+                    </motion.a>
+                    
+                    <div className="mt-4 text-sm text-muted-foreground leading-relaxed">
+                      Bitte überweise den Betrag von 24,90 € direkt an meine PayPal-E-Mail-Adresse: <strong className="text-foreground">DEINE-PAYPAL-EMAIL</strong>. Achte darauf, dass in deinem PayPal-Konto deine aktuelle E-Mail-Adresse hinterlegt ist, denn dorthin erhältst du dein PDF-Paket und die Rechnung.
+                    </div>
                   </div>
                 </div>
               </div>
