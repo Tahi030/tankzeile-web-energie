@@ -108,22 +108,26 @@ const EssenIstFertig = () => {
                   </div>
 
                   {/* Right Column - Purchase Info */}
-                  <div className="bg-card/50 rounded-lg p-6 border border-border/30 text-center space-y-4">
-                    <div className="text-sm text-muted-foreground mb-2">
-                      👉 Sofort nach Kauf als PDF per Mail erhältlich.
-                    </div>
-                    
-                    <div className="text-3xl font-bold text-foreground mb-4">
+                  <div className="bg-card/50 rounded-lg p-4 border border-border/30 text-center space-y-3">
+                    <div className="text-2xl font-bold text-foreground mb-3">
                       Einmalig 24,90 €
                     </div>
                     
-                    <motion.button
-                      className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 rounded-lg transition-colors font-medium text-lg w-full"
+                    <motion.a
+                      href="https://paypal.me/tamarahillmann/24.90"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-3 rounded-lg transition-colors font-medium w-full"
                       whileHover={{ scale: 1.02 }}
                       whileTap={{ scale: 0.98 }}
                     >
                       Jetzt sichern über PayPal
-                    </motion.button>
+                    </motion.a>
+                    
+                    <div className="text-xs text-muted-foreground leading-relaxed">
+                      Dein PDF-Paket und die Rechnung erhältst du an deine bei PayPal hinterlegte E-Mail-Adresse.
+                      Die Abwicklung erfolgt sicher und direkt über PayPal – ganz ohne Shop-Umweg.
+                    </div>
                   </div>
                 </div>
               </div>
