@@ -74,6 +74,10 @@ const EssenIstFertig = () => {
                     <ul className="space-y-3 text-muted-foreground">
                       <li className="flex items-start gap-3">
                         <span className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                        <span>Grundlagen einfach erklärt: Diagnose verstehen & Alltag meistern</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <span className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></span>
                         <span>über 50 Seiten klar aufbereitete Infos</span>
                       </li>
                       <li className="flex items-start gap-3">
@@ -82,7 +86,7 @@ const EssenIstFertig = () => {
                       </li>
                       <li className="flex items-start gap-3">
                         <span className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                        <span>Vorlagen für Kita & Schule – direkt zum Ausfüllen</span>
+                        <span>Vorlage für Kita & Schule – direkt nutzbar</span>
                       </li>
                       <li className="flex items-start gap-3">
                         <span className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></span>
@@ -90,15 +94,15 @@ const EssenIstFertig = () => {
                       </li>
                       <li className="flex items-start gap-3">
                         <span className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                        <span>den Wochenbaukasten (Tankbox) für entspanntes Familienessen</span>
+                        <span>Wochenbaukasten (Tankbox) mit Beispiel-Wochenplan, Einkaufsliste und Wochenplan-Vorlage</span>
                       </li>
                       <li className="flex items-start gap-3">
                         <span className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                        <span>einen umfangreichen FAQ-Teil mit Antworten wie in einer Beratung</span>
+                        <span>umfangreicher FAQ-Teil mit Antworten wie in einer Beratung</span>
                       </li>
                       <li className="flex items-start gap-3">
                         <span className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                        <span>ein Ernährungstagebuch zum Ausfüllen und Mitnehmen</span>
+                        <span>Vorlage Ernährungstagebuch – zum Ausfüllen</span>
                       </li>
                     </ul>
                   </div>
