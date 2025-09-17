@@ -45,15 +45,6 @@ const EssenIstFertig = () => {
                 Denn: jedes Kind verdient es, Essen als etwas Schönes und Unbeschwertes zu erleben.
               </p>
             </div>
-            
-            <motion.button
-              className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 rounded-lg transition-colors font-medium text-lg"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              onClick={() => document.getElementById('band1')?.scrollIntoView({ behavior: 'smooth' })}
-            >
-              Jetzt entdecken
-            </motion.button>
           </motion.div>
           
           {/* Band 1 Section */}
@@ -67,7 +58,7 @@ const EssenIstFertig = () => {
             <div className="bg-card/80 backdrop-blur-sm rounded-2xl p-6 md:p-8 border border-border/50 shadow-lg">
               <div className="max-w-5xl mx-auto">
                 <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6 text-center">
-                  Band 1: Laktoseintoleranz
+                  Band 1: Essen ist fertig! bei Laktoseintoleranz
                 </h2>
                 
                 <div className="text-center mb-8">
@@ -214,28 +205,6 @@ const EssenIstFertig = () => {
             </div>
           </motion.section>
 
-          {/* Final CTA */}
-          <motion.section 
-            className="text-center"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.6 }}
-          >
-            <div className="bg-gradient-to-r from-primary/10 to-primary/5 rounded-2xl p-8 border border-primary/20">
-              <p className="text-lg md:text-xl text-muted-foreground mb-6 max-w-3xl mx-auto leading-relaxed">
-                Starte jetzt mit <strong className="text-foreground">Essen ist fertig! – Laktoseintoleranz</strong> und gewinne 
-                Sicherheit, Orientierung und Entlastung für den Familienalltag.
-              </p>
-              
-              <motion.button
-                className="bg-primary hover:bg-primary/90 text-primary-foreground px-10 py-4 rounded-lg transition-colors font-bold text-xl"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                Jetzt sichern für 24,90 €
-              </motion.button>
-            </div>
-          </motion.section>
         </div>
       </div>
     </main>
