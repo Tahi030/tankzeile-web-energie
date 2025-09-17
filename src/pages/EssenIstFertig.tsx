@@ -24,9 +24,9 @@ const EssenIstFertig = () => {
   return (
     <main className="min-h-screen py-16 md:py-24">
       <div className="container-custom">
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="max-w-6xl mx-auto">
           <motion.h1 
-            className="text-4xl md:text-6xl font-bold mb-4 text-white"
+            className="text-3xl md:text-5xl font-bold mb-8 text-center text-white"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.1 }}
@@ -34,29 +34,161 @@ const EssenIstFertig = () => {
             Essen ist fertig!
           </motion.h1>
           
-          <motion.p 
-            className="text-xl md:text-2xl text-white/90 mb-12"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-          >
-            Bald gibt es hier leckere und gesunde Rezepte von Captain Apfel & seiner Crew!
-          </motion.p>
-          
-          <motion.div 
-            className="bg-card/30 backdrop-blur-sm rounded-2xl p-8 md:p-12 border border-border/50 shadow-sm"
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-          >
-            <div className="text-center">
-              <div className="text-6xl mb-4">🍽️</div>
-              <h2 className="text-2xl font-semibold text-foreground mb-4">Kommt bald</h2>
-              <p className="text-muted-foreground">
-                Hier werden bald gesunde und leckere Rezepte zu finden sein, die Kindern Spaß machen und Energie geben.
+          {/* Packages Grid */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-12">
+            {/* Laktoseintoleranz Package - Complete */}
+            <motion.div 
+              className="bg-card/30 backdrop-blur-sm rounded-2xl p-6 md:p-8 border border-border/50 shadow-sm"
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+            >
+              <h2 className="text-2xl md:text-3xl font-bold mb-6 text-foreground">
+                Essen ist fertig! bei Laktoseintoleranz
+              </h2>
+              
+              <div className="space-y-4 mb-6 text-muted-foreground">
+                <p>
+                  Dein Kind hat die Diagnose Laktoseintoleranz bekommen?
+                  Oft bedeutet das: lange Wartezeiten auf Beratung, hohe Kosten oder ein unüberschaubarer Informationsdschungel im Internet. Genau deshalb gibt es dieses Paket – klar, kompakt und sofort nutzbar.
+                </p>
+                
+                <ul className="space-y-2">
+                  <li><strong className="text-foreground">verständlich erklärt</strong> – ohne komplizierte Fachbegriffe</li>
+                  <li><strong className="text-foreground">praktisch umsetzbar</strong> – mit Listen, Vorlagen und Rezeptideen</li>
+                  <li><strong className="text-foreground">strukturiert</strong> – alles an einem Ort gesammelt</li>
+                </ul>
+                
+                <p>
+                  Besonders hilfreich: der Bereich Fragen & Antworten. Hier findest du Antworten auf die Themen, die im Alltag wirklich wichtig sind – von sicherer Ernährung über den Schulalltag bis hin zu typischen Unsicherheiten.
+                </p>
+                
+                <p>
+                  So erhältst du Wissen, das Orientierung gibt und gleichzeitig das Gefühl vermittelt, nicht allein zu sein. Ohne Warten, ohne Informationsflut – sondern direkt anwendbar im Alltag.
+                </p>
+                
+                <p className="font-medium text-foreground">
+                  Denn: jedes Kind soll die Chance haben, Essen als etwas Schönes und Unbeschwertes zu erleben.
+                </p>
+              </div>
+              
+              {/* Info Box */}
+              <div className="bg-secondary/20 rounded-lg p-4 mb-6">
+                <ul className="text-sm space-y-1 text-foreground">
+                  <li>– 55 Seiten PDF</li>
+                  <li>– digital, Versand per Mail nach Zahlung</li>
+                  <li>– Preis: [Platzhalter einsetzen]</li>
+                </ul>
+              </div>
+              
+              <button className="w-full bg-secondary hover:bg-secondary-dark text-white px-6 py-3 rounded-md transition-colors font-medium mb-2">
+                Per PayPal sichern
+              </button>
+              
+              <p className="text-xs text-muted-foreground text-center">
+                Nach der Bezahlung erhältst du das PDF inkl. Rechnung per E-Mail.
               </p>
-            </div>
-          </motion.div>
+            </motion.div>
+
+            {/* Fruktoseintoleranz Package - Placeholder */}
+            <motion.div 
+              className="bg-card/30 backdrop-blur-sm rounded-2xl p-6 md:p-8 border border-border/50 shadow-sm"
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+            >
+              <h2 className="text-2xl md:text-3xl font-bold mb-6 text-foreground">
+                Essen ist fertig! bei Fruktoseintoleranz
+              </h2>
+              
+              <div className="space-y-4 mb-6 text-muted-foreground">
+                <p>[Text Platzhalter]</p>
+              </div>
+              
+              {/* Info Box */}
+              <div className="bg-secondary/20 rounded-lg p-4 mb-6">
+                <ul className="text-sm space-y-1 text-foreground">
+                  <li>– [Seitenzahl einsetzen]</li>
+                  <li>– digital, Versand per Mail nach Zahlung</li>
+                  <li>– Preis: [Platzhalter einsetzen]</li>
+                </ul>
+              </div>
+              
+              <button className="w-full bg-secondary hover:bg-secondary-dark text-white px-6 py-3 rounded-md transition-colors font-medium mb-2">
+                Per PayPal sichern
+              </button>
+              
+              <p className="text-xs text-muted-foreground text-center">
+                Nach der Bezahlung erhältst du das PDF inkl. Rechnung per E-Mail.
+              </p>
+            </motion.div>
+
+            {/* Histaminintoleranz Package - Placeholder */}
+            <motion.div 
+              className="bg-card/30 backdrop-blur-sm rounded-2xl p-6 md:p-8 border border-border/50 shadow-sm"
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8, delay: 0.5 }}
+            >
+              <h2 className="text-2xl md:text-3xl font-bold mb-6 text-foreground">
+                Essen ist fertig! bei Histaminintoleranz
+              </h2>
+              
+              <div className="space-y-4 mb-6 text-muted-foreground">
+                <p>[Text Platzhalter]</p>
+              </div>
+              
+              {/* Info Box */}
+              <div className="bg-secondary/20 rounded-lg p-4 mb-6">
+                <ul className="text-sm space-y-1 text-foreground">
+                  <li>– [Seitenzahl einsetzen]</li>
+                  <li>– digital, Versand per Mail nach Zahlung</li>
+                  <li>– Preis: [Platzhalter einsetzen]</li>
+                </ul>
+              </div>
+              
+              <button className="w-full bg-secondary hover:bg-secondary-dark text-white px-6 py-3 rounded-md transition-colors font-medium mb-2">
+                Per PayPal sichern
+              </button>
+              
+              <p className="text-xs text-muted-foreground text-center">
+                Nach der Bezahlung erhältst du das PDF inkl. Rechnung per E-Mail.
+              </p>
+            </motion.div>
+
+            {/* Additional Intolerance Package - Placeholder */}
+            <motion.div 
+              className="bg-card/30 backdrop-blur-sm rounded-2xl p-6 md:p-8 border border-border/50 shadow-sm"
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8, delay: 0.6 }}
+            >
+              <h2 className="text-2xl md:text-3xl font-bold mb-6 text-foreground">
+                Essen ist fertig! bei [weitere Intoleranz]
+              </h2>
+              
+              <div className="space-y-4 mb-6 text-muted-foreground">
+                <p>[Text Platzhalter]</p>
+              </div>
+              
+              {/* Info Box */}
+              <div className="bg-secondary/20 rounded-lg p-4 mb-6">
+                <ul className="text-sm space-y-1 text-foreground">
+                  <li>– [Seitenzahl einsetzen]</li>
+                  <li>– digital, Versand per Mail nach Zahlung</li>
+                  <li>– Preis: [Platzhalter einsetzen]</li>
+                </ul>
+              </div>
+              
+              <button className="w-full bg-secondary hover:bg-secondary-dark text-white px-6 py-3 rounded-md transition-colors font-medium mb-2">
+                Per PayPal sichern
+              </button>
+              
+              <p className="text-xs text-muted-foreground text-center">
+                Nach der Bezahlung erhältst du das PDF inkl. Rechnung per E-Mail.
+              </p>
+            </motion.div>
+          </div>
         </div>
       </div>
     </main>

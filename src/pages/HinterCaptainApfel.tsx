@@ -24,9 +24,9 @@ const HinterCaptainApfel = () => {
   return (
     <main className="min-h-screen py-16 md:py-24">
       <div className="container-custom">
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="max-w-4xl mx-auto">
           <motion.h1 
-            className="text-4xl md:text-6xl font-bold mb-4 text-white"
+            className="text-4xl md:text-6xl font-bold mb-8 text-center text-white"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.1 }}
@@ -34,26 +34,53 @@ const HinterCaptainApfel = () => {
             Hinter Captain Apfel
           </motion.h1>
           
-          <motion.p 
-            className="text-xl md:text-2xl text-white/90 mb-12"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-          >
-            Die Geschichte und Mission hinter Captain Apfel & seiner Crew
-          </motion.p>
-          
           <motion.div 
-            className="bg-card/30 backdrop-blur-sm rounded-2xl p-8 md:p-12 border border-border/50 shadow-sm"
+            className="bg-card/30 backdrop-blur-sm rounded-2xl p-8 md:p-12 border border-border/50 shadow-sm text-left"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.3 }}
           >
-            <div className="text-center">
-              <div className="text-6xl mb-4">🍎</div>
-              <h2 className="text-2xl font-semibold text-foreground mb-4">Kommt bald</h2>
-              <p className="text-muted-foreground">
-                Hier erfährst du bald mehr über die Entstehung von Captain Apfel, die Mission und die Menschen dahinter.
+            <div className="space-y-6">
+              <p className="text-lg text-muted-foreground">
+                Ich bin Tamara Hillmann, der kreative Kopf hinter dem Projekt Captain Apfel.
+                Ich verbinde eigene Erfahrungen mit fundiertem Fachwissen und bilde mich kontinuierlich weiter.
+              </p>
+              
+              <div>
+                <h2 className="text-xl font-semibold text-foreground mb-4">
+                  Meine Weiterbildungen (Auswahl):
+                </h2>
+                <p className="text-muted-foreground mb-6">
+                  – aktuell: Selbststudium zur Fachberaterin für ganzheitliche Gesundheit
+                </p>
+                
+                {/* Certificate Placeholders */}
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+                  <div className="bg-secondary/20 rounded-lg p-6 text-center">
+                    <div className="w-full h-32 bg-muted rounded-lg mb-3 flex items-center justify-center">
+                      <span className="text-muted-foreground text-sm">📜 Zertifikat Platzhalter</span>
+                    </div>
+                    <p className="text-sm text-muted-foreground">[Zertifikat 1]</p>
+                  </div>
+                  
+                  <div className="bg-secondary/20 rounded-lg p-6 text-center">
+                    <div className="w-full h-32 bg-muted rounded-lg mb-3 flex items-center justify-center">
+                      <span className="text-muted-foreground text-sm">📜 Zertifikat Platzhalter</span>
+                    </div>
+                    <p className="text-sm text-muted-foreground">[Zertifikat 2]</p>
+                  </div>
+                  
+                  <div className="bg-secondary/20 rounded-lg p-6 text-center">
+                    <div className="w-full h-32 bg-muted rounded-lg mb-3 flex items-center justify-center">
+                      <span className="text-muted-foreground text-sm">📜 Zertifikat Platzhalter</span>
+                    </div>
+                    <p className="text-sm text-muted-foreground">[Zertifikat 3]</p>
+                  </div>
+                </div>
+              </div>
+              
+              <p className="text-lg font-medium text-foreground text-center pt-4">
+                Mein Ziel: Wissen weitergeben, das praktisch, einfach und alltagstauglich ist.
               </p>
             </div>
           </motion.div>
