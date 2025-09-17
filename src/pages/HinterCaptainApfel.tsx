@@ -48,35 +48,70 @@ const HinterCaptainApfel = () => {
               
               <div>
                 <h2 className="text-xl font-semibold text-foreground mb-4">
-                  Meine Weiterbildungen (Auswahl):
+                  Meine Zertifikate & Nachweise
                 </h2>
                 <p className="text-muted-foreground mb-6">
-                  – aktuell: Selbststudium zur Fachberaterin für ganzheitliche Gesundheit
+                  Hier finden Sie eine Auswahl meiner Fortbildungen und Zertifikate. Weiterbildung ist mir besonders wichtig – gerade im Umgang mit Kindern. So möchte ich Vertrauen schaffen und zeigen, dass ich mein Wissen stetig vertiefe.
                 </p>
                 
-                {/* Certificate Placeholders */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
-                  <div className="bg-secondary/20 rounded-lg p-6 text-center">
-                    <div className="w-full h-32 bg-muted rounded-lg mb-3 flex items-center justify-center">
-                      <span className="text-muted-foreground text-sm">📜 Zertifikat Platzhalter</span>
+                {/* Certificates */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                  <a 
+                    href="/pdfs/Kinderschutzkonzept.pdf" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="bg-secondary/20 rounded-lg p-4 text-center hover:bg-secondary/30 transition-colors"
+                  >
+                    <div className="w-full h-24 bg-muted rounded-lg mb-3 flex items-center justify-center">
+                      <span className="text-muted-foreground text-xs">📜 Zertifikat</span>
                     </div>
-                    <p className="text-sm text-muted-foreground">[Zertifikat 1]</p>
-                  </div>
+                    <p className="text-sm font-medium text-foreground">Kinderschutzkonzept</p>
+                    <p className="text-xs text-muted-foreground">2 Zeitstunden (Aug 2025)</p>
+                  </a>
                   
-                  <div className="bg-secondary/20 rounded-lg p-6 text-center">
-                    <div className="w-full h-32 bg-muted rounded-lg mb-3 flex items-center justify-center">
-                      <span className="text-muted-foreground text-sm">📜 Zertifikat Platzhalter</span>
+                  <a 
+                    href="/pdfs/Was_ist_Adultismus.pdf" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="bg-secondary/20 rounded-lg p-4 text-center hover:bg-secondary/30 transition-colors"
+                  >
+                    <div className="w-full h-24 bg-muted rounded-lg mb-3 flex items-center justify-center">
+                      <span className="text-muted-foreground text-xs">📜 Zertifikat</span>
                     </div>
-                    <p className="text-sm text-muted-foreground">[Zertifikat 2]</p>
-                  </div>
+                    <p className="text-sm font-medium text-foreground">Was ist Adultismus?</p>
+                    <p className="text-xs text-muted-foreground">1 Zeitstunde (Aug 2025)</p>
+                  </a>
                   
-                  <div className="bg-secondary/20 rounded-lg p-6 text-center">
-                    <div className="w-full h-32 bg-muted rounded-lg mb-3 flex items-center justify-center">
-                      <span className="text-muted-foreground text-sm">📜 Zertifikat Platzhalter</span>
+                  <a 
+                    href="/pdfs/Was_ist_Neurodiversität.pdf" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="bg-secondary/20 rounded-lg p-4 text-center hover:bg-secondary/30 transition-colors"
+                  >
+                    <div className="w-full h-24 bg-muted rounded-lg mb-3 flex items-center justify-center">
+                      <span className="text-muted-foreground text-xs">📜 Zertifikat</span>
                     </div>
-                    <p className="text-sm text-muted-foreground">[Zertifikat 3]</p>
-                  </div>
+                    <p className="text-sm font-medium text-foreground">Was ist Neurodiversität?</p>
+                    <p className="text-xs text-muted-foreground">2 Zeitstunden (Aug 2025)</p>
+                  </a>
+                  
+                  <a 
+                    href="/pdfs/Interaktion.pdf" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="bg-secondary/20 rounded-lg p-4 text-center hover:bg-secondary/30 transition-colors"
+                  >
+                    <div className="w-full h-24 bg-muted rounded-lg mb-3 flex items-center justify-center">
+                      <span className="text-muted-foreground text-xs">📜 Zertifikat</span>
+                    </div>
+                    <p className="text-sm font-medium text-foreground">Fachkraft-Kind-Interaktion</p>
+                    <p className="text-xs text-muted-foreground">1,5 Zeitstunden (Aug 2025)</p>
+                  </a>
                 </div>
+                
+                <p className="text-muted-foreground text-sm">
+                  – aktuell: Selbststudium zur Fachberaterin für ganzheitliche Gesundheit
+                </p>
               </div>
               
               <p className="text-lg font-medium text-foreground text-center pt-4">
