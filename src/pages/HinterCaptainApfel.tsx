@@ -60,12 +60,12 @@ const HinterCaptainApfel = () => {
                     href="/pdfs/Kinderschutzkonzept.pdf" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="bg-white rounded-lg overflow-hidden hover:shadow-lg transition-shadow border border-border/30"
+                    className="rounded-lg overflow-hidden hover:shadow-lg transition-shadow border border-border/30"
                   >
-                    <iframe
-                      src="/pdfs/Kinderschutzkonzept.pdf"
-                      className="w-full h-32 border-0"
-                      style={{ pointerEvents: 'none' }}
+                    <img
+                      src="/certificates/kinderschutzkonzept.jpg"
+                      alt="Kinderschutzkonzept Zertifikat"
+                      className="w-full h-32 object-cover"
                     />
                   </a>
                   
@@ -73,12 +73,12 @@ const HinterCaptainApfel = () => {
                     href="/pdfs/Was_ist_Adultismus.pdf" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="bg-white rounded-lg overflow-hidden hover:shadow-lg transition-shadow border border-border/30"
+                    className="rounded-lg overflow-hidden hover:shadow-lg transition-shadow border border-border/30"
                   >
-                    <iframe
-                      src="/pdfs/Was_ist_Adultismus.pdf"
-                      className="w-full h-32 border-0"
-                      style={{ pointerEvents: 'none' }}
+                    <img
+                      src="/certificates/adultismus.jpg"
+                      alt="Was ist Adultismus Zertifikat"
+                      className="w-full h-32 object-cover"
                     />
                   </a>
                   
@@ -86,12 +86,12 @@ const HinterCaptainApfel = () => {
                     href="/pdfs/Was_ist_Neurodiversität.pdf" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="bg-white rounded-lg overflow-hidden hover:shadow-lg transition-shadow border border-border/30"
+                    className="rounded-lg overflow-hidden hover:shadow-lg transition-shadow border border-border/30"
                   >
-                    <iframe
-                      src="/pdfs/Was_ist_Neurodiversität.pdf"
-                      className="w-full h-32 border-0"
-                      style={{ pointerEvents: 'none' }}
+                    <img
+                      src="/certificates/neurodiversitaet.jpg"
+                      alt="Was ist Neurodiversität Zertifikat"
+                      className="w-full h-32 object-cover"
                     />
                   </a>
                   
@@ -99,12 +99,12 @@ const HinterCaptainApfel = () => {
                     href="/pdfs/Interaktion.pdf" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="bg-white rounded-lg overflow-hidden hover:shadow-lg transition-shadow border border-border/30"
+                    className="rounded-lg overflow-hidden hover:shadow-lg transition-shadow border border-border/30"
                   >
-                    <iframe
-                      src="/pdfs/Interaktion.pdf"
-                      className="w-full h-32 border-0"
-                      style={{ pointerEvents: 'none' }}
+                    <img
+                      src="/certificates/interaktion.jpg"
+                      alt="Fachkraft-Kind-Interaktion Zertifikat"
+                      className="w-full h-32 object-cover"
                     />
                   </a>
                 </div>
