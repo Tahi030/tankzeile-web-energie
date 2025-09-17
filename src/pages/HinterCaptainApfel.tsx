@@ -60,48 +60,52 @@ const HinterCaptainApfel = () => {
                     href="/pdfs/Kinderschutzkonzept.pdf" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="bg-secondary/20 rounded-lg p-3 hover:bg-secondary/30 transition-colors border border-border/30 text-center"
+                    className="bg-white rounded-lg overflow-hidden hover:shadow-lg transition-shadow border border-border/30"
                   >
-                    <div className="w-full h-20 bg-muted rounded-lg mb-2 flex items-center justify-center">
-                      <span className="text-2xl">📜</span>
-                    </div>
-                    <p className="text-xs font-medium text-foreground">Kinderschutzkonzept</p>
+                    <iframe
+                      src="/pdfs/Kinderschutzkonzept.pdf"
+                      className="w-full h-32 border-0"
+                      style={{ pointerEvents: 'none' }}
+                    />
                   </a>
                   
                   <a 
                     href="/pdfs/Was_ist_Adultismus.pdf" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="bg-secondary/20 rounded-lg p-3 hover:bg-secondary/30 transition-colors border border-border/30 text-center"
+                    className="bg-white rounded-lg overflow-hidden hover:shadow-lg transition-shadow border border-border/30"
                   >
-                    <div className="w-full h-20 bg-muted rounded-lg mb-2 flex items-center justify-center">
-                      <span className="text-2xl">📜</span>
-                    </div>
-                    <p className="text-xs font-medium text-foreground">Was ist Adultismus?</p>
+                    <iframe
+                      src="/pdfs/Was_ist_Adultismus.pdf"
+                      className="w-full h-32 border-0"
+                      style={{ pointerEvents: 'none' }}
+                    />
                   </a>
                   
                   <a 
                     href="/pdfs/Was_ist_Neurodiversität.pdf" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="bg-secondary/20 rounded-lg p-3 hover:bg-secondary/30 transition-colors border border-border/30 text-center"
+                    className="bg-white rounded-lg overflow-hidden hover:shadow-lg transition-shadow border border-border/30"
                   >
-                    <div className="w-full h-20 bg-muted rounded-lg mb-2 flex items-center justify-center">
-                      <span className="text-2xl">📜</span>
-                    </div>
-                    <p className="text-xs font-medium text-foreground">Was ist Neurodiversität?</p>
+                    <iframe
+                      src="/pdfs/Was_ist_Neurodiversität.pdf"
+                      className="w-full h-32 border-0"
+                      style={{ pointerEvents: 'none' }}
+                    />
                   </a>
                   
                   <a 
                     href="/pdfs/Interaktion.pdf" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="bg-secondary/20 rounded-lg p-3 hover:bg-secondary/30 transition-colors border border-border/30 text-center"
+                    className="bg-white rounded-lg overflow-hidden hover:shadow-lg transition-shadow border border-border/30"
                   >
-                    <div className="w-full h-20 bg-muted rounded-lg mb-2 flex items-center justify-center">
-                      <span className="text-2xl">📜</span>
-                    </div>
-                    <p className="text-xs font-medium text-foreground">Fachkraft-Kind-Interaktion</p>
+                    <iframe
+                      src="/pdfs/Interaktion.pdf"
+                      className="w-full h-32 border-0"
+                      style={{ pointerEvents: 'none' }}
+                    />
                   </a>
                 </div>
                 
