@@ -25,136 +25,175 @@ const EssenIstFertig = () => {
     <main className="min-h-screen py-16 md:py-24">
       <div className="container-custom">
         <div className="max-w-6xl mx-auto">
-          <motion.h1 
-            className="text-3xl md:text-5xl font-bold mb-8 text-center text-foreground"
+          {/* Hero Section */}
+          <motion.div 
+            className="text-center mb-16"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.1 }}
           >
-            Essen ist fertig! – Alltagshilfen bei Nahrungsunverträglichkeiten
-          </motion.h1>
-          
-          {/* Main Text */}
-          <motion.div 
-            className="text-center mb-12 max-w-4xl mx-auto"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-          >
-            <div className="space-y-6 text-muted-foreground">
+            <h1 className="text-3xl md:text-5xl font-bold mb-8 text-foreground">
+              Essen ist fertig! – Alltagshilfen bei Nahrungsunverträglichkeiten
+            </h1>
+            
+            <div className="max-w-4xl mx-auto space-y-6 text-muted-foreground mb-8">
               <p>
-                Diagnosen wie Laktoseintoleranz, Fructose- oder Glutenunverträglichkeit werfen viele Fragen auf.
-              </p>
-              <p>
-                <strong className="text-foreground">„Essen ist fertig!"</strong> bietet dir sofortige Entlastung: fundiertes Wissen, einfache Vorlagen und alltagstaugliche Rezepte.
+                Diagnosen wie Laktoseintoleranz, Fructose- oder Glutenunverträglichkeit werfen viele Fragen auf. 
+                <strong className="text-foreground"> Essen ist fertig!</strong> bietet dir sofortige Entlastung: fundiertes Wissen, einfache Vorlagen und alltagstaugliche Rezepte.
               </p>
               <p className="text-foreground font-medium">
                 Denn: jedes Kind verdient es, Essen als etwas Schönes und Unbeschwertes zu erleben.
               </p>
             </div>
+            
+            <motion.button
+              className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 rounded-lg transition-colors font-medium text-lg"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              onClick={() => document.getElementById('band1')?.scrollIntoView({ behavior: 'smooth' })}
+            >
+              Jetzt entdecken
+            </motion.button>
           </motion.div>
           
-          {/* Product Boxes */}
-          <div className="max-w-6xl mx-auto space-y-8">
-            {/* Band 1: Laktoseintoleranz */}
-            <motion.div 
-              className="bg-card/80 backdrop-blur-sm rounded-2xl p-4 md:p-6 border border-border/50 shadow-lg"
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.8, delay: 0.3 }}
-            >
-              <div className="flex flex-col lg:grid lg:grid-cols-12 gap-4 lg:gap-6 lg:items-center">
-                {/* Mobile/Tablet: Stacked layout */}
-                <div className="lg:hidden space-y-4">
-                  {/* Title for mobile */}
-                  <h2 className="text-xl font-bold text-foreground text-center">
-                    Band 1: Laktoseintoleranz
-                  </h2>
-                  
-                  {/* Content row for mobile/tablet */}
-                  <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
-                    {/* Cover Image */}
-                    <div className="flex justify-center sm:justify-start sm:flex-shrink-0">
-                      <div className="w-20 h-28 sm:w-24 sm:h-32 bg-muted/50 rounded border-2 border-dashed border-border flex items-center justify-center">
-                        <span className="text-muted-foreground text-xs text-center">
-                          Cover
-                        </span>
-                      </div>
-                    </div>
-                    
-                    {/* Content */}
-                    <div className="flex-1 space-y-3">
-                      <div className="space-y-3">
-                        <div>
-                          <p className="text-sm text-muted-foreground mb-2">
-                            50+ Seiten Praxiswissen, Do's & Don'ts, Rezepte, Snackideen, Kita-Vorlagen, FAQ & Ernährungstagebuch
-                          </p>
-                          <p className="text-sm text-muted-foreground">
-                            sofort nach Kauf als PDF erhältlich
-                          </p>
-                          <p className="text-lg font-bold text-foreground mt-2">
-                            Preis: 24,90 €
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  {/* Button for mobile */}
-                  <div className="text-center pt-2">
-                    <button className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-3 rounded-lg transition-colors font-medium w-full sm:w-auto">
-                      Jetzt sichern über PayPal
-                    </button>
-                  </div>
+          {/* Band 1 Section */}
+          <motion.section 
+            id="band1"
+            className="mb-16"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+          >
+            <div className="bg-card/80 backdrop-blur-sm rounded-2xl p-6 md:p-8 border border-border/50 shadow-lg">
+              <div className="max-w-5xl mx-auto">
+                <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6 text-center">
+                  Band 1: Laktoseintoleranz
+                </h2>
+                
+                <div className="text-center mb-8">
+                  <p className="text-muted-foreground text-lg leading-relaxed max-w-4xl mx-auto">
+                    Deine kompakte Elternhilfe nach der Diagnose – übersichtlich, praxisnah und sofort nutzbar. 
+                    In diesem Paket findest du alles, was du brauchst, um den Alltag leichter zu machen:
+                  </p>
                 </div>
 
-                {/* Desktop: Horizontal layout */}
-                <div className="hidden lg:contents">
-                  {/* Left: Cover Image */}
-                  <div className="lg:col-span-2 flex justify-center">
-                    <div className="w-24 h-32 bg-muted/50 rounded border-2 border-dashed border-border flex items-center justify-center">
-                      <span className="text-muted-foreground text-xs text-center">
-                        Cover
-                      </span>
+                <div className="grid md:grid-cols-2 gap-8 mb-8">
+                  {/* Left Column - Benefits List */}
+                  <div className="space-y-4">
+                    <ul className="space-y-3 text-muted-foreground">
+                      <li className="flex items-start gap-3">
+                        <span className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                        <span>über 50 Seiten klar aufbereitete Infos</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <span className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                        <span>Do's & Don'ts für Einkauf & Ernährung</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <span className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                        <span>Vorlagen für Kita & Schule – direkt zum Ausfüllen</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <span className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                        <span>10 schnelle Snackideen & kindgerechte Rezepte</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <span className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                        <span>den Wochenbaukasten (Tankbox) für entspanntes Familienessen</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <span className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                        <span>einen umfangreichen FAQ-Teil mit Antworten wie in einer Beratung</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <span className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                        <span>ein Ernährungstagebuch zum Ausfüllen und Mitnehmen</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  {/* Right Column - Purchase Info */}
+                  <div className="bg-card/50 rounded-lg p-6 border border-border/30 text-center space-y-4">
+                    <div className="text-sm text-muted-foreground mb-2">
+                      👉 Sofort nach Kauf als PDF per Mail erhältlich.
                     </div>
-                  </div>
-                  
-                  {/* Center: Title and Content */}
-                  <div className="lg:col-span-7 space-y-3">
-                    <h2 className="text-xl font-bold text-foreground">
-                      Band 1: Laktoseintoleranz
-                    </h2>
                     
-                    <p className="text-sm text-muted-foreground">
-                      50+ Seiten Praxiswissen, Do's & Don'ts, Rezepte, Snackideen, Kita-Vorlagen, FAQ & Ernährungstagebuch
-                    </p>
+                    <div className="text-3xl font-bold text-foreground mb-4">
+                      Einmalig 24,90 €
+                    </div>
                     
-                    <p className="text-sm text-muted-foreground">
-                      sofort nach Kauf als PDF erhältlich
-                    </p>
-                    
-                    <p className="text-lg font-bold text-foreground">
-                      Preis: 24,90 €
-                    </p>
-                  </div>
-                  
-                  {/* Right: Button */}
-                  <div className="lg:col-span-3 text-right">
-                    <button className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-3 rounded-lg transition-colors font-medium">
+                    <motion.button
+                      className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 rounded-lg transition-colors font-medium text-lg w-full"
+                      whileHover={{ scale: 1.02 }}
+                      whileTap={{ scale: 0.98 }}
+                    >
                       Jetzt sichern über PayPal
-                    </button>
+                    </motion.button>
                   </div>
                 </div>
               </div>
-            </motion.div>
+            </div>
+          </motion.section>
 
-            {/* Kommende Ausgaben */}
-            <motion.div 
-              className="text-center space-y-4"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-            >
+          {/* Preview Section */}
+          <motion.section 
+            className="mb-16"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+          >
+            <div className="text-center mb-8">
+              <h3 className="text-xl md:text-2xl font-bold text-foreground mb-4">
+                Vorschau & Ausschnitte
+              </h3>
+              <p className="text-muted-foreground">
+                Hier findest du bald einen Einblick in die Inhalte
+              </p>
+            </div>
+            
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              {/* Preview Image 1 */}
+              <div className="bg-card/50 rounded-lg p-4 border border-border/30 text-center">
+                <div className="aspect-[3/4] bg-muted/50 rounded border-2 border-dashed border-border flex items-center justify-center mb-3">
+                  <span className="text-muted-foreground text-sm">Do's & Don'ts</span>
+                </div>
+                <p className="text-sm text-muted-foreground">Einkaufslisten & Tipps</p>
+              </div>
+              
+              {/* Preview Image 2 */}
+              <div className="bg-card/50 rounded-lg p-4 border border-border/30 text-center">
+                <div className="aspect-[3/4] bg-muted/50 rounded border-2 border-dashed border-border flex items-center justify-center mb-3">
+                  <span className="text-muted-foreground text-sm">Kita-Vorlage</span>
+                </div>
+                <p className="text-sm text-muted-foreground">Vorlagen für Betreuung</p>
+              </div>
+              
+              {/* Preview Image 3 */}
+              <div className="bg-card/50 rounded-lg p-4 border border-border/30 text-center">
+                <div className="aspect-[3/4] bg-muted/50 rounded border-2 border-dashed border-border flex items-center justify-center mb-3">
+                  <span className="text-muted-foreground text-sm">Rezeptseite</span>
+                </div>
+                <p className="text-sm text-muted-foreground">Leckere Snackideen</p>
+              </div>
+              
+              {/* Preview Image 4 */}
+              <div className="bg-card/50 rounded-lg p-4 border border-border/30 text-center">
+                <div className="aspect-[3/4] bg-muted/50 rounded border-2 border-dashed border-border flex items-center justify-center mb-3">
+                  <span className="text-muted-foreground text-sm">FAQ-Auszug</span>
+                </div>
+                <p className="text-sm text-muted-foreground">Häufige Fragen</p>
+              </div>
+            </div>
+          </motion.section>
+
+          {/* Kommende Ausgaben */}
+          <motion.section 
+            className="mb-16"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.5 }}
+          >
+            <div className="text-center mb-8">
               <h2 className="text-2xl font-bold text-foreground mb-6">
                 Kommende Ausgaben
               </h2>
@@ -172,8 +211,31 @@ const EssenIstFertig = () => {
                   </p>
                 </div>
               </div>
-            </motion.div>
-          </div>
+            </div>
+          </motion.section>
+
+          {/* Final CTA */}
+          <motion.section 
+            className="text-center"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
+          >
+            <div className="bg-gradient-to-r from-primary/10 to-primary/5 rounded-2xl p-8 border border-primary/20">
+              <p className="text-lg md:text-xl text-muted-foreground mb-6 max-w-3xl mx-auto leading-relaxed">
+                Starte jetzt mit <strong className="text-foreground">Essen ist fertig! – Laktoseintoleranz</strong> und gewinne 
+                Sicherheit, Orientierung und Entlastung für den Familienalltag.
+              </p>
+              
+              <motion.button
+                className="bg-primary hover:bg-primary/90 text-primary-foreground px-10 py-4 rounded-lg transition-colors font-bold text-xl"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                Jetzt sichern für 24,90 €
+              </motion.button>
+            </div>
+          </motion.section>
         </div>
       </div>
     </main>
