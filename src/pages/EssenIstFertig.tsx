@@ -84,71 +84,63 @@ const EssenIstFertig = () => {
           </motion.div>
           
           {/* Product Box */}
-          <div className="flex justify-center">
+          <div className="max-w-6xl mx-auto space-y-8">
             <motion.div 
-              className="bg-card/80 backdrop-blur-sm rounded-2xl p-8 border border-border/50 shadow-lg max-w-4xl w-full"
+              className="bg-card/80 backdrop-blur-sm rounded-2xl p-6 border border-border/50 shadow-lg"
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, delay: 0.3 }}
             >
-              <h2 className="text-2xl font-bold mb-8 text-foreground text-center">
-                Essen ist fertig! bei Laktoseintoleranz
-              </h2>
-              
-              {/* Main Content Layout */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-                {/* Left: Placeholder Image */}
-                <div className="flex justify-center">
-                  <div className="w-48 h-64 bg-muted/50 rounded-lg border-2 border-dashed border-border flex items-center justify-center">
-                    <span className="text-muted-foreground text-sm text-center">
-                      Cover-Bild
-                      <br />
-                      Platzhalter
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+                {/* Left: Cover Image */}
+                <div className="lg:col-span-2 flex justify-center">
+                  <div className="w-24 h-32 bg-muted/50 rounded border-2 border-dashed border-border flex items-center justify-center">
+                    <span className="text-muted-foreground text-xs text-center">
+                      Cover
                     </span>
                   </div>
                 </div>
                 
-                {/* Right: Overview */}
-                <div className="space-y-6">
-                  <div>
-                    <h3 className="font-semibold text-foreground mb-4">Übersicht:</h3>
-                    <ul className="space-y-2 text-muted-foreground">
-                      <li>– 54 Seiten PDF</li>
-                      <li>– einfache Erklärungen</li>
-                      <li>– Listen, Vorlagen & Rezepte</li>
-                      <li>– Fragen-&-Antworten-Bereich</li>
-                    </ul>
+                {/* Center: Title and Content */}
+                <div className="lg:col-span-6 space-y-4">
+                  <h2 className="text-xl font-bold text-foreground">
+                    Essen ist fertig! bei Laktoseintoleranz
+                  </h2>
+                  
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                      <h3 className="font-medium text-foreground mb-2 text-sm">Übersicht:</h3>
+                      <ul className="space-y-1 text-sm text-muted-foreground">
+                        <li>– 54 Seiten PDF</li>
+                        <li>– einfache Erklärungen</li>
+                        <li>– Listen, Vorlagen & Rezepte</li>
+                        <li>– Fragen-&-Antworten-Bereich</li>
+                      </ul>
+                    </div>
+                    
+                    <div>
+                      <h3 className="font-medium text-foreground mb-2 text-sm">Ausschnitte ansehen:</h3>
+                      <div className="flex items-center gap-2">
+                        <div className="relative">
+                          <div className="w-8 h-10 bg-muted/50 rounded border transform -rotate-12 absolute"></div>
+                          <div className="w-8 h-10 bg-muted/50 rounded border relative z-10"></div>
+                          <div className="w-8 h-10 bg-muted/50 rounded border transform rotate-12 absolute top-0 left-2"></div>
+                        </div>
+                        <span className="text-xs text-muted-foreground ml-4">Vorschau</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-              
-              {/* Preview Section */}
-              <div className="mb-8">
-                <h3 className="font-semibold text-foreground mb-4 text-center">Ausschnitte ansehen</h3>
-                <div className="flex justify-center items-center gap-4">
-                  {/* Fanned preview images */}
-                  <div className="relative">
-                    <div className="w-24 h-32 bg-muted/50 rounded border border-border transform -rotate-12 absolute"></div>
-                    <div className="w-24 h-32 bg-muted/50 rounded border border-border transform rotate-0 relative z-10"></div>
-                    <div className="w-24 h-32 bg-muted/50 rounded border border-border transform rotate-12 absolute top-0 left-8"></div>
-                  </div>
-                  <span className="text-muted-foreground text-sm ml-8">
-                    Vorschau-Seiten
-                    <br />
-                    Platzhalter
-                  </span>
-                </div>
-              </div>
-              
-              {/* Button and Note */}
-              <div className="text-center">
-                <button className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 rounded-lg transition-colors font-medium mb-4">
-                  Per PayPal sichern
-                </button>
                 
-                <p className="text-xs text-muted-foreground">
-                  Nach der Bezahlung erhältst du das PDF inkl. Rechnung per E-Mail.
-                </p>
+                {/* Right: Button */}
+                <div className="lg:col-span-4 text-center lg:text-right space-y-2">
+                  <button className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-3 rounded-lg transition-colors font-medium w-full lg:w-auto">
+                    Per PayPal sichern
+                  </button>
+                  <p className="text-xs text-muted-foreground">
+                    Nach der Bezahlung erhältst du das PDF inkl. Rechnung per E-Mail.
+                  </p>
+                </div>
               </div>
             </motion.div>
           </div>
