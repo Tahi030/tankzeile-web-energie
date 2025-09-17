@@ -86,60 +86,120 @@ const EssenIstFertig = () => {
           {/* Product Box */}
           <div className="max-w-6xl mx-auto space-y-8">
             <motion.div 
-              className="bg-card/80 backdrop-blur-sm rounded-2xl p-6 border border-border/50 shadow-lg"
+              className="bg-card/80 backdrop-blur-sm rounded-2xl p-4 md:p-6 border border-border/50 shadow-lg"
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, delay: 0.3 }}
             >
-              <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
-                {/* Left: Cover Image */}
-                <div className="lg:col-span-2 flex justify-center">
-                  <div className="w-24 h-32 bg-muted/50 rounded border-2 border-dashed border-border flex items-center justify-center">
-                    <span className="text-muted-foreground text-xs text-center">
-                      Cover
-                    </span>
-                  </div>
-                </div>
-                
-                {/* Center: Title and Content */}
-                <div className="lg:col-span-6 space-y-4">
-                  <h2 className="text-xl font-bold text-foreground">
+              <div className="flex flex-col lg:grid lg:grid-cols-12 gap-4 lg:gap-6 lg:items-center">
+                {/* Mobile/Tablet: Stacked layout */}
+                <div className="lg:hidden space-y-4">
+                  {/* Title for mobile */}
+                  <h2 className="text-xl font-bold text-foreground text-center">
                     Essen ist fertig! bei Laktoseintoleranz
                   </h2>
                   
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div>
-                      <h3 className="font-medium text-foreground mb-2 text-sm">Übersicht:</h3>
-                      <ul className="space-y-1 text-sm text-muted-foreground">
-                        <li>– 54 Seiten PDF</li>
-                        <li>– einfache Erklärungen</li>
-                        <li>– Listen, Vorlagen & Rezepte</li>
-                        <li>– Fragen-&-Antworten-Bereich</li>
-                      </ul>
+                  {/* Content row for mobile/tablet */}
+                  <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
+                    {/* Cover Image */}
+                    <div className="flex justify-center sm:justify-start sm:flex-shrink-0">
+                      <div className="w-20 h-28 sm:w-24 sm:h-32 bg-muted/50 rounded border-2 border-dashed border-border flex items-center justify-center">
+                        <span className="text-muted-foreground text-xs text-center">
+                          Cover
+                        </span>
+                      </div>
                     </div>
                     
-                    <div>
-                      <h3 className="font-medium text-foreground mb-2 text-sm">Ausschnitte ansehen:</h3>
-                      <div className="flex items-center gap-2">
-                        <div className="relative">
-                          <div className="w-8 h-10 bg-muted/50 rounded border transform -rotate-12 absolute"></div>
-                          <div className="w-8 h-10 bg-muted/50 rounded border relative z-10"></div>
-                          <div className="w-8 h-10 bg-muted/50 rounded border transform rotate-12 absolute top-0 left-2"></div>
+                    {/* Content */}
+                    <div className="flex-1 space-y-3">
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        <div>
+                          <h3 className="font-medium text-foreground mb-2 text-sm">Übersicht:</h3>
+                          <ul className="space-y-1 text-sm text-muted-foreground">
+                            <li>– 54 Seiten PDF</li>
+                            <li>– einfache Erklärungen</li>
+                            <li>– Listen, Vorlagen & Rezepte</li>
+                            <li>– Fragen-&-Antworten-Bereich</li>
+                          </ul>
                         </div>
-                        <span className="text-xs text-muted-foreground ml-4">Vorschau</span>
+                        
+                        <div>
+                          <h3 className="font-medium text-foreground mb-2 text-sm">Ausschnitte ansehen:</h3>
+                          <div className="flex items-center gap-2">
+                            <div className="relative">
+                              <div className="w-6 h-8 bg-muted/50 rounded border transform -rotate-12 absolute"></div>
+                              <div className="w-6 h-8 bg-muted/50 rounded border relative z-10"></div>
+                              <div className="w-6 h-8 bg-muted/50 rounded border transform rotate-12 absolute top-0 left-1.5"></div>
+                            </div>
+                            <span className="text-xs text-muted-foreground ml-2">Vorschau</span>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
+                  
+                  {/* Button for mobile */}
+                  <div className="text-center space-y-2 pt-2">
+                    <button className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-3 rounded-lg transition-colors font-medium w-full sm:w-auto">
+                      Per PayPal sichern
+                    </button>
+                    <p className="text-xs text-muted-foreground">
+                      Nach der Bezahlung erhältst du das PDF inkl. Rechnung per E-Mail.
+                    </p>
+                  </div>
                 </div>
-                
-                {/* Right: Button */}
-                <div className="lg:col-span-4 text-center lg:text-right space-y-2">
-                  <button className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-3 rounded-lg transition-colors font-medium w-full lg:w-auto">
-                    Per PayPal sichern
-                  </button>
-                  <p className="text-xs text-muted-foreground">
-                    Nach der Bezahlung erhältst du das PDF inkl. Rechnung per E-Mail.
-                  </p>
+
+                {/* Desktop: Horizontal layout */}
+                <div className="hidden lg:contents">
+                  {/* Left: Cover Image */}
+                  <div className="lg:col-span-2 flex justify-center">
+                    <div className="w-24 h-32 bg-muted/50 rounded border-2 border-dashed border-border flex items-center justify-center">
+                      <span className="text-muted-foreground text-xs text-center">
+                        Cover
+                      </span>
+                    </div>
+                  </div>
+                  
+                  {/* Center: Title and Content */}
+                  <div className="lg:col-span-6 space-y-4">
+                    <h2 className="text-xl font-bold text-foreground">
+                      Essen ist fertig! bei Laktoseintoleranz
+                    </h2>
+                    
+                    <div className="grid grid-cols-1 xl:grid-cols-2 gap-4">
+                      <div>
+                        <h3 className="font-medium text-foreground mb-2 text-sm">Übersicht:</h3>
+                        <ul className="space-y-1 text-sm text-muted-foreground">
+                          <li>– 54 Seiten PDF</li>
+                          <li>– einfache Erklärungen</li>
+                          <li>– Listen, Vorlagen & Rezepte</li>
+                          <li>– Fragen-&-Antworten-Bereich</li>
+                        </ul>
+                      </div>
+                      
+                      <div>
+                        <h3 className="font-medium text-foreground mb-2 text-sm">Ausschnitte ansehen:</h3>
+                        <div className="flex items-center gap-2">
+                          <div className="relative">
+                            <div className="w-8 h-10 bg-muted/50 rounded border transform -rotate-12 absolute"></div>
+                            <div className="w-8 h-10 bg-muted/50 rounded border relative z-10"></div>
+                            <div className="w-8 h-10 bg-muted/50 rounded border transform rotate-12 absolute top-0 left-2"></div>
+                          </div>
+                          <span className="text-xs text-muted-foreground ml-4">Vorschau</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Right: Button */}
+                  <div className="lg:col-span-4 text-right space-y-2">
+                    <button className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-3 rounded-lg transition-colors font-medium">
+                      Per PayPal sichern
+                    </button>
+                    <p className="text-xs text-muted-foreground">
+                      Nach der Bezahlung erhältst du das PDF inkl. Rechnung per E-Mail.
+                    </p>
+                  </div>
                 </div>
               </div>
             </motion.div>
