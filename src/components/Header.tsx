@@ -95,6 +95,8 @@ const Header = () => {
             <div className="flex items-center justify-center space-x-1 lg:space-x-2">
               <NavItem to="/" label="Startseite" textColor={getTextColor()} hoverColor={getHoverColor()} />
               <NavItem to="/regionally-rooted" label="Regional verwurzelt" textColor={getTextColor()} hoverColor={getHoverColor()} />
+              <NavItem to="/essen-ist-fertig" label="Essen ist fertig!" textColor={getTextColor()} hoverColor={getHoverColor()} />
+              <NavItem to="/hinter-captain-apfel" label="Hinter Captain Apfel" textColor={getTextColor()} hoverColor={getHoverColor()} />
               
               <div className="relative group">
                 <div className={`px-2 lg:px-3 py-2 rounded-md text-base lg:text-lg font-medium ${getHoverColor()} transition-colors cursor-pointer whitespace-nowrap ${location.pathname.includes('/meine-angebote/') ? `${getTextColor()} font-semibold` : getTextColor()}`}>
@@ -103,7 +105,6 @@ const Header = () => {
                 <div className="absolute left-0 invisible group-hover:visible opacity-0 group-hover:opacity-100 mt-2 w-60 rounded-md shadow-lg bg-white ring-1 ring-primary/20 z-50 transition-all duration-150">
                   <div className="py-1" role="menu" aria-orientation="vertical">
                     <DropdownItem to="/meine-angebote/workshop-gesunde-mission" label="Workshop - Reise zur Powerzentrale" />
-                    <DropdownItem to="/meine-angebote/workshop-lieblingsdose" label="Workshop - Lieblingsdose" />
                     <DropdownItem to="/meine-angebote/alltag-leichter-leben" label="Alltag leichter leben" />
                   </div>
                 </div>
@@ -151,13 +152,18 @@ const Header = () => {
               Regional verwurzelt
             </Link>
             
+            <Link to="/essen-ist-fertig" className={`block px-3 py-2 rounded-md text-base font-medium hover:bg-primary-light ${location.pathname === '/essen-ist-fertig' ? 'text-primary-dark font-bold' : ''}`} onClick={() => {setMobileMenuOpen(false); window.scrollTo(0, 0);}}>
+              Essen ist fertig!
+            </Link>
+            
+            <Link to="/hinter-captain-apfel" className={`block px-3 py-2 rounded-md text-base font-medium hover:bg-primary-light ${location.pathname === '/hinter-captain-apfel' ? 'text-primary-dark font-bold' : ''}`} onClick={() => {setMobileMenuOpen(false); window.scrollTo(0, 0);}}>
+              Hinter Captain Apfel
+            </Link>
+            
             <div className="border-t border-gray-200 pt-2">
               <div className={`px-3 py-2 font-medium ${location.pathname.includes('/meine-angebote/') ? 'text-primary-dark font-bold' : ''}`}>Alles auf einen Blick</div>
               <Link to="/meine-angebote/workshop-gesunde-mission" className="block pl-6 py-2 text-sm" onClick={() => {setMobileMenuOpen(false); window.scrollTo(0, 0);}}>
                 Workshop - Reise zur Powerzentrale
-              </Link>
-              <Link to="/meine-angebote/workshop-lieblingsdose" className="block pl-6 py-2 text-sm" onClick={() => {setMobileMenuOpen(false); window.scrollTo(0, 0);}}>
-                Workshop - Lieblingsdose
               </Link>
               <Link to="/meine-angebote/alltag-leichter-leben" className="block pl-6 py-2 text-sm" onClick={() => {setMobileMenuOpen(false); window.scrollTo(0, 0);}}>
                 Alltag leichter leben

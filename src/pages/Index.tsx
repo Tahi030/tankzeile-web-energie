@@ -451,11 +451,11 @@ const Index = () => {
             </div>
           </motion.div>
           
-          <div className="grid md:grid-cols-2 gap-6 lg:gap-8 max-w-6xl mx-auto">
-            {/* Box 1: Reise zur Powerzentrale */}
+          <div className="max-w-3xl mx-auto">
+            {/* Reise zur Powerzentrale */}
             <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
@@ -470,52 +470,25 @@ const Index = () => {
                 <div className="flex-1 flex flex-col">
                   <h3 className="text-xl lg:text-2xl font-semibold mb-4 text-foreground">Reise zur Powerzentrale</h3>
                   <div className="bg-secondary/10 rounded-lg px-3 py-2 text-xs lg:text-sm font-medium text-secondary w-fit mb-4">
-                    Start: Ende 2025
+                    Start: Frühjahr 2026
                   </div>
-                  <p className="text-muted-foreground mb-6 flex-1 text-sm lg:text-base leading-relaxed">
-                    Mit Captain Apfel und seiner Crew erleben Kinder ein spannendes Abenteuer: Wie kommt Energie in den Körper, was macht uns stark und konzentriert, und wie bleibt die Powerzentrale hell und aktiv?
+                  <p className="text-muted-foreground mb-4 flex-1 text-sm lg:text-base leading-relaxed">
+                    Mit Captain Apfel erleben Kinder ein spannendes Abenteuer: Wie kommt Energie in den Körper, was macht uns stark und konzentriert – und wie bleibt die Powerzentrale hell und aktiv?
+                  </p>
+                  <p className="text-muted-foreground mb-6 text-sm lg:text-base leading-relaxed font-medium">
+                    👉 Bald landet Captain Apfel auch in deiner Kita!
                   </p>
                   
-                  <Link to="/meine-angebote/workshop-gesunde-mission">
+                  <Link to="/kontakt">
                     <Button className="w-full bg-secondary hover:bg-secondary-dark text-secondary-foreground rounded-xl py-3 lg:py-4 text-base lg:text-lg">
-                      Mehr erfahren
+                      Jetzt vormerken lassen
                       <ArrowRight className="ml-2 h-4 w-4 lg:h-5 lg:w-5" />
                     </Button>
                   </Link>
-                </div>
-              </div>
-            </motion.div>
-
-            {/* Box 2: Lieblingsdose */}
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6 }}
-              viewport={{ once: true }}
-            >
-              <div className="offer-box h-full flex flex-col">
-                <div className="bg-accent/20 rounded-xl h-32 lg:h-40 mb-6 flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="text-4xl lg:text-5xl mb-2">📦</div>
-                    <p className="text-sm lg:text-base text-muted-foreground">Lieblingsdose</p>
-                  </div>
-                </div>
-                
-                <div className="flex-1 flex flex-col">
-                  <h3 className="text-xl lg:text-2xl font-semibold mb-4 text-foreground">Lieblingsdose</h3>
-                  <div className="bg-accent/20 rounded-lg px-3 py-2 text-xs lg:text-sm font-medium text-accent-foreground w-fit mb-4">
-                    Start: 2026
-                  </div>
-                  <p className="text-muted-foreground mb-6 flex-1 text-sm lg:text-base leading-relaxed">
-                    Das Angebot ‚Lieblingsdose' bringt gesunde Ernährung direkt in den Alltag von Kitas, Schulen und Freizeiteinrichtungen. Gemeinsam mit Captain Apfel und seiner Crew entstehen bunte Brotdosen, die Kindern Spaß machen und Energie geben.
-                  </p>
                   
-                  <Link to="/meine-angebote/workshop-lieblingsdose">
-                    <Button className="w-full bg-secondary hover:bg-secondary-dark text-secondary-foreground rounded-xl py-3 lg:py-4 text-base lg:text-lg">
-                      Mehr erfahren
-                      <ArrowRight className="ml-2 h-4 w-4 lg:h-5 lg:w-5" />
-                    </Button>
-                  </Link>
+                  <p className="text-xs text-muted-foreground mt-3 text-center">
+                    Oder direkt per Mail: captain@apfel.de
+                  </p>
                 </div>
               </div>
             </motion.div>
