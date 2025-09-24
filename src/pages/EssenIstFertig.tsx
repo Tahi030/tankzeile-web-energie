@@ -141,23 +141,29 @@ const EssenIstFertig = () => {
                 </div>
 
                 {/* Mini Preview Images */}
-                <div className="border-t border-border/30 pt-6">
-                  <div className="flex justify-center gap-4">
-                    <img 
-                      src="/assets/rezept-ausschnitt.jpg" 
-                      alt="Rezept Ausschnitt" 
-                      className="w-16 h-20 object-cover rounded shadow-sm border border-border/30"
-                    />
-                    <img 
-                      src="/assets/wochenplaner-ausschnitt.jpg" 
-                      alt="Wochenplaner Ausschnitt" 
-                      className="w-16 h-20 object-cover rounded shadow-sm border border-border/30"
-                    />
-                    <img 
-                      src="/assets/ernaehrungstagebuch-ausschnitt.jpg" 
-                      alt="Ernährungstagebuch Ausschnitt" 
-                      className="w-16 h-20 object-cover rounded shadow-sm border border-border/30"
-                    />
+                <div className="border-t border-border/30 pt-8">
+                  <div className="flex justify-center items-end gap-6 max-w-md mx-auto">
+                    <div className="transform rotate-2 hover:rotate-0 transition-transform duration-300">
+                      <img 
+                        src="/assets/rezept-ausschnitt.jpg" 
+                        alt="Rezept Ausschnitt" 
+                        className="w-24 h-32 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 border border-border/30"
+                      />
+                    </div>
+                    <div className="transform -rotate-1 hover:rotate-0 transition-transform duration-300 -mt-2">
+                      <img 
+                        src="/assets/wochenplaner-ausschnitt.jpg" 
+                        alt="Wochenplaner Ausschnitt" 
+                        className="w-28 h-36 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 border border-border/30"
+                      />
+                    </div>
+                    <div className="transform rotate-1 hover:rotate-0 transition-transform duration-300">
+                      <img 
+                        src="/assets/ernaehrungstagebuch-ausschnitt.jpg" 
+                        alt="Ernährungstagebuch Ausschnitt" 
+                        className="w-24 h-32 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 border border-border/30"
+                      />
+                    </div>
                   </div>
                 </div>
 
