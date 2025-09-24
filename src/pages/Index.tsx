@@ -38,7 +38,7 @@ const Index = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.1 }}
             >
-              Captain Apfel & seine Crew – auf gesunder Mission
+              Captain Apfel - auf gesunder Mission
             </motion.h1>
             
             {/* Hand-drawn line effect */}
@@ -74,17 +74,32 @@ const Index = () => {
               Volle Obst- und Gemüsekraft voraus!
             </motion.h2>
 
-            {/* Logo Platzhalter */}
+            {/* Captain Apfel */}
             <motion.div 
-              className="bg-card rounded-2xl p-8 max-w-md mx-auto border border-border shadow-sm"
+              className="flex justify-center items-center"
               initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.8, delay: 0.3 }}
+              animate={{ 
+                opacity: 1, 
+                scale: 1,
+                y: [0, -8, 0]
+              }}
+              transition={{ 
+                opacity: { duration: 0.8, delay: 0.3 },
+                scale: { duration: 0.8, delay: 0.3 },
+                y: { 
+                  duration: 2, 
+                  repeat: Infinity, 
+                  repeatType: "reverse",
+                  ease: "easeInOut",
+                  delay: 1
+                }
+              }}
             >
-              <div className="bg-primary/10 rounded-xl p-6 text-center">
-                <h3 className="text-lg font-semibold text-foreground mb-2">Powerzentrale</h3>
-                <p className="text-muted-foreground text-sm">Apfel-Logo kommt hier hin</p>
-              </div>
+              <img 
+                src="/assets/captain-apfel-hero.png" 
+                alt="Captain Apfel - Superheld für gesunde Ernährung" 
+                className="w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 object-contain drop-shadow-2xl"
+              />
             </motion.div>
           </div>
         </div>
