@@ -94,15 +94,6 @@ const HinterCaptainApfel = () => {
                   Herzliche Grüße<br />
                   <em>Tamara Hillmann</em>
                 </p>
-
-                {/* Neues Initiative Logo */}
-                <div className="flex justify-center mt-8">
-                  <img
-                    src="/lovable-uploads/Logo Initiative für starke Entwicklung, gesundheit die kindern schmeckt (1).png.png"
-                    alt="Captain Apfel - Initiative für starke Entwicklung - Gesundheit, die Kindern schmeckt"
-                    className="w-full max-w-md md:max-w-lg h-auto object-contain"
-                  />
-                </div>
               </div>
             </div>
           </motion.div>
