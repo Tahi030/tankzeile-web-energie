@@ -55,13 +55,6 @@ const HinterCaptainApfel = () => {
               </p>
               
               <div>
-                <h2 className="text-xl font-semibold text-foreground mb-4">
-                  Meine Zertifikate & Nachweise
-                </h2>
-                <p className="text-muted-foreground mb-6">
-                  Hier finden Sie eine Auswahl meiner Fortbildungen und Zertifikate. Weiterbildung ist mir besonders wichtig – gerade im Umgang mit Kindern.
-                </p>
-                
                 {/* Certificates */}
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
                   <a 
@@ -116,15 +109,7 @@ const HinterCaptainApfel = () => {
                     />
                   </a>
                 </div>
-                
-                <p className="text-muted-foreground text-sm">
-                  – aktuell: Selbststudium zur Fachberaterin für ganzheitliche Gesundheit
-                </p>
               </div>
-              
-              <p className="text-lg font-medium text-foreground text-center pt-4">
-                Mein Ziel: Wissen weitergeben, das praktisch, einfach und alltagstauglich ist.
-              </p>
             </div>
           </motion.div>
         </div>
