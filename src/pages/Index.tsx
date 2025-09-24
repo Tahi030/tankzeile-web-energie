@@ -28,14 +28,14 @@ const Index = () => {
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section - Clean Centered Layout */}
+      {/* Hero Section - Clean Centered Layout ohne Logo */}
       <section className="bg-background section-padding-sm">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto text-center">
             
             {/* Main Headline */}
             <motion.h1 
-              className="heading-xl mb-6"
+              className="heading-xl mb-4"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.1 }}
@@ -44,7 +44,7 @@ const Index = () => {
             </motion.h1>
             
             {/* Hand-drawn line effect */}
-            <div className="flex justify-center mb-6">
+            <div className="flex justify-center mb-5">
               <svg width="120" height="8" viewBox="0 0 120 8" className="text-white">
                 <path
                   d="M2,4 Q8,2 15,4 T30,3 Q40,5 50,4 T70,3 Q80,5 90,4 T110,3 Q115,2 118,4"
@@ -69,7 +69,7 @@ const Index = () => {
 
             {/* Captain Apfel Image - Centered */}
             <motion.div 
-              className="flex justify-center mb-6"
+              className="flex justify-center mb-5"
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ 
                 opacity: 1, 
@@ -97,33 +97,19 @@ const Index = () => {
             
             {/* Subtitle */}
             <motion.h2 
-              className="heading-md text-secondary mb-6"
+              className="heading-md text-secondary"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.5 }}
             >
               Volle Obst- und Gemüsekraft voraus!
             </motion.h2>
-            
-            {/* Logo with Claim */}
-            <motion.div 
-              className="flex justify-center"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.7 }}
-            >
-              <img 
-                src="/lovable-uploads/initiative-logo-homepage.png" 
-                alt="Captain Apfel - Initiative für starke Entwicklung - Gesundheit, die Kindern schmeckt" 
-                className="w-full max-w-md md:max-w-lg lg:max-w-xl h-auto object-contain"
-              />
-            </motion.div>
           </div>
         </div>
       </section>
 
-      {/* Vorstellung - direkt anschließend ohne große Lücke */}
-      <section className="bg-background">
+      {/* Vorstellung - nahtloser Übergang */}
+      <section className="bg-background pt-0 pb-6">
         <div className="container-custom">
           <motion.div 
             className="max-w-4xl mx-auto"
@@ -166,8 +152,8 @@ const Index = () => {
         </div>
       </section>
 
-      {/* CREW-Bereich - kompakter */}
-      <section className="section-padding-sm bg-background overflow-hidden">
+      {/* CREW-Bereich - harmonische Übergänge */}
+      <section className="section-padding-sm bg-background overflow-hidden pt-8">
         <div className="container-custom">
           <motion.div 
             className="text-center mb-12"
@@ -176,7 +162,7 @@ const Index = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="heading-xl mb-6 font-playfair">
+            <h2 className="heading-lg mb-8 text-center text-white font-playfair">
               Lerne die Crew von Captain Apfel kennen!
             </h2>
           </motion.div>
@@ -414,7 +400,7 @@ const Index = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="section-title text-center mb-4 text-white">
+            <h2 className="heading-lg text-center mb-4 text-white">
               Meine aktuellen Reisen
             </h2>
             
@@ -499,17 +485,17 @@ const Index = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="section-title mb-4 text-white">
+            <h2 className="heading-lg mb-4 text-white">
               <div className="countdown-numbers">
-                <span className="countdown-number text-blue-500">5</span>
+                <span className="countdown-number text-secondary">5</span>
                 <span className="text-white/70">,</span>
-                <span className="countdown-number text-[hsl(var(--blackberry))]">4</span>
+                <span className="countdown-number text-primary">4</span>
                 <span className="text-white/70">,</span>
-                <span className="countdown-number text-green-500">3</span>
+                <span className="countdown-number text-secondary">3</span>
                 <span className="text-white/70">,</span>
-                <span className="countdown-number text-yellow-500">2</span>
+                <span className="countdown-number text-primary">2</span>
                 <span className="text-white/70">,</span>
-                <span className="countdown-number text-orange-500">1</span>
+                <span className="countdown-number text-secondary">1</span>
               </div>
               <div className="text-white mt-2">– Volle Obst- und Gemüsekraft voraus!</div>
             </h2>
@@ -586,7 +572,7 @@ const Index = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="section-title mb-4 text-white">Mission Buntstift</h2>
+            <h2 className="heading-lg mb-4 text-white">Mission Buntstift</h2>
             
             {/* Hand-drawn line effect */}
             <div className="flex justify-center mb-6">
