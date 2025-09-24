@@ -42,7 +42,7 @@ const Index = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.1 }}
                 >
-                  Captain Apfel & seine Crew – auf gesunder Mission
+                  Captain Apfel - auf gesunder Mission
                 </motion.h1>
                 
                 {/* Hand-drawn line effect */}
@@ -106,19 +106,27 @@ const Index = () => {
                     transition: { type: "spring", stiffness: 300, damping: 10 }
                   }}
                 >
-                  {/* Glow effect background */}
-                  <div className="absolute inset-0 bg-primary/20 rounded-full blur-3xl scale-110 animate-pulse"></div>
-                  
-                  {/* Captain Apfel */}
-                  <img 
-                    src="/assets/captain-apfel-hero.png" 
-                    alt="Captain Apfel - der freundliche Superheld für gesunde Ernährung" 
-                    className="relative z-10 w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 object-contain drop-shadow-2xl"
-                  />
+                  {/* Apfelrote verspielte Box */}
+                  <div className="relative bg-gradient-to-br from-red-500 via-red-600 to-red-700 rounded-3xl p-8 md:p-12 shadow-2xl transform rotate-2 hover:rotate-0 transition-transform duration-300">
+                    {/* Innerer Bereich für bessere Sichtbarkeit */}
+                    <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
+                      {/* Captain Apfel */}
+                      <img 
+                        src="/assets/captain-apfel-main.png" 
+                        alt="Captain Apfel - der freundliche Superheld für gesunde Ernährung" 
+                        className="w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 object-contain mx-auto drop-shadow-xl"
+                      />
+                    </div>
+                    
+                    {/* Verspielte Deko-Elemente */}
+                    <div className="absolute -top-2 -right-2 w-6 h-6 bg-yellow-400 rounded-full animate-bounce delay-700"></div>
+                    <div className="absolute -bottom-3 -left-3 w-4 h-4 bg-green-400 rounded-full animate-pulse"></div>
+                    <div className="absolute top-1/4 -right-4 w-3 h-3 bg-orange-400 rounded-full animate-ping delay-1000"></div>
+                  </div>
                   
                   {/* Floating elements */}
                   <motion.div 
-                    className="absolute -top-4 -right-4 text-2xl"
+                    className="absolute -top-6 -right-6 text-3xl"
                     animate={{ 
                       y: [0, -10, 0],
                       rotate: [0, 5, 0]
@@ -133,7 +141,7 @@ const Index = () => {
                   </motion.div>
                   
                   <motion.div 
-                    className="absolute -bottom-2 -left-6 text-xl"
+                    className="absolute -bottom-4 -left-8 text-2xl"
                     animate={{ 
                       y: [0, -8, 0],
                       rotate: [0, -5, 0]
@@ -149,7 +157,7 @@ const Index = () => {
                   </motion.div>
                   
                   <motion.div 
-                    className="absolute top-1/4 -left-8 text-lg"
+                    className="absolute top-1/4 -left-10 text-xl"
                     animate={{ 
                       x: [0, -5, 0],
                       y: [0, -5, 0]
