@@ -56,122 +56,109 @@ const EssenIstFertig = () => {
             transition={{ duration: 0.8, delay: 0.3 }}
           >
             <div className="bg-card/80 backdrop-blur-sm rounded-2xl p-6 md:p-8 border border-border/50 shadow-lg">
-              <div className="max-w-5xl mx-auto">
-                <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6 text-center">
-                  Band 1: Essen ist fertig! bei Laktoseintoleranz
-                </h2>
+              <div className="max-w-6xl mx-auto">
                 
-                <div className="text-center mb-8">
-                  <p className="text-muted-foreground text-lg leading-relaxed max-w-4xl mx-auto">
-                    Deine kompakte Elternhilfe nach der Diagnose – übersichtlich, praxisnah und sofort nutzbar. 
-                    In diesem Paket findest du alles, was du brauchst, um den Alltag leichter zu machen:
-                  </p>
-                </div>
-
-                <div className="grid md:grid-cols-2 gap-8 mb-8">
-                  {/* Left Column - Benefits List */}
-                  <div className="space-y-4">
-                    <ul className="space-y-3 text-muted-foreground">
-                      <li className="flex items-start gap-3">
-                        <span className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                        <span>Grundlagen einfach erklärt: Diagnose verstehen & Alltag meistern</span>
-                      </li>
-                      <li className="flex items-start gap-3">
-                        <span className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                        <span>über 50 Seiten klar aufbereitete Infos</span>
-                      </li>
-                      <li className="flex items-start gap-3">
-                        <span className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                        <span>Do's & Don'ts für Einkauf & Ernährung</span>
-                      </li>
-                      <li className="flex items-start gap-3">
-                        <span className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                        <span>Vorlage für Kita & Schule – direkt nutzbar</span>
-                      </li>
-                      <li className="flex items-start gap-3">
-                        <span className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                        <span>10 schnelle Snackideen & kindgerechte Rezepte</span>
-                      </li>
-                      <li className="flex items-start gap-3">
-                        <span className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                        <span>Wochenbaukasten (Tankbox) mit Beispiel-Wochenplan, Einkaufsliste und Wochenplan-Vorlage</span>
-                      </li>
-                      <li className="flex items-start gap-3">
-                        <span className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                        <span>umfangreicher FAQ-Teil mit Antworten wie in einer Beratung</span>
-                      </li>
-                      <li className="flex items-start gap-3">
-                        <span className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                        <span>Vorlage Ernährungstagebuch – zum Ausfüllen</span>
-                      </li>
-                    </ul>
+                {/* Main Content - Cover & Details */}
+                <div className="grid md:grid-cols-5 gap-8 mb-8">
+                  {/* Left Column - Cover Image */}
+                  <div className="md:col-span-2">
+                    <img 
+                      src="/assets/essen-ist-fertig-title.jpg" 
+                      alt="Essen ist fertig! bei Laktoseintoleranz Cover" 
+                      className="w-full rounded-lg shadow-lg"
+                    />
                   </div>
 
-                  {/* Right Column - Purchase Info */}
-                  <div className="bg-card/50 rounded-lg p-4 border border-border/30 text-center space-y-3">
-                    <div className="text-2xl font-bold text-foreground mb-3">
-                      Einmalig 24,90 €
+                  {/* Right Column - Content & Purchase */}
+                  <div className="md:col-span-3 space-y-6">
+                    <div>
+                      <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
+                        Essen ist fertig! bei Laktoseintoleranz
+                      </h2>
+                      
+                      <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+                        Deine kompakte Elternhilfe nach der Diagnose – übersichtlich, praxisnah und sofort nutzbar.
+                      </p>
+
+                      <ul className="space-y-2 text-muted-foreground mb-6">
+                        <li className="flex items-start gap-3">
+                          <span className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                          <span>Grundlagen einfach erklärt: Diagnose verstehen & Alltag meistern</span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <span className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                          <span>über 50 Seiten klar aufbereitete Infos</span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <span className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                          <span>Do's & Don'ts für Einkauf & Ernährung</span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <span className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                          <span>Vorlage für Kita & Schule – direkt nutzbar</span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <span className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                          <span>10 schnelle Snackideen & kindgerechte Rezepte</span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <span className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                          <span>Wochenbaukasten (Tankbox) mit Beispiel-Wochenplan, Einkaufsliste und Wochenplan-Vorlage</span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <span className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                          <span>umfangreicher FAQ-Teil mit Antworten wie in einer Beratung</span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <span className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                          <span>Vorlage Ernährungstagebuch – zum Ausfüllen</span>
+                        </li>
+                      </ul>
                     </div>
-                    
-                    <motion.a
-                      href="https://paypal.me/tamarahillmann/24.90"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="block bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-3 rounded-lg transition-colors font-medium w-full"
-                      whileHover={{ scale: 1.02 }}
-                      whileTap={{ scale: 0.98 }}
-                    >
-                      Jetzt sichern über PayPal
-                    </motion.a>
-                    
-                    <div className="text-xs text-muted-foreground leading-relaxed">
-                      Dein PDF-Paket und die Rechnung erhältst du automatisch an die bei PayPal hinterlegte E-Mail-Adresse.
+
+                    {/* Purchase Section */}
+                    <div className="bg-card/50 rounded-lg p-4 border border-border/30 text-center space-y-3">
+                      <div className="text-2xl font-bold text-foreground mb-3">
+                        Einmalig 24,90 €
+                      </div>
+                      
+                      <motion.a
+                        href="https://paypal.me/tamarahillmann/24.90"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="block bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-3 rounded-lg transition-colors font-medium w-full"
+                        whileHover={{ scale: 1.02 }}
+                        whileTap={{ scale: 0.98 }}
+                      >
+                        Jetzt sichern über PayPal
+                      </motion.a>
+                      
+                      <div className="text-xs text-muted-foreground leading-relaxed">
+                        Dein PDF-Paket und die Rechnung erhältst du automatisch an die bei PayPal hinterlegte E-Mail-Adresse.
+                      </div>
                     </div>
                   </div>
                 </div>
+
+                {/* Mini Preview Images */}
+                <div className="border-t border-border/30 pt-6">
+                  <div className="flex justify-center gap-4">
+                    <div className="w-16 h-20 bg-gradient-to-br from-card to-card/80 rounded shadow-sm border border-border/30 flex items-center justify-center">
+                      <span className="text-[10px] text-muted-foreground">Rezept</span>
+                    </div>
+                    <div className="w-16 h-20 bg-gradient-to-br from-card to-card/80 rounded shadow-sm border border-border/30 flex items-center justify-center">
+                      <span className="text-[10px] text-muted-foreground">Vorlage</span>
+                    </div>
+                    <div className="w-16 h-20 bg-gradient-to-br from-card to-card/80 rounded shadow-sm border border-border/30 flex items-center justify-center">
+                      <span className="text-[10px] text-muted-foreground">FAQ</span>
+                    </div>
+                  </div>
+                </div>
+
               </div>
             </div>
           </motion.section>
 
-          {/* Preview Section */}
-          <motion.section 
-            className="mb-16"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-          >            
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-5xl mx-auto">
-              {/* Title Page */}
-              <div className="transform rotate-1 hover:rotate-0 transition-transform duration-300">
-                <img 
-                  src="/assets/essen-ist-fertig-title.jpg" 
-                  alt="Essen ist fertig! Titelseite" 
-                  className="w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
-                />
-              </div>
-              
-              {/* Recipe Page Placeholder */}
-              <div className="transform -rotate-1 hover:rotate-0 transition-transform duration-300">
-                <div className="aspect-[3/4] bg-gradient-to-br from-card to-card/80 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 border border-border/30 flex items-center justify-center">
-                  <span className="text-muted-foreground text-sm font-medium">Rezeptseite</span>
-                </div>
-              </div>
-              
-              {/* Template Placeholder */}
-              <div className="transform rotate-2 hover:rotate-0 transition-transform duration-300">
-                <div className="aspect-[3/4] bg-gradient-to-br from-card to-card/80 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 border border-border/30 flex items-center justify-center">
-                  <span className="text-muted-foreground text-sm font-medium">Vorlage</span>
-                </div>
-              </div>
-              
-              {/* FAQ Placeholder */}
-              <div className="transform -rotate-2 hover:rotate-0 transition-transform duration-300">
-                <div className="aspect-[3/4] bg-gradient-to-br from-card to-card/80 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 border border-border/30 flex items-center justify-center">
-                  <span className="text-muted-foreground text-sm font-medium">FAQ</span>
-                </div>
-              </div>
-            </div>
-          </motion.section>
 
         </div>
       </div>
