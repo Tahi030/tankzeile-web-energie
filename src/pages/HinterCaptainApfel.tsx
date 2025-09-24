@@ -55,59 +55,39 @@ const HinterCaptainApfel = () => {
               </p>
               
               <div>
-                {/* Certificates */}
+                {/* Certificates - nicht anklickbar */}
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 mb-6">
-                  <a 
-                    href="/pdfs/Kinderschutzkonzept.pdf" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="rounded-lg overflow-hidden hover:shadow-lg transition-shadow border border-border/30"
-                  >
+                  <div className="rounded-lg overflow-hidden border border-border/30">
                     <img
                       src="/certificates/kinderschutzkonzept.jpg"
                       alt="Kinderschutzkonzept Zertifikat"
                       className="image-certificate"
                     />
-                  </a>
+                  </div>
                   
-                  <a 
-                    href="/pdfs/Was_ist_Adultismus.pdf" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="rounded-lg overflow-hidden hover:shadow-lg transition-shadow border border-border/30"
-                  >
+                  <div className="rounded-lg overflow-hidden border border-border/30">
                     <img
                       src="/certificates/adultismus.jpg"
                       alt="Was ist Adultismus Zertifikat"
                       className="image-certificate"
                     />
-                  </a>
+                  </div>
                   
-                  <a 
-                    href="/pdfs/Was_ist_Neurodiversität.pdf" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="rounded-lg overflow-hidden hover:shadow-lg transition-shadow border border-border/30"
-                  >
+                  <div className="rounded-lg overflow-hidden border border-border/30">
                     <img
                       src="/certificates/neurodiversitaet.jpg"
                       alt="Was ist Neurodiversität Zertifikat"
                       className="image-certificate"
                     />
-                  </a>
+                  </div>
                   
-                  <a 
-                    href="/pdfs/Interaktion.pdf" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="rounded-lg overflow-hidden hover:shadow-lg transition-shadow border border-border/30"
-                  >
+                  <div className="rounded-lg overflow-hidden border border-border/30">
                     <img
                       src="/certificates/interaktion.jpg"
                       alt="Fachkraft-Kind-Interaktion Zertifikat"
                       className="image-certificate"
                     />
-                  </a>
+                  </div>
                 </div>
 
                 <p className="body-lg mt-6 mb-6">
@@ -115,12 +95,12 @@ const HinterCaptainApfel = () => {
                   <em>Tamara Hillmann</em>
                 </p>
 
-                {/* Initiative Logo */}
+                {/* Neues Initiative Logo */}
                 <div className="flex justify-center mt-8">
                   <img
-                    src="/lovable-uploads/initiative-logo-homepage.png"
+                    src="/lovable-uploads/Logo Initiative für starke Entwicklung, gesundheit die kindern schmeckt (1).png.png"
                     alt="Captain Apfel - Initiative für starke Entwicklung - Gesundheit, die Kindern schmeckt"
-                    className="image-logo"
+                    className="w-full max-w-md md:max-w-lg h-auto object-contain"
                   />
                 </div>
               </div>
