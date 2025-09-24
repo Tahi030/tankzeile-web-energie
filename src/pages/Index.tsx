@@ -112,7 +112,7 @@ const Index = () => {
               <img 
                 src="/lovable-uploads/initiative-logo-homepage.png" 
                 alt="Captain Apfel - Initiative für starke Entwicklung - Gesundheit, die Kindern schmeckt" 
-                className="w-64 sm:w-80 md:w-96 lg:w-[28rem] h-auto object-contain"
+                className="w-full max-w-4xl h-auto object-contain px-4"
               />
             </motion.div>
           </div>
