@@ -28,12 +28,12 @@ const Index = () => {
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section - Kompakteres Layout */}
+      {/* Hero Section - Sehr kompaktes Layout */}
       <section className="bg-background section-padding-sm">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto text-center">
             <motion.h1 
-              className="heading-xl mb-3"
+              className="heading-xl mb-2"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.1 }}
@@ -42,7 +42,7 @@ const Index = () => {
             </motion.h1>
             
             {/* Hand-drawn line effect */}
-            <div className="flex justify-center mb-4">
+            <div className="flex justify-center mb-3">
               <svg width="120" height="8" viewBox="0 0 120 8" className="text-white">
                 <path
                   d="M2,4 Q8,2 15,4 T30,3 Q40,5 50,4 T70,3 Q80,5 90,4 T110,3 Q115,2 118,4"
@@ -66,7 +66,7 @@ const Index = () => {
             </div>
             
             <motion.h2 
-              className="heading-md mb-6 text-secondary"
+              className="heading-md mb-4 text-secondary"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
@@ -76,7 +76,7 @@ const Index = () => {
 
             {/* Captain Apfel */}
             <motion.div 
-              className="flex justify-center items-center mb-6"
+              className="flex justify-center items-center mb-3"
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ 
                 opacity: 1, 
@@ -102,7 +102,7 @@ const Index = () => {
               />
             </motion.div>
             
-            {/* Initiative Logo - kompakter positioniert */}
+            {/* Initiative Logo - direkt anschließend */}
             <motion.div 
               className="flex justify-center items-center"
               initial={{ opacity: 0, y: 20 }}
