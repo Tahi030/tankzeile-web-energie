@@ -110,7 +110,7 @@ const HinterCaptainApfel = () => {
                   </a>
                 </div>
 
-                <p className="text-lg text-muted-foreground mt-8 mb-6">
+                <p className="text-lg text-muted-foreground mt-8 mb-8">
                   Herzliche Grüße<br />
                   <em>Tamara Hillmann</em>
                 </p>
@@ -120,7 +120,7 @@ const HinterCaptainApfel = () => {
                   <img
                     src="/lovable-uploads/initiative-logo.png"
                     alt="Captain Apfel - Initiative für starke Entwicklung - Gesundheit, die Kindern schmeckt"
-                    className="max-w-md w-full h-auto"
+                    className="w-full max-w-2xl h-auto"
                   />
                 </div>
               </div>
