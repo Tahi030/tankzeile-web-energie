@@ -420,12 +420,14 @@ const Index = () => {
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              <div className="offer-box h-full flex flex-col">
-                <div className="bg-secondary/10 rounded-xl h-32 lg:h-40 mb-6 flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="text-4xl lg:text-5xl mb-2">🍎</div>
-                    <p className="text-sm lg:text-base text-muted-foreground">Reise zur Powerzentrale</p>
-                  </div>
+               <div className="offer-box h-full flex flex-col">
+                <div className="bg-secondary/10 rounded-xl overflow-hidden mb-6 relative">
+                  <img 
+                    src="/assets/reise-zur-powerzentrale.jpg" 
+                    alt="Reise zur Powerzentrale - Captain Apfel im Weltall" 
+                    className="w-full h-48 md:h-56 lg:h-64 object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent"></div>
                 </div>
                 
                 <div className="flex-1 flex flex-col">
