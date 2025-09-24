@@ -425,9 +425,8 @@ const Index = () => {
                   <img 
                     src="/assets/reise-zur-powerzentrale.jpg" 
                     alt="Reise zur Powerzentrale - Captain Apfel im Weltall" 
-                    className="w-full h-48 md:h-56 lg:h-64 object-cover"
+                    className="w-full h-64 md:h-80 lg:h-96 object-contain bg-white/5"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent"></div>
                 </div>
                 
                 <div className="flex-1 flex flex-col">
