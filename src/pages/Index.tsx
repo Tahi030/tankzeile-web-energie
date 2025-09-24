@@ -29,11 +29,11 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-background py-16 md:py-24">
+      <section className="bg-background section-padding">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto text-center">
             <motion.h1 
-              className="text-4xl md:text-6xl font-bold mb-4 text-white"
+              className="heading-xl mb-4"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.1 }}
@@ -66,7 +66,7 @@ const Index = () => {
             </div>
             
             <motion.h2 
-              className="text-2xl md:text-3xl font-medium mb-12 text-secondary"
+              className="heading-md mb-8 text-secondary"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
@@ -98,7 +98,7 @@ const Index = () => {
               <img 
                 src="/assets/captain-apfel-hero.png" 
                 alt="Captain Apfel - Superheld für gesunde Ernährung" 
-                className="w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 object-contain drop-shadow-2xl"
+                className="image-hero drop-shadow-2xl"
               />
             </motion.div>
             
@@ -112,7 +112,7 @@ const Index = () => {
               <img 
                 src="/lovable-uploads/initiative-logo-homepage.png" 
                 alt="Captain Apfel - Initiative für starke Entwicklung - Gesundheit, die Kindern schmeckt" 
-                className="w-full max-w-4xl h-auto object-contain px-4"
+                className="image-logo px-4"
               />
             </motion.div>
           </div>
@@ -120,7 +120,7 @@ const Index = () => {
       </section>
 
       {/* Vorstellung */}
-      <section className="py-16 bg-background">
+      <section className="section-padding bg-background">
         <div className="container-custom">
           <motion.div 
             className="max-w-4xl mx-auto"
@@ -129,32 +129,32 @@ const Index = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <div className="bg-card/30 backdrop-blur-sm rounded-2xl p-8 md:p-12 lg:p-16 border border-border/50 shadow-sm relative">
-              <div className="max-w-4xl space-y-6 lg:space-y-8">
+            <div className="bg-card/30 backdrop-blur-sm rounded-2xl p-6 md:p-8 border border-border/50 shadow-sm relative">
+              <div className="max-w-4xl content-spacing">
                 {/* Kleine Einleitung */}
-                <p className="text-sm lg:text-base text-muted-foreground font-medium tracking-wide">
+                <p className="body-base font-medium tracking-wide">
                   Hallo, ich bin
                 </p>
                 
                 {/* Große Hauptzeile */}
-                <h2 className="text-2xl lg:text-4xl font-black text-primary leading-none tracking-tight">
+                <h2 className="heading-lg text-primary leading-none tracking-tight">
                   Captain Apfel
                 </h2>
                 
                 {/* Kleiner erklärender Text */}
-                <h3 className="text-base lg:text-xl text-muted-foreground leading-relaxed font-medium">
+                <h3 className="heading-sm leading-relaxed">
                   Mit meiner Crew bin ich unterwegs auf gesunder Mission.
                 </h3>
                 
                 {/* Große Blickfang-Zeile */}
-                <h3 className="text-base lg:text-lg text-muted-foreground leading-relaxed">
+                <h3 className="body-lg leading-relaxed">
                   Berlin ist der Startpunkt <br className="hidden md:block" /> 
                   unserer Reise. Von hier aus hebt das Tomatenraumschiff ab und landet direkt in Einrichtungen mit Kindern im Vorschul- und Grundschulalter.
                 </h3>
                 
                 {/* Starkes Schluss-Statement */}
-                <div className="space-y-2 text-left pt-4 border-t border-primary/20">
-                  <p className="text-sm lg:text-base text-primary font-semibold tracking-wide leading-relaxed">
+                <div className="text-left pt-3 border-t border-primary/20">
+                  <p className="body-lg text-primary font-semibold tracking-wide leading-relaxed">
                     Denn gesunde Gewohnheiten geben uns Kraft, machen das Denken leichter und lassen uns rundum wohlfühlen.
                   </p>
                 </div>
@@ -165,16 +165,16 @@ const Index = () => {
       </section>
 
       {/* CREW-Bereich - Kinder-Kritzelbuch Style */}
-      <section className="py-24 bg-background overflow-hidden">
+      <section className="section-padding bg-background overflow-hidden">
         <div className="container-custom">
           <motion.div 
-            className="text-center mb-20"
+            className="text-center mb-12"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl md:text-6xl font-bold text-white mb-8 font-playfair">
+            <h2 className="heading-xl mb-6 font-playfair">
               Lerne die Crew von Captain Apfel kennen!
             </h2>
           </motion.div>
@@ -201,7 +201,7 @@ const Index = () => {
                   <img 
                     src="/lovable-uploads/captain-apfel.png" 
                     alt="Captain Apfel" 
-                    className="w-20 h-20 sm:w-28 sm:h-28 md:w-36 md:h-36 lg:w-44 lg:h-44 object-contain drop-shadow-2xl"
+                    className="image-crew drop-shadow-2xl"
                   />
                 </div>
                 <div className="relative px-2">
@@ -233,7 +233,7 @@ const Index = () => {
                   <img 
                     src="/lovable-uploads/kimmi-schlau.png" 
                     alt="Kimmi Schlau" 
-                    className="w-20 h-20 sm:w-28 sm:h-28 md:w-36 md:h-36 lg:w-44 lg:h-44 object-contain drop-shadow-2xl"
+                    className="image-crew drop-shadow-2xl"
                   />
                 </div>
                 <div className="relative px-2">
@@ -268,7 +268,7 @@ const Index = () => {
                   <img 
                     src="/lovable-uploads/kai-mutig.png" 
                     alt="Kai Mutig" 
-                    className="w-20 h-20 sm:w-28 sm:h-28 md:w-36 md:h-36 lg:w-44 lg:h-44 object-contain drop-shadow-2xl"
+                    className="image-crew drop-shadow-2xl"
                   />
                 </div>
                 <div className="relative px-2">

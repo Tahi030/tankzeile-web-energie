@@ -22,11 +22,11 @@ const HinterCaptainApfel = () => {
   }, []);
 
   return (
-    <main className="min-h-screen py-16 md:py-24">
+    <main className="min-h-screen section-padding">
       <div className="container-custom">
         <div className="max-w-4xl mx-auto">
           <motion.h1 
-            className="text-4xl md:text-6xl font-bold mb-8 text-center text-white"
+            className="heading-xl mb-6 text-center"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.1 }}
@@ -35,28 +35,28 @@ const HinterCaptainApfel = () => {
           </motion.h1>
           
           <motion.div 
-            className="bg-card/30 backdrop-blur-sm rounded-2xl p-8 md:p-12 border border-border/50 shadow-sm text-left"
+            className="bg-card/30 backdrop-blur-sm rounded-2xl p-6 md:p-8 border border-border/50 shadow-sm text-left"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.3 }}
           >
-            <div className="space-y-6">
-              <p className="text-lg text-muted-foreground">
+            <div className="content-spacing">
+              <p className="body-lg">
                 Ich bin <em>Tamara Hillmann</em>, der kreative Kopf hinter <strong>Captain Apfel</strong>.
                 Kinder lieben Geschichten – und über Fantasiefiguren lassen sich große Themen wie Gesundheit und Wohlbefinden besonders gut vermitteln. <strong>Captain Apfel</strong> steht für Energie, Freude und das Gefühl, dass gesunde Gewohnheiten leicht Teil des Alltags werden können.
               </p>
               
-              <p className="text-lg text-muted-foreground">
+              <p className="body-lg">
                 Ich arbeite eng mit Kindern und Einrichtungen zusammen und bringe dort meine Erfahrung und mein Fachwissen ein. Dabei verbinde ich eigene Erfahrungen mit fundiertem Wissen und bilde mich kontinuierlich weiter – unter anderem an der Akademie der Naturheilkunde. Besonders beschäftige ich mich mit dem Thema Unverträglichkeiten, das mir persönlich am Herzen liegt. Aus diesem Weg entstehen die Pakete, die Familien im Alltag Orientierung und Unterstützung geben.
               </p>
               
-              <p className="text-lg text-muted-foreground">
+              <p className="body-lg">
                 Meine bisherigen Fortbildungen und Zertifikate findest du gleich hier auf der Seite – weil mir Qualität, Transparenz und Weiterentwicklung wichtig sind.
               </p>
               
               <div>
                 {/* Certificates */}
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 mb-6">
                   <a 
                     href="/pdfs/Kinderschutzkonzept.pdf" 
                     target="_blank" 
@@ -66,7 +66,7 @@ const HinterCaptainApfel = () => {
                     <img
                       src="/certificates/kinderschutzkonzept.jpg"
                       alt="Kinderschutzkonzept Zertifikat"
-                      className="w-full h-32 object-cover"
+                      className="image-certificate"
                     />
                   </a>
                   
@@ -79,7 +79,7 @@ const HinterCaptainApfel = () => {
                     <img
                       src="/certificates/adultismus.jpg"
                       alt="Was ist Adultismus Zertifikat"
-                      className="w-full h-32 object-cover"
+                      className="image-certificate"
                     />
                   </a>
                   
@@ -92,7 +92,7 @@ const HinterCaptainApfel = () => {
                     <img
                       src="/certificates/neurodiversitaet.jpg"
                       alt="Was ist Neurodiversität Zertifikat"
-                      className="w-full h-32 object-cover"
+                      className="image-certificate"
                     />
                   </a>
                   
@@ -105,22 +105,22 @@ const HinterCaptainApfel = () => {
                     <img
                       src="/certificates/interaktion.jpg"
                       alt="Fachkraft-Kind-Interaktion Zertifikat"
-                      className="w-full h-32 object-cover"
+                      className="image-certificate"
                     />
                   </a>
                 </div>
 
-                <p className="text-lg text-muted-foreground mt-8 mb-8">
+                <p className="body-lg mt-6 mb-6">
                   Herzliche Grüße<br />
                   <em>Tamara Hillmann</em>
                 </p>
 
                 {/* Initiative Logo */}
-                <div className="flex justify-center">
+                <div className="flex justify-center mt-8">
                   <img
-                    src="/lovable-uploads/initiative-logo.png"
+                    src="/lovable-uploads/initiative-logo-homepage.png"
                     alt="Captain Apfel - Initiative für starke Entwicklung - Gesundheit, die Kindern schmeckt"
-                    className="w-full max-w-2xl h-auto"
+                    className="image-logo"
                   />
                 </div>
               </div>

@@ -13,12 +13,12 @@ const AlltagLeichterLeben = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-primary-light py-16 md:py-24">
+      <section className="bg-primary-light section-padding">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
-            <h1 className="text-3xl md:text-4xl font-bold mb-6 text-white">Alltag leichter leben</h1>
+            <h1 className="heading-xl mb-4">Alltag leichter leben</h1>
             {/* Hand-drawn line effect directly under heading */}
-            <svg width="120" height="8" viewBox="0 0 120 8" className="text-white mb-6">
+            <svg width="120" height="8" viewBox="0 0 120 8" className="text-white mb-4">
               <path
                 d="M2,4 Q8,2 15,4 T30,3 Q40,5 50,4 T70,3 Q80,5 90,4 T110,3 Q115,2 118,4"
                 stroke="currentColor"
@@ -38,7 +38,7 @@ const AlltagLeichterLeben = () => {
                 </filter>
               </defs>
             </svg>
-            <p className="text-lg mb-6 text-white">
+            <p className="body-lg text-white">
               Für Familien, die Struktur, Entlastung und neue Energie suchen.
             </p>
           </div>
@@ -46,14 +46,14 @@ const AlltagLeichterLeben = () => {
       </section>
 
       {/* Main Content */}
-      <section className="py-12 md:py-16">
+      <section className="section-padding">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
             <div className="prose prose-lg max-w-none">
-              <div className="mb-8">
-                <h2 className="text-2xl md:text-3xl mb-4 text-primary-dark text-left italic font-normal">Warum Struktur beim Essen hilft</h2>
+              <div className="mb-6">
+                <h2 className="heading-lg text-primary-dark text-left italic font-normal mb-3">Warum Struktur beim Essen hilft</h2>
                 {/* Hand-drawn line effect */}
-                <div className="flex justify-start mb-6">
+                <div className="flex justify-start mb-4">
                   <svg width="120" height="8" viewBox="0 0 120 8" className="text-primary">
                     <path
                       d="M2,4 Q8,2 15,4 T30,3 Q40,5 50,4 T70,3 Q80,5 90,4 T110,3 Q115,2 118,4"
@@ -75,7 +75,7 @@ const AlltagLeichterLeben = () => {
                     </defs>
                   </svg>
                 </div>
-                <p>
+                <p className="body-lg">
                   Wenn du weißt, was auf den Tisch kommt, sparst du Energie und Stress. Weniger Entscheidungen im Kopf, mehr Zeit für Quality-Time mit deinen Kindern. Denn genau diese gemeinsamen Momente im Hier und Jetzt zählen wirklich und bleiben in Erinnerung. Genieße sie!
                 </p>
               </div>
@@ -85,15 +85,15 @@ const AlltagLeichterLeben = () => {
       </section>
 
       {/* PDF Download Section */}
-      <section className="py-12 md:py-16 bg-accent-light">
+      <section className="section-padding bg-accent-light">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
-            <div className="bg-white rounded-lg shadow-md p-8">
-              <h2 className="text-2xl md:text-3xl mb-4 text-primary-dark text-left italic font-normal">
+            <div className="bg-white rounded-lg shadow-md p-6 md:p-8">
+              <h2 className="heading-lg text-primary-dark text-left italic font-normal mb-3">
                 Deine Alltagshelfer to go!
               </h2>
               {/* Hand-drawn line effect */}
-              <div className="flex justify-start mb-6">
+              <div className="flex justify-start mb-4">
                 <svg width="120" height="8" viewBox="0 0 120 8" className="text-primary">
                   <path
                     d="M2,4 Q8,2 15,4 T30,3 Q40,5 50,4 T70,3 Q80,5 90,4 T110,3 Q115,2 118,4"
@@ -115,30 +115,30 @@ const AlltagLeichterLeben = () => {
                   </defs>
                 </svg>
               </div>
-              <p className="text-gray-600 mb-8">
+              <p className="body-base text-gray-600 mb-6">
                 Hier findest du regelmäßig kostenlose PDF-Dateien voller Ideen, Tipps und Informationen, die deinen Alltag leichter, gesünder und einfach schöner machen. Hol dir gleich deine erste Datei – und schau gern immer wieder vorbei, bald warten weitere kleine Helfer auf dich.
               </p>
-              <p className="text-gray-600 mb-8">
+              <p className="body-base text-gray-600 mb-6">
                 Viel Spaß beim Entdecken!
               </p>
               
               <div className="bg-gradient-to-r from-primary-light/20 to-secondary-light/20 rounded-lg p-6">
-                <h3 className="text-xl font-semibold text-primary-dark mb-4">
+                <h3 className="heading-sm text-primary-dark mb-3">
                   Ideen für Kita-Brotdosen
                 </h3>
-                <p className="text-gray-600 mb-6">
+                <p className="body-base text-gray-600 mb-4">
                   Praktische Tipps und kreative Ideen für abwechslungsreiche und gesunde Brotdosen, die Kindern schmecken und Eltern entlasten.
                 </p>
                 <div className="flex flex-col items-center gap-4">
                   <img 
                     src="/lovable-uploads/08bfbdac-09ed-487b-b043-b67755d1d90a.png" 
                     alt="Gratis PDF Kita-Brotdosen" 
-                    className="w-80 h-80 object-contain rounded-lg"
+                    className="w-60 h-60 md:w-72 md:h-72 object-contain rounded-lg"
                   />
                   <a 
                     href="/lieblingsdose.pdf" 
                     download
-                    className="inline-flex items-center bg-primary/80 text-white px-3 py-1.5 rounded-md hover:bg-primary transition-colors text-xs"
+                    className="inline-flex items-center bg-primary/80 text-white px-3 py-1.5 rounded-md hover:bg-primary transition-colors text-sm"
                   >
                     Lieblingsdose herunterladen
                     <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -153,12 +153,12 @@ const AlltagLeichterLeben = () => {
       </section>
 
       {/* Mein erstes Buch Section */}
-      <section className="py-12 md:py-16">
+      <section className="section-padding">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
             <div className="bg-accent-light p-6 rounded-lg">
-              <h2 className="text-2xl font-semibold mb-4">Mein erstes Buch demnächst verfügbar</h2>
-              <div className="flex justify-center mb-6">
+              <h2 className="heading-lg mb-3">Mein erstes Buch demnächst verfügbar</h2>
+              <div className="flex justify-center mb-4">
                 <svg width="120" height="8" viewBox="0 0 120 8" className="text-primary">
                   <path
                     d="M2,4 Q8,2 15,4 T30,3 Q40,5 50,4 T70,3 Q80,5 90,4 T110,3 Q115,2 118,4"
@@ -185,20 +185,20 @@ const AlltagLeichterLeben = () => {
                   <img 
                     src="/lovable-uploads/36ba656f-ced5-4afb-a9ba-a75f553fb0de.png" 
                     alt="Mein erstes Buch" 
-                    className="w-full max-w-sm mx-auto rounded-lg shadow-md"
+                    className="w-full max-w-48 mx-auto rounded-lg shadow-md"
                   />
                 </div>
                 <div className="md:w-2/3">
-                  <p className="mb-4">
+                  <p className="body-base mb-3">
                     Ich freue mich riesig, dir bald mein erstes Buch zu zeigen! Wer bist du wirklich - hinter all den Masken, die du täglich trägst, und besonders dann, wenn der erste Riss entsteht?
                   </p>
-                  <p className="mb-4">Du kannst dich freuen auf:</p>
-                  <ul className="mb-4 space-y-2">
+                  <p className="body-base mb-3">Du kannst dich freuen auf:</p>
+                  <ul className="body-base mb-4 space-y-1">
                     <li>• Inspiration für Ernährung und innere Balance</li>
                     <li>• Einfache Tipps zum Batterien aufladen</li>
                     <li>• Deinen persönlichen Wohlfühltag</li>
                   </ul>
-                  <span className="text-gray-400 font-medium">Bald verfügbar</span>
+                  <span className="text-gray-400 font-medium text-sm">Bald verfügbar</span>
                 </div>
               </div>
             </div>
