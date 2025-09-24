@@ -28,14 +28,14 @@ const Index = () => {
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section - Side-by-Side Layout */}
+      {/* Hero Section - Headline mit Captain Apfel nebeneinander */}
       <section className="bg-background section-padding-sm">
         <div className="container-custom">
           <div className="max-w-6xl mx-auto">
-            {/* Main Content Grid */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-8">
+            {/* Headline + Captain Apfel nebeneinander */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-center mb-4">
               
-              {/* Left Side - Headlines */}
+              {/* Left Side - Headline */}
               <motion.div 
                 className="text-left"
                 initial={{ opacity: 0, x: -30 }}
@@ -47,7 +47,7 @@ const Index = () => {
                 </h1>
                 
                 {/* Hand-drawn line effect */}
-                <div className="flex justify-start mb-4">
+                <div className="flex justify-start">
                   <svg width="120" height="8" viewBox="0 0 120 8" className="text-white">
                     <path
                       d="M2,4 Q8,2 15,4 T30,3 Q40,5 50,4 T70,3 Q80,5 90,4 T110,3 Q115,2 118,4"
@@ -69,10 +69,6 @@ const Index = () => {
                     </defs>
                   </svg>
                 </div>
-                
-                <h2 className="heading-md text-secondary">
-                  Volle Obst- und Gemüsekraft voraus!
-                </h2>
               </motion.div>
 
               {/* Right Side - Captain Apfel */}
@@ -104,9 +100,21 @@ const Index = () => {
               </motion.div>
             </div>
             
-            {/* Logo Section - Underneath */}
+            {/* Subtitle centered */}
             <motion.div 
-              className="flex justify-center"
+              className="text-center mb-4"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+            >
+              <h2 className="heading-md text-secondary">
+                Volle Obst- und Gemüsekraft voraus!
+              </h2>
+            </motion.div>
+            
+            {/* Logo centered */}
+            <motion.div 
+              className="flex justify-center mb-4"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
@@ -121,8 +129,8 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Vorstellung - einheitliche Typografie */}
-      <section className="section-padding-sm bg-background">
+      {/* Vorstellung - direkt anschließend ohne große Lücke */}
+      <section className="bg-background">
         <div className="container-custom">
           <motion.div 
             className="max-w-4xl mx-auto"
