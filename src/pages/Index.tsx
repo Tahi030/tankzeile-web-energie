@@ -102,9 +102,9 @@ const Index = () => {
               />
             </motion.div>
             
-            {/* Initiative Logo */}
+            {/* Initiative Logo - kompakter positioniert */}
             <motion.div 
-              className="flex justify-center items-center mt-8"
+              className="flex justify-center items-center mt-4"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.5 }}
@@ -112,15 +112,15 @@ const Index = () => {
               <img 
                 src="/lovable-uploads/initiative-logo-homepage.png" 
                 alt="Captain Apfel - Initiative für starke Entwicklung - Gesundheit, die Kindern schmeckt" 
-                className="image-logo px-4"
+                className="w-full max-w-md md:max-w-lg lg:max-w-xl h-auto object-contain px-4"
               />
             </motion.div>
           </div>
         </div>
       </section>
 
-      {/* Vorstellung */}
-      <section className="section-padding bg-background">
+      {/* Vorstellung - kompakter und mit verbesserter Typografie */}
+      <section className="section-padding-sm bg-background">
         <div className="container-custom">
           <motion.div 
             className="max-w-4xl mx-auto"
@@ -132,29 +132,28 @@ const Index = () => {
             <div className="bg-card/30 backdrop-blur-sm rounded-2xl p-6 md:p-8 border border-border/50 shadow-sm relative">
               <div className="max-w-4xl content-spacing">
                 {/* Kleine Einleitung */}
-                <p className="body-base font-medium tracking-wide">
+                <p className="body-lg font-light italic tracking-wide">
                   Hallo, ich bin
                 </p>
                 
                 {/* Große Hauptzeile */}
-                <h2 className="heading-lg text-primary leading-none tracking-tight">
+                <h2 className="heading-lg text-primary leading-none tracking-tight font-bold">
                   Captain Apfel
                 </h2>
                 
                 {/* Kleiner erklärender Text */}
-                <h3 className="heading-sm leading-relaxed">
+                <p className="heading-sm leading-relaxed font-medium italic">
                   Mit meiner Crew bin ich unterwegs auf gesunder Mission.
-                </h3>
+                </p>
                 
-                {/* Große Blickfang-Zeile */}
-                <h3 className="body-lg leading-relaxed">
-                  Berlin ist der Startpunkt <br className="hidden md:block" /> 
-                  unserer Reise. Von hier aus hebt das Tomatenraumschiff ab und landet direkt in Einrichtungen mit Kindern im Vorschul- und Grundschulalter.
-                </h3>
+                {/* Haupttext */}
+                <p className="body-lg leading-relaxed">
+                  <strong>Berlin</strong> ist der Startpunkt unserer Reise. Von hier aus hebt das <em>Tomatenraumschiff</em> ab und landet direkt in Einrichtungen mit Kindern im Vorschul- und Grundschulalter.
+                </p>
                 
                 {/* Starkes Schluss-Statement */}
                 <div className="text-left pt-3 border-t border-primary/20">
-                  <p className="body-lg text-primary font-semibold tracking-wide leading-relaxed">
+                  <p className="body-lg text-primary font-bold tracking-wide leading-relaxed italic">
                     Denn gesunde Gewohnheiten geben uns Kraft, machen das Denken leichter und lassen uns rundum wohlfühlen.
                   </p>
                 </div>

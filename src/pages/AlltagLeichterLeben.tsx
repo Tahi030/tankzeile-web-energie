@@ -16,7 +16,7 @@ const AlltagLeichterLeben = () => {
       <section className="bg-primary-light section-padding">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
-            <h1 className="heading-xl mb-4">Alltag leichter leben</h1>
+            <h1 className="heading-lg mb-4">Alltag leichter leben</h1>
             {/* Hand-drawn line effect directly under heading */}
             <svg width="120" height="8" viewBox="0 0 120 8" className="text-white mb-4">
               <path

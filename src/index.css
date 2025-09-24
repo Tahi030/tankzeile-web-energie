@@ -116,19 +116,19 @@
   
   /* UNIFIED TYPOGRAPHY SYSTEM */
   .heading-xl {
-    @apply text-2xl md:text-3xl lg:text-4xl font-bold text-white;
+    @apply text-3xl md:text-4xl lg:text-5xl font-bold text-white;
   }
   
   .heading-lg {
-    @apply text-xl md:text-2xl lg:text-3xl font-semibold text-foreground;
+    @apply text-2xl md:text-3xl lg:text-4xl font-semibold text-foreground;
   }
   
   .heading-md {
-    @apply text-lg md:text-xl lg:text-2xl font-medium text-foreground;
+    @apply text-xl md:text-2xl lg:text-3xl font-medium text-foreground;
   }
   
   .heading-sm {
-    @apply text-base md:text-lg font-medium text-foreground;
+    @apply text-lg md:text-xl font-medium text-foreground;
   }
   
   .body-lg {
@@ -141,11 +141,11 @@
   
   /* UNIFIED SPACING SYSTEM */
   .section-padding {
-    @apply py-8 md:py-12;
+    @apply py-6 md:py-10;
   }
   
   .section-padding-sm {
-    @apply py-6 md:py-8;
+    @apply py-4 md:py-6;
   }
   
   .content-spacing {

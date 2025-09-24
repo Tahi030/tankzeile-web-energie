@@ -26,7 +26,7 @@ const HinterCaptainApfel = () => {
       <div className="container-custom">
         <div className="max-w-4xl mx-auto">
           <motion.h1 
-            className="heading-xl mb-6 text-center"
+            className="heading-lg mb-6 text-center"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.1 }}
