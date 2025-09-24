@@ -135,7 +135,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* CREW-Bereich - Magazin-Stil */}
+      {/* CREW-Bereich - Avatar Grid */}
       <section className="py-20 bg-background">
         <div className="container-custom">
           <motion.div 
@@ -146,7 +146,7 @@ const Index = () => {
             viewport={{ once: true }}
           >
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 font-playfair">
-              Die Crew
+              Das ist die Crew von Captain Apfel
             </h2>
             
             {/* Hand-drawn line effect */}
@@ -172,243 +172,121 @@ const Index = () => {
                 </defs>
               </svg>
             </div>
-            
-            <p className="text-lg md:text-xl text-white/90 mb-12 font-light">
-              Ob schlau, mutig oder frech – hier erfährst du, wer dabei ist.
-            </p>
           </motion.div>
 
-          {/* Clean Magazin-Layout */}
-          <div className="max-w-6xl mx-auto space-y-16">
-            
-            {/* Captain Apfel */}
-            <motion.div 
-              className="flex items-center justify-start gap-6"
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              viewport={{ once: true }}
-            >
-              {/* Einfache Illustration */}
-              <div className="flex-shrink-0">
-                <svg width="80" height="80" viewBox="0 0 80 80" className="text-primary">
-                  <circle cx="40" cy="30" r="18" fill="none" stroke="currentColor" strokeWidth="2"/>
-                  <path d="M30,25 Q40,15 50,25" fill="none" stroke="currentColor" strokeWidth="2"/>
-                  <circle cx="35" cy="28" r="2" fill="currentColor"/>
-                  <circle cx="45" cy="28" r="2" fill="currentColor"/>
-                  <path d="M32,35 Q40,42 48,35" fill="none" stroke="currentColor" strokeWidth="2"/>
-                  <rect x="35" y="48" width="10" height="20" fill="none" stroke="currentColor" strokeWidth="2"/>
-                  <path d="M25,58 L35,58 M45,58 L55,58" stroke="currentColor" strokeWidth="2"/>
-                  <path d="M30,68 L35,68 M45,68 L50,68" stroke="currentColor" strokeWidth="2"/>
-                </svg>
-              </div>
+          {/* Avatar Grid Layout */}
+          <div className="max-w-5xl mx-auto">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 md:gap-12">
               
-              {/* Pfeil */}
-              <svg width="40" height="20" viewBox="0 0 40 20" className="text-white/40 flex-shrink-0">
-                <path d="M5,10 L30,10" stroke="currentColor" strokeWidth="1.5" fill="none"/>
-                <path d="M25,6 L30,10 L25,14" stroke="currentColor" strokeWidth="1.5" fill="none"/>
-              </svg>
-              
-              {/* Text */}
-              <div className="text-white">
-                <h3 className="text-xl font-bold text-primary mb-1">Captain Apfel</h3>
-                <p className="text-sm text-white/70">mutig und führt an</p>
-              </div>
-            </motion.div>
+              {/* Captain Apfel */}
+              <motion.div 
+                className="flex flex-col items-center text-center"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+                viewport={{ once: true }}
+              >
+                <div className="w-24 h-24 md:w-32 md:h-32 lg:w-28 lg:h-28 rounded-full overflow-hidden bg-white/10 backdrop-blur-sm border border-white/20 shadow-lg mb-4 hover:scale-105 transition-transform duration-300">
+                  <img 
+                    src="/lovable-uploads/captain-apfel.png" 
+                    alt="Captain Apfel" 
+                    className="w-full h-full object-contain p-2"
+                  />
+                </div>
+                <h3 className="text-base md:text-lg font-bold text-primary">Captain Apfel</h3>
+              </motion.div>
 
-            {/* Kimmi Schlau */}
-            <motion.div 
-              className="flex items-center justify-end gap-6 flex-row-reverse"
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              viewport={{ once: true }}
-            >
-              {/* Einfache Illustration */}
-              <div className="flex-shrink-0">
-                <svg width="80" height="80" viewBox="0 0 80 80" className="text-secondary">
-                  <circle cx="40" cy="30" r="18" fill="none" stroke="currentColor" strokeWidth="2"/>
-                  <path d="M30,22 L35,27 L50,12" fill="none" stroke="currentColor" strokeWidth="2"/>
-                  <circle cx="35" cy="30" r="1.5" fill="currentColor"/>
-                  <circle cx="45" cy="30" r="1.5" fill="currentColor"/>
-                  <path d="M35,38 Q40,42 45,38" fill="none" stroke="currentColor" strokeWidth="2"/>
-                  <rect x="35" y="48" width="10" height="20" fill="none" stroke="currentColor" strokeWidth="2"/>
-                  <path d="M25,58 L35,58 M45,58 L55,58" stroke="currentColor" strokeWidth="2"/>
-                  <circle cx="25" cy="25" r="8" fill="none" stroke="currentColor" strokeWidth="1.5"/>
-                  <path d="M20,25 L30,25 M25,20 L25,30" stroke="currentColor" strokeWidth="1"/>
-                </svg>
-              </div>
-              
-              {/* Pfeil */}
-              <svg width="40" height="20" viewBox="0 0 40 20" className="text-white/40 flex-shrink-0">
-                <path d="M35,10 L10,10" stroke="currentColor" strokeWidth="1.5" fill="none"/>
-                <path d="M15,6 L10,10 L15,14" stroke="currentColor" strokeWidth="1.5" fill="none"/>
-              </svg>
-              
-              {/* Text */}
-              <div className="text-white text-right">
-                <h3 className="text-xl font-bold text-secondary mb-1">Kimmi Schlau</h3>
-                <p className="text-sm text-white/70">klug und neugierig</p>
-              </div>
-            </motion.div>
+              {/* Kimmi Schlau */}
+              <motion.div 
+                className="flex flex-col items-center text-center"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                viewport={{ once: true }}
+              >
+                <div className="w-24 h-24 md:w-32 md:h-32 lg:w-28 lg:h-28 rounded-full overflow-hidden bg-white/10 backdrop-blur-sm border border-white/20 shadow-lg mb-4 hover:scale-105 transition-transform duration-300">
+                  <img 
+                    src="/lovable-uploads/kimmi-schlau.png" 
+                    alt="Kimmi Schlau" 
+                    className="w-full h-full object-contain p-2"
+                  />
+                </div>
+                <h3 className="text-base md:text-lg font-bold text-secondary">Kimmi Schlau</h3>
+              </motion.div>
 
-            {/* Kai Mutig */}
-            <motion.div 
-              className="flex items-center justify-start gap-6 ml-12"
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              viewport={{ once: true }}
-            >
-              {/* Einfache Illustration */}
-              <div className="flex-shrink-0">
-                <svg width="80" height="80" viewBox="0 0 80 80" className="text-accent">
-                  <circle cx="40" cy="30" r="18" fill="none" stroke="currentColor" strokeWidth="2"/>
-                  <path d="M32,26 L38,26 M42,26 L48,26" stroke="currentColor" strokeWidth="2"/>
-                  <circle cx="35" cy="32" r="2" fill="currentColor"/>
-                  <circle cx="45" cy="32" r="2" fill="currentColor"/>
-                  <path d="M33,40 Q40,45 47,40" fill="none" stroke="currentColor" strokeWidth="2"/>
-                  <rect x="33" y="48" width="14" height="20" fill="none" stroke="currentColor" strokeWidth="2"/>
-                  <path d="M22,58 L33,58 M47,58 L58,58" stroke="currentColor" strokeWidth="2"/>
-                  <circle cx="22" cy="35" r="4" fill="none" stroke="currentColor" strokeWidth="2"/>
-                  <circle cx="58" cy="35" r="4" fill="none" stroke="currentColor" strokeWidth="2"/>
-                </svg>
-              </div>
-              
-              {/* Pfeil */}
-              <svg width="40" height="20" viewBox="0 0 40 20" className="text-white/40 flex-shrink-0">
-                <path d="M5,10 L30,10" stroke="currentColor" strokeWidth="1.5" fill="none"/>
-                <path d="M25,6 L30,10 L25,14" stroke="currentColor" strokeWidth="1.5" fill="none"/>
-              </svg>
-              
-              {/* Text */}
-              <div className="text-white">
-                <h3 className="text-xl font-bold text-accent mb-1">Kai Mutig</h3>
-                <p className="text-sm text-white/70">stark und tapfer</p>
-              </div>
-            </motion.div>
+              {/* Kai Mutig */}
+              <motion.div 
+                className="flex flex-col items-center text-center"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.3 }}
+                viewport={{ once: true }}
+              >
+                <div className="w-24 h-24 md:w-32 md:h-32 lg:w-28 lg:h-28 rounded-full overflow-hidden bg-white/10 backdrop-blur-sm border border-white/20 shadow-lg mb-4 hover:scale-105 transition-transform duration-300">
+                  <img 
+                    src="/lovable-uploads/kai-mutig.png" 
+                    alt="Kai Mutig" 
+                    className="w-full h-full object-contain p-2"
+                  />
+                </div>
+                <h3 className="text-base md:text-lg font-bold text-accent">Kai Mutig</h3>
+              </motion.div>
 
-            {/* Tomatenraumschiff */}
-            <motion.div 
-              className="flex items-center justify-end gap-6 flex-row-reverse mr-8"
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: 0.4 }}
-              viewport={{ once: true }}
-            >
-              {/* Einfache Illustration */}
-              <div className="flex-shrink-0">
-                <svg width="80" height="80" viewBox="0 0 80 80" className="text-primary">
-                  <ellipse cx="40" cy="45" rx="20" ry="15" fill="none" stroke="currentColor" strokeWidth="2"/>
-                  <path d="M25,35 Q40,25 55,35" fill="none" stroke="currentColor" strokeWidth="2"/>
-                  <circle cx="33" cy="42" r="3" fill="none" stroke="currentColor" strokeWidth="1.5"/>
-                  <circle cx="47" cy="42" r="3" fill="none" stroke="currentColor" strokeWidth="1.5"/>
-                  <path d="M37,20 L40,10 L43,20" fill="none" stroke="currentColor" strokeWidth="2"/>
-                  <path d="M20,50 L15,55 M60,50 L65,55" stroke="currentColor" strokeWidth="2"/>
-                  <path d="M35,60 L32,65 M45,60 L48,65" stroke="currentColor" strokeWidth="2"/>
-                </svg>
-              </div>
-              
-              {/* Pfeil */}
-              <svg width="40" height="20" viewBox="0 0 40 20" className="text-white/40 flex-shrink-0">
-                <path d="M35,10 L10,10" stroke="currentColor" strokeWidth="1.5" fill="none"/>
-                <path d="M15,6 L10,10 L15,14" stroke="currentColor" strokeWidth="1.5" fill="none"/>
-              </svg>
-              
-              {/* Text */}
-              <div className="text-white text-right">
-                <h3 className="text-xl font-bold text-primary mb-1">Tomatenraumschiff</h3>
-                <p className="text-sm text-white/70">bereit für Abenteuer</p>
-              </div>
-            </motion.div>
+              {/* Tomatenraumschiff */}
+              <motion.div 
+                className="flex flex-col items-center text-center"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.4 }}
+                viewport={{ once: true }}
+              >
+                <div className="w-24 h-24 md:w-32 md:h-32 lg:w-28 lg:h-28 rounded-full overflow-hidden bg-white/10 backdrop-blur-sm border border-white/20 shadow-lg mb-4 hover:scale-105 transition-transform duration-300">
+                  <img 
+                    src="/lovable-uploads/tomatenraumschiff.png" 
+                    alt="Tomatenraumschiff" 
+                    className="w-full h-full object-contain p-2"
+                  />
+                </div>
+                <h3 className="text-base md:text-lg font-bold text-primary">Tomatenraumschiff</h3>
+              </motion.div>
 
-            {/* Paffel */}
-            <motion.div 
-              className="flex items-center justify-start gap-6 ml-6"
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: 0.5 }}
-              viewport={{ once: true }}
-            >
-              {/* Einfache Illustration */}
-              <div className="flex-shrink-0">
-                <svg width="80" height="80" viewBox="0 0 80 80" className="text-destructive">
-                  <circle cx="40" cy="30" r="18" fill="none" stroke="currentColor" strokeWidth="2"/>
-                  <path d="M30,22 L35,27 L30,32" fill="none" stroke="currentColor" strokeWidth="2"/>
-                  <path d="M50,22 L45,27 L50,32" fill="none" stroke="currentColor" strokeWidth="2"/>
-                  <circle cx="35" cy="30" r="2" fill="currentColor"/>
-                  <circle cx="45" cy="30" r="2" fill="currentColor"/>
-                  <path d="M33,38 Q40,33 47,38" fill="none" stroke="currentColor" strokeWidth="2"/>
-                  <rect x="35" y="48" width="10" height="20" fill="none" stroke="currentColor" strokeWidth="2"/>
-                  <path d="M30,15 Q35,8 40,15" fill="none" stroke="currentColor" strokeWidth="2"/>
-                  <path d="M40,15 Q45,8 50,15" fill="none" stroke="currentColor" strokeWidth="2"/>
-                </svg>
-              </div>
-              
-              {/* Pfeil */}
-              <svg width="40" height="20" viewBox="0 0 40 20" className="text-white/40 flex-shrink-0">
-                <path d="M5,10 L30,10" stroke="currentColor" strokeWidth="1.5" fill="none"/>
-                <path d="M25,6 L30,10 L25,14" stroke="currentColor" strokeWidth="1.5" fill="none"/>
-              </svg>
-              
-              {/* Text */}
-              <div className="text-white">
-                <h3 className="text-xl font-bold text-destructive mb-1">Paffel</h3>
-                <p className="text-sm text-white/70">frech und trickst gern</p>
-              </div>
-            </motion.div>
+              {/* Powerzentrale */}
+              <motion.div 
+                className="flex flex-col items-center text-center"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.5 }}
+                viewport={{ once: true }}
+              >
+                <div className="w-24 h-24 md:w-32 md:h-32 lg:w-28 lg:h-28 rounded-full overflow-hidden bg-white/10 backdrop-blur-sm border border-white/20 shadow-lg mb-4 hover:scale-105 transition-transform duration-300">
+                  <img 
+                    src="/lovable-uploads/powerzentrale.png" 
+                    alt="Powerzentrale" 
+                    className="w-full h-full object-contain p-2"
+                  />
+                </div>
+                <h3 className="text-base md:text-lg font-bold text-secondary">Powerzentrale</h3>
+              </motion.div>
 
-            {/* Die Powerzentrale */}
-            <motion.div 
-              className="flex items-center justify-end gap-6 flex-row-reverse mr-16"
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: 0.6 }}
-              viewport={{ once: true }}
-            >
-              {/* Einfache Illustration */}
-              <div className="flex-shrink-0">
-                <svg width="80" height="80" viewBox="0 0 80 80" className="text-secondary">
-                  <rect x="25" y="25" width="30" height="30" rx="5" fill="none" stroke="currentColor" strokeWidth="2"/>
-                  <circle cx="40" cy="40" r="8" fill="none" stroke="currentColor" strokeWidth="2"/>
-                  <path d="M36,36 L40,40 L44,36" stroke="currentColor" strokeWidth="2" fill="none"/>
-                  <path d="M36,44 L40,40 L44,44" stroke="currentColor" strokeWidth="2" fill="none"/>
-                  <path d="M20,40 L25,40 M55,40 L60,40" stroke="currentColor" strokeWidth="2"/>
-                  <path d="M40,20 L40,25 M40,55 L40,60" stroke="currentColor" strokeWidth="2"/>
-                  <circle cx="20" cy="40" r="2" fill="currentColor"/>
-                  <circle cx="60" cy="40" r="2" fill="currentColor"/>
-                  <circle cx="40" cy="20" r="2" fill="currentColor"/>
-                  <circle cx="40" cy="60" r="2" fill="currentColor"/>
-                </svg>
-              </div>
-              
-              {/* Pfeil */}
-              <svg width="40" height="20" viewBox="0 0 40 20" className="text-white/40 flex-shrink-0">
-                <path d="M35,10 L10,10" stroke="currentColor" strokeWidth="1.5" fill="none"/>
-                <path d="M15,6 L10,10 L15,14" stroke="currentColor" strokeWidth="1.5" fill="none"/>
-              </svg>
-              
-              {/* Text */}
-              <div className="text-white text-right">
-                <h3 className="text-xl font-bold text-secondary mb-1">Die Powerzentrale</h3>
-                <p className="text-sm text-white/70">sammelt alle Energie</p>
-              </div>
-            </motion.div>
-          </div>
-
-          <motion.div 
-            className="text-center mt-20"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.7 }}
-            viewport={{ once: true }}
-          >
-            <div className="border-t border-white/10 pt-8 max-w-md mx-auto">
-              <p className="text-white/80 text-sm font-light">
-                Zusammen machen sie jede Einrichtung zu einem Ort voller Energie, Spaß und gesunder Abenteuer
-              </p>
+              {/* Paffel */}
+              <motion.div 
+                className="flex flex-col items-center text-center"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.6 }}
+                viewport={{ once: true }}
+              >
+                <div className="w-24 h-24 md:w-32 md:h-32 lg:w-28 lg:h-28 rounded-full overflow-hidden bg-white/10 backdrop-blur-sm border border-white/20 shadow-lg mb-4 hover:scale-105 transition-transform duration-300">
+                  <img 
+                    src="/lovable-uploads/paffel.png" 
+                    alt="Paffel" 
+                    className="w-full h-full object-contain p-2"
+                  />
+                </div>
+                <h3 className="text-base md:text-lg font-bold text-destructive">Paffel</h3>
+              </motion.div>
             </div>
-          </motion.div>
+          </div>
         </div>
       </section>
 
