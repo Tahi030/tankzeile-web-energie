@@ -42,8 +42,16 @@ const HinterCaptainApfel = () => {
           >
             <div className="space-y-6">
               <p className="text-lg text-muted-foreground">
-                Ich bin Tamara Hillmann, der kreative Kopf hinter dem Projekt Captain Apfel.
-                Ich verbinde eigene Erfahrungen mit fundiertem Fachwissen und bilde mich kontinuierlich weiter.
+                Hallo, ich bin Tamara Hillmann – der kreative Kopf hinter Captain Apfel.
+                Ich arbeite eng mit Kindern und Einrichtungen zusammen und mir ist es wichtig, mich dort aktiv einzubringen. Am Ende steht für mich immer das Kind – mit seinen Bedürfnissen, seiner Neugier und seiner Freude.
+              </p>
+              
+              <p className="text-lg text-muted-foreground">
+                Mir ist es wichtig, mein Wissen ständig zu erweitern. Deshalb setze ich mich intensiv mit den Themen ganzheitliche Gesundheit und Unverträglichkeiten auseinander. Schritt für Schritt entstehen daraus die Pakete, die Familien im Alltag entlasten und Orientierung geben.
+              </p>
+              
+              <p className="text-lg text-muted-foreground">
+                Meine bisherigen Fortbildungen und Zertifikate findest du gleich hier auf der Seite – weil mir Qualität, Transparenz und Weiterentwicklung wichtig sind.
               </p>
               
               <div>
