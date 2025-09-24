@@ -31,7 +31,7 @@ const HinterCaptainApfel = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.1 }}
           >
-            Hinter Captain Apfel
+            Jedes Kind ist einzigartig – und steht für mich im Mittelpunkt.
           </motion.h1>
           
           <motion.div 
@@ -42,16 +42,21 @@ const HinterCaptainApfel = () => {
           >
             <div className="space-y-6">
               <p className="text-lg text-muted-foreground">
-                Hallo, ich bin Tamara Hillmann – der kreative Kopf hinter Captain Apfel.
-                Ich arbeite eng mit Kindern und Einrichtungen zusammen und mir ist es wichtig, mich dort aktiv einzubringen. Am Ende steht für mich immer das Kind – mit seinen Bedürfnissen, seiner Neugier und seiner Freude.
+                Ich bin <em>Tamara Hillmann</em>, der kreative Kopf hinter <strong>Captain Apfel</strong>.
+                Kinder lieben Geschichten – und über Fantasiefiguren lassen sich große Themen wie Gesundheit und Wohlbefinden besonders gut vermitteln. <strong>Captain Apfel</strong> steht für Energie, Freude und das Gefühl, dass gesunde Gewohnheiten leicht Teil des Alltags werden können.
               </p>
               
               <p className="text-lg text-muted-foreground">
-                Mir ist es wichtig, mein Wissen ständig zu erweitern. Deshalb setze ich mich intensiv mit den Themen ganzheitliche Gesundheit und Unverträglichkeiten auseinander. Schritt für Schritt entstehen daraus die Pakete, die Familien im Alltag entlasten und Orientierung geben.
+                Ich arbeite eng mit Kindern und Einrichtungen zusammen und bringe dort meine Erfahrung und mein Fachwissen ein. Dabei verbinde ich eigene Erfahrungen mit fundiertem Wissen und bilde mich kontinuierlich weiter – unter anderem an der Akademie der Naturheilkunde. Besonders beschäftige ich mich mit dem Thema Unverträglichkeiten, das mir persönlich am Herzen liegt. Aus diesem Weg entstehen die Pakete, die Familien im Alltag Orientierung und Unterstützung geben.
               </p>
               
               <p className="text-lg text-muted-foreground">
                 Meine bisherigen Fortbildungen und Zertifikate findest du gleich hier auf der Seite – weil mir Qualität, Transparenz und Weiterentwicklung wichtig sind.
+              </p>
+              
+              <p className="text-lg text-muted-foreground mt-8">
+                Herzliche Grüße<br />
+                <em>Tamara Hillmann</em>
               </p>
               
               <div>
