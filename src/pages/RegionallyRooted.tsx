@@ -54,9 +54,82 @@ const RegionallyRooted = () => {
                   Und falls du einmal am Herzapfelhof vorbeikommst: Besuch den Baum gerne und teile ein Foto mit #captain.apfel – darüber würde ich mich sehr freuen.
                 </p>
 
-                {/* Space for future images */}
-                <div className="mt-16 md:mt-24 min-h-[200px]">
-                  {/* Placeholder for 2-3 images from Herzapfelhof or apple/certificate images */}
+                {/* Bilder Galerie */}
+                <div className="mt-12 md:mt-16">
+                  <h3 className="heading-md text-center mb-8">
+                    Captain Apfels Baum im Herzapfelhof
+                  </h3>
+                  
+                  {/* Hauptbild - Patenschaftsurkunde */}
+                  <motion.div 
+                    className="mb-8"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6 }}
+                    viewport={{ once: true }}
+                  >
+                    <div className="bg-white rounded-lg p-4 shadow-lg border border-border/30">
+                      <img 
+                        src="/assets/regional-apfelbaum-patenschaft.jpg" 
+                        alt="Apfelbaum-Patenschaft Urkunde für Captain Apfel - Herzapfelhof Altes Land" 
+                        className="w-full h-auto object-contain rounded-lg"
+                      />
+                    </div>
+                  </motion.div>
+
+                  {/* Galerie der Apfelbilder */}
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <motion.div
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.6, delay: 0.1 }}
+                      viewport={{ once: true }}
+                      className="bg-white rounded-lg p-3 shadow-lg border border-border/30 hover:shadow-xl transition-shadow"
+                    >
+                      <img 
+                        src="/assets/regional-apples-tree.jpg" 
+                        alt="Rote Äpfel am Baum - frisch und regional" 
+                        className="w-full h-48 md:h-56 object-cover rounded-lg"
+                      />
+                      <p className="text-center text-sm text-muted-foreground mt-2 font-medium">
+                        Frische Äpfel am Baum
+                      </p>
+                    </motion.div>
+
+                    <motion.div
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.6, delay: 0.2 }}
+                      viewport={{ once: true }}
+                      className="bg-white rounded-lg p-3 shadow-lg border border-border/30 hover:shadow-xl transition-shadow"
+                    >
+                      <img 
+                        src="/assets/regional-apple-hand.jpg" 
+                        alt="Regional geernteter roter Apfel in der Hand" 
+                        className="w-full h-48 md:h-56 object-cover rounded-lg"
+                      />
+                      <p className="text-center text-sm text-muted-foreground mt-2 font-medium">
+                        Regional geerntet
+                      </p>
+                    </motion.div>
+
+                    <motion.div
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.6, delay: 0.3 }}
+                      viewport={{ once: true }}
+                      className="bg-white rounded-lg p-3 shadow-lg border border-border/30 hover:shadow-xl transition-shadow"
+                    >
+                      <img 
+                        src="/assets/regional-apple-basket.jpg" 
+                        alt="Fröhlicher Apfel im Korb - Captain Apfel lässt grüßen" 
+                        className="w-full h-48 md:h-56 object-cover rounded-lg"
+                      />
+                      <p className="text-center text-sm text-muted-foreground mt-2 font-medium">
+                        Captain Apfel lässt grüßen
+                      </p>
+                    </motion.div>
+                  </div>
                 </div>
               </div>
             </div>
