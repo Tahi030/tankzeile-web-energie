@@ -78,6 +78,7 @@ export default {
 				playfair: ['Playfair Display', 'serif'],
 				sans: ['Open Sans', 'sans-serif'],
 				fredoka: ['Fredoka', 'sans-serif'],
+				kalam: ['Kalam', 'cursive'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
