@@ -152,7 +152,7 @@ const Index = () => {
 
           {/* 3x2 Grid Layout */}
           <div className="max-w-6xl mx-auto">
-            <div className="grid grid-cols-3 gap-8 md:gap-12 lg:gap-16">
+            <div className="grid grid-cols-3 gap-4 md:gap-8 lg:gap-12">
               
               {/* Reihe 1 */}
               
@@ -168,21 +168,21 @@ const Index = () => {
                   transition: { type: "spring", stiffness: 300, damping: 10 }
                 }}
               >
-                <div className="relative mb-6">
+                <div className="relative mb-3 md:mb-4">
                   <img 
                     src="/lovable-uploads/captain-apfel.png" 
                     alt="Captain Apfel" 
-                    className="w-24 h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 object-contain drop-shadow-2xl"
+                    className="w-20 h-20 sm:w-28 sm:h-28 md:w-36 md:h-36 lg:w-44 lg:h-44 object-contain drop-shadow-2xl"
                   />
                 </div>
-                <div className="relative">
-                  <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-blue-500 font-kalam transform -rotate-1">
+                <div className="relative px-2">
+                  <h3 className="text-xs sm:text-sm md:text-base lg:text-lg font-bold text-primary font-kalam transform -rotate-1">
                     Captain Apfel
                   </h3>
                   {/* Pfeil Doodle */}
-                  <svg className="absolute -right-6 -top-2 w-8 h-6 text-blue-400" viewBox="0 0 32 24">
-                    <path d="M2,12 Q8,8 16,12 Q24,16 28,12" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round"/>
-                    <path d="M24,8 L28,12 L24,16" stroke="currentColor" strokeWidth="1.5" fill="none" strokeLinecap="round"/>
+                  <svg className="absolute -right-4 -top-1 w-4 h-3 md:w-6 md:h-4 text-primary/60" viewBox="0 0 24 16">
+                    <path d="M2,8 Q6,6 12,8 Q18,10 20,8" stroke="currentColor" strokeWidth="1.5" fill="none" strokeLinecap="round"/>
+                    <path d="M17,6 L20,8 L17,10" stroke="currentColor" strokeWidth="1" fill="none" strokeLinecap="round"/>
                   </svg>
                 </div>
               </motion.div>
@@ -200,24 +200,24 @@ const Index = () => {
                   transition: { type: "spring", stiffness: 300, damping: 10 }
                 }}
               >
-                <div className="relative mb-6">
+                <div className="relative mb-3 md:mb-4">
                   <img 
                     src="/lovable-uploads/kimmi-schlau.png" 
                     alt="Kimmi Schlau" 
-                    className="w-24 h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 object-contain drop-shadow-2xl"
+                    className="w-20 h-20 sm:w-28 sm:h-28 md:w-36 md:h-36 lg:w-44 lg:h-44 object-contain drop-shadow-2xl"
                   />
                 </div>
-                <div className="relative">
-                  <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-orange-500 font-kalam transform rotate-1">
+                <div className="relative px-2">
+                  <h3 className="text-xs sm:text-sm md:text-base lg:text-lg font-bold text-secondary font-kalam transform rotate-1">
                     Kimmi Schlau
                   </h3>
                   {/* Stern Doodle */}
-                  <svg className="absolute -left-8 -top-3 w-6 h-6 text-orange-400" viewBox="0 0 24 24">
-                    <path d="M12,2 L14,8 L20,8 L15,12 L17,18 L12,14 L7,18 L9,12 L4,8 L10,8 Z" stroke="currentColor" strokeWidth="1.5" fill="none"/>
+                  <svg className="absolute -left-4 -top-2 w-3 h-3 md:w-4 md:h-4 text-secondary/60" viewBox="0 0 16 16">
+                    <path d="M8,1 L9,5 L13,5 L10,7 L11,11 L8,9 L5,11 L6,7 L3,5 L7,5 Z" stroke="currentColor" strokeWidth="1" fill="none"/>
                   </svg>
                   {/* Kreis Doodle */}
-                  <svg className="absolute -right-4 top-6 w-4 h-4 text-orange-300" viewBox="0 0 16 16">
-                    <circle cx="8" cy="8" r="6" stroke="currentColor" strokeWidth="1.5" fill="none" strokeDasharray="2,2"/>
+                  <svg className="absolute -right-2 top-3 w-2 h-2 md:w-3 md:h-3 text-secondary/40" viewBox="0 0 12 12">
+                    <circle cx="6" cy="6" r="4" stroke="currentColor" strokeWidth="1" fill="none" strokeDasharray="1,1"/>
                   </svg>
                 </div>
               </motion.div>
@@ -235,20 +235,20 @@ const Index = () => {
                   transition: { type: "spring", stiffness: 300, damping: 10 }
                 }}
               >
-                <div className="relative mb-6">
+                <div className="relative mb-3 md:mb-4">
                   <img 
                     src="/lovable-uploads/kai-mutig.png" 
                     alt="Kai Mutig" 
-                    className="w-24 h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 object-contain drop-shadow-2xl"
+                    className="w-20 h-20 sm:w-28 sm:h-28 md:w-36 md:h-36 lg:w-44 lg:h-44 object-contain drop-shadow-2xl"
                   />
                 </div>
-                <div className="relative">
-                  <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-green-500 font-kalam transform -rotate-2">
+                <div className="relative px-2">
+                  <h3 className="text-xs sm:text-sm md:text-base lg:text-lg font-bold text-accent font-kalam transform -rotate-2">
                     Kai Mutig
                   </h3>
                   {/* Wellen Doodle */}
-                  <svg className="absolute -left-6 top-6 w-8 h-4 text-green-400" viewBox="0 0 32 16">
-                    <path d="M2,8 Q8,4 16,8 Q24,12 30,8" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round"/>
+                  <svg className="absolute -left-3 top-3 w-4 h-2 md:w-6 md:h-3 text-accent/60" viewBox="0 0 24 12">
+                    <path d="M2,6 Q6,3 12,6 Q18,9 22,6" stroke="currentColor" strokeWidth="1.5" fill="none" strokeLinecap="round"/>
                   </svg>
                 </div>
               </motion.div>
@@ -257,7 +257,7 @@ const Index = () => {
               
               {/* Tomatenraumschiff */}
               <motion.div 
-                className="flex flex-col items-center text-center mt-8"
+                className="flex flex-col items-center text-center mt-4 md:mt-8"
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.4 }}
@@ -268,28 +268,28 @@ const Index = () => {
                   transition: { type: "spring", stiffness: 400, damping: 8 }
                 }}
               >
-                <div className="relative mb-6">
+                <div className="relative mb-3 md:mb-4">
                   <img 
                     src="/lovable-uploads/tomatenraumschiff.png" 
                     alt="Tomatenraumschiff" 
-                    className="w-24 h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 object-contain drop-shadow-2xl"
+                    className="w-20 h-20 sm:w-28 sm:h-28 md:w-36 md:h-36 lg:w-44 lg:h-44 object-contain drop-shadow-2xl"
                   />
                 </div>
-                <div className="relative">
-                  <h3 className="text-sm md:text-lg lg:text-xl font-bold text-red-500 font-kalam transform rotate-1">
+                <div className="relative px-1">
+                  <h3 className="text-xs sm:text-sm md:text-base font-bold text-primary/80 font-kalam transform rotate-1 leading-tight">
                     Tomatenraumschiff
                   </h3>
                   {/* Raketen-Striche Doodle */}
-                  <svg className="absolute -right-8 top-2 w-6 h-8 text-red-400" viewBox="0 0 24 32">
-                    <path d="M4,4 L8,2 M4,8 L10,6 M4,12 L8,10 M4,16 L12,14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
-                    <path d="M16,20 L20,18 M16,24 L22,22 M16,28 L20,26" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+                  <svg className="absolute -right-4 top-1 w-3 h-4 md:w-4 md:h-5 text-primary/40" viewBox="0 0 16 20">
+                    <path d="M2,2 L5,1 M2,5 L6,4 M2,8 L5,7 M2,11 L7,10" stroke="currentColor" strokeWidth="1" strokeLinecap="round"/>
+                    <path d="M10,13 L13,12 M10,16 L14,15 M10,19 L13,18" stroke="currentColor" strokeWidth="1" strokeLinecap="round"/>
                   </svg>
                 </div>
               </motion.div>
 
               {/* Powerzentrale */}
               <motion.div 
-                className="flex flex-col items-center text-center mt-8"
+                className="flex flex-col items-center text-center mt-4 md:mt-8"
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.5 }}
@@ -300,30 +300,30 @@ const Index = () => {
                   transition: { type: "spring", stiffness: 350, damping: 12 }
                 }}
               >
-                <div className="relative mb-6">
+                <div className="relative mb-3 md:mb-4">
                   <img 
                     src="/lovable-uploads/powerzentrale.png" 
                     alt="Powerzentrale" 
-                    className="w-24 h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 object-contain drop-shadow-2xl"
+                    className="w-20 h-20 sm:w-28 sm:h-28 md:w-36 md:h-36 lg:w-44 lg:h-44 object-contain drop-shadow-2xl"
                   />
                 </div>
-                <div className="relative">
-                  <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-emerald-500 font-kalam transform -rotate-1">
+                <div className="relative px-2">
+                  <h3 className="text-xs sm:text-sm md:text-base lg:text-lg font-bold text-secondary font-kalam transform -rotate-1">
                     Powerzentrale
                   </h3>
                   {/* Energie-Blitze Doodle */}
-                  <svg className="absolute -left-6 -top-2 w-6 h-8 text-emerald-400" viewBox="0 0 24 32">
-                    <path d="M12,2 L8,12 L12,12 L10,18 L16,8 L12,8 L14,2 Z" stroke="currentColor" strokeWidth="1.5" fill="none"/>
+                  <svg className="absolute -left-3 -top-1 w-3 h-4 md:w-4 md:h-5 text-secondary/60" viewBox="0 0 16 20">
+                    <path d="M8,1 L6,6 L8,6 L7,9 L10,4 L8,4 L9,1 Z" stroke="currentColor" strokeWidth="1" fill="none"/>
                   </svg>
-                  <svg className="absolute -right-4 top-4 w-4 h-6 text-emerald-300" viewBox="0 0 16 24">
-                    <path d="M8,2 L6,8 L8,8 L7,12 L10,6 L8,6 L9,2 Z" stroke="currentColor" strokeWidth="1" fill="none"/>
+                  <svg className="absolute -right-2 top-2 w-2 h-3 md:w-3 md:h-4 text-secondary/40" viewBox="0 0 12 16">
+                    <path d="M6,1 L5,4 L6,4 L5,6 L7,3 L6,3 L7,1 Z" stroke="currentColor" strokeWidth="1" fill="none"/>
                   </svg>
                 </div>
               </motion.div>
 
               {/* Paffel - Extra auffällig */}
               <motion.div 
-                className="flex flex-col items-center text-center mt-8"
+                className="flex flex-col items-center text-center mt-4 md:mt-8"
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.6 }}
@@ -335,36 +335,36 @@ const Index = () => {
                   transition: { type: "spring", stiffness: 400, damping: 10 }
                 }}
               >
-                <div className="relative mb-6">
+                <div className="relative mb-3 md:mb-4">
                   <img 
                     src="/lovable-uploads/paffel.png" 
                     alt="Paffel" 
-                    className="w-24 h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 object-contain drop-shadow-2xl"
+                    className="w-20 h-20 sm:w-28 sm:h-28 md:w-36 md:h-36 lg:w-44 lg:h-44 object-contain drop-shadow-2xl"
                   />
                 </div>
-                <div className="relative">
-                  <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-pink-500 font-kalam transform rotate-3">
+                <div className="relative px-2">
+                  <h3 className="text-xs sm:text-sm md:text-base lg:text-lg font-bold text-accent/90 font-kalam transform rotate-3">
                     Paffel
                   </h3>
                   {/* Extra viele Kritzeleien für Paffel */}
                   {/* Zickzack */}
-                  <svg className="absolute -left-8 -top-4 w-8 h-6 text-pink-400" viewBox="0 0 32 24">
-                    <path d="M2,12 L8,4 L16,16 L24,8 L30,12" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round"/>
+                  <svg className="absolute -left-4 -top-3 w-4 h-3 md:w-5 md:h-4 text-accent/50" viewBox="0 0 20 16">
+                    <path d="M1,8 L5,3 L10,10 L15,5 L19,8" stroke="currentColor" strokeWidth="1.5" fill="none" strokeLinecap="round"/>
                   </svg>
                   {/* Wackelkreis */}
-                  <svg className="absolute -right-6 -top-2 w-8 h-8 text-pink-400" viewBox="0 0 32 32">
-                    <path d="M16,4 Q8,6 6,16 Q8,26 16,28 Q24,26 26,16 Q24,6 16,4" stroke="currentColor" strokeWidth="2" fill="none"/>
+                  <svg className="absolute -right-3 -top-1 w-4 h-4 md:w-5 md:h-5 text-accent/50" viewBox="0 0 20 20">
+                    <path d="M10,2 Q5,3 4,10 Q5,17 10,18 Q15,17 16,10 Q15,3 10,2" stroke="currentColor" strokeWidth="1.5" fill="none"/>
                   </svg>
-                  {/* Zusätzliche Sterne */}
-                  <svg className="absolute -left-4 top-8 w-4 h-4 text-pink-300" viewBox="0 0 16 16">
-                    <path d="M8,1 L9,5 L13,5 L10,7 L11,11 L8,9 L5,11 L6,7 L3,5 L7,5 Z" stroke="currentColor" strokeWidth="1" fill="currentColor"/>
+                  {/* Zusätzliche kleine Sterne */}
+                  <svg className="absolute -left-2 top-4 w-2 h-2 md:w-3 md:h-3 text-accent/60" viewBox="0 0 12 12">
+                    <path d="M6,1 L7,4 L10,4 L8,6 L9,9 L6,7 L3,9 L4,6 L2,4 L5,4 Z" stroke="currentColor" strokeWidth="0.5" fill="currentColor"/>
                   </svg>
-                  <svg className="absolute -right-2 top-6 w-3 h-3 text-pink-300" viewBox="0 0 12 12">
-                    <path d="M6,1 L7,4 L10,4 L8,6 L9,9 L6,7 L3,9 L4,6 L2,4 L5,4 Z" stroke="currentColor" strokeWidth="1" fill="currentColor"/>
+                  <svg className="absolute -right-1 top-4 w-2 h-2 text-accent/60" viewBox="0 0 8 8">
+                    <path d="M4,1 L5,3 L7,3 L5,4 L6,6 L4,5 L2,6 L3,4 L1,3 L3,3 Z" stroke="currentColor" strokeWidth="0.5" fill="currentColor"/>
                   </svg>
                   {/* Spirale */}
-                  <svg className="absolute left-6 top-8 w-6 h-6 text-pink-400" viewBox="0 0 24 24">
-                    <path d="M12,4 Q16,6 16,12 Q14,16 10,16 Q6,14 6,10 Q8,6 12,8" stroke="currentColor" strokeWidth="1.5" fill="none"/>
+                  <svg className="absolute left-3 top-4 w-3 h-3 md:w-4 md:h-4 text-accent/50" viewBox="0 0 16 16">
+                    <path d="M8,3 Q11,4 11,8 Q10,11 7,11 Q4,10 4,7 Q5,4 8,5" stroke="currentColor" strokeWidth="1" fill="none"/>
                   </svg>
                 </div>
               </motion.div>
