@@ -54,14 +54,9 @@ const HinterCaptainApfel = () => {
                 Meine bisherigen Fortbildungen und Zertifikate findest du gleich hier auf der Seite – weil mir Qualität, Transparenz und Weiterentwicklung wichtig sind.
               </p>
               
-              <p className="text-lg text-muted-foreground mt-8">
-                Herzliche Grüße<br />
-                <em>Tamara Hillmann</em>
-              </p>
-              
               <div>
                 {/* Certificates */}
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
                   <a 
                     href="/pdfs/Kinderschutzkonzept.pdf" 
                     target="_blank" 
@@ -113,6 +108,20 @@ const HinterCaptainApfel = () => {
                       className="w-full h-32 object-cover"
                     />
                   </a>
+                </div>
+
+                <p className="text-lg text-muted-foreground mt-8 mb-6">
+                  Herzliche Grüße<br />
+                  <em>Tamara Hillmann</em>
+                </p>
+
+                {/* Initiative Logo */}
+                <div className="flex justify-center">
+                  <img
+                    src="/lovable-uploads/initiative-logo.png"
+                    alt="Captain Apfel - Initiative für starke Entwicklung - Gesundheit, die Kindern schmeckt"
+                    className="max-w-md w-full h-auto"
+                  />
                 </div>
               </div>
             </div>
