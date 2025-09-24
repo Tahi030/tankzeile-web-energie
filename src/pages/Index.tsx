@@ -425,7 +425,8 @@ const Index = () => {
                   <img 
                     src="/assets/reise-zur-powerzentrale.jpg" 
                     alt="Reise zur Powerzentrale - Captain Apfel im Weltall" 
-                    className="w-full h-64 md:h-80 lg:h-96 object-cover"
+                    className="w-full h-72 md:h-96 lg:h-[28rem] object-cover object-center"
+                    style={{ objectPosition: '50% 45%' }}
                   />
                 </div>
                 
