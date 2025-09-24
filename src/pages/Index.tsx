@@ -119,7 +119,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Vorstellung - kompakter und mit verbesserter Typografie */}
+      {/* Vorstellung - einheitliche Typografie */}
       <section className="section-padding-sm bg-background">
         <div className="container-custom">
           <motion.div 
@@ -132,29 +132,29 @@ const Index = () => {
             <div className="bg-card/30 backdrop-blur-sm rounded-2xl p-6 md:p-8 border border-border/50 shadow-sm relative">
               <div className="max-w-4xl content-spacing">
                 {/* Kleine Einleitung */}
-                <p className="body-lg font-light italic tracking-wide">
-                  Hallo, ich bin
+                <p className="body-lg text-foreground">
+                  <em>Hallo, ich bin</em>
                 </p>
                 
-                {/* Große Hauptzeile */}
-                <h2 className="heading-lg text-primary leading-none tracking-tight font-bold">
+                {/* Captain Apfel - etwas größer */}
+                <h2 className="heading-md text-foreground font-bold">
                   Captain Apfel
                 </h2>
                 
-                {/* Kleiner erklärender Text */}
-                <p className="heading-sm leading-relaxed font-medium italic">
-                  Mit meiner Crew bin ich unterwegs auf gesunder Mission.
+                {/* Erklärender Text */}
+                <p className="body-lg text-foreground">
+                  <em>Mit meiner Crew bin ich unterwegs auf gesunder Mission.</em>
                 </p>
                 
                 {/* Haupttext */}
-                <p className="body-lg leading-relaxed">
+                <p className="body-lg text-foreground">
                   <strong>Berlin</strong> ist der Startpunkt unserer Reise. Von hier aus hebt das <em>Tomatenraumschiff</em> ab und landet direkt in Einrichtungen mit Kindern im Vorschul- und Grundschulalter.
                 </p>
                 
-                {/* Starkes Schluss-Statement */}
+                {/* Schluss-Statement */}
                 <div className="text-left pt-3 border-t border-primary/20">
-                  <p className="body-lg text-primary font-bold tracking-wide leading-relaxed italic">
-                    Denn gesunde Gewohnheiten geben uns Kraft, machen das Denken leichter und lassen uns rundum wohlfühlen.
+                  <p className="body-lg text-foreground">
+                    <strong><em>Denn gesunde Gewohnheiten geben uns Kraft, machen das Denken leichter und lassen uns rundum wohlfühlen.</em></strong>
                   </p>
                 </div>
               </div>
