@@ -28,7 +28,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section - Clean Centered Layout ohne Logo */}
+      {/* Hero Section - Captain Apfel unter Subtitle */}
       <section className="bg-background section-padding-sm">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto text-center">
@@ -66,10 +66,20 @@ const Index = () => {
                 </defs>
               </svg>
             </div>
+            
+            {/* Subtitle */}
+            <motion.h2 
+              className="heading-md text-secondary mb-5"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+            >
+              Volle Obst- und Gemüsekraft voraus!
+            </motion.h2>
 
-            {/* Captain Apfel Image - Centered */}
+            {/* Captain Apfel Image - Nach Subtitle */}
             <motion.div 
-              className="flex justify-center mb-5"
+              className="flex justify-center"
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ 
                 opacity: 1, 
@@ -77,8 +87,8 @@ const Index = () => {
                 y: [0, -8, 0]
               }}
               transition={{ 
-                opacity: { duration: 0.8, delay: 0.3 },
-                scale: { duration: 0.8, delay: 0.3 },
+                opacity: { duration: 0.8, delay: 0.5 },
+                scale: { duration: 0.8, delay: 0.5 },
                 y: { 
                   duration: 2, 
                   repeat: Infinity, 
@@ -94,16 +104,6 @@ const Index = () => {
                 className="w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 object-contain drop-shadow-2xl"
               />
             </motion.div>
-            
-            {/* Subtitle */}
-            <motion.h2 
-              className="heading-md text-secondary"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.5 }}
-            >
-              Volle Obst- und Gemüsekraft voraus!
-            </motion.h2>
           </div>
         </div>
       </section>
