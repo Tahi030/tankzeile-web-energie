@@ -125,8 +125,7 @@ const EssenIstFertig = () => {
                     </motion.a>
                     
                     <div className="text-xs text-muted-foreground leading-relaxed">
-                      Dein PDF-Paket und die Rechnung erhältst du an deine bei PayPal hinterlegte E-Mail-Adresse.
-                      Die Abwicklung erfolgt sicher und direkt über PayPal – ganz ohne Shop-Umweg.
+                      Dein PDF-Paket und die Rechnung erhältst du automatisch an die bei PayPal hinterlegte E-Mail-Adresse.
                     </div>
                   </div>
                 </div>
@@ -140,74 +139,35 @@ const EssenIstFertig = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-          >
-            <div className="text-center mb-8">
-              <h3 className="text-xl md:text-2xl font-bold text-foreground mb-4">
-                Vorschau & Ausschnitte
-              </h3>
-              <p className="text-muted-foreground">
-                Hier findest du bald einen Einblick in die Inhalte
-              </p>
-            </div>
-            
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              {/* Preview Image 1 */}
-              <div className="bg-card/50 rounded-lg p-4 border border-border/30 text-center">
-                <div className="aspect-[3/4] bg-muted/50 rounded border-2 border-dashed border-border flex items-center justify-center mb-3">
-                  <span className="text-muted-foreground text-sm">Do's & Don'ts</span>
-                </div>
-                <p className="text-sm text-muted-foreground">Einkaufslisten & Tipps</p>
+          >            
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-5xl mx-auto">
+              {/* Title Page */}
+              <div className="transform rotate-1 hover:rotate-0 transition-transform duration-300">
+                <img 
+                  src="/assets/essen-ist-fertig-title.jpg" 
+                  alt="Essen ist fertig! Titelseite" 
+                  className="w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+                />
               </div>
               
-              {/* Preview Image 2 */}
-              <div className="bg-card/50 rounded-lg p-4 border border-border/30 text-center">
-                <div className="aspect-[3/4] bg-muted/50 rounded border-2 border-dashed border-border flex items-center justify-center mb-3">
-                  <span className="text-muted-foreground text-sm">Kita-Vorlage</span>
+              {/* Recipe Page Placeholder */}
+              <div className="transform -rotate-1 hover:rotate-0 transition-transform duration-300">
+                <div className="aspect-[3/4] bg-gradient-to-br from-card to-card/80 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 border border-border/30 flex items-center justify-center">
+                  <span className="text-muted-foreground text-sm font-medium">Rezeptseite</span>
                 </div>
-                <p className="text-sm text-muted-foreground">Vorlagen für Betreuung</p>
               </div>
               
-              {/* Preview Image 3 */}
-              <div className="bg-card/50 rounded-lg p-4 border border-border/30 text-center">
-                <div className="aspect-[3/4] bg-muted/50 rounded border-2 border-dashed border-border flex items-center justify-center mb-3">
-                  <span className="text-muted-foreground text-sm">Rezeptseite</span>
+              {/* Template Placeholder */}
+              <div className="transform rotate-2 hover:rotate-0 transition-transform duration-300">
+                <div className="aspect-[3/4] bg-gradient-to-br from-card to-card/80 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 border border-border/30 flex items-center justify-center">
+                  <span className="text-muted-foreground text-sm font-medium">Vorlage</span>
                 </div>
-                <p className="text-sm text-muted-foreground">Leckere Snackideen</p>
               </div>
               
-              {/* Preview Image 4 */}
-              <div className="bg-card/50 rounded-lg p-4 border border-border/30 text-center">
-                <div className="aspect-[3/4] bg-muted/50 rounded border-2 border-dashed border-border flex items-center justify-center mb-3">
-                  <span className="text-muted-foreground text-sm">FAQ-Auszug</span>
-                </div>
-                <p className="text-sm text-muted-foreground">Häufige Fragen</p>
-              </div>
-            </div>
-          </motion.section>
-
-          {/* Kommende Ausgaben */}
-          <motion.section 
-            className="mb-16"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.5 }}
-          >
-            <div className="text-center mb-8">
-              <h2 className="text-2xl font-bold text-foreground mb-6">
-                Kommende Ausgaben
-              </h2>
-              
-              <div className="space-y-3 max-w-2xl mx-auto">
-                <div className="bg-card/50 backdrop-blur-sm rounded-lg p-4 border border-border/30">
-                  <p className="text-foreground font-medium">
-                    Band 2: Fructoseintoleranz – in Vorbereitung
-                  </p>
-                </div>
-                
-                <div className="bg-card/50 backdrop-blur-sm rounded-lg p-4 border border-border/30">
-                  <p className="text-foreground font-medium">
-                    Band 3: Glutenunverträglichkeit – geplant
-                  </p>
+              {/* FAQ Placeholder */}
+              <div className="transform -rotate-2 hover:rotate-0 transition-transform duration-300">
+                <div className="aspect-[3/4] bg-gradient-to-br from-card to-card/80 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 border border-border/30 flex items-center justify-center">
+                  <span className="text-muted-foreground text-sm font-medium">FAQ</span>
                 </div>
               </div>
             </div>
