@@ -166,8 +166,8 @@ const Index = () => {
         </div>
       </section>
 
-      {/* CREW-Bereich - Kinder-Kritzelbuch Style */}
-      <section className="section-padding bg-background overflow-hidden">
+      {/* CREW-Bereich - kompakter */}
+      <section className="section-padding-sm bg-background overflow-hidden">
         <div className="container-custom">
           <motion.div 
             className="text-center mb-12"
@@ -404,8 +404,8 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Angebote */}
-      <section className="py-16 bg-background">
+      {/* Angebote - kompakter */}
+      <section className="section-padding-sm bg-background">
         <div className="container-custom">
           <motion.div 
             className="text-center mb-12"
@@ -489,8 +489,8 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Musik & Stimmung */}
-      <section className="py-16 bg-background">
+      {/* Musik & Stimmung - kompakter */}
+      <section className="section-padding-sm bg-background">
         <div className="container-custom">
           <motion.div 
             className="max-w-4xl mx-auto text-center"
@@ -576,8 +576,8 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Download-Bereich */}
-      <section className="py-16 bg-background">
+      {/* Mission Buntstift - kompakter */}
+      <section className="section-padding-sm bg-background">
         <div className="container-custom">
           <motion.div 
             className="max-w-4xl mx-auto text-center"
@@ -721,6 +721,21 @@ const Index = () => {
                 </div>
               </motion.div>
             </div>
+            
+            {/* Apple Logo unter Mission Buntstift */}
+            <motion.div 
+              className="flex justify-center mt-8"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+              viewport={{ once: true }}
+            >
+              <img 
+                src="/lovable-uploads/initiative-logo-homepage.png" 
+                alt="Captain Apfel - Initiative für starke Entwicklung - Gesundheit, die Kindern schmeckt" 
+                className="w-full max-w-sm md:max-w-md lg:max-w-lg h-auto object-contain"
+              />
+            </motion.div>
           </motion.div>
         </div>
       </section>
