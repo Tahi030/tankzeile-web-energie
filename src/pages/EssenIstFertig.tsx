@@ -143,15 +143,21 @@ const EssenIstFertig = () => {
                 {/* Mini Preview Images */}
                 <div className="border-t border-border/30 pt-6">
                   <div className="flex justify-center gap-4">
-                    <div className="w-16 h-20 bg-gradient-to-br from-card to-card/80 rounded shadow-sm border border-border/30 flex items-center justify-center">
-                      <span className="text-[10px] text-muted-foreground">Rezept</span>
-                    </div>
-                    <div className="w-16 h-20 bg-gradient-to-br from-card to-card/80 rounded shadow-sm border border-border/30 flex items-center justify-center">
-                      <span className="text-[10px] text-muted-foreground">Vorlage</span>
-                    </div>
-                    <div className="w-16 h-20 bg-gradient-to-br from-card to-card/80 rounded shadow-sm border border-border/30 flex items-center justify-center">
-                      <span className="text-[10px] text-muted-foreground">FAQ</span>
-                    </div>
+                    <img 
+                      src="/assets/rezept-ausschnitt.jpg" 
+                      alt="Rezept Ausschnitt" 
+                      className="w-16 h-20 object-cover rounded shadow-sm border border-border/30"
+                    />
+                    <img 
+                      src="/assets/wochenplaner-ausschnitt.jpg" 
+                      alt="Wochenplaner Ausschnitt" 
+                      className="w-16 h-20 object-cover rounded shadow-sm border border-border/30"
+                    />
+                    <img 
+                      src="/assets/ernaehrungstagebuch-ausschnitt.jpg" 
+                      alt="Ernährungstagebuch Ausschnitt" 
+                      className="w-16 h-20 object-cover rounded shadow-sm border border-border/30"
+                    />
                   </div>
                 </div>
 
