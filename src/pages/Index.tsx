@@ -136,7 +136,7 @@ const Index = () => {
               <div className="max-w-4xl content-spacing">
                 {/* Kleine Einleitung */}
                 <p className="body-lg text-foreground">
-                  <em>Hallo, ich bin</em>
+                  Hallo, ich bin
                 </p>
                 
                 {/* Captain Apfel - etwas größer */}
@@ -146,18 +146,18 @@ const Index = () => {
                 
                 {/* Erklärender Text */}
                 <p className="body-lg text-foreground">
-                  <em>Mit meiner Crew bin ich unterwegs auf gesunder Mission.</em>
+                  Mit meiner Crew bin ich unterwegs auf gesunder Mission.
                 </p>
                 
                 {/* Haupttext */}
                 <p className="body-lg text-foreground">
-                  <strong>Berlin</strong> ist der Startpunkt unserer Reise. Von hier aus hebt das <em>Tomatenraumschiff</em> ab und landet direkt in Einrichtungen mit Kindern im Vorschul- und Grundschulalter.
+                  <strong>Berlin</strong> ist der Startpunkt unserer Reise. Von hier aus hebt das <strong>Tomatenraumschiff</strong> ab und landet direkt in Einrichtungen mit Kindern im Vorschul- und Grundschulalter.
                 </p>
                 
                 {/* Schluss-Statement */}
                 <div className="text-left pt-3 border-t border-primary/20">
-                  <p className="body-lg text-foreground">
-                    <strong><em>Denn gesunde Gewohnheiten geben uns Kraft, machen das Denken leichter und lassen uns rundum wohlfühlen.</em></strong>
+                  <p className="body-lg text-foreground font-bold">
+                    Denn gesunde Gewohnheiten geben uns Kraft, machen das Denken leichter und lassen uns rundum wohlfühlen.
                   </p>
                 </div>
               </div>
@@ -452,11 +452,11 @@ const Index = () => {
               viewport={{ once: true }}
             >
                <div className="offer-box h-full flex flex-col">
-                <div className="relative -mx-4 sm:mx-0 mb-6 overflow-hidden">
+                <div className="relative mb-6 overflow-hidden rounded-lg">
                   <img 
                     src="/assets/reise-zur-powerzentrale.jpg" 
                     alt="Reise zur Powerzentrale – Sternenhimmel mit Tacho und Tomatenraumschiff" 
-                    className="block w-full h-auto"
+                    className="w-full h-48 md:h-56 lg:h-64 object-cover"
                   />
                 </div>
                 
