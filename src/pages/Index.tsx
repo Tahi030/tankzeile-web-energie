@@ -421,12 +421,11 @@ const Index = () => {
               viewport={{ once: true }}
             >
                <div className="offer-box h-full flex flex-col">
-                <div className="bg-secondary/10 rounded-xl overflow-hidden mb-6 relative">
+                <div className="relative -mx-4 sm:mx-0 mb-6 overflow-hidden">
                   <img 
                     src="/assets/reise-zur-powerzentrale.jpg" 
-                    alt="Reise zur Powerzentrale - Captain Apfel im Weltall" 
-                    className="w-full h-72 md:h-96 lg:h-[28rem] object-cover object-center"
-                    style={{ objectPosition: '50% 45%' }}
+                    alt="Reise zur Powerzentrale – Sternenhimmel mit Tacho und Tomatenraumschiff" 
+                    className="block w-full h-auto"
                   />
                 </div>
                 
