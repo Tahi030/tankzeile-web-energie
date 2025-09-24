@@ -425,7 +425,7 @@ const Index = () => {
                   <img 
                     src="/assets/reise-zur-powerzentrale.jpg" 
                     alt="Reise zur Powerzentrale - Captain Apfel im Weltall" 
-                    className="w-full h-64 md:h-80 lg:h-96 object-contain bg-white/5"
+                    className="w-full h-64 md:h-80 lg:h-96 object-cover"
                   />
                 </div>
                 
