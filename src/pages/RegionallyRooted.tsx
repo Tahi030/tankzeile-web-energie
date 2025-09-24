@@ -54,12 +54,8 @@ const RegionallyRooted = () => {
                   Und falls du einmal am Herzapfelhof vorbeikommst: Besuch den Baum gerne und teile ein Foto mit #captain.apfel – darüber würde ich mich sehr freuen.
                 </p>
 
-                {/* Bilder Galerie */}
+                {/* Bilder ohne Text */}
                 <div className="mt-12 md:mt-16">
-                  <h3 className="heading-md text-center mb-8">
-                    Captain Apfels Baum im Herzapfelhof
-                  </h3>
-                  
                   {/* Hauptbild - Patenschaftsurkunde */}
                   <motion.div 
                     className="mb-8"
@@ -77,8 +73,8 @@ const RegionallyRooted = () => {
                     </div>
                   </motion.div>
 
-                  {/* Galerie der Apfelbilder */}
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                  {/* Zwei Bilder nebeneinander */}
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                     <motion.div
                       initial={{ opacity: 0, y: 20 }}
                       whileInView={{ opacity: 1, y: 0 }}
@@ -89,11 +85,8 @@ const RegionallyRooted = () => {
                       <img 
                         src="/assets/regional-apples-tree.jpg" 
                         alt="Rote Äpfel am Baum - frisch und regional" 
-                        className="w-full h-48 md:h-56 object-cover rounded-lg"
+                        className="w-full h-64 md:h-72 object-cover rounded-lg"
                       />
-                      <p className="text-center text-sm text-muted-foreground mt-2 font-medium">
-                        Frische Äpfel am Baum
-                      </p>
                     </motion.div>
 
                     <motion.div
@@ -106,30 +99,27 @@ const RegionallyRooted = () => {
                       <img 
                         src="/assets/regional-apple-hand.jpg" 
                         alt="Regional geernteter roter Apfel in der Hand" 
-                        className="w-full h-48 md:h-56 object-cover rounded-lg"
+                        className="w-full h-64 md:h-72 object-cover rounded-lg"
                       />
-                      <p className="text-center text-sm text-muted-foreground mt-2 font-medium">
-                        Regional geerntet
-                      </p>
                     </motion.div>
+                  </div>
 
-                    <motion.div
-                      initial={{ opacity: 0, y: 20 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.6, delay: 0.3 }}
-                      viewport={{ once: true }}
-                      className="bg-white rounded-lg p-3 shadow-lg border border-border/30 hover:shadow-xl transition-shadow"
-                    >
+                  {/* Einzelnes Bild zentriert */}
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, delay: 0.3 }}
+                    viewport={{ once: true }}
+                    className="flex justify-center"
+                  >
+                    <div className="bg-white rounded-lg p-3 shadow-lg border border-border/30 hover:shadow-xl transition-shadow max-w-md">
                       <img 
                         src="/assets/regional-apple-basket.jpg" 
                         alt="Fröhlicher Apfel im Korb - Captain Apfel lässt grüßen" 
-                        className="w-full h-48 md:h-56 object-cover rounded-lg"
+                        className="w-full h-64 md:h-72 object-cover rounded-lg"
                       />
-                      <p className="text-center text-sm text-muted-foreground mt-2 font-medium">
-                        Captain Apfel lässt grüßen
-                      </p>
-                    </motion.div>
-                  </div>
+                    </div>
+                  </motion.div>
                 </div>
               </div>
             </div>
