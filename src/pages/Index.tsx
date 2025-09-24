@@ -101,6 +101,20 @@ const Index = () => {
                 className="w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 object-contain drop-shadow-2xl"
               />
             </motion.div>
+            
+            {/* Initiative Logo */}
+            <motion.div 
+              className="flex justify-center items-center mt-8"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.5 }}
+            >
+              <img 
+                src="/lovable-uploads/initiative-logo-homepage.png" 
+                alt="Captain Apfel - Initiative für starke Entwicklung - Gesundheit, die Kindern schmeckt" 
+                className="w-64 sm:w-80 md:w-96 lg:w-[28rem] h-auto object-contain"
+              />
+            </motion.div>
           </div>
         </div>
       </section>
