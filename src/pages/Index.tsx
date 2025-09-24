@@ -28,96 +28,89 @@ const Index = () => {
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section - Headline mit Captain Apfel nebeneinander */}
+      {/* Hero Section - Clean Centered Layout */}
       <section className="bg-background section-padding-sm">
         <div className="container-custom">
-          <div className="max-w-6xl mx-auto">
-            {/* Headline + Captain Apfel nebeneinander */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-center mb-4">
-              
-              {/* Left Side - Headline */}
-              <motion.div 
-                className="text-left"
-                initial={{ opacity: 0, x: -30 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8, delay: 0.1 }}
-              >
-                <h1 className="heading-xl mb-3">
-                  Captain Apfel - auf gesunder Mission
-                </h1>
-                
-                {/* Hand-drawn line effect */}
-                <div className="flex justify-start">
-                  <svg width="120" height="8" viewBox="0 0 120 8" className="text-white">
-                    <path
-                      d="M2,4 Q8,2 15,4 T30,3 Q40,5 50,4 T70,3 Q80,5 90,4 T110,3 Q115,2 118,4"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      fill="none"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="opacity-70"
-                      style={{
-                        filter: 'url(#roughPaper0)',
-                      }}
-                    />
-                    <defs>
-                      <filter id="roughPaper0">
-                        <feTurbulence baseFrequency="0.04" numOctaves="3" result="noise" seed="0" />
-                        <feDisplacementMap in="SourceGraphic" in2="noise" scale="0.8" />
-                      </filter>
-                    </defs>
-                  </svg>
-                </div>
-              </motion.div>
-
-              {/* Right Side - Captain Apfel */}
-              <motion.div 
-                className="flex justify-center lg:justify-end"
-                initial={{ opacity: 0, x: 30 }}
-                animate={{ 
-                  opacity: 1, 
-                  x: 0,
-                  y: [0, -8, 0]
-                }}
-                transition={{ 
-                  opacity: { duration: 0.8, delay: 0.3 },
-                  x: { duration: 0.8, delay: 0.3 },
-                  y: { 
-                    duration: 2, 
-                    repeat: Infinity, 
-                    repeatType: "reverse",
-                    ease: "easeInOut",
-                    delay: 1.5
-                  }
-                }}
-              >
-                <img 
-                  src="/assets/captain-apfel-hero.png" 
-                  alt="Captain Apfel - Superheld für gesunde Ernährung" 
-                  className="image-hero drop-shadow-2xl"
-                />
-              </motion.div>
-            </div>
+          <div className="max-w-4xl mx-auto text-center">
             
-            {/* Subtitle centered */}
-            <motion.div 
-              className="text-center mb-4"
-              initial={{ opacity: 0, y: 20 }}
+            {/* Main Headline */}
+            <motion.h1 
+              className="heading-xl mb-6"
+              initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
+              transition={{ duration: 0.8, delay: 0.1 }}
             >
-              <h2 className="heading-md text-secondary">
-                Volle Obst- und Gemüsekraft voraus!
-              </h2>
+              Captain Apfel - auf gesunder Mission
+            </motion.h1>
+            
+            {/* Hand-drawn line effect */}
+            <div className="flex justify-center mb-6">
+              <svg width="120" height="8" viewBox="0 0 120 8" className="text-white">
+                <path
+                  d="M2,4 Q8,2 15,4 T30,3 Q40,5 50,4 T70,3 Q80,5 90,4 T110,3 Q115,2 118,4"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  fill="none"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="opacity-70"
+                  style={{
+                    filter: 'url(#roughPaper0)',
+                  }}
+                />
+                <defs>
+                  <filter id="roughPaper0">
+                    <feTurbulence baseFrequency="0.04" numOctaves="3" result="noise" seed="0" />
+                    <feDisplacementMap in="SourceGraphic" in2="noise" scale="0.8" />
+                  </filter>
+                </defs>
+              </svg>
+            </div>
+
+            {/* Captain Apfel Image - Centered */}
+            <motion.div 
+              className="flex justify-center mb-6"
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ 
+                opacity: 1, 
+                scale: 1,
+                y: [0, -8, 0]
+              }}
+              transition={{ 
+                opacity: { duration: 0.8, delay: 0.3 },
+                scale: { duration: 0.8, delay: 0.3 },
+                y: { 
+                  duration: 2, 
+                  repeat: Infinity, 
+                  repeatType: "reverse",
+                  ease: "easeInOut",
+                  delay: 1.5
+                }
+              }}
+            >
+              <img 
+                src="/assets/captain-apfel-hero.png" 
+                alt="Captain Apfel - Superheld für gesunde Ernährung" 
+                className="w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 object-contain drop-shadow-2xl"
+              />
             </motion.div>
             
-            {/* Logo centered */}
-            <motion.div 
-              className="flex justify-center mb-4"
+            {/* Subtitle */}
+            <motion.h2 
+              className="heading-md text-secondary mb-6"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.6 }}
+              transition={{ duration: 0.8, delay: 0.5 }}
+            >
+              Volle Obst- und Gemüsekraft voraus!
+            </motion.h2>
+            
+            {/* Logo with Claim */}
+            <motion.div 
+              className="flex justify-center"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.7 }}
             >
               <img 
                 src="/lovable-uploads/initiative-logo-homepage.png" 
