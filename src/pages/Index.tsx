@@ -28,8 +28,8 @@ const Index = () => {
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section - Captain Apfel unter Subtitle */}
-      <section className="bg-background section-padding-sm">
+      {/* Hero Section - Captain Apfel unter Subtitle mit Abstand zum Header */}
+      <section className="bg-background pt-8 pb-6">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto text-center">
             
