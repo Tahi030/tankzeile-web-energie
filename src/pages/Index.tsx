@@ -29,143 +29,63 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-background py-16 md:py-24 lg:py-32">
+      <section className="bg-background py-16 md:py-24">
         <div className="container-custom">
-          <div className="max-w-6xl mx-auto">
-            <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
-              
-              {/* Text Content */}
-              <div className="text-center lg:text-left order-2 lg:order-1">
-                <motion.h1 
-                  className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-white leading-tight"
-                  initial={{ opacity: 0, y: 30 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.8, delay: 0.1 }}
-                >
-                  Captain Apfel & seine Crew – auf gesunder Mission
-                </motion.h1>
-                
-                {/* Hand-drawn line effect */}
-                <motion.div 
-                  className="flex justify-center lg:justify-start mb-6"
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.6, delay: 0.3 }}
-                >
-                  <svg width="160" height="12" viewBox="0 0 160 12" className="text-primary">
-                    <path
-                      d="M2,6 Q12,2 25,6 T50,4 Q70,8 90,6 T130,4 Q145,2 158,6"
-                      stroke="currentColor"
-                      strokeWidth="2.5"
-                      fill="none"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="opacity-80"
-                      style={{
-                        filter: 'url(#roughPaper0)',
-                      }}
-                    />
-                    <defs>
-                      <filter id="roughPaper0">
-                        <feTurbulence baseFrequency="0.04" numOctaves="3" result="noise" seed="0" />
-                        <feDisplacementMap in="SourceGraphic" in2="noise" scale="0.8" />
-                      </filter>
-                    </defs>
-                  </svg>
-                </motion.div>
-                
-                <motion.h2 
-                  className="text-2xl md:text-3xl lg:text-4xl font-medium mb-8 text-secondary leading-relaxed"
-                  initial={{ opacity: 0, y: 30 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.8, delay: 0.2 }}
-                >
-                  Volle Obst- und Gemüsekraft voraus!
-                </motion.h2>
-
-                <motion.p 
-                  className="text-lg md:text-xl text-white/80 leading-relaxed max-w-lg mx-auto lg:mx-0"
-                  initial={{ opacity: 0, y: 30 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.8, delay: 0.4 }}
-                >
-                  Gesunde Gewohnheiten geben uns Kraft, machen das Denken leichter und lassen uns rundum wohlfühlen.
-                </motion.p>
-              </div>
-
-              {/* Captain Apfel Image */}
-              <div className="flex justify-center lg:justify-end order-1 lg:order-2">
-                <motion.div 
-                  className="relative"
-                  initial={{ opacity: 0, scale: 0.8, y: 30 }}
-                  animate={{ opacity: 1, scale: 1, y: 0 }}
-                  transition={{ duration: 1, delay: 0.5, type: "spring", stiffness: 100 }}
-                  whileHover={{ 
-                    scale: 1.05,
-                    y: -10,
-                    transition: { type: "spring", stiffness: 300, damping: 10 }
+          <div className="max-w-4xl mx-auto text-center">
+            <motion.h1 
+              className="text-4xl md:text-6xl font-bold mb-4 text-white"
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.1 }}
+            >
+              Captain Apfel & seine Crew – auf gesunder Mission
+            </motion.h1>
+            
+            {/* Hand-drawn line effect */}
+            <div className="flex justify-center mb-6">
+              <svg width="120" height="8" viewBox="0 0 120 8" className="text-white">
+                <path
+                  d="M2,4 Q8,2 15,4 T30,3 Q40,5 50,4 T70,3 Q80,5 90,4 T110,3 Q115,2 118,4"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  fill="none"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="opacity-70"
+                  style={{
+                    filter: 'url(#roughPaper0)',
                   }}
-                >
-                  {/* Glow effect background */}
-                  <div className="absolute inset-0 bg-primary/20 rounded-full blur-3xl scale-110 animate-pulse"></div>
-                  
-                  {/* Captain Apfel */}
-                  <img 
-                    src="/assets/captain-apfel-hero.png" 
-                    alt="Captain Apfel - der freundliche Superheld für gesunde Ernährung" 
-                    className="relative z-10 w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 object-contain drop-shadow-2xl"
-                  />
-                  
-                  {/* Floating elements */}
-                  <motion.div 
-                    className="absolute -top-4 -right-4 text-2xl"
-                    animate={{ 
-                      y: [0, -10, 0],
-                      rotate: [0, 5, 0]
-                    }}
-                    transition={{ 
-                      duration: 3,
-                      repeat: Infinity,
-                      ease: "easeInOut"
-                    }}
-                  >
-                    ✨
-                  </motion.div>
-                  
-                  <motion.div 
-                    className="absolute -bottom-2 -left-6 text-xl"
-                    animate={{ 
-                      y: [0, -8, 0],
-                      rotate: [0, -5, 0]
-                    }}
-                    transition={{ 
-                      duration: 2.5,
-                      repeat: Infinity,
-                      ease: "easeInOut",
-                      delay: 1
-                    }}
-                  >
-                    🍎
-                  </motion.div>
-                  
-                  <motion.div 
-                    className="absolute top-1/4 -left-8 text-lg"
-                    animate={{ 
-                      x: [0, -5, 0],
-                      y: [0, -5, 0]
-                    }}
-                    transition={{ 
-                      duration: 4,
-                      repeat: Infinity,
-                      ease: "easeInOut",
-                      delay: 0.5
-                    }}
-                  >
-                    💪
-                  </motion.div>
-                </motion.div>
-              </div>
+                />
+                <defs>
+                  <filter id="roughPaper0">
+                    <feTurbulence baseFrequency="0.04" numOctaves="3" result="noise" seed="0" />
+                    <feDisplacementMap in="SourceGraphic" in2="noise" scale="0.8" />
+                  </filter>
+                </defs>
+              </svg>
             </div>
+            
+            <motion.h2 
+              className="text-2xl md:text-3xl font-medium mb-12 text-secondary"
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+            >
+              Volle Obst- und Gemüsekraft voraus!
+            </motion.h2>
+
+            {/* Logo Platzhalter */}
+            <motion.div 
+              className="bg-card rounded-2xl p-8 max-w-md mx-auto border border-border shadow-sm"
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+            >
+              <div className="bg-primary/10 rounded-xl p-6 text-center">
+                <h3 className="text-lg font-semibold text-foreground mb-2">Powerzentrale</h3>
+                <p className="text-muted-foreground text-sm">Apfel-Logo kommt hier hin</p>
+              </div>
+            </motion.div>
           </div>
         </div>
       </section>
