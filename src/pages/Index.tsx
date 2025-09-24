@@ -69,13 +69,23 @@ const Index = () => {
             
             {/* Subtitle */}
             <motion.h2 
-              className="heading-md text-secondary mb-5"
+              className="heading-md text-secondary mb-2"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
             >
-              Volle Obst- und Gemüsekraft voraus!
+              Initiative für starke Entwicklung
             </motion.h2>
+            
+            {/* Claim in Italic */}
+            <motion.p 
+              className="heading-sm text-secondary italic mb-5"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+            >
+              Gesundheit, die Kindern schmeckt.
+            </motion.p>
 
             {/* Captain Apfel Image - Nach Subtitle */}
             <motion.div 
