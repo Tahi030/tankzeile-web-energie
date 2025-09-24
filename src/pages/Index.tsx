@@ -135,155 +135,177 @@ const Index = () => {
         </div>
       </section>
 
-      {/* CREW-Bereich - Avatar Grid */}
-      <section className="py-20 bg-background">
+      {/* CREW-Bereich - Freie Gruppenanordnung */}
+      <section className="py-24 bg-background overflow-hidden">
         <div className="container-custom">
           <motion.div 
-            className="text-center mb-16"
+            className="text-center mb-20"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 font-playfair">
-              Das ist die Crew von Captain Apfel
+            <h2 className="text-4xl md:text-6xl font-bold text-white mb-8 font-playfair">
+              Lerne die Crew von Captain Apfel kennen!
             </h2>
-            
-            {/* Hand-drawn line effect */}
-            <div className="flex justify-center mb-6">
-              <svg width="150" height="12" viewBox="0 0 150 12" className="text-white">
-                <path
-                  d="M2,6 Q12,3 20,6 T40,5 Q55,8 70,6 T100,5 Q115,8 130,6 T148,6"
-                  stroke="currentColor"
-                  strokeWidth="2.5"
-                  fill="none"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="opacity-70"
-                  style={{
-                    filter: 'url(#roughPaperCrew)',
-                  }}
-                />
-                <defs>
-                  <filter id="roughPaperCrew">
-                    <feTurbulence baseFrequency="0.04" numOctaves="3" result="noise" seed="5" />
-                    <feDisplacementMap in="SourceGraphic" in2="noise" scale="0.8" />
-                  </filter>
-                </defs>
-              </svg>
-            </div>
           </motion.div>
 
-          {/* Avatar Grid Layout */}
-          <div className="max-w-5xl mx-auto">
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 md:gap-12">
+          {/* Freie Gruppenanordnung - wie eine echte Crew */}
+          <div className="max-w-7xl mx-auto relative">
+            <div className="flex flex-wrap justify-center items-end gap-4 md:gap-8 lg:gap-12">
               
-              {/* Captain Apfel */}
+              {/* Captain Apfel - Zentral/Leader Position */}
               <motion.div 
-                className="flex flex-col items-center text-center"
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.1 }}
-                viewport={{ once: true }}
-              >
-                <div className="w-24 h-24 md:w-32 md:h-32 lg:w-28 lg:h-28 rounded-full overflow-hidden bg-white/10 backdrop-blur-sm border border-white/20 shadow-lg mb-4 hover:scale-105 transition-transform duration-300">
-                  <img 
-                    src="/lovable-uploads/captain-apfel.png" 
-                    alt="Captain Apfel" 
-                    className="w-full h-full object-contain p-2"
-                  />
-                </div>
-                <h3 className="text-base md:text-lg font-bold text-primary">Captain Apfel</h3>
-              </motion.div>
-
-              {/* Kimmi Schlau */}
-              <motion.div 
-                className="flex flex-col items-center text-center"
-                initial={{ opacity: 0, y: 30 }}
+                className="flex flex-col items-center text-center mb-8 order-3 md:order-2"
+                initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
                 viewport={{ once: true }}
+                whileHover={{ 
+                  y: -8,
+                  transition: { type: "spring", stiffness: 300, damping: 10 }
+                }}
               >
-                <div className="w-24 h-24 md:w-32 md:h-32 lg:w-28 lg:h-28 rounded-full overflow-hidden bg-white/10 backdrop-blur-sm border border-white/20 shadow-lg mb-4 hover:scale-105 transition-transform duration-300">
+                <div className="relative">
+                  <img 
+                    src="/lovable-uploads/captain-apfel.png" 
+                    alt="Captain Apfel" 
+                    className="w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 object-contain drop-shadow-2xl hover:drop-shadow-[0_10px_20px_rgba(59,130,246,0.5)] transition-all duration-300"
+                  />
+                </div>
+                <h3 className="text-xl md:text-2xl font-black text-primary mt-4 drop-shadow-md font-fredoka">
+                  Captain Apfel
+                </h3>
+              </motion.div>
+
+              {/* Kimmi Schlau - Links vorne */}
+              <motion.div 
+                className="flex flex-col items-center text-center order-1 md:order-1"
+                initial={{ opacity: 0, x: -50, y: 30 }}
+                whileInView={{ opacity: 1, x: 0, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+                viewport={{ once: true }}
+                whileHover={{ 
+                  scale: 1.05,
+                  rotate: -3,
+                  transition: { type: "spring", stiffness: 300, damping: 10 }
+                }}
+              >
+                <div className="relative">
                   <img 
                     src="/lovable-uploads/kimmi-schlau.png" 
                     alt="Kimmi Schlau" 
-                    className="w-full h-full object-contain p-2"
+                    className="w-28 h-28 md:w-36 md:h-36 lg:w-44 lg:h-44 object-contain drop-shadow-2xl hover:drop-shadow-[0_10px_20px_rgba(249,115,22,0.5)] transition-all duration-300"
                   />
                 </div>
-                <h3 className="text-base md:text-lg font-bold text-secondary">Kimmi Schlau</h3>
+                <h3 className="text-lg md:text-xl font-black text-secondary mt-3 drop-shadow-md font-fredoka">
+                  Kimmi Schlau
+                </h3>
               </motion.div>
 
-              {/* Kai Mutig */}
+              {/* Kai Mutig - Rechts vorne */}
               <motion.div 
-                className="flex flex-col items-center text-center"
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                className="flex flex-col items-center text-center order-2 md:order-3"
+                initial={{ opacity: 0, x: 50, y: 30 }}
+                whileInView={{ opacity: 1, x: 0, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.3 }}
                 viewport={{ once: true }}
+                whileHover={{ 
+                  scale: 1.05,
+                  rotate: 3,
+                  transition: { type: "spring", stiffness: 300, damping: 10 }
+                }}
               >
-                <div className="w-24 h-24 md:w-32 md:h-32 lg:w-28 lg:h-28 rounded-full overflow-hidden bg-white/10 backdrop-blur-sm border border-white/20 shadow-lg mb-4 hover:scale-105 transition-transform duration-300">
+                <div className="relative">
                   <img 
                     src="/lovable-uploads/kai-mutig.png" 
                     alt="Kai Mutig" 
-                    className="w-full h-full object-contain p-2"
+                    className="w-28 h-28 md:w-36 md:h-36 lg:w-44 lg:h-44 object-contain drop-shadow-2xl hover:drop-shadow-[0_10px_20px_rgba(34,197,94,0.5)] transition-all duration-300"
                   />
                 </div>
-                <h3 className="text-base md:text-lg font-bold text-accent">Kai Mutig</h3>
+                <h3 className="text-lg md:text-xl font-black text-accent mt-3 drop-shadow-md font-fredoka">
+                  Kai Mutig
+                </h3>
               </motion.div>
+            </div>
 
-              {/* Tomatenraumschiff */}
+            {/* Zweite Reihe - weiter hinten */}
+            <div className="flex flex-wrap justify-center items-start gap-8 md:gap-16 lg:gap-20 mt-8 md:mt-12">
+              
+              {/* Tomatenraumschiff - Links hinten */}
               <motion.div 
                 className="flex flex-col items-center text-center"
-                initial={{ opacity: 0, y: 30 }}
+                initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.4 }}
                 viewport={{ once: true }}
+                whileHover={{ 
+                  y: -12,
+                  rotate: -2,
+                  transition: { type: "spring", stiffness: 400, damping: 8 }
+                }}
               >
-                <div className="w-24 h-24 md:w-32 md:h-32 lg:w-28 lg:h-28 rounded-full overflow-hidden bg-white/10 backdrop-blur-sm border border-white/20 shadow-lg mb-4 hover:scale-105 transition-transform duration-300">
+                <div className="relative">
                   <img 
                     src="/lovable-uploads/tomatenraumschiff.png" 
                     alt="Tomatenraumschiff" 
-                    className="w-full h-full object-contain p-2"
+                    className="w-24 h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 object-contain drop-shadow-xl hover:drop-shadow-[0_8px_16px_rgba(239,68,68,0.5)] transition-all duration-300"
                   />
                 </div>
-                <h3 className="text-base md:text-lg font-bold text-primary">Tomatenraumschiff</h3>
+                <h3 className="text-base md:text-lg font-black text-red-500 mt-3 drop-shadow-md font-fredoka">
+                  Tomatenraumschiff
+                </h3>
               </motion.div>
 
-              {/* Powerzentrale */}
+              {/* Powerzentrale - Mitte hinten */}
               <motion.div 
                 className="flex flex-col items-center text-center"
-                initial={{ opacity: 0, y: 30 }}
+                initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.5 }}
                 viewport={{ once: true }}
+                whileHover={{ 
+                  scale: 1.1,
+                  y: -6,
+                  transition: { type: "spring", stiffness: 350, damping: 12 }
+                }}
               >
-                <div className="w-24 h-24 md:w-32 md:h-32 lg:w-28 lg:h-28 rounded-full overflow-hidden bg-white/10 backdrop-blur-sm border border-white/20 shadow-lg mb-4 hover:scale-105 transition-transform duration-300">
+                <div className="relative">
                   <img 
                     src="/lovable-uploads/powerzentrale.png" 
                     alt="Powerzentrale" 
-                    className="w-full h-full object-contain p-2"
+                    className="w-24 h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 object-contain drop-shadow-xl hover:drop-shadow-[0_8px_16px_rgba(16,185,129,0.5)] transition-all duration-300"
                   />
                 </div>
-                <h3 className="text-base md:text-lg font-bold text-secondary">Powerzentrale</h3>
+                <h3 className="text-base md:text-lg font-black text-emerald-500 mt-3 drop-shadow-md font-fredoka">
+                  Powerzentrale
+                </h3>
               </motion.div>
 
-              {/* Paffel */}
+              {/* Paffel - Rechts hinten */}
               <motion.div 
                 className="flex flex-col items-center text-center"
-                initial={{ opacity: 0, y: 30 }}
+                initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.6 }}
                 viewport={{ once: true }}
+                whileHover={{ 
+                  scale: 1.08,
+                  rotate: 5,
+                  y: -10,
+                  transition: { type: "spring", stiffness: 400, damping: 10 }
+                }}
               >
-                <div className="w-24 h-24 md:w-32 md:h-32 lg:w-28 lg:h-28 rounded-full overflow-hidden bg-white/10 backdrop-blur-sm border border-white/20 shadow-lg mb-4 hover:scale-105 transition-transform duration-300">
+                <div className="relative">
                   <img 
                     src="/lovable-uploads/paffel.png" 
                     alt="Paffel" 
-                    className="w-full h-full object-contain p-2"
+                    className="w-24 h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 object-contain drop-shadow-xl hover:drop-shadow-[0_8px_16px_rgba(236,72,153,0.5)] transition-all duration-300"
                   />
                 </div>
-                <h3 className="text-base md:text-lg font-bold text-destructive">Paffel</h3>
+                <h3 className="text-base md:text-lg font-black text-pink-500 mt-3 drop-shadow-md font-fredoka">
+                  Paffel
+                </h3>
               </motion.div>
             </div>
           </div>
