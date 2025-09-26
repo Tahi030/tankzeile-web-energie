@@ -85,12 +85,12 @@ const Index = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="heading-lg mb-6">
-              Unsere Angebote für Sie
+            <h2 className="text-3xl font-bold text-primary font-playfair mb-6">
+              Programme für gesunde Entwicklung
             </h2>
             <div className="w-24 h-1 bg-primary mx-auto rounded-full" />
-            <p className="text-lg text-muted-foreground mt-6 max-w-2xl mx-auto">
-              Entdecken Sie unsere speziell entwickelten Programme für eine gesunde und starke Entwicklung
+            <p className="text-base text-muted-foreground mt-6 max-w-2xl mx-auto">
+              Speziell entwickelte Workshops und Pakete für Kinder und Familien
             </p>
           </motion.div>
 
@@ -109,10 +109,10 @@ const Index = () => {
             
             <OfferCard
               title="Essen ist fertig!"
-              description="Praktische Alltagshilfen und kreative Ideen rund um gesunde Ernährung für Familien. Einfache Rezepte, Tipps und Tricks, die das Familienleben leichter und gesünder machen."
+              description="Praktische Pakete zur Diagnose von Nahrungsmittelunverträglichkeiten bei Kindern. Speziell entwickelte Leitfäden, Rezepte und Alltagshilfen für Familien mit betroffenen Kindern."
               imageUrl="/assets/essen-ist-fertig-title.jpg"
               linkTo="/essen-ist-fertig"
-              buttonText="Mehr erfahren"
+              buttonText="Pakete entdecken"
               accent="secondary"
               delay={0.2}
             />
@@ -128,10 +128,10 @@ const Index = () => {
             viewport={{ once: true }}
           >
             <div className="bg-accent/10 rounded-3xl p-8 border border-accent/20 inline-block">
-              <h3 className="text-2xl font-bold text-primary font-playfair mb-4">
+              <h3 className="text-xl font-bold text-primary font-playfair mb-4">
                 Leichter leben Blog
               </h3>
-              <p className="text-muted-foreground mb-6">
+              <p className="text-base text-muted-foreground mb-6">
                 Regelmäßige Tipps und Inspiration für einen leichteren Alltag
               </p>
               <motion.a 
@@ -162,10 +162,10 @@ const Index = () => {
             viewport={{ once: true }}
           >
             <div className="bg-primary/5 rounded-3xl p-8 md:p-12 border border-primary/10">
-              <h2 className="text-3xl md:text-4xl font-bold text-primary font-playfair mb-6">
+              <h2 className="text-3xl font-bold text-primary font-playfair mb-6">
                 Bereit für die gesunde Mission?
               </h2>
-              <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
+              <p className="text-base text-muted-foreground mb-8 leading-relaxed">
                 Lassen Sie uns gemeinsam die Reise zu einer gesunden und starken Entwicklung beginnen.
               </p>
               <motion.a 
