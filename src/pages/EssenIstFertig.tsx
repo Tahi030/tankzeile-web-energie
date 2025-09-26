@@ -47,129 +47,216 @@ const EssenIstFertig = () => {
             </div>
           </motion.div>
           
-          {/* Band 1 Section */}
-          <motion.section 
-            id="band1"
-            className="mb-16"
+          {/* Product Boxes - Two Side by Side */}
+          <div className="grid md:grid-cols-2 gap-8">
+            
+            {/* Laktoseintoleranz Box */}
+            <motion.div 
+              className="bg-card/80 backdrop-blur-sm rounded-2xl p-6 border border-border/50 shadow-lg"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+            >
+              <div className="space-y-6">
+                {/* Cover Image */}
+                <div className="text-center">
+                  <img 
+                    src="/assets/essen-ist-fertig-laktose.jpg" 
+                    alt="Essen ist fertig! bei Laktoseintoleranz Cover" 
+                    className="w-full max-w-64 mx-auto rounded-lg shadow-lg"
+                  />
+                </div>
+
+                {/* Content */}
+                <div className="space-y-4">
+                  <h2 className="text-xl font-bold text-foreground text-center">
+                    Essen ist fertig! bei Laktoseintoleranz
+                  </h2>
+                  
+                  <p className="text-muted-foreground text-center leading-relaxed">
+                    Deine kompakte Elternhilfe nach der Diagnose – übersichtlich, praxisnah und sofort nutzbar.
+                  </p>
+
+                  <ul className="space-y-2 text-sm text-muted-foreground">
+                    <li className="flex items-start gap-2">
+                      <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                      <span>Grundlagen einfach erklärt</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                      <span>über 50 Seiten klar aufbereitete Infos</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                      <span>Do's & Don'ts für Einkauf & Ernährung</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                      <span>Vorlage für Kita & Schule</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                      <span>10 schnelle Snackideen & Rezepte</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                      <span>Wochenbaukasten mit Beispielplan</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                      <span>Umfangreicher FAQ-Teil</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                      <span>Vorlage Ernährungstagebuch</span>
+                    </li>
+                  </ul>
+                </div>
+
+                {/* Purchase Section */}
+                <div className="bg-card/50 rounded-lg p-4 border border-border/30 text-center space-y-3">
+                  <div className="text-xl font-bold text-foreground">
+                    Einmalig 29,90 €
+                  </div>
+                  
+                  <motion.a
+                    href="https://paypal.me/tamarahillmann/29.90"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block bg-primary hover:bg-primary/90 text-primary-foreground px-4 py-2 rounded-lg transition-colors font-medium w-full text-sm"
+                    whileHover={{ scale: 1.02 }}
+                    whileTap={{ scale: 0.98 }}
+                  >
+                    Jetzt sichern über PayPal
+                  </motion.a>
+                  
+                  <div className="text-xs text-muted-foreground leading-relaxed">
+                    PDF-Paket und Rechnung automatisch per E-Mail
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Fruktoseintoleranz Box */}
+            <motion.div 
+              className="bg-card/80 backdrop-blur-sm rounded-2xl p-6 border border-border/50 shadow-lg"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+            >
+              <div className="space-y-6">
+                {/* Cover Image */}
+                <div className="text-center">
+                  <img 
+                    src="/assets/essen-ist-fertig-fruktose.jpg" 
+                    alt="Essen ist fertig! bei Fruktoseintoleranz Cover" 
+                    className="w-full max-w-64 mx-auto rounded-lg shadow-lg"
+                  />
+                </div>
+
+                {/* Content */}
+                <div className="space-y-4">
+                  <h2 className="text-xl font-bold text-foreground text-center">
+                    Essen ist fertig! bei Fruktoseintoleranz
+                  </h2>
+                  
+                  <p className="text-muted-foreground text-center leading-relaxed">
+                    Deine kompakte Elternhilfe nach der Diagnose – übersichtlich, praxisnah und sofort nutzbar.
+                  </p>
+
+                  <ul className="space-y-2 text-sm text-muted-foreground">
+                    <li className="flex items-start gap-2">
+                      <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                      <span>Grundlagen einfach erklärt</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                      <span>über 50 Seiten klar aufbereitete Infos</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                      <span>Do's & Don'ts für Einkauf & Ernährung</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                      <span>Vorlage für Kita & Schule</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                      <span>10 schnelle Snackideen & Rezepte</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                      <span>Wochenbaukasten mit Beispielplan</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                      <span>Umfangreicher FAQ-Teil</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                      <span>Vorlage Ernährungstagebuch</span>
+                    </li>
+                  </ul>
+                </div>
+
+                {/* Purchase Section */}
+                <div className="bg-card/50 rounded-lg p-4 border border-border/30 text-center space-y-3">
+                  <div className="text-xl font-bold text-foreground">
+                    Einmalig 29,90 €
+                  </div>
+                  
+                  <motion.a
+                    href="https://paypal.me/tamarahillmann/29.90"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block bg-primary hover:bg-primary/90 text-primary-foreground px-4 py-2 rounded-lg transition-colors font-medium w-full text-sm"
+                    whileHover={{ scale: 1.02 }}
+                    whileTap={{ scale: 0.98 }}
+                  >
+                    Jetzt sichern über PayPal
+                  </motion.a>
+                  
+                  <div className="text-xs text-muted-foreground leading-relaxed">
+                    PDF-Paket und Rechnung automatisch per E-Mail
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+
+          </div>
+
+          {/* Mini Preview Images */}
+          <motion.div 
+            className="mt-16"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
+            transition={{ duration: 0.8, delay: 0.5 }}
           >
-            <div className="bg-card/80 backdrop-blur-sm rounded-2xl p-6 md:p-8 border border-border/50 shadow-lg">
-              <div className="max-w-6xl mx-auto">
-                
-                {/* Main Content - Cover & Details */}
-                <div className="grid md:grid-cols-5 gap-8 mb-8">
-                  {/* Left Column - Cover Image */}
-                  <div className="md:col-span-2">
-                    <img 
-                      src="/assets/essen-ist-fertig-title.jpg" 
-                      alt="Essen ist fertig! bei Laktoseintoleranz Cover" 
-                      className="w-full rounded-lg shadow-lg"
-                    />
-                  </div>
-
-                  {/* Right Column - Content & Purchase */}
-                  <div className="md:col-span-3 space-y-6">
-                    <div>
-                      <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
-                        Essen ist fertig! bei Laktoseintoleranz
-                      </h2>
-                      
-                      <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-                        Deine kompakte Elternhilfe nach der Diagnose – übersichtlich, praxisnah und sofort nutzbar.
-                      </p>
-
-                      <ul className="space-y-2 text-muted-foreground mb-6">
-                        <li className="flex items-start gap-3">
-                          <span className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                          <span>Grundlagen einfach erklärt: Diagnose verstehen & Alltag meistern</span>
-                        </li>
-                        <li className="flex items-start gap-3">
-                          <span className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                          <span>über 50 Seiten klar aufbereitete Infos</span>
-                        </li>
-                        <li className="flex items-start gap-3">
-                          <span className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                          <span>Do's & Don'ts für Einkauf & Ernährung</span>
-                        </li>
-                        <li className="flex items-start gap-3">
-                          <span className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                          <span>Vorlage für Kita & Schule – direkt nutzbar</span>
-                        </li>
-                        <li className="flex items-start gap-3">
-                          <span className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                          <span>10 schnelle Snackideen & kindgerechte Rezepte</span>
-                        </li>
-                        <li className="flex items-start gap-3">
-                          <span className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                          <span>Wochenbaukasten (Tankbox) mit Beispiel-Wochenplan, Einkaufsliste und Wochenplan-Vorlage</span>
-                        </li>
-                        <li className="flex items-start gap-3">
-                          <span className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                          <span>umfangreicher FAQ-Teil mit Antworten wie in einer Beratung</span>
-                        </li>
-                        <li className="flex items-start gap-3">
-                          <span className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                          <span>Vorlage Ernährungstagebuch – zum Ausfüllen</span>
-                        </li>
-                      </ul>
-                    </div>
-
-                    {/* Purchase Section */}
-                    <div className="bg-card/50 rounded-lg p-4 border border-border/30 text-center space-y-3">
-                      <div className="text-2xl font-bold text-foreground mb-3">
-                        Einmalig 29,90 €
-                      </div>
-                      
-                      <motion.a
-                        href="https://paypal.me/tamarahillmann/29.90"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="block bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-3 rounded-lg transition-colors font-medium w-full"
-                        whileHover={{ scale: 1.02 }}
-                        whileTap={{ scale: 0.98 }}
-                      >
-                        Jetzt sichern über PayPal
-                      </motion.a>
-                      
-                      <div className="text-xs text-muted-foreground leading-relaxed">
-                        Dein PDF-Paket und die Rechnung erhältst du automatisch an die bei PayPal hinterlegte E-Mail-Adresse.
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Mini Preview Images */}
-                <div className="border-t border-border/30 pt-8">
-                  <div className="flex justify-center items-center gap-8 max-w-4xl mx-auto">
-                    <div className="transform rotate-1 hover:rotate-0 transition-transform duration-300">
-                      <img 
-                        src="/assets/rezept-ausschnitt.jpg" 
-                        alt="Rezept Ausschnitt" 
-                        className="w-48 h-auto object-contain rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 border border-border/30"
-                      />
-                    </div>
-                    <div className="transform -rotate-1 hover:rotate-0 transition-transform duration-300">
-                      <img 
-                        src="/assets/wochenplaner-ausschnitt.jpg" 
-                        alt="Wochenplaner Ausschnitt" 
-                        className="w-48 h-auto object-contain rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 border border-border/30"
-                      />
-                    </div>
-                    <div className="transform rotate-1 hover:rotate-0 transition-transform duration-300">
-                      <img 
-                        src="/assets/ernaehrungstagebuch-ausschnitt.jpg" 
-                        alt="Ernährungstagebuch Ausschnitt" 
-                        className="w-48 h-auto object-contain rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 border border-border/30"
-                      />
-                    </div>
-                  </div>
-                </div>
-
+            <div className="flex justify-center items-center gap-8 max-w-4xl mx-auto">
+              <div className="transform rotate-1 hover:rotate-0 transition-transform duration-300">
+                <img 
+                  src="/assets/rezept-ausschnitt.jpg" 
+                  alt="Rezept Ausschnitt" 
+                  className="w-48 h-auto object-contain rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 border border-border/30"
+                />
+              </div>
+              <div className="transform -rotate-1 hover:rotate-0 transition-transform duration-300">
+                <img 
+                  src="/assets/wochenplaner-ausschnitt.jpg" 
+                  alt="Wochenplaner Ausschnitt" 
+                  className="w-48 h-auto object-contain rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 border border-border/30"
+                />
+              </div>
+              <div className="transform rotate-1 hover:rotate-0 transition-transform duration-300">
+                <img 
+                  src="/assets/ernaehrungstagebuch-ausschnitt.jpg" 
+                  alt="Ernährungstagebuch Ausschnitt" 
+                  className="w-48 h-auto object-contain rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 border border-border/30"
+                />
               </div>
             </div>
-          </motion.section>
+          </motion.div>
 
 
         </div>
