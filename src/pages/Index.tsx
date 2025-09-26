@@ -22,7 +22,7 @@ const Index = () => {
       {/* Hero Section with large welcoming image */}
       <HeroWelcome />
 
-      {/* About Section - Introduction */}
+      {/* Captain Apfel Introduction - Moved higher */}
       <section className="section-padding">
         <div className="container-custom">
           <motion.div 
@@ -100,7 +100,7 @@ const Index = () => {
             <OfferCard
               title="Workshop: Reise zur Powerzentrale"
               description="Ein interaktiver Workshop, der Kinder auf eine spannende Reise zu gesunder Ernährung und starker Entwicklung mitnimmt. Mit Captain Apfel und seiner Crew entdecken sie die Geheimnisse der Powerzentrale."
-              imageUrl="/assets/reise-zur-powerzentrale.jpg"
+              imageUrl="/assets/workshop-powerzentrale.jpg"
               linkTo="/meine-angebote/workshop-gesunde-mission"
               buttonText="Workshop entdecken"
               accent="primary"
@@ -110,7 +110,7 @@ const Index = () => {
             <OfferCard
               title="Essen ist fertig!"
               description="Praktische Pakete zur Diagnose von Nahrungsmittelunverträglichkeiten bei Kindern. Speziell entwickelte Leitfäden, Rezepte und Alltagshilfen für Familien mit betroffenen Kindern."
-              imageUrl="/assets/essen-ist-fertig-title.jpg"
+              imageUrl="/assets/essen-ist-fertig-cover.jpg"
               linkTo="/essen-ist-fertig"
               buttonText="Pakete entdecken"
               accent="secondary"

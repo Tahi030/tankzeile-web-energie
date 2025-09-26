@@ -18,12 +18,25 @@ export const HeroWelcome = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="space-y-4"
+            className="space-y-4 relative"
           >
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-primary font-playfair leading-tight">
+            {/* Modern background element behind headline */}
+            <div className="absolute inset-0 -z-10">
+              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 
+                w-72 h-72 md:w-96 md:h-96 bg-gradient-to-br from-primary/20 to-secondary/20 
+                rounded-full blur-3xl opacity-60"></div>
+              <div className="absolute top-1/2 left-1/4 transform -translate-x-1/2 -translate-y-1/2 
+                w-48 h-48 md:w-64 md:h-64 bg-gradient-to-br from-accent/15 to-primary/15 
+                rounded-full blur-2xl opacity-50"></div>
+              <div className="absolute top-1/2 right-1/4 transform translate-x-1/2 -translate-y-1/2 
+                w-32 h-32 md:w-48 md:h-48 bg-gradient-to-br from-secondary/20 to-accent/20 
+                rounded-full blur-2xl opacity-40"></div>
+            </div>
+            
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-primary font-playfair leading-tight relative z-10">
               Captain Apfel
             </h1>
-            <p className="text-2xl md:text-3xl text-secondary font-medium">
+            <p className="text-2xl md:text-3xl text-secondary font-medium relative z-10">
               auf gesunder Mission
             </p>
           </motion.div>
