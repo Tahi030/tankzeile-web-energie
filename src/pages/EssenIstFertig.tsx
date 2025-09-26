@@ -119,11 +119,11 @@ const EssenIstFertig = () => {
                     {/* Purchase Section */}
                     <div className="bg-card/50 rounded-lg p-4 border border-border/30 text-center space-y-3">
                       <div className="text-2xl font-bold text-foreground mb-3">
-                        Einmalig 24,90 €
+                        Einmalig 29,90 €
                       </div>
                       
                       <motion.a
-                        href="https://paypal.me/tamarahillmann/24.90"
+                        href="https://paypal.me/tamarahillmann/29.90"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="block bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-3 rounded-lg transition-colors font-medium w-full"
