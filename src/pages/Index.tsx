@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { motion } from "framer-motion";
 import { HeroWelcome } from "@/components/HeroWelcome";
 import { ModernCrewSection } from "@/components/ModernCrewSection";
-import { OfferCard } from "@/components/OfferCard";
+import { UniformOfferCard } from "@/components/UniformOfferCard";
 
 const Index = () => {
   useEffect(() => {
@@ -22,8 +22,8 @@ const Index = () => {
       {/* Hero Section with large welcoming image */}
       <HeroWelcome />
 
-      {/* Captain Apfel Introduction - Moved higher */}
-      <section className="section-padding">
+      {/* Captain Apfel Introduction - Directly connected to hero */}
+      <section className="pt-0 pb-16">
         <div className="container-custom">
           <motion.div 
             className="max-w-4xl mx-auto"
@@ -97,7 +97,7 @@ const Index = () => {
           {/* Offer Cards */}
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             
-            <OfferCard
+            <UniformOfferCard
               title="Reise zur Powerzentrale"
               subtitle="Start: Frühjahr 2026"
               description="Mit Captain Apfel erleben Kinder ein spannendes Abenteuer: Wie kommt Energie in den Körper, was macht uns stark und konzentriert – und wie bleibt die Powerzentrale hell und aktiv?"
@@ -109,7 +109,7 @@ const Index = () => {
               delay={0.1}
             />
             
-            <OfferCard
+            <UniformOfferCard
               title="Essen ist fertig!"
               description="Praktische Pakete zur Diagnose von Nahrungsmittelunverträglichkeiten bei Kindern. Speziell entwickelte Leitfäden, Rezepte und Alltagshilfen für Familien mit betroffenen Kindern."
               imageUrl="/assets/essen-ist-fertig-cover.jpg"
@@ -127,76 +127,23 @@ const Index = () => {
           {/* Additional Content Boxes */}
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             
-            {/* Song Box */}
-            <motion.div 
-              className="bg-card/50 backdrop-blur-sm rounded-3xl p-8 shadow-lg border border-border/30 relative overflow-hidden"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-              viewport={{ once: true }}
-            >
-              <div className="relative z-10 space-y-6">
-                <div className="text-center">
-                  <h3 className="text-2xl font-bold text-primary font-playfair mb-4">
-                    5,4,3,2,1<br />– Volle Obst- und Gemüsekraft voraus!
-                  </h3>
-                  <p className="text-base text-muted-foreground leading-relaxed mb-6">
-                    Unser Mitmach-Lied zum Tanzen, Singen und Spaß haben. Beweg dich mit Captain Apfel & seiner Crew.
-                  </p>
-                  
-                  {/* Video Placeholder */}
-                  <div className="bg-primary/10 rounded-xl p-8 border-2 border-dashed border-primary/30 mb-4">
-                    <div className="flex flex-col items-center justify-center space-y-4">
-                      <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center">
-                        <svg className="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
-                          <path d="M8 5v14l11-7z"/>
-                        </svg>
-                      </div>
-                      <p className="text-primary font-medium">Mitmach-Lied Video</p>
-                      <p className="text-sm text-muted-foreground">Bald verfügbar</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              {/* Decorative background */}
-              <div className="absolute top-0 right-0 w-24 h-24 bg-accent/10 rounded-full -translate-y-12 translate-x-12" />
-            </motion.div>
+            <UniformOfferCard
+              title="5,4,3,2,1 – Volle Obst- und Gemüsekraft voraus!"
+              description="Unser Mitmach-Lied zum Tanzen, Singen und Spaß haben. Beweg dich mit Captain Apfel & seiner Crew."
+              videoPlaceholder={true}
+              accent="accent"
+              delay={0.4}
+            />
 
-            {/* Coloring Pages Box */}
-            <motion.div 
-              className="bg-card/50 backdrop-blur-sm rounded-3xl p-8 shadow-lg border border-border/30 relative overflow-hidden"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.5 }}
-              viewport={{ once: true }}
-            >
-              <div className="relative z-10 space-y-6">
-                <div className="text-center">
-                  <h3 className="text-2xl font-bold text-primary font-playfair mb-4">
-                    Mission Buntstift
-                  </h3>
-                  <p className="text-base text-muted-foreground leading-relaxed mb-6">
-                    Jetzt bist du dran: Stifte raus und los!
-                  </p>
-                  
-                  {/* Download Links for Coloring Pages */}
-                  <div className="space-y-3">
-                    <motion.a 
-                      href="/pdfs/lieblingsdose.pdf"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="block bg-secondary/10 hover:bg-secondary/20 border border-secondary/20 text-secondary px-4 py-3 rounded-lg font-medium transition-all duration-200"
-                      whileHover={{ scale: 1.02 }}
-                      whileTap={{ scale: 0.98 }}
-                    >
-                      Ausmalbilder herunterladen
-                    </motion.a>
-                  </div>
-                </div>
-              </div>
-              {/* Decorative background */}
-              <div className="absolute bottom-0 left-0 w-24 h-24 bg-primary/10 rounded-full translate-y-12 -translate-x-12" />
-            </motion.div>
+            <UniformOfferCard
+              title="Mission Buntstift"
+              description="Jetzt bist du dran: Stifte raus und los!"
+              downloadLinks={[
+                { text: "Ausmalbilder herunterladen", url: "/pdfs/lieblingsdose.pdf" }
+              ]}
+              accent="secondary"
+              delay={0.5}
+            />
 
           </div>
 
