@@ -121,6 +121,9 @@ const Index = () => {
             
           </div>
 
+          {/* Spacing between sections */}
+          <div className="mt-24"></div>
+
           {/* Additional Content Boxes */}
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             
@@ -137,9 +140,22 @@ const Index = () => {
                   <h3 className="text-2xl font-bold text-primary font-playfair mb-4">
                     5,4,3,2,1<br />– Volle Obst- und Gemüsekraft voraus!
                   </h3>
-                  <p className="text-base text-muted-foreground leading-relaxed">
+                  <p className="text-base text-muted-foreground leading-relaxed mb-6">
                     Unser Mitmach-Lied zum Tanzen, Singen und Spaß haben. Beweg dich mit Captain Apfel & seiner Crew.
                   </p>
+                  
+                  {/* Video Placeholder */}
+                  <div className="bg-primary/10 rounded-xl p-8 border-2 border-dashed border-primary/30 mb-4">
+                    <div className="flex flex-col items-center justify-center space-y-4">
+                      <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center">
+                        <svg className="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M8 5v14l11-7z"/>
+                        </svg>
+                      </div>
+                      <p className="text-primary font-medium">Mitmach-Lied Video</p>
+                      <p className="text-sm text-muted-foreground">Bald verfügbar</p>
+                    </div>
+                  </div>
                 </div>
               </div>
               {/* Decorative background */}
@@ -184,39 +200,6 @@ const Index = () => {
 
           </div>
 
-        </div>
-      </section>
-
-      {/* Call to Action Section */}
-      <section className="section-padding">
-        <div className="container-custom">
-          <motion.div 
-            className="max-w-4xl mx-auto text-center"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-          >
-            <div className="bg-primary/5 rounded-3xl p-8 md:p-12 border border-primary/10">
-              <h2 className="text-3xl font-bold text-primary font-playfair mb-6">
-                Bereit für die gesunde Mission?
-              </h2>
-              <p className="text-base text-muted-foreground mb-8 leading-relaxed">
-                Lassen Sie uns gemeinsam die Reise zu einer gesunden und starken Entwicklung beginnen.
-              </p>
-              <motion.a 
-                href="/kontakt"
-                className="inline-flex items-center px-8 py-4 bg-secondary text-white rounded-full font-semibold text-lg transition-all duration-200 hover:scale-105 shadow-lg hover:shadow-xl"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                Jetzt Kontakt aufnehmen
-                <svg className="ml-3 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
-              </motion.a>
-            </div>
-          </motion.div>
         </div>
       </section>
 
