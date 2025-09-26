@@ -40,26 +40,26 @@ const Index = () => {
               
               <div className="relative space-y-6">
                 <div className="text-center space-y-4">
-                  <p className="text-xl text-muted-foreground">
+                  <p className="text-base text-muted-foreground">
                     Hallo, ich bin
                   </p>
                   
-                  <h2 className="text-3xl md:text-4xl font-bold text-primary font-playfair">
+                  <h2 className="text-2xl font-playfair">
                     Captain Apfel
                   </h2>
                   
-                  <p className="text-xl text-muted-foreground">
+                  <p className="text-base text-muted-foreground">
                     Mit meiner Crew bin ich unterwegs auf gesunder Mission.
                   </p>
                 </div>
                 
                 <div className="space-y-6 text-center">
-                  <p className="text-lg leading-relaxed text-foreground">
-                    <strong className="text-primary">Berlin</strong> ist der Startpunkt unserer Reise. Von hier aus hebt das <strong className="text-secondary">Tomatenraumschiff</strong> ab und landet direkt in Einrichtungen mit Kindern im Vorschul- und Grundschulalter.
+                  <p className="text-base leading-relaxed text-muted-foreground">
+                    Berlin ist der Startpunkt unserer Reise. Von hier aus hebt das Tomatenraumschiff ab und landet direkt in Einrichtungen mit Kindern im Vorschul- und Grundschulalter.
                   </p>
                   
                   <div className="pt-6 border-t border-primary/10">
-                    <p className="text-xl font-semibold text-primary leading-relaxed">
+                    <p className="text-base text-muted-foreground leading-relaxed">
                       Denn gesunde Gewohnheiten geben uns Kraft, machen das Denken leichter und lassen uns rundum wohlfühlen.
                     </p>
                   </div>

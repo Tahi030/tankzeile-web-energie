@@ -44,19 +44,6 @@ export const ModernCrewSection = () => {
     <section className="section-padding">
       <div className="container-custom">
         
-        {/* Section Title */}
-        <motion.div 
-          className="text-center mb-16"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-        >
-          <h2 className="heading-lg mb-6">
-            Lerne die Crew von Captain Apfel kennen!
-          </h2>
-          <div className="w-24 h-1 bg-secondary mx-auto rounded-full" />
-        </motion.div>
 
         {/* Crew Grid */}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 max-w-6xl mx-auto">
@@ -74,11 +61,11 @@ export const ModernCrewSection = () => {
               }}
             >
               {/* Image Container */}
-              <div className="relative mb-4 p-4 bg-card rounded-2xl shadow-lg border border-border/50 transition-all duration-300 group-hover:shadow-xl">
+              <div className="relative mb-4 p-6 bg-card rounded-2xl shadow-lg border border-border/50 transition-all duration-300 group-hover:shadow-xl">
                 <img 
                   src={member.image} 
                   alt={member.name}
-                  className="w-20 h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 object-contain drop-shadow-lg"
+                  className="w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 object-contain drop-shadow-lg"
                 />
                 
                 {/* Decorative accent */}
