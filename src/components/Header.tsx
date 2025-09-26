@@ -63,27 +63,18 @@ const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const location = useLocation();
 
-  // Dynamic header color based on current page
+  // Modern header design
   const getHeaderColor = () => {
-    if (location.pathname === '/tankwelten/captain-apfel-workshop') {
-      return 'bg-gradient-to-r from-rose-100 via-sky-100 to-purple-100';
-    }
-    return 'bg-primary';
+    return 'bg-primary/95 backdrop-blur-sm border-b border-primary/20';
   };
 
-  // Dynamic text colors for Captain Apfelzahn page
+  // Consistent modern styling
   const getTextColor = () => {
-    if (location.pathname === '/tankwelten/captain-apfel-workshop') {
-      return 'text-rose-700';
-    }
     return 'text-white';
   };
 
   const getHoverColor = () => {
-    if (location.pathname === '/tankwelten/captain-apfel-workshop') {
-      return 'hover:bg-rose-200/30';
-    }
-    return 'hover:bg-primary/10';
+    return 'hover:bg-white/10';
   };
 
   return (
@@ -105,7 +96,7 @@ const Header = () => {
                 <div className="absolute left-0 invisible group-hover:visible opacity-0 group-hover:opacity-100 mt-2 w-60 rounded-md shadow-lg bg-white ring-1 ring-primary/20 z-50 transition-all duration-150">
                   <div className="py-1" role="menu" aria-orientation="vertical">
                     <DropdownItem to="/meine-angebote/workshop-gesunde-mission" label="Workshop - Reise zur Powerzentrale" />
-                    <DropdownItem to="/meine-angebote/alltag-leichter-leben" label="Alltag leichter leben" />
+                    <DropdownItem to="/meine-angebote/alltag-leichter-leben" label="Leichter leben Blog" />
                   </div>
                 </div>
               </div>
@@ -114,10 +105,7 @@ const Header = () => {
           
           <Link 
             to="/kontakt"
-            className={location.pathname === '/tankwelten/captain-apfel-workshop' 
-              ? `bg-gradient-to-r from-rose-200 to-sky-200 hover:from-rose-300 hover:to-sky-300 text-rose-700 px-4 lg:px-5 py-2 rounded-md transition-colors text-base lg:text-lg font-medium whitespace-nowrap border border-rose-300/50`
-              : `bg-secondary hover:bg-secondary-dark text-white px-4 lg:px-5 py-2 rounded-md transition-colors text-base lg:text-lg font-medium whitespace-nowrap`
-            }
+            className="bg-secondary hover:bg-secondary/90 text-white px-6 py-3 rounded-full transition-all duration-200 text-base font-medium whitespace-nowrap shadow-lg hover:shadow-xl"
             onClick={() => window.scrollTo(0, 0)}
           >
             Kontakt
@@ -166,7 +154,7 @@ const Header = () => {
                 Workshop - Reise zur Powerzentrale
               </Link>
               <Link to="/meine-angebote/alltag-leichter-leben" className="block pl-6 py-2 text-sm" onClick={() => {setMobileMenuOpen(false); window.scrollTo(0, 0);}}>
-                Alltag leichter leben
+                Leichter leben Blog
               </Link>
             </div>
             

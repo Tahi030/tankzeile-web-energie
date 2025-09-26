@@ -26,21 +26,21 @@ export default {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				primary: {
-					DEFAULT: '#c3aa97', // Main brand color
-					light: '#ded3c9',
-					dark: '#a48a78',
+					DEFAULT: 'hsl(var(--primary))', // Modern Anthracite
+					light: 'hsl(200 15% 35%)',
+					dark: 'hsl(200 15% 15%)',
 					foreground: 'hsl(var(--primary-foreground))'
 				},
 				secondary: {
-					DEFAULT: '#8a9b8f', // Complementary green
-					light: '#c5d3c9',
-					dark: '#667b6b',
+					DEFAULT: 'hsl(var(--secondary))', // Beautiful Olive Green
+					light: 'hsl(80 25% 55%)',
+					dark: 'hsl(80 25% 35%)',
 					foreground: 'hsl(var(--secondary-foreground))'
 				},
 				accent: {
-					DEFAULT: '#d7c0aa', // Warm accent
-					light: '#f0e6dc',
-					dark: '#b59c87',
+					DEFAULT: 'hsl(var(--accent))', // Light Olive accent
+					light: 'hsl(75 30% 75%)',
+					dark: 'hsl(75 30% 55%)',
 					foreground: 'hsl(var(--accent-foreground))'
 				},
 				blackberry: {
