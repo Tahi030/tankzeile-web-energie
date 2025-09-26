@@ -5,7 +5,9 @@ import { Link } from "react-router-dom";
 
 interface OfferCardProps {
   title: string;
+  subtitle?: string;
   description: string;
+  callToAction?: string;
   imageUrl: string;
   linkTo: string;
   buttonText: string;
@@ -15,7 +17,9 @@ interface OfferCardProps {
 
 export const OfferCard = ({ 
   title, 
+  subtitle,
   description, 
+  callToAction,
   imageUrl, 
   linkTo, 
   buttonText, 
@@ -44,13 +48,26 @@ export const OfferCard = ({
       
       {/* Content */}
       <div className="space-y-4">
-        <h3 className="text-xl font-bold text-primary font-playfair">
-          {title}
-        </h3>
+        <div>
+          <h3 className="text-xl font-bold text-primary font-playfair">
+            {title}
+          </h3>
+          {subtitle && (
+            <p className="text-sm text-secondary font-medium mt-1">
+              {subtitle}
+            </p>
+          )}
+        </div>
         
         <p className="text-base text-muted-foreground leading-relaxed">
           {description}
         </p>
+        
+        {callToAction && (
+          <p className="text-base text-primary font-medium">
+            {callToAction}
+          </p>
+        )}
         
         <Link to={linkTo}>
           <Button 

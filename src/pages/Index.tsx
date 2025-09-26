@@ -98,11 +98,13 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             
             <OfferCard
-              title="Workshop: Reise zur Powerzentrale"
-              description="Ein interaktiver Workshop, der Kinder auf eine spannende Reise zu gesunder Ernährung und starker Entwicklung mitnimmt. Mit Captain Apfel und seiner Crew entdecken sie die Geheimnisse der Powerzentrale."
-              imageUrl="/assets/workshop-powerzentrale.jpg"
-              linkTo="/meine-angebote/workshop-gesunde-mission"
-              buttonText="Workshop entdecken"
+              title="Reise zur Powerzentrale"
+              subtitle="Start: Frühjahr 2026"
+              description="Mit Captain Apfel erleben Kinder ein spannendes Abenteuer: Wie kommt Energie in den Körper, was macht uns stark und konzentriert – und wie bleibt die Powerzentrale hell und aktiv?"
+              callToAction="👉 Bald landet Captain Apfel auch in deiner Kita!"
+              imageUrl="/assets/workshop-powerzentrale-enhanced.jpg"
+              linkTo="/kontakt"
+              buttonText="Vormerken lassen"
               accent="primary"
               delay={0.1}
             />
@@ -119,34 +121,68 @@ const Index = () => {
             
           </div>
 
-          {/* Blog Highlight */}
-          <motion.div 
-            className="mt-16 text-center"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-            viewport={{ once: true }}
-          >
-            <div className="bg-accent/10 rounded-3xl p-8 border border-accent/20 inline-block">
-              <h3 className="text-xl font-bold text-primary font-playfair mb-4">
-                Leichter leben Blog
-              </h3>
-              <p className="text-base text-muted-foreground mb-6">
-                Regelmäßige Tipps und Inspiration für einen leichteren Alltag
-              </p>
-              <motion.a 
-                href="/meine-angebote/alltag-leichter-leben"
-                className="inline-flex items-center px-6 py-3 bg-accent text-accent-foreground rounded-full font-medium transition-all duration-200 hover:scale-105"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                Blog besuchen
-                <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </motion.a>
-            </div>
-          </motion.div>
+          {/* Additional Content Boxes */}
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            
+            {/* Song Box */}
+            <motion.div 
+              className="bg-card/50 backdrop-blur-sm rounded-3xl p-8 shadow-lg border border-border/30 relative overflow-hidden"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+              viewport={{ once: true }}
+            >
+              <div className="relative z-10 space-y-6">
+                <div className="text-center">
+                  <h3 className="text-2xl font-bold text-primary font-playfair mb-4">
+                    5,4,3,2,1<br />– Volle Obst- und Gemüsekraft voraus!
+                  </h3>
+                  <p className="text-base text-muted-foreground leading-relaxed">
+                    Unser Mitmach-Lied zum Tanzen, Singen und Spaß haben. Beweg dich mit Captain Apfel & seiner Crew.
+                  </p>
+                </div>
+              </div>
+              {/* Decorative background */}
+              <div className="absolute top-0 right-0 w-24 h-24 bg-accent/10 rounded-full -translate-y-12 translate-x-12" />
+            </motion.div>
+
+            {/* Coloring Pages Box */}
+            <motion.div 
+              className="bg-card/50 backdrop-blur-sm rounded-3xl p-8 shadow-lg border border-border/30 relative overflow-hidden"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.5 }}
+              viewport={{ once: true }}
+            >
+              <div className="relative z-10 space-y-6">
+                <div className="text-center">
+                  <h3 className="text-2xl font-bold text-primary font-playfair mb-4">
+                    Mission Buntstift
+                  </h3>
+                  <p className="text-base text-muted-foreground leading-relaxed mb-6">
+                    Jetzt bist du dran: Stifte raus und los!
+                  </p>
+                  
+                  {/* Download Links for Coloring Pages */}
+                  <div className="space-y-3">
+                    <motion.a 
+                      href="/pdfs/lieblingsdose.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block bg-secondary/10 hover:bg-secondary/20 border border-secondary/20 text-secondary px-4 py-3 rounded-lg font-medium transition-all duration-200"
+                      whileHover={{ scale: 1.02 }}
+                      whileTap={{ scale: 0.98 }}
+                    >
+                      Ausmalbilder herunterladen
+                    </motion.a>
+                  </div>
+                </div>
+              </div>
+              {/* Decorative background */}
+              <div className="absolute bottom-0 left-0 w-24 h-24 bg-primary/10 rounded-full translate-y-12 -translate-x-12" />
+            </motion.div>
+
+          </div>
 
         </div>
       </section>
