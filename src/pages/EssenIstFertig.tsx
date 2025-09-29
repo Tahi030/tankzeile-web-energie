@@ -208,7 +208,7 @@ const EssenIstFertig = () => {
                   </div>
                   
                   <motion.a
-                    href="/pdfs/essen-ist-fertig-gluten-v3.pdf"
+                    href="/pdfs/essen-ist-fertig-gluten-v4.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block bg-primary hover:bg-primary/90 text-primary-foreground px-4 py-2 rounded-lg transition-colors font-medium w-full text-sm"

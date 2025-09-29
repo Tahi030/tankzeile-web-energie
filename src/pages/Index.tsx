@@ -152,9 +152,9 @@ const Index = () => {
               title="Mission Buntstift"
               description="Jetzt bist du dran: Stifte raus und los!"
               coloringPages={[
-                { imageUrl: "/lovable-uploads/paffel.png", pdfUrl: "/pdfs/paffel-ausmalbild-final.pdf" },
-                { imageUrl: "/lovable-uploads/powerzentrale.png", pdfUrl: "/pdfs/powerzentrale-ausmalbild-final.pdf" },
-                { imageUrl: "/lovable-uploads/captain-apfel.png", pdfUrl: "/pdfs/captain-apfel-ausmalbild-final.pdf" }
+                { imageUrl: "/lovable-uploads/paffel.png", pdfUrl: "/pdfs/paffel-ausmalbild-v4.pdf" },
+                { imageUrl: "/lovable-uploads/powerzentrale.png", pdfUrl: "/pdfs/powerzentrale-ausmalbild-v4.pdf" },
+                { imageUrl: "/lovable-uploads/captain-apfel.png", pdfUrl: "/pdfs/captain-apfel-ausmalbild-v3.pdf" }
               ]}
               accent="secondary"
               delay={0.5}
