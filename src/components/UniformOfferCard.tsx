@@ -7,6 +7,7 @@ interface UniformOfferCardProps {
   callToAction?: string;
   imageUrl?: string;
   videoPlaceholder?: boolean;
+  coloringPages?: { imageUrl: string; pdfUrl: string }[];
   downloadLinks?: { text: string; url: string }[];
   linkTo?: string;
   buttonText?: string;
@@ -21,6 +22,7 @@ export const UniformOfferCard = ({
   callToAction,
   imageUrl,
   videoPlaceholder,
+  coloringPages,
   downloadLinks,
   linkTo, 
   buttonText, 
@@ -83,6 +85,31 @@ export const UniformOfferCard = ({
             <p className="text-base text-primary font-medium">
               {callToAction}
             </p>
+          )}
+
+          {/* Coloring Pages Grid */}
+          {coloringPages && (
+            <div className="grid grid-cols-3 gap-3">
+              {coloringPages.map((page, index) => (
+                <div key={index} className="space-y-2">
+                  <img 
+                    src={page.imageUrl} 
+                    alt="Ausmalbild" 
+                    className="w-full h-20 object-cover rounded-lg border border-border/30"
+                  />
+                  <motion.a 
+                    href={page.pdfUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block bg-secondary/10 hover:bg-secondary/20 border border-secondary/20 text-secondary px-2 py-1 rounded text-xs font-medium transition-all duration-200 text-center"
+                    whileHover={{ scale: 1.02 }}
+                    whileTap={{ scale: 0.98 }}
+                  >
+                    PDF
+                  </motion.a>
+                </div>
+              ))}
+            </div>
           )}
 
           {/* Download Links */}

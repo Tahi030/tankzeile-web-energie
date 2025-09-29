@@ -151,9 +151,10 @@ const Index = () => {
             <UniformOfferCard
               title="Mission Buntstift"
               description="Jetzt bist du dran: Stifte raus und los!"
-              downloadLinks={[
-                { text: "Paffel & Tomatenraumschiff", url: "/pdfs/paffel-ausmalbild.pdf" },
-                { text: "Powerzentrale Ausmalbild", url: "/pdfs/powerzentrale-ausmalbild.pdf" }
+              coloringPages={[
+                { imageUrl: "/lovable-uploads/paffel.png", pdfUrl: "/pdfs/paffel-ausmalbild-v2.pdf" },
+                { imageUrl: "/lovable-uploads/powerzentrale.png", pdfUrl: "/pdfs/powerzentrale-ausmalbild-v2.pdf" },
+                { imageUrl: "/lovable-uploads/captain-apfel.png", pdfUrl: "/pdfs/captain-apfel-ausmalbild.pdf" }
               ]}
               accent="secondary"
               delay={0.5}
