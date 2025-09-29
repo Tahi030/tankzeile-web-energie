@@ -81,6 +81,17 @@ const Header = () => {
     <header className={`${getHeaderColor()} sticky top-0 z-50 shadow-md`}>
       <div className="container-custom">
         <div className="flex justify-between items-center py-2">
+          {/* Logo on the left */}
+          <div className="flex items-center">
+            <Link to="/" className="flex items-center" onClick={() => window.scrollTo(0, 0)}>
+              <img 
+                src="/powerzentrale-favicon.png" 
+                alt="Captain Apfel Powerzentrale Logo" 
+                className="h-10 w-10 mr-3"
+              />
+            </Link>
+          </div>
+
           {/* Desktop Navigation - centered */}
           <nav className="hidden md:flex items-center justify-center flex-1">
             <div className="flex items-center justify-center space-x-1 lg:space-x-2">
@@ -102,17 +113,16 @@ const Header = () => {
               </div>
             </div>
           </nav>
-          
-          <Link 
-            to="/kontakt"
-            className="bg-secondary hover:bg-secondary/90 text-white px-6 py-3 rounded-full transition-all duration-200 text-base font-medium whitespace-nowrap shadow-lg hover:shadow-xl"
-            onClick={() => window.scrollTo(0, 0)}
-          >
-            Kontakt
-          </Link>
-
-          {/* Mobile Menu Button */}
-          <div className="md:hidden">
+          {/* Mobile Logo and Menu */}
+          <div className="md:hidden flex items-center justify-between w-full">
+            <Link to="/" className="flex items-center" onClick={() => window.scrollTo(0, 0)}>
+              <img 
+                src="/powerzentrale-favicon.png" 
+                alt="Captain Apfel Powerzentrale Logo" 
+                className="h-8 w-8 mr-2"
+              />
+            </Link>
+            
             <button
               type="button"
               className={location.pathname === '/tankwelten/captain-apfel-workshop'
@@ -124,6 +134,17 @@ const Header = () => {
               <span className="sr-only">Menü öffnen</span>
               {mobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
             </button>
+          </div>
+
+          {/* Contact Button - Desktop */}
+          <div className="hidden md:block">
+            <Link 
+              to="/kontakt"
+              className="bg-secondary hover:bg-secondary/90 text-white px-6 py-3 rounded-full transition-all duration-200 text-base font-medium whitespace-nowrap shadow-lg hover:shadow-xl"
+              onClick={() => window.scrollTo(0, 0)}
+            >
+              Kontakt
+            </Link>
           </div>
         </div>
       </div>
