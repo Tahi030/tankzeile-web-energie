@@ -157,7 +157,8 @@ const EssenIstFertig = () => {
                 {/* Content */}
                 <div className="space-y-4">
                   <h2 className="text-xl font-bold text-foreground text-center">
-                    Essen ist fertig! bei Glutenunverträglichkeit
+                    Essen ist fertig! bei Glutenunverträglichkeit<br />
+                    (Zöliakie / Glutensensitivität)
                   </h2>
                   
                   <p className="text-muted-foreground text-center leading-relaxed">
@@ -207,7 +208,7 @@ const EssenIstFertig = () => {
                   </div>
                   
                   <motion.a
-                    href="/pdfs/essen-ist-fertig-gluten-final.pdf"
+                    href="/pdfs/essen-ist-fertig-gluten-v3.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block bg-primary hover:bg-primary/90 text-primary-foreground px-4 py-2 rounded-lg transition-colors font-medium w-full text-sm"
