@@ -47,45 +47,8 @@ const EssenIstFertig = () => {
             </div>
           </motion.div>
           
-          {/* Product Boxes - Three in Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-            
-            {/* Glutenunverträglichkeit Box - Compact */}
-            <motion.div 
-              className="bg-card/80 backdrop-blur-sm rounded-2xl p-4 border border-border/50 shadow-lg"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-            >
-              <div className="space-y-4">
-                <h2 className="text-lg font-bold text-foreground text-center">
-                  Glutenunverträglichkeit
-                </h2>
-                <p className="text-sm text-muted-foreground text-center">
-                  Kompakte Hilfe bei Zöliakie & Glutensensitivität
-                </p>
-                
-                <div className="bg-card/50 rounded-lg p-3 border border-border/30 text-center space-y-2">
-                  <div className="text-lg font-bold text-foreground">
-                    Demnächst
-                  </div>
-                  <motion.a
-                    href="/pdfs/essen-ist-fertig-gluten.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block bg-secondary hover:bg-secondary/90 text-secondary-foreground px-3 py-2 rounded-lg transition-colors font-medium w-full text-sm"
-                    whileHover={{ scale: 1.02 }}
-                    whileTap={{ scale: 0.98 }}
-                  >
-                    Vorabversion laden
-                  </motion.a>
-                </div>
-              </div>
-            </motion.div>
-          </div>
-
-          {/* Main Product Boxes - Two Side by Side */}
-          <div className="grid md:grid-cols-2 gap-8">
+          {/* Product Boxes - Three Equal Boxes */}
+          <div className="grid md:grid-cols-3 gap-8">
             
             {/* Laktoseintoleranz Box */}
             <motion.div 
@@ -174,12 +137,99 @@ const EssenIstFertig = () => {
               </div>
             </motion.div>
 
-            {/* Fruktoseintoleranz Box */}
+            {/* Glutenunverträglichkeit Box */}
             <motion.div 
               className="bg-card/80 backdrop-blur-sm rounded-2xl p-6 border border-border/50 shadow-lg"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
+            >
+              <div className="space-y-6">
+                {/* Cover Image */}
+                <div className="text-center">
+                  <img 
+                    src="/assets/essen-ist-fertig-title.jpg" 
+                    alt="Essen ist fertig! bei Glutenunverträglichkeit Cover" 
+                    className="w-full max-w-64 mx-auto rounded-lg shadow-lg"
+                  />
+                </div>
+
+                {/* Content */}
+                <div className="space-y-4">
+                  <h2 className="text-xl font-bold text-foreground text-center">
+                    Essen ist fertig! bei Glutenunverträglichkeit
+                  </h2>
+                  
+                  <p className="text-muted-foreground text-center leading-relaxed">
+                    Deine kompakte Elternhilfe nach der Diagnose – übersichtlich, praxisnah und sofort nutzbar.
+                  </p>
+
+                  <ul className="space-y-2 text-sm text-muted-foreground">
+                    <li className="flex items-start gap-2">
+                      <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                      <span>Grundlagen einfach erklärt</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                      <span>über 50 Seiten klar aufbereitete Infos</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                      <span>Do's & Don'ts für Einkauf & Ernährung</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                      <span>Vorlage für Kita & Schule</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                      <span>10 schnelle Snackideen & Rezepte</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                      <span>Wochenbaukasten mit Beispielplan</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                      <span>Umfangreicher FAQ-Teil</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                      <span>Vorlage Ernährungstagebuch</span>
+                    </li>
+                  </ul>
+                </div>
+
+                {/* Purchase Section */}
+                <div className="bg-card/50 rounded-lg p-4 border border-border/30 text-center space-y-3">
+                  <div className="text-xl font-bold text-foreground">
+                    Einmalig 29,90 €
+                  </div>
+                  
+                  <motion.a
+                    href="/pdfs/essen-ist-fertig-gluten-final.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block bg-primary hover:bg-primary/90 text-primary-foreground px-4 py-2 rounded-lg transition-colors font-medium w-full text-sm"
+                    whileHover={{ scale: 1.02 }}
+                    whileTap={{ scale: 0.98 }}
+                  >
+                    Jetzt sichern über PayPal
+                  </motion.a>
+                  
+                  <div className="text-xs text-muted-foreground leading-relaxed">
+                    PDF-Paket und Rechnung automatisch per E-Mail
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Fruktoseintoleranz Box */}
+            <motion.div 
+              className="bg-card/80 backdrop-blur-sm rounded-2xl p-6 border border-border/50 shadow-lg"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.5 }}
             >
               <div className="space-y-6">
                 {/* Cover Image */}
