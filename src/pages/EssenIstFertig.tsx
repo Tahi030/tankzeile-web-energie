@@ -148,7 +148,7 @@ const EssenIstFertig = () => {
                 {/* Cover Image */}
                 <div className="text-center">
                   <img 
-                    src="/assets/essen-ist-fertig-title.jpg" 
+                    src="/assets/essen-ist-fertig-gluten.jpg" 
                     alt="Essen ist fertig! bei Glutenunverträglichkeit Cover" 
                     className="w-full max-w-64 mx-auto rounded-lg shadow-lg"
                   />
@@ -208,7 +208,7 @@ const EssenIstFertig = () => {
                   </div>
                   
                   <motion.a
-                    href="/pdfs/essen-ist-fertig-gluten-v4.pdf"
+                    href="/pdfs/essen-ist-fertig-gluten-v5.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block bg-primary hover:bg-primary/90 text-primary-foreground px-4 py-2 rounded-lg transition-colors font-medium w-full text-sm"
