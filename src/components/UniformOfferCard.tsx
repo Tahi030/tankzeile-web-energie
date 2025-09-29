@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Download } from "lucide-react";
 
 interface UniformOfferCardProps {
   title: string | React.ReactNode;
@@ -101,10 +102,11 @@ export const UniformOfferCard = ({
                     href={page.pdfUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="block bg-secondary/10 hover:bg-secondary/20 border border-secondary/20 text-secondary px-2 py-1 rounded text-xs font-medium transition-all duration-200 text-center"
+                    className="flex items-center justify-center gap-1 bg-secondary/10 hover:bg-secondary/20 border border-secondary/20 text-secondary px-2 py-1 rounded text-xs font-medium transition-all duration-200"
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
                   >
+                    <Download size={12} />
                     PDF
                   </motion.a>
                 </div>
