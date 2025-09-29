@@ -87,7 +87,7 @@ const Header = () => {
               <img 
                 src="/powerzentrale-favicon.png" 
                 alt="Captain Apfel Powerzentrale Logo" 
-                className="h-10 w-10 mr-3"
+                className="h-12 w-12 md:h-14 md:w-14 mr-3"
               />
             </Link>
           </div>
@@ -113,16 +113,9 @@ const Header = () => {
               </div>
             </div>
           </nav>
-          {/* Mobile Logo and Menu */}
-          <div className="md:hidden flex items-center justify-between w-full">
-            <Link to="/" className="flex items-center" onClick={() => window.scrollTo(0, 0)}>
-              <img 
-                src="/powerzentrale-favicon.png" 
-                alt="Captain Apfel Powerzentrale Logo" 
-                className="h-8 w-8 mr-2"
-              />
-            </Link>
-            
+          
+          {/* Mobile Menu Button */}
+          <div className="md:hidden">
             <button
               type="button"
               className={location.pathname === '/tankwelten/captain-apfel-workshop'
