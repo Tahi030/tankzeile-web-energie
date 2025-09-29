@@ -96,7 +96,7 @@ export const UniformOfferCard = ({
                   <img 
                     src={page.imageUrl} 
                     alt="Ausmalbild" 
-                    className="w-full h-20 object-cover rounded-lg border border-border/30"
+                    className="w-full h-32 object-contain rounded-lg border border-border/30"
                   />
                   <motion.a 
                     href={page.pdfUrl}
