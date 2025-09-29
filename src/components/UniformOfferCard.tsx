@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 interface UniformOfferCardProps {
-  title: string;
+  title: string | React.ReactNode;
   subtitle?: string;
   description: string;
   callToAction?: string;
@@ -41,7 +41,7 @@ export const UniformOfferCard = ({
           <div className="mb-6">
             <img 
               src={imageUrl} 
-              alt={title} 
+              alt={typeof title === 'string' ? title : 'Angebot'} 
               className="w-full h-48 object-cover rounded-lg shadow-md"
             />
           </div>

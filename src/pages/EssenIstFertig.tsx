@@ -47,7 +47,44 @@ const EssenIstFertig = () => {
             </div>
           </motion.div>
           
-          {/* Product Boxes - Two Side by Side */}
+          {/* Product Boxes - Three in Grid */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+            
+            {/* Glutenunverträglichkeit Box - Compact */}
+            <motion.div 
+              className="bg-card/80 backdrop-blur-sm rounded-2xl p-4 border border-border/50 shadow-lg"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+            >
+              <div className="space-y-4">
+                <h2 className="text-lg font-bold text-foreground text-center">
+                  Glutenunverträglichkeit
+                </h2>
+                <p className="text-sm text-muted-foreground text-center">
+                  Kompakte Hilfe bei Zöliakie & Glutensensitivität
+                </p>
+                
+                <div className="bg-card/50 rounded-lg p-3 border border-border/30 text-center space-y-2">
+                  <div className="text-lg font-bold text-foreground">
+                    Demnächst
+                  </div>
+                  <motion.a
+                    href="/pdfs/essen-ist-fertig-gluten.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block bg-secondary hover:bg-secondary/90 text-secondary-foreground px-3 py-2 rounded-lg transition-colors font-medium w-full text-sm"
+                    whileHover={{ scale: 1.02 }}
+                    whileTap={{ scale: 0.98 }}
+                  >
+                    Vorabversion laden
+                  </motion.a>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+
+          {/* Main Product Boxes - Two Side by Side */}
           <div className="grid md:grid-cols-2 gap-8">
             
             {/* Laktoseintoleranz Box */}

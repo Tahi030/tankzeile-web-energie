@@ -128,7 +128,20 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             
             <UniformOfferCard
-              title="5,4,3,2,1 – Volle Obst- und Gemüsekraft voraus!"
+              title={
+                <span>
+                  <span className="text-red-500 font-bold">5</span>
+                  <span className="text-orange-500 font-bold">,</span>
+                  <span className="text-yellow-500 font-bold">4</span>
+                  <span className="text-green-500 font-bold">,</span>
+                  <span className="text-blue-500 font-bold">3</span>
+                  <span className="text-purple-500 font-bold">,</span>
+                  <span className="text-pink-500 font-bold">2</span>
+                  <span className="text-red-500 font-bold">,</span>
+                  <span className="text-orange-500 font-bold">1</span>
+                  <span className="text-foreground"> – Volle Obst- und Gemüsekraft voraus!</span>
+                </span>
+              }
               description="Unser Mitmach-Lied zum Tanzen, Singen und Spaß haben. Beweg dich mit Captain Apfel & seiner Crew."
               videoPlaceholder={true}
               accent="accent"
@@ -139,7 +152,8 @@ const Index = () => {
               title="Mission Buntstift"
               description="Jetzt bist du dran: Stifte raus und los!"
               downloadLinks={[
-                { text: "Ausmalbilder herunterladen", url: "/pdfs/lieblingsdose.pdf" }
+                { text: "Paffel & Tomatenraumschiff", url: "/pdfs/paffel-ausmalbild.pdf" },
+                { text: "Powerzentrale Ausmalbild", url: "/pdfs/powerzentrale-ausmalbild.pdf" }
               ]}
               accent="secondary"
               delay={0.5}
