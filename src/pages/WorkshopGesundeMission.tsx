@@ -14,7 +14,7 @@ const WorkshopGesundeMission = () => {
       <section className="bg-secondary-light py-16 md:py-24">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
-            <h1 className="text-3xl md:text-4xl font-bold mb-6 text-white">Workshop - auf gesunder Mission</h1>
+            <h1 className="text-3xl md:text-4xl font-bold mb-6 text-white">Reise zur Powerzentrale: Erlebnisworkshop Ernährung & Bewegung – für Vorschulkinder und Grundschule</h1>
             <div className="flex justify-center mb-6">
               <svg width="120" height="8" viewBox="0 0 120 8" className="text-white">
                 <path
@@ -51,7 +51,6 @@ const WorkshopGesundeMission = () => {
             <div className="prose prose-lg max-w-none">
               
               <div className="my-8 bg-primary-light p-6 rounded-lg">
-                <h2 className="text-2xl font-semibold mb-4 text-white">Reise zur Powerzentrale: Erlebnisworkshop Ernährung & Bewegung – für Vorschulkinder und Grundschule</h2>
                 <p className="text-lg mb-4 text-white">mit Captain Apfel & seiner Crew</p>
                 <div className="flex justify-center mb-6">
                   <svg width="120" height="8" viewBox="0 0 120 8" className="text-white">
