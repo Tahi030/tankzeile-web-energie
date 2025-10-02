@@ -116,11 +116,11 @@ const EssenIstFertig = () => {
                 {/* Purchase Section */}
                 <div className="bg-card/50 rounded-lg p-4 border border-border/30 text-center space-y-3">
                   <div className="text-xl font-bold text-foreground">
-                    Einmalig 29,90 €
+                    Einmalig 22,00 €
                   </div>
                   
                   <motion.a
-                    href="https://paypal.me/tamarahillmann/29.90"
+                    href="https://paypal.me/tamarahillmann/22.00"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block bg-primary hover:bg-primary/90 text-primary-foreground px-4 py-2 rounded-lg transition-colors font-medium w-full text-sm"
@@ -204,11 +204,11 @@ const EssenIstFertig = () => {
                 {/* Purchase Section */}
                 <div className="bg-card/50 rounded-lg p-4 border border-border/30 text-center space-y-3">
                   <div className="text-xl font-bold text-foreground">
-                    Einmalig 29,90 €
+                    Einmalig 22,00 €
                   </div>
                   
                   <motion.a
-                    href="/pdfs/essen-ist-fertig-gluten-v5.pdf"
+                    href="https://paypal.me/tamarahillmann/22.00"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block bg-primary hover:bg-primary/90 text-primary-foreground px-4 py-2 rounded-lg transition-colors font-medium w-full text-sm"
@@ -291,11 +291,11 @@ const EssenIstFertig = () => {
                 {/* Purchase Section */}
                 <div className="bg-card/50 rounded-lg p-4 border border-border/30 text-center space-y-3">
                   <div className="text-xl font-bold text-foreground">
-                    Einmalig 29,90 €
+                    Einmalig 22,00 €
                   </div>
                   
                   <motion.a
-                    href="https://paypal.me/tamarahillmann/29.90"
+                    href="https://paypal.me/tamarahillmann/22.00"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block bg-primary hover:bg-primary/90 text-primary-foreground px-4 py-2 rounded-lg transition-colors font-medium w-full text-sm"

@@ -45,46 +45,7 @@ const AlltagLeichterLeben = () => {
         </div>
       </section>
 
-      {/* Main Content */}
-      <section className="section-padding">
-        <div className="container-custom">
-          <div className="max-w-3xl mx-auto">
-            <div className="prose prose-lg max-w-none">
-              <div className="mb-6">
-                <h2 className="heading-lg text-primary-dark text-left italic font-normal mb-3">Warum Struktur beim Essen hilft</h2>
-                {/* Hand-drawn line effect */}
-                <div className="flex justify-start mb-4">
-                  <svg width="120" height="8" viewBox="0 0 120 8" className="text-primary">
-                    <path
-                      d="M2,4 Q8,2 15,4 T30,3 Q40,5 50,4 T70,3 Q80,5 90,4 T110,3 Q115,2 118,4"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      fill="none"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="opacity-70"
-                      style={{
-                        filter: 'url(#roughPaperStructure)',
-                      }}
-                    />
-                    <defs>
-                      <filter id="roughPaperStructure">
-                        <feTurbulence baseFrequency="0.04" numOctaves="3" result="noise" seed="1" />
-                        <feDisplacementMap in="SourceGraphic" in2="noise" scale="0.8" />
-                      </filter>
-                    </defs>
-                  </svg>
-                </div>
-                <p className="body-lg">
-                  Wenn du weißt, was auf den Tisch kommt, sparst du Energie und Stress. Weniger Entscheidungen im Kopf, mehr Zeit für Quality-Time mit deinen Kindern. Denn genau diese gemeinsamen Momente im Hier und Jetzt zählen wirklich und bleiben in Erinnerung. Genieße sie!
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* PDF Download Section */}
+      {/* Blog Posts Section */}
       <section className="section-padding bg-accent-light">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
@@ -93,7 +54,7 @@ const AlltagLeichterLeben = () => {
                 Deine Alltagshelfer to go!
               </h2>
               {/* Hand-drawn line effect */}
-              <div className="flex justify-start mb-4">
+              <div className="flex justify-start mb-6">
                 <svg width="120" height="8" viewBox="0 0 120 8" className="text-primary">
                   <path
                     d="M2,4 Q8,2 15,4 T30,3 Q40,5 50,4 T70,3 Q80,5 90,4 T110,3 Q115,2 118,4"
@@ -115,14 +76,25 @@ const AlltagLeichterLeben = () => {
                   </defs>
                 </svg>
               </div>
-              <p className="body-base text-gray-600 mb-6">
-                Hier findest du regelmäßig kostenlose PDF-Dateien voller Ideen, Tipps und Informationen, die deinen Alltag leichter, gesünder und einfach schöner machen. Hol dir gleich deine erste Datei – und schau gern immer wieder vorbei, bald warten weitere kleine Helfer auf dich.
-              </p>
-              <p className="body-base text-gray-600 mb-6">
-                Viel Spaß beim Entdecken!
-              </p>
               
-              <div className="bg-gradient-to-r from-primary-light/20 to-secondary-light/20 rounded-lg p-6">
+              {/* Blog Post 1: Rezepte */}
+              <div className="bg-gradient-to-r from-primary-light/20 to-secondary-light/20 rounded-lg p-6 mb-6">
+                <h3 className="heading-sm text-primary-dark mb-3">
+                  Gesunde Rezepte für die ganze Familie
+                </h3>
+                <p className="body-base text-gray-600 mb-4">
+                  Entdecke leckere und ausgewogene Rezeptideen, die nicht nur gesund sind, sondern auch Kindern schmecken. Von schnellen Frühstücksideen bis zu kinderfreundlichen Hauptgerichten.
+                </p>
+                <div className="flex flex-col items-center gap-4">
+                  <div className="w-60 h-60 md:w-72 md:h-72 bg-gradient-to-br from-primary-light/30 to-secondary-light/30 rounded-lg flex items-center justify-center">
+                    <span className="text-gray-400 text-sm">Rezeptbild folgt in Kürze</span>
+                  </div>
+                  <span className="text-gray-400 font-medium text-sm">Demnächst verfügbar</span>
+                </div>
+              </div>
+
+              {/* Blog Post 2: Kita-Brotdosen */}
+              <div className="bg-gradient-to-r from-primary-light/20 to-secondary-light/20 rounded-lg p-6 mb-6">
                 <h3 className="heading-sm text-primary-dark mb-3">
                   Ideen für Kita-Brotdosen
                 </h3>
@@ -147,58 +119,32 @@ const AlltagLeichterLeben = () => {
                   </a>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      {/* Mein erstes Buch Section */}
-      <section className="section-padding">
-        <div className="container-custom">
-          <div className="max-w-3xl mx-auto">
-            <div className="bg-accent-light p-6 rounded-lg">
-              <h2 className="heading-lg mb-3">Mein erstes Buch demnächst verfügbar</h2>
-              <div className="flex justify-center mb-4">
-                <svg width="120" height="8" viewBox="0 0 120 8" className="text-primary">
-                  <path
-                    d="M2,4 Q8,2 15,4 T30,3 Q40,5 50,4 T70,3 Q80,5 90,4 T110,3 Q115,2 118,4"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    fill="none"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="opacity-70"
-                    style={{
-                      filter: 'url(#roughPaperBuch)',
-                    }}
-                  />
-                  <defs>
-                    <filter id="roughPaperBuch">
-                      <feTurbulence baseFrequency="0.04" numOctaves="3" result="noise" seed="3" />
-                      <feDisplacementMap in="SourceGraphic" in2="noise" scale="0.8" />
-                    </filter>
-                  </defs>
-                </svg>
-              </div>
-              <div className="flex flex-col md:flex-row gap-6 items-center">
-                <div className="md:w-1/3">
-                  <img 
-                    src="/lovable-uploads/36ba656f-ced5-4afb-a9ba-a75f553fb0de.png" 
-                    alt="Mein erstes Buch" 
-                    className="w-full max-w-48 mx-auto rounded-lg shadow-md"
-                  />
-                </div>
-                <div className="md:w-2/3">
-                  <p className="body-base mb-3">
-                    Ich freue mich riesig, dir bald mein erstes Buch zu zeigen! Wer bist du wirklich - hinter all den Masken, die du täglich trägst, und besonders dann, wenn der erste Riss entsteht?
-                  </p>
-                  <p className="body-base mb-3">Du kannst dich freuen auf:</p>
-                  <ul className="body-base mb-4 space-y-1">
-                    <li>• Inspiration für Ernährung und innere Balance</li>
-                    <li>• Einfache Tipps zum Batterien aufladen</li>
-                    <li>• Deinen persönlichen Wohlfühltag</li>
-                  </ul>
-                  <span className="text-gray-400 font-medium text-sm">Bald verfügbar</span>
+              {/* Blog Post 3: Mein erstes Buch */}
+              <div className="bg-gradient-to-r from-primary-light/20 to-secondary-light/20 rounded-lg p-6">
+                <h3 className="heading-sm text-primary-dark mb-3">
+                  Mein erstes Buch demnächst verfügbar
+                </h3>
+                <div className="flex flex-col md:flex-row gap-6 items-center">
+                  <div className="md:w-1/3">
+                    <img 
+                      src="/lovable-uploads/36ba656f-ced5-4afb-a9ba-a75f553fb0de.png" 
+                      alt="Mein erstes Buch" 
+                      className="w-full max-w-48 mx-auto rounded-lg shadow-md"
+                    />
+                  </div>
+                  <div className="md:w-2/3">
+                    <p className="body-base mb-3">
+                      Ich freue mich riesig, dir bald mein erstes Buch zu zeigen! Wer bist du wirklich - hinter all den Masken, die du täglich trägst, und besonders dann, wenn der erste Riss entsteht?
+                    </p>
+                    <p className="body-base mb-3">Du kannst dich freuen auf:</p>
+                    <ul className="body-base mb-4 space-y-1">
+                      <li>• Inspiration für Ernährung und innere Balance</li>
+                      <li>• Einfache Tipps zum Batterien aufladen</li>
+                      <li>• Deinen persönlichen Wohlfühltag</li>
+                    </ul>
+                    <span className="text-gray-400 font-medium text-sm">Bald verfügbar</span>
+                  </div>
                 </div>
               </div>
             </div>
