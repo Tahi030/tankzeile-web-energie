@@ -37,9 +37,6 @@ const WorkshopGesundeMission = () => {
                 </defs>
               </svg>
             </div>
-            <p className="text-lg text-white">
-              Mit Captain Apfel & seiner Crew gesunde Ernährung spielerisch entdecken
-            </p>
           </div>
         </div>
       </section>
