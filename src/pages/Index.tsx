@@ -44,7 +44,7 @@ const Index = () => {
                     Hallo, ich bin
                   </p>
                   
-                  <h2 className="text-2xl font-playfair">
+                  <h2 className="text-2xl font-luckiest">
                     Captain Apfel
                   </h2>
                   
@@ -85,7 +85,7 @@ const Index = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl font-bold text-primary font-playfair mb-6">
+            <h2 className="text-3xl font-bold text-primary font-luckiest mb-6">
               Programme für gesunde Entwicklung
             </h2>
             <div className="w-24 h-1 bg-primary mx-auto rounded-full" />

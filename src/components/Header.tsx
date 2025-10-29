@@ -66,7 +66,7 @@ const Header = () => {
 
   // Modern header design
   const getHeaderColor = () => {
-    return 'bg-primary/95 backdrop-blur-sm border-b border-primary/20';
+    return 'bg-primary backdrop-blur-sm border-b-4 border-secondary';
   };
 
   // Consistent modern styling
@@ -88,7 +88,7 @@ const Header = () => {
               <img 
                 src={logoText} 
                 alt="Captain Apfel Logo" 
-                className="h-10 md:h-12 w-auto"
+                className="h-16 md:h-20 w-auto"
               />
             </Link>
           </div>

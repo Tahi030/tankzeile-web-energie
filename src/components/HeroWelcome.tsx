@@ -39,10 +39,10 @@ export const HeroWelcome = () => {
               <img 
                 src={logoText} 
                 alt="Captain Apfel Logo" 
-                className="h-20 md:h-24 lg:h-28 w-auto object-contain"
+                className="h-32 md:h-40 lg:h-48 w-auto object-contain"
               />
             </div>
-            <p className="text-2xl md:text-3xl text-secondary font-medium relative z-10">
+            <p className="text-2xl md:text-3xl text-secondary font-luckiest">
               auf gesunder Mission
             </p>
           </motion.div>
@@ -54,10 +54,10 @@ export const HeroWelcome = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="space-y-3"
           >
-            <h2 className="text-xl md:text-2xl font-semibold text-primary">
+            <h2 className="text-xl md:text-2xl font-luckiest text-primary">
               Initiative für starke Entwicklung
             </h2>
-            <p className="text-lg md:text-xl text-muted-foreground italic">
+            <p className="text-lg md:text-xl text-muted-foreground font-sans italic">
               Gesundheit, die Kindern schmeckt.
             </p>
           </motion.div>

@@ -26,21 +26,21 @@ export default {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				primary: {
-					DEFAULT: 'hsl(var(--primary))', // Modern Anthracite
-					light: 'hsl(200 15% 35%)',
-					dark: 'hsl(200 15% 15%)',
+					DEFAULT: 'hsl(var(--primary))', // Vibrant Red
+					light: 'hsl(0 85% 65%)',
+					dark: 'hsl(0 85% 45%)',
 					foreground: 'hsl(var(--primary-foreground))'
 				},
 				secondary: {
-					DEFAULT: 'hsl(var(--secondary))', // Beautiful Olive Green
-					light: 'hsl(80 25% 55%)',
-					dark: 'hsl(80 25% 35%)',
+					DEFAULT: 'hsl(var(--secondary))', // Vibrant Orange
+					light: 'hsl(25 95% 65%)',
+					dark: 'hsl(25 95% 45%)',
 					foreground: 'hsl(var(--secondary-foreground))'
 				},
 				accent: {
-					DEFAULT: 'hsl(var(--accent))', // Light Olive accent
-					light: 'hsl(75 30% 75%)',
-					dark: 'hsl(75 30% 55%)',
+					DEFAULT: 'hsl(var(--accent))', // Vibrant Yellow
+					light: 'hsl(45 100% 65%)',
+					dark: 'hsl(45 100% 45%)',
 					foreground: 'hsl(var(--accent-foreground))'
 				},
 				blackberry: {
@@ -75,6 +75,7 @@ export default {
 				}
 			},
 			fontFamily: {
+				luckiest: ['Luckiest Guy', 'cursive'],
 				playfair: ['Playfair Display', 'serif'],
 				sans: ['Open Sans', 'sans-serif'],
 				fredoka: ['Fredoka', 'sans-serif'],

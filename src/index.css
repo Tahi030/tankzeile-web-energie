@@ -13,43 +13,43 @@
 
 @layer base {
   :root {
-    /* Modern anthracite and olive green theme */
-    --background: 75 20% 95%; /* Light olive cream background */
-    --foreground: 200 15% 15%; /* Anthracite text */
+    /* High-contrast vibrant colors inspired by crew images */
+    --background: 50 100% 98%; /* Bright warm white */
+    --foreground: 220 90% 10%; /* Deep navy blue - high contrast */
 
     --card: 0 0% 100%; /* Pure white cards */
-    --card-foreground: 200 15% 15%;
+    --card-foreground: 220 90% 10%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 200 15% 15%;
+    --popover-foreground: 220 90% 10%;
 
-    /* Modern Anthracite as primary */
-    --primary: 200 15% 25%; /* Deep anthracite */
-    --primary-foreground: 0 0% 100%; /* White text on anthracite */
+    /* Vibrant Red as primary (Captain Apfel) */
+    --primary: 0 85% 55%; /* Bright red */
+    --primary-foreground: 0 0% 100%; /* White text */
 
-    /* Beautiful Olive Green as secondary */
-    --secondary: 80 25% 45%; /* Rich olive green */
-    --secondary-foreground: 0 0% 100%; /* White text on olive */
+    /* Vibrant Orange as secondary */
+    --secondary: 25 95% 55%; /* Bright orange */
+    --secondary-foreground: 0 0% 100%; /* White text */
 
-    /* Light olive backgrounds */
-    --muted: 75 20% 92%; /* Very light olive cream */
-    --muted-foreground: 200 10% 40%; /* Medium anthracite for muted text */
+    /* Light backgrounds */
+    --muted: 50 80% 95%; /* Very light warm cream */
+    --muted-foreground: 220 60% 30%; /* Deep blue-gray for text */
 
-    /* Light olive accent */
-    --accent: 75 30% 65%; /* Warm olive accent */
-    --accent-foreground: 200 15% 25%;
+    /* Vibrant Yellow accent */
+    --accent: 45 100% 55%; /* Bright yellow */
+    --accent-foreground: 220 90% 10%;
 
-    /* Modern purple for special cases */
-    --blackberry: 260 30% 35%;
-    --blackberry-foreground: 0 0% 98%;
+    /* Green for special cases */
+    --blackberry: 120 60% 45%; /* Bright green */
+    --blackberry-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
-    /* Subtle borders and inputs */
-    --border: 75 15% 85%; /* Light olive border */
-    --input: 75 20% 90%; /* Very light olive input bg */
-    --ring: 80 25% 55%; /* Olive focus ring */
+    /* High contrast borders */
+    --border: 220 40% 75%; /* Medium gray border */
+    --input: 50 60% 92%; /* Light warm input bg */
+    --ring: 0 85% 55%; /* Red focus ring */
 
     --radius: 0.5rem;
 
@@ -101,13 +101,13 @@
   }
 
   body {
-    @apply text-foreground font-sans;
-    background: linear-gradient(135deg, hsl(75 20% 95%) 0%, hsl(80 15% 92%) 50%, hsl(75 20% 95%) 100%);
+    @apply text-foreground font-luckiest;
+    background: linear-gradient(135deg, hsl(50 100% 98%) 0%, hsl(45 90% 95%) 50%, hsl(50 100% 98%) 100%);
     min-height: 100vh;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-playfair;
+    @apply font-luckiest;
   }
 }
 
@@ -118,19 +118,19 @@
   
   /* UNIFIED TYPOGRAPHY SYSTEM - Modern & Clean */
   .heading-xl {
-    @apply text-4xl md:text-5xl lg:text-6xl font-bold text-primary font-playfair;
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold text-primary font-luckiest;
   }
   
   .heading-lg {
-    @apply text-3xl md:text-4xl lg:text-5xl font-semibold text-primary font-playfair;
+    @apply text-3xl md:text-4xl lg:text-5xl font-semibold text-primary font-luckiest;
   }
   
   .heading-md {
-    @apply text-2xl md:text-3xl lg:text-4xl font-medium text-primary font-playfair;
+    @apply text-2xl md:text-3xl lg:text-4xl font-medium text-primary font-luckiest;
   }
   
   .heading-sm {
-    @apply text-xl md:text-2xl font-medium text-primary font-playfair;
+    @apply text-xl md:text-2xl font-medium text-primary font-luckiest;
   }
   
   .body-lg {
@@ -228,10 +228,10 @@
   .modern-section,
   .bg-background {
     background: linear-gradient(135deg, 
-      hsl(75 20% 95%) 0%, 
-      hsl(80 15% 92%) 30%,
-      hsl(75 25% 90%) 60%,
-      hsl(80 20% 88%) 100%
+      hsl(50 100% 98%) 0%, 
+      hsl(45 90% 95%) 30%,
+      hsl(50 95% 96%) 60%,
+      hsl(45 90% 95%) 100%
     );
   }
   
