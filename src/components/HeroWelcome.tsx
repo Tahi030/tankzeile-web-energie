@@ -1,4 +1,6 @@
 import { motion } from "framer-motion";
+import logoText from "@/assets/logo-text.svg";
+import crewBanner from "@/assets/crew-banner.svg";
 
 export const HeroWelcome = () => {
   return (
@@ -33,9 +35,13 @@ export const HeroWelcome = () => {
                 rounded-full blur-2xl opacity-40"></div>
             </div>
             
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-primary font-playfair leading-tight relative z-10">
-              Captain Apfel
-            </h1>
+            <div className="flex justify-center items-center relative z-10">
+              <img 
+                src={logoText} 
+                alt="Captain Apfel Logo" 
+                className="h-20 md:h-24 lg:h-28 w-auto object-contain"
+              />
+            </div>
             <p className="text-2xl md:text-3xl text-secondary font-medium relative z-10">
               auf gesunder Mission
             </p>
@@ -56,31 +62,23 @@ export const HeroWelcome = () => {
             </p>
           </motion.div>
           
-          {/* Hero Image */}
+          {/* Crew Banner */}
           <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
+            initial={{ opacity: 0, scale: 0.9 }}
             animate={{ 
               opacity: 1, 
-              scale: 1,
-              y: [0, -10, 0]
+              scale: 1
             }}
             transition={{ 
               opacity: { duration: 0.8, delay: 0.4 },
-              scale: { duration: 0.8, delay: 0.4 },
-              y: { 
-                duration: 3, 
-                repeat: Infinity, 
-                repeatType: "reverse",
-                ease: "easeInOut",
-                delay: 1
-              }
+              scale: { duration: 0.8, delay: 0.4 }
             }}
             className="flex justify-center"
           >
             <img 
-              src="/assets/captain-apfel-hero.png" 
-              alt="Captain Apfel - Superheld für gesunde Ernährung" 
-              className="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 object-contain drop-shadow-2xl"
+              src={crewBanner} 
+              alt="Captain Apfel und seine Crew" 
+              className="w-full max-w-4xl h-auto object-contain drop-shadow-2xl"
             />
           </motion.div>
           
