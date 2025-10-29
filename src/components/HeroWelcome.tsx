@@ -35,13 +35,9 @@ export const HeroWelcome = () => {
                 rounded-full blur-2xl opacity-40"></div>
             </div>
             
-            <div className="flex justify-center items-center relative z-10">
-              <img 
-                src={logoText} 
-                alt="Captain Apfel Logo" 
-                className="h-32 md:h-40 lg:h-48 w-auto object-contain"
-              />
-            </div>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-luckiest text-primary">
+              Captain Apfel
+            </h1>
             <p className="text-2xl md:text-3xl text-secondary font-luckiest">
               auf gesunder Mission
             </p>

@@ -85,9 +85,11 @@ const Header = () => {
           {/* Logo on the left */}
           <div className="flex items-center">
             <Link to="/" className="flex items-center" onClick={() => window.scrollTo(0, 0)}>
-              <span className="text-2xl md:text-3xl lg:text-4xl font-luckiest text-white">
-                Captain Apfel
-              </span>
+              <img 
+                src={logoText} 
+                alt="Captain Apfel Logo" 
+                className="h-20 md:h-24 lg:h-28 w-auto"
+              />
             </Link>
           </div>
 
