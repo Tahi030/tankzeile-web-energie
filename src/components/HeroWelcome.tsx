@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import logoText from "@/assets/logo-text.svg";
 import crewBanner from "@/assets/crew-banner.svg";
-import heroCrewImage from "@/assets/hero-crew.png";
 
 export const HeroWelcome = () => {
   return (
@@ -44,28 +43,6 @@ export const HeroWelcome = () => {
             <p className="text-lg md:text-xl text-muted-foreground font-sans italic">
               Gesundheit, die Kindern schmeckt.
             </p>
-          </motion.div>
-          
-          {/* Hero Crew Image - Modern & Narrower */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ 
-              opacity: 1, 
-              y: 0
-            }}
-            transition={{ 
-              duration: 1,
-              delay: 0.4
-            }}
-            className="mt-12"
-          >
-            <div className="max-w-2xl mx-auto">
-              <img 
-                src={heroCrewImage} 
-                alt="Captain Apfel und seine Crew" 
-                className="w-full h-auto object-contain rounded-3xl shadow-2xl"
-              />
-            </div>
           </motion.div>
           
           {/* Crew Banner - Full Width */}

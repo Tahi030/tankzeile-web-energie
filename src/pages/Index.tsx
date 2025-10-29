@@ -102,7 +102,7 @@ const Index = () => {
               subtitle="Start: Frühjahr 2026"
               description="Mit Captain Apfel erleben Kinder ein spannendes Abenteuer: Wie kommt Energie in den Körper, was macht uns stark und konzentriert – und wie bleibt die Powerzentrale hell und aktiv?"
               callToAction="👉 Bald landet Captain Apfel auch in deiner Kita!"
-              imageUrl="/assets/workshop-powerzentrale-enhanced.jpg"
+              imageUrl="/assets/hero-crew.png"
               linkTo="/kontakt"
               buttonText="Vormerken lassen"
               accent="primary"
