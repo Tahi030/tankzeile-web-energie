@@ -40,27 +40,27 @@ const Index = () => {
               
               <div className="relative space-y-6">
                 <div className="text-center space-y-4">
-                  <p className="text-base text-muted-foreground">
-                    Hallo, ich bin
-                  </p>
-                  
-                  <h2 className="text-2xl font-luckiest">
-                    Captain Apfel
+                  <h2 className="text-2xl font-luckiest text-primary">
+                    Hallo, ich bin Captain Apfel.
                   </h2>
                   
-                  <p className="text-base text-muted-foreground">
-                    Mit meiner Crew bin ich unterwegs auf gesunder Mission.
+                  <p className="text-base text-muted-foreground leading-relaxed">
+                    Ich bin mit meiner Crew auf gesunder Mission unterwegs.
                   </p>
                 </div>
                 
                 <div className="space-y-6 text-center">
                   <p className="text-base leading-relaxed text-muted-foreground">
-                    Berlin ist der Startpunkt unserer Reise. Von hier aus hebt das Tomatenraumschiff ab und landet direkt in Einrichtungen mit Kindern im Vorschul- und Grundschulalter.
+                    Hier findest du Ideen rund um Ernährung, Unverträglichkeiten und ganzheitliches Wohlbefinden – mit Spaß, Wissen und Energie aus der Powerzentrale, der Mitte des Körpers.
+                  </p>
+                  
+                  <p className="text-base leading-relaxed text-muted-foreground">
+                    Ab 2026 startet in Berliner Einrichtungen unsere „Reise zur Powerzentrale" – für Vorschul- und Grundschulkinder.
                   </p>
                   
                   <div className="pt-6 border-t border-primary/10">
                     <p className="text-base text-muted-foreground leading-relaxed">
-                      Denn gesunde Gewohnheiten geben uns Kraft, machen das Denken leichter und lassen uns rundum wohlfühlen.
+                      Captain Apfel steht für Regionalität, Nachhaltigkeit und die Freude an gesunden Gewohnheiten, die sich leicht in den Alltag integrieren lassen.
                     </p>
                   </div>
                 </div>
