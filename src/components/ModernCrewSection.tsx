@@ -1,41 +1,40 @@
 import { motion } from "framer-motion";
+import captainApfel from "@/assets/captain-apfel.svg";
+import kaiMutig from "@/assets/kai-mutig.svg";
+import kimmiSchlau from "@/assets/kimmi-schlau.svg";
+import paffel from "@/assets/paffel.svg";
+import tomatenraumschiff from "@/assets/tomatenraumschiff.svg";
 
 const crewMembers = [
   {
     name: "Captain Apfel",
-    image: "/lovable-uploads/captain-apfel.png",
+    image: captainApfel,
     color: "primary",
     delay: 0.1
   },
   {
     name: "Kimmi Schlau",
-    image: "/lovable-uploads/kimmi-schlau.png",
+    image: kimmiSchlau,
     color: "secondary",
     delay: 0.2
   },
   {
     name: "Kai Mutig",
-    image: "/lovable-uploads/kai-mutig.png",
+    image: kaiMutig,
     color: "accent",
     delay: 0.3
   },
   {
     name: "Tomatenraumschiff",
-    image: "/lovable-uploads/tomatenraumschiff.png",
+    image: tomatenraumschiff,
     color: "primary",
     delay: 0.4
   },
   {
-    name: "Powerzentrale",
-    image: "/lovable-uploads/powerzentrale.png",
-    color: "secondary",
-    delay: 0.5
-  },
-  {
     name: "Paffel",
-    image: "/lovable-uploads/paffel.png",
+    image: paffel,
     color: "accent",
-    delay: 0.6
+    delay: 0.5
   }
 ];
 
@@ -46,7 +45,7 @@ export const ModernCrewSection = () => {
         
 
         {/* Crew Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
           {crewMembers.map((member, index) => (
             <motion.div
               key={member.name}
@@ -61,11 +60,11 @@ export const ModernCrewSection = () => {
               }}
             >
               {/* Image Container */}
-              <div className="relative mb-4 p-6 bg-card rounded-2xl shadow-lg border border-border/50 transition-all duration-300 group-hover:shadow-xl">
+              <div className="relative p-8 bg-card rounded-2xl shadow-lg border border-border/50 transition-all duration-300 group-hover:shadow-xl w-full">
                 <img 
                   src={member.image} 
                   alt={member.name}
-                  className="w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 object-contain drop-shadow-lg"
+                  className="w-full h-auto object-contain drop-shadow-lg"
                 />
                 
                 {/* Decorative accent */}
@@ -75,13 +74,6 @@ export const ModernCrewSection = () => {
                   opacity-20 group-hover:opacity-40 transition-opacity`} 
                 />
               </div>
-              
-              {/* Name */}
-              <h3 className={`text-sm md:text-base font-bold font-kalam
-                ${member.color === 'primary' ? 'text-primary' : 
-                  member.color === 'secondary' ? 'text-secondary' : 'text-accent'}`}>
-                {member.name}
-              </h3>
             </motion.div>
           ))}
         </div>
