@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
+import logoText from "@/assets/logo-text.svg";
 
 const NavItem = ({ to, label, dropdown = false, children, textColor, hoverColor }: { 
   to: string, 
@@ -85,9 +86,9 @@ const Header = () => {
           <div className="flex items-center">
             <Link to="/" className="flex items-center" onClick={() => window.scrollTo(0, 0)}>
               <img 
-                src="/powerzentrale-favicon.png" 
-                alt="Captain Apfel Powerzentrale Logo" 
-                className="h-12 w-12 md:h-14 md:w-14 mr-3"
+                src={logoText} 
+                alt="Captain Apfel Logo" 
+                className="h-10 md:h-12 w-auto"
               />
             </Link>
           </div>

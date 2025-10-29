@@ -62,24 +62,26 @@ export const HeroWelcome = () => {
             </p>
           </motion.div>
           
-          {/* Crew Banner */}
+          {/* Crew Banner - Full Width */}
           <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
+            initial={{ opacity: 0, y: 30 }}
             animate={{ 
               opacity: 1, 
-              scale: 1
+              y: 0
             }}
             transition={{ 
-              opacity: { duration: 0.8, delay: 0.4 },
-              scale: { duration: 0.8, delay: 0.4 }
+              duration: 1,
+              delay: 0.6
             }}
-            className="flex justify-center"
+            className="w-full -mx-4 md:-mx-8 lg:-mx-16 mt-12"
           >
-            <img 
-              src={crewBanner} 
-              alt="Captain Apfel und seine Crew" 
-              className="w-full max-w-4xl h-auto object-contain drop-shadow-2xl"
-            />
+            <div className="w-full bg-gradient-to-b from-primary/5 to-transparent py-8">
+              <img 
+                src={crewBanner} 
+                alt="Captain Apfel und seine Crew" 
+                className="w-full h-auto object-contain drop-shadow-2xl px-4"
+              />
+            </div>
           </motion.div>
           
         </div>
