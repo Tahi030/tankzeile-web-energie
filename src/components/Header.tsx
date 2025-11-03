@@ -64,18 +64,18 @@ const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const location = useLocation();
 
-  // Warm, natural header design matching the brand
+  // Warm, earthy and pastel header design inspired by reference images
   const getHeaderColor = () => {
-    return 'bg-gradient-to-r from-secondary via-primary to-secondary backdrop-blur-sm border-b-4 border-secondary-dark';
+    return 'bg-gradient-to-r from-orange-100 via-pink-50 to-yellow-100 backdrop-blur-sm border-b-4 border-orange-200/40';
   };
 
-  // Consistent styling with white text on colored header
+  // Dark text on light pastel background
   const getTextColor = () => {
-    return 'text-white';
+    return 'text-foreground';
   };
 
   const getHoverColor = () => {
-    return 'hover:bg-white/20';
+    return 'hover:bg-primary/10';
   };
 
   return (
@@ -130,10 +130,7 @@ const Header = () => {
           <div className="md:hidden">
             <button
               type="button"
-              className={location.pathname === '/tankwelten/captain-apfel-workshop'
-                ? `inline-flex items-center justify-center p-2 rounded-md text-rose-700 hover:text-rose-800 hover:bg-rose-200/30`
-                : `inline-flex items-center justify-center p-2 rounded-md text-white hover:text-white hover:bg-primary-dark`
-              }
+              className="inline-flex items-center justify-center p-2 rounded-md text-foreground hover:text-primary hover:bg-primary/10"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             >
               <span className="sr-only">Menü öffnen</span>
@@ -145,7 +142,7 @@ const Header = () => {
           <div className="hidden md:block">
             <Link 
               to="/kontakt"
-              className="bg-white hover:bg-yellow-50 text-primary px-6 py-3 rounded-full transition-all duration-200 text-base font-medium whitespace-nowrap shadow-lg hover:shadow-xl"
+              className="bg-primary hover:bg-primary-dark text-white px-6 py-3 rounded-full transition-all duration-200 text-base font-medium whitespace-nowrap shadow-md hover:shadow-lg"
               onClick={() => window.scrollTo(0, 0)}
             >
               Kontakt
@@ -187,7 +184,7 @@ const Header = () => {
               </Link>
             </div>
             
-            <Link to="/kontakt" className="block mx-3 mt-3 px-3 py-3 bg-white text-primary rounded-md text-base font-medium hover:bg-yellow-50" onClick={() => {setMobileMenuOpen(false); window.scrollTo(0, 0);}}>
+            <Link to="/kontakt" className="block mx-3 mt-3 px-3 py-3 bg-primary text-white rounded-md text-base font-medium hover:bg-primary-dark" onClick={() => {setMobileMenuOpen(false); window.scrollTo(0, 0);}}>
               Kontakt
             </Link>
           </div>
