@@ -64,12 +64,12 @@ const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const location = useLocation();
 
-  // Modern header design with high-contrast teal/blue colors
+  // Warm, natural header design matching the brand
   const getHeaderColor = () => {
-    return 'bg-gradient-to-r from-cyan-600 via-teal-600 to-cyan-600 backdrop-blur-sm border-b-4 border-cyan-700';
+    return 'bg-gradient-to-r from-secondary via-primary to-secondary backdrop-blur-sm border-b-4 border-secondary-dark';
   };
 
-  // Consistent modern styling
+  // Consistent styling with white text on colored header
   const getTextColor = () => {
     return 'text-white';
   };
@@ -145,7 +145,7 @@ const Header = () => {
           <div className="hidden md:block">
             <Link 
               to="/kontakt"
-              className="bg-yellow-400 hover:bg-yellow-300 text-cyan-900 px-6 py-3 rounded-full transition-all duration-200 text-base font-medium whitespace-nowrap shadow-lg hover:shadow-xl"
+              className="bg-white hover:bg-yellow-50 text-primary px-6 py-3 rounded-full transition-all duration-200 text-base font-medium whitespace-nowrap shadow-lg hover:shadow-xl"
               onClick={() => window.scrollTo(0, 0)}
             >
               Kontakt
@@ -187,7 +187,7 @@ const Header = () => {
               </Link>
             </div>
             
-            <Link to="/kontakt" className="block mx-3 mt-3 px-3 py-3 bg-yellow-400 text-cyan-900 rounded-md text-base font-medium" onClick={() => {setMobileMenuOpen(false); window.scrollTo(0, 0);}}>
+            <Link to="/kontakt" className="block mx-3 mt-3 px-3 py-3 bg-white text-primary rounded-md text-base font-medium hover:bg-yellow-50" onClick={() => {setMobileMenuOpen(false); window.scrollTo(0, 0);}}>
               Kontakt
             </Link>
           </div>
