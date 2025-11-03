@@ -20,47 +20,62 @@ const Datenschutz = () => {
             </p>
             <p>
               Tamara Hillmann<br />
-              Friedrichshagener Straße 5 G, 12555 Berlin<br />
+              Friedrichshagener Straße 5 G<br />
+              12555 Berlin<br />
               E-Mail: kontakt@captain-apfel.de
             </p>
 
             <h2>2. Hosting und Bereitstellung der Website</h2>
             <p>
-              Unsere Website wird über die Plattform Loveable bereitgestellt. Die technische Infrastruktur wird dabei u. a. durch Strato und GitHub unterstützt. Bei jedem Aufruf der Website werden automatisch Daten durch den Browser des Besuchers an die Server übertragen und in sogenannten Server-Logfiles gespeichert. Erfasst werden können dabei:
+              Diese Website wird über die Plattform Loveable betrieben.
+              Die technische Infrastruktur wird u. a. durch Strato AG (Otto-Ostrowski-Str. 7, 10249 Berlin) und GitHub, Inc. (88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA) bereitgestellt.
+            </p>
+            <p>
+              Beim Aufruf der Website werden automatisch durch Ihren Browser folgende Daten übermittelt und in sogenannten Server-Logfiles gespeichert:
             </p>
             <ul>
-              <li>IP-Adresse</li>
+              <li>IP-Adresse des Endgeräts</li>
               <li>Datum und Uhrzeit des Zugriffs</li>
-              <li>Name und URL der abgerufenen Seite oder Datei</li>
-              <li>Referrer-URL (die zuvor besuchte Seite)</li>
-              <li>verwendeter Browser und ggf. Betriebssystem</li>
+              <li>aufgerufene Seite oder Datei (Name / URL)</li>
+              <li>Referrer-URL (zuvor besuchte Seite)</li>
+              <li>verwendeter Browser und Betriebssystem</li>
             </ul>
             <p>
-              Die Verarbeitung dieser Daten ist notwendig, um den Betrieb der Website sicherzustellen (Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO).
+              Diese Daten werden zur Sicherstellung des technischen Betriebs, zur Systemsicherheit und zur Fehleranalyse verarbeitet.
+              Rechtsgrundlage hierfür ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einem sicheren und funktionsfähigen Online-Angebot).
             </p>
 
             <h2>3. Kontaktaufnahme</h2>
             <p>
-              Wenn Sie uns per E-Mail kontaktieren, werden die von Ihnen übermittelten personenbezogenen Daten (z. B. Name, E-Mail-Adresse, Inhalt der Nachricht) gespeichert und verarbeitet, um Ihre Anfrage zu beantworten.
+              Bei einer Kontaktaufnahme per E-Mail werden die von Ihnen übermittelten personenbezogenen Daten (z. B. Name, E-Mail-Adresse, Nachricht) verarbeitet, um Ihr Anliegen zu bearbeiten.
             </p>
             <p>
-              Rechtsgrundlage hierfür ist Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung oder -anbahnung).
+              Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung / Vertragsanbahnung) bzw. Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der Bearbeitung von Anfragen).
             </p>
 
             <h2>4. Cookies</h2>
             <p>
-              Unsere Website kann Cookies verwenden, um Funktionen bereitzustellen oder die Nutzung zu verbessern. Cookies sind kleine Textdateien, die auf Ihrem Endgerät gespeichert werden.
+              Diese Website kann Cookies verwenden, um bestimmte Funktionen bereitzustellen oder die Nutzung zu verbessern.
+              Cookies sind kleine Textdateien, die auf Ihrem Endgerät gespeichert werden.
             </p>
             <p>
-              Sie können die Speicherung von Cookies in den Einstellungen Ihres Browsers jederzeit deaktivieren. Bitte beachten Sie, dass dadurch ggf. einzelne Funktionen der Website eingeschränkt werden können.
+              Sie können die Speicherung von Cookies in den Einstellungen Ihres Browsers jederzeit deaktivieren oder bereits gesetzte Cookies löschen.
+              Bitte beachten Sie, dass bei deaktivierten Cookies einzelne Funktionen der Website eingeschränkt sein können.
             </p>
             <p>
-              (Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO bei technisch notwendigen Cookies, Art. 6 Abs. 1 lit. a DSGVO bei zustimmungspflichtigen Cookies).
+              Rechtsgrundlage:
             </p>
+            <ul>
+              <li>Art. 6 Abs. 1 lit. f DSGVO für technisch notwendige Cookies</li>
+              <li>Art. 6 Abs. 1 lit. a DSGVO für zustimmungspflichtige Cookies</li>
+            </ul>
 
             <h2>5. Weitergabe von Daten</h2>
             <p>
-              Eine Weitergabe Ihrer persönlichen Daten an Dritte erfolgt nicht, außer es besteht eine gesetzliche Verpflichtung oder es ist zur Erfüllung des Vertrags erforderlich.
+              Eine Weitergabe Ihrer personenbezogenen Daten an Dritte erfolgt nur, wenn dies gesetzlich vorgeschrieben ist, zur Vertragsabwicklung erforderlich ist oder Sie ausdrücklich eingewilligt haben.
+            </p>
+            <p>
+              Eine Übermittlung personenbezogener Daten in Drittländer (außerhalb der EU / des EWR) findet nur statt, sofern geeignete Garantien nach Art. 44 ff. DSGVO bestehen.
             </p>
 
             <h2>6. Betroffenenrechte</h2>
@@ -71,22 +86,26 @@ const Datenschutz = () => {
               <li>gemäß Art. 17 DSGVO Löschung Ihrer gespeicherten Daten zu verlangen,</li>
               <li>gemäß Art. 18 DSGVO Einschränkung der Verarbeitung zu verlangen,</li>
               <li>gemäß Art. 20 DSGVO Datenübertragbarkeit zu verlangen,</li>
-              <li>gemäß Art. 77 DSGVO Beschwerde bei einer Aufsichtsbehörde einzulegen.</li>
+              <li>gemäß Art. 77 DSGVO Beschwerde bei einer Datenschutzaufsichtsbehörde einzulegen.</li>
             </ul>
 
             <h2>7. Widerspruchsrecht</h2>
             <p>
-              Wenn Ihre Daten auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO verarbeitet werden, haben Sie das Recht, jederzeit Widerspruch einzulegen.
+              Sie können der Verarbeitung Ihrer personenbezogenen Daten, die auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO erfolgt, jederzeit widersprechen, sofern sich aus Ihrer besonderen Situation Gründe ergeben.
+              Zur Ausübung des Widerspruchsrechts genügt eine formlose Mitteilung per E-Mail an kontakt@captain-apfel.de.
             </p>
 
             <h2>8. Datensicherheit</h2>
             <p>
-              Wir setzen technische und organisatorische Sicherheitsmaßnahmen ein, um Ihre Daten gegen Manipulation, Verlust oder unbefugten Zugriff zu schützen. Diese Maßnahmen werden entsprechend dem Stand der Technik fortlaufend angepasst.
+              Wir setzen technische und organisatorische Maßnahmen ein, um Ihre Daten vor Manipulation, Verlust, Zerstörung oder unbefugtem Zugriff zu schützen.
+              Diese Sicherheitsmaßnahmen werden entsprechend dem Stand der Technik fortlaufend verbessert.
             </p>
 
-            <h2>9. Aktualität</h2>
+            <h2>9. Aktualität und Änderungen</h2>
             <p>
-              Diese Datenschutzerklärung ist aktuell gültig und hat den Stand: August 2025.
+              Diese Datenschutzerklärung ist aktuell gültig und hat den Stand: November 2025.
+              Durch Weiterentwicklung unserer Website oder geänderte gesetzliche Vorgaben kann eine Anpassung erforderlich werden.
+              Die jeweils aktuelle Version finden Sie jederzeit auf dieser Website. Hinweise zum Urheberrecht und Markenschutz entnehmen Sie bitte dem Impressum.
             </p>
           </div>
         </div>
