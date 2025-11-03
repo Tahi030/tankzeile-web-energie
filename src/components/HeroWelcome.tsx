@@ -4,56 +4,154 @@ import captainApfelHero from "@/assets/captain-apfel-hero.svg";
 
 export const HeroWelcome = () => {
   return (
-    <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-green-50 via-yellow-50 to-orange-50">
+    <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-green-100/40 via-yellow-50/60 to-orange-100/50">
       
-      {/* Subtle Background Elements */}
+      {/* Enhanced Background Elements */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        {/* Soft light orbs */}
+        {/* Multi-layer gradient background */}
+        <div className="absolute inset-0 bg-gradient-to-tr from-green-200/30 via-transparent to-yellow-200/30" />
+        <div className="absolute inset-0 bg-gradient-to-bl from-orange-200/20 via-transparent to-green-200/25" />
+        
+        {/* Animated light orbs */}
         <motion.div 
-          className="absolute top-1/4 left-1/4 w-96 h-96 bg-green-200/20 rounded-full blur-3xl"
+          className="absolute top-20 left-10 w-[28rem] h-[28rem] bg-green-300/30 rounded-full blur-3xl"
           animate={{
-            scale: [1, 1.2, 1],
-            opacity: [0.2, 0.4, 0.2],
+            scale: [1, 1.25, 1],
+            opacity: [0.3, 0.5, 0.3],
+            x: [0, 30, 0],
+            y: [0, -20, 0],
           }}
           transition={{
-            duration: 8,
+            duration: 10,
             repeat: Infinity,
             ease: "easeInOut"
           }}
         />
         <motion.div 
-          className="absolute bottom-1/4 right-1/4 w-[32rem] h-[32rem] bg-yellow-200/25 rounded-full blur-3xl"
+          className="absolute top-1/3 right-20 w-[35rem] h-[35rem] bg-yellow-300/35 rounded-full blur-3xl"
           animate={{
-            scale: [1, 1.15, 1],
-            opacity: [0.25, 0.45, 0.25],
+            scale: [1, 1.2, 1],
+            opacity: [0.35, 0.55, 0.35],
+            x: [0, -25, 0],
+            y: [0, 25, 0],
           }}
           transition={{
-            duration: 10,
+            duration: 12,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 2
+          }}
+        />
+        <motion.div 
+          className="absolute bottom-10 left-1/3 w-[30rem] h-[30rem] bg-orange-300/25 rounded-full blur-3xl"
+          animate={{
+            scale: [1, 1.18, 1],
+            opacity: [0.25, 0.45, 0.25],
+            x: [0, 20, 0],
+            y: [0, -15, 0],
+          }}
+          transition={{
+            duration: 11,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 4
+          }}
+        />
+        
+        {/* Decorative circles */}
+        <motion.div
+          className="absolute top-32 right-1/4 w-3 h-3 bg-green-400/40 rounded-full"
+          animate={{
+            scale: [1, 1.5, 1],
+            opacity: [0.4, 0.8, 0.4],
+          }}
+          transition={{
+            duration: 3,
+            repeat: Infinity,
+            ease: "easeInOut"
+          }}
+        />
+        <motion.div
+          className="absolute bottom-1/3 left-1/4 w-4 h-4 bg-yellow-400/40 rounded-full"
+          animate={{
+            scale: [1, 1.5, 1],
+            opacity: [0.4, 0.8, 0.4],
+          }}
+          transition={{
+            duration: 4,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 1
+          }}
+        />
+        <motion.div
+          className="absolute top-2/3 right-1/3 w-2 h-2 bg-orange-400/50 rounded-full"
+          animate={{
+            scale: [1, 1.8, 1],
+            opacity: [0.5, 0.9, 0.5],
+          }}
+          transition={{
+            duration: 3.5,
             repeat: Infinity,
             ease: "easeInOut",
             delay: 2
           }}
         />
         
-        {/* Subtle energy lines */}
-        <svg className="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
+        {/* Energy waves */}
+        <svg className="absolute inset-0 w-full h-full opacity-15" xmlns="http://www.w3.org/2000/svg">
           <motion.path
-            d="M 0,200 Q 500,150 1000,200"
-            stroke="url(#energyGradient)"
-            strokeWidth="3"
+            d="M 0,300 Q 400,250 800,300 T 1600,300"
+            stroke="url(#waveGradient1)"
+            strokeWidth="2"
             fill="none"
-            initial={{ pathLength: 0 }}
-            animate={{ pathLength: 1 }}
+            initial={{ pathLength: 0, opacity: 0 }}
+            animate={{ pathLength: 1, opacity: 1 }}
             transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
           />
+          <motion.path
+            d="M 0,450 Q 500,400 1000,450 T 2000,450"
+            stroke="url(#waveGradient2)"
+            strokeWidth="2"
+            fill="none"
+            initial={{ pathLength: 0, opacity: 0 }}
+            animate={{ pathLength: 1, opacity: 1 }}
+            transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+          />
+          <motion.path
+            d="M 0,600 Q 600,550 1200,600"
+            stroke="url(#waveGradient3)"
+            strokeWidth="2"
+            fill="none"
+            initial={{ pathLength: 0, opacity: 0 }}
+            animate={{ pathLength: 1, opacity: 1 }}
+            transition={{ duration: 3.5, repeat: Infinity, ease: "easeInOut", delay: 2 }}
+          />
           <defs>
-            <linearGradient id="energyGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <linearGradient id="waveGradient1" x1="0%" y1="0%" x2="100%" y2="0%">
               <stop offset="0%" stopColor="#86efac" stopOpacity="0" />
-              <stop offset="50%" stopColor="#fde047" stopOpacity="1" />
+              <stop offset="50%" stopColor="#86efac" stopOpacity="1" />
               <stop offset="100%" stopColor="#86efac" stopOpacity="0" />
+            </linearGradient>
+            <linearGradient id="waveGradient2" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stopColor="#fde047" stopOpacity="0" />
+              <stop offset="50%" stopColor="#fde047" stopOpacity="1" />
+              <stop offset="100%" stopColor="#fde047" stopOpacity="0" />
+            </linearGradient>
+            <linearGradient id="waveGradient3" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stopColor="#fdba74" stopOpacity="0" />
+              <stop offset="50%" stopColor="#fdba74" stopOpacity="1" />
+              <stop offset="100%" stopColor="#fdba74" stopOpacity="0" />
             </linearGradient>
           </defs>
         </svg>
+        
+        {/* Subtle pattern overlay */}
+        <div className="absolute inset-0 opacity-[0.03]" style={{
+          backgroundImage: `radial-gradient(circle at 25% 25%, hsl(142 76% 36%) 2px, transparent 2px),
+                           radial-gradient(circle at 75% 75%, hsl(48 96% 53%) 1px, transparent 1px)`,
+          backgroundSize: '60px 60px'
+        }} />
       </div>
       
       <div className="container mx-auto px-6 lg:px-12 relative z-10">
