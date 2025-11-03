@@ -14,7 +14,7 @@
 @layer base {
   :root {
     /* Neutral, earthy colors - Soft Rosé-Beige, Coral-Peach, White */
-    --background: 30 15% 94%; /* Soft taupe/beige */
+    --background: 30 35% 87%; /* Warm beige/cream */
     --foreground: 30 20% 20%; /* Dark warm gray */
 
     --card: 0 0% 100%; /* Pure white cards */
@@ -102,7 +102,7 @@
 
   body {
     @apply text-foreground font-sans;
-    background: hsl(30 15% 94%);
+    background: hsl(30 35% 87%);
     min-height: 100vh;
   }
 
@@ -242,7 +242,7 @@
   .bg-warm-gradient,
   .modern-section,
   .bg-background {
-    background: hsl(30 15% 94%);
+    background: hsl(30 35% 87%);
   }
   
   /* Dezente Überschriften-Boxen in natürlichen Tönen */
