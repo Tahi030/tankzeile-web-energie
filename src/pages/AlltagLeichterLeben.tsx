@@ -56,7 +56,7 @@ const AlltagLeichterLeben = () => {
                 <a 
                   href="/lieblingsdose.pdf" 
                   download
-                  className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-primary-foreground px-4 py-2 rounded-lg transition-colors font-medium"
+                  className="inline-flex items-center gap-2 bg-[hsl(25_45%_35%)] hover:bg-[hsl(25_45%_30%)] text-white px-4 py-2 rounded-lg transition-all duration-300 font-medium shadow-md hover:shadow-lg"
                 >
                   Lieblingsdose herunterladen
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

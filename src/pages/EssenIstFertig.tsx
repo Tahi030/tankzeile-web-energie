@@ -123,7 +123,7 @@ const EssenIstFertig = () => {
                     href="https://paypal.me/tamarahillmann/22.00"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="block bg-primary hover:bg-primary/90 text-primary-foreground px-4 py-2 rounded-lg transition-colors font-medium w-full text-sm"
+                    className="block bg-[hsl(25_45%_35%)] hover:bg-[hsl(25_45%_30%)] text-white px-4 py-2 rounded-lg transition-all duration-300 font-medium w-full text-sm shadow-md hover:shadow-lg"
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
                   >
@@ -211,7 +211,7 @@ const EssenIstFertig = () => {
                     href="https://paypal.me/tamarahillmann/22.00"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="block bg-primary hover:bg-primary/90 text-primary-foreground px-4 py-2 rounded-lg transition-colors font-medium w-full text-sm"
+                    className="block bg-[hsl(25_45%_35%)] hover:bg-[hsl(25_45%_30%)] text-white px-4 py-2 rounded-lg transition-all duration-300 font-medium w-full text-sm shadow-md hover:shadow-lg"
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
                   >
