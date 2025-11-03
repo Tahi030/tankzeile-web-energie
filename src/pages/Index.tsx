@@ -115,7 +115,7 @@ const Index = () => {
             </h2>
             <div className="w-24 h-1 bg-primary mx-auto rounded-full" />
             <p className="text-base text-muted-foreground mt-6 max-w-2xl mx-auto">
-              Speziell entwickelte Workshops und Pakete für Kinder und Familien
+              Workshops, Materialien und kreative Angebote für Kinder, Familien und Einrichtungen.
             </p>
           </motion.div>
 
@@ -126,7 +126,7 @@ const Index = () => {
               title="Reise zur Powerzentrale"
               subtitle="Start: Frühjahr 2026"
               description="Mit Captain Apfel erleben Kinder ein spannendes Abenteuer: Wie kommt Energie in den Körper, was macht uns stark und konzentriert – und wie bleibt die Powerzentrale hell und aktiv?"
-              callToAction="👉 Bald landet Captain Apfel auch in deiner Kita!"
+              callToAction="Bald landet Captain Apfel auch in deiner Kita!"
               imageUrl="/assets/hero-crew.png"
               linkTo="/kontakt"
               buttonText="Vormerken lassen"
@@ -136,7 +136,7 @@ const Index = () => {
             
             <UniformOfferCard
               title="Essen ist fertig!"
-              description="Praktische Pakete zur Diagnose von Nahrungsmittelunverträglichkeiten bei Kindern. Speziell entwickelte Leitfäden, Rezepte und Alltagshilfen für Familien mit betroffenen Kindern."
+              description="Praktische PDF-Pakete rund um Nahrungsmittelunverträglichkeiten bei Kindern. Mit verständlichen Leitfäden, Rezeptideen und Alltagshilfen – entwickelt für Familien und pädagogische Fachkräfte."
               imageUrl="/assets/essen-ist-fertig-cover.jpg"
               linkTo="/essen-ist-fertig"
               buttonText="Pakete entdecken"
@@ -153,29 +153,17 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             
             <UniformOfferCard
-              title={
-                <span>
-                  <span className="text-red-500 font-bold">5</span>
-                  <span className="text-orange-500 font-bold">,</span>
-                  <span className="text-yellow-500 font-bold">4</span>
-                  <span className="text-green-500 font-bold">,</span>
-                  <span className="text-blue-500 font-bold">3</span>
-                  <span className="text-purple-500 font-bold">,</span>
-                  <span className="text-pink-500 font-bold">2</span>
-                  <span className="text-red-500 font-bold">,</span>
-                  <span className="text-orange-500 font-bold">1</span>
-                  <span className="text-foreground"> – Volle Obst- und Gemüsekraft voraus!</span>
-                </span>
-              }
-              description="Unser Mitmach-Lied zum Tanzen, Singen und Spaß haben. Beweg dich mit Captain Apfel & seiner Crew."
+              title="Mitmach-Lied Video"
+              description="Unser Mitmach-Lied lädt zum Tanzen, Singen und Spaßhaben ein. Beweg dich mit Captain Apfel und seiner Crew – volle Obst- und Gemüsekraft voraus!"
               videoPlaceholder={true}
+              buttonText="Bald verfügbar"
               accent="accent"
               delay={0.4}
             />
 
             <UniformOfferCard
               title="Mission Buntstift"
-              description="Jetzt bist du dran: Stifte raus und los!"
+              description="Jetzt bist du dran: Stifte raus und los! Hier findest du Ausmalbilder und kleine Kreativaufgaben mit Captain Apfel und seiner Crew – ideal für Kinder zuhause oder in der Kita."
               coloringPages={[
                 { imageUrl: "/images/paffel-ausmalbild-thumb.jpg", pdfUrl: "/pdfs/paffel-ausmalbild-v4.pdf" },
                 { imageUrl: "/images/powerzentrale-ausmalbild-thumb.jpg", pdfUrl: "/pdfs/powerzentrale-ausmalbild-v4.pdf" },
