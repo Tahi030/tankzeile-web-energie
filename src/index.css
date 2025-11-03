@@ -13,54 +13,54 @@
 
 @layer base {
   :root {
-    /* Warm, natural, professional color palette */
-    --background: 45 70% 96%; /* Soft cream */
-    --foreground: 25 20% 20%; /* Dark anthracite with warm tone */
+    /* Fresh, vibrant colors inspired by fruits and vegetables */
+    --background: 48 85% 96%; /* Soft warm cream */
+    --foreground: 25 25% 18%; /* Dark anthracite */
 
     --card: 0 0% 100%; /* Pure white cards */
-    --card-foreground: 25 20% 20%;
+    --card-foreground: 25 25% 18%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 25 20% 20%;
+    --popover-foreground: 25 25% 18%;
 
-    /* Warm Orange as primary (Captain Apfel brand color) */
-    --primary: 30 80% 55%; /* Warm, vibrant orange */
+    /* Vibrant Orange as primary (inspired by lentils/carrots) */
+    --primary: 25 95% 60%; /* Bright warm orange */
     --primary-foreground: 0 0% 100%; /* White text on orange */
 
     /* Fresh Apple Green as secondary */
-    --secondary: 85 50% 50%; /* Natural apple green */
+    --secondary: 110 55% 48%; /* Vibrant apple green */
     --secondary-foreground: 0 0% 100%; /* White text on green */
 
     /* Light natural backgrounds */
-    --muted: 45 50% 95%; /* Very light warm beige */
-    --muted-foreground: 25 15% 35%; /* Dark gray for text */
+    --muted: 45 70% 94%; /* Very light warm yellow-beige */
+    --muted-foreground: 25 20% 30%; /* Dark gray for text */
 
-    /* Fresh Pink accent for CTAs */
-    --accent: 345 70% 55%; /* Vibrant fresh pink */
+    /* Fresh Pink/Magenta accent (dragonfruit inspired) */
+    --accent: 330 75% 58%; /* Vibrant fresh pink */
     --accent-foreground: 0 0% 100%; /* White text on accent */
 
-    /* Soft warm yellow for highlights */
-    --blackberry: 48 90% 70%; /* Soft warm yellow */
-    --blackberry-foreground: 25 20% 20%;
+    /* Sky Blue for highlights */
+    --blackberry: 200 80% 70%; /* Soft sky blue */
+    --blackberry-foreground: 0 0% 100%;
 
     --destructive: 0 70% 55%;
     --destructive-foreground: 0 0% 100%;
 
     /* Soft natural borders */
-    --border: 45 25% 88%; /* Light beige border */
-    --input: 45 40% 96%; /* Very light beige input bg */
-    --ring: 30 80% 55%; /* Orange focus ring */
+    --border: 45 30% 86%; /* Light beige border */
+    --input: 45 50% 95%; /* Very light beige input bg */
+    --ring: 25 95% 60%; /* Orange focus ring */
 
     --radius: 0.5rem;
 
-    --sidebar-background: 45 50% 97%;
-    --sidebar-foreground: 25 15% 30%;
-    --sidebar-primary: 25 20% 20%;
+    --sidebar-background: 45 60% 97%;
+    --sidebar-foreground: 25 20% 28%;
+    --sidebar-primary: 25 25% 18%;
     --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 45 40% 94%;
-    --sidebar-accent-foreground: 25 20% 20%;
-    --sidebar-border: 45 25% 90%;
-    --sidebar-ring: 30 80% 55%;
+    --sidebar-accent: 45 50% 94%;
+    --sidebar-accent-foreground: 25 25% 18%;
+    --sidebar-border: 45 30% 88%;
+    --sidebar-ring: 25 95% 60%;
   }
 
   .dark {
@@ -102,7 +102,7 @@
 
   body {
     @apply text-foreground font-sans;
-    background: linear-gradient(180deg, hsl(48 80% 94%) 0%, hsl(45 70% 96%) 50%, hsl(42 65% 95%) 100%);
+    background: linear-gradient(180deg, hsl(48 90% 92%) 0%, hsl(45 75% 94%) 50%, hsl(350 40% 94%) 100%);
     min-height: 100vh;
   }
 
@@ -228,9 +228,9 @@
   .modern-section,
   .bg-background {
     background: linear-gradient(180deg, 
-      hsl(48 80% 94%) 0%, 
-      hsl(45 70% 96%) 50%,
-      hsl(42 65% 95%) 100%
+      hsl(48 90% 92%) 0%, 
+      hsl(45 75% 94%) 50%,
+      hsl(350 40% 94%) 100%
     );
   }
   
