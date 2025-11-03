@@ -118,19 +118,19 @@
   
   /* UNIFIED TYPOGRAPHY SYSTEM - Modern & Clean */
   .heading-xl {
-    @apply text-4xl md:text-5xl lg:text-6xl font-bold text-primary font-luckiest;
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold text-foreground font-luckiest;
   }
   
   .heading-lg {
-    @apply text-3xl md:text-4xl lg:text-5xl font-semibold text-primary font-luckiest;
+    @apply text-3xl md:text-4xl lg:text-5xl font-semibold text-foreground font-luckiest;
   }
   
   .heading-md {
-    @apply text-2xl md:text-3xl lg:text-4xl font-medium text-primary font-luckiest;
+    @apply text-2xl md:text-3xl lg:text-4xl font-medium text-foreground font-luckiest;
   }
   
   .heading-sm {
-    @apply text-xl md:text-2xl font-medium text-primary font-luckiest;
+    @apply text-xl md:text-2xl font-medium text-foreground font-luckiest;
   }
   
   .body-lg {
