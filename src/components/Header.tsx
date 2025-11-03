@@ -66,7 +66,7 @@ const Header = () => {
 
   // Warm, earthy and pastel header design inspired by reference images
   const getHeaderColor = () => {
-    return 'bg-gradient-to-r from-orange-100 via-pink-50 to-yellow-100 backdrop-blur-sm border-b-4 border-orange-200/40';
+    return 'bg-gradient-to-r from-rose-100 via-amber-50 to-yellow-100 backdrop-blur-sm border-b-4 border-amber-200/40';
   };
 
   // Dark text on light pastel background
@@ -75,7 +75,7 @@ const Header = () => {
   };
 
   const getHoverColor = () => {
-    return 'hover:bg-primary/10';
+    return 'hover:bg-amber-100/50';
   };
 
   return (
@@ -142,7 +142,7 @@ const Header = () => {
           <div className="hidden md:block">
             <Link 
               to="/kontakt"
-              className="bg-primary hover:bg-primary-dark text-white px-6 py-3 rounded-full transition-all duration-200 text-base font-medium whitespace-nowrap shadow-md hover:shadow-lg"
+              className="bg-primary hover:bg-primary-dark text-foreground px-6 py-3 rounded-full transition-all duration-200 text-base font-medium whitespace-nowrap shadow-md hover:shadow-lg"
               onClick={() => window.scrollTo(0, 0)}
             >
               Kontakt
@@ -184,7 +184,7 @@ const Header = () => {
               </Link>
             </div>
             
-            <Link to="/kontakt" className="block mx-3 mt-3 px-3 py-3 bg-primary text-white rounded-md text-base font-medium hover:bg-primary-dark" onClick={() => {setMobileMenuOpen(false); window.scrollTo(0, 0);}}>
+            <Link to="/kontakt" className="block mx-3 mt-3 px-3 py-3 bg-primary text-foreground rounded-md text-base font-medium hover:bg-primary-dark" onClick={() => {setMobileMenuOpen(false); window.scrollTo(0, 0);}}>
               Kontakt
             </Link>
           </div>

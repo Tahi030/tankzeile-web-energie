@@ -26,25 +26,25 @@ export default {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				primary: {
-					DEFAULT: 'hsl(var(--primary))', // Bright Orange
-					light: 'hsl(25 95% 70%)',
-					dark: 'hsl(25 95% 50%)',
+					DEFAULT: 'hsl(var(--primary))', // Golden Wheat
+					light: 'hsl(40 85% 65%)',
+					dark: 'hsl(40 85% 45%)',
 					foreground: 'hsl(var(--primary-foreground))'
 				},
 				secondary: {
-					DEFAULT: 'hsl(var(--secondary))', // Apple Green
-					light: 'hsl(110 55% 58%)',
-					dark: 'hsl(110 55% 38%)',
+					DEFAULT: 'hsl(var(--secondary))', // Soft Rose
+					light: 'hsl(350 50% 82%)',
+					dark: 'hsl(350 50% 65%)',
 					foreground: 'hsl(var(--secondary-foreground))'
 				},
 				accent: {
-					DEFAULT: 'hsl(var(--accent))', // Fresh Pink/Magenta
-					light: 'hsl(330 75% 68%)',
-					dark: 'hsl(330 75% 48%)',
+					DEFAULT: 'hsl(var(--accent))', // Warm Sand/Amber
+					light: 'hsl(35 75% 70%)',
+					dark: 'hsl(35 75% 50%)',
 					foreground: 'hsl(var(--accent-foreground))'
 				},
 				blackberry: {
-					DEFAULT: 'hsl(var(--blackberry))', // Sky Blue
+					DEFAULT: 'hsl(var(--blackberry))', // Light Dusty Rose
 					foreground: 'hsl(var(--blackberry-foreground))'
 				},
 				muted: {
