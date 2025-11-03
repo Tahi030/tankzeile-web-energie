@@ -181,7 +181,7 @@
   
   /* Polaroid-Style Crew Cards für Kinder */
   .crew-card {
-    @apply bg-white rounded-lg p-3 shadow-lg border-2 border-white transition-all duration-300 hover:shadow-xl hover:scale-[1.05] relative h-full;
+    @apply bg-white rounded-lg p-3 shadow-lg border-2 border-white transition-all duration-300 hover:shadow-xl hover:scale-[1.05] active:scale-[1.02] relative h-full cursor-pointer;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
   }
   
@@ -220,7 +220,22 @@
   
   /* Modern offer box styles */
   .offer-box {
-    @apply bg-card rounded-2xl p-8 shadow-sm border border-border transition-all duration-300 hover:shadow-md hover:scale-[1.01] relative;
+    @apply bg-card rounded-2xl p-8 shadow-sm border border-border transition-all duration-300 hover:shadow-md hover:scale-[1.01] active:scale-[1.00] relative cursor-pointer;
+  }
+  
+  /* Interactive link styles */
+  .interactive-link {
+    @apply transition-all duration-200 hover:text-primary active:scale-95 underline-offset-2 hover:underline;
+  }
+  
+  /* PDF Download button styles */
+  .pdf-download-btn {
+    @apply inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-primary text-primary-foreground transition-all duration-300 hover:bg-primary/80 hover:shadow-md active:scale-95 font-medium;
+  }
+  
+  /* Card hover effect */
+  .hover-card {
+    @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1 active:translate-y-0;
   }
   
   /* Modern cohesive background throughout */
