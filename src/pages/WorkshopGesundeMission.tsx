@@ -16,7 +16,7 @@ const WorkshopGesundeMission = () => {
           <div className="max-w-3xl mx-auto">
             <h1 className="text-3xl md:text-4xl font-bold mb-6 text-white">Reise zur Powerzentrale</h1>
             <p className="text-xl text-white mb-2">Erlebnisworkshop Ernährung & Bewegung</p>
-            <p className="text-lg text-white/90">Für Vorschulkinder und Grundschule</p>
+            <p className="text-lg text-white/90">Für Vorschul- und Grundschulkinder</p>
             <div className="flex justify-center mb-6">
               <svg width="120" height="8" viewBox="0 0 120 8" className="text-white">
                 <path
@@ -97,8 +97,7 @@ const WorkshopGesundeMission = () => {
                 to="/kontakt" 
                 className="inline-block bg-accent text-accent-foreground px-8 py-4 rounded-full font-semibold hover:opacity-90 transition-all duration-300 shadow-lg hover:shadow-xl"
               >
-                Jetzt Kita vormerken und Teil der Power-Mission werden!<br />
-                Captain Apfel kommt 2026 nach Berlin – sichere dir deinen Platz!
+                Jetzt Kita vormerken und Teil der Power-Mission werden!
               </Link>
             </div>
 
