@@ -42,59 +42,31 @@ const HinterCaptainApfel = () => {
           >
             <div className="content-spacing">
               <p className="body-lg">
-                Ich bin <em>Tamara Hillmann</em>, der kreative Kopf hinter <strong>Captain Apfel</strong>.
-                Kinder lieben Geschichten – und über Fantasiefiguren lassen sich große Themen wie Gesundheit und Wohlbefinden besonders gut vermitteln. <strong>Captain Apfel</strong> steht für Energie, Freude und das Gefühl, dass gesunde Gewohnheiten leicht Teil des Alltags werden können.
+                Ich bin <em>Tamara Hillmann</em>, Gründerin und kreativer Kopf hinter <strong>Captain Apfel</strong>.
+                Ursprünglich komme ich aus der Organisations- und Projektarbeit – und genau diese Erfahrung nutze ich heute, um Gesundheitsprojekte professionell und mit Struktur umzusetzen.
               </p>
               
               <p className="body-lg">
-                Ich arbeite eng mit Kindern und Einrichtungen zusammen und bringe dort meine Erfahrung und mein Fachwissen ein. Dabei verbinde ich eigene Erfahrungen mit fundiertem Wissen und bilde mich kontinuierlich weiter – unter anderem an der Akademie der Naturheilkunde. Besonders beschäftige ich mich mit dem Thema Unverträglichkeiten, das mir persönlich am Herzen liegt. Aus diesem Weg entstehen die Pakete, die Familien im Alltag Orientierung und Unterstützung geben.
+                Mit der Zeit rückte ein Thema immer stärker in den Mittelpunkt: gesunde Ernährung und Unverträglichkeiten bei Kindern.
+                Aus eigener Betroffenheit und stetiger Weiterbildung in Naturheilkunde entstand die Idee, Wissen und Alltagspraxis zu verbinden.
               </p>
               
               <p className="body-lg">
-                Meine bisherigen Fortbildungen und Zertifikate findest du gleich hier auf der Seite – weil mir Qualität, Transparenz und Weiterentwicklung wichtig sind.
+                Ich bilde mich regelmäßig in den Bereichen Ernährung, Naturheilkunde und Kindergesundheit weiter, um neue Erkenntnisse in meine Arbeit einfließen zu lassen.
               </p>
               
-              <div>
-                {/* Certificates - nicht anklickbar */}
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 mb-6">
-                  <div className="rounded-lg overflow-hidden border border-border/30">
-                    <img
-                      src="/certificates/kinderschutzkonzept.jpg"
-                      alt="Kinderschutzkonzept Zertifikat"
-                      className="image-certificate"
-                    />
-                  </div>
-                  
-                  <div className="rounded-lg overflow-hidden border border-border/30">
-                    <img
-                      src="/certificates/adultismus.jpg"
-                      alt="Was ist Adultismus Zertifikat"
-                      className="image-certificate"
-                    />
-                  </div>
-                  
-                  <div className="rounded-lg overflow-hidden border border-border/30">
-                    <img
-                      src="/certificates/neurodiversitaet.jpg"
-                      alt="Was ist Neurodiversität Zertifikat"
-                      className="image-certificate"
-                    />
-                  </div>
-                  
-                  <div className="rounded-lg overflow-hidden border border-border/30">
-                    <img
-                      src="/certificates/interaktion.jpg"
-                      alt="Fachkraft-Kind-Interaktion Zertifikat"
-                      className="image-certificate"
-                    />
-                  </div>
-                </div>
+              <p className="body-lg">
+                So wurde <strong>Captain Apfel</strong> geboren: eine Initiative, die Kinder mit Freude an das Thema Wohlbefinden heranführt und Kitas praktische Werkzeuge an die Hand gibt.
+              </p>
+              
+              <p className="body-lg">
+                Ich entwickle Workshops, Materialien und Impulse, die Gesundheit spürbar machen – mit Herz, Verstand und einer großen Portion Begeisterung.
+              </p>
 
-                <p className="body-lg mt-6 mb-6">
-                  Herzliche Grüße<br />
-                  <em>Tamara Hillmann</em>
-                </p>
-              </div>
+              <p className="body-lg mt-6">
+                Herzliche Grüße<br />
+                <em>Tamara Hillmann</em>
+              </p>
             </div>
           </motion.div>
         </div>
