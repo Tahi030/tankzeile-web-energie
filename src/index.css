@@ -42,6 +42,10 @@
     /* Light cream for highlights */
     --blackberry: 40 30% 88%; /* Light warm cream */
     --blackberry-foreground: 30 20% 20%;
+    
+    /* Brown for buttons */
+    --button-brown: 25 45% 35%; /* Warm medium brown */
+    --button-brown-foreground: 0 0% 100%; /* White text */
 
     --destructive: 0 60% 50%;
     --destructive-foreground: 0 0% 100%;
@@ -230,7 +234,7 @@
   
   /* PDF Download button styles */
   .pdf-download-btn {
-    @apply inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-primary text-primary-foreground transition-all duration-300 hover:bg-primary/80 hover:shadow-md active:scale-95 font-medium;
+    @apply inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-[hsl(25_45%_35%)] text-white transition-all duration-300 hover:bg-[hsl(25_45%_30%)] hover:shadow-md active:scale-95 font-medium;
   }
   
   /* Card hover effect */

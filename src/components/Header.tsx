@@ -145,7 +145,7 @@ const Header = () => {
           <div className="hidden md:block">
             <Link 
               to="/kontakt"
-              className="bg-primary hover:bg-primary/80 text-primary-foreground px-6 py-3 rounded-full transition-all duration-300 text-base font-medium whitespace-nowrap shadow-md hover:shadow-lg active:scale-95"
+              className="bg-[hsl(25_45%_35%)] hover:bg-[hsl(25_45%_30%)] text-white px-6 py-3 rounded-full transition-all duration-300 text-base font-medium whitespace-nowrap shadow-md hover:shadow-lg active:scale-95"
               onClick={() => window.scrollTo(0, 0)}
             >
               Kontakt
@@ -187,7 +187,7 @@ const Header = () => {
               </Link>
             </div>
             
-            <Link to="/kontakt" className="block mx-3 mt-3 px-3 py-3 bg-primary text-primary-foreground rounded-md text-base font-medium transition-all duration-300 hover:bg-primary/80 hover:shadow-md active:scale-95" onClick={() => {setMobileMenuOpen(false); window.scrollTo(0, 0);}}>
+            <Link to="/kontakt" className="block mx-3 mt-3 px-3 py-3 bg-[hsl(25_45%_35%)] text-white rounded-md text-base font-medium transition-all duration-300 hover:bg-[hsl(25_45%_30%)] hover:shadow-md active:scale-95" onClick={() => {setMobileMenuOpen(false); window.scrollTo(0, 0);}}>
               Kontakt
             </Link>
           </div>

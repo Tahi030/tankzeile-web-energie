@@ -9,15 +9,15 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground hover:bg-primary/80 hover:shadow-md",
+        default: "bg-[hsl(25_45%_35%)] text-white hover:bg-[hsl(25_45%_30%)] hover:shadow-md",
         destructive:
-          "bg-destructive text-destructive-foreground hover:bg-destructive/80 hover:shadow-md",
+          "bg-[hsl(25_45%_35%)] text-white hover:bg-[hsl(25_45%_30%)] hover:shadow-md",
         outline:
-          "border border-input bg-background hover:bg-muted hover:text-foreground hover:border-primary/30",
+          "border-2 border-[hsl(25_45%_35%)] bg-background text-[hsl(25_45%_35%)] hover:bg-[hsl(25_45%_35%)] hover:text-white hover:shadow-md",
         secondary:
-          "bg-secondary text-secondary-foreground hover:bg-secondary/80 hover:shadow-md",
-        ghost: "hover:bg-muted hover:text-foreground",
-        link: "text-primary underline-offset-4 hover:underline hover:text-primary/80",
+          "bg-[hsl(25_45%_35%)] text-white hover:bg-[hsl(25_45%_30%)] hover:shadow-md",
+        ghost: "text-[hsl(25_45%_35%)] hover:bg-[hsl(25_45%_35%)]/10 hover:text-[hsl(25_45%_30%)]",
+        link: "text-[hsl(25_45%_35%)] underline-offset-4 hover:underline hover:text-[hsl(25_45%_30%)]",
       },
       size: {
         default: "h-10 px-4 py-2",
