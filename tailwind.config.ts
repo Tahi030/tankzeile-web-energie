@@ -32,9 +32,9 @@ export default {
 					foreground: 'hsl(var(--primary-foreground))'
 				},
 				secondary: {
-					DEFAULT: 'hsl(var(--secondary))', // Olive Green
-					light: 'hsl(80 30% 55%)',
-					dark: 'hsl(80 30% 35%)',
+					DEFAULT: 'hsl(var(--secondary))', // Warm Coral-Peach
+					light: 'hsl(12 70% 80%)',
+					dark: 'hsl(12 70% 62%)',
 					foreground: 'hsl(var(--secondary-foreground))'
 				},
 				accent: {

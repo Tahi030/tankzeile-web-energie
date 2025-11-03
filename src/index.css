@@ -13,7 +13,7 @@
 
 @layer base {
   :root {
-    /* Neutral, earthy colors - Soft Rosé-Beige, Olive Green, White */
+    /* Neutral, earthy colors - Soft Rosé-Beige, Coral-Peach, White */
     --background: 30 15% 94%; /* Soft taupe/beige */
     --foreground: 30 20% 20%; /* Dark warm gray */
 
@@ -27,9 +27,9 @@
     --primary: 15 30% 70%; /* Warm dusty rose/beige */
     --primary-foreground: 30 20% 20%; /* Dark text on rosé */
 
-    /* Olive Green as secondary */
-    --secondary: 80 30% 45%; /* Muted olive green */
-    --secondary-foreground: 0 0% 100%; /* White text on olive */
+    /* Warm Coral-Peach as secondary */
+    --secondary: 12 70% 72%; /* Warm coral/peach */
+    --secondary-foreground: 0 0% 100%; /* White text on coral */
 
     /* Light backgrounds */
     --muted: 30 15% 92%; /* Very light taupe */
