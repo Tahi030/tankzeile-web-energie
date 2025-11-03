@@ -13,7 +13,7 @@
 
 @layer base {
   :root {
-    /* Neutral, earthy colors - Taupe, Cappuccino, Olive Green */
+    /* Neutral, earthy colors - Soft Rosé-Beige, Olive Green, White */
     --background: 30 15% 94%; /* Soft taupe/beige */
     --foreground: 30 20% 20%; /* Dark warm gray */
 
@@ -23,9 +23,9 @@
     --popover: 0 0% 100%;
     --popover-foreground: 30 20% 20%;
 
-    /* Cappuccino/Coffee as primary */
-    --primary: 25 35% 45%; /* Warm cappuccino brown */
-    --primary-foreground: 0 0% 100%; /* White text on brown */
+    /* Soft Rosé-Beige as primary */
+    --primary: 15 30% 70%; /* Warm dusty rose/beige */
+    --primary-foreground: 30 20% 20%; /* Dark text on rosé */
 
     /* Olive Green as secondary */
     --secondary: 80 30% 45%; /* Muted olive green */
@@ -49,7 +49,7 @@
     /* Neutral borders */
     --border: 30 15% 82%; /* Light taupe border */
     --input: 30 12% 92%; /* Very light taupe input bg */
-    --ring: 25 35% 45%; /* Cappuccino focus ring */
+    --ring: 15 30% 70%; /* Rosé-Beige focus ring */
 
     --radius: 0.5rem;
 
@@ -60,7 +60,7 @@
     --sidebar-accent: 30 12% 90%;
     --sidebar-accent-foreground: 30 20% 20%;
     --sidebar-border: 30 15% 85%;
-    --sidebar-ring: 25 35% 45%;
+    --sidebar-ring: 15 30% 70%;
   }
 
   .dark {

@@ -26,9 +26,9 @@ export default {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				primary: {
-					DEFAULT: 'hsl(var(--primary))', // Cappuccino Brown
-					light: 'hsl(25 35% 55%)',
-					dark: 'hsl(25 35% 35%)',
+					DEFAULT: 'hsl(var(--primary))', // Soft Rosé-Beige
+					light: 'hsl(15 30% 78%)',
+					dark: 'hsl(15 30% 60%)',
 					foreground: 'hsl(var(--primary-foreground))'
 				},
 				secondary: {
