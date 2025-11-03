@@ -22,8 +22,8 @@ const Index = () => {
       {/* Hero Section with large welcoming image */}
       <HeroWelcome />
 
-      {/* Captain Apfel Introduction - Directly connected to hero */}
-      <section className="pt-0 pb-16">
+      {/* Captain Apfel Introduction */}
+      <section className="section-padding">
         <div className="container-custom">
           <motion.div 
             className="max-w-4xl mx-auto"
@@ -40,22 +40,29 @@ const Index = () => {
               
               <div className="relative space-y-6">
                 <div className="text-center space-y-4">
-                  <h2 className="text-2xl font-luckiest text-primary">
-                    Hallo, ich bin Captain Apfel.
+                  <h2 className="text-3xl font-luckiest text-primary">
+                    Hallo, ich bin Captain Apfel!
                   </h2>
                   
                   <p className="text-base text-muted-foreground leading-relaxed">
-                    Ich bin mit meiner Crew auf gesunder Mission unterwegs.
+                    Ich bin mit meiner Crew auf gesunder Mission unterwegs. Gemeinsam bringen wir Kindern bei, was ihrem Körper guttut – und wie sie ihre Powerzentrale hell leuchten lassen.
                   </p>
                 </div>
                 
                 <div className="space-y-6 text-center">
-                  <p className="text-base leading-relaxed text-muted-foreground">
-                    Hier findest du Ideen rund um Ernährung, Unverträglichkeiten und ganzheitliches Wohlbefinden – mit Spaß, Wissen und Energie aus der Powerzentrale, der Mitte des Körpers.
-                  </p>
+                  <div className="space-y-4">
+                    <p className="text-base font-semibold text-foreground">
+                      Hier findest du:
+                    </p>
+                    <ul className="text-base leading-relaxed text-muted-foreground space-y-2 text-left max-w-2xl mx-auto">
+                      <li>– Workshops voller Bewegung, Wissen und Abenteuer</li>
+                      <li>– Materialien und PDF-Pakete zu Ernährung und Unverträglichkeiten</li>
+                      <li>– Projekte, die Familien, Kitas und Schulen stärken</li>
+                    </ul>
+                  </div>
                   
                   <p className="text-base leading-relaxed text-muted-foreground">
-                    Ab 2026 startet in Berliner Einrichtungen unsere „Reise zur Powerzentrale" – für Vorschul- und Grundschulkinder.
+                    Ab Frühjahr 2026 startet unsere „Reise zur Powerzentrale" in Berliner Einrichtungen – für Vorschulkinder und Grundschüler.
                   </p>
                   
                   <div className="pt-6 border-t border-primary/10">
@@ -71,7 +78,25 @@ const Index = () => {
       </section>
 
       {/* Crew Section - Modern display */}
-      <ModernCrewSection />
+      <section className="section-padding bg-gradient-to-b from-background to-secondary/5">
+        <div className="container-custom">
+          <motion.div 
+            className="text-center mb-12"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-3xl font-bold text-primary font-luckiest mb-4">
+              Lerne die Crew kennen
+            </h2>
+            <p className="text-base text-muted-foreground max-w-2xl mx-auto">
+              Jedes Mitglied hat seine eigene Superkraft – gemeinsam halten sie die Powerzentrale aktiv.
+            </p>
+          </motion.div>
+          <ModernCrewSection />
+        </div>
+      </section>
 
       {/* Direct Homepage Offers Integration */}
       <section className="section-padding">
