@@ -86,20 +86,16 @@ const WorkshopGesundeMission = () => {
                   Ideal für Eingangsbereiche, Team-Portfolios oder Nachweise im Bereich „Kita-Gesundheit".
                 </p>
                 
-                <p className="mb-6 text-white leading-relaxed">
+                <p className="text-white leading-relaxed">
                   Captain Apfel vermittelt gesunde Gewohnheiten erlebnisreich, kindgerecht und mit echtem Aha-Effekt.
-                </p>
-                
-                <p className="text-lg font-semibold text-white">
-                  👉 Jetzt Kita vormerken und Teil der Power-Mission werden!<br />
-                  Captain Apfel kommt 2026 nach Berlin – sichere dir deinen Platz!
                 </p>
               </div>
             </div>
 
             <div className="mt-12 text-center">
-              <Link to="/kontakt" className="btn-primary">
-                Jetzt Kita vormerken
+              <Link to="/kontakt" className="btn-primary inline-block">
+                Jetzt Kita vormerken und Teil der Power-Mission werden!<br />
+                Captain Apfel kommt 2026 nach Berlin – sichere dir deinen Platz!
               </Link>
             </div>
 
