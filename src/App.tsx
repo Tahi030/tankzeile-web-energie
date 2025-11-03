@@ -5,7 +5,6 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import PageLayout from "./components/PageLayout";
-import CookieConsent from "./components/CookieConsent";
 
 // Pages
 import Index from "./pages/Index";
@@ -34,7 +33,6 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <CookieConsent />
       <BrowserRouter>
         <Routes>
           {/* Captain Apfel Workshop - standalone without PageLayout */}

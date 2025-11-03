@@ -91,7 +91,12 @@ const Footer = () => {
         </div>
 
         <div className="mt-10 pt-6 border-t border-white/20 text-center relative z-10">
-          <p>&copy; 2025 Captain Apfel. Alle Rechte vorbehalten.</p>
+          <p className="text-xs text-white/60 mb-2">
+            Diese Website verwendet ausschließlich technisch notwendige Cookies, um grundlegende Funktionen bereitzustellen.
+            Es findet kein Tracking oder Marketing-Tracking statt.
+            Weitere Informationen stehen in der <Link to="/datenschutz" className="underline hover:text-white/80">Datenschutzerklärung</Link>.
+          </p>
+          <p className="text-sm">&copy; 2025 Captain Apfel. Alle Rechte vorbehalten.</p>
         </div>
       </div>
     </footer>
