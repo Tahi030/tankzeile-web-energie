@@ -93,7 +93,10 @@ const WorkshopGesundeMission = () => {
             </div>
 
             <div className="mt-12 text-center">
-              <Link to="/kontakt" className="btn-primary inline-block">
+              <Link 
+                to="/kontakt" 
+                className="inline-block bg-accent text-accent-foreground px-8 py-4 rounded-full font-semibold hover:opacity-90 transition-all duration-300 shadow-lg hover:shadow-xl"
+              >
                 Jetzt Kita vormerken und Teil der Power-Mission werden!<br />
                 Captain Apfel kommt 2026 nach Berlin – sichere dir deinen Platz!
               </Link>
