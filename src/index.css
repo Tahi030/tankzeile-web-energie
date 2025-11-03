@@ -13,54 +13,54 @@
 
 @layer base {
   :root {
-    /* Soft pastel colors for a calm, modern look */
-    --background: 270 40% 98%; /* Very light lavender-tinted white */
-    --foreground: 220 20% 25%; /* Dark blue-gray for readability */
+    /* Warm, natural colors with fresh accents */
+    --background: 40 90% 97%; /* Warm cream/beige */
+    --foreground: 220 15% 25%; /* Anthracite gray for readability */
 
     --card: 0 0% 100%; /* Pure white cards */
-    --card-foreground: 220 20% 25%;
+    --card-foreground: 220 15% 25%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 220 20% 25%;
+    --popover-foreground: 220 15% 25%;
 
-    /* Soft Lavender as primary */
-    --primary: 270 50% 75%; /* Soft lavender/lilac */
-    --primary-foreground: 220 20% 25%; /* Dark text on light background */
+    /* Warm Orange as primary (inspired by Captain Apfel) */
+    --primary: 25 85% 60%; /* Warm orange */
+    --primary-foreground: 0 0% 100%; /* White text on orange */
 
-    /* Baby Blue as secondary */
-    --secondary: 200 60% 80%; /* Soft baby blue */
-    --secondary-foreground: 220 20% 25%; /* Dark text */
+    /* Fresh Pink as secondary */
+    --secondary: 340 75% 60%; /* Fresh pink */
+    --secondary-foreground: 0 0% 100%; /* White text on pink */
 
-    /* Light backgrounds */
-    --muted: 270 30% 96%; /* Very light lavender muted */
-    --muted-foreground: 220 20% 30%; /* Dark blue-gray for text */
+    /* Light natural backgrounds */
+    --muted: 40 60% 96%; /* Very light beige */
+    --muted-foreground: 220 15% 30%; /* Dark gray for text */
 
-    /* Pink-Violet accent for buttons and highlights */
-    --accent: 320 70% 60%; /* Vibrant pink-violet for CTAs */
+    /* Natural green/turquoise accent for CTAs */
+    --accent: 170 50% 55%; /* Natural turquoise-green */
     --accent-foreground: 0 0% 100%; /* White text on accent */
 
-    /* Soft pink for special cases */
-    --blackberry: 340 60% 85%; /* Soft pink */
-    --blackberry-foreground: 220 20% 25%;
+    /* Soft gold for special cases */
+    --blackberry: 45 70% 65%; /* Soft gold/yellow */
+    --blackberry-foreground: 220 15% 25%;
 
-    --destructive: 0 70% 65%;
+    --destructive: 0 70% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    /* Soft borders */
-    --border: 270 20% 88%; /* Light lavender-gray border */
-    --input: 270 25% 95%; /* Very light lavender input bg */
-    --ring: 320 70% 60%; /* Pink-violet focus ring */
+    /* Soft natural borders */
+    --border: 40 20% 85%; /* Light beige-gray border */
+    --input: 40 40% 95%; /* Very light beige input bg */
+    --ring: 25 85% 60%; /* Orange focus ring */
 
     --radius: 0.5rem;
 
-    --sidebar-background: 270 30% 98%;
-    --sidebar-foreground: 220 20% 30%;
-    --sidebar-primary: 220 20% 25%;
+    --sidebar-background: 40 50% 98%;
+    --sidebar-foreground: 220 15% 30%;
+    --sidebar-primary: 220 15% 25%;
     --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 270 25% 95%;
-    --sidebar-accent-foreground: 220 20% 25%;
-    --sidebar-border: 270 20% 90%;
-    --sidebar-ring: 320 70% 60%;
+    --sidebar-accent: 40 40% 95%;
+    --sidebar-accent-foreground: 220 15% 25%;
+    --sidebar-border: 40 20% 88%;
+    --sidebar-ring: 25 85% 60%;
   }
 
   .dark {
@@ -102,7 +102,7 @@
 
   body {
     @apply text-foreground font-sans;
-    background: linear-gradient(135deg, hsl(270 40% 98%) 0%, hsl(200 40% 96%) 30%, hsl(340 40% 97%) 60%, hsl(270 40% 98%) 100%);
+    background: linear-gradient(135deg, hsl(40 90% 97%) 0%, hsl(35 70% 94%) 30%, hsl(45 80% 96%) 60%, hsl(40 90% 97%) 100%);
     min-height: 100vh;
   }
 
@@ -228,16 +228,16 @@
   .modern-section,
   .bg-background {
     background: linear-gradient(135deg, 
-      hsl(270 40% 98%) 0%, 
-      hsl(200 40% 96%) 30%,
-      hsl(340 40% 97%) 60%,
-      hsl(270 40% 98%) 100%
+      hsl(40 90% 97%) 0%, 
+      hsl(35 70% 94%) 30%,
+      hsl(45 80% 96%) 60%,
+      hsl(40 90% 97%) 100%
     );
   }
   
-  /* Dezente Überschriften-Boxen in Pastelltönen */
+  /* Dezente Überschriften-Boxen in natürlichen Tönen */
   .heading-box {
-    @apply bg-gradient-to-r from-purple-50/60 via-blue-50/60 to-pink-50/60 backdrop-blur-sm rounded-2xl p-6 shadow-sm border border-purple-200/40;
+    @apply bg-gradient-to-r from-orange-50/60 via-amber-50/60 to-yellow-50/60 backdrop-blur-sm rounded-2xl p-6 shadow-sm border border-orange-200/40;
   }
 
   /* Playful countdown numbers for kids */
