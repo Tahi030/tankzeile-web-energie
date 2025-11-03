@@ -13,54 +13,54 @@
 
 @layer base {
   :root {
-    /* Warm, natural colors inspired by wheat fields and rose sky */
-    --background: 40 60% 95%; /* Soft warm beige */
-    --foreground: 25 25% 18%; /* Dark anthracite */
+    /* Neutral, earthy colors - Taupe, Cappuccino, Olive Green */
+    --background: 30 15% 94%; /* Soft taupe/beige */
+    --foreground: 30 20% 20%; /* Dark warm gray */
 
     --card: 0 0% 100%; /* Pure white cards */
-    --card-foreground: 25 25% 18%;
+    --card-foreground: 30 20% 20%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 25 25% 18%;
+    --popover-foreground: 30 20% 20%;
 
-    /* Golden wheat as primary */
-    --primary: 40 85% 55%; /* Warm golden yellow */
-    --primary-foreground: 25 25% 18%; /* Dark text on golden */
+    /* Cappuccino/Coffee as primary */
+    --primary: 25 35% 45%; /* Warm cappuccino brown */
+    --primary-foreground: 0 0% 100%; /* White text on brown */
 
-    /* Soft rose as secondary */
-    --secondary: 350 50% 75%; /* Soft dusty rose */
-    --secondary-foreground: 25 25% 18%; /* Dark text on rose */
+    /* Olive Green as secondary */
+    --secondary: 80 30% 45%; /* Muted olive green */
+    --secondary-foreground: 0 0% 100%; /* White text on olive */
 
-    /* Light natural backgrounds */
-    --muted: 40 50% 94%; /* Very light warm beige */
-    --muted-foreground: 25 20% 30%; /* Dark gray for text */
+    /* Light backgrounds */
+    --muted: 30 15% 92%; /* Very light taupe */
+    --muted-foreground: 30 15% 35%; /* Medium gray for text */
 
-    /* Warm sand/amber accent */
-    --accent: 35 75% 60%; /* Warm sand/amber */
+    /* Warm taupe accent */
+    --accent: 30 25% 55%; /* Medium warm taupe */
     --accent-foreground: 0 0% 100%; /* White text on accent */
 
-    /* Light rose for highlights */
-    --blackberry: 350 40% 80%; /* Very light dusty rose */
-    --blackberry-foreground: 25 25% 18%;
+    /* Light cream for highlights */
+    --blackberry: 40 30% 88%; /* Light warm cream */
+    --blackberry-foreground: 30 20% 20%;
 
-    --destructive: 0 70% 55%;
+    --destructive: 0 60% 50%;
     --destructive-foreground: 0 0% 100%;
 
-    /* Soft natural borders */
-    --border: 40 30% 86%; /* Light beige border */
-    --input: 40 40% 94%; /* Very light beige input bg */
-    --ring: 40 85% 55%; /* Golden focus ring */
+    /* Neutral borders */
+    --border: 30 15% 82%; /* Light taupe border */
+    --input: 30 12% 92%; /* Very light taupe input bg */
+    --ring: 25 35% 45%; /* Cappuccino focus ring */
 
     --radius: 0.5rem;
 
-    --sidebar-background: 40 50% 96%;
-    --sidebar-foreground: 25 20% 28%;
-    --sidebar-primary: 25 25% 18%;
+    --sidebar-background: 30 15% 95%;
+    --sidebar-foreground: 30 18% 28%;
+    --sidebar-primary: 30 20% 20%;
     --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 40 40% 92%;
-    --sidebar-accent-foreground: 25 25% 18%;
-    --sidebar-border: 40 30% 88%;
-    --sidebar-ring: 40 85% 55%;
+    --sidebar-accent: 30 12% 90%;
+    --sidebar-accent-foreground: 30 20% 20%;
+    --sidebar-border: 30 15% 85%;
+    --sidebar-ring: 25 35% 45%;
   }
 
   .dark {
@@ -102,7 +102,7 @@
 
   body {
     @apply text-foreground font-sans;
-    background: linear-gradient(180deg, hsl(350 40% 90%) 0%, hsl(40 50% 92%) 50%, hsl(45 60% 90%) 100%);
+    background: hsl(30 15% 94%);
     min-height: 100vh;
   }
 
@@ -227,11 +227,7 @@
   .bg-warm-gradient,
   .modern-section,
   .bg-background {
-    background: linear-gradient(180deg, 
-      hsl(350 40% 90%) 0%, 
-      hsl(40 50% 92%) 50%,
-      hsl(45 60% 90%) 100%
-    );
+    background: hsl(30 15% 94%);
   }
   
   /* Dezente Überschriften-Boxen in natürlichen Tönen */

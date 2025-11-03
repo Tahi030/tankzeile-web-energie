@@ -64,18 +64,18 @@ const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const location = useLocation();
 
-  // Warm, earthy and pastel header design inspired by reference images
+  // Simple, solid color header - no gradient
   const getHeaderColor = () => {
-    return 'bg-gradient-to-r from-rose-100 via-amber-50 to-yellow-100 backdrop-blur-sm border-b-4 border-amber-200/40';
+    return 'bg-white border-b-2 border-border';
   };
 
-  // Dark text on light pastel background
+  // Dark text on white background
   const getTextColor = () => {
     return 'text-foreground';
   };
 
   const getHoverColor = () => {
-    return 'hover:bg-amber-100/50';
+    return 'hover:bg-muted';
   };
 
   return (
