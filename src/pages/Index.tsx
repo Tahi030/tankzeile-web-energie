@@ -155,11 +155,10 @@ const Index = () => {
             <UniformOfferCard
               title="Mitmach-Lied Video"
               description="Unser Mitmach-Lied lädt zum Tanzen, Singen und Spaßhaben ein. Beweg dich mit Captain Apfel und seiner Crew – volle Obst- und Gemüsekraft voraus!"
-              videoPlaceholder={true}
+              videoUrl="https://www.youtube.com/embed/yXku9Q91tmY"
               downloadLinks={[
                 { text: "Mitmachkarte zum Lied als PDF herunterladen", url: "/pdfs/mitmach-lied-captain-apfel.pdf" }
               ]}
-              buttonText="Bald verfügbar"
               accent="accent"
               delay={0.4}
             />

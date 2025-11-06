@@ -8,6 +8,7 @@ interface UniformOfferCardProps {
   callToAction?: string;
   imageUrl?: string;
   videoPlaceholder?: boolean;
+  videoUrl?: string;
   coloringPages?: { imageUrl: string; pdfUrl: string }[];
   downloadLinks?: { text: string; url: string }[];
   linkTo?: string;
@@ -23,6 +24,7 @@ export const UniformOfferCard = ({
   callToAction,
   imageUrl,
   videoPlaceholder,
+  videoUrl,
   coloringPages,
   downloadLinks,
   linkTo, 
@@ -50,8 +52,20 @@ export const UniformOfferCard = ({
           </div>
         )}
 
-        {/* Video Placeholder */}
-        {videoPlaceholder && (
+        {/* YouTube Video or Placeholder */}
+        {videoUrl ? (
+          <div className="mb-6">
+            <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+              <iframe
+                className="absolute top-0 left-0 w-full h-full rounded-xl shadow-lg"
+                src={videoUrl}
+                title="YouTube video"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+          </div>
+        ) : videoPlaceholder ? (
           <div className="bg-primary/10 rounded-xl p-8 border-2 border-dashed border-primary/30 mb-6">
             <div className="flex flex-col items-center justify-center space-y-4">
               <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center">
@@ -63,7 +77,7 @@ export const UniformOfferCard = ({
               <p className="text-sm text-muted-foreground">Bald verfügbar</p>
             </div>
           </div>
-        )}
+        ) : null}
 
         {/* Content */}
         <div className="flex-1 space-y-4">
