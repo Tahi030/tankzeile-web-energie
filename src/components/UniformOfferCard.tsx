@@ -60,7 +60,9 @@ export const UniformOfferCard = ({
                 className="absolute top-0 left-0 w-full h-full rounded-xl shadow-lg"
                 src={videoUrl}
                 title="YouTube video"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
                 allowFullScreen
               />
             </div>
