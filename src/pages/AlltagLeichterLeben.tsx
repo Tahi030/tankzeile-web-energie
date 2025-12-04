@@ -18,35 +18,39 @@ const AlltagLeichterLeben = () => {
       <div className="container-custom">
         <div className="max-w-6xl mx-auto">
           
-          {/* Hero Section - Two Columns */}
+          {/* Hero Section - Logo Banner + Content Below */}
           <motion.div
-            className="grid md:grid-cols-2 gap-8 md:gap-12 mb-16"
+            className="mb-16"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            {/* Left Column - Logo */}
-            <div className="flex items-center justify-center">
+            {/* Logo Banner */}
+            <div className="flex justify-center mb-10">
               <img 
                 src={powercrewLogo} 
                 alt="Powercrew des Monats Logo" 
-                className="w-full max-w-md"
+                className="w-full max-w-2xl"
               />
             </div>
 
-            {/* Right Column - Text + Photo */}
-            <div className="flex flex-col justify-center">
-              <h1 className="heading-lg mb-4">
-                Powercrew des Monats – Danke an unsere Alltagshelden
-              </h1>
-              <p className="body-base text-muted-foreground mb-6">
-                Mit der Aktion „Powercrew des Monats" sagt Captain Apfel Danke an die Menschen, die jeden Tag für unsere Kinder da sind. Pädagogische Fachkräfte leisten großartige Arbeit – oft im Verborgenen, zwischen Tränen trocknen, Brotdosen auspacken und kleinen großen Sorgen. Mit der Powercrew würdigen wir jeden Monat eine Einrichtung, die sich mit Herz, Ideenreichtum und Engagement für gesundes Aufwachsen stark macht. Vielleicht spürst du beim Lesen: Unsere Kita hätte diesen Titel auch verdient – dann melde dich gerne.
-              </p>
-              <img 
-                src="/assets/powercrew-uebergabe-dezember-2025.jpg" 
-                alt="Übergabe Powercrew des Monats an Kita Dreikäsehoch" 
-                className="w-full max-w-sm rounded-lg shadow-md"
-              />
+            {/* Content - Text + Photo */}
+            <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-start">
+              <div>
+                <h1 className="heading-lg mb-4">
+                  Danke an unsere Alltagshelden
+                </h1>
+                <p className="body-base text-muted-foreground">
+                  Mit der Aktion „Powercrew des Monats" sagt Captain Apfel Danke an die Menschen, die jeden Tag für unsere Kinder da sind. Pädagogische Fachkräfte leisten großartige Arbeit – oft im Verborgenen, zwischen Tränen trocknen, Brotdosen auspacken und kleinen großen Sorgen. Mit der Powercrew würdigen wir jeden Monat eine Einrichtung, die sich mit Herz, Ideenreichtum und Engagement für gesundes Aufwachsen stark macht. Vielleicht spürst du beim Lesen: Unsere Kita hätte diesen Titel auch verdient – dann melde dich gerne.
+                </p>
+              </div>
+              <div className="flex justify-center md:justify-end">
+                <img 
+                  src="/assets/powercrew-uebergabe-dezember-2025.jpg" 
+                  alt="Übergabe Powercrew des Monats an Kita Dreikäsehoch" 
+                  className="w-full max-w-sm rounded-lg shadow-md"
+                />
+              </div>
             </div>
           </motion.div>
 
