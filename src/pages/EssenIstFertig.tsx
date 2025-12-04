@@ -244,8 +244,7 @@ const EssenIstFertig = () => {
                 {/* Content */}
                 <div className="space-y-4">
                   <h2 className="text-xl font-bold text-foreground text-center">
-                    Essen ist fertig! bei Glutenunverträglichkeit<br />
-                    (Zöliakie / Glutensensitivität)
+                    ESSEN IST FERTIG! DEIN ALLTAGSPAKET BEI GLUTENUNVERTRÄGLICHKEIT
                   </h2>
                   
                   <p className="text-muted-foreground text-center leading-relaxed">
@@ -259,7 +258,7 @@ const EssenIstFertig = () => {
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                      <span>über 50 Seiten klar aufbereitete Infos</span>
+                      <span>59 Seiten klar aufbereitetes Wissen, Vorlagen & Rezepte</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
@@ -291,7 +290,7 @@ const EssenIstFertig = () => {
                 {/* Purchase Section */}
                 <div className="bg-card/50 rounded-lg p-4 border border-border/30 text-center space-y-3">
                   <div className="text-xl font-bold text-foreground">
-                    Einmalig 22,00 €
+                    Einmalig 24,99 €
                   </div>
                   
                   <div className="block bg-muted text-muted-foreground px-4 py-2 rounded-lg font-medium w-full text-sm cursor-not-allowed">
@@ -299,7 +298,7 @@ const EssenIstFertig = () => {
                   </div>
                   
                   <div className="text-xs text-muted-foreground leading-relaxed">
-                    PDF-Paket und Rechnung automatisch per E-Mail
+                    Die Bezahlung erfolgt sicher über unseren Partner Copecart. Du erhältst das PDF-Paket (59 Seiten) und die Rechnung automatisch per E‑Mail.
                   </div>
                 </div>
               </div>
