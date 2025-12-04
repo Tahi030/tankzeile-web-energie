@@ -43,26 +43,30 @@ const WorkshopGesundeMission = () => {
                 </p>
                 
                 <p className="mb-6 text-white leading-relaxed">
-                  Doch oft wird sie ausgebremst. Captain Apfel und seine Crew zeigen den Kindern, wie sie ihre Powerzentrale wieder aktivieren. Statt Belehrungen gibt es hier Spaß und eine einzigartige Abenteuerreise in den Körper.
+                  Doch oft wird sie ausgebremst. Captain Apfel und seine Crew zeigen den Kindern, wie sie ihre Powerzentrale wieder aktivieren – mit Spaß, Bewegung und echtem Entdeckergeist.
                 </p>
                 
-                <h2 className="text-2xl font-bold mb-4 text-accent">So lernen die Kinder (Die Story Methode)</h2>
+                <h2 className="text-2xl font-bold mb-4 text-accent">Was Kinder erleben</h2>
                 
                 <p className="mb-4 text-white leading-relaxed">
-                  Schluss mit trockener Theorie. Fantastische Bilder und eine spannende Geschichte machen Wissen verständlich. Die Kinder unterscheiden spielerisch zwischen „Superkraft Nahrung" und „Energieräubern".
+                  Im Workshop entdecken die Kinder, wie Ernährung, Bewegung und Gefühle zusammenhängen. Nicht durch Erklärungen, sondern durch Erleben, Spielen und Staunen.
                 </p>
                 
-                <p className="mb-2 text-white font-semibold">Dabei erforschen die Kinder</p>
-                <p className="mb-2 text-white"><strong>Der richtige Treibstoff:</strong> Was bringt mich wirklich nach vorne?</p>
-                <p className="mb-2 text-white"><strong>Die Bremsklötze:</strong> Warum machen mich Zucker & Co. eigentlich müde?</p>
-                <p className="mb-6 text-white"><strong>Das Körpergefühl:</strong> Wie fühlt es sich an, wenn meine Powerzentrale leuchtet?</p>
+                <p className="mb-2 text-white font-semibold">Sie erforschen:</p>
+                <p className="mb-2 text-white">Wie viel Obst und Gemüse braucht mein Körper?</p>
+                <p className="mb-2 text-white">Wie viel Zucker steckt in Cola & Co.?</p>
+                <p className="mb-6 text-white">Was bringt meine Powerzentrale zum Leuchten?</p>
                 
-                <h2 className="text-2xl font-bold mb-4 text-accent">Die 5 Power Level des Workshops</h2>
+                <p className="mb-6 text-white leading-relaxed">
+                  Captain Apfel nimmt sie mit auf eine Fantasiereise voller Wissen, Bewegung und Freude.
+                </p>
+                
+                <h2 className="text-2xl font-bold mb-4 text-accent">Die 5 Power Level</h2>
                 
                 <p className="mb-2 text-white"><strong>1. Bewegen & Tanzen</strong> – Stärkt Körpergefühl und Motorik.</p>
-                <p className="mb-2 text-white"><strong>2. Entdecken & Staunen</strong> – Vermittelt Wissen durch interaktives Storytelling.</p>
-                <p className="mb-2 text-white"><strong>3. Teamgefühl erleben</strong> – Fördert den Zusammenhalt in der Gruppe.</p>
-                <p className="mb-2 text-white"><strong>4. Mitmachen & Vorbereiten</strong> – Stärkt Verantwortung und Selbstwirksamkeit.</p>
+                <p className="mb-2 text-white"><strong>2. Entdecken & Staunen</strong> – Fördert Wissen und Neugier.</p>
+                <p className="mb-2 text-white"><strong>3. Teamgefühl erleben</strong> – Stärkt den Zusammenhalt.</p>
+                <p className="mb-2 text-white"><strong>4. Mitmachen & Vorbereiten</strong> – Vermittelt Verantwortung und Selbstwirksamkeit.</p>
                 <p className="mb-6 text-white"><strong>5. Probieren & Genießen</strong> – Öffnet neue Geschmackserlebnisse und stärkt das Selbstvertrauen.</p>
                 
                 <h2 className="text-2xl font-bold mb-4 text-accent">Ziel & Nutzen für Ihre Einrichtung</h2>
