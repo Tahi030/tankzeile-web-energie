@@ -49,16 +49,16 @@ const AlltagLeichterLeben = () => {
 
           {/* December Entry - Image Left, Text Right */}
           <motion.div
-            className="grid md:grid-cols-2 gap-8 md:gap-12 items-start mb-16"
+            className="grid md:grid-cols-[auto_1fr] gap-8 md:gap-12 items-start mb-16"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <div>
+            <div className="flex items-start">
               <img 
                 src="/assets/powercrew-uebergabe-dezember-2025.jpg" 
                 alt="Übergabe Powercrew des Monats an Kita Dreikäsehoch" 
-                className="w-full rounded-lg shadow-md"
+                className="w-48 md:w-56 lg:w-64 rounded-lg shadow-md object-cover"
               />
             </div>
             <div>
