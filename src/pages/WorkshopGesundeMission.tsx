@@ -95,7 +95,7 @@ const WorkshopGesundeMission = () => {
             <div className="mt-12 text-center">
               <Link 
                 to="/kontakt" 
-                className="inline-block bg-[hsl(25_45%_35%)] text-white px-8 py-4 rounded-full font-semibold hover:bg-[hsl(25_45%_30%)] transition-all duration-300 shadow-lg hover:shadow-xl active:scale-95"
+                className="inline-block bg-[hsl(25_30%_88%)] text-[hsl(25_30%_25%)] px-8 py-4 rounded-full font-semibold hover:bg-[hsl(25_35%_82%)] transition-all duration-300 shadow-lg hover:shadow-xl active:scale-95"
               >
                 Jetzt Kita vormerken und Teil der Power-Mission werden!
               </Link>

@@ -69,16 +69,16 @@ const Kontakt = () => {
               <h2 className="text-2xl font-semibold mb-6">Verbinde dich mit mir</h2>
               <div className="flex justify-start space-x-4">
                 {/* Social media icons */}
-                <a href="#" className="w-10 h-10 bg-[hsl(25_45%_35%)] rounded-full flex items-center justify-center text-white hover:bg-[hsl(25_45%_30%)] transition-all duration-300 shadow-md hover:shadow-lg">
+                <a href="#" className="w-10 h-10 bg-[hsl(25_30%_88%)] rounded-full flex items-center justify-center text-[hsl(25_30%_25%)] hover:bg-[hsl(25_35%_82%)] transition-all duration-300 shadow-md hover:shadow-lg">
                   <Facebook size={20} />
                 </a>
-                <a href="#" className="w-10 h-10 bg-[hsl(25_45%_35%)] rounded-full flex items-center justify-center text-white hover:bg-[hsl(25_45%_30%)] transition-all duration-300 shadow-md hover:shadow-lg">
+                <a href="#" className="w-10 h-10 bg-[hsl(25_30%_88%)] rounded-full flex items-center justify-center text-[hsl(25_30%_25%)] hover:bg-[hsl(25_35%_82%)] transition-all duration-300 shadow-md hover:shadow-lg">
                   <Instagram size={20} />
                 </a>
-                <a href="#" className="w-10 h-10 bg-[hsl(25_45%_35%)] rounded-full flex items-center justify-center text-white hover:bg-[hsl(25_45%_30%)] transition-all duration-300 shadow-md hover:shadow-lg">
+                <a href="#" className="w-10 h-10 bg-[hsl(25_30%_88%)] rounded-full flex items-center justify-center text-[hsl(25_30%_25%)] hover:bg-[hsl(25_35%_82%)] transition-all duration-300 shadow-md hover:shadow-lg">
                   <Youtube size={20} />
                 </a>
-                <a href="#" className="w-10 h-10 bg-[hsl(25_45%_35%)] rounded-full flex items-center justify-center text-white hover:bg-[hsl(25_45%_30%)] transition-all duration-300 shadow-md hover:shadow-lg">
+                <a href="#" className="w-10 h-10 bg-[hsl(25_30%_88%)] rounded-full flex items-center justify-center text-[hsl(25_30%_25%)] hover:bg-[hsl(25_35%_82%)] transition-all duration-300 shadow-md hover:shadow-lg">
                   <Linkedin size={20} />
                 </a>
               </div>

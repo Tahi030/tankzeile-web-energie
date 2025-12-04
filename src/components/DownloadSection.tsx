@@ -77,7 +77,7 @@ const DownloadSection = () => {
                 <p className="text-gray-600 mb-6 text-center">{item.description}</p>
                 <button
                   onClick={() => handleDownload(item.filename)}
-                  className="bg-[hsl(25_45%_35%)] hover:bg-[hsl(25_45%_30%)] text-white flex items-center justify-center w-full max-w-xs mx-auto text-base rounded-xl py-3 px-6 hover:scale-[1.02] transition-all duration-300 shadow-md hover:shadow-lg"
+                  className="bg-[hsl(25_30%_88%)] hover:bg-[hsl(25_35%_82%)] text-[hsl(25_30%_25%)] flex items-center justify-center w-full max-w-xs mx-auto text-base rounded-xl py-3 px-6 hover:scale-[1.02] transition-all duration-300 shadow-md hover:shadow-lg"
                 >
                   <Download size={18} className="mr-2" />
                   Jetzt kostenlos herunterladen

@@ -118,7 +118,7 @@ export const UniformOfferCard = ({
                     href={page.pdfUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center justify-center gap-1 bg-[hsl(25_45%_35%)] hover:bg-[hsl(25_45%_30%)] text-white px-2 py-2 rounded text-xs font-medium transition-all duration-200 shadow-sm"
+                    className="flex items-center justify-center gap-1 bg-[hsl(25_30%_88%)] hover:bg-[hsl(25_35%_82%)] text-[hsl(25_30%_25%)] px-2 py-2 rounded text-xs font-medium transition-all duration-200 shadow-sm"
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
                   >
@@ -138,7 +138,7 @@ export const UniformOfferCard = ({
                   href={link.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block bg-[hsl(25_45%_35%)] hover:bg-[hsl(25_45%_30%)] text-white px-4 py-3 rounded-lg font-medium transition-all duration-300 text-center shadow-md hover:shadow-lg"
+                  className="block bg-[hsl(25_30%_88%)] hover:bg-[hsl(25_35%_82%)] text-[hsl(25_30%_25%)] px-4 py-3 rounded-lg font-medium transition-all duration-300 text-center shadow-md hover:shadow-lg"
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                 >
@@ -154,7 +154,7 @@ export const UniformOfferCard = ({
           <div className="mt-6 pt-4">
             <motion.a 
               href={linkTo}
-              className="block text-center px-6 py-3 rounded-lg font-medium transition-all duration-300 bg-[hsl(25_45%_35%)] hover:bg-[hsl(25_45%_30%)] text-white shadow-md hover:shadow-lg"
+              className="block text-center px-6 py-3 rounded-lg font-medium transition-all duration-300 bg-[hsl(25_30%_88%)] hover:bg-[hsl(25_35%_82%)] text-[hsl(25_30%_25%)] shadow-md hover:shadow-lg"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
             >

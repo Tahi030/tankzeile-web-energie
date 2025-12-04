@@ -214,7 +214,7 @@ const ContactForm = () => {
           <Button
             type="submit"
             disabled={isLoading}
-            className="bg-[hsl(25_45%_35%)] text-white hover:bg-[hsl(25_45%_30%)] disabled:opacity-50 shadow-md hover:shadow-lg"
+            className="bg-[hsl(25_30%_88%)] text-[hsl(25_30%_25%)] hover:bg-[hsl(25_35%_82%)] disabled:opacity-50 shadow-md hover:shadow-lg"
           >
             {isLoading ? 'Wird gesendet...' : 'Nachricht senden'}
           </Button>
