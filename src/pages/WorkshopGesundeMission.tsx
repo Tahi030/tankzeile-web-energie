@@ -53,9 +53,11 @@ const WorkshopGesundeMission = () => {
                 </p>
                 
                 <p className="mb-2 text-white font-semibold">Sie erforschen:</p>
-                <p className="mb-2 text-white">Wie viel Obst und Gemüse braucht mein Körper?</p>
-                <p className="mb-2 text-white">Wie viel Zucker steckt in Cola & Co.?</p>
-                <p className="mb-6 text-white">Was bringt meine Powerzentrale zum Leuchten?</p>
+                <ul className="mb-6 text-white list-disc list-inside space-y-1 ml-2">
+                  <li>Wie viel Obst und Gemüse braucht mein Körper?</li>
+                  <li>Wie viel Zucker steckt in Cola & Co.?</li>
+                  <li>Was bringt meine Powerzentrale zum Leuchten?</li>
+                </ul>
                 
                 <p className="mb-6 text-white leading-relaxed">
                   Captain Apfel nimmt sie mit auf eine Fantasiereise voller Wissen, Bewegung und Freude.
