@@ -67,31 +67,31 @@ const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const location = useLocation();
 
-  // Harmonious background matching page content
+  // Footer-matching color (primary green)
   const getHeaderColor = () => {
-    return 'bg-muted border-b border-border/30';
+    return 'bg-primary';
   };
 
-  // Dark text on white background
+  // White text on primary background
   const getTextColor = () => {
-    return 'text-foreground';
+    return 'text-white';
   };
 
   const getHoverColor = () => {
-    return 'hover:bg-muted';
+    return 'hover:bg-white/10';
   };
 
   return (
     <header className={`${getHeaderColor()} sticky top-0 z-50 shadow-md`}>
       <div className="container-custom">
-        <div className="flex justify-between items-center py-2">
+        <div className="flex justify-between items-center py-1">
           {/* Logo on the left */}
           <div className="flex items-center">
             <Link to="/" className="flex items-center" onClick={() => window.scrollTo(0, 0)}>
               <img 
                 src={logoText} 
                 alt="Captain Apfel Logo" 
-                className="h-20 md:h-24 lg:h-28 w-auto"
+                className="h-14 md:h-16 lg:h-18 w-auto"
               />
             </Link>
           </div>
@@ -102,7 +102,7 @@ const Header = () => {
               <NavItem to="/" label="Startseite" textColor={getTextColor()} hoverColor={getHoverColor()} />
               
               <div className="relative group">
-                <div className={`px-2 lg:px-3 py-2 rounded-md text-base lg:text-lg font-medium ${getHoverColor()} transition-all duration-200 cursor-pointer whitespace-nowrap active:scale-95 ${location.pathname.includes('/workshop') ? `${getTextColor()} font-semibold bg-muted/50` : getTextColor()}`}>
+              <div className={`px-2 lg:px-3 py-2 rounded-md text-base lg:text-lg font-medium ${getHoverColor()} transition-all duration-200 cursor-pointer whitespace-nowrap active:scale-95 ${location.pathname.includes('/workshop') ? `${getTextColor()} font-semibold bg-white/20` : getTextColor()}`}>
                   Workshop <span className="ml-1 text-xs transition-transform duration-200 inline-block group-hover:rotate-180">▼</span>
                 </div>
                 <div className="absolute left-0 invisible group-hover:visible opacity-0 group-hover:opacity-100 mt-2 w-60 rounded-md shadow-lg bg-white ring-1 ring-primary/20 z-50 transition-all duration-200">
@@ -114,9 +114,8 @@ const Header = () => {
               
               <NavItem to="/essen-ist-fertig" label="Essen ist fertig!" textColor={getTextColor()} hoverColor={getHoverColor()} />
               <NavItem to="/meine-angebote/alltag-leichter-leben" label="Powercrew" textColor={getTextColor()} hoverColor={getHoverColor()} />
-              <NavItem to="/hinter-captain-apfel" label="Über Captain Apfel" textColor={getTextColor()} hoverColor={getHoverColor()} />
-              
               <NavItem to="/regionally-rooted" label="Regional verwurzelt" textColor={getTextColor()} hoverColor={getHoverColor()} />
+              <NavItem to="/hinter-captain-apfel" label="Über Captain Apfel" textColor={getTextColor()} hoverColor={getHoverColor()} />
             </div>
           </nav>
           
@@ -124,7 +123,7 @@ const Header = () => {
           <div className="md:hidden">
             <button
               type="button"
-              className="inline-flex items-center justify-center p-2 rounded-md text-foreground hover:text-primary hover:bg-primary/10"
+              className="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-white/80 hover:bg-white/10"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             >
               <span className="sr-only">Menü öffnen</span>
@@ -168,12 +167,12 @@ const Header = () => {
               Powercrew
             </Link>
             
-            <Link to="/hinter-captain-apfel" className={`block px-3 py-2 rounded-md text-base font-medium transition-all duration-200 active:scale-95 ${location.pathname === '/hinter-captain-apfel' ? 'text-primary font-bold bg-muted' : 'hover:bg-muted/60'}`} onClick={() => {setMobileMenuOpen(false); window.scrollTo(0, 0);}}>
-              Über Captain Apfel
-            </Link>
-            
             <Link to="/regionally-rooted" className={`block px-3 py-2 rounded-md text-base font-medium transition-all duration-200 active:scale-95 ${location.pathname === '/regionally-rooted' ? 'text-primary font-bold bg-muted' : 'hover:bg-muted/60'}`} onClick={() => {setMobileMenuOpen(false); window.scrollTo(0, 0);}}>
               Regional verwurzelt
+            </Link>
+            
+            <Link to="/hinter-captain-apfel" className={`block px-3 py-2 rounded-md text-base font-medium transition-all duration-200 active:scale-95 ${location.pathname === '/hinter-captain-apfel' ? 'text-primary font-bold bg-muted' : 'hover:bg-muted/60'}`} onClick={() => {setMobileMenuOpen(false); window.scrollTo(0, 0);}}>
+              Über Captain Apfel
             </Link>
             
             <Link to="/kontakt" className="block mx-3 mt-3 px-3 py-3 bg-[hsl(25_30%_88%)] text-[hsl(25_30%_25%)] rounded-md text-base font-medium transition-all duration-300 hover:bg-[hsl(25_35%_82%)] hover:shadow-md active:scale-95" onClick={() => {setMobileMenuOpen(false); window.scrollTo(0, 0);}}>
