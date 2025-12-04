@@ -45,21 +45,21 @@ const EssenIstFertig = () => {
               </p>
               
               {/* Highlights */}
-              <div className="flex flex-col md:flex-row justify-center gap-4 md:gap-8 mt-8">
-                <div className="flex items-center gap-2">
-                  <span className="text-primary text-xl">✓</span>
-                  <span className="font-medium text-foreground">Sofort loslegen:</span>
-                  <span>Kein Warten auf Termine</span>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8 max-w-3xl mx-auto">
+                <div className="flex flex-col items-center text-center gap-1">
+                  <span className="text-primary text-2xl font-bold">✓</span>
+                  <span className="font-semibold text-foreground">Sofort loslegen</span>
+                  <span className="text-sm">Kein Warten auf Termine</span>
                 </div>
-                <div className="flex items-center gap-2">
-                  <span className="text-primary text-xl">✓</span>
-                  <span className="font-medium text-foreground">Kein Verzicht:</span>
-                  <span>Leckere Familienrezepte</span>
+                <div className="flex flex-col items-center text-center gap-1">
+                  <span className="text-primary text-2xl font-bold">✓</span>
+                  <span className="font-semibold text-foreground">Kein Verzicht</span>
+                  <span className="text-sm">Leckere Familienrezepte</span>
                 </div>
-                <div className="flex items-center gap-2">
-                  <span className="text-primary text-xl">✓</span>
-                  <span className="font-medium text-foreground">Sicher einkaufen:</span>
-                  <span>Nie wieder ratlos</span>
+                <div className="flex flex-col items-center text-center gap-1">
+                  <span className="text-primary text-2xl font-bold">✓</span>
+                  <span className="font-semibold text-foreground">Sicher einkaufen</span>
+                  <span className="text-sm">Nie wieder ratlos</span>
                 </div>
               </div>
               
