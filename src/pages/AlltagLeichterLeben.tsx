@@ -20,17 +20,15 @@ const AlltagLeichterLeben = () => {
           
           {/* Logo Banner - Full Width, Bottom Cropped */}
           <motion.div
-            className="w-full overflow-hidden mb-8"
+            className="w-full overflow-hidden mb-8 max-h-[140px] md:max-h-[280px]"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6 }}
-            style={{ maxHeight: '280px' }}
           >
             <img 
               src={powercrewBanner} 
               alt="Powercrew des Monats" 
-              className="w-full max-w-3xl mx-auto"
-              style={{ marginBottom: '-15%' }}
+              className="w-full max-w-3xl mx-auto -mb-[25%] md:-mb-[15%]"
             />
           </motion.div>
 
