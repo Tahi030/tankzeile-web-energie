@@ -110,9 +110,6 @@ export const HeroWelcome = () => {
               Jetzt entdecken: Reise zur Powerzentrale
             </Link>
 
-            <p className="text-xs sm:text-sm md:text-base text-muted-foreground italic pt-2 sm:pt-4">
-              Außerdem auf der Mission: praktische PDF-Pakete zu Unverträglichkeiten und Ideen für mehr Wohlbefinden im Familienalltag.
-            </p>
           </motion.div>
           
         </div>
