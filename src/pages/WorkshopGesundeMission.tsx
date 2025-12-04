@@ -34,7 +34,7 @@ const WorkshopGesundeMission = () => {
                   Captain Apfel und seine Crew zeigen, wie Kinder ihre Powerzentrale wieder aktivieren – mit Spaß, Bewegung und Entdeckergeist.
                 </p>
                 
-                <h2 className="text-2xl font-bold mb-4 text-white">Was Kinder erleben</h2>
+                <h2 className="text-2xl font-bold mb-4 text-accent">Was Kinder erleben</h2>
                 
                 <p className="mb-4 text-white leading-relaxed">
                   Im Workshop entdecken die Kinder, wie Ernährung, Bewegung und Gefühle miteinander verbunden sind – nicht durch Erklärungen, sondern durch Erleben, Spielen und Staunen.
@@ -49,7 +49,7 @@ const WorkshopGesundeMission = () => {
                   Captain Apfel nimmt sie mit auf eine Fantasiereise voller Wissen, Bewegung und Freude.
                 </p>
                 
-                <h2 className="text-2xl font-bold mb-4 text-white">Die 5 Power-Level</h2>
+                <h2 className="text-2xl font-bold mb-4 text-accent">Die 5 Power-Level</h2>
                 
                 <p className="mb-2 text-white"><strong>1. Bewegen & Tanzen</strong> – stärkt Körpergefühl und Motorik.</p>
                 <p className="mb-2 text-white"><strong>2. Entdecken & Staunen</strong> – fördert Wissen und Neugier.</p>
@@ -57,7 +57,7 @@ const WorkshopGesundeMission = () => {
                 <p className="mb-2 text-white"><strong>4. Mitmachen & Vorbereiten</strong> – vermittelt Verantwortung und Selbstwirksamkeit.</p>
                 <p className="mb-6 text-white"><strong>5. Probieren & Genießen</strong> – öffnet neue Geschmackserlebnisse und stärkt Selbstvertrauen.</p>
                 
-                <h2 className="text-2xl font-bold mb-4 text-white">Ziel & Nutzen</h2>
+                <h2 className="text-2xl font-bold mb-4 text-accent">Ziel & Nutzen</h2>
                 
                 <p className="mb-4 text-white leading-relaxed">
                   Kitas und Schulen erhalten ein Teilnahme-Zertifikat – ein Zeichen für gelebte Prävention und ganzheitliche Gesundheitsförderung.
