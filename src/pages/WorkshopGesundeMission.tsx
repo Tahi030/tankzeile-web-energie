@@ -43,13 +43,13 @@ const WorkshopGesundeMission = () => {
                 </p>
                 
                 <p className="mb-6 text-white leading-relaxed">
-                  Doch oft wird sie ausgebremst. Captain Apfel und seine Crew zeigen den Kindern, wie sie ihre Powerzentrale wieder aktivieren – mit Spaß, Bewegung und echtem Entdeckergeist.
+                  Doch oft wird sie ausgebremst. Captain Apfel und seine Crew zeigen den Kindern, wie sie ihre Powerzentrale wieder aktivieren – mit Spaß, Bewegung und Entdeckergeist.
                 </p>
                 
                 <h2 className="text-2xl font-bold mb-4 text-accent">Was Kinder erleben</h2>
                 
                 <p className="mb-4 text-white leading-relaxed">
-                  Im Workshop entdecken die Kinder, wie Ernährung, Bewegung und Gefühle zusammenhängen. Nicht durch Erklärungen, sondern durch Erleben, Spielen und Staunen.
+                  Im Workshop wird Wissen lebendig. Die Kinder begreifen Ernährung, Bewegung und Gefühle ganz praktisch – beim Erleben, Spielen und Staunen.
                 </p>
                 
                 <p className="mb-2 text-white font-semibold">Sie erforschen:</p>
@@ -76,7 +76,7 @@ const WorkshopGesundeMission = () => {
                 </p>
                 
                 <p className="text-white leading-relaxed font-semibold">
-                  Captain Apfel macht gesunde Gewohnheiten zum Abenteuer. Mit Aha Effekt, der hängen bleibt.
+                  Captain Apfel macht gesunde Gewohnheiten zum Abenteuer. Mit einem Aha Effekt, der hängen bleibt.
                 </p>
               </div>
             </div>
