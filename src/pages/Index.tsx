@@ -45,7 +45,7 @@ const Index = () => {
                   </h2>
                   
                   <p className="text-base text-muted-foreground leading-relaxed">
-                    Tief im Bauch jedes Kindes steckt sie – die Powerzentrale, das geheime Kraftwerk für Energie, Konzentration und gute Laune.
+                    Wusstest du, dass in jedem Kinderbauch ein Kraftwerk steckt? Wir nennen es die Powerzentrale – der Motor für Energie, Konzentration und gute Laune.
                   </p>
                   
                   <p className="text-base text-muted-foreground leading-relaxed">
@@ -72,10 +72,6 @@ const Index = () => {
                     </li>
                   </ul>
                 </div>
-                
-                <p className="text-base text-muted-foreground leading-relaxed text-center">
-                  Ich stehe für Regionalität, Nachhaltigkeit und gesunde Gewohnheiten, die einfach Spaß machen.
-                </p>
                 
                 <p className="text-base text-muted-foreground leading-relaxed text-center italic border-t border-primary/10 pt-6">
                   „Jedes Kind ist einzigartig. Seine Gesundheit und sein Tempo stehen für mich im Mittelpunkt."
