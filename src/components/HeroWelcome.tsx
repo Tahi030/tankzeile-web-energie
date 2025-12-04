@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
 import captainApfelHero from "@/assets/captain-apfel-hero.svg";
 
 export const HeroWelcome = () => {
@@ -91,26 +90,6 @@ export const HeroWelcome = () => {
             
           </div>
 
-          {/* Bottom: Introduction Text & CTA */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.4 }}
-            className="mt-12 sm:mt-16 md:mt-20 space-y-6 sm:space-y-8 text-center max-w-4xl mx-auto px-4"
-          >
-            <p className="text-sm sm:text-base md:text-lg text-foreground/85 leading-relaxed">
-              Tief im Bauch jedes Kindes steckt sie – die Powerzentrale, das geheime Kraftwerk für Energie, Konzentration und gute Laune.
-              Captain Apfel und seine Crew zeigen, wie Kinder sie aktivieren – mit Spaß, Bewegung und Wissen, das hängen bleibt.
-            </p>
-
-            <Link 
-              to="/workshop-gesunde-mission" 
-              className="inline-block bg-[hsl(25_30%_88%)] text-[hsl(25_30%_25%)] px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-base sm:text-lg hover:scale-105 hover:bg-[hsl(25_35%_82%)] transition-all duration-300 shadow-lg hover:shadow-xl"
-            >
-              Jetzt entdecken: Reise zur Powerzentrale
-            </Link>
-
-          </motion.div>
           
         </div>
       </div>

@@ -45,32 +45,41 @@ const Index = () => {
                   </h2>
                   
                   <p className="text-base text-muted-foreground leading-relaxed">
-                    Ich bin mit meiner Crew auf gesunder Mission unterwegs. Gemeinsam bringen wir Kindern bei, was ihrem Körper guttut – und wie sie ihre Powerzentrale hell leuchten lassen.
+                    Tief im Bauch jedes Kindes steckt sie – die Powerzentrale, das geheime Kraftwerk für Energie, Konzentration und gute Laune.
+                  </p>
+                  
+                  <p className="text-base text-muted-foreground leading-relaxed">
+                    Ich bin mit meiner Crew auf gesunder Mission, um genau dieses Kraftwerk zu aktivieren. Wir zeigen Kindern, was sie stark macht – mit Spaß, Bewegung und Wissen, das hängen bleibt.
                   </p>
                 </div>
                 
-                <div className="space-y-6 text-center">
-                  <div className="space-y-4">
-                    <p className="text-base font-semibold text-foreground">
-                      Hier findest du:
-                    </p>
-                    <ul className="text-base leading-relaxed text-muted-foreground space-y-2 text-left max-w-2xl mx-auto">
-                      <li>– Workshops voller Bewegung, Wissen und Abenteuer</li>
-                      <li>– Materialien und PDF-Pakete zu Ernährung und Unverträglichkeiten</li>
-                      <li>– Projekte, die Familien, Kitas und Schulen stärken</li>
-                    </ul>
-                  </div>
-                  
-                  <p className="text-base leading-relaxed text-muted-foreground">
-                    Ab Frühjahr 2026 startet unsere „Reise zur Powerzentrale" in Berliner Einrichtungen – für Vorschulkinder und Grundschüler.
+                <div className="space-y-4">
+                  <p className="text-base font-semibold text-foreground text-center">
+                    Hier findest du:
                   </p>
-                  
-                  <div className="pt-6 border-t border-primary/10">
-                    <p className="text-base text-muted-foreground leading-relaxed">
-                      Captain Apfel steht für Regionalität, Nachhaltigkeit und die Freude an gesunden Gewohnheiten, die sich leicht in den Alltag integrieren lassen.
-                    </p>
-                  </div>
+                  <ul className="text-base leading-relaxed text-muted-foreground space-y-3 text-left max-w-2xl mx-auto">
+                    <li>
+                      <strong className="text-foreground">Reise zur Powerzentrale:</strong><br />
+                      Mein Erlebnis-Workshop voller Bewegung & Wissen. Startet ab Frühjahr 2026 in Berliner Kitas (Vorschule), Familienzentren und Grundschulen (Klasse 1 & 2).
+                    </li>
+                    <li>
+                      <strong className="text-foreground">Essen ist fertig!</strong><br />
+                      Digitale Soforthilfe-Pakete bei Nahrungsunverträglichkeiten.
+                    </li>
+                    <li>
+                      <strong className="text-foreground">Powercrew des Monats:</strong><br />
+                      Meine Initiative für starke Kita-Teams.
+                    </li>
+                  </ul>
                 </div>
+                
+                <p className="text-base text-muted-foreground leading-relaxed text-center">
+                  Ich stehe für Regionalität, Nachhaltigkeit und gesunde Gewohnheiten, die einfach Spaß machen.
+                </p>
+                
+                <p className="text-base text-muted-foreground leading-relaxed text-center italic border-t border-primary/10 pt-6">
+                  „Jedes Kind ist einzigartig. Seine Gesundheit und sein Tempo stehen für mich im Mittelpunkt."
+                </p>
               </div>
             </div>
           </motion.div>
