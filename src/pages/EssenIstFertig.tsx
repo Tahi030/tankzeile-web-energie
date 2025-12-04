@@ -22,17 +22,17 @@ const EssenIstFertig = () => {
   }, []);
 
   return (
-    <main className="min-h-screen py-16 md:py-24">
+    <main className="min-h-screen bg-muted pt-8 pb-16 md:pt-12 md:pb-24">
       <div className="container-custom">
         <div className="max-w-6xl mx-auto">
           {/* Hero Section */}
           <motion.div 
-            className="text-center mb-16"
+            className="text-center mb-12 md:mb-16"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.1 }}
           >
-            <h1 className="text-3xl md:text-5xl font-bold mb-8 text-foreground">
+            <h1 className="text-3xl md:text-5xl font-bold mb-6 md:mb-8 text-foreground font-luckiest">
               Essen ist fertig! – Alltagshilfen bei Nahrungsunverträglichkeiten
             </h1>
             
@@ -52,7 +52,7 @@ const EssenIstFertig = () => {
             
             {/* Laktoseintoleranz Box */}
             <motion.div 
-              className="bg-card/80 backdrop-blur-sm rounded-2xl p-6 border border-border/50 shadow-lg"
+              className="bg-card/60 backdrop-blur-sm rounded-2xl p-6 border border-border/30 shadow-sm"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
@@ -139,7 +139,7 @@ const EssenIstFertig = () => {
 
             {/* Fruktoseintoleranz Box */}
             <motion.div 
-              className="bg-card/80 backdrop-blur-sm rounded-2xl p-6 border border-border/50 shadow-lg"
+              className="bg-card/60 backdrop-blur-sm rounded-2xl p-6 border border-border/30 shadow-sm"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
@@ -226,7 +226,7 @@ const EssenIstFertig = () => {
 
             {/* Glutenunverträglichkeit Box */}
             <motion.div 
-              className="bg-card/80 backdrop-blur-sm rounded-2xl p-6 border border-border/50 shadow-lg"
+              className="bg-card/60 backdrop-blur-sm rounded-2xl p-6 border border-border/30 shadow-sm"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.5 }}

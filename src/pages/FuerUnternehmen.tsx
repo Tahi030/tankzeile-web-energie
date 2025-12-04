@@ -10,13 +10,13 @@ const FuerUnternehmen = () => {
   }, []);
 
   return (
-    <div className="min-h-screen">
-      {/* Hero Section */}
-      <section className="bg-secondary py-16 md:py-24 text-white">
+    <div className="min-h-screen bg-muted">
+      {/* Hero Section - harmonisch */}
+      <section className="pt-8 pb-12 md:pt-12 md:pb-16">
         <div className="container-custom">
-          <div className="max-w-3xl mx-auto">
-            <h1 className="text-3xl md:text-4xl font-bold mb-6">Für Unternehmen</h1>
-            <p className="text-lg">
+          <div className="max-w-3xl mx-auto text-center">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-foreground font-luckiest">Für Unternehmen</h1>
+            <p className="text-lg text-muted-foreground">
               Die Tankzeile ist mehr als ein Projekt. Sie ist ein Beitrag für die Zukunft.
             </p>
           </div>
@@ -24,7 +24,7 @@ const FuerUnternehmen = () => {
       </section>
 
       {/* Main Content */}
-      <section className="py-12 md:py-16">
+      <section className="pb-12 md:pb-16">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
             <div className="prose prose-lg max-w-none">

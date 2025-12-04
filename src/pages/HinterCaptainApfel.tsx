@@ -3,30 +3,20 @@ import { motion } from "framer-motion";
 
 const HinterCaptainApfel = () => {
   useEffect(() => {
-    // Set page metadata for SEO
     document.title = "Hinter Captain Apfel – Captain Apfel & seine Crew";
     
-    // Set meta description
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
       metaDescription.setAttribute('content', 'Erfahre mehr über die Geschichte und Mission von Captain Apfel & seiner Crew.');
     }
-    
-    // Apply background color to the body
-    document.body.classList.add('bg-background');
-    
-    return () => {
-      // Remove background color when component unmounts
-      document.body.classList.remove('bg-background');
-    };
   }, []);
 
   return (
-    <main className="min-h-screen section-padding">
+    <main className="min-h-screen bg-muted pt-8 pb-16 md:pt-12 md:pb-24">
       <div className="container-custom">
         <div className="max-w-4xl mx-auto">
           <motion.h1 
-            className="heading-lg mb-6 text-center"
+            className="heading-lg mb-8 md:mb-12 text-center"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.1 }}
@@ -35,8 +25,8 @@ const HinterCaptainApfel = () => {
           </motion.h1>
           
           <motion.div 
-            className="bg-card/30 backdrop-blur-sm rounded-2xl p-6 md:p-8 border border-border/50 shadow-sm text-left"
-            initial={{ opacity: 0, scale: 0.9 }}
+            className="bg-card/60 backdrop-blur-sm rounded-2xl p-6 md:p-10 border border-border/30 shadow-sm text-left"
+            initial={{ opacity: 0, scale: 0.98 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.3 }}
           >
@@ -63,7 +53,7 @@ const HinterCaptainApfel = () => {
                 Ich entwickle Workshops, Materialien und Impulse, die Gesundheit spürbar machen – mit Herz, Verstand und einer großen Portion Begeisterung.
               </p>
 
-              <p className="body-lg mt-6">
+              <p className="body-lg mt-8">
                 Herzliche Grüße<br />
                 <em>Tamara Hillmann</em>
               </p>

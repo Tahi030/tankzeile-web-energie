@@ -6,15 +6,10 @@ import powercrewBanner from "@/assets/powercrew-banner.svg";
 const AlltagLeichterLeben = () => {
   useEffect(() => {
     document.title = "Powercrew des Monats | Captain Apfel";
-    document.body.classList.add('bg-background');
-    
-    return () => {
-      document.body.classList.remove('bg-background');
-    };
   }, []);
 
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen bg-muted pt-8 pb-16 md:pt-12 md:pb-24">
       <div className="container-custom">
         <div className="max-w-6xl mx-auto">
           
@@ -47,25 +42,27 @@ const AlltagLeichterLeben = () => {
 
           {/* December Entry - Image Left, Text Right */}
           <motion.div
-            className="grid md:grid-cols-[auto_1fr] gap-8 md:gap-12 items-start mb-16"
+            className="bg-card/60 backdrop-blur-sm rounded-2xl p-6 md:p-10 border border-border/30 shadow-sm"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <div className="flex items-start">
-              <img 
-                src="/assets/powercrew-uebergabe-dezember-2025.jpg" 
-                alt="Übergabe Powercrew des Monats an Kita Dreikäsehoch" 
-                className="w-48 md:w-56 lg:w-64 rounded-lg shadow-md object-cover"
-              />
-            </div>
-            <div>
-              <h2 className="heading-md mb-4">
-                Powercrew des Monats Dezember 2025: Kita Dreikäsehoch, Berlin-Köpenick
-              </h2>
-              <p className="body-base text-muted-foreground">
-                Im Dezember erhält die humanistische Kita Dreikäsehoch in Berlin-Köpenick den Titel „Powercrew des Monats". Hier wird mit Kopf, Herz und Hand gearbeitet: Als Ackerkita lernen die Kinder direkt im Garten, woher ihr Essen kommt – vom Samen bis zur Ernte. Eine eigene Köchin kocht täglich frisch für die Kinder, statt auf angelieferte Standardkost zu setzen. Dabei steht jedes Kind mit seinen Bedürfnissen im Mittelpunkt: Inklusion und Teilhabe werden im Alltag gelebt, ob beim gemeinsamen Essen, Spielen oder Entdecken im großen Außengelände. Dieses Team zeigt jeden Tag, wie gelebte Wertschätzung, gesunde Ernährung und Naturerfahrung Hand in Hand gehen – genau dafür zeichnen wir die Kita Dreikäsehoch als Powercrew des Monats aus.
-              </p>
+            <div className="grid md:grid-cols-[auto_1fr] gap-6 md:gap-10 items-start">
+              <div className="flex items-start justify-center md:justify-start">
+                <img 
+                  src="/assets/powercrew-uebergabe-dezember-2025.jpg" 
+                  alt="Übergabe Powercrew des Monats an Kita Dreikäsehoch" 
+                  className="w-48 md:w-56 lg:w-64 rounded-lg shadow-md object-cover"
+                />
+              </div>
+              <div>
+                <h2 className="heading-md mb-4">
+                  Powercrew des Monats Dezember 2025: Kita Dreikäsehoch, Berlin-Köpenick
+                </h2>
+                <p className="body-base text-muted-foreground">
+                  Im Dezember erhält die humanistische Kita Dreikäsehoch in Berlin-Köpenick den Titel „Powercrew des Monats". Hier wird mit Kopf, Herz und Hand gearbeitet: Als Ackerkita lernen die Kinder direkt im Garten, woher ihr Essen kommt – vom Samen bis zur Ernte. Eine eigene Köchin kocht täglich frisch für die Kinder, statt auf angelieferte Standardkost zu setzen. Dabei steht jedes Kind mit seinen Bedürfnissen im Mittelpunkt: Inklusion und Teilhabe werden im Alltag gelebt, ob beim gemeinsamen Essen, Spielen oder Entdecken im großen Außengelände. Dieses Team zeigt jeden Tag, wie gelebte Wertschätzung, gesunde Ernährung und Naturerfahrung Hand in Hand gehen – genau dafür zeichnen wir die Kita Dreikäsehoch als Powercrew des Monats aus.
+                </p>
+              </div>
             </div>
           </motion.div>
 

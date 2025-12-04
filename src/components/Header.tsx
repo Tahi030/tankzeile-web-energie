@@ -67,9 +67,9 @@ const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const location = useLocation();
 
-  // Simple, solid color header - no gradient
+  // Harmonious background matching page content
   const getHeaderColor = () => {
-    return 'bg-white border-b-2 border-border';
+    return 'bg-muted border-b border-border/30';
   };
 
   // Dark text on white background

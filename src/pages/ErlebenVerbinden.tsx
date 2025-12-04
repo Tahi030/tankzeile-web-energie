@@ -15,13 +15,13 @@ const ErlebenVerbinden = () => {
   }, []);
 
   return (
-    <div className="min-h-screen">
-      {/* Hero Section */}
-      <section className="bg-accent-light py-16 md:py-24">
+    <div className="min-h-screen bg-muted">
+      {/* Hero Section - harmonisch */}
+      <section className="pt-8 pb-12 md:pt-12 md:pb-16">
         <div className="container-custom">
-          <div className="max-w-3xl mx-auto">
-            <h1 className="text-3xl md:text-4xl font-bold mb-6">Schatz(t)ruhe & Captain Apfel</h1>
-            <p className="text-lg mb-6">
+          <div className="max-w-3xl mx-auto text-center">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-foreground font-luckiest">Schatz(t)ruhe & Captain Apfel</h1>
+            <p className="text-lg text-muted-foreground">
               Für Eltern, Kinder und Einrichtungen, die Beziehung spürbar machen wollen – achtsam, spielerisch, gemeinsam.
             </p>
           </div>
@@ -29,7 +29,7 @@ const ErlebenVerbinden = () => {
       </section>
 
       {/* Main Content */}
-      <section className="py-12 md:py-16">
+      <section className="pb-12 md:pb-16">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
             <div className="prose prose-lg max-w-none">
