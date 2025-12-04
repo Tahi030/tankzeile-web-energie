@@ -39,17 +39,17 @@ const WorkshopGesundeMission = () => {
               
               <div className="my-8 bg-primary-light p-6 rounded-lg">
                 <p className="text-lg mb-6 text-white leading-relaxed">
-                  Wusstest du, dass in jedem Kinderbauch ein Kraftwerk steckt? Wir nennen es die <strong>Powerzentrale</strong>. Sie ist der Motor für Energie, Konzentration und gute Laune.
+                  Wusstest du, dass in jedem Kinderbauch ein Kraftwerk steckt? Das ist die <strong>Powerzentrale</strong>. Sie ist der Motor für Energie, Konzentration und gute Laune.
                 </p>
                 
                 <p className="mb-6 text-white leading-relaxed">
-                  Doch oft wird sie ausgebremst. Captain Apfel und seine Crew zeigen den Kindern, wie sie ihre Powerzentrale wieder aktivieren. Wir setzen dabei ganz auf Spaß und eine einzigartige Abenteuerreise in den Körper.
+                  Doch oft wird sie ausgebremst. Captain Apfel und seine Crew zeigen den Kindern, wie sie ihre Powerzentrale wieder aktivieren. Statt Belehrungen gibt es hier Spaß und eine einzigartige Abenteuerreise in den Körper.
                 </p>
                 
                 <h2 className="text-2xl font-bold mb-4 text-accent">So lernen die Kinder (Die Story Methode)</h2>
                 
                 <p className="mb-4 text-white leading-relaxed">
-                  Schluss mit trockener Theorie! Wir nutzen fantastische Bilder und eine spannende Geschichte, um Wissen verständlich zu machen. Wir unterscheiden spielerisch zwischen „Superkraft Nahrung" und „Energieräubern".
+                  Schluss mit trockener Theorie. Fantastische Bilder und eine spannende Geschichte machen Wissen verständlich. Die Kinder unterscheiden spielerisch zwischen „Superkraft Nahrung" und „Energieräubern".
                 </p>
                 
                 <p className="mb-2 text-white font-semibold">Dabei erforschen die Kinder</p>
@@ -61,7 +61,7 @@ const WorkshopGesundeMission = () => {
                 
                 <p className="mb-2 text-white"><strong>1. Bewegen & Tanzen</strong> – Stärkt Körpergefühl und Motorik.</p>
                 <p className="mb-2 text-white"><strong>2. Entdecken & Staunen</strong> – Vermittelt Wissen durch interaktives Storytelling.</p>
-                <p className="mb-2 text-white"><strong>3. Teamgefühl erleben</strong> – Gemeinsam sind wir stark.</p>
+                <p className="mb-2 text-white"><strong>3. Teamgefühl erleben</strong> – Fördert den Zusammenhalt in der Gruppe.</p>
                 <p className="mb-2 text-white"><strong>4. Mitmachen & Vorbereiten</strong> – Stärkt Verantwortung und Selbstwirksamkeit.</p>
                 <p className="mb-6 text-white"><strong>5. Probieren & Genießen</strong> – Öffnet neue Geschmackserlebnisse und stärkt das Selbstvertrauen.</p>
                 
