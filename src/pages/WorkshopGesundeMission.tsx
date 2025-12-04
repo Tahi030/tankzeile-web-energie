@@ -23,11 +23,11 @@ const WorkshopGesundeMission = () => {
       </section>
 
       {/* Tomatenraumschiff mit Treibstoff-Kringel */}
-      <div className="flex justify-center items-center py-4 md:py-6">
+      <div className="flex justify-center items-center py-6 md:py-10">
         <div className="relative">
           {/* Roter Treibstoff-Kringel */}
           <svg 
-            className="absolute -right-8 sm:-right-12 md:-right-16 top-1/2 -translate-y-1/2 w-20 h-12 sm:w-28 sm:h-16 md:w-36 md:h-20 -z-10"
+            className="absolute -right-12 sm:-right-16 md:-right-24 top-1/2 -translate-y-1/2 w-28 h-16 sm:w-40 sm:h-24 md:w-56 md:h-32 -z-10"
             viewBox="0 0 80 40" 
             fill="none"
           >
@@ -54,7 +54,7 @@ const WorkshopGesundeMission = () => {
           <img 
             src={tomatenraumschiff} 
             alt="Tomatenraumschiff" 
-            className="w-32 h-auto sm:w-40 md:w-52 lg:w-64 rotate-[15deg]"
+            className="w-44 h-auto sm:w-56 md:w-72 lg:w-80 rotate-[15deg]"
           />
         </div>
       </div>
