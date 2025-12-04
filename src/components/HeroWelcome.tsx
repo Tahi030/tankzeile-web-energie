@@ -35,7 +35,7 @@ export const HeroWelcome = () => {
               className="space-y-4 sm:space-y-6 text-center lg:text-left lg:pr-4 xl:pr-8"
             >
               <div className="space-y-3 sm:space-y-4 lg:space-y-5">
-                <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-luckiest text-primary uppercase tracking-wide leading-tight">
+                <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-luckiest text-[hsl(80_40%_45%)] uppercase tracking-wide leading-tight">
                   Captain Apfel
                 </h1>
                 <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-luckiest text-secondary">
