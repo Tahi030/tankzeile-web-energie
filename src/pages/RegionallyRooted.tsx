@@ -44,76 +44,77 @@ const RegionallyRooted = () => {
                   Und falls du einmal am Herzapfelhof vorbeikommst: Besuch den Baum gerne und teile ein Foto mit #captain.apfel – darüber würde ich mich sehr freuen.
                 </p>
 
-                {/* Bilder Section */}
-                <div className="mt-10 md:mt-14 space-y-8">
-                  {/* Hauptbild - Patenschaftsurkunde */}
-                  <motion.div 
-                    initial={{ opacity: 0, scale: 0.95 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 0.5 }}
-                    viewport={{ once: true }}
-                    className="group"
-                  >
-                    <div className="relative overflow-hidden rounded-2xl shadow-xl bg-gradient-to-br from-primary/10 to-accent/10 p-4 md:p-6">
-                      <img 
-                        src="/assets/regional-apfelbaum-patenschaft.jpg" 
-                        alt="Apfelbaum-Patenschaft Urkunde für Captain Apfel - Herzapfelhof Altes Land" 
-                        className="w-full h-auto object-contain rounded-xl transition-transform duration-500 group-hover:scale-[1.02]"
-                      />
-                    </div>
-                  </motion.div>
-
-                  {/* Zwei Bilder nebeneinander */}
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <motion.div
-                      initial={{ opacity: 0, x: -20 }}
-                      whileInView={{ opacity: 1, x: 0 }}
-                      transition={{ duration: 0.5, delay: 0.1 }}
+                {/* Bilder Section - kompakt nebeneinander */}
+                <div className="mt-10 md:mt-14">
+                  <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
+                    {/* Patenschaftsurkunde */}
+                    <motion.div 
+                      initial={{ opacity: 0, y: 10 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.4 }}
                       viewport={{ once: true }}
                       className="group"
                     >
-                      <div className="relative overflow-hidden rounded-2xl shadow-lg bg-gradient-to-br from-green-100/50 to-primary/10 p-3">
+                      <div className="overflow-hidden rounded-xl shadow-md bg-gradient-to-br from-primary/10 to-accent/10 p-2">
                         <img 
-                          src="/assets/regional-apples-tree.jpg" 
-                          alt="Rote Äpfel am Baum - frisch und regional" 
-                          className="w-full h-64 md:h-80 object-cover rounded-xl transition-all duration-500 group-hover:scale-105 group-hover:shadow-lg"
+                          src="/assets/regional-apfelbaum-patenschaft.jpg" 
+                          alt="Apfelbaum-Patenschaft Urkunde" 
+                          className="w-full h-32 md:h-40 object-cover rounded-lg transition-transform duration-300 group-hover:scale-105"
                         />
                       </div>
                     </motion.div>
 
+                    {/* Äpfel am Baum */}
                     <motion.div
-                      initial={{ opacity: 0, x: 20 }}
-                      whileInView={{ opacity: 1, x: 0 }}
-                      transition={{ duration: 0.5, delay: 0.2 }}
+                      initial={{ opacity: 0, y: 10 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.4, delay: 0.1 }}
                       viewport={{ once: true }}
                       className="group"
                     >
-                      <div className="relative overflow-hidden rounded-2xl shadow-lg bg-gradient-to-bl from-red-100/50 to-accent/10 p-3">
+                      <div className="overflow-hidden rounded-xl shadow-md bg-gradient-to-br from-green-100/50 to-primary/10 p-2">
+                        <img 
+                          src="/assets/regional-apples-tree.jpg" 
+                          alt="Rote Äpfel am Baum" 
+                          className="w-full h-32 md:h-40 object-cover rounded-lg transition-transform duration-300 group-hover:scale-105"
+                        />
+                      </div>
+                    </motion.div>
+
+                    {/* Apfel in Hand */}
+                    <motion.div
+                      initial={{ opacity: 0, y: 10 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.4, delay: 0.2 }}
+                      viewport={{ once: true }}
+                      className="group"
+                    >
+                      <div className="overflow-hidden rounded-xl shadow-md bg-gradient-to-bl from-red-100/50 to-accent/10 p-2">
                         <img 
                           src="/assets/regional-apple-hand.jpg" 
-                          alt="Regional geernteter roter Apfel in der Hand" 
-                          className="w-full h-64 md:h-80 object-cover rounded-xl transition-all duration-500 group-hover:scale-105 group-hover:shadow-lg"
+                          alt="Apfel in der Hand" 
+                          className="w-full h-32 md:h-40 object-cover rounded-lg transition-transform duration-300 group-hover:scale-105"
+                        />
+                      </div>
+                    </motion.div>
+
+                    {/* Apfel im Korb */}
+                    <motion.div
+                      initial={{ opacity: 0, y: 10 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.4, delay: 0.3 }}
+                      viewport={{ once: true }}
+                      className="group"
+                    >
+                      <div className="overflow-hidden rounded-xl shadow-md bg-gradient-to-t from-amber-100/50 to-primary/10 p-2">
+                        <img 
+                          src="/assets/regional-apple-basket.jpg" 
+                          alt="Apfel im Korb" 
+                          className="w-full h-32 md:h-40 object-cover rounded-lg transition-transform duration-300 group-hover:scale-105"
                         />
                       </div>
                     </motion.div>
                   </div>
-
-                  {/* Einzelnes Bild - größer und zentriert */}
-                  <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, delay: 0.3 }}
-                    viewport={{ once: true }}
-                    className="flex justify-center group"
-                  >
-                    <div className="relative overflow-hidden rounded-2xl shadow-xl bg-gradient-to-t from-amber-100/50 to-primary/10 p-3 w-full max-w-2xl">
-                      <img 
-                        src="/assets/regional-apple-basket.jpg" 
-                        alt="Fröhlicher Apfel im Korb - Captain Apfel lässt grüßen" 
-                        className="w-full h-72 md:h-96 object-cover rounded-xl transition-all duration-500 group-hover:scale-105"
-                      />
-                    </div>
-                  </motion.div>
                 </div>
               </div>
             </div>
