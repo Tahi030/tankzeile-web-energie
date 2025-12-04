@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import CustomerFeedback from "@/components/CustomerFeedback";
-import tomatenraumschiff from "@/assets/tomatenraumschiff-workshop.svg";
+import powerzentraleCharacter from "@/assets/powerzentrale-character.svg";
 
 const WorkshopGesundeMission = () => {
   useEffect(() => {
@@ -22,41 +22,13 @@ const WorkshopGesundeMission = () => {
         </div>
       </section>
 
-      {/* Tomatenraumschiff mit Treibstoff-Kringel */}
+      {/* Powerzentrale Character */}
       <div className="flex justify-center items-center py-6 md:py-10">
-        <div className="relative">
-          {/* Roter Treibstoff-Kringel */}
-          <svg 
-            className="absolute -right-12 sm:-right-16 md:-right-24 top-1/2 -translate-y-1/2 w-28 h-16 sm:w-40 sm:h-24 md:w-56 md:h-32 -z-10"
-            viewBox="0 0 80 40" 
-            fill="none"
-          >
-            <path 
-              d="M5 20 Q15 5, 25 20 T45 20 T65 20 T80 20" 
-              stroke="hsl(var(--destructive))" 
-              strokeWidth="4" 
-              strokeLinecap="round"
-              fill="none"
-              className="animate-pulse"
-              style={{ filter: 'blur(1px)' }}
-            />
-            <path 
-              d="M10 20 Q20 30, 30 20 T50 20 T70 20" 
-              stroke="hsl(var(--destructive))" 
-              strokeWidth="3" 
-              strokeLinecap="round"
-              fill="none"
-              opacity="0.6"
-              style={{ filter: 'blur(2px)' }}
-            />
-          </svg>
-          {/* Tomatenraumschiff */}
-          <img 
-            src={tomatenraumschiff} 
-            alt="Tomatenraumschiff" 
-            className="w-44 h-auto sm:w-56 md:w-72 lg:w-80 rotate-[15deg]"
-          />
-        </div>
+        <img 
+          src={powerzentraleCharacter} 
+          alt="Powerzentrale" 
+          className="w-52 h-auto sm:w-64 md:w-80 lg:w-96"
+        />
       </div>
 
       {/* Main Content */}
