@@ -45,26 +45,21 @@ const EssenIstFertig = () => {
               </p>
               
               {/* Highlights */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mt-8">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8 max-w-3xl mx-auto">
                 <div className="flex flex-col items-center text-center gap-1">
                   <span className="text-primary text-2xl font-bold">✓</span>
                   <span className="font-semibold text-foreground">Sofort loslegen</span>
-                  <span className="text-sm">Kein Warten auf Termine – Hilfe kommt in Sekunden.</span>
+                  <span className="text-sm">Kein Warten auf Termine</span>
                 </div>
                 <div className="flex flex-col items-center text-center gap-1">
                   <span className="text-primary text-2xl font-bold">✓</span>
                   <span className="font-semibold text-foreground">Kein Verzicht</span>
-                  <span className="text-sm">Leckere Rezepte, die der ganzen Familie schmecken.</span>
+                  <span className="text-sm">Leckere Familienrezepte</span>
                 </div>
                 <div className="flex flex-col items-center text-center gap-1">
                   <span className="text-primary text-2xl font-bold">✓</span>
                   <span className="font-semibold text-foreground">Sicher einkaufen</span>
-                  <span className="text-sm">Nie wieder ratlos vor dem Supermarkt-Regal stehen.</span>
-                </div>
-                <div className="flex flex-col items-center text-center gap-1">
-                  <span className="text-primary text-2xl font-bold">✓</span>
-                  <span className="font-semibold text-foreground">Umfangreich</span>
-                  <span className="text-sm">59 Seiten Wissen, Vorlagen, Wochenpläne, FAQs & Ernährungstagebuch.</span>
+                  <span className="text-sm">Nie wieder ratlos</span>
                 </div>
               </div>
               
@@ -99,19 +94,43 @@ const EssenIstFertig = () => {
                   <h2 className="text-xl font-bold text-foreground text-center">
                     ESSEN IST FERTIG! DEIN ALLTAGSPAKET BEI LAKTOSEINTOLERANZ
                   </h2>
+                  
+                  <p className="text-muted-foreground text-center leading-relaxed">
+                    Deine kompakte Elternhilfe nach der Diagnose – übersichtlich, praxisnah und sofort nutzbar.
+                  </p>
 
                   <ul className="space-y-2 text-sm text-muted-foreground">
                     <li className="flex items-start gap-2">
                       <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                      <span>Alles Wichtige über Laktoseintoleranz & Milchzucker</span>
+                      <span>Grundlagen einfach erklärt</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                      <span>Inkl. laktosefreien Rezepten & Einkaufs-Guide</span>
+                      <span>59 Seiten klar aufbereitetes Wissen, Vorlagen & Rezepte</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                      <span className="font-semibold text-foreground">Komplettes 59-Seiten Alltagspaket (PDF)</span>
+                      <span>Do's & Don'ts für Einkauf & Ernährung</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                      <span>Vorlage für Kita & Schule</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                      <span>10 schnelle Snackideen & Rezepte</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                      <span>Wochenbaukasten mit Beispielplan</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                      <span>Umfangreicher FAQ-Teil</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                      <span>Vorlage Ernährungstagebuch</span>
                     </li>
                   </ul>
                 </div>
@@ -162,19 +181,43 @@ const EssenIstFertig = () => {
                   <h2 className="text-xl font-bold text-foreground text-center">
                     ESSEN IST FERTIG! DEIN ALLTAGSPAKET BEI FRUKTOSEINTOLERANZ
                   </h2>
+                  
+                  <p className="text-muted-foreground text-center leading-relaxed">
+                    Deine kompakte Elternhilfe nach der Diagnose – übersichtlich, praxisnah und sofort nutzbar.
+                  </p>
 
                   <ul className="space-y-2 text-sm text-muted-foreground">
                     <li className="flex items-start gap-2">
                       <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                      <span>Alles Wichtige über Fruktoseintoleranz & Fruchtzucker</span>
+                      <span>Grundlagen einfach erklärt</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                      <span>Inkl. fruktosearmen Rezepten & Einkaufs-Guide</span>
+                      <span>59 Seiten klar aufbereitetes Wissen, Vorlagen & Rezepte</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                      <span className="font-semibold text-foreground">Komplettes 59-Seiten Alltagspaket (PDF)</span>
+                      <span>Do's & Don'ts für Einkauf & Ernährung</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                      <span>Vorlage für Kita & Schule</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                      <span>10 schnelle Snackideen & Rezepte</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                      <span>Wochenbaukasten mit Beispielplan</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                      <span>Umfangreicher FAQ-Teil</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                      <span>Vorlage Ernährungstagebuch</span>
                     </li>
                   </ul>
                 </div>
