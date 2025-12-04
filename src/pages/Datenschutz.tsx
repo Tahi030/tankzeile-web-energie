@@ -3,8 +3,7 @@ import { useEffect } from "react";
 
 const Datenschutz = () => {
   useEffect(() => {
-    // Set page metadata for SEO
-    document.title = "Datenschutz | Tankzeile";
+    document.title = "Datenschutz | Captain Apfel";
   }, []);
 
   return (
@@ -14,98 +13,73 @@ const Datenschutz = () => {
           <h1 className="text-3xl font-bold mb-8">Datenschutzerklärung</h1>
           
           <div className="prose max-w-none">
-            <h2>1. Verantwortlicher</h2>
+            <h2>1. Datenschutz auf einen Blick</h2>
+            <h3>Allgemeine Hinweise</h3>
             <p>
-              Verantwortlich für die Datenverarbeitung auf dieser Website ist:
+              Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können. Ausführliche Informationen zum Thema Datenschutz entnehmen Sie unserer unter diesem Text aufgeführten Datenschutzerklärung.
             </p>
+            
+            <h3>Wer ist verantwortlich für die Datenerfassung auf dieser Website?</h3>
             <p>
-              Tamara Hillmann<br />
-              Friedrichshagener Straße 5 G<br />
-              12555 Berlin<br />
-              E-Mail: kontakt@captain-apfel.de
-            </p>
-
-            <h2>2. Hosting und Bereitstellung der Website</h2>
-            <p>
-              Diese Website wird über die Plattform Loveable betrieben.
-              Die technische Infrastruktur wird u. a. durch Strato AG (Otto-Ostrowski-Str. 7, 10249 Berlin) und GitHub, Inc. (88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA) bereitgestellt.
-            </p>
-            <p>
-              Beim Aufruf der Website werden automatisch durch Ihren Browser folgende Daten übermittelt und in sogenannten Server-Logfiles gespeichert:
-            </p>
-            <ul>
-              <li>IP-Adresse des Endgeräts</li>
-              <li>Datum und Uhrzeit des Zugriffs</li>
-              <li>aufgerufene Seite oder Datei (Name / URL)</li>
-              <li>Referrer-URL (zuvor besuchte Seite)</li>
-              <li>verwendeter Browser und Betriebssystem</li>
-            </ul>
-            <p>
-              Diese Daten werden zur Sicherstellung des technischen Betriebs, zur Systemsicherheit und zur Fehleranalyse verarbeitet.
-              Rechtsgrundlage hierfür ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einem sicheren und funktionsfähigen Online-Angebot).
+              Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten können Sie dem Impressum dieser Website entnehmen.
             </p>
 
-            <h2>3. Kontaktaufnahme</h2>
+            <h2>2. Hosting und Content Delivery Networks (CDN)</h2>
+            <h3>Hosting über Lovable</h3>
             <p>
-              Bei einer Kontaktaufnahme per E-Mail werden die von Ihnen übermittelten personenbezogenen Daten (z. B. Name, E-Mail-Adresse, Nachricht) verarbeitet, um Ihr Anliegen zu bearbeiten.
+              Wir hosten unsere Website bei einem externen Dienstleister (Hoster). Die personenbezogenen Daten, die auf dieser Website erfasst werden, werden auf den Servern des Hosters gespeichert. Hierbei kann es sich v. a. um IP-Adressen, Kontaktanfragen, Meta- und Kommunikationsdaten, Vertragsdaten, Kontaktdaten, Namen, Webseitenzugriffe und sonstige Daten, die über eine Website generiert werden, handeln.
             </p>
             <p>
-              Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung / Vertragsanbahnung) bzw. Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der Bearbeitung von Anfragen).
-            </p>
-
-            <h2>4. Cookies</h2>
-            <p>
-              Diese Website kann Cookies verwenden, um bestimmte Funktionen bereitzustellen oder die Nutzung zu verbessern.
-              Cookies sind kleine Textdateien, die auf Ihrem Endgerät gespeichert werden.
+              <strong>Unser Hoster ist:</strong><br />
+              Lovable
             </p>
             <p>
-              Sie können die Speicherung von Cookies in den Einstellungen Ihres Browsers jederzeit deaktivieren oder bereits gesetzte Cookies löschen.
-              Bitte beachten Sie, dass bei deaktivierten Cookies einzelne Funktionen der Website eingeschränkt sein können.
-            </p>
-            <p>
-              Rechtsgrundlage:
-            </p>
-            <ul>
-              <li>Art. 6 Abs. 1 lit. f DSGVO für technisch notwendige Cookies</li>
-              <li>Art. 6 Abs. 1 lit. a DSGVO für zustimmungspflichtige Cookies</li>
-            </ul>
-
-            <h2>5. Weitergabe von Daten</h2>
-            <p>
-              Eine Weitergabe Ihrer personenbezogenen Daten an Dritte erfolgt nur, wenn dies gesetzlich vorgeschrieben ist, zur Vertragsabwicklung erforderlich ist oder Sie ausdrücklich eingewilligt haben.
-            </p>
-            <p>
-              Eine Übermittlung personenbezogener Daten in Drittländer (außerhalb der EU / des EWR) findet nur statt, sofern geeignete Garantien nach Art. 44 ff. DSGVO bestehen.
+              Die Nutzung des Hosters erfolgt zum Zwecke der Vertragserfüllung gegenüber unseren potenziellen und bestehenden Kunden (Art. 6 Abs. 1 lit. b DSGVO) und im Interesse einer sicheren, schnellen und effizienten Bereitstellung unseres Online-Angebots durch einen professionellen Anbieter (Art. 6 Abs. 1 lit. f DSGVO).
             </p>
 
-            <h2>6. Betroffenenrechte</h2>
-            <p>Sie haben das Recht:</p>
-            <ul>
-              <li>gemäß Art. 15 DSGVO Auskunft über Ihre verarbeiteten Daten zu verlangen,</li>
-              <li>gemäß Art. 16 DSGVO Berichtigung unrichtiger Daten zu verlangen,</li>
-              <li>gemäß Art. 17 DSGVO Löschung Ihrer gespeicherten Daten zu verlangen,</li>
-              <li>gemäß Art. 18 DSGVO Einschränkung der Verarbeitung zu verlangen,</li>
-              <li>gemäß Art. 20 DSGVO Datenübertragbarkeit zu verlangen,</li>
-              <li>gemäß Art. 77 DSGVO Beschwerde bei einer Datenschutzaufsichtsbehörde einzulegen.</li>
-            </ul>
-
-            <h2>7. Widerspruchsrecht</h2>
+            <h2>3. Allgemeine Hinweise und Pflichtinformationen</h2>
+            <h3>Widerruf Ihrer Einwilligung zur Datenverarbeitung</h3>
             <p>
-              Sie können der Verarbeitung Ihrer personenbezogenen Daten, die auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO erfolgt, jederzeit widersprechen, sofern sich aus Ihrer besonderen Situation Gründe ergeben.
-              Zur Ausübung des Widerspruchsrechts genügt eine formlose Mitteilung per E-Mail an kontakt@captain-apfel.de.
+              Viele Datenverarbeitungsvorgänge sind nur mit Ihrer ausdrücklichen Einwilligung möglich. Sie können eine bereits erteilte Einwilligung jederzeit widerrufen. Dazu reicht eine formlose Mitteilung per E-Mail an uns. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Datenverarbeitung bleibt vom Widerruf unberührt.
+            </p>
+            
+            <h3>Beschwerderecht bei der zuständigen Aufsichtsbehörde</h3>
+            <p>
+              Im Falle von Verstößen gegen die DSGVO steht den Betroffenen ein Beschwerderecht bei einer Aufsichtsbehörde zu, insbesondere in dem Mitgliedstaat ihres gewöhnlichen Aufenthalts, ihres Arbeitsplatzes oder des Orts des mutmaßlichen Verstoßes.
             </p>
 
-            <h2>8. Datensicherheit</h2>
+            <h2>4. Zahlungsabwicklung und Reseller</h2>
+            <h3>Abwicklung über Copecart</h3>
             <p>
-              Wir setzen technische und organisatorische Maßnahmen ein, um Ihre Daten vor Manipulation, Verlust, Zerstörung oder unbefugtem Zugriff zu schützen.
-              Diese Sicherheitsmaßnahmen werden entsprechend dem Stand der Technik fortlaufend verbessert.
+              Auf unserer Website bieten wir digitale Produkte (z.B. PDF-Ratgeber) zum Kauf an. Wir weisen ausdrücklich darauf hin, dass der Verkauf und die Zahlungsabwicklung nicht direkt über uns erfolgen, sondern über unseren Reseller-Partner:
             </p>
-
-            <h2>9. Aktualität und Änderungen</h2>
             <p>
-              Diese Datenschutzerklärung ist aktuell gültig und hat den Stand: November 2025.
-              Durch Weiterentwicklung unserer Website oder geänderte gesetzliche Vorgaben kann eine Anpassung erforderlich werden.
-              Die jeweils aktuelle Version finden Sie jederzeit auf dieser Website. Hinweise zum Urheberrecht und Markenschutz entnehmen Sie bitte dem Impressum.
+              <strong>CopeCart GmbH</strong><br />
+              Ufnaustraße 10<br />
+              10553 Berlin<br />
+              Deutschland
+            </p>
+            <p>
+              Wenn Sie auf einen Bestell-Button („Kaufen", „Sichern" etc.) klicken, verlassen Sie unsere Website und werden auf die Verkaufsseiten von Copecart weitergeleitet. Der Kaufvertrag kommt ausschließlich zwischen Ihnen und der CopeCart GmbH zustande.
+            </p>
+            
+            <h3>Datenübermittlung an Copecart</h3>
+            <p>
+              Im Rahmen des Bestellvorgangs erhebt und verarbeitet Copecart Ihre Daten (z.B. Name, Adresse, E-Mail, Zahlungsdaten) zur Abwicklung des Kaufs und der Zahlung. Wir als Produkthersteller haben keinen Zugriff auf Ihre vollständigen Zahlungsdaten (wie Kreditkartennummer). Wir erhalten von Copecart lediglich Informationen über den erfolgreichen Kauf und die Kontaktdaten (Name, E-Mail-Adresse), um Ihnen ggf. Support bieten zu können oder (falls vereinbart) Newsletter zuzusenden.
+            </p>
+            <p>
+              Die Übermittlung Ihrer Daten an Copecart erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO (Vertragsabwicklung) sowie auf Grundlage unseres berechtigten Interesses am Einsatz eines professionellen und sicheren Resellers (Art. 6 Abs. 1 lit. f DSGVO).
+            </p>
+            <p>
+              Weitere Informationen zum Datenschutz bei Copecart finden Sie in der Datenschutzerklärung von Copecart:{" "}
+              <a href="https://copecart.com/de/datenschutz" target="_blank" rel="noopener noreferrer">
+                https://copecart.com/de/datenschutz
+              </a>
+            </p>
+            
+            <h3>Auftragsverarbeitung</h3>
+            <p>
+              Wir haben mit Copecart einen Vertrag zur Auftragsverarbeitung (AVV) bzw. entsprechende Vereinbarungen im Rahmen der Reseller-AGB geschlossen. Dieser Vertrag gewährleistet, dass Copecart die Daten unserer Webseitenbesucher nur nach unseren Weisungen und unter Einhaltung der DSGVO verarbeitet.
             </p>
           </div>
         </div>
