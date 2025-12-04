@@ -147,7 +147,7 @@ const Index = () => {
           </div>
 
           {/* Spacing between sections */}
-          <div className="mt-24"></div>
+          <div className="mt-8"></div>
 
           {/* Additional Content Boxes */}
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
@@ -157,7 +157,6 @@ const Index = () => {
               description="Unser Mitmach-Lied lädt zum Tanzen, Singen und Spaßhaben ein. Beweg dich mit Captain Apfel und seiner Crew – volle Obst- und Gemüsekraft voraus!"
               videoUrl="https://www.youtube-nocookie.com/embed/yXku9Q91tmY?rel=0"
               downloadLinks={[
-                { text: "Video auf YouTube ansehen", url: "https://youtu.be/yXku9Q91tmY" },
                 { text: "Mitmachkarte zum Lied als PDF herunterladen", url: "/pdfs/mitmach-lied-captain-apfel.pdf" }
               ]}
               accent="accent"
