@@ -1,18 +1,14 @@
 
 import { useEffect } from "react";
 import { motion } from "framer-motion";
-import CustomerFeedback from "@/components/CustomerFeedback";
+import powercrewLogo from "@/assets/powercrew-logo.svg";
 
 const AlltagLeichterLeben = () => {
   useEffect(() => {
-    // Set page metadata for SEO
-    document.title = "Alltag leichter leben | Captain Apfel";
-    
-    // Apply background color to the body
+    document.title = "Powercrew des Monats | Captain Apfel";
     document.body.classList.add('bg-background');
     
     return () => {
-      // Remove background color when component unmounts
       document.body.classList.remove('bg-background');
     };
   }, []);
@@ -20,108 +16,90 @@ const AlltagLeichterLeben = () => {
   return (
     <main className="min-h-screen section-padding">
       <div className="container-custom">
-        <div className="max-w-4xl mx-auto">
-          {/* Header */}
+        <div className="max-w-6xl mx-auto">
+          
+          {/* Hero Section - Two Columns */}
           <motion.div
-            className="text-center mb-12"
+            className="grid md:grid-cols-2 gap-8 md:gap-12 mb-16"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h1 className="heading-lg mb-4">Alltag leichter leben</h1>
-            <p className="body-lg text-muted-foreground">
-              Impulse und Ideen für Familien, die Struktur, Entlastung und neue Energie suchen.
-            </p>
+            {/* Left Column - Logo */}
+            <div className="flex items-center justify-center">
+              <img 
+                src={powercrewLogo} 
+                alt="Powercrew des Monats Logo" 
+                className="w-full max-w-md"
+              />
+            </div>
+
+            {/* Right Column - Text + Photo */}
+            <div className="flex flex-col justify-center">
+              <h1 className="heading-lg mb-4">
+                Powercrew des Monats – Danke an unsere Alltagshelden
+              </h1>
+              <p className="body-base text-muted-foreground mb-6">
+                Mit der Aktion „Powercrew des Monats" sagt Captain Apfel Danke an die Menschen, die jeden Tag für unsere Kinder da sind. Pädagogische Fachkräfte leisten großartige Arbeit – oft im Verborgenen, zwischen Tränen trocknen, Brotdosen auspacken und kleinen großen Sorgen. Mit der Powercrew würdigen wir jeden Monat eine Einrichtung, die sich mit Herz, Ideenreichtum und Engagement für gesundes Aufwachsen stark macht. Vielleicht spürst du beim Lesen: Unsere Kita hätte diesen Titel auch verdient – dann melde dich gerne.
+              </p>
+              <img 
+                src="/assets/powercrew-uebergabe-dezember-2025.jpg" 
+                alt="Übergabe Powercrew des Monats an Kita Dreikäsehoch" 
+                className="w-full max-w-sm rounded-lg shadow-md"
+              />
+            </div>
           </motion.div>
 
-          {/* Content Grid */}
+          {/* Powercrew Entries Section */}
           <div className="space-y-8">
-            {/* Box 1: Kita-Brotdosen */}
-            <motion.div
-              className="bg-card/50 backdrop-blur-sm rounded-2xl p-6 md:p-8 border border-border/50 shadow-sm"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-            >
-              <h2 className="heading-md mb-4">Ideen für Kita-Brotdosen</h2>
-              <p className="body-base text-muted-foreground mb-6">
-                Praktische Tipps und kreative Ideen für abwechslungsreiche und gesunde Brotdosen, die Kindern schmecken und Eltern entlasten.
-              </p>
-              <div className="flex flex-col items-center gap-4">
-                <img 
-                  src="/lovable-uploads/08bfbdac-09ed-487b-b043-b67755d1d90a.png" 
-                  alt="Gratis PDF Kita-Brotdosen" 
-                  className="w-64 h-64 md:w-80 md:h-80 object-contain rounded-lg"
-                />
-                <button 
-                  onClick={async () => {
-                    try {
-                      const response = await fetch('/pdfs/lieblingsbox.pdf');
-                      const blob = await response.blob();
-                      const url = window.URL.createObjectURL(blob);
-                      const link = document.createElement('a');
-                      link.href = url;
-                      link.download = 'Lieblingsbox.pdf';
-                      link.click();
-                      window.URL.revokeObjectURL(url);
-                    } catch (error) {
-                      console.error('Download failed:', error);
-                    }
-                  }}
-                  className="inline-flex items-center gap-2 bg-[hsl(25_45%_35%)] hover:bg-[hsl(25_45%_30%)] text-white px-4 py-2 rounded-lg transition-all duration-300 font-medium shadow-md hover:shadow-lg cursor-pointer"
-                >
-                  Lieblingsbox herunterladen
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                  </svg>
-                </button>
-              </div>
-            </motion.div>
-
-            {/* Box 2: Neues aus der Powerzentrale */}
+            
+            {/* December 2025 Entry */}
             <motion.div
               className="bg-card/50 backdrop-blur-sm rounded-2xl p-6 md:p-8 border border-border/50 shadow-sm"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              <h2 className="heading-md mb-4">Neues aus der Powerzentrale</h2>
-              <p className="body-base text-muted-foreground italic">
-                Hier entsteht bald ein Bereich voller Ideen und Alltagshilfe – bleib gespannt!
+              <h2 className="heading-md mb-4">
+                Powercrew des Monats Dezember 2025: Kita Dreikäsehoch, Berlin-Köpenick
+              </h2>
+              <p className="body-base text-muted-foreground">
+                Im Dezember erhält die humanistische Kita Dreikäsehoch in Berlin-Köpenick den Titel „Powercrew des Monats". Hier wird mit Kopf, Herz und Hand gearbeitet: Als Ackerkita lernen die Kinder direkt im Garten, woher ihr Essen kommt – vom Samen bis zur Ernte. Eine eigene Köchin kocht täglich frisch für die Kinder, statt auf angelieferte Standardkost zu setzen. Dabei steht jedes Kind mit seinen Bedürfnissen im Mittelpunkt: Inklusion und Teilhabe werden im Alltag gelebt, ob beim gemeinsamen Essen, Spielen oder Entdecken im großen Außengelände. Dieses Team zeigt jeden Tag, wie gelebte Wertschätzung, gesunde Ernährung und Naturerfahrung Hand in Hand gehen – genau dafür zeichnen wir die Kita Dreikäsehoch als Powercrew des Monats aus.
               </p>
             </motion.div>
 
-            {/* Box 3: Mein erstes Buch */}
+            {/* Future Entries Section */}
             <motion.div
-              className="bg-card/50 backdrop-blur-sm rounded-2xl p-6 md:p-8 border border-border/50 shadow-sm"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
             >
-              <h2 className="heading-md mb-4">Mein erstes Buch</h2>
-              <p className="body-base text-muted-foreground mb-6">
-                Ein Herzensprojekt, das gerade wächst.
-              </p>
-              <div className="flex flex-col md:flex-row gap-6 items-center md:items-start">
-                <div className="md:w-1/3 flex-shrink-0">
-                  <img 
-                    src="/lovable-uploads/36ba656f-ced5-4afb-a9ba-a75f553fb0de.png" 
-                    alt="Mein erstes Buch Cover" 
-                    className="w-full max-w-48 mx-auto rounded-lg shadow-md"
-                  />
-                </div>
-                <div className="md:w-2/3">
+              <h2 className="heading-md mb-6 mt-12">Frühere und kommende Powercrews</h2>
+              
+              <div className="space-y-4">
+                <div className="bg-card/30 backdrop-blur-sm rounded-xl p-5 border border-border/30">
                   <p className="body-base text-muted-foreground italic">
-                    Ein persönlicher Blick auf Gesundheit, Körper und Seele.
+                    Powercrew Januar 2026 – folgt bald
+                  </p>
+                </div>
+                
+                <div className="bg-card/30 backdrop-blur-sm rounded-xl p-5 border border-border/30">
+                  <p className="body-base text-muted-foreground italic">
+                    Powercrew Februar 2026 – folgt bald
+                  </p>
+                </div>
+                
+                <div className="bg-card/30 backdrop-blur-sm rounded-xl p-5 border border-border/30">
+                  <p className="body-base text-muted-foreground italic">
+                    Powercrew März 2026 – folgt bald
                   </p>
                 </div>
               </div>
             </motion.div>
+
           </div>
         </div>
       </div>
-
-      <CustomerFeedback />
     </main>
   );
 };
