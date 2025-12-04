@@ -10,13 +10,24 @@ const WorkshopGesundeMission = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-muted relative overflow-hidden">
+    <div className="min-h-screen bg-muted">
+      {/* Hero Section */}
+      <section className="pt-8 pb-6 md:pt-12 md:pb-8">
+        <div className="container-custom">
+          <div className="max-w-3xl mx-auto text-center">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-foreground font-luckiest">Reise zur Powerzentrale</h1>
+            <p className="text-xl text-muted-foreground mb-2">Erlebnisworkshop Ernährung & Bewegung</p>
+            <p className="text-lg text-muted-foreground/80">Kitas (Vorschule), Familienzentren und Grundschulen (Klasse 1 & 2)</p>
+          </div>
+        </div>
+      </section>
+
       {/* Tomatenraumschiff mit Treibstoff-Kringel */}
-      <div className="absolute top-4 left-2 sm:top-6 sm:left-4 md:top-8 md:left-8 z-10 pointer-events-none">
+      <div className="flex justify-center items-center py-4 md:py-6">
         <div className="relative">
           {/* Roter Treibstoff-Kringel */}
           <svg 
-            className="absolute -right-4 sm:-right-6 md:-right-8 top-1/2 -translate-y-1/2 w-12 h-8 sm:w-16 sm:h-10 md:w-20 md:h-12 -z-10"
+            className="absolute -right-8 sm:-right-12 md:-right-16 top-1/2 -translate-y-1/2 w-20 h-12 sm:w-28 sm:h-16 md:w-36 md:h-20 -z-10"
             viewBox="0 0 80 40" 
             fill="none"
           >
@@ -43,21 +54,10 @@ const WorkshopGesundeMission = () => {
           <img 
             src={tomatenraumschiff} 
             alt="Tomatenraumschiff" 
-            className="w-16 h-auto sm:w-20 md:w-28 lg:w-32 rotate-[15deg]"
+            className="w-32 h-auto sm:w-40 md:w-52 lg:w-64 rotate-[15deg]"
           />
         </div>
       </div>
-
-      {/* Hero Section - harmonisch ohne harte Farbgrenze */}
-      <section className="pt-8 pb-12 md:pt-12 md:pb-16">
-        <div className="container-custom">
-          <div className="max-w-3xl mx-auto text-center pl-16 sm:pl-20 md:pl-0">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-foreground font-luckiest">Reise zur Powerzentrale</h1>
-            <p className="text-xl text-muted-foreground mb-2">Erlebnisworkshop Ernährung & Bewegung</p>
-            <p className="text-lg text-muted-foreground/80">Kitas (Vorschule), Familienzentren und Grundschulen (Klasse 1 & 2)</p>
-          </div>
-        </div>
-      </section>
 
       {/* Main Content */}
       <section className="pb-12 md:pb-16">
