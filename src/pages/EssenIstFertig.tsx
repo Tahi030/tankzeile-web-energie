@@ -37,12 +37,34 @@ const EssenIstFertig = () => {
             </h1>
             
             <div className="max-w-4xl mx-auto space-y-6 text-muted-foreground mb-8">
-              <p>
-                Diagnosen wie Laktoseintoleranz, Fructose- oder Glutenunverträglichkeit werfen viele Fragen auf. 
-                <strong className="text-foreground"> Essen ist fertig!</strong> bietet dir sofortige Entlastung: fundiertes Wissen, einfache Vorlagen und alltagstaugliche Rezepte.
+              <p className="text-lg leading-relaxed">
+                Diagnosen wie Laktoseintoleranz, Fruktose- oder Glutenunverträglichkeit werfen viele Fragen auf und können überwältigend sein. <strong className="text-foreground">Essen ist fertig!</strong> bietet dir sofortige Entlastung: fundiertes Wissen, einfache Vorlagen und alltagstaugliche Rezepte – ohne lange Wartezeiten auf teure Beratungstermine.
               </p>
-              <p className="text-foreground font-medium">
-                Denn: jedes Kind verdient es, Essen als etwas Schönes und Unbeschwertes zu erleben.
+              <p className="text-lg leading-relaxed">
+                Mit diesen digitalen Soforthilfe-Paketen findest du dich direkt im Alltag zurecht – ob beim Einkauf, am Familientisch oder wenn dein Kind in Schule und Kita isst. Denn jedes Kind verdient es, Essen als etwas Schönes und Unbeschwertes zu erleben.
+              </p>
+              
+              {/* Highlights */}
+              <div className="flex flex-col md:flex-row justify-center gap-4 md:gap-8 mt-8">
+                <div className="flex items-center gap-2">
+                  <span className="text-primary text-xl">✓</span>
+                  <span className="font-medium text-foreground">Sofort loslegen:</span>
+                  <span>Kein Warten auf Termine</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="text-primary text-xl">✓</span>
+                  <span className="font-medium text-foreground">Kein Verzicht:</span>
+                  <span>Leckere Familienrezepte</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="text-primary text-xl">✓</span>
+                  <span className="font-medium text-foreground">Sicher einkaufen:</span>
+                  <span>Nie wieder ratlos</span>
+                </div>
+              </div>
+              
+              <p className="text-foreground font-medium mt-6 text-lg">
+                Wähle unten einfach das Alltagspaket, das zu der Diagnose deines Kindes passt.
               </p>
             </div>
           </motion.div>
