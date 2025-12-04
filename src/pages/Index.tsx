@@ -17,7 +17,7 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-muted">
       
       {/* Hero Section with large welcoming image */}
       <HeroWelcome />
@@ -78,7 +78,7 @@ const Index = () => {
       </section>
 
       {/* Crew Section - Modern display */}
-      <section className="section-padding bg-gradient-to-b from-background to-secondary/5">
+      <section className="section-padding">
         <div className="container-custom">
           <motion.div 
             className="text-center mb-12"

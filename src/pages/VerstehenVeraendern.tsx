@@ -11,26 +11,26 @@ const VerstehenVeraendern = () => {
   }, []);
 
   return (
-    <div className="min-h-screen">
-      {/* Hero Section */}
-      <section className="bg-secondary-light py-16 md:py-24">
+    <div className="min-h-screen bg-muted">
+      {/* Hero Section - harmonisch */}
+      <section className="pt-8 pb-12 md:pt-12 md:pb-16">
         <div className="container-custom">
-          <div className="max-w-3xl mx-auto">
-            <h1 className="text-3xl md:text-4xl font-bold mb-6">Verstehen & Verändern</h1>
-            <p className="text-lg mb-6">
+          <div className="max-w-3xl mx-auto text-center">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-foreground font-luckiest">Verstehen & Verändern</h1>
+            <p className="text-lg text-muted-foreground mb-4">
               Für alle, die:
             </p>
-            <ul className="list-disc ml-6 mb-6 space-y-2">
-              <li>Sich ausgelaugt und energielos fühlen</li>
-              <li>Eine Balance zwischen Wissenschaft und Intuition suchen</li>
-              <li>Bereit sind, ihre Energiequellen neu zu entdecken</li>
+            <ul className="text-muted-foreground space-y-2 text-left max-w-md mx-auto">
+              <li>• Sich ausgelaugt und energielos fühlen</li>
+              <li>• Eine Balance zwischen Wissenschaft und Intuition suchen</li>
+              <li>• Bereit sind, ihre Energiequellen neu zu entdecken</li>
             </ul>
           </div>
         </div>
       </section>
 
       {/* Main Content */}
-      <section className="py-12 md:py-16">
+      <section className="pb-12 md:pb-16">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
             <div className="prose prose-lg max-w-none">
