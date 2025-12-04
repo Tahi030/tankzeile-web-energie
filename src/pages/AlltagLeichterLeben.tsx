@@ -54,13 +54,19 @@ const AlltagLeichterLeben = () => {
                   className="w-64 h-64 md:w-80 md:h-80 object-contain rounded-lg"
                 />
                 <button 
-                  onClick={() => {
-                    const link = document.createElement('a');
-                    link.href = '/pdfs/lieblingsbox.pdf';
-                    link.download = 'Lieblingsbox.pdf';
-                    document.body.appendChild(link);
-                    link.click();
-                    document.body.removeChild(link);
+                  onClick={async () => {
+                    try {
+                      const response = await fetch('/pdfs/lieblingsbox.pdf');
+                      const blob = await response.blob();
+                      const url = window.URL.createObjectURL(blob);
+                      const link = document.createElement('a');
+                      link.href = url;
+                      link.download = 'Lieblingsbox.pdf';
+                      link.click();
+                      window.URL.revokeObjectURL(url);
+                    } catch (error) {
+                      console.error('Download failed:', error);
+                    }
                   }}
                   className="inline-flex items-center gap-2 bg-[hsl(25_45%_35%)] hover:bg-[hsl(25_45%_30%)] text-white px-4 py-2 rounded-lg transition-all duration-300 font-medium shadow-md hover:shadow-lg cursor-pointer"
                 >
