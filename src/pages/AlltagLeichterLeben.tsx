@@ -55,7 +55,9 @@ const AlltagLeichterLeben = () => {
                 />
                 <a 
                   href="/pdfs/lieblingsbox.pdf" 
-                  download
+                  download="Lieblingsbox.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 bg-[hsl(25_45%_35%)] hover:bg-[hsl(25_45%_30%)] text-white px-4 py-2 rounded-lg transition-all duration-300 font-medium shadow-md hover:shadow-lg"
                 >
                   Lieblingsbox herunterladen
