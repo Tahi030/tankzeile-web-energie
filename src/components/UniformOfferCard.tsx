@@ -52,16 +52,14 @@ export const UniformOfferCard = ({
               className="w-full h-48 object-cover rounded-lg shadow-md"
             />
             {youtubeLink && (
-              <motion.a 
+              <a 
                 href={youtubeLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block mt-3 bg-blue-600 hover:bg-blue-700 text-white px-4 py-3 rounded-lg font-medium transition-all duration-300 text-center shadow-md hover:shadow-lg"
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
+                className="block mt-3 bg-blue-600 hover:bg-blue-700 text-white px-4 py-3 rounded-lg font-medium transition-all duration-300 text-center shadow-md hover:shadow-lg hover:scale-[1.02] active:scale-[0.98]"
               >
                 Video auf YouTube ansehen
-              </motion.a>
+              </a>
             )}
           </div>
         )}
