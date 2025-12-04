@@ -122,7 +122,7 @@ const Header = () => {
                 <div className="absolute left-0 invisible group-hover:visible opacity-0 group-hover:opacity-100 mt-2 w-60 rounded-md shadow-lg bg-white ring-1 ring-primary/20 z-50 transition-all duration-200">
                   <div className="py-1" role="menu" aria-orientation="vertical">
                     <DropdownItem to="/regionally-rooted" label="Regional verwurzelt" />
-                    <DropdownItem to="/meine-angebote/alltag-leichter-leben" label="Leichter leben Blog" />
+                    <DropdownItem to="/meine-angebote/alltag-leichter-leben" label="Powercrew" />
                   </div>
                 </div>
               </div>
@@ -183,7 +183,7 @@ const Header = () => {
                 Regional verwurzelt
               </Link>
               <Link to="/meine-angebote/alltag-leichter-leben" className={`block pl-6 py-2 text-sm transition-all duration-200 active:scale-95 ${location.pathname === '/meine-angebote/alltag-leichter-leben' ? 'text-primary font-semibold bg-muted/60' : 'hover:bg-muted/40'}`} onClick={() => {setMobileMenuOpen(false); window.scrollTo(0, 0);}}>
-                Leichter leben Blog
+                Powercrew
               </Link>
             </div>
             
