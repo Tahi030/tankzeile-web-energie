@@ -8,7 +8,6 @@ interface UniformOfferCardProps {
   callToAction?: string;
   imageUrl?: string;
   videoPlaceholder?: boolean;
-  videoUrl?: string;
   youtubeLink?: string;
   coloringPages?: { imageUrl: string; pdfUrl: string }[];
   downloadLinks?: { text: string; url: string }[];
@@ -25,7 +24,6 @@ export const UniformOfferCard = ({
   callToAction,
   imageUrl,
   videoPlaceholder,
-  videoUrl,
   youtubeLink,
   coloringPages,
   downloadLinks,
@@ -62,22 +60,8 @@ export const UniformOfferCard = ({
           </div>
         )}
 
-        {/* YouTube Video or Placeholder */}
-        {videoUrl ? (
-          <div className="mb-6">
-            <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
-              <iframe
-                className="absolute top-0 left-0 w-full h-full rounded-xl shadow-lg"
-                src={videoUrl}
-                title="YouTube video"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerPolicy="strict-origin-when-cross-origin"
-                allowFullScreen
-              />
-            </div>
-          </div>
-        ) : videoPlaceholder ? (
+        {/* Video Placeholder (no iframe) */}
+        {videoPlaceholder && (
           <div className="bg-primary/10 rounded-xl p-8 border-2 border-dashed border-primary/30 mb-6">
             <div className="flex flex-col items-center justify-center space-y-4">
               <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center">
@@ -85,11 +69,11 @@ export const UniformOfferCard = ({
                   <path d="M8 5v14l11-7z"/>
                 </svg>
               </div>
-              <p className="text-primary font-medium">Mitmach-Lied Video</p>
+              <p className="text-primary font-medium">Video</p>
               <p className="text-sm text-muted-foreground">Bald verfügbar</p>
             </div>
           </div>
-        ) : null}
+        )}
 
         {/* Content */}
         <div className="flex-1 space-y-4">
