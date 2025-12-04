@@ -105,7 +105,7 @@ export const HeroWelcome = () => {
 
             <Link 
               to="/workshop-gesunde-mission" 
-              className="inline-block bg-[hsl(25_45%_35%)] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-base sm:text-lg hover:scale-105 hover:bg-[hsl(25_45%_30%)] transition-all duration-300 shadow-lg hover:shadow-xl"
+              className="inline-block bg-[hsl(25_30%_88%)] text-[hsl(25_30%_25%)] px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-base sm:text-lg hover:scale-105 hover:bg-[hsl(25_35%_82%)] transition-all duration-300 shadow-lg hover:shadow-xl"
             >
               Jetzt entdecken: Reise zur Powerzentrale
             </Link>

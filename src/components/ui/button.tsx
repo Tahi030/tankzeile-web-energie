@@ -9,15 +9,15 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-[hsl(25_45%_35%)] text-white hover:bg-[hsl(25_45%_30%)] hover:shadow-md",
+        default: "bg-[hsl(25_30%_88%)] text-[hsl(25_30%_25%)] hover:bg-[hsl(25_35%_82%)] hover:shadow-md",
         destructive:
-          "bg-[hsl(25_45%_35%)] text-white hover:bg-[hsl(25_45%_30%)] hover:shadow-md",
+          "bg-[hsl(25_30%_88%)] text-[hsl(25_30%_25%)] hover:bg-[hsl(25_35%_82%)] hover:shadow-md",
         outline:
-          "border-2 border-[hsl(25_45%_35%)] bg-background text-[hsl(25_45%_35%)] hover:bg-[hsl(25_45%_35%)] hover:text-white hover:shadow-md",
+          "border-2 border-[hsl(25_30%_88%)] bg-background text-[hsl(25_30%_25%)] hover:bg-[hsl(25_30%_88%)] hover:shadow-md",
         secondary:
-          "bg-[hsl(25_45%_35%)] text-white hover:bg-[hsl(25_45%_30%)] hover:shadow-md",
-        ghost: "text-[hsl(25_45%_35%)] hover:bg-[hsl(25_45%_35%)]/10 hover:text-[hsl(25_45%_30%)]",
-        link: "text-[hsl(25_45%_35%)] underline-offset-4 hover:underline hover:text-[hsl(25_45%_30%)]",
+          "bg-[hsl(25_30%_88%)] text-[hsl(25_30%_25%)] hover:bg-[hsl(25_35%_82%)] hover:shadow-md",
+        ghost: "text-[hsl(25_30%_25%)] hover:bg-[hsl(25_30%_88%)]/50 hover:text-[hsl(25_30%_20%)]",
+        link: "text-[hsl(25_30%_25%)] underline-offset-4 hover:underline hover:text-[hsl(25_30%_20%)]",
       },
       size: {
         default: "h-10 px-4 py-2",
