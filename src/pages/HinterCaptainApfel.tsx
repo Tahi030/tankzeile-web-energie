@@ -31,29 +31,29 @@ const HinterCaptainApfel = () => {
             transition={{ duration: 0.8, delay: 0.3 }}
           >
             <div className="content-spacing">
-              <p className="body-lg">
+              <p className="text-base leading-relaxed text-muted-foreground">
                 Ich bin <em>Tamara Hillmann</em>, Gründerin und kreativer Kopf hinter <strong>Captain Apfel</strong>.
                 Ursprünglich komme ich aus der Organisations- und Projektarbeit – und genau diese Erfahrung nutze ich heute, um Gesundheitsprojekte professionell und mit Struktur umzusetzen.
               </p>
               
-              <p className="body-lg">
+              <p className="text-base leading-relaxed text-muted-foreground">
                 Mit der Zeit rückte ein Thema immer stärker in den Mittelpunkt: gesunde Ernährung und Unverträglichkeiten bei Kindern.
                 Aus eigener Betroffenheit und stetiger Weiterbildung in Naturheilkunde entstand die Idee, Wissen und Alltagspraxis zu verbinden.
               </p>
               
-              <p className="body-lg">
+              <p className="text-base leading-relaxed text-muted-foreground">
                 Ich bilde mich regelmäßig in den Bereichen Ernährung, Naturheilkunde und Kindergesundheit weiter, um neue Erkenntnisse in meine Arbeit einfließen zu lassen.
               </p>
               
-              <p className="body-lg">
+              <p className="text-base leading-relaxed text-muted-foreground">
                 So wurde <strong>Captain Apfel</strong> geboren: eine Initiative, die Kinder mit Freude an das Thema Wohlbefinden heranführt und Kitas praktische Werkzeuge an die Hand gibt.
               </p>
               
-              <p className="body-lg">
+              <p className="text-base leading-relaxed text-muted-foreground">
                 Ich entwickle Workshops, Materialien und Impulse, die Gesundheit spürbar machen – mit Herz, Verstand und einer großen Portion Begeisterung.
               </p>
 
-              <p className="body-lg mt-8">
+              <p className="text-base leading-relaxed text-muted-foreground mt-8">
                 Herzliche Grüße<br />
                 <em>Tamara Hillmann</em>
               </p>
