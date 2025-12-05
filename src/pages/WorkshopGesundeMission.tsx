@@ -27,8 +27,14 @@ const WorkshopGesundeMission = () => {
       </section>
 
       {/* Powerzentrale Character */}
-      <div className="flex justify-center items-center py-6 md:py-10">
-        <img src={powerzentraleCharacter} alt="Powerzentrale" className="w-52 h-auto sm:w-64 md:w-80 lg:w-96" />
+      <div className="flex justify-center items-center py-4 md:py-6">
+        <img 
+          src={powerzentraleCharacter} 
+          alt="Powerzentrale" 
+          className="w-52 h-auto sm:w-64 md:w-80 lg:w-96"
+          loading="eager"
+          decoding="async"
+        />
       </div>
 
       {/* Main Content */}
@@ -36,48 +42,48 @@ const WorkshopGesundeMission = () => {
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
             <div className="prose prose-lg max-w-none">
-              <div className="my-8 bg-primary-light p-6 rounded-lg">
-                <p className="text-lg mb-6 text-white leading-relaxed">
+              <div className="mt-4 mb-8 bg-primary-light p-6 rounded-lg">
+                <p className="text-base mb-6 text-white leading-relaxed">
                   Schluss mit langweiligen Vorträgen!<br />
                   Damit Wissen hängen bleibt, wird es hier anschaulich und kindgerecht vermittelt.
                 </p>
 
-                <h2 className="text-2xl font-bold mb-4 text-accent">Was Kinder erleben</h2>
+                <h2 className="text-xl font-bold mb-3 text-accent">Was Kinder erleben</h2>
 
-                <p className="mb-4 text-white leading-relaxed">
+                <p className="text-base mb-4 text-white leading-relaxed">
                   Ernährung, Bewegung und Gefühle werden hier greifbar – beim Erleben, Spielen und Staunen.
                 </p>
 
-                <p className="mb-2 text-white font-semibold">Sie erforschen:</p>
-                <ul className="mb-6 text-white list-disc list-inside space-y-1 ml-2">
+                <p className="text-base mb-2 text-white font-semibold">Sie erforschen:</p>
+                <ul className="text-base mb-6 text-white list-disc list-inside space-y-1 ml-2">
                   <li>Wie viel Obst und Gemüse braucht mein Körper?</li>
                   <li>Wie viel Zucker steckt in Cola & Co.?</li>
                   <li>Was bringt meine Powerzentrale zum Leuchten?</li>
                   <li>Was bremst mich aus?</li>
                 </ul>
 
-                <h2 className="text-2xl font-bold mb-4 text-accent">Die 5 Power Level</h2>
+                <h2 className="text-xl font-bold mb-3 text-accent">Die 5 Power Level</h2>
 
-                <p className="mb-2 text-white">
+                <p className="text-base mb-2 text-white">
                   <strong>1. Bewegen & Tanzen</strong> – Stärkt Körpergefühl und Motorik.
                 </p>
-                <p className="mb-2 text-white">
+                <p className="text-base mb-2 text-white">
                   <strong>2. Entdecken & Staunen</strong> – Fördert Wissen und Neugier.
                 </p>
-                <p className="mb-2 text-white">
+                <p className="text-base mb-2 text-white">
                   <strong>3. Teamgefühl erleben</strong> – Stärkt den Zusammenhalt.
                 </p>
-                <p className="mb-2 text-white">
+                <p className="text-base mb-2 text-white">
                   <strong>4. Mitmachen & Vorbereiten</strong> – Vermittelt Verantwortung und Selbstwirksamkeit.
                 </p>
-                <p className="mb-6 text-white">
+                <p className="text-base mb-6 text-white">
                   <strong>5. Probieren & Genießen</strong> – Öffnet neue Geschmackserlebnisse und stärkt das
                   Selbstvertrauen.
                 </p>
 
-                <h2 className="text-2xl font-bold mb-4 text-accent">Ziel & Nutzen für Ihre Einrichtung</h2>
+                <h2 className="text-xl font-bold mb-3 text-accent">Ziel & Nutzen für Ihre Einrichtung</h2>
 
-                <p className="text-white leading-relaxed">
+                <p className="text-base text-white leading-relaxed">
                   Ihre Einrichtung erhält im Anschluss ein Teilnahme Zertifikat. Es ist ein sichtbares Zeichen für
                   gelebte Prävention und ganzheitliche Gesundheitsförderung. Ideal für den Eingangsbereich oder das Team
                   Portfolio.
