@@ -39,17 +39,17 @@ const WorkshopGesundeMission = () => {
               
               <div className="my-8 bg-primary-light p-6 rounded-lg">
                 <p className="text-lg mb-6 text-white leading-relaxed">
-                  Wusstest du, dass in jedem Kinderbauch ein Kraftwerk steckt? Das ist die <strong>Powerzentrale</strong>. Sie ist der Motor für Energie, Konzentration und gute Laune.
+                  Schluss mit langweiligen Vorträgen! Damit Wissen hängen bleibt, tauchen wir in eine Geschichte ein. Denn Kinder lieben Geschichten.
                 </p>
                 
                 <p className="mb-6 text-white leading-relaxed">
-                  Doch oft wird sie ausgebremst. Captain Apfel und seine Crew zeigen den Kindern, wie sie ihre Powerzentrale wieder aktivieren – mit Spaß, Bewegung und Entdeckergeist.
+                  Captain Apfel und seine Crew zeigen den Kindern, wie sie ihre "Powerzentrale" aktivieren können
                 </p>
                 
                 <h2 className="text-2xl font-bold mb-4 text-accent">Was Kinder erleben</h2>
                 
                 <p className="mb-4 text-white leading-relaxed">
-                  Im Workshop wird Wissen lebendig. Die Kinder begreifen Ernährung, Bewegung und Gefühle ganz praktisch – beim Erleben, Spielen und Staunen.
+                 Bei dem Workshop "Die Reise zur Powerzentrale" wird Wissen lebendig. Die Kinder begreifen Ernährung, Bewegung und Gefühle ganz praktisch – beim Erleben, Spielen und Staunen.
                 </p>
                 
                 <p className="mb-2 text-white font-semibold">Sie erforschen:</p>
@@ -59,10 +59,8 @@ const WorkshopGesundeMission = () => {
                   <li>Was bringt meine Powerzentrale zum Leuchten?</li>
                 </ul>
                 
-                <p className="mb-6 text-white leading-relaxed">
-                  Captain Apfel nimmt sie mit auf eine Fantasiereise voller Wissen, Bewegung und Freude.
-                </p>
-                
+            
+               
                 <h2 className="text-2xl font-bold mb-4 text-accent">Die 5 Power Level</h2>
                 
                 <p className="mb-2 text-white"><strong>1. Bewegen & Tanzen</strong> – Stärkt Körpergefühl und Motorik.</p>
@@ -77,11 +75,7 @@ const WorkshopGesundeMission = () => {
                   Kitas und Schulen erhalten im Anschluss ein Teilnahme Zertifikat. Es ist ein sichtbares Zeichen für gelebte Prävention und ganzheitliche Gesundheitsförderung. Ideal für den Eingangsbereich oder das Team Portfolio.
                 </p>
                 
-                <p className="text-white leading-relaxed font-semibold">
-                  Captain Apfel macht gesunde Gewohnheiten zum Abenteuer. Mit einem Aha Effekt, der hängen bleibt.
-                </p>
-              </div>
-            </div>
+               
 
             <div className="mt-12 text-center">
               <Link 
