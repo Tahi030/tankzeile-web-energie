@@ -36,14 +36,14 @@ const EssenIstFertig = () => {
             transition={{ duration: 0.8, delay: 0.1 }}
           >
             <h1 className="text-3xl md:text-5xl font-bold mb-6 md:mb-8 text-foreground font-luckiest">
-              Essen ist fertig! – Alltagshilfen bei diagnostizierten Nahrungsunverträglichkeiten bei Kindern
+              Essen ist fertig! – Alltagshilfen bei diagnostizierten Unverträglichkeiten bei Kindern
             </h1>
 
             <div className="max-w-4xl mx-auto space-y-6 text-muted-foreground mb-8">
               <p className="text-lg leading-relaxed">
-                Bei deinem Kind wurde Laktoseintoleranz, Fruktose- oder Glutenunverträglichkeit diagnostiziert? Das kann
-                erstmal überwätigend sein. <strong className="text-foreground">Essen ist fertig!</strong> bietet dir
-                sofortige Entlastung: fundiertes Wissen, einfache Vorlagen und alltagstaugliche Rezepte – ohne lange
+                Bei deinem Kind wurde eine Laktoseintoleranz, Fruktose- oder Glutenunverträglichkeit diagnostiziert? Das
+                kann erstmal überwätigend sein. <strong className="text-foreground">Essen ist fertig!</strong> bietet
+                dir sofortige Entlastung: fundiertes Wissen, einfache Vorlagen und alltagstaugliche Rezepte – ohne lange
                 Wartezeiten auf teure Beratungstermine.
               </p>
               <p className="text-lg leading-relaxed">
