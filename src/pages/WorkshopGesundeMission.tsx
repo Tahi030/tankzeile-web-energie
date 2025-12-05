@@ -15,20 +15,20 @@ const WorkshopGesundeMission = () => {
       <section className="pt-8 pb-6 md:pt-12 md:pb-8">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-foreground font-luckiest">Reise zur Powerzentrale</h1>
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-foreground font-luckiest">
+              Reise zur Powerzentrale
+            </h1>
             <p className="text-xl text-muted-foreground mb-2">Erlebnisworkshop Ernährung & Bewegung</p>
-            <p className="text-lg text-muted-foreground/80">Kitas (Vorschule), Familienzentren und Grundschulen (Klasse 1 & 2)</p>
+            <p className="text-lg text-muted-foreground/80">
+              Kitas (Vorschule), Familienzentren und Grundschulen (Klasse 1 & 2)
+            </p>
           </div>
         </div>
       </section>
 
       {/* Powerzentrale Character */}
       <div className="flex justify-center items-center py-6 md:py-10">
-        <img 
-          src={powerzentraleCharacter} 
-          alt="Powerzentrale" 
-          className="w-52 h-auto sm:w-64 md:w-80 lg:w-96"
-        />
+        <img src={powerzentraleCharacter} alt="Powerzentrale" className="w-52 h-auto sm:w-64 md:w-80 lg:w-96" />
       </div>
 
       {/* Main Content */}
@@ -36,47 +36,54 @@ const WorkshopGesundeMission = () => {
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
             <div className="prose prose-lg max-w-none">
-              
               <div className="my-8 bg-primary-light p-6 rounded-lg">
-                <p className="text-lg mb-6 text-white leading-relaxed">
-                  Wusstest du, dass in jedem Kinderbauch ein Kraftwerk steckt? Das ist die <strong>Powerzentrale</strong>. Sie ist der Motor für Energie, Konzentration und gute Laune.
-                </p>
-                
+                <p className="text-lg mb-6 text-white leading-relaxed">Schluss mit langweiligen Vorträgen!</p>
+
                 <p className="mb-6 text-white leading-relaxed">
-                  Doch oft wird sie ausgebremst. Captain Apfel und seine Crew zeigen den Kindern, wie sie ihre Powerzentrale wieder aktivieren – mit Spaß, Bewegung und Entdeckergeist.
+                  Damit Wissen hängen bleibt, tauchen wir in eine Geschichte ein. Denn Kinder lieben Geschichten!
                 </p>
-                
+
                 <h2 className="text-2xl font-bold mb-4 text-accent">Was Kinder erleben</h2>
-                
+
                 <p className="mb-4 text-white leading-relaxed">
-                  Im Workshop wird Wissen lebendig. Die Kinder begreifen Ernährung, Bewegung und Gefühle ganz praktisch – beim Erleben, Spielen und Staunen.
+                  Im Workshop wird Wissen lebendig. Die Kinder begreifen Ernährung, Bewegung und Gefühle ganz praktisch
+                  – beim Erleben, Spielen und Staunen.
                 </p>
-                
+
                 <p className="mb-2 text-white font-semibold">Sie erforschen:</p>
                 <ul className="mb-6 text-white list-disc list-inside space-y-1 ml-2">
                   <li>Wie viel Obst und Gemüse braucht mein Körper?</li>
                   <li>Wie viel Zucker steckt in Cola & Co.?</li>
-                  <li>Was bringt meine Powerzentrale zum Leuchten?</li>
+                  <li>Was bringt meine Powerzentrale zum Leuchten und was bremst mich aus?</li>
                 </ul>
-                
-                <p className="mb-6 text-white leading-relaxed">
-                  Captain Apfel nimmt sie mit auf eine Fantasiereise voller Wissen, Bewegung und Freude.
-                </p>
-                
+
                 <h2 className="text-2xl font-bold mb-4 text-accent">Die 5 Power Level</h2>
-                
-                <p className="mb-2 text-white"><strong>1. Bewegen & Tanzen</strong> – Stärkt Körpergefühl und Motorik.</p>
-                <p className="mb-2 text-white"><strong>2. Entdecken & Staunen</strong> – Fördert Wissen und Neugier.</p>
-                <p className="mb-2 text-white"><strong>3. Teamgefühl erleben</strong> – Stärkt den Zusammenhalt.</p>
-                <p className="mb-2 text-white"><strong>4. Mitmachen & Vorbereiten</strong> – Vermittelt Verantwortung und Selbstwirksamkeit.</p>
-                <p className="mb-6 text-white"><strong>5. Probieren & Genießen</strong> – Öffnet neue Geschmackserlebnisse und stärkt das Selbstvertrauen.</p>
-                
-                <h2 className="text-2xl font-bold mb-4 text-accent">Ziel & Nutzen für Ihre Einrichtung</h2>
-                
-                <p className="mb-4 text-white leading-relaxed">
-                  Kitas und Schulen erhalten im Anschluss ein Teilnahme Zertifikat. Es ist ein sichtbares Zeichen für gelebte Prävention und ganzheitliche Gesundheitsförderung. Ideal für den Eingangsbereich oder das Team Portfolio.
+
+                <p className="mb-2 text-white">
+                  <strong>1. Bewegen & Tanzen</strong> – Stärkt Körpergefühl und Motorik.
                 </p>
-                
+                <p className="mb-2 text-white">
+                  <strong>2. Entdecken & Staunen</strong> – Fördert Wissen und Neugier.
+                </p>
+                <p className="mb-2 text-white">
+                  <strong>3. Teamgefühl erleben</strong> – Stärkt den Zusammenhalt.
+                </p>
+                <p className="mb-2 text-white">
+                  <strong>4. Mitmachen & Vorbereiten</strong> – Vermittelt Verantwortung und Selbstwirksamkeit.
+                </p>
+                <p className="mb-6 text-white">
+                  <strong>5. Probieren & Genießen</strong> – Öffnet neue Geschmackserlebnisse und stärkt das
+                  Selbstvertrauen.
+                </p>
+
+                <h2 className="text-2xl font-bold mb-4 text-accent">Ziel & Nutzen für Ihre Einrichtung</h2>
+
+                <p className="mb-4 text-white leading-relaxed">
+                  Kitas und Schulen erhalten im Anschluss ein Teilnahme Zertifikat. Es ist ein sichtbares Zeichen für
+                  gelebte Prävention und ganzheitliche Gesundheitsförderung. Ideal für den Eingangsbereich oder das Team
+                  Portfolio.
+                </p>
+
                 <p className="text-white leading-relaxed font-semibold">
                   Captain Apfel macht gesunde Gewohnheiten zum Abenteuer. Mit einem Aha Effekt, der hängen bleibt.
                 </p>
@@ -84,8 +91,8 @@ const WorkshopGesundeMission = () => {
             </div>
 
             <div className="mt-12 text-center">
-              <Link 
-                to="/kontakt" 
+              <Link
+                to="/kontakt"
                 className="inline-block bg-[hsl(25_30%_88%)] text-[hsl(25_30%_25%)] px-8 py-4 rounded-full font-semibold hover:bg-[hsl(25_35%_82%)] transition-all duration-300 shadow-lg hover:shadow-xl active:scale-95"
               >
                 Jetzt Kita vormerken und Teil der Power-Mission werden!
