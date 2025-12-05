@@ -79,7 +79,7 @@ const WorkshopGesundeMission = () => {
                 <h2 className="text-2xl font-bold mb-4 text-accent">Ziel & Nutzen für Ihre Einrichtung</h2>
 
                 <p className="mb-4 text-white leading-relaxed">
-                  Kitas und Schulen erhalten im Anschluss ein Teilnahme Zertifikat. Es ist ein sichtbares Zeichen für
+                  Eure Einrichtung erhält im Anschluss ein Teilnahme Zertifikat. Es ist ein sichtbares Zeichen für
                   gelebte Prävention und ganzheitliche Gesundheitsförderung. Ideal für den Eingangsbereich oder das Team
                   Portfolio.
                 </p>
