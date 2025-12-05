@@ -59,6 +59,19 @@ const HinterCaptainApfel = () => {
               </p>
             </div>
           </motion.div>
+
+          <motion.div 
+            className="mt-10 flex justify-center"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.5 }}
+          >
+            <img 
+              src="/assets/tamara-hillmann.png" 
+              alt="Tamara Hillmann - Gründerin von Captain Apfel" 
+              className="w-full max-w-lg rounded-2xl shadow-lg"
+            />
+          </motion.div>
         </div>
       </div>
     </main>
