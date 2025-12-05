@@ -59,7 +59,7 @@ const AlltagLeichterLeben = () => {
                 />
               </div>
               <div>
-                <h2 className="heading-md mb-4">
+                <h2 className="heading-md mb-4 text-destructive">
                   Powercrew des Monats Dezember 2025: Kita Dreikäsehoch, Berlin-Köpenick
                 </h2>
                 <p className="body-base text-muted-foreground">
