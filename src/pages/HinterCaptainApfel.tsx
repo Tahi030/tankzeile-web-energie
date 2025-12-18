@@ -76,6 +76,7 @@ const HinterCaptainApfel = () => {
                 </p>
               </div>
             </div>
+            <div className="h-4 md:h-6" />
 
             <motion.img
               src={tamaraPortrait}
