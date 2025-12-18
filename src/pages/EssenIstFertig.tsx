@@ -70,7 +70,7 @@ const EssenIstFertig = () => {
               </div>
 
               <p className="text-foreground font-medium mt-6 text-lg">
-                Wähle unten einfach das Alltagspaket, das zu der Diagnose deines Kindes passt.
+                Wähle unten einfach das Alltagspaket, das zu der Diagnose des Kindes passt.
               </p>
             </div>
           </motion.div>
