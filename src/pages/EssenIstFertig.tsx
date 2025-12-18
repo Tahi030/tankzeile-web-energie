@@ -35,24 +35,19 @@ const EssenIstFertig = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.1 }}
           >
-            <h1 className="text-3xl md:text-5xl font-bold mb-2 md:mb-3 text-foreground font-luckiest">
-              DAMIT ALLE MITESSEN
+            <h1 className="text-3xl md:text-5xl font-bold mb-6 md:mb-8 text-foreground font-luckiest">
+              SO GELINGT DER ESSENS-ALLTAG
             </h1>
-            <p className="text-lg md:text-xl text-muted-foreground mb-6 md:mb-8">
-              Praktische Alltagshilfen für Eltern, Kitas & Schulen.
-            </p>
 
             <div className="max-w-4xl mx-auto space-y-6 text-muted-foreground mb-8">
               <p className="text-lg leading-relaxed">
-                Bei deinem Kind wurde eine Laktoseintoleranz, Fruktose- oder Glutenunverträglichkeit diagnostiziert? Das
-                kann erstmal überwätigend sein. <strong className="text-foreground">Essen ist fertig!</strong> bietet
-                dir sofortige Entlastung: fundiertes Wissen, einfache Vorlagen und alltagstaugliche Rezepte – ohne lange
-                Wartezeiten auf teure Beratungstermine.
+                Egal ob Unverträglichkeiten oder andere Hürden am Tisch, hier findest du sofortige Entlastung. <strong className="text-foreground">Essen ist fertig!</strong> liefert dir fundiertes Wissen ganz ohne lange Wartezeiten auf Beratungstermine.
               </p>
               <p className="text-lg leading-relaxed">
-                Mit diesen digitalen Soforthilfe-Paketen findest du dich direkt im Alltag zurecht – ob beim Einkauf, am
-                Familientisch oder wenn dein Kind in der Schule und Kita isst. Denn jedes Kind verdient es, Essen als
-                etwas Schönes und Unbeschwertes zu erleben.
+                Unsere Pakete bieten einfache Vorlagen und alltagstaugliche Rezepte. Die ideale Unterstützung für einen entspannten Familientisch und eine sichere Verpflegung in Kita und Schule.
+              </p>
+              <p className="text-lg leading-relaxed font-medium text-foreground">
+                Hol dir die Sicherheit die Kinder jetzt brauchen. Zuhause und in der Betreuung.
               </p>
 
               {/* Highlights */}
