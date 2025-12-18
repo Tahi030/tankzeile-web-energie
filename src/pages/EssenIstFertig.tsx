@@ -41,7 +41,7 @@ const EssenIstFertig = () => {
 
             <div className="max-w-4xl mx-auto space-y-6 text-muted-foreground mb-8">
               <p className="text-lg leading-relaxed">
-                Egal ob Unverträglichkeiten oder andere Hürden am Tisch, hier findest du sofortige Entlastung. <strong className="text-foreground">Essen ist fertig!</strong> liefert dir fundiertes Wissen ganz ohne lange Wartezeiten auf Beratungstermine.
+                Egal ob Unverträglichkeiten oder andere Hürden am Tisch, hier findest du sofortige Entlastung. <strong className="text-foreground whitespace-nowrap">Essen ist fertig!</strong> liefert dir fundiertes Wissen ganz ohne lange Wartezeiten auf Beratungstermine.
               </p>
               <p className="text-lg leading-relaxed">
                 Unsere Pakete bieten einfache Vorlagen und alltagstaugliche Rezepte. Die ideale Unterstützung für einen entspannten Familientisch und eine sichere Verpflegung in Kita und Schule.
