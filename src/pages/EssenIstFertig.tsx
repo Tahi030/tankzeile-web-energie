@@ -35,9 +35,12 @@ const EssenIstFertig = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.1 }}
           >
-            <h1 className="text-3xl md:text-5xl font-bold mb-6 md:mb-8 text-foreground font-luckiest">
-              Essen ist fertig! – Alltagshilfen bei diagnostizierten Unverträglichkeiten bei Kindern
+            <h1 className="text-3xl md:text-5xl font-bold mb-2 md:mb-3 text-foreground font-luckiest">
+              DAMIT ALLE MITESSEN
             </h1>
+            <p className="text-lg md:text-xl text-muted-foreground mb-6 md:mb-8">
+              Praktische Alltagshilfen für Eltern, Kitas & Schulen.
+            </p>
 
             <div className="max-w-4xl mx-auto space-y-6 text-muted-foreground mb-8">
               <p className="text-lg leading-relaxed">
