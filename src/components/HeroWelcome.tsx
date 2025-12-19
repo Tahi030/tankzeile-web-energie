@@ -42,7 +42,7 @@ export const HeroWelcome = () => {
                 </p>
                 <div className="pt-4 sm:pt-6 space-y-2 sm:space-y-3 border-t-2 border-primary/20 mt-4">
                   <p className="text-lg sm:text-xl md:text-2xl font-bold text-foreground leading-snug">
-                    Initiative für starke Entwicklung
+                    Starke Kids. Entspannte Bäuche.
                   </p>
                   <p className="text-base sm:text-lg md:text-xl text-muted-foreground font-medium italic leading-relaxed">
                     Gesundheit, die Kindern schmeckt.
