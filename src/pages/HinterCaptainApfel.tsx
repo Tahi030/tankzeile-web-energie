@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { motion } from "framer-motion";
 
-import tamaraPortrait from "@/assets/tamara-hillmann-final.png";
+import tamaraPortrait from "@/assets/tamara-captain-apfel-duo.png";
 
 const HinterCaptainApfel = () => {
   useEffect(() => {
