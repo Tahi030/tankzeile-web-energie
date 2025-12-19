@@ -9,7 +9,7 @@ import Header from "@/components/Header";
 const CaptainApfelWorkshop = () => {
   useEffect(() => {
     // Set page metadata for SEO
-    document.title = "Tankzeile – Ernährung & Achtsamkeit für Kinder, Familien & Kitas";
+    document.title = "Captain Apfel – Ernährung & Achtsamkeit für Kinder, Familien & Kitas";
     
     // Set meta description
     const metaDescription = document.querySelector('meta[name="description"]');
@@ -25,8 +25,8 @@ const CaptainApfelWorkshop = () => {
       "description": "Workshops mit Captain Apfelzahn für Vorschulkinder. Gesunde Ernährung, Achtsamkeit und spielerisches Wissen rund um Nahrungsmittel-Unverträglichkeiten.",
       "organizer": {
         "@type": "Organization",
-        "name": "Tankzeile",
-        "url": "https://tankzeile.de"
+        "name": "Captain Apfel",
+        "url": "https://captain-apfel.de"
       },
       "audience": {
         "@type": "EducationalAudience",
@@ -397,7 +397,7 @@ const CaptainApfelWorkshop = () => {
               </div>
               <address className="not-italic">
                 <p className="text-rose-700 font-medium">Tamara Hillmann</p>
-                <p className="mt-2 text-rose-600">Email: <a href="mailto:tankzeile@gmx.de" className="underline hover:text-rose-800">tankzeile@gmx.de</a></p>
+                <p className="mt-2 text-rose-600">Email: <a href="mailto:kontakt@captain-apfel.de" className="underline hover:text-rose-800">kontakt@captain-apfel.de</a></p>
                 <p className="text-rose-600">Tel.: <a href="tel:+4915206339474" className="underline hover:text-rose-800">+49 152 06339474</a></p>
                 <div className="mt-4 flex space-x-4">
                   <a href="https://www.instagram.com/tankzeile?igsh=cjFxdDNrbXNvYnFk" target="_blank" rel="noopener noreferrer" className="hover:text-rose-500 transition-colors text-rose-700">
@@ -422,7 +422,7 @@ const CaptainApfelWorkshop = () => {
           </div>
 
           <div className="mt-10 pt-6 border-t border-rose-200/50 text-center relative z-10">
-            <p className="text-rose-600">&copy; {new Date().getFullYear()} Tankzeile – Ernährung & Lebensenergie. Alle Rechte vorbehalten.</p>
+            <p className="text-rose-600">&copy; {new Date().getFullYear()} Captain Apfel – Ernährung & Lebensenergie. Alle Rechte vorbehalten.</p>
           </div>
         </div>
       </footer>

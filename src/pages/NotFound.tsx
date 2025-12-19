@@ -8,7 +8,7 @@ const NotFound = () => {
 
   useEffect(() => {
     // Set page metadata for SEO
-    document.title = "Seite nicht gefunden | Tankzeile";
+    document.title = "Seite nicht gefunden | Captain Apfel";
     
     console.error(
       "404 Error: User attempted to access non-existent route:",

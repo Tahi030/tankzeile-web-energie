@@ -8,7 +8,7 @@ import CustomerFeedback from "@/components/CustomerFeedback";
 const ErlebenVerbinden = () => {
   useEffect(() => {
     // Set page metadata for SEO
-    document.title = "Schatz(t)ruhe & Captain Apfel | Tankzeile";
+    document.title = "Schatz(t)ruhe & Captain Apfel";
     
     // Scroll to top when component mounts
     window.scrollTo(0, 0);

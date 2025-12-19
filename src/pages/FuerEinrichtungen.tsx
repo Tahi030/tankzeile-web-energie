@@ -7,7 +7,7 @@ import CustomerFeedback from "@/components/CustomerFeedback";
 const FuerEinrichtungen = () => {
   useEffect(() => {
     // Set page metadata for SEO
-    document.title = "Für Einrichtungen | Tankzeile";
+    document.title = "Für Einrichtungen | Captain Apfel";
   }, []);
 
   return (

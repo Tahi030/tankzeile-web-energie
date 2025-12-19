@@ -4,7 +4,7 @@ import { useEffect } from "react";
 const Impressum = () => {
   useEffect(() => {
     // Set page metadata for SEO
-    document.title = "Impressum | Tankzeile";
+    document.title = "Impressum | Captain Apfel";
   }, []);
 
   return (

@@ -5,7 +5,7 @@ import { Facebook, Instagram, Youtube, Linkedin } from "lucide-react";
 const Kontakt = () => {
   useEffect(() => {
     // Set page metadata for SEO
-    document.title = "Kontakt | Tankzeile";
+    document.title = "Kontakt | Captain Apfel";
   }, []);
 
   return (

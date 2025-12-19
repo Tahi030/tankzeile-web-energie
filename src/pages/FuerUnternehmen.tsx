@@ -6,7 +6,7 @@ import CustomerFeedback from "@/components/CustomerFeedback";
 const FuerUnternehmen = () => {
   useEffect(() => {
     // Set page metadata for SEO
-    document.title = "Für Unternehmen | Tankzeile";
+    document.title = "Für Unternehmen | Captain Apfel";
   }, []);
 
   return (
@@ -17,7 +17,7 @@ const FuerUnternehmen = () => {
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-foreground font-luckiest">Für Unternehmen</h1>
             <p className="text-lg text-muted-foreground">
-              Die Tankzeile ist mehr als ein Projekt. Sie ist ein Beitrag für die Zukunft.
+              Captain Apfel ist mehr als ein Projekt. Es ist ein Beitrag für die Zukunft.
             </p>
           </div>
         </div>
@@ -28,9 +28,9 @@ const FuerUnternehmen = () => {
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
             <div className="prose prose-lg max-w-none">
-              <h2>Warum die Tankzeile unterstützen?</h2>
+              <h2>Warum Captain Apfel unterstützen?</h2>
               <p>
-                Unternehmen, die die Tankzeile unterstützen oder Workshops buchen:
+                Unternehmen, die Captain Apfel unterstützen oder Workshops buchen:
               </p>
               <ul>
                 <li>investieren in die Gesundheit von Familien</li>
@@ -79,7 +79,7 @@ const FuerUnternehmen = () => {
               </ul>
               
               <p>
-                Die Tankzeile bietet maßgeschneiderte Lösungen für Unternehmen jeden Umfangs. Gemeinsam entwickeln wir ein Konzept, das zu Ihren Werten und Zielen passt.
+                Captain Apfel bietet maßgeschneiderte Lösungen für Unternehmen jeden Umfangs. Gemeinsam entwickeln wir ein Konzept, das zu Ihren Werten und Zielen passt.
               </p>
             </div>
 

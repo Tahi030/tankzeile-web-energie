@@ -181,7 +181,7 @@ const handler = async (req: Request): Promise<Response> => {
       // Send email to site owner
       await resend.emails.send({
         from: "Kontaktformular <onboarding@resend.dev>",
-        to: ["tankzeile@gmx.de"],
+        to: ["kontakt@captain-apfel.de"],
         subject: `Neue Nachricht: ${contactData.subject}`,
         html: `
           <h1>Neue Kontaktanfrage</h1>
@@ -196,7 +196,7 @@ const handler = async (req: Request): Promise<Response> => {
 
       // Send confirmation email to the customer
       await resend.emails.send({
-        from: "Tankzeile <onboarding@resend.dev>",
+        from: "Captain Apfel <onboarding@resend.dev>",
         to: [contactData.email],
         subject: "Deine Nachricht wurde erfolgreich gesendet",
         html: `
@@ -204,7 +204,7 @@ const handler = async (req: Request): Promise<Response> => {
           <p>Hallo ${contactData.name},</p>
           <p>Ich habe deine Nachricht erhalten und werde mich so schnell wie möglich bei dir melden.</p>
           <p><strong>Betreff:</strong> ${contactData.subject}</p>
-          <p>Mit freundlichen Grüßen,<br/>Tamara Hillmann<br/>Tankzeile</p>
+          <p>Mit freundlichen Grüßen,<br/>Tamara Hillmann<br/>Captain Apfel</p>
         `,
       });
 

@@ -18,7 +18,7 @@ const TargetGroupSection = () => {
           
           <div className="relative z-10">
             <div className="mb-6">
-              <h2 className="text-2xl md:text-3xl mb-4 text-primary-dark text-left italic font-normal">Willkommen bei der Tankzeile – Ernährung & Achtsamkeit für Kinder, Familien & Kitas<br />Schön, dass du da bist!</h2>
+              <h2 className="text-2xl md:text-3xl mb-4 text-primary-dark text-left italic font-normal">Willkommen bei Captain Apfel – Ernährung & Achtsamkeit für Kinder, Familien & Kitas<br />Schön, dass du da bist!</h2>
               {/* Hand-drawn line effect */}
               <div className="flex justify-start">
                 <svg width="120" height="8" viewBox="0 0 120 8" className="text-primary">
@@ -46,11 +46,11 @@ const TargetGroupSection = () => {
             
             <div className="max-w-3xl mx-auto space-y-4 text-base md:text-lg">
               <p>
-                Ich bin Tamara Hillmann – Gründerin der Tankzeile, einem Bildungs- und Gesundheitsprogramm im Herzen Berlins.
+                Ich bin Tamara Hillmann – Gründerin von Captain Apfel, einem Bildungs- und Gesundheitsprogramm im Herzen Berlins.
               </p>
               
               <p>
-                Die Tankzeile richtet sich an Familien mit Vorschulkindern, Kitas und alle, die täglich Zeit mit Kindern verbringen. Im Mittelpunkt stehen gesunde, kindgerechte Ernährung, Achtsamkeit und praktische Tipps für ein harmonischeres Familienleben.
+                Captain Apfel richtet sich an Familien mit Vorschulkindern, Kitas und alle, die täglich Zeit mit Kindern verbringen. Im Mittelpunkt stehen gesunde, kindgerechte Ernährung, Achtsamkeit und praktische Tipps für ein harmonischeres Familienleben.
               </p>
               
               <p>
@@ -62,7 +62,7 @@ const TargetGroupSection = () => {
               </p>
               
               <p className="space-y-3">
-                Die Tankzeile bringt Gesundheit in Bewegung – für Groß und Klein.
+                Captain Apfel bringt Gesundheit in Bewegung – für Groß und Klein.
               </p>
               
               <motion.div 
@@ -97,7 +97,7 @@ const TargetGroupSection = () => {
                   </div>
                   <span>Willst du wissen, wie das geht?</span>
                 </div>
-                <p>Lern die Tankwelten kennen</p>
+                <p>Lern die Welten von Captain Apfel kennen</p>
                 <motion.div 
                   className="flex justify-center mt-4"
                   initial={{ opacity: 0, scale: 0.5 }}
