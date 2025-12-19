@@ -86,7 +86,7 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <p className="text-2xl md:text-3xl font-medium mb-4 text-secondary drop-shadow-md">
-              Die Tankzeile verbindet.
+              Captain Apfel verbindet.
             </p>
             {/* Increase height of container to ensure enough space for all animated sentences */}
             <div className="h-20 md:h-20 relative overflow-visible mb-6">

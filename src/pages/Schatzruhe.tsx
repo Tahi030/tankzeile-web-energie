@@ -8,7 +8,7 @@ import CustomerFeedback from "@/components/CustomerFeedback";
 const Schatzruhe = () => {
   useEffect(() => {
     // Set page metadata for SEO
-    document.title = "Schatz(t)ruhe | Tankzeile";
+    document.title = "Schatz(t)ruhe | Captain Apfel";
     
     // Scroll to top when component mounts
     window.scrollTo(0, 0);

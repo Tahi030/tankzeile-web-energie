@@ -6,7 +6,7 @@ import CustomerFeedback from "@/components/CustomerFeedback";
 const WorkshopLieblingsdose = () => {
   useEffect(() => {
     // Set page metadata for SEO
-    document.title = "Workshop - Lieblingsdose | Tankzeile";
+    document.title = "Workshop - Lieblingsdose | Captain Apfel";
   }, []);
 
   return (

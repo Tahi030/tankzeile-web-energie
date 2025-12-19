@@ -6,7 +6,7 @@ import powerzentraleCharacter from "@/assets/powerzentrale-character.svg";
 const WorkshopGesundeMission = () => {
   useEffect(() => {
     // Set page metadata for SEO
-    document.title = "Workshop - auf gesunder Mission | Tankzeile";
+    document.title = "Workshop - auf gesunder Mission | Captain Apfel";
   }, []);
 
   return (

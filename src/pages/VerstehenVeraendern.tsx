@@ -7,7 +7,7 @@ import CustomerFeedback from "@/components/CustomerFeedback";
 const VerstehenVeraendern = () => {
   useEffect(() => {
     // Set page metadata for SEO
-    document.title = "Verstehen & Verändern | Tankzeile";
+    document.title = "Verstehen & Verändern | Captain Apfel";
   }, []);
 
   return (
@@ -62,7 +62,7 @@ const VerstehenVeraendern = () => {
                 <div className="md:w-1/2">
                   <h3>Der Zusammenhang zwischen Ernährung und Energie</h3>
                   <p>
-                    Was wir essen, bestimmt maßgeblich, wie wir uns fühlen. Aber es geht nicht nur um einzelne Nährstoffe, sondern um das große Ganze: Wie wir essen, wann wir essen und mit wem wir essen. In diesem Bereich der Tankzeile erfährst du, wie echte Nahrung deine Lebensenergie nachhaltig steigern kann.
+                    Was wir essen, bestimmt maßgeblich, wie wir uns fühlen. Aber es geht nicht nur um einzelne Nährstoffe, sondern um das große Ganze: Wie wir essen, wann wir essen und mit wem wir essen. In diesem Bereich von Captain Apfel erfährst du, wie echte Nahrung deine Lebensenergie nachhaltig steigern kann.
                   </p>
                 </div>
               </div>
