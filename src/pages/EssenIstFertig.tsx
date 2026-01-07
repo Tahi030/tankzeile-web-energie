@@ -82,8 +82,8 @@ const EssenIstFertig = () => {
                 {/* Cover Image */}
                 <div className="text-center">
                   <img
-                    src="/assets/essen-ist-fertig-laktose.jpg"
-                    alt="Essen ist fertig! bei Laktoseintoleranz Cover"
+                    src="/assets/rettungskoffer-laktose.png"
+                    alt="Essen ist fertig! Rettungskoffer bei Laktoseintoleranz Cover"
                     className="w-full max-w-64 mx-auto rounded-lg shadow-lg"
                   />
                 </div>
@@ -168,8 +168,8 @@ const EssenIstFertig = () => {
                 {/* Cover Image */}
                 <div className="text-center">
                   <img
-                    src="/assets/essen-ist-fertig-fruktose.jpg"
-                    alt="Essen ist fertig! bei Fruktoseintoleranz Cover"
+                    src="/assets/rettungskoffer-fruktose.png"
+                    alt="Essen ist fertig! Rettungskoffer bei Fruktoseintoleranz Cover"
                     className="w-full max-w-64 mx-auto rounded-lg shadow-lg"
                   />
                 </div>
@@ -254,8 +254,8 @@ const EssenIstFertig = () => {
                 {/* Cover Image */}
                 <div className="text-center">
                   <img
-                    src="/assets/essen-ist-fertig-gluten.jpg"
-                    alt="Essen ist fertig! bei Glutenunverträglichkeit Cover"
+                    src="/assets/rettungskoffer-gluten.png"
+                    alt="Essen ist fertig! Rettungskoffer bei Glutenunverträglichkeit Cover"
                     className="w-full max-w-64 mx-auto rounded-lg shadow-lg"
                   />
                 </div>
