@@ -139,7 +139,7 @@ const Index = () => {
 
             <UniformOfferCard
               title="Essen ist fertig!"
-              description="Praktische PDF-Pakete rund um Nahrungsmittelunverträglichkeiten bei Kindern. Mit verständlichen Leitfäden, Rezeptideen und Alltagshilfen – entwickelt für Familien und pädagogische Fachkräfte."
+              description="Schluss mit Sorgen am Familientisch. Hier findest du deinen Rettungskoffer bei Unverträglichkeiten: Sofortige Hilfe, kindgerechte Erklärungen und Listen für Kita & Schule. Einfach runterladen und durchatmen."
               imageUrl="/assets/essen-ist-fertig-cover.jpg"
               linkTo="/essen-ist-fertig"
               buttonText="Pakete entdecken"
