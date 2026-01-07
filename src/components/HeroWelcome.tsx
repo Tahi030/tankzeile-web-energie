@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import captainApfelHero from "@/assets/captain-apfel-hero.svg";
+import captainApfelFramed from "@/assets/captain-apfel-framed.png";
 
 export const HeroWelcome = () => {
   return (
@@ -73,7 +73,7 @@ export const HeroWelcome = () => {
                 />
                 
                 <motion.img 
-                  src={captainApfelHero} 
+                  src={captainApfelFramed} 
                   alt="Captain Apfel - Initiative für starke Entwicklung" 
                   className="relative w-full h-auto drop-shadow-2xl"
                   animate={{
