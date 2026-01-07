@@ -44,13 +44,11 @@ const Index = () => {
                   <h2 className="text-3xl font-luckiest text-primary">Hallo, ich bin Captain Apfel!</h2>
 
                   <p className="text-base text-muted-foreground leading-relaxed">
-                    Wusstest du, dass in jedem Kinderbauch ein Kraftwerk steckt? Wir nennen es die Powerzentrale – der
-                    Motor für Energie, Konzentration und gute Laune.
+                    Wusstest du, dass in jedem Kinderbauch ein Kraftwerk steckt? Die Powerzentrale ist der Motor für Energie, Konzentration und gute Laune.
                   </p>
 
                   <p className="text-base text-muted-foreground leading-relaxed">
-                    Ich bin mit meiner Crew auf gesunder Mission, um genau dieses Kraftwerk zu aktivieren. Wir zeigen
-                    Kindern, was sie stark macht – mit Spaß, Bewegung und Wissen, das hängen bleibt.
+                    Meine Crew und ich sind auf gesunder Mission, um genau dieses Kraftwerk zu aktivieren. Kinder lernen hier, was sie stark macht – mit Spaß, Bewegung und Wissen, das hängen bleibt.
                   </p>
                 </div>
 
@@ -60,18 +58,17 @@ const Index = () => {
                     <li>
                       <strong className="text-foreground">Reise zur Powerzentrale:</strong>
                       <br />
-                      Mein Erlebnis-Workshop voller Bewegung & Wissen. Startet ab Frühjahr 2026 in Berliner Kitas
-                      (Vorschule), Familienzentren und Grundschulen (Klasse 1 & 2).
+                      Der Erlebnis-Workshop voller Bewegung & Wissen. Startet ab Frühjahr 2026 in Berliner Kitas (Vorschule), Familienzentren und Grundschulen (Klasse 1 & 2).
                     </li>
                     <li>
                       <strong className="text-foreground">Essen ist fertig!</strong>
                       <br />
-                      Digitale Soforthilfe-Pakete bei Nahrungsunverträglichkeiten.
+                      Der Rettungskoffer bei Nahrungsunverträglichkeiten: Soforthilfe-Pakete zum Downloaden für Eltern & Betreuer.
                     </li>
                     <li>
-                      <strong className="text-foreground">Powercrew des Monats:</strong>
+                      <strong className="text-foreground">Powercrew des Jahres:</strong>
                       <br />
-                      Meine Initiative für starke Kita-Teams.
+                      Der Walk of Fame: Die Auszeichnung für engagierte Kitas und Einrichtungen, die den Workshop durchgeführt und die Powerzentrale ihrer Kinder gestärkt haben.
                     </li>
                   </ul>
                 </div>
