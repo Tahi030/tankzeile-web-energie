@@ -95,7 +95,7 @@ const EssenIstFertig = () => {
                   </h2>
 
                   <p className="text-muted-foreground text-center leading-relaxed">
-                    Kompakte Hilfe nach der Diagnose – 59 Seiten Wissen, Vorlagen & Rezepte.
+                    Die Hilfe für dein Kind nach der Diagnose – 59 Seiten Wissen, Vorlagen & Rezepte.
                   </p>
 
                   <ul className="space-y-2 text-sm text-muted-foreground">
@@ -173,7 +173,7 @@ const EssenIstFertig = () => {
                   </h2>
 
                   <p className="text-muted-foreground text-center leading-relaxed">
-                    Kompakte Hilfe nach der Diagnose – 59 Seiten Wissen, Vorlagen & Rezepte.
+                    Die Hilfe für dein Kind nach der Diagnose – 59 Seiten Wissen, Vorlagen & Rezepte.
                   </p>
 
                   <ul className="space-y-2 text-sm text-muted-foreground">
@@ -251,7 +251,7 @@ const EssenIstFertig = () => {
                   </h2>
 
                   <p className="text-muted-foreground text-center leading-relaxed">
-                    Kompakte Hilfe nach der Diagnose – Wissen, Vorlagen & Rezepte.
+                    Die Hilfe für dein Kind nach der Diagnose – Wissen, Vorlagen & Rezepte.
                   </p>
 
                   <ul className="space-y-2 text-sm text-muted-foreground">
