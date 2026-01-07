@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { motion } from "framer-motion";
-import powercrewBanner from "@/assets/powercrew-banner.svg";
+import powercrewBanner from "@/assets/powercrew-banner-new.png";
 
 const AlltagLeichterLeben = () => {
   useEffect(() => {
@@ -13,7 +13,7 @@ const AlltagLeichterLeben = () => {
         <div className="max-w-6xl mx-auto">
           {/* Logo Banner - Full Width, Bottom Cropped */}
           <motion.div
-            className="w-full overflow-hidden mb-8 max-h-[140px] md:max-h-[280px]"
+            className="w-full overflow-hidden mb-8"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6 }}
@@ -21,7 +21,7 @@ const AlltagLeichterLeben = () => {
             <img
               src={powercrewBanner}
               alt="Powercrew des Jahres"
-              className="w-full max-w-3xl mx-auto -mb-[25%] md:-mb-[15%]"
+              className="w-full max-w-3xl mx-auto"
             />
           </motion.div>
 
