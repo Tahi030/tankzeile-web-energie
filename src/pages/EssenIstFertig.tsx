@@ -101,35 +101,27 @@ const EssenIstFertig = () => {
                   <ul className="space-y-2 text-sm text-muted-foreground">
                     <li className="flex items-start gap-2">
                       <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                      <span>Grundlagen einfach erklärt</span>
+                      <span><strong>Sofort-Hilfe:</strong> Download in Sekunden statt Warten auf Termine</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                      <span>59 Seiten klar aufbereitetes Wissen, Vorlagen & Rezepte</span>
+                      <span><strong>Sicher einkaufen:</strong> Spickzettel für die Hosentasche (Do's & Don'ts)</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                      <span>Do's & Don'ts für Einkauf & Ernährung</span>
+                      <span><strong>Entspannt abgeben:</strong> Fertige Listen für Kita, Schule & Oma</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                      <span>Vorlage für Kita & Schule</span>
+                      <span><strong>Kein Verzicht:</strong> 10 schnelle Snackideen & familienfreundliche Rezepte</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                      <span>10 schnelle Snackideen & Rezepte</span>
+                      <span><strong>Stressfrei planen:</strong> Wochenbaukasten mit Beispielplan</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                      <span>Wochenbaukasten mit Beispielplan</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                      <span>Umfangreicher FAQ-Teil</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                      <span>Vorlage Ernährungstagebuch</span>
+                      <span><strong>Alles geklärt:</strong> Antworten auf die häufigsten Eltern-Fragen (FAQ)</span>
                     </li>
                   </ul>
                 </div>
@@ -187,35 +179,27 @@ const EssenIstFertig = () => {
                   <ul className="space-y-2 text-sm text-muted-foreground">
                     <li className="flex items-start gap-2">
                       <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                      <span>Grundlagen einfach erklärt</span>
+                      <span><strong>Sofort-Hilfe:</strong> Download in Sekunden statt Warten auf Termine</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                      <span>59 Seiten klar aufbereitetes Wissen, Vorlagen & Rezepte</span>
+                      <span><strong>Sicher einkaufen:</strong> Spickzettel für die Hosentasche (Do's & Don'ts)</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                      <span>Do's & Don'ts für Einkauf & Ernährung</span>
+                      <span><strong>Entspannt abgeben:</strong> Fertige Listen für Kita, Schule & Oma</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                      <span>Vorlage für Kita & Schule</span>
+                      <span><strong>Kein Verzicht:</strong> 10 schnelle Snackideen & familienfreundliche Rezepte</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                      <span>10 schnelle Snackideen & Rezepte</span>
+                      <span><strong>Stressfrei planen:</strong> Wochenbaukasten mit Beispielplan</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                      <span>Wochenbaukasten mit Beispielplan</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                      <span>Umfangreicher FAQ-Teil</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                      <span>Vorlage Ernährungstagebuch</span>
+                      <span><strong>Alles geklärt:</strong> Antworten auf die häufigsten Eltern-Fragen (FAQ)</span>
                     </li>
                   </ul>
                 </div>
@@ -263,45 +247,37 @@ const EssenIstFertig = () => {
                 {/* Content */}
                 <div className="space-y-4">
                   <h2 className="text-xl font-bold text-foreground text-center">
-                    ESSEN IST FERTIG! DEIN RETTUNGSKOFFER BEI GLUTENUNVERTRÄGLICHKEIT
+                    ESSEN IST FERTIG! DEIN RETTUNGSKOFFER BEI ZÖLIAKIE / GLUTENSENSITIVITÄT
                   </h2>
 
                   <p className="text-muted-foreground text-center leading-relaxed">
-                    Kompakte Hilfe nach der Diagnose – 59 Seiten Wissen, Vorlagen & Rezepte.
+                    Kompakte Hilfe nach der Diagnose – Wissen, Vorlagen & Rezepte.
                   </p>
 
                   <ul className="space-y-2 text-sm text-muted-foreground">
                     <li className="flex items-start gap-2">
                       <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                      <span>Grundlagen einfach erklärt</span>
+                      <span><strong>Sofort-Hilfe:</strong> Download in Sekunden statt Warten auf Termine</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                      <span>59 Seiten klar aufbereitetes Wissen, Vorlagen & Rezepte</span>
+                      <span><strong>Sicher einkaufen:</strong> Spickzettel für die Hosentasche (Do's & Don'ts)</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                      <span>Do's & Don'ts für Einkauf & Ernährung</span>
+                      <span><strong>Entspannt abgeben:</strong> Fertige Listen für Kita, Schule & Oma</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                      <span>Vorlage für Kita & Schule</span>
+                      <span><strong>Kein Verzicht:</strong> 10 schnelle Snackideen & familienfreundliche Rezepte</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                      <span>10 schnelle Snackideen & Rezepte</span>
+                      <span><strong>Stressfrei planen:</strong> Wochenbaukasten mit Beispielplan</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                      <span>Wochenbaukasten mit Beispielplan</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                      <span>Umfangreicher FAQ-Teil</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                      <span>Vorlage Ernährungstagebuch</span>
+                      <span><strong>Alles geklärt:</strong> Antworten auf die häufigsten Eltern-Fragen (FAQ)</span>
                     </li>
                   </ul>
                 </div>
