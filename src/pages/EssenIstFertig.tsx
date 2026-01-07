@@ -36,41 +36,35 @@ const EssenIstFertig = () => {
             transition={{ duration: 0.8, delay: 0.1 }}
           >
             <h1 className="text-3xl md:text-5xl font-bold mb-6 md:mb-8 text-foreground font-luckiest">
-              SO GELINGT DER ESSENS-ALLTAG
+              Dein Rettungskoffer für den Essens-Alltag
             </h1>
 
             <div className="max-w-4xl mx-auto space-y-6 text-muted-foreground mb-8">
               <p className="text-lg leading-relaxed">
-                Egal ob Unverträglichkeiten oder andere Hürden am Tisch, hier findest du sofortige Entlastung. <strong className="text-foreground whitespace-nowrap">Essen ist fertig!</strong> liefert dir fundiertes Wissen ganz ohne lange Wartezeiten auf Beratungstermine.
-              </p>
-              <p className="text-lg leading-relaxed">
-                Die Pakete bieten einfache Vorlagen und alltagstaugliche Rezepte. Die ideale Unterstützung für einen entspannten Familientisch und eine sichere Verpflegung in Kita und Schule.
-              </p>
-              <p className="text-lg leading-relaxed font-medium text-foreground">
-                Hol dir die Sicherheit die Kinder jetzt brauchen. Zuhause und in der Betreuung.
+                Schluss mit Google-Chaos. Hier findest du kompaktes Wissen, fertige Listen und sofortige Entlastung bei Nahrungsmittelunverträglichkeiten. Für zuhause, die Kita und die Schule.
               </p>
 
               {/* Highlights */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8 max-w-3xl mx-auto">
                 <div className="flex flex-col items-center text-center gap-1">
                   <span className="text-primary text-2xl font-bold">✓</span>
-                  <span className="font-semibold text-foreground">Sofort loslegen</span>
-                  <span className="text-sm">Kein Warten auf Termine</span>
-                </div>
-                <div className="flex flex-col items-center text-center gap-1">
-                  <span className="text-primary text-2xl font-bold">✓</span>
-                  <span className="font-semibold text-foreground">Kein Verzicht</span>
-                  <span className="text-sm">Leckere Familienrezepte</span>
-                </div>
-                <div className="flex flex-col items-center text-center gap-1">
-                  <span className="text-primary text-2xl font-bold">✓</span>
                   <span className="font-semibold text-foreground">Sicher einkaufen</span>
-                  <span className="text-sm">Nie wieder ratlos</span>
+                  <span className="text-sm">Nie wieder ratlos vor dem Regal – dank Spickzettel für die Hosentasche.</span>
+                </div>
+                <div className="flex flex-col items-center text-center gap-1">
+                  <span className="text-primary text-2xl font-bold">✓</span>
+                  <span className="font-semibold text-foreground">Entspannt abgeben</span>
+                  <span className="text-sm">Listen für Kita, Schule & Betreuung – einfach ausdrucken und Sicherheit schaffen.</span>
+                </div>
+                <div className="flex flex-col items-center text-center gap-1">
+                  <span className="text-primary text-2xl font-bold">✓</span>
+                  <span className="font-semibold text-foreground">Sofort starten</span>
+                  <span className="text-sm">Hilfe in Sekunden als PDF-Download – ohne Wartezeit auf Termine.</span>
                 </div>
               </div>
 
               <p className="text-foreground font-medium mt-6 text-lg">
-                Wähle unten einfach das Alltagspaket, das zu der Diagnose des Kindes passt.
+                Wähle unten einfach den passenden Rettungskoffer für die jeweilige Diagnose.
               </p>
             </div>
           </motion.div>
@@ -97,11 +91,11 @@ const EssenIstFertig = () => {
                 {/* Content */}
                 <div className="space-y-4">
                   <h2 className="text-xl font-bold text-foreground text-center">
-                    ESSEN IST FERTIG! DEIN ALLTAGSPAKET BEI LAKTOSEINTOLERANZ
+                    ESSEN IST FERTIG! DEIN RETTUNGSKOFFER BEI LAKTOSEINTOLERANZ
                   </h2>
 
                   <p className="text-muted-foreground text-center leading-relaxed">
-                    Die kompakte Hilfe nach der Diagnose – übersichtlich, praxisnah und sofort nutzbar.
+                    Kompakte Hilfe nach der Diagnose – 59 Seiten Wissen, Vorlagen & Rezepte.
                   </p>
 
                   <ul className="space-y-2 text-sm text-muted-foreground">
@@ -152,7 +146,7 @@ const EssenIstFertig = () => {
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
                   >
-                    Soforthilfe-Paket sichern
+                    Rettungskoffer sichern
                   </motion.a>
 
                   <div className="text-xs text-muted-foreground leading-relaxed">
@@ -183,11 +177,11 @@ const EssenIstFertig = () => {
                 {/* Content */}
                 <div className="space-y-4">
                   <h2 className="text-xl font-bold text-foreground text-center">
-                    ESSEN IST FERTIG! DEIN ALLTAGSPAKET BEI FRUKTOSEINTOLERANZ
+                    ESSEN IST FERTIG! DEIN RETTUNGSKOFFER BEI FRUKTOSEINTOLERANZ
                   </h2>
 
                   <p className="text-muted-foreground text-center leading-relaxed">
-                    Die kompakte Hilfe nach der Diagnose – übersichtlich, praxisnah und sofort nutzbar.
+                    Kompakte Hilfe nach der Diagnose – 59 Seiten Wissen, Vorlagen & Rezepte.
                   </p>
 
                   <ul className="space-y-2 text-sm text-muted-foreground">
@@ -238,7 +232,7 @@ const EssenIstFertig = () => {
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
                   >
-                    Soforthilfe-Paket sichern
+                    Rettungskoffer sichern
                   </motion.a>
 
                   <div className="text-xs text-muted-foreground leading-relaxed">
@@ -269,11 +263,11 @@ const EssenIstFertig = () => {
                 {/* Content */}
                 <div className="space-y-4">
                   <h2 className="text-xl font-bold text-foreground text-center">
-                    ESSEN IST FERTIG! DEIN ALLTAGSPAKET BEI GLUTENUNVERTRÄGLICHKEIT
+                    ESSEN IST FERTIG! DEIN RETTUNGSKOFFER BEI GLUTENUNVERTRÄGLICHKEIT
                   </h2>
 
                   <p className="text-muted-foreground text-center leading-relaxed">
-                    Die kompakte Hilfe nach der Diagnose – übersichtlich, praxisnah und sofort nutzbar.
+                    Kompakte Hilfe nach der Diagnose – 59 Seiten Wissen, Vorlagen & Rezepte.
                   </p>
 
                   <ul className="space-y-2 text-sm text-muted-foreground">
