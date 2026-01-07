@@ -11,9 +11,9 @@ const AlltagLeichterLeben = () => {
     <main className="min-h-screen bg-muted pt-8 pb-16 md:pt-12 md:pb-24">
       <div className="container-custom">
         <div className="max-w-6xl mx-auto">
-          {/* Logo Banner - Full Width, Bottom Cropped */}
+          {/* Logo Banner - Full Width */}
           <motion.div
-            className="w-full overflow-hidden mb-8"
+            className="w-full mb-8 px-4"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6 }}
@@ -21,7 +21,7 @@ const AlltagLeichterLeben = () => {
             <img
               src={powercrewBanner}
               alt="Powercrew des Jahres"
-              className="w-full max-w-3xl mx-auto"
+              className="w-full max-w-4xl mx-auto h-auto object-contain"
             />
           </motion.div>
 
