@@ -4,7 +4,7 @@ import powercrewBanner from "@/assets/powercrew-banner.svg";
 
 const AlltagLeichterLeben = () => {
   useEffect(() => {
-    document.title = "Powercrew des Monats | Captain Apfel";
+    document.title = "Powercrew des Jahres | Captain Apfel";
   }, []);
 
   return (
@@ -20,30 +20,31 @@ const AlltagLeichterLeben = () => {
           >
             <img
               src={powercrewBanner}
-              alt="Powercrew des Monats"
+              alt="Powercrew des Jahres"
               className="w-full max-w-3xl mx-auto -mb-[25%] md:-mb-[15%]"
             />
           </motion.div>
 
-          {/* Introduction Text */}
+          {/* Hero Section */}
           <motion.div
             className="text-center mb-12"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            <h1 className="heading-lg mb-4">Danke an unsere Alltagshelden</h1>
+            <h1 className="heading-lg mb-4">Die Powercrew des Jahres</h1>
+            <p className="body-lg text-muted-foreground max-w-3xl mx-auto mb-6">
+              Der Walk of Fame: Hier werden Kitas und Einrichtungen sichtbar, die sich besonders für die Gesundheit der Kinder stark machen.
+            </p>
             <p className="body-base text-muted-foreground max-w-3xl mx-auto">
-              Mit der Aktion „Powercrew des Monats" sagt Captain Apfel Danke an die Menschen, die jeden Tag für unsere
-              Kinder da sind. Pädagogische Fachkräfte leisten großartige Arbeit – oft im Verborgenen, zwischen Tränen
-              trocknen, Brotdosen auspacken und kleinen großen Sorgen. Mit der Powercrew wird jeden Monat eine
-              Einrichtung gewürdigt, die sich mit Herz, Ideenreichtum und Engagement für gesundes Aufwachsen stark
-              macht. Vielleicht spürst du beim Lesen: Unsere Kita hätte diesen Titel auch verdient – dann melde dich
-              gerne.
+              Mit der Auszeichnung „Powercrew des Jahres" bedankt sich Captain Apfel bei den Menschen, die jeden Tag Großes leisten. Pädagogische Fachkräfte sind oft unsichtbare Helden. Hier bekommen sie die Bühne, die sie verdienen.
+            </p>
+            <p className="body-base text-muted-foreground max-w-3xl mx-auto mt-4">
+              Der Walk of Fame ist eine wachsende Galerie: Jedes Jahr kommen neue engagierte Teams hinzu, die den Workshop „Reise zur Powerzentrale" durchgeführt oder sich besonders engagiert haben.
             </p>
           </motion.div>
 
-          {/* December Entry - Image Left, Text Right */}
+          {/* Pioniere 2025 Entry */}
           <motion.div
             className="bg-card/60 backdrop-blur-sm rounded-2xl p-6 md:p-10 border border-border/30 shadow-sm"
             initial={{ opacity: 0, y: 20 }}
@@ -54,23 +55,22 @@ const AlltagLeichterLeben = () => {
               <div className="flex items-start justify-center md:justify-start">
                 <img
                   src="/assets/powercrew-uebergabe-dezember-2025.jpg"
-                  alt="Übergabe Powercrew des Monats an Kita Dreikäsehoch"
+                  alt="Übergabe Powercrew des Jahres an Kita Dreikäsehoch"
                   className="w-48 md:w-56 lg:w-64 rounded-lg shadow-md object-cover"
                 />
               </div>
               <div>
                 <h2 className="heading-md mb-4 text-destructive">
-                  Powercrew des Monats Dezember 2025: Kita Dreikäsehoch, Berlin-Köpenick
+                  Unsere Pioniere 2025: Kita Dreikäsehoch, Berlin-Köpenick
                 </h2>
                 <p className="body-base text-muted-foreground">
                   Im Dezember erhält die humanistische Kita Dreikäsehoch in Berlin-Köpenick den Titel „Powercrew des
-                  Monats". Hier wird mit Kopf, Herz und Hand gearbeitet: Als Ackerkita lernen die Kinder direkt im
+                  Jahres". Hier wird mit Kopf, Herz und Hand gearbeitet: Als Ackerkita lernen die Kinder direkt im
                   Garten, woher ihr Essen kommt – vom Samen bis zur Ernte. Eine eigene Köchin kocht täglich frisch für
                   die Kinder, statt auf angelieferte Standardkost zu setzen. Dabei steht jedes Kind mit seinen
                   Bedürfnissen im Mittelpunkt: Inklusion und Teilhabe werden im Alltag gelebt, ob beim gemeinsamen
                   Essen, Spielen oder Entdecken im großen Außengelände. Dieses Team zeigt jeden Tag, wie gelebte
-                  Wertschätzung, gesunde Ernährung und Naturerfahrung Hand in Hand gehen – genau dafür zeichnen wir die
-                  Kita Dreikäsehoch als Powercrew des Monats aus.
+                  Wertschätzung, gesunde Ernährung und Naturerfahrung Hand in Hand gehen. Als allererste ausgezeichnete Crew haben sie den Grundstein gelegt. Danke für euren täglichen Einsatz und dass ihr als Vorbild vorangeht!
                 </p>
               </div>
             </div>
