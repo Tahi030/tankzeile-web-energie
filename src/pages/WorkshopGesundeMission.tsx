@@ -84,9 +84,7 @@ const WorkshopGesundeMission = () => {
                 <h2 className="text-xl font-bold mb-3 text-accent">Ziel & Nutzen für Ihre Einrichtung</h2>
 
                 <p className="text-base text-white leading-relaxed">
-                  Ihre Einrichtung erhält im Anschluss ein Teilnahme Zertifikat. Es ist ein sichtbares Zeichen für
-                  gelebte Prävention und ganzheitliche Gesundheitsförderung. Ideal für den Eingangsbereich oder das Team
-                  Portfolio.
+                  Ihre Einrichtung erhält im Anschluss nicht nur ein Zertifikat, sondern wird offiziell als Powercrew des Jahres ausgezeichnet. Damit sichern Sie sich Ihren Platz auf unserem digitalen Walk of Fame – ein sichtbares Zeichen für gelebte Prävention und ganzheitliche Gesundheitsförderung. Ideal für den Eingangsbereich, das Team-Portfolio und Ihre Öffentlichkeitsarbeit.
                 </p>
               </div>
             </div>
