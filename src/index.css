@@ -13,58 +13,58 @@
 
 @layer base {
   :root {
-    /* Neutral, peachy-beige colors */
-    --background: 25 32% 92%; /* Soft warm cream background */
-    --foreground: 30 20% 20%; /* Dark warm gray */
+    /* Apricot/Sand/Champagner Farbpalette */
+    --background: 30 45% 94%; /* Soft champagne background */
+    --foreground: 25 25% 18%; /* Warm dark brown for text */
 
-    --card: 0 0% 100%; /* Pure white cards */
-    --card-foreground: 30 20% 20%;
+    --card: 35 50% 98%; /* Soft cream white cards */
+    --card-foreground: 25 25% 18%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 30 20% 20%;
+    --popover: 35 50% 98%;
+    --popover-foreground: 25 25% 18%;
 
-    /* Darker peachy-beige for header/footer */
-    --primary: 25 35% 75%; /* Darker peachy-beige for header/footer */
-    --primary-foreground: 30 20% 20%; /* Dark text on primary */
+    /* Apricot for header/footer */
+    --primary: 25 55% 82%; /* Soft apricot for header/footer */
+    --primary-foreground: 25 30% 20%; /* Dark text on primary */
 
-    /* Warm Coral-Peach as secondary */
-    --secondary: 12 70% 72%; /* Warm coral/peach */
-    --secondary-foreground: 0 0% 100%; /* White text on coral */
+    /* Warm Apricot-Peach as secondary */
+    --secondary: 20 65% 75%; /* Warm apricot/peach */
+    --secondary-foreground: 25 30% 18%; /* Dark text on secondary */
 
-    /* Muted backgrounds matching peachy theme */
-    --muted: 25 30% 88%; /* Peachy muted background */
-    --muted-foreground: 30 15% 35%; /* Medium gray for text */
+    /* Sand/Champagne muted backgrounds */
+    --muted: 35 40% 90%; /* Sand champagne muted */
+    --muted-foreground: 25 20% 35%; /* Warm gray for text */
 
-    /* Warm taupe accent */
-    --accent: 30 25% 55%; /* Medium warm taupe */
-    --accent-foreground: 0 0% 100%; /* White text on accent */
+    /* Apricot accent */
+    --accent: 22 50% 70%; /* Medium apricot accent */
+    --accent-foreground: 25 30% 18%; /* Dark text on accent */
 
-    /* Light cream for highlights */
-    --blackberry: 40 30% 88%; /* Light warm cream */
-    --blackberry-foreground: 30 20% 20%;
+    /* Light champagne for highlights */
+    --blackberry: 38 45% 92%; /* Light champagne cream */
+    --blackberry-foreground: 25 25% 18%;
     
-    /* Beige for buttons */
-    --button-beige: 25 30% 88%; /* Warm light beige */
-    --button-beige-foreground: 25 30% 25%; /* Dark brown text */
+    /* Sand for buttons */
+    --button-beige: 32 42% 88%; /* Warm sand */
+    --button-beige-foreground: 25 35% 22%; /* Warm dark text */
 
     --destructive: 0 60% 50%;
     --destructive-foreground: 0 0% 100%;
 
-    /* Neutral borders */
-    --border: 30 15% 82%; /* Light taupe border */
-    --input: 30 12% 92%; /* Very light taupe input bg */
-    --ring: 15 30% 70%; /* Rosé-Beige focus ring */
+    /* Soft sand borders */
+    --border: 32 35% 85%; /* Light sand border */
+    --input: 35 40% 95%; /* Very light champagne input bg */
+    --ring: 22 45% 75%; /* Apricot focus ring */
 
     --radius: 0.5rem;
 
-    --sidebar-background: 30 15% 95%;
-    --sidebar-foreground: 30 18% 28%;
-    --sidebar-primary: 30 20% 20%;
+    --sidebar-background: 35 45% 96%;
+    --sidebar-foreground: 25 22% 25%;
+    --sidebar-primary: 25 25% 18%;
     --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 30 12% 90%;
-    --sidebar-accent-foreground: 30 20% 20%;
-    --sidebar-border: 30 15% 85%;
-    --sidebar-ring: 15 30% 70%;
+    --sidebar-accent: 32 38% 92%;
+    --sidebar-accent-foreground: 25 25% 18%;
+    --sidebar-border: 32 35% 88%;
+    --sidebar-ring: 22 45% 75%;
   }
 
   .dark {
@@ -106,7 +106,7 @@
 
   body {
     @apply text-foreground font-sans;
-    background: hsl(25 32% 92%);
+    background: hsl(30 45% 94%);
     min-height: 100vh;
   }
 
@@ -246,7 +246,7 @@
   .bg-warm-gradient,
   .modern-section,
   .bg-background {
-    background: hsl(25 32% 92%);
+    background: hsl(30 45% 94%);
   }
   
   /* Dezente Überschriften-Boxen in natürlichen Tönen */
