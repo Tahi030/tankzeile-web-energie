@@ -47,17 +47,17 @@ const EssenIstFertig = () => {
               {/* Highlights */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8 max-w-3xl mx-auto">
                 <div className="flex flex-col items-center text-center gap-1">
-                  <span className="text-primary text-2xl font-bold">✓</span>
+                  <span className="text-[hsl(12_55%_50%)] text-2xl font-bold">✓</span>
                   <span className="font-semibold text-foreground">Sicher einkaufen</span>
                   <span className="text-sm">Nie wieder ratlos vor dem Regal – dank Spickzettel für die Hosentasche.</span>
                 </div>
                 <div className="flex flex-col items-center text-center gap-1">
-                  <span className="text-primary text-2xl font-bold">✓</span>
+                  <span className="text-[hsl(12_55%_50%)] text-2xl font-bold">✓</span>
                   <span className="font-semibold text-foreground">Entspannt abgeben</span>
                   <span className="text-sm">Listen für Kita, Schule & Betreuung – einfach ausdrucken und Sicherheit schaffen.</span>
                 </div>
                 <div className="flex flex-col items-center text-center gap-1">
-                  <span className="text-primary text-2xl font-bold">✓</span>
+                  <span className="text-[hsl(12_55%_50%)] text-2xl font-bold">✓</span>
                   <span className="font-semibold text-foreground">Sofort starten</span>
                   <span className="text-sm">Hilfe in Sekunden als PDF-Download – ohne Wartezeit auf Termine.</span>
                 </div>
