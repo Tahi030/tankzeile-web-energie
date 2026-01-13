@@ -63,8 +63,7 @@ const AlltagLeichterLeben = () => {
                   Unsere Pioniere 2025: Kita Dreikäsehoch, Berlin-Köpenick
                 </h2>
                 <p className="body-base text-muted-foreground">
-                  Im Dezember erhält die humanistische Kita Dreikäsehoch in Berlin-Köpenick den Titel „Powercrew des
-                  Jahres". Hier wird mit Kopf, Herz und Hand gearbeitet: Als Ackerkita lernen die Kinder direkt im
+                  Im Dezember erhält die humanistische Kita Dreikäsehoch in Berlin-Köpenick den Titel „Powercrew". Hier wird mit Kopf, Herz und Hand gearbeitet: Als Ackerkita lernen die Kinder direkt im
                   Garten, woher ihr Essen kommt – vom Samen bis zur Ernte. Eine eigene Köchin kocht täglich frisch für
                   die Kinder, statt auf angelieferte Standardkost zu setzen. Dabei steht jedes Kind mit seinen
                   Bedürfnissen im Mittelpunkt: Inklusion und Teilhabe werden im Alltag gelebt, ob beim gemeinsamen
