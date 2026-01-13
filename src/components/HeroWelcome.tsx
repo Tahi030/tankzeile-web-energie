@@ -3,13 +3,13 @@ import captainApfelJumping from "@/assets/captain-apfel-jumping.png";
 
 export const HeroWelcome = () => {
   return (
-    <section className="relative min-h-[70vh] md:min-h-[80vh] flex items-center justify-center overflow-hidden bg-[hsl(25_32%_92%)] pt-8 md:pt-12 lg:pt-16">
+    <section className="relative min-h-[70vh] md:min-h-[80vh] flex items-center justify-center overflow-hidden bg-[hsl(32_55%_96%)] pt-8 md:pt-12 lg:pt-16">
       
       {/* Soft sky-like background with gentle clouds */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         {/* Soft ambient glow */}
         <motion.div 
-          className="absolute top-1/3 right-1/4 w-[45rem] h-[45rem] bg-[hsl(25_35%_88%)] rounded-full blur-[120px]"
+          className="absolute top-1/3 right-1/4 w-[45rem] h-[45rem] bg-[hsl(30_50%_90%)] rounded-full blur-[120px]"
           animate={{
             scale: [1, 1.08, 1],
             opacity: [0.5, 0.7, 0.5],
@@ -22,7 +22,7 @@ export const HeroWelcome = () => {
         />
         {/* Secondary soft glow */}
         <motion.div 
-          className="absolute bottom-1/3 left-1/4 w-[30rem] h-[30rem] bg-[hsl(30_30%_90%)] rounded-full blur-[100px]"
+          className="absolute bottom-1/3 left-1/4 w-[30rem] h-[30rem] bg-[hsl(32_45%_92%)] rounded-full blur-[100px]"
           animate={{
             scale: [1.05, 1, 1.05],
             opacity: [0.4, 0.55, 0.4],
@@ -50,10 +50,10 @@ export const HeroWelcome = () => {
                 <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-luckiest text-[hsl(80_40%_45%)] uppercase tracking-wide leading-tight">
                   Captain Apfel
                 </h1>
-                <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-luckiest text-primary">
+                <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-luckiest text-[hsl(12_55%_50%)]">
                   auf gesunder Mission
                 </p>
-                <div className="pt-4 sm:pt-6 space-y-2 sm:space-y-3 border-t-2 border-primary/20 mt-4">
+                <div className="pt-4 sm:pt-6 space-y-2 sm:space-y-3 border-t-2 border-[hsl(12_55%_50%)]/20 mt-4">
                   <p className="text-lg sm:text-xl md:text-2xl font-bold text-foreground leading-snug">
                     Starke Kids. Entspannte Bäuche
                   </p>
@@ -74,7 +74,7 @@ export const HeroWelcome = () => {
               <div className="relative w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg">
                 {/* Soft glow for blending */}
                 <motion.div
-                  className="absolute inset-0 -inset-16 bg-gradient-radial from-[hsl(25_30%_90%)] via-[hsl(25_32%_92%)] to-transparent rounded-full blur-3xl"
+                  className="absolute inset-0 -inset-16 bg-gradient-radial from-[hsl(30_50%_92%)] via-[hsl(32_55%_96%)] to-transparent rounded-full blur-3xl"
                   animate={{
                     scale: [1, 1.05, 1],
                     opacity: [0.6, 0.75, 0.6],
