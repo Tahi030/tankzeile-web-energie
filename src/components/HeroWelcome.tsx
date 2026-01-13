@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import captainApfelFlying from "@/assets/captain-apfel-flying.png";
+import captainApfelJumping from "@/assets/captain-apfel-jumping.png";
 
 export const HeroWelcome = () => {
   return (
@@ -86,21 +86,19 @@ export const HeroWelcome = () => {
                   }}
                 />
                 
-                {/* Flying airplane animation - gentle tilting and floating */}
+                {/* Jumping/bouncing animation */}
                 <motion.img 
-                  src={captainApfelFlying} 
-                  alt="Captain Apfel fliegt wie ein Flugzeug" 
+                  src={captainApfelJumping} 
+                  alt="Captain Apfel springt" 
                   className="relative w-full h-auto"
                   style={{
-                    filter: 'drop-shadow(0 15px 25px rgba(150, 120, 90, 0.2))',
+                    filter: 'drop-shadow(0 20px 30px rgba(150, 120, 90, 0.25))',
                   }}
                   animate={{
-                    y: [0, -8, 0, -5, 0],
-                    x: [0, 3, 0, -3, 0],
-                    rotate: [-2, 3, -1, 2, -2],
+                    y: [0, -20, 0],
                   }}
                   transition={{
-                    duration: 6,
+                    duration: 1.2,
                     repeat: Infinity,
                     ease: "easeInOut"
                   }}
