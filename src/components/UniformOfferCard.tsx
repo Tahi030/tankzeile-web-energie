@@ -50,6 +50,8 @@ export const UniformOfferCard = ({
               src={imageUrl} 
               alt={typeof title === 'string' ? title : 'Angebot'} 
               className={`w-full rounded-lg shadow-md ${imageClassName || 'h-48 object-cover'}`}
+              loading="lazy"
+              decoding="async"
             />
             {youtubeLink && (
               <button 
@@ -102,26 +104,37 @@ export const UniformOfferCard = ({
 
           {/* Coloring Pages Grid */}
           {coloringPages && (
-            <div className="grid grid-cols-3 gap-3">
-              {coloringPages.map((page, index) => (
-                <div key={index} className="space-y-2">
-                  <img 
-                    src={page.imageUrl} 
-                    alt="Ausmalbild" 
-                    className="w-full h-32 object-contain rounded-lg border border-border/30"
-                  />
-                  <motion.a 
-                    href={page.pdfUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center justify-center gap-1 bg-[hsl(18_65%_65%)] hover:bg-[hsl(18_65%_58%)] text-white px-2 py-2 rounded text-xs font-medium transition-all duration-200 shadow-sm"
-                    whileHover={{ scale: 1.02 }}
-                    whileTap={{ scale: 0.98 }}
-                  >
-                    <Download size={14} />
-                  </motion.a>
+            <div className="space-y-4">
+              {/* Header placeholder to match other cards */}
+              <div className="bg-gradient-to-br from-[hsl(45_60%_92%)] to-[hsl(35_50%_88%)] rounded-lg h-48 flex items-center justify-center border border-border/20">
+                <div className="text-center space-y-2">
+                  <div className="text-4xl">🎨</div>
+                  <p className="text-sm font-medium text-muted-foreground">Ausmalbilder zum Download</p>
                 </div>
-              ))}
+              </div>
+              <div className="grid grid-cols-3 gap-3">
+                {coloringPages.map((page, index) => (
+                  <div key={index} className="space-y-2">
+                    <img 
+                      src={page.imageUrl} 
+                      alt="Ausmalbild" 
+                      className="w-full h-24 sm:h-28 md:h-32 object-contain rounded-lg border border-border/30 bg-white"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <motion.a 
+                      href={page.pdfUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-center gap-1 bg-[hsl(18_65%_65%)] hover:bg-[hsl(18_65%_58%)] text-white px-2 py-2 rounded text-xs font-medium transition-all duration-200 shadow-sm"
+                      whileHover={{ scale: 1.02 }}
+                      whileTap={{ scale: 0.98 }}
+                    >
+                      <Download size={14} />
+                    </motion.a>
+                  </div>
+                ))}
+              </div>
             </div>
           )}
 
