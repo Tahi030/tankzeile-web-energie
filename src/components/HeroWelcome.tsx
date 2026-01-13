@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import captainApfelJumping from "@/assets/captain-apfel-jumping.png";
-import fruitGalaxyIllustration from "@/assets/fruit-galaxy-illustration.png";
+import fruitGalaxyIllustration from "@/assets/fruit-galaxy-illustration.svg";
 
 export const HeroWelcome = () => {
   return (
