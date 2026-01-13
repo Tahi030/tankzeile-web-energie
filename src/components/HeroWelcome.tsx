@@ -71,7 +71,7 @@ export const HeroWelcome = () => {
               transition={{ duration: 0.9, delay: 0.2 }}
               className="relative flex justify-center lg:justify-end lg:pl-4 xl:pl-8"
             >
-              <div className="relative w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg">
+              <div className="relative w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-2xl xl:max-w-3xl">
                 {/* Soft glow for blending */}
                 <motion.div
                   className="absolute inset-0 -inset-16 bg-gradient-radial from-[hsl(30_50%_92%)] via-[hsl(32_55%_96%)] to-transparent rounded-full blur-3xl"
