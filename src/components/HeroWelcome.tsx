@@ -3,112 +3,150 @@ import captainApfelJumping from "@/assets/captain-apfel-jumping.png";
 
 export const HeroWelcome = () => {
   return (
-    <section className="relative min-h-[70vh] md:min-h-[80vh] flex items-center justify-center overflow-hidden bg-[hsl(25_32%_92%)] pt-8 md:pt-12 lg:pt-16">
-      
-      {/* Soft sky-like background with gentle clouds */}
-      <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        {/* Soft ambient glow */}
-        <motion.div 
-          className="absolute top-1/3 right-1/4 w-[45rem] h-[45rem] bg-[hsl(25_35%_88%)] rounded-full blur-[120px]"
-          animate={{
-            scale: [1, 1.08, 1],
-            opacity: [0.5, 0.7, 0.5],
-          }}
-          transition={{
-            duration: 8,
-            repeat: Infinity,
-            ease: "easeInOut"
-          }}
-        />
-        {/* Secondary soft glow */}
-        <motion.div 
-          className="absolute bottom-1/3 left-1/4 w-[30rem] h-[30rem] bg-[hsl(30_30%_90%)] rounded-full blur-[100px]"
-          animate={{
-            scale: [1.05, 1, 1.05],
-            opacity: [0.4, 0.55, 0.4],
-          }}
-          transition={{
-            duration: 10,
-            repeat: Infinity,
-            ease: "easeInOut"
-          }}
-        />
-      </div>
-      
-      <div className="container mx-auto px-4 sm:px-6 lg:px-12 relative z-10">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-4 md:gap-8 lg:gap-16 items-center">
-            
-            {/* Left: Text Content */}
-            <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.7 }}
-              className="space-y-4 sm:space-y-6 text-center lg:text-left lg:pr-4 xl:pr-8"
-            >
-              <div className="space-y-3 sm:space-y-4 lg:space-y-5">
-                <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-luckiest text-[hsl(80_40%_45%)] uppercase tracking-wide leading-tight">
-                  Captain Apfel
-                </h1>
-                <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-luckiest text-primary">
-                  auf gesunder Mission
-                </p>
-                <div className="pt-4 sm:pt-6 space-y-2 sm:space-y-3 border-t-2 border-primary/20 mt-4">
-                  <p className="text-lg sm:text-xl md:text-2xl font-bold text-foreground leading-snug">
-                    Starke Kids. Entspannte Bäuche
+    <section className="relative flex flex-col overflow-hidden">
+      {/* Main Hero Area with background */}
+      <div className="relative min-h-[65vh] md:min-h-[75vh] flex items-center justify-center bg-[hsl(25_32%_92%)] pt-8 md:pt-12 lg:pt-16 pb-16 md:pb-20">
+        
+        {/* Soft sky-like background with gentle clouds */}
+        <div className="absolute inset-0 pointer-events-none overflow-hidden">
+          {/* Soft ambient glow */}
+          <motion.div 
+            className="absolute top-1/3 right-1/4 w-[45rem] h-[45rem] bg-[hsl(25_35%_88%)] rounded-full blur-[120px]"
+            animate={{
+              scale: [1, 1.08, 1],
+              opacity: [0.5, 0.7, 0.5],
+            }}
+            transition={{
+              duration: 8,
+              repeat: Infinity,
+              ease: "easeInOut"
+            }}
+          />
+          {/* Secondary soft glow */}
+          <motion.div 
+            className="absolute bottom-1/3 left-1/4 w-[30rem] h-[30rem] bg-[hsl(30_30%_90%)] rounded-full blur-[100px]"
+            animate={{
+              scale: [1.05, 1, 1.05],
+              opacity: [0.4, 0.55, 0.4],
+            }}
+            transition={{
+              duration: 10,
+              repeat: Infinity,
+              ease: "easeInOut"
+            }}
+          />
+        </div>
+        
+        <div className="container mx-auto px-4 sm:px-6 lg:px-12 relative z-10">
+          <div className="max-w-7xl mx-auto">
+            <div className="grid lg:grid-cols-2 gap-4 md:gap-8 lg:gap-16 items-center">
+              
+              {/* Left: Text Content */}
+              <motion.div
+                initial={{ opacity: 0, x: -30 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.7 }}
+                className="space-y-4 sm:space-y-6 text-center lg:text-left lg:pr-4 xl:pr-8"
+              >
+                <div className="space-y-3 sm:space-y-4 lg:space-y-5">
+                  <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-luckiest text-[hsl(80_40%_45%)] uppercase tracking-wide leading-tight">
+                    Captain Apfel
+                  </h1>
+                  <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-luckiest text-primary">
+                    auf gesunder Mission
                   </p>
-                  <p className="text-base sm:text-lg md:text-xl text-muted-foreground font-medium italic leading-relaxed">
-                    Gesundheit, die Kindern schmeckt.
-                  </p>
+                  <div className="pt-4 sm:pt-6 space-y-2 sm:space-y-3 border-t-2 border-primary/20 mt-4">
+                    <p className="text-lg sm:text-xl md:text-2xl font-bold text-foreground leading-snug">
+                      Starke Kids. Entspannte Bäuche
+                    </p>
+                    <p className="text-base sm:text-lg md:text-xl text-muted-foreground font-medium italic leading-relaxed">
+                      Gesundheit, die Kindern schmeckt.
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </motion.div>
+              </motion.div>
 
-            {/* Right: Captain Apfel Flying Figure */}
-            <motion.div
-              initial={{ opacity: 0, x: 40, y: 20 }}
-              animate={{ opacity: 1, x: 0, y: 0 }}
-              transition={{ duration: 0.9, delay: 0.2 }}
-              className="relative flex justify-center lg:justify-end lg:pl-4 xl:pl-8"
-            >
-              <div className="relative w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg">
-                {/* Soft glow for blending */}
-                <motion.div
-                  className="absolute inset-0 -inset-16 bg-gradient-radial from-[hsl(25_30%_90%)] via-[hsl(25_32%_92%)] to-transparent rounded-full blur-3xl"
-                  animate={{
-                    scale: [1, 1.05, 1],
-                    opacity: [0.6, 0.75, 0.6],
-                  }}
-                  transition={{
-                    duration: 6,
-                    repeat: Infinity,
-                    ease: "easeInOut"
-                  }}
-                />
-                
-                {/* Gentle floating animation */}
-                <motion.img 
-                  src={captainApfelJumping} 
-                  alt="Captain Apfel schwebt" 
-                  className="relative w-full h-auto"
-                  style={{
-                    filter: 'drop-shadow(0 20px 30px rgba(150, 120, 90, 0.25))',
-                  }}
-                  animate={{
-                    y: [0, -12, 0],
-                  }}
-                  transition={{
-                    duration: 3,
-                    repeat: Infinity,
-                    ease: "easeInOut"
-                  }}
-                />
-              </div>
-            </motion.div>
-            
+              {/* Right: Captain Apfel Flying Figure */}
+              <motion.div
+                initial={{ opacity: 0, x: 40, y: 20 }}
+                animate={{ opacity: 1, x: 0, y: 0 }}
+                transition={{ duration: 0.9, delay: 0.2 }}
+                className="relative flex justify-center lg:justify-end lg:pl-4 xl:pl-8"
+              >
+                <div className="relative w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg">
+                  {/* Soft glow for blending */}
+                  <motion.div
+                    className="absolute inset-0 -inset-16 bg-gradient-radial from-[hsl(25_30%_90%)] via-[hsl(25_32%_92%)] to-transparent rounded-full blur-3xl"
+                    animate={{
+                      scale: [1, 1.05, 1],
+                      opacity: [0.6, 0.75, 0.6],
+                    }}
+                    transition={{
+                      duration: 6,
+                      repeat: Infinity,
+                      ease: "easeInOut"
+                    }}
+                  />
+                  
+                  {/* Gentle floating animation */}
+                  <motion.img 
+                    src={captainApfelJumping} 
+                    alt="Captain Apfel schwebt" 
+                    className="relative w-full h-auto"
+                    style={{
+                      filter: 'drop-shadow(0 20px 30px rgba(150, 120, 90, 0.25))',
+                    }}
+                    animate={{
+                      y: [0, -12, 0],
+                    }}
+                    transition={{
+                      duration: 3,
+                      repeat: Infinity,
+                      ease: "easeInOut"
+                    }}
+                  />
+                </div>
+              </motion.div>
+              
+            </div>
           </div>
+        </div>
+      </div>
 
-          
+      {/* Banner divider with milky glass effect */}
+      <div className="relative">
+        {/* Curved wave top edge */}
+        <svg 
+          className="absolute -top-8 md:-top-12 left-0 w-full h-8 md:h-12" 
+          viewBox="0 0 1200 50" 
+          preserveAspectRatio="none"
+        >
+          <path 
+            d="M0,50 C300,0 900,0 1200,50 L1200,50 L0,50 Z" 
+            fill="hsl(25 32% 92%)"
+          />
+        </svg>
+        
+        {/* Milky glass banner */}
+        <div className="bg-white/70 backdrop-blur-md border-y border-white/50 shadow-sm py-4 md:py-6">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-12">
+            <div className="flex items-center justify-center gap-3 md:gap-6">
+              <div className="h-px flex-1 max-w-16 md:max-w-24 bg-gradient-to-r from-transparent to-primary/30" />
+              <motion.div
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.6, delay: 0.4 }}
+                className="flex items-center gap-2 md:gap-3"
+              >
+                <span className="text-2xl md:text-3xl">🍎</span>
+                <span className="text-sm md:text-base font-medium text-foreground/80 tracking-wide">
+                  Initiative für starke Entwicklung
+                </span>
+                <span className="text-2xl md:text-3xl">🥦</span>
+              </motion.div>
+              <div className="h-px flex-1 max-w-16 md:max-w-24 bg-gradient-to-l from-transparent to-primary/30" />
+            </div>
+          </div>
         </div>
       </div>
     </section>
