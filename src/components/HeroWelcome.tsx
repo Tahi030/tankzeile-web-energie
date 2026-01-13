@@ -3,7 +3,7 @@ import captainApfelJumping from "@/assets/captain-apfel-jumping.png";
 
 export const HeroWelcome = () => {
   return (
-    <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden bg-[hsl(25_32%_92%)] pt-24 md:pt-20 lg:pt-16">
+    <section className="relative min-h-[70vh] md:min-h-[80vh] flex items-center justify-center overflow-hidden bg-[hsl(25_32%_92%)] pt-8 md:pt-12 lg:pt-16">
       
       {/* Soft sky-like background with gentle clouds */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
@@ -37,7 +37,7 @@ export const HeroWelcome = () => {
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-12 relative z-10">
         <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center">
+          <div className="grid lg:grid-cols-2 gap-4 md:gap-8 lg:gap-16 items-center">
             
             {/* Left: Text Content */}
             <motion.div
@@ -86,19 +86,19 @@ export const HeroWelcome = () => {
                   }}
                 />
                 
-                {/* Jumping/bouncing animation */}
+                {/* Gentle floating animation */}
                 <motion.img 
                   src={captainApfelJumping} 
-                  alt="Captain Apfel springt" 
+                  alt="Captain Apfel schwebt" 
                   className="relative w-full h-auto"
                   style={{
                     filter: 'drop-shadow(0 20px 30px rgba(150, 120, 90, 0.25))',
                   }}
                   animate={{
-                    y: [0, -20, 0],
+                    y: [0, -12, 0],
                   }}
                   transition={{
-                    duration: 1.2,
+                    duration: 3,
                     repeat: Infinity,
                     ease: "easeInOut"
                   }}
