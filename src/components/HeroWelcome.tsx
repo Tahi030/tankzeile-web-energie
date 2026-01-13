@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import captainApfelJumping from "@/assets/captain-apfel-jumping.png";
-import fruitGalaxyIllustration from "@/assets/fruit-galaxy-illustration.svg";
 
 export const HeroWelcome = () => {
   return (
@@ -107,22 +106,43 @@ export const HeroWelcome = () => {
                 />
               </div>
 
-              {/* Fruit Galaxy Illustration - positioned below Captain Apfel */}
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.5 }}
-                className="relative w-[140%] -ml-[20%] -mt-24 sm:-mt-32 md:-mt-40 lg:-mt-48 xl:-mt-56"
-              >
-                <img 
-                  src={fruitGalaxyIllustration} 
-                  alt="Früchte-Galaxie Illustration" 
-                  className="w-full h-auto"
-                  style={{
-                    filter: 'drop-shadow(0 10px 20px rgba(100, 100, 100, 0.15))',
-                  }}
+              {/* Elegant decorative elements */}
+              <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 w-full max-w-lg">
+                {/* Subtle gradient line */}
+                <motion.div
+                  initial={{ scaleX: 0, opacity: 0 }}
+                  animate={{ scaleX: 1, opacity: 1 }}
+                  transition={{ duration: 1.2, delay: 0.6 }}
+                  className="h-[2px] w-full bg-gradient-to-r from-transparent via-[hsl(80_40%_45%)/40] to-transparent"
                 />
-              </motion.div>
+                
+                {/* Floating accent dots */}
+                <div className="flex justify-center gap-8 mt-4">
+                  {[0, 1, 2].map((i) => (
+                    <motion.div
+                      key={i}
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.5, delay: 0.8 + i * 0.1 }}
+                      className="relative"
+                    >
+                      <motion.div
+                        className="w-2 h-2 rounded-full bg-[hsl(80_40%_45%)]"
+                        animate={{
+                          y: [0, -4, 0],
+                          opacity: [0.6, 1, 0.6],
+                        }}
+                        transition={{
+                          duration: 2.5,
+                          delay: i * 0.3,
+                          repeat: Infinity,
+                          ease: "easeInOut"
+                        }}
+                      />
+                    </motion.div>
+                  ))}
+                </div>
+              </div>
             </motion.div>
             
           </div>
