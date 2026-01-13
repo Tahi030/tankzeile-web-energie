@@ -13,8 +13,8 @@
 
 @layer base {
   :root {
-    /* Neutral, earthy colors - Soft Rosé-Beige, Coral-Peach, White */
-    --background: 30 35% 87%; /* Warm beige/cream */
+    /* Neutral, peachy-beige colors */
+    --background: 25 35% 90%; /* Warm peachy-beige background */
     --foreground: 30 20% 20%; /* Dark warm gray */
 
     --card: 0 0% 100%; /* Pure white cards */
@@ -23,16 +23,16 @@
     --popover: 0 0% 100%;
     --popover-foreground: 30 20% 20%;
 
-    /* Soft Rosé-Beige as primary */
-    --primary: 15 30% 70%; /* Warm dusty rose/beige */
-    --primary-foreground: 30 20% 20%; /* Dark text on rosé */
+    /* Darker peachy-beige for header/footer */
+    --primary: 25 35% 75%; /* Darker peachy-beige for header/footer */
+    --primary-foreground: 30 20% 20%; /* Dark text on primary */
 
     /* Warm Coral-Peach as secondary */
     --secondary: 12 70% 72%; /* Warm coral/peach */
     --secondary-foreground: 0 0% 100%; /* White text on coral */
 
-    /* Light backgrounds */
-    --muted: 30 15% 92%; /* Very light taupe */
+    /* Muted backgrounds matching peachy theme */
+    --muted: 25 30% 88%; /* Peachy muted background */
     --muted-foreground: 30 15% 35%; /* Medium gray for text */
 
     /* Warm taupe accent */
@@ -106,7 +106,7 @@
 
   body {
     @apply text-foreground font-sans;
-    background: hsl(30 35% 87%);
+    background: hsl(25 35% 90%);
     min-height: 100vh;
   }
 
@@ -246,7 +246,7 @@
   .bg-warm-gradient,
   .modern-section,
   .bg-background {
-    background: hsl(30 35% 87%);
+    background: hsl(25 35% 90%);
   }
   
   /* Dezente Überschriften-Boxen in natürlichen Tönen */

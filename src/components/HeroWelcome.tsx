@@ -3,16 +3,29 @@ import captainApfelHero from "@/assets/captain-apfel-hero.svg";
 
 export const HeroWelcome = () => {
   return (
-    <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden bg-muted pt-24 md:pt-20 lg:pt-16">
+    <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden bg-[hsl(25_35%_90%)] pt-24 md:pt-20 lg:pt-16">
       
-      {/* Simplified background - single color with minimal effects */}
+      {/* Harmonious background with soft gradients */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        {/* Single subtle glow effect */}
+        {/* Main soft glow behind figure area */}
         <motion.div 
-          className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[40rem] h-[40rem] bg-secondary/8 rounded-full blur-3xl"
+          className="absolute top-1/4 right-1/4 w-[50rem] h-[50rem] bg-[hsl(25_40%_85%)] rounded-full blur-[100px]"
           animate={{
-            scale: [1, 1.1, 1],
-            opacity: [0.08, 0.12, 0.08],
+            scale: [1, 1.15, 1],
+            opacity: [0.6, 0.8, 0.6],
+          }}
+          transition={{
+            duration: 6,
+            repeat: Infinity,
+            ease: "easeInOut"
+          }}
+        />
+        {/* Secondary ambient glow */}
+        <motion.div 
+          className="absolute bottom-1/4 left-1/3 w-[35rem] h-[35rem] bg-[hsl(20_45%_82%)] rounded-full blur-[80px]"
+          animate={{
+            scale: [1.1, 1, 1.1],
+            opacity: [0.4, 0.6, 0.4],
           }}
           transition={{
             duration: 8,
@@ -53,34 +66,48 @@ export const HeroWelcome = () => {
 
             {/* Right: Captain Apfel Figure */}
             <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.7, delay: 0.2 }}
+              initial={{ opacity: 0, x: 30, scale: 0.9 }}
+              animate={{ opacity: 1, x: 0, scale: 1 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
               className="relative flex justify-center lg:justify-end lg:pl-4 xl:pl-8"
             >
               <div className="relative w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg">
-                {/* Minimal glow effect */}
+                {/* Soft glow that blends with background */}
                 <motion.div
-                  className="absolute inset-0 -inset-4 bg-secondary/5 rounded-full blur-xl"
+                  className="absolute inset-0 -inset-12 bg-gradient-radial from-[hsl(25_40%_85%)] via-[hsl(25_35%_88%)] to-transparent rounded-full blur-2xl"
                   animate={{
-                    opacity: [0.05, 0.08, 0.05],
+                    scale: [1, 1.1, 1],
+                    opacity: [0.7, 0.9, 0.7],
                   }}
                   transition={{
-                    duration: 4,
+                    duration: 5,
                     repeat: Infinity,
                     ease: "easeInOut"
+                  }}
+                />
+                
+                {/* Edge blur mask for seamless integration */}
+                <div 
+                  className="absolute inset-0 -inset-8 pointer-events-none"
+                  style={{
+                    background: 'radial-gradient(ellipse at center, transparent 40%, hsl(25 35% 90% / 0.3) 70%, hsl(25 35% 90% / 0.8) 100%)',
                   }}
                 />
                 
                 <motion.img 
                   src={captainApfelHero} 
                   alt="Captain Apfel - Initiative für starke Entwicklung" 
-                  className="relative w-full h-auto drop-shadow-2xl"
+                  className="relative w-full h-auto drop-shadow-[0_20px_40px_rgba(180,140,100,0.25)]"
+                  style={{
+                    filter: 'drop-shadow(0 10px 30px rgba(180, 140, 100, 0.2))',
+                  }}
                   animate={{
-                    y: [0, -10, 0],
+                    y: [0, -18, 0],
+                    rotate: [0, 2, 0, -2, 0],
+                    scale: [1, 1.02, 1],
                   }}
                   transition={{
-                    duration: 6,
+                    duration: 5,
                     repeat: Infinity,
                     ease: "easeInOut"
                   }}
