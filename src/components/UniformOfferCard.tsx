@@ -4,7 +4,7 @@ import { Download } from "lucide-react";
 interface UniformOfferCardProps {
   title: string | React.ReactNode;
   subtitle?: string;
-  description: string;
+  description: string | React.ReactNode;
   callToAction?: string;
   imageUrl?: string;
   imageClassName?: string;
