@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { HeroWelcome } from "@/components/HeroWelcome";
 import { ModernCrewSection } from "@/components/ModernCrewSection";
 import { UniformOfferCard } from "@/components/UniformOfferCard";
+import essenIstFertigImage from "@/assets/essen-ist-fertig-card.png";
 
 const Index = () => {
   useEffect(() => {
@@ -137,11 +138,12 @@ const Index = () => {
             <UniformOfferCard
               title="Essen ist fertig!"
               description="Schluss mit Sorgen am Familientisch. Hier findest du deinen Rettungskoffer bei Unverträglichkeiten: Sofortige Hilfe, kindgerechte Erklärungen und Listen für Kita & Schule. Einfach runterladen und durchatmen."
-              imageUrl="/assets/essen-ist-fertig-cover.jpg"
+              imageUrl={essenIstFertigImage}
               linkTo="/essen-ist-fertig"
               buttonText="Pakete entdecken"
               accent="secondary"
               delay={0.2}
+              imageClassName="object-contain"
             />
           </div>
 
