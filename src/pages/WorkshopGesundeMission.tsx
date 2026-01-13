@@ -42,48 +42,48 @@ const WorkshopGesundeMission = () => {
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
             <div className="prose prose-lg max-w-none">
-              <div className="mt-4 mb-8 bg-[hsl(18_60%_62%)] p-6 rounded-lg">
-                <p className="text-base mb-6 text-white leading-relaxed">
+              <div className="mt-4 mb-8 bg-card/60 backdrop-blur-sm p-6 rounded-lg border border-border/30">
+                <p className="text-base mb-6 text-muted-foreground leading-relaxed">
                   Schluss mit langweiligen Vorträgen!<br />
                   Damit Wissen hängen bleibt, wird es hier anschaulich und kindgerecht vermittelt.
                 </p>
 
-                <h2 className="text-xl font-bold mb-3 text-white">Was Kinder erleben</h2>
+                <h2 className="text-xl font-bold mb-3 text-[hsl(12_55%_50%)] font-luckiest">Was Kinder erleben</h2>
 
-                <p className="text-base mb-4 text-white leading-relaxed">
+                <p className="text-base mb-4 text-muted-foreground leading-relaxed">
                   Ernährung, Bewegung und Gefühle werden hier greifbar – beim Erleben, Spielen und Staunen.
                 </p>
 
-                <p className="text-base mb-2 text-white font-semibold">Sie erforschen:</p>
-                <ul className="text-base mb-6 text-white list-disc list-inside space-y-1 ml-2">
+                <p className="text-base mb-2 text-foreground font-semibold">Sie erforschen:</p>
+                <ul className="text-base mb-6 text-muted-foreground list-disc list-inside space-y-1 ml-2">
                   <li>Wie viel Obst und Gemüse braucht mein Körper?</li>
                   <li>Wie viel Zucker steckt in Cola & Co.?</li>
                   <li>Was bringt meine Powerzentrale zum Leuchten?</li>
                   <li>Was bremst mich aus?</li>
                 </ul>
 
-                <h2 className="text-xl font-bold mb-3 text-white">Die 5 Power Level</h2>
+                <h2 className="text-xl font-bold mb-3 text-[hsl(12_55%_50%)] font-luckiest">Die 5 Power Level</h2>
 
-                <p className="text-base mb-2 text-white">
-                  <strong>1. Bewegen & Tanzen</strong> – Stärkt Körpergefühl und Motorik.
+                <p className="text-base mb-2 text-muted-foreground">
+                  <strong className="text-foreground">1. Bewegen & Tanzen</strong> – Stärkt Körpergefühl und Motorik.
                 </p>
-                <p className="text-base mb-2 text-white">
-                  <strong>2. Entdecken & Staunen</strong> – Fördert Wissen und Neugier.
+                <p className="text-base mb-2 text-muted-foreground">
+                  <strong className="text-foreground">2. Entdecken & Staunen</strong> – Fördert Wissen und Neugier.
                 </p>
-                <p className="text-base mb-2 text-white">
-                  <strong>3. Teamgefühl erleben</strong> – Stärkt den Zusammenhalt.
+                <p className="text-base mb-2 text-muted-foreground">
+                  <strong className="text-foreground">3. Teamgefühl erleben</strong> – Stärkt den Zusammenhalt.
                 </p>
-                <p className="text-base mb-2 text-white">
-                  <strong>4. Mitmachen & Vorbereiten</strong> – Vermittelt Verantwortung und Selbstwirksamkeit.
+                <p className="text-base mb-2 text-muted-foreground">
+                  <strong className="text-foreground">4. Mitmachen & Vorbereiten</strong> – Vermittelt Verantwortung und Selbstwirksamkeit.
                 </p>
-                <p className="text-base mb-6 text-white">
-                  <strong>5. Probieren & Genießen</strong> – Öffnet neue Geschmackserlebnisse und stärkt das
+                <p className="text-base mb-6 text-muted-foreground">
+                  <strong className="text-foreground">5. Probieren & Genießen</strong> – Öffnet neue Geschmackserlebnisse und stärkt das
                   Selbstvertrauen.
                 </p>
 
-                <h2 className="text-xl font-bold mb-3 text-white">Ziel & Nutzen für Ihre Einrichtung</h2>
+                <h2 className="text-xl font-bold mb-3 text-[hsl(12_55%_50%)] font-luckiest">Ziel & Nutzen für Ihre Einrichtung</h2>
 
-                <p className="text-base text-white leading-relaxed">
+                <p className="text-base text-muted-foreground leading-relaxed">
                   Ihre Einrichtung erhält im Anschluss ein Teilnahme Zertifikat. Es ist ein sichtbares Zeichen für
                   gelebte Prävention und ganzheitliche Gesundheitsförderung. Ideal für den Eingangsbereich oder das Team
                   Portfolio.
