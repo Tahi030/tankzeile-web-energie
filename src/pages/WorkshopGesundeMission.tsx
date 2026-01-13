@@ -21,7 +21,7 @@ const WorkshopGesundeMission = () => {
             </h1>
             <p className="text-xl text-muted-foreground mb-2">Erlebnisworkshop Ernährung & Bewegung</p>
             <p className="text-lg text-muted-foreground/80">
-              Kitas (Vorschule), Familienzentren und Grundschulen (Klasse 1 & 2)
+              Kitas (Vorschule), Familienzentren
             </p>
           </div>
         </div>
@@ -32,7 +32,7 @@ const WorkshopGesundeMission = () => {
         <motion.img 
           src={powerzentraleCharacter} 
           alt="Powerzentrale" 
-          className="w-64 h-auto sm:w-80 md:w-96 lg:w-[28rem]"
+          className="w-[32rem] h-auto sm:w-[40rem] md:w-[48rem] lg:w-[56rem]"
           loading="eager"
           decoding="async"
           initial={{ opacity: 0, scale: 0.8 }}
