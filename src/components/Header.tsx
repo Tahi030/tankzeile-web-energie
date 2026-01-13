@@ -67,18 +67,18 @@ const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const location = useLocation();
 
-  // Footer-matching color (primary green)
+  // Header color - darker peachy-beige
   const getHeaderColor = () => {
-    return 'bg-primary';
+    return 'bg-[hsl(25_30%_78%)]';
   };
 
-  // White text on primary background
+  // Dark text on peachy background
   const getTextColor = () => {
-    return 'text-white';
+    return 'text-[hsl(25_20%_20%)]';
   };
 
   const getHoverColor = () => {
-    return 'hover:bg-white/10';
+    return 'hover:bg-[hsl(25_25%_72%)]';
   };
 
   return (
@@ -123,7 +123,7 @@ const Header = () => {
           <div className="md:hidden">
             <button
               type="button"
-              className="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-white/80 hover:bg-white/10"
+              className="inline-flex items-center justify-center p-2 rounded-md text-[hsl(25_20%_20%)] hover:text-[hsl(25_20%_30%)] hover:bg-[hsl(25_25%_72%)]"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             >
               <span className="sr-only">Menü öffnen</span>
