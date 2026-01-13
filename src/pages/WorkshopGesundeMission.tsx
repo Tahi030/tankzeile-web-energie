@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 import CustomerFeedback from "@/components/CustomerFeedback";
 import powerzentraleCharacter from "@/assets/powerzentrale-character.svg";
 
@@ -28,12 +29,27 @@ const WorkshopGesundeMission = () => {
 
       {/* Powerzentrale Character */}
       <div className="flex justify-center items-center py-4 md:py-6">
-        <img 
+        <motion.img 
           src={powerzentraleCharacter} 
           alt="Powerzentrale" 
           className="w-52 h-auto sm:w-64 md:w-80 lg:w-96"
           loading="eager"
           decoding="async"
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ 
+            opacity: 1, 
+            scale: 1,
+            y: [0, -8, 0]
+          }}
+          transition={{
+            opacity: { duration: 0.6 },
+            scale: { duration: 0.6 },
+            y: {
+              duration: 2.5,
+              repeat: Infinity,
+              ease: "easeInOut"
+            }
+          }}
         />
       </div>
 
