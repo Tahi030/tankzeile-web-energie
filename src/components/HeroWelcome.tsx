@@ -111,14 +111,21 @@ export const HeroWelcome = () => {
                 initial={{ opacity: 0, scaleX: 0 }}
                 animate={{ opacity: 1, scaleX: 1 }}
                 transition={{ duration: 1, delay: 0.5 }}
-                className="absolute -bottom-4 left-1/2 -translate-x-1/2 w-[80%] max-w-md"
+                className="absolute bottom-0 sm:bottom-4 md:bottom-8 left-1/2 -translate-x-1/2 w-[90%] sm:w-[85%] md:w-[80%] max-w-xl"
               >
-                <svg viewBox="0 0 200 20" className="w-full h-auto" preserveAspectRatio="none">
+                <svg viewBox="0 0 200 30" className="w-full h-auto" preserveAspectRatio="none">
+                  <defs>
+                    <linearGradient id="arcGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                      <stop offset="0%" stopColor="hsl(80 40% 45%)" stopOpacity="0.1" />
+                      <stop offset="50%" stopColor="hsl(80 40% 45%)" stopOpacity="0.5" />
+                      <stop offset="100%" stopColor="hsl(80 40% 45%)" stopOpacity="0.1" />
+                    </linearGradient>
+                  </defs>
                   <path 
-                    d="M0,15 Q100,0 200,15" 
+                    d="M0,25 Q100,0 200,25" 
                     fill="none" 
-                    stroke="hsl(80 40% 45% / 0.3)" 
-                    strokeWidth="2"
+                    stroke="url(#arcGradient)" 
+                    strokeWidth="3"
                     strokeLinecap="round"
                   />
                 </svg>
