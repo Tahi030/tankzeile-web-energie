@@ -132,25 +132,27 @@ export const UniformOfferCard = ({
             </div>
           )}
 
-          {/* Download Links */}
-          {downloadLinks && (
-            <div className="space-y-3">
-              {downloadLinks.map((link, index) => (
-                <motion.a 
-                  key={index}
-                  href={link.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block bg-[hsl(18_65%_65%)] hover:bg-[hsl(18_65%_58%)] text-white px-4 py-3 rounded-lg font-medium transition-all duration-300 text-center shadow-md hover:shadow-lg"
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.98 }}
-                >
-                  {link.text}
-                </motion.a>
-              ))}
-            </div>
-          )}
         </div>
+
+        {/* Download Links - At bottom of card for alignment */}
+        {downloadLinks && (
+          <div className="mt-auto pt-4 space-y-3">
+            {downloadLinks.map((link, index) => (
+              <motion.a 
+                key={index}
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-2 bg-[hsl(18_65%_65%)] hover:bg-[hsl(18_65%_58%)] text-white px-4 py-3 rounded-lg font-medium transition-all duration-300 text-center shadow-md hover:shadow-lg"
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+              >
+                <Download size={18} />
+                {link.text}
+              </motion.a>
+            ))}
+          </div>
+        )}
 
         {/* Button - Always at bottom */}
         {linkTo && buttonText && (
