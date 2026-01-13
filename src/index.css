@@ -13,58 +13,58 @@
 
 @layer base {
   :root {
-    /* Apricot/Sand/Champagner Farbpalette */
-    --background: 30 45% 94%; /* Soft champagne background */
-    --foreground: 25 25% 18%; /* Warm dark brown for text */
+    /* Helle Apricot/Sand/Champagner Farbpalette */
+    --background: 32 55% 96%; /* Sehr heller Champagner Hintergrund */
+    --foreground: 28 35% 28%; /* Warmes Dunkelbraun für Text - nicht zu dunkel */
 
-    --card: 35 50% 98%; /* Soft cream white cards */
-    --card-foreground: 25 25% 18%;
+    --card: 35 60% 99%; /* Fast weiß mit warmem Unterton */
+    --card-foreground: 28 30% 30%;
 
-    --popover: 35 50% 98%;
-    --popover-foreground: 25 25% 18%;
+    --popover: 35 60% 99%;
+    --popover-foreground: 28 30% 30%;
 
-    /* Apricot for header/footer */
-    --primary: 25 55% 82%; /* Soft apricot for header/footer */
-    --primary-foreground: 25 30% 20%; /* Dark text on primary */
+    /* Helles Apricot für Header/Footer */
+    --primary: 28 50% 85%; /* Helles weiches Apricot */
+    --primary-foreground: 28 40% 25%; /* Warmer Text */
 
-    /* Warm Apricot-Peach as secondary */
-    --secondary: 20 65% 75%; /* Warm apricot/peach */
-    --secondary-foreground: 25 30% 18%; /* Dark text on secondary */
+    /* Warmes Pfirsich/Apricot als Secondary */
+    --secondary: 24 60% 80%; /* Warmes Apricot/Pfirsich */
+    --secondary-foreground: 28 35% 25%;
 
-    /* Sand/Champagne muted backgrounds */
-    --muted: 35 40% 90%; /* Sand champagne muted */
-    --muted-foreground: 25 20% 35%; /* Warm gray for text */
+    /* Sand/Champagne Muted Hintergründe */
+    --muted: 35 50% 93%; /* Heller Sand/Champagner */
+    --muted-foreground: 28 25% 40%; /* Warmes Grau für Text */
 
-    /* Apricot accent */
-    --accent: 22 50% 70%; /* Medium apricot accent */
-    --accent-foreground: 25 30% 18%; /* Dark text on accent */
+    /* Apricot Akzent */
+    --accent: 26 55% 75%; /* Mittlerer Apricot Akzent */
+    --accent-foreground: 28 35% 22%;
 
-    /* Light champagne for highlights */
-    --blackberry: 38 45% 92%; /* Light champagne cream */
-    --blackberry-foreground: 25 25% 18%;
+    /* Heller Champagner für Highlights */
+    --blackberry: 36 55% 95%; /* Sehr heller Champagner */
+    --blackberry-foreground: 28 30% 28%;
     
-    /* Sand for buttons */
-    --button-beige: 32 42% 88%; /* Warm sand */
-    --button-beige-foreground: 25 35% 22%; /* Warm dark text */
+    /* Sand für Buttons */
+    --button-beige: 30 50% 90%; /* Warmer heller Sand */
+    --button-beige-foreground: 28 40% 25%;
 
     --destructive: 0 60% 50%;
     --destructive-foreground: 0 0% 100%;
 
-    /* Soft sand borders */
-    --border: 32 35% 85%; /* Light sand border */
-    --input: 35 40% 95%; /* Very light champagne input bg */
-    --ring: 22 45% 75%; /* Apricot focus ring */
+    /* Weiche Sand Borders */
+    --border: 32 40% 88%; /* Helle Sand Border */
+    --input: 35 50% 97%; /* Sehr heller Champagner Input */
+    --ring: 26 50% 78%; /* Apricot Focus Ring */
 
     --radius: 0.5rem;
 
-    --sidebar-background: 35 45% 96%;
-    --sidebar-foreground: 25 22% 25%;
-    --sidebar-primary: 25 25% 18%;
+    --sidebar-background: 35 55% 97%;
+    --sidebar-foreground: 28 28% 30%;
+    --sidebar-primary: 28 30% 28%;
     --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 32 38% 92%;
-    --sidebar-accent-foreground: 25 25% 18%;
-    --sidebar-border: 32 35% 88%;
-    --sidebar-ring: 22 45% 75%;
+    --sidebar-accent: 32 45% 94%;
+    --sidebar-accent-foreground: 28 30% 28%;
+    --sidebar-border: 32 40% 90%;
+    --sidebar-ring: 26 50% 78%;
   }
 
   .dark {
@@ -106,7 +106,7 @@
 
   body {
     @apply text-foreground font-sans;
-    background: hsl(30 45% 94%);
+    background: hsl(32 55% 96%);
     min-height: 100vh;
   }
 
@@ -234,7 +234,7 @@
   
   /* PDF Download button styles */
   .pdf-download-btn {
-    @apply inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-[hsl(25_30%_88%)] text-[hsl(25_30%_25%)] transition-all duration-300 hover:bg-[hsl(25_35%_82%)] hover:shadow-md active:scale-95 font-medium;
+    @apply inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-[hsl(30_50%_90%)] text-[hsl(28_40%_28%)] transition-all duration-300 hover:bg-[hsl(30_55%_86%)] hover:shadow-md active:scale-95 font-medium;
   }
   
   /* Card hover effect */
@@ -246,7 +246,7 @@
   .bg-warm-gradient,
   .modern-section,
   .bg-background {
-    background: hsl(30 45% 94%);
+    background: hsl(32 55% 96%);
   }
   
   /* Dezente Überschriften-Boxen in natürlichen Tönen */
