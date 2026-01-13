@@ -50,7 +50,7 @@ export const HeroWelcome = () => {
                 <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-luckiest text-[hsl(80_40%_45%)] uppercase tracking-wide leading-tight">
                   Captain Apfel
                 </h1>
-                <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-luckiest text-[hsl(12_55%_50%)]">
+                <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-luckiest text-[hsl(220_15%_30%)]">
                   auf gesunder Mission
                 </p>
                 <div className="pt-4 sm:pt-6 space-y-2 sm:space-y-3 border-t-2 border-[hsl(12_55%_50%)]/20 mt-4">
