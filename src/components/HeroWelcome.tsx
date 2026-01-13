@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import captainApfelJumping from "@/assets/captain-apfel-jumping.png";
+import fruitGalaxyIllustration from "@/assets/fruit-galaxy-illustration.png";
 
 export const HeroWelcome = () => {
   return (
@@ -64,14 +65,15 @@ export const HeroWelcome = () => {
               </div>
             </motion.div>
 
-            {/* Right: Captain Apfel Flying Figure */}
+            {/* Right: Captain Apfel Flying Figure + Illustration */}
             <motion.div
               initial={{ opacity: 0, x: 40, y: 20 }}
               animate={{ opacity: 1, x: 0, y: 0 }}
               transition={{ duration: 0.9, delay: 0.2 }}
-              className="relative flex justify-center lg:justify-end lg:pl-4 xl:pl-8"
+              className="relative flex flex-col items-center lg:items-end lg:pl-4 xl:pl-8"
             >
-              <div className="relative w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-2xl xl:max-w-3xl">
+              {/* Captain Apfel Container */}
+              <div className="relative w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-2xl xl:max-w-3xl z-10">
                 {/* Soft glow for blending */}
                 <motion.div
                   className="absolute inset-0 -inset-16 bg-gradient-radial from-[hsl(30_50%_92%)] via-[hsl(32_55%_96%)] to-transparent rounded-full blur-3xl"
@@ -104,6 +106,23 @@ export const HeroWelcome = () => {
                   }}
                 />
               </div>
+
+              {/* Fruit Galaxy Illustration - positioned below Captain Apfel */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.5 }}
+                className="relative w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-xl xl:max-w-2xl -mt-8 sm:-mt-12 md:-mt-16 lg:-mt-20"
+              >
+                <img 
+                  src={fruitGalaxyIllustration} 
+                  alt="Früchte-Galaxie Illustration" 
+                  className="w-full h-auto"
+                  style={{
+                    filter: 'drop-shadow(0 10px 20px rgba(100, 100, 100, 0.15))',
+                  }}
+                />
+              </motion.div>
             </motion.div>
             
           </div>
