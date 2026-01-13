@@ -59,7 +59,7 @@ const AlltagLeichterLeben = () => {
                 />
               </div>
               <div>
-                <h2 className="text-lg md:text-xl font-bold mb-4 text-destructive">
+                <h2 className="text-lg md:text-xl font-bold mb-4 text-[hsl(12_55%_50%)]">
                   Unsere Pioniere 2025: Kita Dreikäsehoch, Berlin-Köpenick
                 </h2>
                 <p className="body-base text-muted-foreground">
