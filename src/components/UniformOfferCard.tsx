@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Download, Apple, Cherry, Citrus, Grape } from "lucide-react";
+import { Download } from "lucide-react";
 
 interface UniformOfferCardProps {
   title: string | React.ReactNode;
@@ -16,7 +16,6 @@ interface UniformOfferCardProps {
   buttonText?: string;
   accent: "primary" | "secondary" | "accent";
   delay: number;
-  decorativeIllustration?: boolean;
 }
 
 export const UniformOfferCard = ({ 
@@ -33,8 +32,7 @@ export const UniformOfferCard = ({
   linkTo, 
   buttonText, 
   accent,
-  delay,
-  decorativeIllustration
+  delay 
 }: UniformOfferCardProps) => {
   return (
     <motion.div 
@@ -61,75 +59,6 @@ export const UniformOfferCard = ({
                 Video auf YouTube ansehen
               </button>
             )}
-          </div>
-        )}
-
-        {/* Decorative Illustration - animated fruits */}
-        {decorativeIllustration && (
-          <div className="mb-6 py-6 relative overflow-hidden bg-gradient-to-br from-[hsl(80_35%_92%)] to-[hsl(32_40%_94%)] rounded-xl border border-border/20">
-            <div className="flex items-center justify-center gap-4 sm:gap-6">
-              {/* Floating Apple */}
-              <motion.div
-                animate={{ y: [0, -8, 0], rotate: [-5, 5, -5] }}
-                transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-                className="text-[hsl(12_65%_50%)]"
-              >
-                <Apple size={36} strokeWidth={1.5} />
-              </motion.div>
-              
-              {/* Floating Cherry */}
-              <motion.div
-                animate={{ y: [0, -6, 0], rotate: [3, -3, 3] }}
-                transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut", delay: 0.3 }}
-                className="text-[hsl(350_60%_55%)]"
-              >
-                <Cherry size={32} strokeWidth={1.5} />
-              </motion.div>
-              
-              {/* Central larger fruit */}
-              <motion.div
-                animate={{ y: [0, -10, 0], scale: [1, 1.05, 1] }}
-                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 0.1 }}
-                className="text-[hsl(80_45%_45%)]"
-              >
-                <Apple size={48} strokeWidth={1.5} />
-              </motion.div>
-              
-              {/* Floating Citrus */}
-              <motion.div
-                animate={{ y: [0, -7, 0], rotate: [-4, 4, -4] }}
-                transition={{ duration: 2.8, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
-                className="text-[hsl(45_80%_50%)]"
-              >
-                <Citrus size={32} strokeWidth={1.5} />
-              </motion.div>
-              
-              {/* Floating Grape */}
-              <motion.div
-                animate={{ y: [0, -9, 0], rotate: [5, -5, 5] }}
-                transition={{ duration: 3.2, repeat: Infinity, ease: "easeInOut", delay: 0.2 }}
-                className="text-[hsl(280_50%_55%)]"
-              >
-                <Grape size={36} strokeWidth={1.5} />
-              </motion.div>
-            </div>
-            
-            {/* Subtle sparkles */}
-            <motion.div 
-              className="absolute top-2 left-4 w-2 h-2 bg-[hsl(45_80%_60%)] rounded-full"
-              animate={{ opacity: [0.3, 1, 0.3], scale: [0.8, 1.2, 0.8] }}
-              transition={{ duration: 2, repeat: Infinity }}
-            />
-            <motion.div 
-              className="absolute bottom-3 right-6 w-1.5 h-1.5 bg-[hsl(80_50%_55%)] rounded-full"
-              animate={{ opacity: [0.4, 1, 0.4], scale: [1, 1.3, 1] }}
-              transition={{ duration: 2.5, repeat: Infinity, delay: 0.5 }}
-            />
-            <motion.div 
-              className="absolute top-4 right-10 w-1 h-1 bg-[hsl(12_60%_60%)] rounded-full"
-              animate={{ opacity: [0.5, 1, 0.5], scale: [0.9, 1.4, 0.9] }}
-              transition={{ duration: 1.8, repeat: Infinity, delay: 0.8 }}
-            />
           </div>
         )}
 
