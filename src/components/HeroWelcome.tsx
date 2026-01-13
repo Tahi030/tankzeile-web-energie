@@ -106,43 +106,23 @@ export const HeroWelcome = () => {
                 />
               </div>
 
-              {/* Elegant decorative elements */}
-              <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 w-full max-w-lg">
-                {/* Subtle gradient line */}
-                <motion.div
-                  initial={{ scaleX: 0, opacity: 0 }}
-                  animate={{ scaleX: 1, opacity: 1 }}
-                  transition={{ duration: 1.2, delay: 0.6 }}
-                  className="h-[2px] w-full bg-gradient-to-r from-transparent via-[hsl(80_40%_45%)/40] to-transparent"
-                />
-                
-                {/* Floating accent dots */}
-                <div className="flex justify-center gap-8 mt-4">
-                  {[0, 1, 2].map((i) => (
-                    <motion.div
-                      key={i}
-                      initial={{ opacity: 0, y: 10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.5, delay: 0.8 + i * 0.1 }}
-                      className="relative"
-                    >
-                      <motion.div
-                        className="w-2 h-2 rounded-full bg-[hsl(80_40%_45%)]"
-                        animate={{
-                          y: [0, -4, 0],
-                          opacity: [0.6, 1, 0.6],
-                        }}
-                        transition={{
-                          duration: 2.5,
-                          delay: i * 0.3,
-                          repeat: Infinity,
-                          ease: "easeInOut"
-                        }}
-                      />
-                    </motion.div>
-                  ))}
-                </div>
-              </div>
+              {/* Elegant decorative arc */}
+              <motion.div
+                initial={{ opacity: 0, scaleX: 0 }}
+                animate={{ opacity: 1, scaleX: 1 }}
+                transition={{ duration: 1, delay: 0.5 }}
+                className="absolute -bottom-4 left-1/2 -translate-x-1/2 w-[80%] max-w-md"
+              >
+                <svg viewBox="0 0 200 20" className="w-full h-auto" preserveAspectRatio="none">
+                  <path 
+                    d="M0,15 Q100,0 200,15" 
+                    fill="none" 
+                    stroke="hsl(80 40% 45% / 0.3)" 
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                  />
+                </svg>
+              </motion.div>
             </motion.div>
             
           </div>
