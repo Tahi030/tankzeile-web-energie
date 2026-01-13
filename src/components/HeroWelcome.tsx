@@ -1,34 +1,34 @@
 import { motion } from "framer-motion";
-import captainApfelHero from "@/assets/captain-apfel-hero.svg";
+import captainApfelFlying from "@/assets/captain-apfel-flying.png";
 
 export const HeroWelcome = () => {
   return (
-    <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden bg-[hsl(25_35%_90%)] pt-24 md:pt-20 lg:pt-16">
+    <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden bg-[hsl(25_32%_92%)] pt-24 md:pt-20 lg:pt-16">
       
-      {/* Harmonious background with soft gradients */}
+      {/* Soft sky-like background with gentle clouds */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        {/* Main soft glow behind figure area */}
+        {/* Soft ambient glow */}
         <motion.div 
-          className="absolute top-1/4 right-1/4 w-[50rem] h-[50rem] bg-[hsl(25_40%_85%)] rounded-full blur-[100px]"
+          className="absolute top-1/3 right-1/4 w-[45rem] h-[45rem] bg-[hsl(25_35%_88%)] rounded-full blur-[120px]"
           animate={{
-            scale: [1, 1.15, 1],
-            opacity: [0.6, 0.8, 0.6],
+            scale: [1, 1.08, 1],
+            opacity: [0.5, 0.7, 0.5],
           }}
           transition={{
-            duration: 6,
+            duration: 8,
             repeat: Infinity,
             ease: "easeInOut"
           }}
         />
-        {/* Secondary ambient glow */}
+        {/* Secondary soft glow */}
         <motion.div 
-          className="absolute bottom-1/4 left-1/3 w-[35rem] h-[35rem] bg-[hsl(20_45%_82%)] rounded-full blur-[80px]"
+          className="absolute bottom-1/3 left-1/4 w-[30rem] h-[30rem] bg-[hsl(30_30%_90%)] rounded-full blur-[100px]"
           animate={{
-            scale: [1.1, 1, 1.1],
-            opacity: [0.4, 0.6, 0.4],
+            scale: [1.05, 1, 1.05],
+            opacity: [0.4, 0.55, 0.4],
           }}
           transition={{
-            duration: 8,
+            duration: 10,
             repeat: Infinity,
             ease: "easeInOut"
           }}
@@ -64,50 +64,43 @@ export const HeroWelcome = () => {
               </div>
             </motion.div>
 
-            {/* Right: Captain Apfel Figure */}
+            {/* Right: Captain Apfel Flying Figure */}
             <motion.div
-              initial={{ opacity: 0, x: 30, scale: 0.9 }}
-              animate={{ opacity: 1, x: 0, scale: 1 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
+              initial={{ opacity: 0, x: 40, y: 20 }}
+              animate={{ opacity: 1, x: 0, y: 0 }}
+              transition={{ duration: 0.9, delay: 0.2 }}
               className="relative flex justify-center lg:justify-end lg:pl-4 xl:pl-8"
             >
               <div className="relative w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg">
-                {/* Soft glow that blends with background */}
+                {/* Soft glow for blending */}
                 <motion.div
-                  className="absolute inset-0 -inset-12 bg-gradient-radial from-[hsl(25_40%_85%)] via-[hsl(25_35%_88%)] to-transparent rounded-full blur-2xl"
+                  className="absolute inset-0 -inset-16 bg-gradient-radial from-[hsl(25_30%_90%)] via-[hsl(25_32%_92%)] to-transparent rounded-full blur-3xl"
                   animate={{
-                    scale: [1, 1.1, 1],
-                    opacity: [0.7, 0.9, 0.7],
+                    scale: [1, 1.05, 1],
+                    opacity: [0.6, 0.75, 0.6],
                   }}
                   transition={{
-                    duration: 5,
+                    duration: 6,
                     repeat: Infinity,
                     ease: "easeInOut"
                   }}
                 />
                 
-                {/* Edge blur mask for seamless integration */}
-                <div 
-                  className="absolute inset-0 -inset-8 pointer-events-none"
-                  style={{
-                    background: 'radial-gradient(ellipse at center, transparent 40%, hsl(25 35% 90% / 0.3) 70%, hsl(25 35% 90% / 0.8) 100%)',
-                  }}
-                />
-                
+                {/* Flying airplane animation - gentle tilting and floating */}
                 <motion.img 
-                  src={captainApfelHero} 
-                  alt="Captain Apfel - Initiative für starke Entwicklung" 
-                  className="relative w-full h-auto drop-shadow-[0_20px_40px_rgba(180,140,100,0.25)]"
+                  src={captainApfelFlying} 
+                  alt="Captain Apfel fliegt wie ein Flugzeug" 
+                  className="relative w-full h-auto"
                   style={{
-                    filter: 'drop-shadow(0 10px 30px rgba(180, 140, 100, 0.2))',
+                    filter: 'drop-shadow(0 15px 25px rgba(150, 120, 90, 0.2))',
                   }}
                   animate={{
-                    y: [0, -18, 0],
-                    rotate: [0, 2, 0, -2, 0],
-                    scale: [1, 1.02, 1],
+                    y: [0, -8, 0, -5, 0],
+                    x: [0, 3, 0, -3, 0],
+                    rotate: [-2, 3, -1, 2, -2],
                   }}
                   transition={{
-                    duration: 5,
+                    duration: 6,
                     repeat: Infinity,
                     ease: "easeInOut"
                   }}

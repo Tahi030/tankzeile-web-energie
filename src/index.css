@@ -14,7 +14,7 @@
 @layer base {
   :root {
     /* Neutral, peachy-beige colors */
-    --background: 25 35% 90%; /* Warm peachy-beige background */
+    --background: 25 32% 92%; /* Soft warm cream background */
     --foreground: 30 20% 20%; /* Dark warm gray */
 
     --card: 0 0% 100%; /* Pure white cards */
@@ -106,7 +106,7 @@
 
   body {
     @apply text-foreground font-sans;
-    background: hsl(25 35% 90%);
+    background: hsl(25 32% 92%);
     min-height: 100vh;
   }
 
@@ -246,7 +246,7 @@
   .bg-warm-gradient,
   .modern-section,
   .bg-background {
-    background: hsl(25 35% 90%);
+    background: hsl(25 32% 92%);
   }
   
   /* Dezente Überschriften-Boxen in natürlichen Tönen */
