@@ -32,12 +32,11 @@ const AlltagLeichterLeben = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            <h1 className="heading-lg mb-4">Die Powercrew des Jahres</h1>
             <p className="body-lg text-muted-foreground max-w-3xl mx-auto mb-6">
               Der Walk of Fame: Hier werden Kitas und Einrichtungen sichtbar, die sich besonders für die Gesundheit der Kinder stark machen.
             </p>
             <p className="body-base text-muted-foreground max-w-3xl mx-auto">
-              Mit der Auszeichnung „Powercrew des Jahres" bedankt sich Captain Apfel bei den Menschen, die jeden Tag Großes leisten. Pädagogische Fachkräfte sind oft unsichtbare Helden. Hier bekommen sie die Bühne, die sie verdienen.
+              Mit der Auszeichnung „Powercrew" bedankt sich Captain Apfel bei den Menschen, die jeden Tag Großes leisten. Pädagogische Fachkräfte sind oft unsichtbare Helden. Hier bekommen sie die Bühne, die sie verdienen.
             </p>
             <p className="body-base text-muted-foreground max-w-3xl mx-auto mt-4">
               Der Walk of Fame ist eine wachsende Galerie: Jedes Jahr kommen neue engagierte Teams hinzu, die den Workshop „Reise zur Powerzentrale" durchgeführt oder sich besonders engagiert haben.
@@ -60,7 +59,7 @@ const AlltagLeichterLeben = () => {
                 />
               </div>
               <div>
-                <h2 className="heading-md mb-4 text-destructive">
+                <h2 className="text-lg md:text-xl font-bold mb-4 text-destructive">
                   Unsere Pioniere 2025: Kita Dreikäsehoch, Berlin-Köpenick
                 </h2>
                 <p className="body-base text-muted-foreground">
@@ -83,7 +82,7 @@ const AlltagLeichterLeben = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
           >
-            <p className="body-lg text-muted-foreground italic">Und wer wird die nächste Powercrew?</p>
+            <p className="body-lg text-muted-foreground italic">Und wer wird noch Powercrew?</p>
           </motion.div>
         </div>
       </div>
