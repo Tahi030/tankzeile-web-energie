@@ -7,6 +7,7 @@ interface UniformOfferCardProps {
   description: string;
   callToAction?: string;
   imageUrl?: string;
+  imageClassName?: string;
   videoPlaceholder?: boolean;
   youtubeLink?: string;
   coloringPages?: { imageUrl: string; pdfUrl: string }[];
@@ -23,6 +24,7 @@ export const UniformOfferCard = ({
   description, 
   callToAction,
   imageUrl,
+  imageClassName,
   videoPlaceholder,
   youtubeLink,
   coloringPages,
@@ -47,7 +49,7 @@ export const UniformOfferCard = ({
             <img 
               src={imageUrl} 
               alt={typeof title === 'string' ? title : 'Angebot'} 
-              className="w-full h-48 object-cover rounded-lg shadow-md"
+              className={`w-full h-48 rounded-lg shadow-md ${imageClassName || 'object-cover'}`}
             />
             {youtubeLink && (
               <button 
