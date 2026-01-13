@@ -32,7 +32,7 @@ const WorkshopGesundeMission = () => {
         <motion.img 
           src={powerzentraleCharacter} 
           alt="Powerzentrale" 
-          className="w-52 h-auto sm:w-64 md:w-80 lg:w-96"
+          className="w-64 h-auto sm:w-80 md:w-96 lg:w-[28rem]"
           loading="eager"
           decoding="async"
           initial={{ opacity: 0, scale: 0.8 }}
