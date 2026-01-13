@@ -4,6 +4,7 @@ import { HeroWelcome } from "@/components/HeroWelcome";
 import { ModernCrewSection } from "@/components/ModernCrewSection";
 import { UniformOfferCard } from "@/components/UniformOfferCard";
 import essenIstFertigImage from "@/assets/essen-ist-fertig-card.png";
+import missionBuntstiftImage from "@/assets/mission-buntstift-header.jpg";
 
 const Index = () => {
   useEffect(() => {
@@ -167,6 +168,7 @@ const Index = () => {
             <UniformOfferCard
               title="Mission Buntstift"
               description="Jetzt bist du dran: Stifte raus und los! Hier findest du Ausmalbilder und kleine Kreativaufgaben mit Captain Apfel und seiner Crew – ideal für Kinder zuhause oder in der Kita."
+              imageUrl={missionBuntstiftImage}
               coloringPages={[
                 { imageUrl: "/images/paffel-ausmalbild-thumb.jpg", pdfUrl: "/pdfs/paffel-ausmalbild-v4.pdf" },
                 {

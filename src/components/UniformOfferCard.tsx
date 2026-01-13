@@ -102,16 +102,10 @@ export const UniformOfferCard = ({
             </p>
           )}
 
-          {/* Coloring Pages Grid */}
+          {/* Coloring Pages Grid - appears after description */}
           {coloringPages && (
-            <div className="space-y-4">
-              {/* Header placeholder to match other cards */}
-              <div className="bg-gradient-to-br from-[hsl(45_60%_92%)] to-[hsl(35_50%_88%)] rounded-lg h-48 flex items-center justify-center border border-border/20">
-                <div className="text-center space-y-2">
-                  <div className="text-4xl">🎨</div>
-                  <p className="text-sm font-medium text-muted-foreground">Ausmalbilder zum Download</p>
-                </div>
-              </div>
+            <div className="space-y-3 pt-2">
+              <p className="text-sm font-medium text-muted-foreground">Ausmalbilder zum Download:</p>
               <div className="grid grid-cols-3 gap-3">
                 {coloringPages.map((page, index) => (
                   <div key={index} className="space-y-2">
