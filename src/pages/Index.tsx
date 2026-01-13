@@ -26,7 +26,7 @@ const Index = () => {
       <HeroWelcome />
 
       {/* Captain Apfel Introduction */}
-      <section className="section-padding -mt-12 sm:-mt-24 md:-mt-40 lg:-mt-56 xl:-mt-72 relative z-10">
+      <section className="section-padding -mt-10 sm:-mt-14 md:-mt-20 lg:-mt-28 xl:-mt-36 relative z-10">
         <div className="container-custom">
           <motion.div
             className="max-w-4xl mx-auto"
