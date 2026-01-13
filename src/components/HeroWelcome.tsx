@@ -112,12 +112,12 @@ export const HeroWelcome = () => {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.5 }}
-                className="relative w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-2xl xl:max-w-3xl -mt-8 sm:-mt-12 md:-mt-16 lg:-mt-20"
+                className="relative w-full -mt-16 sm:-mt-20 md:-mt-28 lg:-mt-36 xl:-mt-44"
               >
                 <img 
                   src={fruitGalaxyIllustration} 
                   alt="Früchte-Galaxie Illustration" 
-                  className="w-full h-auto"
+                  className="w-full h-auto max-w-none"
                   style={{
                     filter: 'drop-shadow(0 10px 20px rgba(100, 100, 100, 0.15))',
                   }}
