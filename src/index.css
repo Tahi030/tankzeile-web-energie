@@ -115,7 +115,7 @@
 
   h1, h2, h3, h4, h5, h6 {
     @apply font-luckiest;
-    color: hsl(12 55% 50%); /* Warmes Korall für alle Überschriften */
+    color: hsl(220 35% 35%); /* Dunkles Blau für alle Überschriften */
   }
 }
 
