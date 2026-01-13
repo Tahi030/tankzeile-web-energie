@@ -137,7 +137,7 @@ const Index = () => {
 
             <UniformOfferCard
               title="Essen ist fertig!"
-              description={<>Schluss mit Sorgen am Familientisch. Hier findest du deinen <strong>Rettungskoffer</strong> bei Unverträglichkeiten: Sofortige Hilfe, kindgerechte Erklärungen und Listen für Kita & Schule. Einfach runterladen und durchatmen.</>}
+              description={<>Schluss mit Sorgen am Familientisch. Hier findest du deinen <strong>Rettungskoffer</strong> bei <strong>Unverträglichkeiten</strong>: Sofortige Hilfe, kindgerechte Erklärungen und Listen für Kita & Schule. Einfach runterladen und durchatmen.</>}
               imageUrl={essenIstFertigImage}
               linkTo="/essen-ist-fertig"
               buttonText="Pakete entdecken"
