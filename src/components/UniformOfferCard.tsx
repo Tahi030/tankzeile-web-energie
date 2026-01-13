@@ -80,11 +80,11 @@ export const UniformOfferCard = ({
         {/* Content */}
         <div className="flex-1 space-y-4">
           <div>
-            <h3 className="text-xl font-bold text-primary font-playfair">
+            <h3 className="text-xl font-bold font-playfair">
               {title}
             </h3>
             {subtitle && (
-              <p className="text-sm text-secondary font-medium mt-1">
+              <p className="text-sm text-[hsl(18_65%_60%)] font-medium mt-1">
                 {subtitle}
               </p>
             )}
@@ -95,7 +95,7 @@ export const UniformOfferCard = ({
           </p>
           
           {callToAction && (
-            <p className="text-base text-primary font-medium">
+            <p className="text-base text-[hsl(18_65%_55%)] font-medium">
               {callToAction}
             </p>
           )}
@@ -114,7 +114,7 @@ export const UniformOfferCard = ({
                     href={page.pdfUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center justify-center gap-1 bg-[hsl(25_30%_88%)] hover:bg-[hsl(25_35%_82%)] text-[hsl(25_30%_25%)] px-2 py-2 rounded text-xs font-medium transition-all duration-200 shadow-sm"
+                    className="flex items-center justify-center gap-1 bg-[hsl(18_65%_65%)] hover:bg-[hsl(18_65%_58%)] text-white px-2 py-2 rounded text-xs font-medium transition-all duration-200 shadow-sm"
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
                   >
@@ -134,7 +134,7 @@ export const UniformOfferCard = ({
                   href={link.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block bg-[hsl(25_30%_88%)] hover:bg-[hsl(25_35%_82%)] text-[hsl(25_30%_25%)] px-4 py-3 rounded-lg font-medium transition-all duration-300 text-center shadow-md hover:shadow-lg"
+                  className="block bg-[hsl(18_65%_65%)] hover:bg-[hsl(18_65%_58%)] text-white px-4 py-3 rounded-lg font-medium transition-all duration-300 text-center shadow-md hover:shadow-lg"
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                 >
@@ -150,7 +150,7 @@ export const UniformOfferCard = ({
           <div className="mt-6 pt-4">
             <motion.a 
               href={linkTo}
-              className="block text-center px-6 py-3 rounded-lg font-medium transition-all duration-300 bg-[hsl(25_30%_88%)] hover:bg-[hsl(25_35%_82%)] text-[hsl(25_30%_25%)] shadow-md hover:shadow-lg"
+              className="block text-center px-6 py-3 rounded-lg font-medium transition-all duration-300 bg-[hsl(18_65%_65%)] hover:bg-[hsl(18_65%_58%)] text-white shadow-md hover:shadow-lg"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
             >

@@ -13,39 +13,42 @@
 
 @layer base {
   :root {
-    /* Helle Apricot/Sand/Champagner Farbpalette */
+    /* Harmonische Apricot/Sand/Champagner Farbpalette - KEIN Braun */
     --background: 32 55% 96%; /* Sehr heller Champagner Hintergrund */
-    --foreground: 28 35% 28%; /* Warmes Dunkelbraun für Text - nicht zu dunkel */
+    --foreground: 220 15% 30%; /* Neutrales Dunkelgrau für Fließtext */
 
     --card: 35 60% 99%; /* Fast weiß mit warmem Unterton */
-    --card-foreground: 28 30% 30%;
+    --card-foreground: 220 15% 30%;
 
     --popover: 35 60% 99%;
-    --popover-foreground: 28 30% 30%;
+    --popover-foreground: 220 15% 30%;
 
+    /* Warmes Korall/Terracotta für Überschriften - gut lesbar, kein Braun */
+    --heading-color: 12 55% 50%; /* Warmes Korall für Überschriften */
+    
     /* Helles Apricot für Header/Footer */
-    --primary: 28 50% 85%; /* Helles weiches Apricot */
-    --primary-foreground: 28 40% 25%; /* Warmer Text */
+    --primary: 28 55% 88%; /* Helles weiches Apricot */
+    --primary-foreground: 220 15% 28%; /* Neutrales Dunkel für Text */
 
     /* Warmes Pfirsich/Apricot als Secondary */
-    --secondary: 24 60% 80%; /* Warmes Apricot/Pfirsich */
-    --secondary-foreground: 28 35% 25%;
+    --secondary: 18 65% 65%; /* Warmes Korall für Buttons */
+    --secondary-foreground: 0 0% 100%; /* Weiß auf Buttons */
 
     /* Sand/Champagne Muted Hintergründe */
     --muted: 35 50% 93%; /* Heller Sand/Champagner */
-    --muted-foreground: 28 25% 40%; /* Warmes Grau für Text */
+    --muted-foreground: 220 12% 42%; /* Neutrales Grau für Body-Text */
 
-    /* Apricot Akzent */
-    --accent: 26 55% 75%; /* Mittlerer Apricot Akzent */
-    --accent-foreground: 28 35% 22%;
+    /* Korall Akzent für Highlights */
+    --accent: 15 60% 58%; /* Mittleres Korall als Akzent */
+    --accent-foreground: 0 0% 100%; /* Weiß auf Akzent */
 
     /* Heller Champagner für Highlights */
     --blackberry: 36 55% 95%; /* Sehr heller Champagner */
-    --blackberry-foreground: 28 30% 28%;
+    --blackberry-foreground: 220 15% 30%;
     
-    /* Sand für Buttons */
-    --button-beige: 30 50% 90%; /* Warmer heller Sand */
-    --button-beige-foreground: 28 40% 25%;
+    /* Korall für Buttons - hebt sich ab */
+    --button-beige: 18 60% 62%; /* Korall für Buttons */
+    --button-beige-foreground: 0 0% 100%; /* Weiß auf Buttons */
 
     --destructive: 0 60% 50%;
     --destructive-foreground: 0 0% 100%;
@@ -53,18 +56,18 @@
     /* Weiche Sand Borders */
     --border: 32 40% 88%; /* Helle Sand Border */
     --input: 35 50% 97%; /* Sehr heller Champagner Input */
-    --ring: 26 50% 78%; /* Apricot Focus Ring */
+    --ring: 18 55% 65%; /* Korall Focus Ring */
 
     --radius: 0.5rem;
 
     --sidebar-background: 35 55% 97%;
-    --sidebar-foreground: 28 28% 30%;
-    --sidebar-primary: 28 30% 28%;
+    --sidebar-foreground: 220 12% 35%;
+    --sidebar-primary: 220 15% 30%;
     --sidebar-primary-foreground: 0 0% 98%;
     --sidebar-accent: 32 45% 94%;
-    --sidebar-accent-foreground: 28 30% 28%;
+    --sidebar-accent-foreground: 220 15% 30%;
     --sidebar-border: 32 40% 90%;
-    --sidebar-ring: 26 50% 78%;
+    --sidebar-ring: 18 55% 65%;
   }
 
   .dark {
@@ -112,6 +115,7 @@
 
   h1, h2, h3, h4, h5, h6 {
     @apply font-luckiest;
+    color: hsl(12 55% 50%); /* Warmes Korall für alle Überschriften */
   }
 }
 
@@ -234,7 +238,7 @@
   
   /* PDF Download button styles */
   .pdf-download-btn {
-    @apply inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-[hsl(30_50%_90%)] text-[hsl(28_40%_28%)] transition-all duration-300 hover:bg-[hsl(30_55%_86%)] hover:shadow-md active:scale-95 font-medium;
+    @apply inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-[hsl(18_65%_65%)] text-white transition-all duration-300 hover:bg-[hsl(18_65%_58%)] hover:shadow-md active:scale-95 font-medium;
   }
   
   /* Card hover effect */

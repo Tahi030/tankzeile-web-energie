@@ -42,7 +42,7 @@ const Index = () => {
 
               <div className="relative space-y-6">
                 <div className="text-center space-y-4">
-                  <h2 className="text-3xl font-luckiest text-primary">Hallo, ich bin Captain Apfel!</h2>
+                  <h2 className="text-3xl font-luckiest">Hallo, ich bin Captain Apfel!</h2>
 
                   <p className="text-base text-muted-foreground leading-relaxed">
                     Wusstest du, dass in jedem Kinderbauch ein Kraftwerk steckt? Die Powerzentrale ist der Motor für Energie, Konzentration und gute Laune.
@@ -93,7 +93,7 @@ const Index = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl font-bold text-primary font-luckiest mb-4">Lerne die Crew kennen</h2>
+            <h2 className="text-3xl font-bold font-luckiest mb-4">Lerne die Crew kennen</h2>
             <p className="text-base text-muted-foreground max-w-2xl mx-auto">
               Mit Mut und Wissen hält die Crew die Powerzentrale aktiv. Ganz anders Paffel: Er entschied sich für die
               verarbeitete Seite und versucht nun als ehemaliger Mais, alles auszubremsen.
@@ -114,8 +114,8 @@ const Index = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl font-bold text-primary font-luckiest mb-6">Programme für gesunde Entwicklung</h2>
-            <div className="w-24 h-1 bg-primary mx-auto rounded-full" />
+            <h2 className="text-3xl font-bold font-luckiest mb-6">Programme für gesunde Entwicklung</h2>
+            <div className="w-24 h-1 bg-[hsl(18_65%_65%)] mx-auto rounded-full" />
             <p className="text-base text-muted-foreground mt-6 max-w-2xl mx-auto">
               Workshops, Materialien und kreative Angebote für Kinder, Familien und Einrichtungen.
             </p>
