@@ -69,16 +69,16 @@ const Header = () => {
 
   // Header color - helles Apricot
   const getHeaderColor = () => {
-    return 'bg-[hsl(28_50%_85%)]';
+    return 'bg-[hsl(28_55%_88%)]';
   };
 
-  // Warmer lesbarer Text
+  // Neutrales Dunkelgrau für Text - kein Braun
   const getTextColor = () => {
-    return 'text-[hsl(28_35%_28%)]';
+    return 'text-[hsl(220_15%_30%)]';
   };
 
   const getHoverColor = () => {
-    return 'hover:bg-[hsl(28_45%_80%)]';
+    return 'hover:bg-[hsl(28_50%_82%)]';
   };
 
   return (
@@ -123,7 +123,7 @@ const Header = () => {
           <div className="md:hidden">
             <button
               type="button"
-              className="inline-flex items-center justify-center p-2 rounded-md text-[hsl(28_35%_28%)] hover:text-[hsl(28_30%_35%)] hover:bg-[hsl(28_45%_80%)]"
+              className="inline-flex items-center justify-center p-2 rounded-md text-[hsl(220_15%_30%)] hover:text-[hsl(220_15%_40%)] hover:bg-[hsl(28_50%_82%)]"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             >
               <span className="sr-only">Menü öffnen</span>
@@ -135,7 +135,7 @@ const Header = () => {
           <div className="hidden md:block">
             <Link 
               to="/kontakt"
-              className="bg-[hsl(30_50%_92%)] hover:bg-[hsl(30_55%_88%)] text-[hsl(28_40%_28%)] px-6 py-3 rounded-full transition-all duration-300 text-base font-medium whitespace-nowrap shadow-md hover:shadow-lg active:scale-95"
+              className="bg-[hsl(18_65%_65%)] hover:bg-[hsl(18_65%_58%)] text-white px-6 py-3 rounded-full transition-all duration-300 text-base font-medium whitespace-nowrap shadow-md hover:shadow-lg active:scale-95"
               onClick={() => window.scrollTo(0, 0)}
             >
               Kontakt
@@ -175,7 +175,7 @@ const Header = () => {
               Über Captain Apfel
             </Link>
             
-            <Link to="/kontakt" className="block mx-3 mt-3 px-3 py-3 bg-[hsl(30_50%_92%)] text-[hsl(28_40%_28%)] rounded-md text-base font-medium transition-all duration-300 hover:bg-[hsl(30_55%_88%)] hover:shadow-md active:scale-95" onClick={() => {setMobileMenuOpen(false); window.scrollTo(0, 0);}}>
+            <Link to="/kontakt" className="block mx-3 mt-3 px-3 py-3 bg-[hsl(18_65%_65%)] text-white rounded-md text-base font-medium transition-all duration-300 hover:bg-[hsl(18_65%_58%)] hover:shadow-md active:scale-95" onClick={() => {setMobileMenuOpen(false); window.scrollTo(0, 0);}}>
               Kontakt
             </Link>
           </div>

@@ -42,13 +42,13 @@ const WorkshopGesundeMission = () => {
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
             <div className="prose prose-lg max-w-none">
-              <div className="mt-4 mb-8 bg-primary-light p-6 rounded-lg">
+              <div className="mt-4 mb-8 bg-[hsl(18_60%_62%)] p-6 rounded-lg">
                 <p className="text-base mb-6 text-white leading-relaxed">
                   Schluss mit langweiligen Vorträgen!<br />
                   Damit Wissen hängen bleibt, wird es hier anschaulich und kindgerecht vermittelt.
                 </p>
 
-                <h2 className="text-xl font-bold mb-3 text-accent">Was Kinder erleben</h2>
+                <h2 className="text-xl font-bold mb-3 text-white">Was Kinder erleben</h2>
 
                 <p className="text-base mb-4 text-white leading-relaxed">
                   Ernährung, Bewegung und Gefühle werden hier greifbar – beim Erleben, Spielen und Staunen.
@@ -62,7 +62,7 @@ const WorkshopGesundeMission = () => {
                   <li>Was bremst mich aus?</li>
                 </ul>
 
-                <h2 className="text-xl font-bold mb-3 text-accent">Die 5 Power Level</h2>
+                <h2 className="text-xl font-bold mb-3 text-white">Die 5 Power Level</h2>
 
                 <p className="text-base mb-2 text-white">
                   <strong>1. Bewegen & Tanzen</strong> – Stärkt Körpergefühl und Motorik.
@@ -81,7 +81,7 @@ const WorkshopGesundeMission = () => {
                   Selbstvertrauen.
                 </p>
 
-                <h2 className="text-xl font-bold mb-3 text-accent">Ziel & Nutzen für Ihre Einrichtung</h2>
+                <h2 className="text-xl font-bold mb-3 text-white">Ziel & Nutzen für Ihre Einrichtung</h2>
 
                 <p className="text-base text-white leading-relaxed">
                   Ihre Einrichtung erhält im Anschluss ein Teilnahme Zertifikat. Es ist ein sichtbares Zeichen für
@@ -94,7 +94,7 @@ const WorkshopGesundeMission = () => {
             <div className="mt-12 text-center">
               <Link
                 to="/kontakt"
-                className="inline-block bg-[hsl(25_30%_88%)] text-[hsl(25_30%_25%)] px-8 py-4 rounded-full font-semibold hover:bg-[hsl(25_35%_82%)] transition-all duration-300 shadow-lg hover:shadow-xl active:scale-95"
+                className="inline-block bg-[hsl(18_65%_65%)] text-white px-8 py-4 rounded-full font-semibold hover:bg-[hsl(18_65%_58%)] transition-all duration-300 shadow-lg hover:shadow-xl active:scale-95"
               >
                 Jetzt Kita vormerken und Teil der Power-Mission werden!
               </Link>
