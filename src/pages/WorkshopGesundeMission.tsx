@@ -70,12 +70,12 @@ const WorkshopGesundeMission = () => {
                   Ernährung, Bewegung und Gefühle werden hier greifbar – beim Erleben, Spielen und Staunen.
                 </p>
 
-                <p className="text-base mb-2 text-foreground font-semibold">Sie erforschen:</p>
+                <p className="text-base mb-2 text-foreground font-semibold">Erforscht wird:</p>
                 <ul className="text-base mb-6 text-muted-foreground list-disc list-inside space-y-1 ml-2">
-                  <li>Wie viel Obst und Gemüse braucht mein Körper?</li>
-                  <li>Wie viel Zucker steckt in Cola & Co.?</li>
-                  <li>Was bringt meine Powerzentrale zum Leuchten?</li>
-                  <li>Was bremst mich aus?</li>
+                  <li><strong className="text-foreground">Der richtige Treibstoff:</strong> Wie viel Obst und Gemüse braucht das Raumschiff wirklich?</li>
+                  <li><strong className="text-foreground">Die Paffel-Falle:</strong> Wie viel Zucker versteckt sich in Cola & Co.?</li>
+                  <li><strong className="text-foreground">Das Geheimnis der Powerzentrale (Darm):</strong> Was bringt den Körper von innen zum Leuchten?</li>
+                  <li><strong className="text-foreground">Die Bremse:</strong> Was verklebt die Energie und bremst aus?</li>
                 </ul>
 
                 <h2 className="text-xl font-bold mb-3 text-[hsl(12_55%_50%)] font-luckiest">Die 5 Power Level</h2>
@@ -93,17 +93,20 @@ const WorkshopGesundeMission = () => {
                   <strong className="text-foreground">4. Mitmachen & Vorbereiten</strong> – Vermittelt Verantwortung und Selbstwirksamkeit.
                 </p>
                 <p className="text-base mb-6 text-muted-foreground">
-                  <strong className="text-foreground">5. Probieren & Genießen</strong> – Öffnet neue Geschmackserlebnisse und stärkt das
-                  Selbstvertrauen.
+                  <strong className="text-foreground">5. Probieren & Genießen</strong> – Öffnet neue Geschmackserlebnisse und stärkt das Selbstvertrauen.
                 </p>
 
-                <h2 className="text-xl font-bold mb-3 text-[hsl(12_55%_50%)] font-luckiest">Ziel & Nutzen für Ihre Einrichtung</h2>
+                <h2 className="text-xl font-bold mb-3 text-[hsl(12_55%_50%)] font-luckiest">Ziel & Nutzen für die Einrichtung</h2>
 
-                <p className="text-base text-muted-foreground leading-relaxed">
-                  Ihre Einrichtung erhält im Anschluss ein Teilnahme Zertifikat. Es ist ein sichtbares Zeichen für
-                  gelebte Prävention und ganzheitliche Gesundheitsförderung. Ideal für den Eingangsbereich oder das Team
-                  Portfolio.
+                <p className="text-base mb-4 text-muted-foreground leading-relaxed">
+                  Die Einrichtung erhält im Anschluss das Zertifikat "Captain Apfel Powercrew". Es dient als sichtbares Zeichen für gelebte Prävention und ganzheitliche Gesundheitsförderung – ideal für den Eingangsbereich oder das Team-Portfolio.
                 </p>
+
+                <p className="text-base mb-2 text-foreground font-semibold">Besonderer Mehrwert:</p>
+                <ul className="text-base mb-6 text-muted-foreground list-disc list-inside space-y-1 ml-2">
+                  <li><strong className="text-foreground">Walk of Fame:</strong> Auf Wunsch erfolgt die Aufnahme als Vorbild-Einrichtung auf der Website.</li>
+                  <li><strong className="text-foreground">Jährlich verlängerbar:</strong> Das Siegel kann jährlich aktualisiert werden, um das dauerhafte Engagement nach außen sichtbar zu machen.</li>
+                </ul>
               </div>
             </div>
 
@@ -112,7 +115,7 @@ const WorkshopGesundeMission = () => {
                 to="/kontakt"
                 className="inline-block bg-[hsl(18_65%_65%)] text-white px-8 py-4 rounded-full font-semibold hover:bg-[hsl(18_65%_58%)] transition-all duration-300 shadow-lg hover:shadow-xl active:scale-95"
               >
-                Jetzt Kita vormerken und Teil der Power-Mission werden!
+                Jetzt Einrichtung vormerken und Teil der Power-Mission werden!
               </Link>
             </div>
 
