@@ -46,11 +46,15 @@ const Index = () => {
                   <h2 className="text-3xl font-luckiest">Hallo, ich bin Captain Apfel!</h2>
 
                   <p className="text-base text-muted-foreground leading-relaxed">
-                    Wusstest du, dass in jedem Kinderbauch ein Kraftwerk steckt? Die Powerzentrale ist der Motor für Energie, Konzentration und gute Laune.
+                    Wusstest du, dass die wichtigste Schaltzentrale für Gesundheit im Bauch steckt?
+                    Wir nennen sie Powerzentrale. Ärzte nennen sie Darm.
+                    Sie ist der Sitz von 80% unseres Immunsystems und entscheidet über Energie, Konzentration und Laune.
                   </p>
 
                   <p className="text-base text-muted-foreground leading-relaxed">
-                    Meine Crew und ich sind auf gesunder Mission, um genau dieses Kraftwerk zu aktivieren. Kinder lernen hier, was sie stark macht – mit Spaß, Bewegung und Wissen, das hängen bleibt.
+                    Meine Crew und ich sind auf einer Mission: Wir bringen Kindern bei, wie sie dieses High-Tech-System warten. Anders als bei Standard-Programmen lernen Kinder hier nicht nur "Obst ist gesund", sondern verstehen das Warum:
+                    Was bringt meine innere Crew (die guten Bakterien) zum Leuchten?
+                    Und was verklebt mein System?
                   </p>
                 </div>
 
@@ -60,17 +64,12 @@ const Index = () => {
                     <li>
                       <strong className="text-foreground">Reise zur Powerzentrale:</strong>
                       <br />
-                      Der Erlebnis-Workshop voller Bewegung & Wissen. Startet ab Frühjahr 2026 in Berliner Kitas (Vorschule), Familienzentren und Grundschulen (Klasse 1 & 2).
+                      Der Workshop, der tiefer geht. Wir erleben, wie "Paffel" (verarbeitete Nahrung) uns ausbremst und wie wir uns wieder freischaufeln. (Startet ab Frühjahr 2026).
                     </li>
                     <li>
-                      <strong className="text-foreground">Essen ist fertig!</strong>
+                      <strong className="text-foreground">Essen ist fertig!:</strong>
                       <br />
-                      Der Rettungskoffer bei Nahrungsunverträglichkeiten: Soforthilfe-Pakete zum Downloaden für Eltern & Betreuer.
-                    </li>
-                    <li>
-                      <strong className="text-foreground">Powercrew des Jahres:</strong>
-                      <br />
-                      Der Walk of Fame: Die Auszeichnung für engagierte Kitas und Einrichtungen, die den Workshop durchgeführt und die Powerzentrale ihrer Kinder gestärkt haben.
+                      Soforthilfe-Pakete bei Unverträglichkeiten – damit der Bauch zur Ruhe kommt.
                     </li>
                   </ul>
                 </div>
