@@ -38,34 +38,28 @@ const HinterCaptainApfel = () => {
           >
             <div className="content-spacing">
               <p className="text-base leading-relaxed text-muted-foreground">
-                Ich bin <em>Tamara Hillmann</em>, Gründerin und kreativer Kopf hinter{" "}
-                <strong>Captain Apfel</strong>. Ursprünglich komme ich aus der
-                Organisations- und Projektarbeit – und genau diese Erfahrung nutze ich
-                heute, um Gesundheitsprojekte professionell und mit Struktur umzusetzen.
+                Ich bin <em>Tamara Hillmann</em>, der Kopf und das Herz hinter{" "}
+                <strong>Captain Apfel</strong>. Ich komme ursprünglich aus dem Projektmanagement. Diese Erfahrung nutze ich heute, um Gesundheitsprojekte in Einrichtungen entspannt und strukturiert umzusetzen.
               </p>
 
               <p className="text-base leading-relaxed text-muted-foreground">
-                Mit der Zeit rückte ein Thema immer stärker in den Mittelpunkt: gesunde
-                Ernährung und Unverträglichkeiten bei Kindern. Aus eigener Betroffenheit
-                und stetiger Weiterbildung in Naturheilkunde entstand die Idee, Wissen
-                und Alltagspraxis zu verbinden.
+                Mein Herzensthema ist gesunde Ernährung bei Unverträglichkeiten. Ich weiß aus eigener Erfahrung, wie wichtig das richtige Bauchgefühl ist. Deshalb reicht mir Standardwissen nicht aus. Ich möchte Kindern zeigen, was ihrem Körper gut tut.
               </p>
 
               <p className="text-base leading-relaxed text-muted-foreground">
-                Ich bilde mich regelmäßig in den Bereichen Ernährung, Naturheilkunde und
-                Kindergesundheit weiter, um neue Erkenntnisse in meine Arbeit einfließen
-                zu lassen.
+                Gesundheit ist individuell. Ein Apfel ist gesund, aber nicht für jeden Bauch. Genau diese Tiefe fehlte mir oft. Mich fasziniert das große Ganze: Wie spielen Ernährung, Entzündungen und Wohlbefinden zusammen? Ich möchte verstehen, wie unser Körper als System funktioniert – und dieses Wissen kindgerecht weitergeben.
+              </p>
+
+              <p className="text-base leading-relaxed text-muted-foreground font-semibold text-foreground">
+                Mein Fundament:
               </p>
 
               <p className="text-base leading-relaxed text-muted-foreground">
-                So wurde <strong>Captain Apfel</strong> geboren: eine Initiative, die
-                Kinder mit Freude an das Thema Wohlbefinden heranführt und Kitas
-                praktische Werkzeuge an die Hand gibt.
+                Ich bilde mich stetig weiter. Aktuell vertiefe ich mein Verständnis für ganzheitliche Zusammenhänge im Selbststudium zur Fachberaterin für holistische Gesundheit an der Akademie der Naturheilkunde. Dabei stehen Entzündungsprozesse und Darmgesundheit im Fokus. Parallel nutze ich pädagogische Weiterbildungen von Indipead, um Methodenkompetenz zu stärken. Nachweise zeige ich auf Anfrage gerne vor.
               </p>
 
               <p className="text-base leading-relaxed text-muted-foreground">
-                Ich entwickle Workshops, Materialien und Impulse, die Gesundheit spürbar
-                machen – mit Herz, Verstand und einer großen Portion Begeisterung.
+                <strong>Captain Apfel</strong> ist meine Antwort für alle, die Gesundheit spürbar machen wollen. Mit Verstand, Begeisterung und ganz viel Herz.
               </p>
 
               <p className="text-base leading-relaxed text-muted-foreground mt-8">
