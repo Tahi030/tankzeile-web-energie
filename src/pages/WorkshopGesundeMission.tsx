@@ -19,9 +19,9 @@ const WorkshopGesundeMission = () => {
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-foreground font-luckiest">
               Reise zur Powerzentrale
             </h1>
-            <p className="text-xl text-muted-foreground mb-2">Erlebnisworkshop Ernährung & Bewegung</p>
+            <p className="text-xl text-muted-foreground mb-2">Das Abenteuer für mehr Bauchgefühl & Gesundheit</p>
             <p className="text-lg text-muted-foreground/80">
-              Kitas (Vorschule), Familienzentren
+              Für Familienzentren, Eltern-Kind-Gruppen & Kitas
             </p>
           </div>
         </div>
