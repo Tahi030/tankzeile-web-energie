@@ -138,9 +138,9 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             <UniformOfferCard
               title="Reise zur Powerzentrale"
-              subtitle="Start: Frühjahr 2026"
-              description="Mit Captain Apfel erleben Kinder ein spannendes Abenteuer: Wie kommt Energie in den Körper, was macht uns stark und konzentriert – und wie bleibt die Powerzentrale hell und aktiv?"
-              callToAction="Bald landet Captain Apfel auch in deiner Kita!"
+              subtitle="und ab mit Captain Apfel"
+              description="Ob Familienzentrum, Eltern-Kind-Gruppe oder Kita: Wir holen die Powerzentrale dorthin, wo Kinder spielen und lernen. Starten Sie jetzt die Mission für mehr Gesundheit und ein gutes Bauchgefühl."
+              callToAction="Bald landet Captain Apfel auch in Ihrer Einrichtung!"
               imageUrl="/assets/hero-crew.png"
               linkTo="/kontakt"
               buttonText="Vormerken lassen"
