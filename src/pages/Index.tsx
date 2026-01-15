@@ -64,7 +64,20 @@ const Index = () => {
                     <li>
                       <strong className="text-foreground">Reise zur Powerzentrale:</strong>
                       <br />
-                      Der Workshop, der tiefer geht. Wir erleben, wie "Paffel" (verarbeitete Nahrung) uns ausbremst und wie wir uns wieder freischaufeln. (Startet ab Frühjahr 2026).
+                      Der Erlebnis-Workshop voller Bewegung & Wissen.
+                      <br />
+                      Startet ab Frühjahr 2026 in Berlin & Umgebung.
+                      <br /><br />
+                      <span className="font-medium text-foreground">Mein Angebot für:</span>
+                      <br />
+                      • Familienzentren & Eltern-Kind-Gruppen
+                      <br />
+                      • Kitas & Vorschulen
+                      <br /><br />
+                      <span className="font-medium text-foreground">Was mich besonders macht:</span>
+                      <br />
+                      Ich biete Handwerk statt Fließband.
+                      Hier gibt es kein starres Standard-Programm von der Stange, sondern eine Mission mit Herzblut. Als Gründerin stehe ich für direkten Kontakt, kurze Wege und eine Durchführung, die spürbar auf die Bedürfnisse Ihrer Kinder eingeht. Persönlich, flexibel und auf Augenhöhe.
                     </li>
                     <li>
                       <strong className="text-foreground">Essen ist fertig!:</strong>
