@@ -176,7 +176,7 @@ const Index = () => {
 
             <UniformOfferCard
               title="Mission Buntstift"
-              description="Jetzt heißt es: Stifte raus und los! Hier warten Ausmalbilder und kleine Kreativaufgaben mit Captain Apfel und seiner Crew – ideal für Kinder zuhause oder in der Kita."
+              description="Jetzt heißt es: Stifte raus und los! Hier warten Ausmalbilder mit Captain Apfel und seiner Crew zum Herunterladen – ideal für eine kreative Pause zuhause oder in der Kita."
               imageUrl={missionBuntstiftImage}
               imageClassName="h-56 sm:h-64 object-cover object-[50%_20%]"
               coloringPages={[
