@@ -142,7 +142,7 @@ const Index = () => {
               buttonText="Vormerken lassen"
               accent="primary"
               delay={0.1}
-              imageClassName="h-48 object-contain"
+              imageClassName="h-48 object-cover"
             />
 
             <UniformOfferCard
@@ -164,7 +164,7 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             <UniformOfferCard
               title="Mitmach-Lied Video"
-              description="Das Mitmach-Lied lädt zum Tanzen, Singen und Spaßhaben ein. Beweg dich mit Captain Apfel und seiner Crew – volle Obst- und Gemüsekraft voraus!"
+              description="Das Mitmach-Lied lädt zum Tanzen, Singen und Spaßhaben ein. Bewegung mit Captain Apfel und seiner Crew – volle Obst- und Gemüsekraft voraus!"
               imageUrl="/assets/mitmach-lied-thumbnail.jpg"
               youtubeLink="https://www.youtube.com/watch?v=yXku9Q91tmY"
               downloadLinks={[
@@ -176,7 +176,7 @@ const Index = () => {
 
             <UniformOfferCard
               title="Mission Buntstift"
-              description="Jetzt bist du dran: Stifte raus und los! Hier findest du Ausmalbilder und kleine Kreativaufgaben mit Captain Apfel und seiner Crew – ideal für Kinder zuhause oder in der Kita."
+              description="Jetzt heißt es: Stifte raus und los! Hier warten Ausmalbilder und kleine Kreativaufgaben mit Captain Apfel und seiner Crew – ideal für Kinder zuhause oder in der Kita."
               imageUrl={missionBuntstiftImage}
               coloringPages={[
                 { imageUrl: "/images/paffel-ausmalbild-thumb.jpg", pdfUrl: "/pdfs/paffel-ausmalbild-v4.pdf" },
