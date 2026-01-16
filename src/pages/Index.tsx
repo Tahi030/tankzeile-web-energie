@@ -135,8 +135,8 @@ const Index = () => {
             <UniformOfferCard
               title="Reise zur Powerzentrale"
               subtitle="Start: Frühjahr 2026"
-              description="Ob Familienzentrum, Eltern-Kind-Gruppe oder Kita: Wir holen die Powerzentrale dorthin, wo Kinder spielen und lernen. Starten Sie jetzt die Mission für mehr Gesundheit und ein gutes Bauchgefühl."
-              callToAction="Bald landet Captain Apfel auch in Ihrer Einrichtung!"
+              description="Ob Familienzentrum, Eltern-Kind-Gruppe oder Kita: Die Powerzentrale kommt dorthin, wo Kinder spielen und lernen. Jetzt startet die Mission für mehr Gesundheit und ein gutes Bauchgefühl."
+              callToAction="Bald landet Captain Apfel direkt vor Ort!"
               imageUrl="/assets/hero-crew.png"
               linkTo="/kontakt"
               buttonText="Vormerken lassen"
@@ -146,7 +146,7 @@ const Index = () => {
 
             <UniformOfferCard
               title="Essen ist fertig!"
-              description={<>Schluss mit Sorgen am Familientisch. Hier findest du deinen <strong>Rettungskoffer</strong> bei <strong>Unverträglichkeiten</strong>: Sofortige Hilfe, kindgerechte Erklärungen und Listen für Kita & Schule. Einfach runterladen und durchatmen.</>}
+              description={<>Schluss mit Sorgen am Familientisch. Hier wartet der <strong>Rettungskoffer bei Unverträglichkeiten</strong>: Sofortige Hilfe, kindgerechte Erklärungen und Listen für Kita &amp; Schule. Einfach runterladen und durchatmen.</>}
               imageUrl={essenIstFertigImage}
               linkTo="/essen-ist-fertig"
               buttonText="Pakete entdecken"
