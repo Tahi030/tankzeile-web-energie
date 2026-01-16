@@ -178,7 +178,7 @@ const Index = () => {
               title="Mission Buntstift"
               description="Jetzt heißt es: Stifte raus und los! Hier warten Ausmalbilder und kleine Kreativaufgaben mit Captain Apfel und seiner Crew – ideal für Kinder zuhause oder in der Kita."
               imageUrl={missionBuntstiftImage}
-              imageClassName="h-48 object-cover object-top"
+              imageClassName="h-48 object-cover object-bottom"
               coloringPages={[
                 { imageUrl: "/images/paffel-ausmalbild-thumb.jpg", pdfUrl: "/pdfs/paffel-ausmalbild-v4.pdf" },
                 {
