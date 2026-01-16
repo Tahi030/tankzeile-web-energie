@@ -1,6 +1,6 @@
 
 import { Link, useLocation } from "react-router-dom";
-import { Instagram, Linkedin } from "lucide-react";
+import { Instagram } from "lucide-react";
 
 const Footer = () => {
   const location = useLocation();
@@ -44,12 +44,9 @@ const Footer = () => {
                 <p className="font-medium">Tamara Hillmann</p>
                 <p className="mt-2">Email: <a href="mailto:kontakt@captain-apfel.de" className="underline hover:text-[hsl(18_65%_55%)] transition-all duration-200 active:scale-95 inline-block">kontakt@captain-apfel.de</a></p>
                 <p>Tel.: <a href="tel:+4915206339474" className="underline hover:text-[hsl(18_65%_55%)] transition-all duration-200 active:scale-95 inline-block">+49 152 06339474</a></p>
-                <div className="mt-4 flex space-x-4">
-                  <a href="https://www.instagram.com/tankzeile?igsh=cjFxdDNrbXNvYnFk" target="_blank" rel="noopener noreferrer" className="hover:text-[hsl(18_65%_55%)] hover:scale-110 transition-all duration-200 active:scale-95">
+                <div className="mt-4">
+                  <a href="https://www.instagram.com/captain.apfel/" target="_blank" rel="noopener noreferrer" className="hover:text-[hsl(18_65%_55%)] hover:scale-110 transition-all duration-200 active:scale-95 inline-block">
                     <Instagram size={24} />
-                  </a>
-                  <a href="https://www.linkedin.com/in/tamara-hillmann" target="_blank" rel="noopener noreferrer" className="hover:text-[hsl(18_65%_55%)] hover:scale-110 transition-all duration-200 active:scale-95">
-                    <Linkedin size={24} />
                   </a>
                 </div>
               </address>
