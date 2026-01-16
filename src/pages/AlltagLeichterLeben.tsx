@@ -60,15 +60,19 @@ const AlltagLeichterLeben = () => {
               </div>
               <div>
                 <h2 className="text-lg md:text-xl font-bold mb-4 text-[hsl(12_55%_50%)]">
-                  Unsere Pioniere 2025: Kita Dreikäsehoch, Berlin-Köpenick
+                  Unsere ersten Helden: Die Pioniere der Powercrew
                 </h2>
-                <p className="body-base text-muted-foreground">
-                  Im Dezember erhält die humanistische Kita Dreikäsehoch in Berlin-Köpenick den Titel „Powercrew". Hier wird mit Kopf, Herz und Hand gearbeitet: Als Ackerkita lernen die Kinder direkt im
-                  Garten, woher ihr Essen kommt – vom Samen bis zur Ernte. Eine eigene Köchin kocht täglich frisch für
-                  die Kinder, statt auf angelieferte Standardkost zu setzen. Dabei steht jedes Kind mit seinen
-                  Bedürfnissen im Mittelpunkt: Inklusion und Teilhabe werden im Alltag gelebt, ob beim gemeinsamen
-                  Essen, Spielen oder Entdecken im großen Außengelände. Dieses Team zeigt jeden Tag, wie gelebte
-                  Wertschätzung, gesunde Ernährung und Naturerfahrung Hand in Hand gehen. Als allererste ausgezeichnete Crew haben sie den Grundstein gelegt. Danke für euren täglichen Einsatz und dass ihr als Vorbild vorangeht!
+                <p className="body-base text-muted-foreground mb-4">
+                  Die Kita Dreikäsehoch in Berlin-Köpenick hat im Dezember 2025 den Anfang gemacht und sich als allererste Einrichtung den Titel „Powercrew" verdient.
+                </p>
+                <p className="body-base text-muted-foreground mb-4">
+                  Hier wird Inklusion gelebt: Als Ackerkita verstehen die Kinder, woher das Essen kommt, und die hauseigene Küche sorgt dafür, dass jedes Kind – ob mit oder ohne Unverträglichkeit – satt und glücklich wird.
+                </p>
+                <p className="body-base text-muted-foreground mb-4">
+                  Danke an dieses großartige Team für euren Mut, als Vorbild voranzugehen! Ihr seid der Startschuss für unsere wachsende Gemeinschaft.
+                </p>
+                <p className="body-base text-muted-foreground font-medium">
+                  Du willst mit deiner Einrichtung auch Teil der Powercrew werden? Buche den Workshop und werde sichtbar!
                 </p>
               </div>
             </div>
