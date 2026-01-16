@@ -46,15 +46,14 @@ const Index = () => {
                   <h2 className="text-3xl font-luckiest">Hallo, ich bin Captain Apfel!</h2>
 
                   <p className="text-base text-muted-foreground leading-relaxed">
-                    Wusstest du, dass die wichtigste Schaltzentrale für Gesundheit im Bauch steckt?
-                    Wir nennen sie Powerzentrale. Ärzte nennen sie Darm.
-                    Sie ist der Sitz von 80% unseres Immunsystems und entscheidet über Energie, Konzentration und Laune.
+                    Wusstest du, dass in jedem Kinderbauch ein Kraftwerk steckt?
+                    Meine Crew und ich nennen es die Powerzentrale (den Darm). Hier sitzen 80% unseres Immunsystems – der Motor für Energie, Konzentration und gute Laune.
                   </p>
 
                   <p className="text-base text-muted-foreground leading-relaxed">
-                    Meine Crew und ich sind auf einer Mission: Wir bringen Kindern bei, wie sie dieses High-Tech-System warten. Anders als bei Standard-Programmen lernen Kinder hier nicht nur "Obst ist gesund", sondern verstehen das Warum:
-                    Was bringt meine innere Crew (die guten Bakterien) zum Leuchten?
-                    Und was verklebt mein System?
+                    Unsere Mission ist klar: Wir zeigen Kindern, wie sie ihren Antrieb richtig pflegen.
+                    Statt nur zu hören "Obst ist gesund", erleben wir das Warum:
+                    Was bringt die Powerzentrale zum Leuchten? Und wer ist dieser "Paffel", der unser System verkleben will?
                   </p>
                 </div>
 
@@ -62,29 +61,29 @@ const Index = () => {
                   <p className="text-base font-semibold text-foreground text-center">Hier findest du:</p>
                   <ul className="text-base leading-relaxed text-muted-foreground space-y-3 text-left max-w-2xl mx-auto">
                     <li>
-                      <strong className="text-foreground">Reise zur Powerzentrale:</strong>
+                      <strong className="text-foreground">Reise zur Powerzentrale</strong>
                       <br />
-                      Der Erlebnis-Workshop voller Bewegung & Wissen.
+                      Der Erlebnis-Workshop für Familienzentren & Kitas.
                       <br />
                       Startet ab Frühjahr 2026 in Berlin & Umgebung.
-                      <br /><br />
-                      <span className="font-medium text-foreground">Mein Angebot für:</span>
-                      <br />
-                      • Familienzentren & Eltern-Kind-Gruppen
-                      <br />
-                      • Kitas & Vorschulen
-                      <br /><br />
-                      <span className="font-medium text-foreground">Was mich besonders macht:</span>
-                      <br />
-                      Ich biete Handwerk statt Fließband.
-                      Hier gibt es kein starres Standard-Programm von der Stange, sondern eine Mission mit Herzblut. Als Gründerin stehe ich für direkten Kontakt, kurze Wege und eine Durchführung, die spürbar auf die Bedürfnisse Ihrer Kinder eingeht. Persönlich, flexibel und auf Augenhöhe.
                     </li>
                     <li>
-                      <strong className="text-foreground">Essen ist fertig!:</strong>
+                      <strong className="text-foreground">Essen ist fertig!</strong>
                       <br />
-                      Soforthilfe-Pakete bei Unverträglichkeiten – damit der Bauch zur Ruhe kommt.
+                      Die bewährte Soforthilfe für zu Hause.
+                      <br />
+                      Unsere beliebten Pakete bei Unverträglichkeiten geben Eltern Sicherheit und sorgen dafür, dass der Bauch endlich zur Ruhe kommt.
                     </li>
                   </ul>
+                </div>
+
+                <div className="space-y-4 border-t border-primary/10 pt-6">
+                  <p className="text-base font-semibold text-foreground text-center">Was mich besonders macht:</p>
+                  <p className="text-base text-muted-foreground leading-relaxed text-center">
+                    Kurze Wege, minimale Vorbereitung.
+                    <br />
+                    Sie haben hier kein anonymes Großprojekt vor sich. Das bedeutet für Sie: Kein Einkaufsstress und keine endlosen To-Dos für Ihr Team. Ich halte die Organisation bewusst schlank, damit Sie sich ganz auf die Kinder konzentrieren können. Persönlich, greifbar und verlässlich.
+                  </p>
                 </div>
 
                 <p className="text-base text-muted-foreground leading-relaxed text-center italic border-t border-primary/10 pt-6">
