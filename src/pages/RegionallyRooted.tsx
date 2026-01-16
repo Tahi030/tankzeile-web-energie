@@ -21,34 +21,19 @@ const RegionallyRooted = () => {
             <div className="bg-card/80 backdrop-blur-sm rounded-3xl p-6 md:p-10 lg:p-12 shadow-lg border border-border/20">
               <div className="prose prose-lg max-w-none text-foreground">
                 <p className="text-base mb-6 leading-relaxed text-muted-foreground">
-                  Wusstest du, dass im Alten Land auf dem Herzapfelhof ein Baum steht, der den Namen Captain Apfel
-                  trägt?
+                  Ein besonderes Detail im Alten Land: Auf dem Herzapfelhof steht tatsächlich ein Baum, der den Namen Captain Apfel trägt.
                 </p>
 
                 <p className="text-base mb-6 leading-relaxed text-muted-foreground">
-                  Captain Apfel ist Pate dieses Baumes – eine Baumpatenschaft, die zeigt, wie eng das Projekt mit
-                  Regionalität, Nachhaltigkeit und Natur verbunden ist.
+                  Captain Apfel ist Pate dieses Baumes – eine Patenschaft, die zeigt, wie eng das Projekt mit Regionalität, Nachhaltigkeit und Natur verbunden ist. Denn Obst, Gemüse oder Getreide sind nicht einfach nur satt machende Dinge – dahinter sollte Qualität, Sorgfalt und Bewusstsein stecken. Captain Apfel soll zeigen, dass gesunde Gewohnheiten Freude machen können und ihren Platz im Alltag finden dürfen.
                 </p>
 
                 <p className="text-base mb-6 leading-relaxed text-muted-foreground">
-                  Denn Obst, Gemüse oder Getreide sind nicht einfach nur satt machende Dinge – dahinter sollte Qualität,
-                  Sorgfalt und Bewusstsein stecken. Captain Apfel soll zeigen, dass gesunde Gewohnheiten Freude machen
-                  können und ihren Platz im Alltag finden dürfen.
-                </p>
-
-                <p className="text-base mb-6 leading-relaxed text-muted-foreground">
-                  Apropos Platz: Captain Apfels Baum steht in Reihe 2, Baum 122.
-                </p>
-
-                <p className="text-base mb-6 leading-relaxed text-muted-foreground">
-                  Jemand erzählte mir, die 2 stehe für Balance und Vertrauen, die 1 für Neubeginn und die 22 dafür, dass
-                  große Ideen wahr werden dürfen. Für mich ist das ein schönes Zeichen, dass Captain Apfel und seine
-                  Crew auf dem richtigen Weg sind.
+                  Apropos Platz: Captain Apfels Baum steht in Reihe 2, Baum 122. Man sagt, die 2 stehe für Balance und Vertrauen, die 1 für Neubeginn und die 22 dafür, dass große Ideen wahr werden dürfen. Für mich ist das ein schönes Zeichen, dass Captain Apfel und seine Crew auf dem richtigen Weg sind.
                 </p>
 
                 <p className="text-base mb-10 leading-relaxed text-muted-foreground">
-                  Und falls du einmal am Herzapfelhof vorbeikommst: Besuch den Baum gerne und teile ein Foto auf
-                  Instagram mit #captain.apfel – darüber würde ich mich sehr freuen.
+                  Wer einmal am Herzapfelhof vorbeikommt: Ein Besuch beim Baum ist jederzeit willkommen! Über ein Foto auf Instagram mit #captain.apfel würde ich mich sehr freuen.
                 </p>
 
                 {/* Bilder Section - Urkunde prominent, andere harmonisch */}
