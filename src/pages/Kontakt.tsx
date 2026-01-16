@@ -34,7 +34,7 @@ const Kontakt = () => {
               
               <div className="space-y-4 mb-8">
                 <div>
-                  <h3 className="font-medium mb-1 text-primary">Tamara Hillmann</h3>
+                  <h3 className="font-medium mb-1">Tamara Hillmann</h3>
                   <p className="text-muted-foreground mb-3">Gründerin & kreative Leitung</p>
                   <h3 className="font-medium mb-1">E-Mail:</h3>
                   <p><a href="mailto:kontakt@captain-apfel.de" className="text-primary-dark hover:underline">kontakt@captain-apfel.de</a></p>
