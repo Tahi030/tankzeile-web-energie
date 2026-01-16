@@ -32,8 +32,11 @@ const AlltagLeichterLeben = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            <p className="body-lg text-muted-foreground max-w-3xl mx-auto mb-6">
-              Der Walk of Fame: Hier werden Kitas und Einrichtungen sichtbar, die sich besonders für die Gesundheit der Kinder stark machen.
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-foreground font-luckiest">
+              The Walk of Fame
+            </h1>
+            <p className="text-lg md:text-xl text-primary font-medium max-w-3xl mx-auto mb-6">
+              Hier werden Kitas und Einrichtungen sichtbar, die sich besonders für die Gesundheit der Kinder stark machen.
             </p>
             <p className="body-base text-muted-foreground max-w-3xl mx-auto">
               Mit der Auszeichnung „Powercrew" bedankt sich Captain Apfel bei den Menschen, die jeden Tag Großes leisten. Pädagogische Fachkräfte sind oft unsichtbare Helden. Hier bekommen sie die Bühne, die sie verdienen.
