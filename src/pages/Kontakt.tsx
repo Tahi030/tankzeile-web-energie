@@ -1,6 +1,6 @@
 
 import { useEffect } from "react";
-import { Facebook, Instagram, Youtube, Linkedin } from "lucide-react";
+import { Instagram } from "lucide-react";
 
 const Kontakt = () => {
   useEffect(() => {
@@ -34,7 +34,7 @@ const Kontakt = () => {
               
               <div className="space-y-4 mb-8">
                 <div>
-                  <p className="font-medium mb-1">Tamara Hillmann</p>
+                  <p className="font-medium mb-1 text-primary">Tamara Hillmann</p>
                   <p className="text-muted-foreground mb-3">Gründerin & kreative Leitung</p>
                   <h3 className="font-medium mb-1">E-Mail:</h3>
                   <p><a href="mailto:kontakt@captain-apfel.de" className="text-primary-dark hover:underline">kontakt@captain-apfel.de</a></p>
@@ -46,20 +46,10 @@ const Kontakt = () => {
                 </div>
               </div>
               
-              <h2 className="text-2xl font-semibold mb-6">Verbinde dich mit mir</h2>
-              <div className="flex justify-start space-x-4">
-                {/* Social media icons */}
-                <a href="#" className="w-10 h-10 bg-[hsl(25_30%_88%)] rounded-full flex items-center justify-center text-[hsl(25_30%_25%)] hover:bg-[hsl(25_35%_82%)] transition-all duration-300 shadow-md hover:shadow-lg">
-                  <Facebook size={20} />
-                </a>
-                <a href="#" className="w-10 h-10 bg-[hsl(25_30%_88%)] rounded-full flex items-center justify-center text-[hsl(25_30%_25%)] hover:bg-[hsl(25_35%_82%)] transition-all duration-300 shadow-md hover:shadow-lg">
+              <h2 className="text-2xl font-semibold mb-6">Auch hier zu finden</h2>
+              <div className="flex justify-start">
+                <a href="https://www.instagram.com/captain.apfel/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-[hsl(25_30%_88%)] rounded-full flex items-center justify-center text-[hsl(25_30%_25%)] hover:bg-[hsl(25_35%_82%)] transition-all duration-300 shadow-md hover:shadow-lg">
                   <Instagram size={20} />
-                </a>
-                <a href="#" className="w-10 h-10 bg-[hsl(25_30%_88%)] rounded-full flex items-center justify-center text-[hsl(25_30%_25%)] hover:bg-[hsl(25_35%_82%)] transition-all duration-300 shadow-md hover:shadow-lg">
-                  <Youtube size={20} />
-                </a>
-                <a href="#" className="w-10 h-10 bg-[hsl(25_30%_88%)] rounded-full flex items-center justify-center text-[hsl(25_30%_25%)] hover:bg-[hsl(25_35%_82%)] transition-all duration-300 shadow-md hover:shadow-lg">
-                  <Linkedin size={20} />
                 </a>
               </div>
             </div>
