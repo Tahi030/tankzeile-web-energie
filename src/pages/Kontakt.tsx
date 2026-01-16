@@ -14,9 +14,9 @@ const Kontakt = () => {
       <section className="pt-8 pb-12 md:pt-12 md:pb-16">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-foreground font-luckiest">So erreichst du mich</h1>
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-foreground font-luckiest">Ich freue mich über jede Nachricht!</h1>
             <p className="text-lg text-muted-foreground mb-4">
-              Ich freue mich über jede Nachricht! Gibt es Fragen, Anregungen oder Interesse, mehr über die Angebote zu erfahren?
+              Gibt es Fragen, Anregungen oder Interesse, mehr über die Angebote zu erfahren?
             </p>
             <p className="text-lg text-muted-foreground">
               Hier ist auch der richtige Ort, um Workshops direkt zu buchen oder sich für den Start im Frühjahr 2026 vormerken zu lassen.
