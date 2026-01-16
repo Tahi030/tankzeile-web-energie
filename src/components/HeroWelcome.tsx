@@ -52,23 +52,21 @@ export const HeroWelcome = () => {
                   auf gesunder Mission
                 </p>
                 <div className="pt-4 sm:pt-6 space-y-2 sm:space-y-3 border-t-2 border-[hsl(12_55%_50%)]/20 mt-4">
-                  <p className="text-lg sm:text-xl md:text-2xl font-bold text-foreground leading-snug">
-                    Starke Kids, entspannte{" "}
-                    <span className="inline-block relative min-w-[140px] sm:min-w-[180px] md:min-w-[220px] text-left">
-                      <AnimatePresence mode="wait">
-                        <motion.span
-                          key={currentIndex}
-                          initial={{ opacity: 0, y: 20 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          exit={{ opacity: 0, y: -20 }}
-                          transition={{ duration: 0.4, ease: "easeInOut" }}
-                          className="inline-block text-[hsl(18_65%_55%)]"
-                        >
-                          {rotatingWords[currentIndex]}
-                        </motion.span>
-                      </AnimatePresence>
-                    </span>
-                  </p>
+                <p className="text-lg sm:text-xl md:text-2xl font-bold text-foreground leading-snug whitespace-nowrap">
+                  Starke Kids, entspannte{" "}
+                  <AnimatePresence mode="wait">
+                    <motion.span
+                      key={currentIndex}
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: -10 }}
+                      transition={{ duration: 0.3, ease: "easeInOut" }}
+                      className="inline text-[hsl(18_65%_55%)]"
+                    >
+                      {rotatingWords[currentIndex]}
+                    </motion.span>
+                  </AnimatePresence>
+                </p>
                   <p className="text-base sm:text-lg md:text-xl text-muted-foreground font-medium italic leading-relaxed">
                     Gesundheit, die Kindern schmeckt.
                   </p>
