@@ -142,6 +142,7 @@ const Index = () => {
               buttonText="Vormerken lassen"
               accent="primary"
               delay={0.1}
+              imageClassName="h-48 object-contain"
             />
 
             <UniformOfferCard
