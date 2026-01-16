@@ -1,7 +1,19 @@
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
+import { useState, useEffect } from "react";
 import captainApfelJumping from "@/assets/captain-apfel-jumping.png";
 
+const rotatingWords = ["Bäuche", "Eltern", "Familien", "Einrichtungen"];
+
 export const HeroWelcome = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % rotatingWords.length);
+    }, 2500);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section className="relative min-h-[70vh] md:min-h-[80vh] flex items-center justify-center overflow-hidden bg-[hsl(32_55%_96%)] pt-8 md:pt-12 lg:pt-16">
       
@@ -41,7 +53,21 @@ export const HeroWelcome = () => {
                 </p>
                 <div className="pt-4 sm:pt-6 space-y-2 sm:space-y-3 border-t-2 border-[hsl(12_55%_50%)]/20 mt-4">
                   <p className="text-lg sm:text-xl md:text-2xl font-bold text-foreground leading-snug">
-                    Starke Kids. Entspannte Bäuche
+                    Starke Kids, entspannte{" "}
+                    <span className="inline-block relative min-w-[140px] sm:min-w-[180px] md:min-w-[220px] text-left">
+                      <AnimatePresence mode="wait">
+                        <motion.span
+                          key={currentIndex}
+                          initial={{ opacity: 0, y: 20 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          exit={{ opacity: 0, y: -20 }}
+                          transition={{ duration: 0.4, ease: "easeInOut" }}
+                          className="inline-block text-[hsl(18_65%_55%)]"
+                        >
+                          {rotatingWords[currentIndex]}
+                        </motion.span>
+                      </AnimatePresence>
+                    </span>
                   </p>
                   <p className="text-base sm:text-lg md:text-xl text-muted-foreground font-medium italic leading-relaxed">
                     Gesundheit, die Kindern schmeckt.
