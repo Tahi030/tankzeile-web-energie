@@ -5,34 +5,20 @@ export const HeroWelcome = () => {
   return (
     <section className="relative min-h-[70vh] md:min-h-[80vh] flex items-center justify-center overflow-hidden bg-[hsl(32_55%_96%)] pt-8 md:pt-12 lg:pt-16">
       
-      {/* Soft sky-like background with gentle clouds */}
+      {/* Soft sky-like background with gentle clouds - GPU optimized */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        {/* Soft ambient glow */}
-        <motion.div 
-          className="absolute top-1/3 right-1/4 w-[45rem] h-[45rem] bg-[hsl(30_50%_90%)] rounded-full blur-[120px]"
-          animate={{
-            scale: [1, 1.08, 1],
-            opacity: [0.5, 0.7, 0.5],
-          }}
-          transition={{
-            duration: 8,
-            repeat: Infinity,
-            ease: "easeInOut"
-          }}
+        {/* Soft ambient glow - static on mobile for performance */}
+        <div 
+          className="absolute top-1/3 right-1/4 w-[45rem] h-[45rem] bg-[hsl(30_50%_90%)] rounded-full blur-[120px] opacity-60 hidden md:block"
+          style={{ willChange: 'auto' }}
         />
-        {/* Secondary soft glow */}
-        <motion.div 
-          className="absolute bottom-1/3 left-1/4 w-[30rem] h-[30rem] bg-[hsl(32_45%_92%)] rounded-full blur-[100px]"
-          animate={{
-            scale: [1.05, 1, 1.05],
-            opacity: [0.4, 0.55, 0.4],
-          }}
-          transition={{
-            duration: 10,
-            repeat: Infinity,
-            ease: "easeInOut"
-          }}
+        {/* Secondary soft glow - static on mobile for performance */}
+        <div 
+          className="absolute bottom-1/3 left-1/4 w-[30rem] h-[30rem] bg-[hsl(32_45%_92%)] rounded-full blur-[100px] opacity-50 hidden md:block"
+          style={{ willChange: 'auto' }}
         />
+        {/* Simple mobile background glow */}
+        <div className="md:hidden absolute inset-0 bg-gradient-to-b from-[hsl(30_50%_94%)] to-transparent opacity-50" />
       </div>
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-12 relative z-10">
@@ -73,33 +59,25 @@ export const HeroWelcome = () => {
             >
               {/* Captain Apfel Container */}
               <div className="relative w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-2xl xl:max-w-3xl z-10">
-                {/* Soft glow for blending */}
-                <motion.div
-                  className="absolute inset-0 -inset-16 bg-gradient-radial from-[hsl(30_50%_92%)] via-[hsl(32_55%_96%)] to-transparent rounded-full blur-3xl"
-                  animate={{
-                    scale: [1, 1.05, 1],
-                    opacity: [0.6, 0.75, 0.6],
-                  }}
-                  transition={{
-                    duration: 6,
-                    repeat: Infinity,
-                    ease: "easeInOut"
-                  }}
+                {/* Soft glow for blending - static for better performance */}
+                <div
+                  className="absolute inset-0 -inset-16 bg-gradient-radial from-[hsl(30_50%_92%)] via-[hsl(32_55%_96%)] to-transparent rounded-full blur-3xl opacity-70 hidden md:block"
                 />
                 
-                {/* Gentle floating animation */}
+                {/* Captain Apfel image - static on mobile, floating on desktop */}
                 <motion.img 
                   src={captainApfelJumping} 
                   alt="Captain Apfel schwebt" 
                   className="relative w-full h-auto"
                   style={{
                     filter: 'drop-shadow(0 20px 30px rgba(150, 120, 90, 0.25))',
+                    willChange: 'transform',
                   }}
                   animate={{
                     y: [0, -12, 0],
                   }}
                   transition={{
-                    duration: 3,
+                    duration: 4,
                     repeat: Infinity,
                     ease: "easeInOut"
                   }}

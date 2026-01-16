@@ -36,11 +36,11 @@ export const UniformOfferCard = ({
 }: UniformOfferCardProps) => {
   return (
     <motion.div 
-      className="bg-card/50 backdrop-blur-sm rounded-3xl shadow-lg border border-border/30 relative overflow-hidden h-full flex flex-col"
+      className="bg-card/80 rounded-3xl shadow-lg border border-border/30 relative overflow-hidden h-full flex flex-col"
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8, delay }}
-      viewport={{ once: true }}
+      transition={{ duration: 0.6, delay }}
+      viewport={{ once: true, margin: "-50px" }}
     >
       <div className="p-8 flex-1 flex flex-col">
         {/* Image */}
