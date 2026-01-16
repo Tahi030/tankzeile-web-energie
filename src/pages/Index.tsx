@@ -46,19 +46,16 @@ const Index = () => {
                   <h2 className="text-2xl sm:text-3xl font-luckiest">Hallo, ich bin Captain Apfel!</h2>
 
                   <p className="text-base text-muted-foreground leading-relaxed">
-                    Wusstest du, dass in jedem Kinderbauch ein Kraftwerk steckt?
-                    Meine Crew und ich nennen es die Powerzentrale (den Darm). Hier sitzen 80% unseres Immunsystems – der Motor für Energie, Konzentration und gute Laune.
+                    Schon gewusst? In jedem Kinderbauch steckt ein Kraftwerk. Meine Crew und ich nennen es die Powerzentrale (den Darm). Hier sitzen 80% unseres Immunsystems – der Motor für Energie, Konzentration und gute Laune.
                   </p>
 
                   <p className="text-base text-muted-foreground leading-relaxed">
-                    Unsere Mission ist klar: Wir zeigen Kindern im Vorschulalter, wie sie ihren Antrieb richtig pflegen.
-                    Statt nur zu hören "Obst ist gesund", erleben wir das Warum:
-                    Was bringt die Powerzentrale zum Leuchten? Und wer ist dieser "Paffel", der unser System verkleben will?
+                    Unsere Mission ist klar: Wir zeigen Kindern im Vorschulalter, wie sie ihren Antrieb richtig pflegen. Statt nur zu hören „Obst ist gesund", erleben wir das Warum: Was bringt die Powerzentrale zum Leuchten? Und wer ist dieser „Paffel", der unser System verkleben will?
                   </p>
                 </div>
 
                 <div className="space-y-4">
-                  <p className="text-base font-semibold text-foreground text-center">Hier findest du:</p>
+                  <p className="text-base font-semibold text-foreground text-center">Hier gibt es zu entdecken:</p>
                   <ul className="text-base leading-relaxed text-muted-foreground space-y-3 text-left max-w-2xl mx-auto">
                     <li>
                       <strong className="text-foreground">Reise zur Powerzentrale</strong>
@@ -72,7 +69,7 @@ const Index = () => {
                       <br />
                       Die bewährte Soforthilfe für zu Hause.
                       <br />
-                      Unsere beliebten Pakete bei Unverträglichkeiten geben Eltern Sicherheit und sorgen dafür, dass der Bauch endlich zur Ruhe kommt.
+                      Unsere beliebten Pakete bei Unverträglichkeiten geben Sicherheit und sorgen dafür, dass der Bauch endlich zur Ruhe kommt.
                     </li>
                   </ul>
                 </div>
@@ -82,7 +79,7 @@ const Index = () => {
                   <p className="text-base text-muted-foreground leading-relaxed text-center">
                     Kurze Wege, minimale Vorbereitung.
                     <br />
-                    Sie haben hier kein anonymes Großprojekt vor sich. Das bedeutet für Sie: Kein Einkaufsstress und keine endlosen To-Dos für Ihr Team. Ich halte die Organisation bewusst schlank, damit Sie sich ganz auf die Kinder konzentrieren können. Persönlich, greifbar und verlässlich.
+                    Hier wartet kein anonymes Großprojekt. Das bedeutet: Kein Einkaufsstress und keine endlosen To-Dos für das Team vor Ort. Ich halte die Organisation bewusst schlank, damit die volle Konzentration den Kindern gelten kann. Persönlich, greifbar und verlässlich.
                   </p>
                 </div>
 
