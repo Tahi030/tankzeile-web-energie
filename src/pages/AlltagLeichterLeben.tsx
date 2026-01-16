@@ -35,7 +35,7 @@ const AlltagLeichterLeben = () => {
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-foreground font-luckiest">
               The Walk of Fame
             </h1>
-            <p className="text-lg md:text-xl text-primary font-medium max-w-3xl mx-auto mb-6">
+            <p className="text-lg md:text-xl text-foreground/80 font-medium max-w-3xl mx-auto mb-6">
               Hier werden Kitas und Einrichtungen sichtbar, die sich besonders für die Gesundheit der Kinder stark machen.
             </p>
             <p className="body-base text-muted-foreground max-w-3xl mx-auto">
