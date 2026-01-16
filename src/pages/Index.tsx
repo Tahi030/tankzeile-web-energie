@@ -9,14 +9,14 @@ import missionBuntstiftImage from "@/assets/mission-buntstift-header.jpg";
 const Index = () => {
   useEffect(() => {
     // Set page metadata for SEO
-    document.title = "Captain Apfel – Initiative für starke Entwicklung";
+    document.title = "Captain Apfel – Workshops & Hilfe bei Unverträglichkeiten";
 
     // Set meta description
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
       metaDescription.setAttribute(
         "content",
-        "Captain Apfel & seine Crew – Initiative für starke Entwicklung. Gesundheit, die Kindern schmeckt mit modernen Workshops und Angeboten.",
+        'Schluss mit Bauchweh! Dein Anker für den Alltag: Interaktive Kinder-Workshops & "Essen ist fertig!"-Pakete. Jetzt entdecken für starke Kids & entspannte Eltern.',
       );
     }
   }, []);
