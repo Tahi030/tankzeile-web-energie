@@ -27,7 +27,7 @@ const Index = () => {
       <HeroWelcome />
 
       {/* Captain Apfel Introduction */}
-      <section className="section-padding -mt-10 sm:-mt-14 md:-mt-20 lg:-mt-28 xl:-mt-36 relative z-10">
+      <section className="section-padding -mt-6 sm:-mt-14 md:-mt-20 lg:-mt-28 xl:-mt-36 relative z-10 px-4 sm:px-6">
         <div className="container-custom">
           <motion.div
             className="max-w-4xl mx-auto"
@@ -36,14 +36,14 @@ const Index = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <div className="bg-card/80 rounded-3xl p-8 md:p-12 shadow-lg border border-border/30 relative overflow-hidden">
+            <div className="bg-card/80 rounded-2xl sm:rounded-3xl p-5 sm:p-8 md:p-12 shadow-lg border border-border/30 relative overflow-hidden">
               {/* Background decoration */}
               <div className="absolute top-0 right-0 w-32 h-32 bg-secondary/5 rounded-full -translate-y-16 translate-x-16" />
               <div className="absolute bottom-0 left-0 w-24 h-24 bg-primary/5 rounded-full translate-y-12 -translate-x-12" />
 
               <div className="relative space-y-6">
                 <div className="text-center space-y-4">
-                  <h2 className="text-3xl font-luckiest">Hallo, ich bin Captain Apfel!</h2>
+                  <h2 className="text-2xl sm:text-3xl font-luckiest">Hallo, ich bin Captain Apfel!</h2>
 
                   <p className="text-base text-muted-foreground leading-relaxed">
                     Wusstest du, dass in jedem Kinderbauch ein Kraftwerk steckt?
