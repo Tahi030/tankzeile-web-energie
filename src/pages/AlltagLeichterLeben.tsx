@@ -78,15 +78,6 @@ const AlltagLeichterLeben = () => {
             </div>
           </motion.div>
 
-          {/* Next Powercrew Teaser */}
-          <motion.div
-            className="text-center py-12"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-          >
-            <p className="body-lg text-muted-foreground italic">Und wer wird noch Powercrew?</p>
-          </motion.div>
         </div>
       </div>
     </main>
