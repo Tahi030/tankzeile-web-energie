@@ -153,7 +153,7 @@ const Index = () => {
               buttonText="Pakete entdecken"
               accent="secondary"
               delay={0.2}
-              imageClassName="object-contain"
+              imageClassName="h-48 object-cover"
             />
           </div>
 
