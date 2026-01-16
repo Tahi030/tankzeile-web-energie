@@ -46,7 +46,7 @@ const Kontakt = () => {
                 </div>
               </div>
               
-              <h2 className="text-base font-medium mb-6">Auch hier zu finden</h2>
+              <h2 className="text-base font-medium mb-6 text-foreground">Auch hier zu finden</h2>
               <div className="flex justify-start">
                 <a href="https://www.instagram.com/captain.apfel/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-[hsl(25_30%_88%)] rounded-full flex items-center justify-center text-[hsl(25_30%_25%)] hover:bg-[hsl(25_35%_82%)] transition-all duration-300 shadow-md hover:shadow-lg">
                   <Instagram size={20} />
