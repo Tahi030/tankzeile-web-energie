@@ -105,7 +105,6 @@ export const UniformOfferCard = ({
           {/* Coloring Pages Grid - appears after description */}
           {coloringPages && (
             <div className="space-y-3 pt-2">
-              <p className="text-sm font-medium text-muted-foreground">Ausmalbilder zum Download:</p>
               <div className="grid grid-cols-3 gap-3">
                 {coloringPages.map((page, index) => (
                   <div key={index} className="space-y-2">
