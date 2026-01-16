@@ -51,7 +51,7 @@ const Index = () => {
                   </p>
 
                   <p className="text-base text-muted-foreground leading-relaxed">
-                    Unsere Mission ist klar: Wir zeigen Kindern, wie sie ihren Antrieb richtig pflegen.
+                    Unsere Mission ist klar: Wir zeigen Kindern im Vorschulalter, wie sie ihren Antrieb richtig pflegen.
                     Statt nur zu hören "Obst ist gesund", erleben wir das Warum:
                     Was bringt die Powerzentrale zum Leuchten? Und wer ist dieser "Paffel", der unser System verkleben will?
                   </p>
