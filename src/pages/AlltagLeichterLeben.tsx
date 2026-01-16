@@ -68,15 +68,22 @@ const AlltagLeichterLeben = () => {
                 <p className="body-base text-muted-foreground mb-4">
                   Hier wird Inklusion gelebt: Als Ackerkita verstehen die Kinder, woher das Essen kommt, und die hauseigene Küche sorgt dafür, dass jedes Kind – ob mit oder ohne Unverträglichkeit – satt und glücklich wird.
                 </p>
-                <p className="body-base text-muted-foreground mb-4">
+                <p className="body-base text-muted-foreground">
                   Danke an dieses großartige Team für euren Mut, als Vorbild voranzugehen! Ihr seid der Startschuss für unsere wachsende Gemeinschaft.
-                </p>
-                <p className="body-base text-muted-foreground font-medium">
-                  Du willst mit deiner Einrichtung auch Teil der Powercrew werden? Buche den Workshop und werde sichtbar!
                 </p>
               </div>
             </div>
           </motion.div>
+
+          {/* Call to Action */}
+          <motion.p
+            className="text-center body-base text-muted-foreground italic mt-8"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+          >
+            Du willst mit deiner Einrichtung auch Teil der Powercrew werden? Buche den Workshop und werde sichtbar!
+          </motion.p>
 
         </div>
       </div>
