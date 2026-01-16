@@ -19,7 +19,7 @@ const Kontakt = () => {
               Gibt es Fragen, Anregungen oder Interesse, mehr über die Angebote zu erfahren?
             </p>
             <p className="text-lg text-muted-foreground">
-              Hier ist auch der richtige Ort, um Workshops direkt zu buchen oder sich für den Start im Frühjahr 2026 vormerken zu lassen.
+              Auch Buchungen oder unverbindliche Vormerkungen für den Start im Frühjahr 2026 laufen ganz unkompliziert auf diesem Weg – einfach melden, ganz ohne Formulare.
             </p>
           </div>
         </div>
