@@ -95,7 +95,7 @@ const EssenIstFertig = () => {
                   </h2>
 
                   <p className="text-muted-foreground text-center leading-relaxed">
-                    Die Hilfe für dein Kind nach der Diagnose – 59 Seiten Wissen, Vorlagen & Rezepte.
+                    Die Hilfe für dein Kind nach der Diagnose – 63 Seiten Wissen, Vorlagen & Rezepte.
                   </p>
 
                   <ul className="space-y-2 text-sm text-muted-foreground">
@@ -142,7 +142,7 @@ const EssenIstFertig = () => {
                   </motion.a>
 
                   <div className="text-xs text-muted-foreground leading-relaxed">
-                    Die Bezahlung erfolgt sicher über meinen Partner Copecart. Du erhältst das PDF-Paket (59 Seiten) und
+                    Die Bezahlung erfolgt sicher über meinen Partner Copecart. Du erhältst das PDF-Paket (63 Seiten) und
                     die Rechnung automatisch per E‑Mail.
                   </div>
                 </div>
@@ -173,7 +173,7 @@ const EssenIstFertig = () => {
                   </h2>
 
                   <p className="text-muted-foreground text-center leading-relaxed">
-                    Die Hilfe für dein Kind nach der Diagnose – 59 Seiten Wissen, Vorlagen & Rezepte.
+                    Die Hilfe für dein Kind nach der Diagnose – 63 Seiten Wissen, Vorlagen & Rezepte.
                   </p>
 
                   <ul className="space-y-2 text-sm text-muted-foreground">
@@ -220,7 +220,7 @@ const EssenIstFertig = () => {
                   </motion.a>
 
                   <div className="text-xs text-muted-foreground leading-relaxed">
-                    Die Bezahlung erfolgt sicher über meinen Partner Copecart. Du erhältst das PDF-Paket (59 Seiten) und
+                    Die Bezahlung erfolgt sicher über meinen Partner Copecart. Du erhältst das PDF-Paket (63 Seiten) und
                     die Rechnung automatisch per E‑Mail.
                   </div>
                 </div>
@@ -251,7 +251,7 @@ const EssenIstFertig = () => {
                   </h2>
 
                   <p className="text-muted-foreground text-center leading-relaxed">
-                    Die Hilfe für dein Kind nach der Diagnose – Wissen, Vorlagen & Rezepte.
+                    Die Hilfe für dein Kind nach der Diagnose – 63 Seiten Wissen, Vorlagen & Rezepte.
                   </p>
 
                   <ul className="space-y-2 text-sm text-muted-foreground">
@@ -291,7 +291,7 @@ const EssenIstFertig = () => {
                   </div>
 
                   <div className="text-xs text-muted-foreground leading-relaxed">
-                    Die Bezahlung erfolgt sicher über meinen Partner Copecart. Du erhältst das PDF-Paket (59 Seiten) und
+                    Die Bezahlung erfolgt sicher über meinen Partner Copecart. Du erhältst das PDF-Paket (63 Seiten) und
                     die Rechnung automatisch per E‑Mail.
                   </div>
                 </div>
