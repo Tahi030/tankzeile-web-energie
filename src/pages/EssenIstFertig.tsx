@@ -306,26 +306,33 @@ const EssenIstFertig = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
           >
-            <div className="flex justify-center items-center gap-8 max-w-4xl mx-auto">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 max-w-4xl mx-auto">
               <div className="transform rotate-1 hover:rotate-0 transition-transform duration-300">
                 <img
-                  src="/assets/rezept-ausschnitt.jpg"
+                  src="/assets/vorschau-rezept.png"
                   alt="Rezept Ausschnitt"
-                  className="w-48 h-auto object-contain rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 border border-border/30"
+                  className="w-full h-auto object-contain rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 border border-border/30"
                 />
               </div>
               <div className="transform -rotate-1 hover:rotate-0 transition-transform duration-300">
                 <img
-                  src="/assets/wochenplaner-ausschnitt.jpg"
+                  src="/assets/vorschau-wochenplaner.png"
                   alt="Wochenplaner Ausschnitt"
-                  className="w-48 h-auto object-contain rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 border border-border/30"
+                  className="w-full h-auto object-contain rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 border border-border/30"
                 />
               </div>
               <div className="transform rotate-1 hover:rotate-0 transition-transform duration-300">
                 <img
-                  src="/assets/ernaehrungstagebuch-ausschnitt.jpg"
+                  src="/assets/vorschau-tagebuch.png"
                   alt="Ernährungstagebuch Ausschnitt"
-                  className="w-48 h-auto object-contain rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 border border-border/30"
+                  className="w-full h-auto object-contain rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 border border-border/30"
+                />
+              </div>
+              <div className="transform -rotate-1 hover:rotate-0 transition-transform duration-300">
+                <img
+                  src="/assets/vorschau-bauchposter.png"
+                  alt="Bauchgefühl-Poster Ausschnitt"
+                  className="w-full h-auto object-contain rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 border border-border/30"
                 />
               </div>
             </div>
