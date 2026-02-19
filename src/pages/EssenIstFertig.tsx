@@ -84,7 +84,11 @@ const EssenIstFertig = () => {
                   <img
                     src="/assets/rettungskoffer-laktose.png?v=2"
                     alt="Essen ist fertig! Rettungskoffer bei Laktoseintoleranz Cover"
-                    className="w-full max-w-64 mx-auto rounded-lg shadow-lg"
+                    loading="eager"
+                    decoding="async"
+                    width={256}
+                    height={362}
+                    className="w-full max-w-64 mx-auto rounded-lg shadow-lg bg-muted"
                   />
                 </div>
 
@@ -162,7 +166,11 @@ const EssenIstFertig = () => {
                   <img
                     src="/assets/rettungskoffer-fruktose.png?v=2"
                     alt="Essen ist fertig! Rettungskoffer bei Fruktoseintoleranz Cover"
-                    className="w-full max-w-64 mx-auto rounded-lg shadow-lg"
+                    loading="eager"
+                    decoding="async"
+                    width={256}
+                    height={362}
+                    className="w-full max-w-64 mx-auto rounded-lg shadow-lg bg-muted"
                   />
                 </div>
 
@@ -240,7 +248,11 @@ const EssenIstFertig = () => {
                   <img
                     src="/assets/rettungskoffer-gluten.png?v=3"
                     alt="Essen ist fertig! Rettungskoffer bei Glutenunverträglichkeit Cover"
-                    className="w-full max-w-64 mx-auto rounded-lg shadow-lg"
+                    loading="eager"
+                    decoding="async"
+                    width={256}
+                    height={362}
+                    className="w-full max-w-64 mx-auto rounded-lg shadow-lg bg-muted"
                   />
                 </div>
 
@@ -307,34 +319,24 @@ const EssenIstFertig = () => {
             transition={{ duration: 0.8, delay: 0.5 }}
           >
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 max-w-4xl mx-auto">
-              <div className="transform rotate-1 hover:rotate-0 transition-transform duration-300">
-                <img
-                  src="/assets/vorschau-rezept.png"
-                  alt="Rezept Ausschnitt"
-                  className="w-full h-auto object-contain rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 border border-border/30"
-                />
-              </div>
-              <div className="transform -rotate-1 hover:rotate-0 transition-transform duration-300">
-                <img
-                  src="/assets/vorschau-wochenplaner.png"
-                  alt="Wochenplaner Ausschnitt"
-                  className="w-full h-auto object-contain rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 border border-border/30"
-                />
-              </div>
-              <div className="transform rotate-1 hover:rotate-0 transition-transform duration-300">
-                <img
-                  src="/assets/vorschau-tagebuch.png"
-                  alt="Ernährungstagebuch Ausschnitt"
-                  className="w-full h-auto object-contain rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 border border-border/30"
-                />
-              </div>
-              <div className="transform -rotate-1 hover:rotate-0 transition-transform duration-300">
-                <img
-                  src="/assets/vorschau-bauchposter.png"
-                  alt="Bauchgefühl-Poster Ausschnitt"
-                  className="w-full h-auto object-contain rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 border border-border/30"
-                />
-              </div>
+              {[
+                { src: "/assets/vorschau-rezept.png", alt: "Rezept Ausschnitt", rotate: "rotate-1" },
+                { src: "/assets/vorschau-wochenplaner.png", alt: "Wochenplaner Ausschnitt", rotate: "-rotate-1" },
+                { src: "/assets/vorschau-tagebuch.png", alt: "Ernährungstagebuch Ausschnitt", rotate: "rotate-1" },
+                { src: "/assets/vorschau-bauchposter.png", alt: "Bauchgefühl-Poster Ausschnitt", rotate: "-rotate-1" },
+              ].map((img) => (
+                <div key={img.alt} className={`transform ${img.rotate} hover:rotate-0 transition-transform duration-300`}>
+                  <img
+                    src={img.src}
+                    alt={img.alt}
+                    loading="lazy"
+                    decoding="async"
+                    width={400}
+                    height={300}
+                    className="w-full h-auto object-cover aspect-[4/3] rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 border border-border/30 bg-muted"
+                  />
+                </div>
+              ))}
             </div>
           </motion.div>
         </div>
