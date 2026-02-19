@@ -251,7 +251,7 @@ const EssenIstFertig = () => {
                   </h2>
 
                   <p className="text-muted-foreground text-center leading-relaxed">
-                    Die Hilfe für dein Kind nach der Diagnose – Wissen, Vorlagen & Rezepte.
+                    Die Hilfe für dein Kind nach der Diagnose – 63 Seiten Wissen, Vorlagen & Rezepte.
                   </p>
 
                   <ul className="space-y-2 text-sm text-muted-foreground">
