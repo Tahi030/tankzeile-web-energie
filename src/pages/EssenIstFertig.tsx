@@ -238,7 +238,7 @@ const EssenIstFertig = () => {
                 {/* Cover Image */}
                 <div className="text-center">
                   <img
-                    src="/assets/rettungskoffer-gluten.png?v=2"
+                    src="/assets/rettungskoffer-gluten.png?v=3"
                     alt="Essen ist fertig! Rettungskoffer bei Glutenunverträglichkeit Cover"
                     className="w-full max-w-64 mx-auto rounded-lg shadow-lg"
                   />
