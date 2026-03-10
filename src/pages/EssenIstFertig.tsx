@@ -185,7 +185,7 @@ const EssenIstFertig = () => {
                   </p>
 
                   <p className="text-sm text-muted-foreground text-center leading-relaxed italic">
-                    Praktische Soforthilfe bei intestinaler Fruktosemalabsorption.<br />
+                    Bei intestinaler Fruktosemalabsorption.<br />
                     <span className="font-medium">(Wichtig: Nicht geeignet bei hereditärer Fruktoseintoleranz / HFI)</span>
                   </p>
 
