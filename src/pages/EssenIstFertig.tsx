@@ -93,7 +93,7 @@ const EssenIstFertig = () => {
                 </div>
 
                 {/* Content */}
-                <div className="space-y-4">
+                <div className="space-y-4 flex-1">
                   <h2 className="text-xl font-bold text-foreground text-center">
                     ESSEN IST FERTIG! DEIN RETTUNGSKOFFER BEI LAKTOSEINTOLERANZ
                   </h2>
