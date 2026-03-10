@@ -242,12 +242,12 @@ const EssenIstFertig = () => {
 
             {/* Glutenunverträglichkeit Box */}
             <motion.div
-              className="bg-card/60 backdrop-blur-sm rounded-2xl p-6 border border-border/30 shadow-sm"
+              className="bg-card/60 backdrop-blur-sm rounded-2xl p-6 border border-border/30 shadow-sm flex flex-col"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.5 }}
             >
-              <div className="space-y-6">
+              <div className="flex flex-col flex-1 gap-6">
                 {/* Cover Image */}
                 <div className="text-center">
                   <img
