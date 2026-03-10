@@ -164,7 +164,7 @@ const EssenIstFertig = () => {
                 {/* Cover Image */}
                 <div className="text-center">
                   <img
-                    src="/assets/rettungskoffer-fruktose.png?v=2"
+                    src="/assets/rettungskoffer-fruktose.png?v=3"
                     alt="Essen ist fertig! Rettungskoffer bei Fruktoseintoleranz Cover"
                     loading="eager"
                     decoding="async"
