@@ -164,7 +164,7 @@ const EssenIstFertig = () => {
                 {/* Cover Image */}
                 <div className="text-center">
                   <img
-                    src="/assets/rettungskoffer-fruktose.png?v=2"
+                    src="/assets/rettungskoffer-fruktose.png?v=3"
                     alt="Essen ist fertig! Rettungskoffer bei Fruktoseintoleranz Cover"
                     loading="eager"
                     decoding="async"
@@ -182,6 +182,11 @@ const EssenIstFertig = () => {
 
                   <p className="text-muted-foreground text-center leading-relaxed">
                     Die Hilfe für dein Kind nach der Diagnose – 63 Seiten Wissen, Vorlagen & Rezepte.
+                  </p>
+
+                  <p className="text-sm text-muted-foreground text-center leading-relaxed italic">
+                    Praktische Soforthilfe bei intestinaler Fruktosemalabsorption.<br />
+                    <span className="font-medium">(Wichtig: Nicht geeignet bei hereditärer Fruktoseintoleranz / HFI)</span>
                   </p>
 
                   <ul className="space-y-2 text-sm text-muted-foreground">
