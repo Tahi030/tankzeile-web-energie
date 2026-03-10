@@ -184,6 +184,11 @@ const EssenIstFertig = () => {
                     Die Hilfe für dein Kind nach der Diagnose – 63 Seiten Wissen, Vorlagen & Rezepte.
                   </p>
 
+                  <p className="text-sm text-muted-foreground text-center leading-relaxed italic">
+                    Praktische Soforthilfe bei intestinaler Fruktosemalabsorption.<br />
+                    <span className="font-medium">(Wichtig: Nicht geeignet bei hereditärer Fruktoseintoleranz / HFI)</span>
+                  </p>
+
                   <ul className="space-y-2 text-sm text-muted-foreground">
                     <li className="flex items-start gap-2">
                       <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
