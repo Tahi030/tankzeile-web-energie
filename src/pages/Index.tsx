@@ -46,41 +46,28 @@ const Index = () => {
                   <h2 className="text-2xl sm:text-3xl font-luckiest">Hallo, ich bin Captain Apfel!</h2>
 
                   <p className="text-base text-muted-foreground leading-relaxed">
-                    Schon gewusst? In jedem Kinderbauch steckt ein Kraftwerk. Meine Crew und ich nennen es die Powerzentrale (den Darm). Hier sitzen 80% unseres Immunsystems – der Motor für Energie, Konzentration und gute Laune.
+                    Schon gewusst? In jedem Kinderbauch steckt ein Kraftwerk: die Powerzentrale (der Darm). Hier sitzen 80 Prozent des Immunsystems. Das ist der Motor für Energie, Konzentration und gute Laune.
                   </p>
 
                   <p className="text-base text-muted-foreground leading-relaxed">
-                    Unsere Mission ist klar: Wir zeigen Kindern im Vorschulalter, wie sie ihren Antrieb richtig pflegen. Statt nur zu hören „Obst ist gesund", erleben wir das Warum: Was bringt die Powerzentrale zum Leuchten? Und wer ist dieser „Paffel", der unser System verkleben will?
+                    Captain Apfel macht Ernährungsbildung greifbar. Vorschulkinder lernen, ihren Antrieb zu pflegen. Statt der Regel „Obst ist gesund" zählt das Erleben: Was bringt die Powerzentrale zum Leuchten? Und wer ist der „Paffel", der das System verkleben möchte?
                   </p>
                 </div>
 
                 <div className="space-y-4">
-                  <p className="text-base font-semibold text-foreground text-center">Hier gibt es zu entdecken:</p>
+                  <p className="text-base font-semibold text-foreground text-center">Passgenaue Angebote für Kitas und Familien:</p>
                   <ul className="text-base leading-relaxed text-muted-foreground space-y-3 text-left max-w-2xl mx-auto">
                     <li>
                       <strong className="text-foreground">Reise zur Powerzentrale</strong>
                       <br />
-                      Der Erlebnis-Workshop für Familienzentren & Kitas.
-                      <br />
-                      Startet ab Frühjahr 2026 in Berlin & Umgebung.
+                      Der Erlebnisworkshop für Familienzentren und Kitas in Berlin und Umgebung. Ohne Einkaufsstress und mit minimaler Vorbereitung. Die Organisation bleibt schlank, damit die volle Aufmerksamkeit den Kindern gilt. Persönlich, greifbar und verlässlich.
                     </li>
                     <li>
                       <strong className="text-foreground">Essen ist fertig!</strong>
                       <br />
-                      Die bewährte Soforthilfe für zu Hause.
-                      <br />
-                      Unsere beliebten Pakete bei Unverträglichkeiten geben Sicherheit und sorgen dafür, dass der Bauch endlich zur Ruhe kommt.
+                      Die PDF Pakete der Serie „Essen ist fertig!" bieten Soforthilfe für zu Hause. Sie geben einen roten Faden bei Bauchschmerzen, Unverträglichkeiten oder Überforderung am Esstisch. Als Rettungskoffer bringen sie Sicherheit in Familien, sodass der Bauch endlich zur Ruhe kommt.
                     </li>
                   </ul>
-                </div>
-
-                <div className="space-y-4 border-t border-primary/10 pt-6">
-                  <p className="text-base font-semibold text-foreground text-center">Was mich besonders macht:</p>
-                  <p className="text-base text-muted-foreground leading-relaxed text-center">
-                    Kurze Wege, minimale Vorbereitung.
-                    <br />
-                    Hier wartet kein anonymes Großprojekt. Das bedeutet: Kein Einkaufsstress und keine endlosen To-Dos für das Team vor Ort. Ich halte die Organisation bewusst schlank, damit die volle Konzentration den Kindern gelten kann. Persönlich, greifbar und verlässlich.
-                  </p>
                 </div>
 
                 <p className="text-base text-muted-foreground leading-relaxed text-center italic border-t border-primary/10 pt-6">
