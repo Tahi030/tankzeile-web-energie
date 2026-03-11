@@ -44,7 +44,9 @@ const Index = () => {
               <div className="relative space-y-6">
                 <div className="text-center space-y-4">
                   <h2 className="text-2xl sm:text-3xl font-luckiest">Hallo, ich bin Captain Apfel!</h2>
+                </div>
 
+                <div className="space-y-4 text-left">
                   <p className="text-base text-muted-foreground leading-relaxed">
                     Schon gewusst? In jedem Kinderbauch steckt ein Kraftwerk: die Powerzentrale (der Darm). Hier sitzen 80 Prozent des Immunsystems. Das ist der Motor für Energie, Konzentration und gute Laune.
                   </p>
@@ -55,8 +57,8 @@ const Index = () => {
                 </div>
 
                 <div className="space-y-4">
-                  <p className="text-base font-semibold text-foreground text-center">Passgenaue Angebote für Kitas und Familien:</p>
-                  <ul className="text-base leading-relaxed text-muted-foreground space-y-3 text-left max-w-2xl mx-auto">
+                  <p className="text-base font-semibold text-foreground">Passgenaue Angebote für Kitas und Familien:</p>
+                  <ul className="text-base leading-relaxed text-muted-foreground space-y-3 text-left max-w-2xl">
                     <li>
                       <strong className="text-foreground">Reise zur Powerzentrale</strong>
                       <br />
