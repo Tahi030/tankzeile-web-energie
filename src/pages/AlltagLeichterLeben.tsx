@@ -27,21 +27,21 @@ const AlltagLeichterLeben = () => {
 
           {/* Hero Section */}
           <motion.div
-            className="text-center mb-12"
+            className="mb-12 max-w-3xl"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-foreground font-luckiest">
+            <h1 className="text-2xl md:text-3xl font-bold mb-4 text-foreground font-luckiest">
               The Walk of Fame
             </h1>
-            <p className="text-lg md:text-xl text-foreground/80 font-medium max-w-3xl mx-auto mb-6">
+            <p className="text-lg md:text-xl text-foreground/80 font-medium mb-4">
               Hier werden Kitas und Einrichtungen sichtbar, die sich besonders für die Gesundheit der Kinder stark machen.
             </p>
-            <p className="body-base text-muted-foreground max-w-3xl mx-auto">
+            <p className="body-base text-muted-foreground mb-4">
               Mit der Auszeichnung „Powercrew" bedankt sich Captain Apfel bei den Menschen, die jeden Tag Großes leisten. Pädagogische Fachkräfte sind oft unsichtbare Helden. Hier bekommen sie die Bühne, die sie verdienen.
             </p>
-            <p className="body-base text-muted-foreground max-w-3xl mx-auto mt-4">
+            <p className="body-base text-muted-foreground">
               Der Walk of Fame ist eine wachsende Galerie: Jedes Jahr kommen neue engagierte Teams hinzu, die den Workshop „Reise zur Powerzentrale" durchgeführt oder sich besonders engagiert haben.
             </p>
           </motion.div>
