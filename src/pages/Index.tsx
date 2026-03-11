@@ -52,7 +52,7 @@ const Index = () => {
                   </p>
 
                   <p className="text-base text-muted-foreground leading-relaxed">
-                    Captain Apfel macht Ernährungsbildung greifbar. Vorschulkinder lernen, ihren Antrieb zu pflegen. Statt der Regel „Obst ist gesund" zählt das Erleben: Was bringt die Powerzentrale zum Leuchten? Und wer ist der „Paffel", der das System verkleben möchte?
+                    Captain Apfel macht Ernährungsbildung greifbar. Vorschulkinder lernen, ihren Antrieb zu pflegen. Statt der Regel „Obst ist gesund" zählt das Erleben: Was bringt die Powerzentrale zum Leuchten? Und wer ist dieser „Paffel", der das System verkleben möchte?
                   </p>
                 </div>
 
