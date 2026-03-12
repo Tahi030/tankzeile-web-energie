@@ -308,7 +308,7 @@ const EssenIstFertig = () => {
                   </div>
 
                   <div className="text-xs text-muted-foreground leading-relaxed">
-                    Die Bezahlung erfolgt sicher über meinen Partner Copecart. Du erhältst das PDF-Paket (63 Seiten) und
+                    Die Bezahlung erfolgt sicher über meinen Partner Copecart. Du erhältst das E-Book (63 Seiten) und
                     die Rechnung automatisch per E‑Mail.
                   </div>
                 </div>
