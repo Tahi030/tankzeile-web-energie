@@ -89,8 +89,10 @@ const ProductCard = ({
         )}
 
         {/* Description */}
-        <p className="text-sm text-muted-foreground text-center leading-relaxed mb-1">
-          {description}
+        <p className="text-sm text-muted-foreground text-center leading-relaxed mb-1 [&_span]:whitespace-nowrap">
+          {description.split(/(\d+\s*Seiten)/).map((part, i) =>
+            /\d+\s*Seiten/.test(part) ? <span key={i}>{part}</span> : part
+          )}
         </p>
 
         {/* Optional notice */}
