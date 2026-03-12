@@ -96,25 +96,18 @@ const ProductCard = ({
 
         {/* Accordion - pushed to consistent position */}
         <div className="mt-auto pt-4">
-          <Accordion type="single" collapsible className="w-full">
-            <AccordionItem value="details" className="border-border/30">
-              <AccordionTrigger className="text-sm font-semibold text-foreground hover:no-underline py-3">
-                {accordionTitle}
-              </AccordionTrigger>
-              <AccordionContent>
-                <ul className="space-y-2 text-sm text-muted-foreground">
-                  {accordionItems.map((item) => (
-                    <li key={item.label} className="flex items-start gap-2">
-                      <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                      <span>
-                        <strong>{item.label}</strong> {item.text}
-                      </span>
-                    </li>
-                  ))}
-                </ul>
-              </AccordionContent>
-            </AccordionItem>
-          </Accordion>
+          <SimpleAccordion title={accordionTitle}>
+            <ul className="space-y-2 text-sm text-muted-foreground">
+              {accordionItems.map((item) => (
+                <li key={item.label} className="flex items-start gap-2">
+                  <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                  <span>
+                    <strong>{item.label}</strong> {item.text}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </SimpleAccordion>
 
           {/* Purchase Section */}
           <div className="bg-card/50 rounded-lg p-4 border border-border/30 text-center space-y-3 mt-4">
