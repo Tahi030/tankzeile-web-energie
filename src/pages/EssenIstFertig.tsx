@@ -80,7 +80,7 @@ const EssenIstFertig = () => {
           </motion.div>
 
           {/* Product Cards Grid */}
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-8 items-start">
             <ProductCard
               image="/assets/rettungskoffer-laktose.png?v=2"
               imageAlt="Essen ist fertig! Rettungskoffer bei Laktoseintoleranz Cover"
