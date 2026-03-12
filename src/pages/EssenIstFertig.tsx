@@ -61,7 +61,7 @@ const EssenIstFertig = () => {
                 <div className="flex flex-col items-center text-center gap-1">
                   <span className="text-[hsl(12_55%_50%)] text-2xl font-bold">✓</span>
                   <span className="font-semibold text-foreground">Klarheit & Verstehen</span>
-                  <span className="text-sm">Endlich die Zusammenhänge begreifen – ohne Fachchinesisch.</span>
+                  <span className="text-sm">Zusammenhänge begreifen – ohne Fachchinesisch.</span>
                 </div>
                 <div className="flex flex-col items-center text-center gap-1">
                   <span className="text-[hsl(12_55%_50%)] text-2xl font-bold">✓</span>
