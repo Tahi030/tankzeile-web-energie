@@ -3,12 +3,12 @@ import { motion } from "framer-motion";
 import ProductCard from "@/components/essen-ist-fertig/ProductCard";
 
 const rettungskofferItems = [
-  { label: "Sofort-Hilfe:", text: "Download in Sekunden statt Warten auf Termine" },
-  { label: "Sicher einkaufen:", text: "Spickzettel für die Hosentasche (Do's & Don'ts)" },
-  { label: "Entspannt abgeben:", text: "Fertige Listen für Kita, Schule & Oma" },
-  { label: "Kein Verzicht:", text: "10 schnelle Snackideen & familienfreundliche Rezepte" },
-  { label: "Stressfrei planen:", text: "Wochenbaukasten mit Beispielplan" },
-  { label: "Alles geklärt:", text: "Antworten auf die häufigsten Eltern-Fragen (FAQ)" },
+  { label: "Sofort-Hilfe:", text: "Direkter Download in Sekunden, statt langes Warten auf einen Arzttermin" },
+  { label: "Sicher einkaufen:", text: "Der praktische Spickzettel für die Hosentasche mit klaren Do's & Don'ts" },
+  { label: "Entspannt abgeben:", text: "Fertige Info-Listen zur sicheren Übergabe an Kita, Schule oder Großeltern" },
+  { label: "Kein Verzicht:", text: "10 blitzschnelle Snackideen & leckere, familienfreundliche Rezepte" },
+  { label: "Stressfrei planen:", text: "Flexibler Wochenbaukasten inklusive alltagstauglichem Beispielplan" },
+  { label: "Exklusives Expertenwissen:", text: "Fundierte Antworten und bewährte Praxis-Lösungen für die wichtigsten Fragen direkt nach der Diagnose" },
 ];
 
 const bauchCodeItems = [
