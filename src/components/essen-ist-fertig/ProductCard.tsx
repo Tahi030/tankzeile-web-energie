@@ -67,7 +67,15 @@ const ProductCard = ({
 
         {/* Title */}
         <h2 className="text-lg font-bold text-foreground text-center mb-3 min-h-[3.5rem] flex items-center justify-center leading-snug">
-          {title}
+          <span>
+            {title.includes("!") ? (
+              <>
+                {title.split("!")[0]}!
+                <br />
+                {title.split("!").slice(1).join("!").trim()}
+              </>
+            ) : title}
+          </span>
         </h2>
 
         {/* Subtitle */}
