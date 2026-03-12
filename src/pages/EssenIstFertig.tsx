@@ -54,7 +54,7 @@ const EssenIstFertig = () => {
 
             <div className="max-w-4xl mx-auto space-y-6 text-muted-foreground mb-8">
               <p className="text-lg leading-relaxed">
-                Schluss mit endlosem Google-Chaos, ewigen Wartelisten und teuren Beratungen. Hol dir hier fundierte Soforthilfe und lerne, die Bauchgesundheit deines Kindes endlich selbst zu verstehen.
+                Schluss mit endlosem Google-Chaos, ewigen Wartelisten und teuren Beratungen. Hol dir hier fundierte Soforthilfe und lerne, die Bauchgesundheit deines Kindes selbst zu verstehen.
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8 max-w-3xl mx-auto">
