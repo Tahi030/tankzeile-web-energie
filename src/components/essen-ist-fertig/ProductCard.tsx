@@ -66,7 +66,7 @@ const ProductCard = ({
         </div>
 
         {/* Title */}
-        <h2 className="text-lg font-bold text-foreground text-center mb-3 min-h-[3.5rem] flex items-center justify-center">
+        <h2 className="text-lg font-bold text-foreground text-center mb-3 min-h-[3.5rem] flex items-center justify-center leading-snug">
           {title}
         </h2>
 
