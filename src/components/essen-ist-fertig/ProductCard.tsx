@@ -44,7 +44,7 @@ const ProductCard = ({
 
   return (
     <motion.div
-      className="bg-card/60 backdrop-blur-sm rounded-2xl p-6 border border-border/30 shadow-sm flex flex-col"
+      className="bg-card/60 backdrop-blur-sm rounded-2xl p-6 border border-border/30 shadow-sm flex flex-col h-full"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, delay }}
@@ -85,18 +85,18 @@ const ProductCard = ({
         </p>
       )}
 
-      {/* Description + Notice - fixed min height for alignment */}
-      <div className="min-h-[5rem] mb-4">
+      {/* Description + Notice */}
+      <div className="min-h-[6rem] mb-4">
         <p className="text-sm text-muted-foreground text-center leading-relaxed mb-1 [&_span]:whitespace-nowrap">
           {description.split(/(\d+\s*Seiten)/).map((part, i) =>
             /\d+\s*Seiten/.test(part) ? <span key={i}>{part}</span> : part
           )}
         </p>
-        {notice && <div className="mt-1">{notice}</div>}
+        {notice && <div className="mt-2">{notice}</div>}
       </div>
 
-      {/* Accordion - fully local state */}
-      <div className="border-t border-border/30">
+      {/* Accordion */}
+      <div className="border-t border-border/30 mt-auto">
         <button
           type="button"
           onClick={() => setIsOpen(!isOpen)}
@@ -133,7 +133,7 @@ const ProductCard = ({
       </div>
 
       {/* Purchase Section */}
-      <div className="bg-card/50 rounded-lg p-4 border border-border/30 text-center space-y-3 mt-4">
+      <div className="bg-card/50 rounded-lg p-4 border border-border/30 text-center space-y-3 mt-6">
         <div className="text-xl font-bold text-foreground">{price}</div>
 
         {buttonDisabled ? (
