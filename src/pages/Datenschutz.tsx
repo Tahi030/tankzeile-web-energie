@@ -51,7 +51,7 @@ const Datenschutz = () => {
               <h2>4. Zahlungsabwicklung und Reseller</h2>
               <h3>Abwicklung über Copecart</h3>
               <p>
-                Auf dieser Website werden digitale Produkte (z.B. PDF-Ratgeber) zum Kauf angeboten. Es wird ausdrücklich darauf hingewiesen, dass der Verkauf und die Zahlungsabwicklung nicht direkt über die Websitebetreiberin erfolgen, sondern über den Reseller-Partner:
+                Auf dieser Website werden digitale Produkte (z.B. E-Books) zum Kauf angeboten. Es wird ausdrücklich darauf hingewiesen, dass der Verkauf und die Zahlungsabwicklung nicht direkt über die Websitebetreiberin erfolgen, sondern über den Reseller-Partner:
               </p>
               <p>
                 <strong>CopeCart GmbH</strong><br />
