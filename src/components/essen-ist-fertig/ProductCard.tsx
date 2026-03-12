@@ -95,8 +95,8 @@ const ProductCard = ({
         {notice && <div className="mt-2">{notice}</div>}
       </div>
 
-      {/* Accordion - fully local state */}
-      <div className="border-t border-border/30">
+      {/* Accordion */}
+      <div className="border-t border-border/30 mt-auto">
         <button
           type="button"
           onClick={() => setIsOpen(!isOpen)}
