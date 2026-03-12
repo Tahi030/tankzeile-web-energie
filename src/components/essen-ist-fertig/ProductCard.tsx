@@ -60,14 +60,25 @@ const ProductCard = ({
               alt={imageAlt}
               loading="eager"
               decoding="async"
+              fetchPriority="high"
+              width={256}
+              height={288}
               className="max-h-full w-auto max-w-64 mx-auto rounded-lg shadow-lg bg-muted"
             />
           </div>
         </div>
 
         {/* Title */}
-        <h2 className="text-lg font-bold text-foreground text-center mb-3 min-h-[3.5rem] flex items-center justify-center">
-          {title}
+        <h2 className="text-lg font-bold text-foreground text-center mb-3 min-h-[3.5rem] flex items-center justify-center leading-snug">
+          <span>
+            {title.includes("!") ? (
+              <>
+                {title.split("!")[0]}!
+                <br />
+                {title.split("!").slice(1).join("!").trim()}
+              </>
+            ) : title}
+          </span>
         </h2>
 
         {/* Subtitle */}
