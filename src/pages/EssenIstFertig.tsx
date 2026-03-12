@@ -59,7 +59,7 @@ const EssenIstFertig = () => {
                 <div className="flex flex-col items-center text-center gap-1">
                   <span className="text-[hsl(12_55%_50%)] text-2xl font-bold">✓</span>
                   <span className="font-semibold text-foreground">Sofort starten</span>
-                  <span className="text-sm">Hilfe in Sekunden als PDF-Download – ohne Wartezeit auf Termine.</span>
+                  <span className="text-sm">Hilfe in Sekunden als E-Book-Download – ohne Wartezeit auf Termine.</span>
                 </div>
               </div>
 
