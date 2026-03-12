@@ -1,35 +1,10 @@
-import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { ChevronDown } from "lucide-react";
-
-const SimpleAccordion = ({ title, children }: { title: string; children: React.ReactNode }) => {
-  const [open, setOpen] = useState(false);
-  return (
-    <div className="w-full border-b border-border/30">
-      <button
-        type="button"
-        onClick={() => setOpen((v) => !v)}
-        className="flex flex-1 w-full items-center justify-between py-3 text-sm font-semibold text-foreground transition-all"
-      >
-        {title}
-        <ChevronDown className={`h-4 w-4 shrink-0 transition-transform duration-200 ${open ? "rotate-180" : ""}`} />
-      </button>
-      <AnimatePresence initial={false}>
-        {open && (
-          <motion.div
-            initial={{ height: 0, opacity: 0 }}
-            animate={{ height: "auto", opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.2 }}
-            className="overflow-hidden"
-          >
-            <div className="pb-4 pt-0">{children}</div>
-          </motion.div>
-        )}
-      </AnimatePresence>
-    </div>
-  );
-};
+import { motion } from "framer-motion";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 interface BulletItem {
   label: string;
@@ -45,6 +20,8 @@ interface ProductCardProps {
   notice?: React.ReactNode;
   accordionTitle: string;
   accordionItems: BulletItem[];
+  accordionOpen?: boolean;
+  onAccordionToggle?: (open: boolean) => void;
   price: string;
   buttonText: string;
   buttonHref: string;
@@ -62,6 +39,8 @@ const ProductCard = ({
   notice,
   accordionTitle,
   accordionItems,
+  accordionOpen = false,
+  onAccordionToggle,
   price,
   buttonText,
   buttonHref,
@@ -125,18 +104,31 @@ const ProductCard = ({
 
         {/* Accordion - pushed to consistent position */}
         <div className="mt-auto pt-4">
-          <SimpleAccordion title={accordionTitle}>
-            <ul className="space-y-2 text-sm text-muted-foreground">
-              {accordionItems.map((item) => (
-                <li key={item.label} className="flex items-start gap-2">
-                  <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                  <span>
-                    <strong>{item.label}</strong> {item.text}
-                  </span>
-                </li>
-              ))}
-            </ul>
-          </SimpleAccordion>
+          <Accordion
+            type="single"
+            collapsible
+            value={accordionOpen ? "details" : undefined}
+            onValueChange={(value) => onAccordionToggle?.(value === "details")}
+            className="w-full"
+          >
+            <AccordionItem value="details" className="border-border/30">
+              <AccordionTrigger className="text-sm font-semibold text-foreground hover:no-underline py-3">
+                {accordionTitle}
+              </AccordionTrigger>
+              <AccordionContent>
+                <ul className="space-y-2 text-sm text-muted-foreground">
+                  {accordionItems.map((item) => (
+                    <li key={item.label} className="flex items-start gap-2">
+                      <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                      <span>
+                        <strong>{item.label}</strong> {item.text}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
 
           {/* Purchase Section */}
           <div className="bg-card/50 rounded-lg p-4 border border-border/30 text-center space-y-3 mt-4">
