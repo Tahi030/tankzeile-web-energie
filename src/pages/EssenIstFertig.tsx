@@ -59,7 +59,7 @@ const EssenIstFertig = () => {
                 <div className="flex flex-col items-center text-center gap-1">
                   <span className="text-[hsl(12_55%_50%)] text-2xl font-bold">✓</span>
                   <span className="font-semibold text-foreground">Sofort starten</span>
-                  <span className="text-sm">Hilfe in Sekunden als PDF-Download – ohne Wartezeit auf Termine.</span>
+                  <span className="text-sm">Hilfe in Sekunden als E-Book-Download – ohne Wartezeit auf Termine.</span>
                 </div>
               </div>
 
@@ -146,7 +146,7 @@ const EssenIstFertig = () => {
                   </motion.a>
 
                   <div className="text-xs text-muted-foreground leading-relaxed">
-                    Die Bezahlung erfolgt sicher über meinen Partner Copecart. Du erhältst das PDF-Paket (63 Seiten) und
+                    Die Bezahlung erfolgt sicher über meinen Partner Copecart. Du erhältst das E-Book (63 Seiten) und
                     die Rechnung automatisch per E‑Mail.
                   </div>
                 </div>
@@ -233,7 +233,7 @@ const EssenIstFertig = () => {
                   </motion.a>
 
                   <div className="text-xs text-muted-foreground leading-relaxed">
-                    Die Bezahlung erfolgt sicher über meinen Partner Copecart. Du erhältst das PDF-Paket (63 Seiten) und
+                    Die Bezahlung erfolgt sicher über meinen Partner Copecart. Du erhältst das E-Book (63 Seiten) und
                     die Rechnung automatisch per E‑Mail.
                   </div>
                 </div>
@@ -308,7 +308,7 @@ const EssenIstFertig = () => {
                   </div>
 
                   <div className="text-xs text-muted-foreground leading-relaxed">
-                    Die Bezahlung erfolgt sicher über meinen Partner Copecart. Du erhältst das PDF-Paket (63 Seiten) und
+                    Die Bezahlung erfolgt sicher über meinen Partner Copecart. Du erhältst das E-Book (63 Seiten) und
                     die Rechnung automatisch per E‑Mail.
                   </div>
                 </div>

@@ -67,7 +67,7 @@ const Index = () => {
                     <li>
                       <strong className="text-foreground">Essen ist fertig!</strong>
                       <br />
-                      Die PDF Pakete der Serie „Essen ist fertig!" bieten Soforthilfe für zu Hause. Sie geben einen roten Faden bei Bauchschmerzen, Unverträglichkeiten oder Überforderung am Esstisch. Als Rettungskoffer bringen sie Sicherheit in Familien, sodass der Bauch endlich zur Ruhe kommt.
+                      Die E-Books der Serie „Essen ist fertig!" bieten Soforthilfe für zu Hause. Sie geben einen roten Faden bei Bauchschmerzen, Unverträglichkeiten oder Überforderung am Esstisch. Als Rettungskoffer bringen sie Sicherheit in Familien, sodass der Bauch endlich zur Ruhe kommt.
                     </li>
                   </ul>
                 </div>
