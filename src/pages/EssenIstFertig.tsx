@@ -116,7 +116,7 @@ const EssenIstFertig = () => {
               image="/assets/rettungskoffer-bauch-code.png"
               imageAlt="Essen ist fertig! Der Bauch-Code Cover"
               title="ESSEN IST FERTIG! DEIN BASIS-KOFFER FÜR DIE SENSIBLE KINDERMITTE"
-              description="Egal, ob mit oder ohne Diagnose: Wie tickt der individuelle Stoffwechsel deines Kindes? Lerne die Zusammenhänge zu verstehen."
+              description="37 Seiten Wissen & Orientierung. Egal, ob mit oder ohne Diagnose: Wie tickt der individuelle Stoffwechsel deines Kindes? Lerne die Zusammenhänge zu verstehen."
               accordionTitle="Das steckt drin"
               accordionItems={bauchCodeItems}
               price="Einmalig 14,99 €"
