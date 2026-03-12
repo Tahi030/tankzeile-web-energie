@@ -136,10 +136,10 @@ const Index = () => {
 
             <UniformOfferCard
               title="Essen ist fertig!"
-              description={<>Schluss mit Sorgen am Familientisch. Hier wartet der <strong>Rettungskoffer bei Unverträglichkeiten</strong>: Sofortige Hilfe, kindgerechte Erklärungen und Listen für Kita &amp; Schule. Einfach runterladen und durchatmen.</>}
+              description={<>Bauchweh oder die frische Diagnose Nahrungsmittelunverträglichkeit bestimmen den Alltag? Mit der digitalen Serie „Essen ist fertig!" bekommst du statt Medizin-Kauderwelsch direkt anwendbares Praxis-Wissen, um den Ernährungs-Dschungel stressfrei zu meistern.</>}
               imageUrl={essenIstFertigImage}
               linkTo="/essen-ist-fertig"
-              buttonText="Pakete entdecken"
+              buttonText="Direkt zur Soforthilfe"
               accent="secondary"
               delay={0.2}
               imageClassName="h-56 object-cover object-top"
