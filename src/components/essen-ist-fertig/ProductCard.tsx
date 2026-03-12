@@ -85,14 +85,14 @@ const ProductCard = ({
         </p>
       )}
 
-      {/* Description + Notice - fixed min height for alignment */}
-      <div className="min-h-[5rem] mb-4">
+      {/* Description + Notice */}
+      <div className="min-h-[6rem] mb-4">
         <p className="text-sm text-muted-foreground text-center leading-relaxed mb-1 [&_span]:whitespace-nowrap">
           {description.split(/(\d+\s*Seiten)/).map((part, i) =>
             /\d+\s*Seiten/.test(part) ? <span key={i}>{part}</span> : part
           )}
         </p>
-        {notice && <div className="mt-1">{notice}</div>}
+        {notice && <div className="mt-2">{notice}</div>}
       </div>
 
       {/* Accordion - fully local state */}
