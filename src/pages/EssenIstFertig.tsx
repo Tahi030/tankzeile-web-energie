@@ -1,11 +1,23 @@
 import { useEffect } from "react";
 import { motion } from "framer-motion";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+import ProductCard from "@/components/essen-ist-fertig/ProductCard";
+
+const rettungskofferItems = [
+  { label: "Sofort-Hilfe:", text: "Download in Sekunden statt Warten auf Termine" },
+  { label: "Sicher einkaufen:", text: "Spickzettel für die Hosentasche (Do's & Don'ts)" },
+  { label: "Entspannt abgeben:", text: "Fertige Listen für Kita, Schule & Oma" },
+  { label: "Kein Verzicht:", text: "10 schnelle Snackideen & familienfreundliche Rezepte" },
+  { label: "Stressfrei planen:", text: "Wochenbaukasten mit Beispielplan" },
+  { label: "Alles geklärt:", text: "Antworten auf die häufigsten Eltern-Fragen (FAQ)" },
+];
+
+const bauchCodeItems = [
+  { label: "Bauch-Typen-Test:", text: "Finde heraus, welcher Stoffwechsel-Typ dein Kind ist" },
+  { label: "Stoffwechsel-Typen:", text: "Verständliche Erklärungen der einzelnen Typen" },
+  { label: "Kühlschrankretter:", text: "Dein Spickzettel für den Alltag" },
+  { label: "Entzündungswissen:", text: "Was du über stille Entzündungen wissen solltest" },
+  { label: "Häufige Fragen:", text: "Antworten auf die wichtigsten Eltern-Fragen" },
+];
 
 const EssenIstFertig = () => {
   useEffect(() => {
@@ -23,15 +35,6 @@ const EssenIstFertig = () => {
       document.body.classList.remove("bg-background");
     };
   }, []);
-
-  const bulletItems = [
-    { label: "Sofort-Hilfe:", text: "Download in Sekunden statt Warten auf Termine" },
-    { label: "Sicher einkaufen:", text: "Spickzettel für die Hosentasche (Do's & Don'ts)" },
-    { label: "Entspannt abgeben:", text: "Fertige Listen für Kita, Schule & Oma" },
-    { label: "Kein Verzicht:", text: "10 schnelle Snackideen & familienfreundliche Rezepte" },
-    { label: "Stressfrei planen:", text: "Wochenbaukasten mit Beispielplan" },
-    { label: "Alles geklärt:", text: "Antworten auf die häufigsten Eltern-Fragen (FAQ)" },
-  ];
 
   return (
     <main className="min-h-screen bg-muted pt-8 pb-16 md:pt-12 md:pb-24">
@@ -75,221 +78,53 @@ const EssenIstFertig = () => {
 
           {/* Product Cards Grid */}
           <div className="grid md:grid-cols-3 gap-8">
-            {/* Laktose Card */}
-            <motion.div
-              className="bg-card/60 backdrop-blur-sm rounded-2xl p-6 border border-border/30 shadow-sm flex flex-col"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.3 }}
-            >
-              <div className="flex flex-col flex-1 gap-5">
-                <div className="text-center">
-                  <img
-                    src="/assets/rettungskoffer-laktose.png?v=2"
-                    alt="Essen ist fertig! Rettungskoffer bei Laktoseintoleranz Cover"
-                    loading="eager"
-                    decoding="async"
-                    width={256}
-                    height={362}
-                    className="w-full max-w-64 mx-auto rounded-lg shadow-lg bg-muted"
-                  />
-                </div>
+            <ProductCard
+              image="/assets/rettungskoffer-laktose.png?v=2"
+              imageAlt="Essen ist fertig! Rettungskoffer bei Laktoseintoleranz Cover"
+              title="ESSEN IST FERTIG! DEIN RETTUNGSKOFFER BEI LAKTOSEINTOLERANZ"
+              description="Die Hilfe für dein Kind nach der Diagnose – 63 Seiten Wissen, Vorlagen & Rezepte."
+              accordionTitle="Das steckt drin"
+              accordionItems={rettungskofferItems}
+              price="Einmalig 24,99 €"
+              buttonText="Rettungskoffer sichern"
+              buttonHref="https://copecart.com/products/054a7b1d/checkout"
+              paymentNote="Die Bezahlung erfolgt sicher über meinen Partner Copecart. Du erhältst das E-Book (63 Seiten) und die Rechnung automatisch per E‑Mail."
+              delay={0.3}
+            />
 
-                <h2 className="text-xl font-bold text-foreground text-center">
-                  ESSEN IST FERTIG! DEIN RETTUNGSKOFFER BEI LAKTOSEINTOLERANZ
-                </h2>
-
-                <p className="text-muted-foreground text-center leading-relaxed text-sm">
-                  Die Hilfe für dein Kind nach der Diagnose – 63 Seiten Wissen, Vorlagen & Rezepte.
-                </p>
-
-                <Accordion type="single" collapsible className="w-full">
-                  <AccordionItem value="details" className="border-border/30">
-                    <AccordionTrigger className="text-sm font-semibold text-foreground hover:no-underline">
-                      Das steckt drin
-                    </AccordionTrigger>
-                    <AccordionContent>
-                      <ul className="space-y-2 text-sm text-muted-foreground">
-                        {bulletItems.map((item) => (
-                          <li key={item.label} className="flex items-start gap-2">
-                            <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                            <span><strong>{item.label}</strong> {item.text}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </AccordionContent>
-                  </AccordionItem>
-                </Accordion>
-
-                <div className="mt-auto bg-card/50 rounded-lg p-4 border border-border/30 text-center space-y-3">
-                  <div className="text-xl font-bold text-foreground">Einmalig 24,99 €</div>
-                  <motion.a
-                    href="https://copecart.com/products/054a7b1d/checkout"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block bg-[hsl(25_30%_88%)] hover:bg-[hsl(25_35%_82%)] text-[hsl(25_30%_25%)] px-4 py-2 rounded-lg transition-all duration-300 font-medium w-full text-sm shadow-md hover:shadow-lg"
-                    whileHover={{ scale: 1.02 }}
-                    whileTap={{ scale: 0.98 }}
-                  >
-                    Rettungskoffer sichern
-                  </motion.a>
-                  <div className="text-xs text-muted-foreground leading-relaxed">
-                    Die Bezahlung erfolgt sicher über meinen Partner Copecart. Du erhältst das E-Book (63 Seiten) und die Rechnung automatisch per E‑Mail.
-                  </div>
-                </div>
-              </div>
-            </motion.div>
-
-            {/* Fruktose Card */}
-            <motion.div
-              className="bg-card/60 backdrop-blur-sm rounded-2xl p-6 border border-border/30 shadow-sm flex flex-col"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-            >
-              <div className="flex flex-col flex-1 gap-5">
-                <div className="text-center">
-                  <img
-                    src="/assets/rettungskoffer-fruktose-new.png"
-                    alt="Essen ist fertig! Rettungskoffer bei Fruktoseintoleranz Cover"
-                    loading="eager"
-                    decoding="async"
-                    width={256}
-                    height={362}
-                    className="w-full max-w-64 mx-auto rounded-lg shadow-lg bg-muted"
-                  />
-                </div>
-
-                <h2 className="text-xl font-bold text-foreground text-center">
-                  ESSEN IST FERTIG! DEIN RETTUNGSKOFFER BEI FRUKTOSEINTOLERANZ
-                </h2>
-
-                <p className="text-muted-foreground text-center leading-relaxed text-sm">
-                  Die Hilfe für dein Kind nach der Diagnose – 63 Seiten Wissen, Vorlagen & Rezepte.
-                </p>
-
+            <ProductCard
+              image="/assets/rettungskoffer-fruktose-new.png"
+              imageAlt="Essen ist fertig! Rettungskoffer bei Fruktoseintoleranz Cover"
+              title="ESSEN IST FERTIG! DEIN RETTUNGSKOFFER BEI FRUKTOSEINTOLERANZ"
+              description="Die Hilfe für dein Kind nach der Diagnose – 63 Seiten Wissen, Vorlagen & Rezepte."
+              notice={
                 <p className="text-xs text-muted-foreground text-center leading-relaxed italic">
                   Bei intestinaler Fruktosemalabsorption.<br />
                   <span className="font-medium">(Wichtig: Nicht geeignet bei hereditärer Fruktoseintoleranz / HFI)</span>
                 </p>
+              }
+              accordionTitle="Das steckt drin"
+              accordionItems={rettungskofferItems}
+              price="Einmalig 24,99 €"
+              buttonText="Rettungskoffer sichern"
+              buttonHref="https://copecart.com/products/9f09326b/checkout"
+              paymentNote="Die Bezahlung erfolgt sicher über meinen Partner Copecart. Du erhältst das E-Book (63 Seiten) und die Rechnung automatisch per E‑Mail."
+              delay={0.4}
+            />
 
-                <Accordion type="single" collapsible className="w-full">
-                  <AccordionItem value="details" className="border-border/30">
-                    <AccordionTrigger className="text-sm font-semibold text-foreground hover:no-underline">
-                      Das steckt drin
-                    </AccordionTrigger>
-                    <AccordionContent>
-                      <ul className="space-y-2 text-sm text-muted-foreground">
-                        {bulletItems.map((item) => (
-                          <li key={item.label} className="flex items-start gap-2">
-                            <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                            <span><strong>{item.label}</strong> {item.text}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </AccordionContent>
-                  </AccordionItem>
-                </Accordion>
-
-                <div className="mt-auto bg-card/50 rounded-lg p-4 border border-border/30 text-center space-y-3">
-                  <div className="text-xl font-bold text-foreground">Einmalig 24,99 €</div>
-                  <motion.a
-                    href="https://copecart.com/products/9f09326b/checkout"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block bg-[hsl(25_30%_88%)] hover:bg-[hsl(25_35%_82%)] text-[hsl(25_30%_25%)] px-4 py-2 rounded-lg transition-all duration-300 font-medium w-full text-sm shadow-md hover:shadow-lg"
-                    whileHover={{ scale: 1.02 }}
-                    whileTap={{ scale: 0.98 }}
-                  >
-                    Rettungskoffer sichern
-                  </motion.a>
-                  <div className="text-xs text-muted-foreground leading-relaxed">
-                    Die Bezahlung erfolgt sicher über meinen Partner Copecart. Du erhältst das E-Book (63 Seiten) und die Rechnung automatisch per E‑Mail.
-                  </div>
-                </div>
-              </div>
-            </motion.div>
-
-            {/* Bauch-Code Card (NEU) */}
-            <motion.div
-              className="bg-card/60 backdrop-blur-sm rounded-2xl p-6 border border-border/30 shadow-sm flex flex-col"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.5 }}
-            >
-              <div className="flex flex-col flex-1 gap-5">
-                <div className="text-center">
-                  <img
-                    src="/assets/rettungskoffer-bauch-code.png"
-                    alt="Essen ist fertig! Der Bauch-Code Cover"
-                    loading="eager"
-                    decoding="async"
-                    width={256}
-                    height={362}
-                    className="w-full max-w-64 mx-auto rounded-lg shadow-lg bg-muted"
-                  />
-                </div>
-
-                <h2 className="text-xl font-bold text-foreground text-center">
-                  ESSEN IST FERTIG! DER BAUCH-CODE
-                </h2>
-
-                <p className="text-muted-foreground text-center leading-relaxed text-sm font-medium">
-                  Dein Basis-Koffer für die sensible Kindermitte.
-                </p>
-
-                <p className="text-sm text-muted-foreground text-center leading-relaxed">
-                  Egal, ob mit oder ohne Diagnose: Wie tickt der individuelle Stoffwechsel deines Kindes? Lerne die Zusammenhänge zu verstehen.
-                </p>
-
-                <Accordion type="single" collapsible className="w-full">
-                  <AccordionItem value="details" className="border-border/30">
-                    <AccordionTrigger className="text-sm font-semibold text-foreground hover:no-underline">
-                      Das steckt drin (37 Seiten)
-                    </AccordionTrigger>
-                    <AccordionContent>
-                      <ul className="space-y-2 text-sm text-muted-foreground">
-                        <li className="flex items-start gap-2">
-                          <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                          <span><strong>Bauch-Typen-Test:</strong> Finde heraus, welcher Stoffwechsel-Typ dein Kind ist</span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                          <span><strong>Stoffwechsel-Typen:</strong> Verständliche Erklärungen der einzelnen Typen</span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                          <span><strong>Kühlschrankretter:</strong> Dein Spickzettel für den Alltag</span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                          <span><strong>Entzündungswissen:</strong> Was du über stille Entzündungen wissen solltest</span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                          <span><strong>Häufige Fragen:</strong> Antworten auf die wichtigsten Eltern-Fragen</span>
-                        </li>
-                      </ul>
-                    </AccordionContent>
-                  </AccordionItem>
-                </Accordion>
-
-                <div className="mt-auto bg-card/50 rounded-lg p-4 border border-border/30 text-center space-y-3">
-                  <div className="text-xl font-bold text-foreground">Einmalig [DEIN PREIS] €</div>
-                  <motion.a
-                    href="#"
-                    className="block bg-[hsl(25_30%_88%)] hover:bg-[hsl(25_35%_82%)] text-[hsl(25_30%_25%)] px-4 py-2 rounded-lg transition-all duration-300 font-medium w-full text-sm shadow-md hover:shadow-lg"
-                    whileHover={{ scale: 1.02 }}
-                    whileTap={{ scale: 0.98 }}
-                  >
-                    Basis-Koffer sichern
-                  </motion.a>
-                  <div className="text-xs text-muted-foreground leading-relaxed">
-                    Die Bezahlung erfolgt sicher über meinen Partner Copecart. Du erhältst das E-Book und die Rechnung automatisch per E‑Mail.
-                  </div>
-                </div>
-              </div>
-            </motion.div>
+            <ProductCard
+              image="/assets/rettungskoffer-bauch-code.png"
+              imageAlt="Essen ist fertig! Der Bauch-Code Cover"
+              title="ESSEN IST FERTIG! DEIN BASIS-KOFFER FÜR DIE SENSIBLE KINDERMITTE"
+              description="Egal, ob mit oder ohne Diagnose: Wie tickt der individuelle Stoffwechsel deines Kindes? Lerne die Zusammenhänge zu verstehen."
+              accordionTitle="Das steckt drin (37 Seiten)"
+              accordionItems={bauchCodeItems}
+              price="Einmalig 14,99 €"
+              buttonText="Basis-Koffer sichern"
+              buttonHref="#"
+              paymentNote="Die Bezahlung erfolgt sicher über meinen Partner Copecart. Du erhältst das E-Book und die Rechnung automatisch per E‑Mail."
+              delay={0.5}
+            />
           </div>
 
           {/* Mini Preview Images */}
