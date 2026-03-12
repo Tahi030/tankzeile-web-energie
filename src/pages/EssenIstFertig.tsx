@@ -13,10 +13,11 @@ const rettungskofferItems = [
 
 const bauchCodeItems = [
   { label: "Bauch-Typen-Test:", text: "Finde heraus, welcher Stoffwechsel-Typ dein Kind ist" },
-  { label: "Stoffwechsel-Typen:", text: "Verständliche Erklärungen der einzelnen Typen" },
-  { label: "Kühlschrankretter:", text: "Dein Spickzettel für den Alltag" },
-  { label: "Die unsichtbaren Bauch-Stressoren:", text: "Warum es oft nicht nur am Essen liegt und wie ihr den inneren Motor durch Alltagsrituale beruhigt" },
-  { label: "Häufige Fragen:", text: "Antworten auf die wichtigsten Eltern-Fragen" },
+  { label: "Die 3 Stoffwechsel-Typen:", text: "Leicht verständliche Erklärungen, wie der Bauch deines Kindes wirklich tickt" },
+  { label: "Die unsichtbaren Bauch-Stressoren:", text: "Warum es oft nicht nur am Essen liegt und wie du den inneren Motor durch Alltagsrituale beruhigst" },
+  { label: "Extra-Tipp für Kita & Schule:", text: "Wie du den Speiseplan außer Haus ganz entspannt ausgleichst" },
+  { label: "Die Kühlschrank-Retter:", text: "Deine 3 praktischen Spickzettel zum Ausdrucken für den Alltag (inkl. Notfall-Rezepten)" },
+  { label: "Häufige Fragen:", text: "Klare Antworten auf die wichtigsten Eltern-Fragen rund um die Umsetzung" },
 ];
 
 const EssenIstFertig = () => {
