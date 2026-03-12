@@ -60,6 +60,9 @@ const ProductCard = ({
               alt={imageAlt}
               loading="eager"
               decoding="async"
+              fetchPriority="high"
+              width={256}
+              height={288}
               className="max-h-full w-auto max-w-64 mx-auto rounded-lg shadow-lg bg-muted"
             />
           </div>
