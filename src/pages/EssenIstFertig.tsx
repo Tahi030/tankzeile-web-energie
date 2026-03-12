@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import ProductCard from "@/components/essen-ist-fertig/ProductCard";
 
@@ -21,6 +21,8 @@ const bauchCodeItems = [
 ];
 
 const EssenIstFertig = () => {
+  const [openAccordionCard, setOpenAccordionCard] = useState<"laktose" | "fruktose" | "basis" | null>(null);
+
   useEffect(() => {
     document.title =
       "Essen ist fertig! – Alltagshilfen bei Nahrungsunverträglichkeiten – Captain Apfel & seine Crew";
@@ -86,6 +88,8 @@ const EssenIstFertig = () => {
               description="Die Hilfe für dein Kind nach der Diagnose – 63 Seiten Wissen, Vorlagen & Rezepte."
               accordionTitle="Das steckt drin"
               accordionItems={rettungskofferItems}
+              accordionOpen={openAccordionCard === "laktose"}
+              onAccordionToggle={(open) => setOpenAccordionCard(open ? "laktose" : null)}
               price="Einmalig 24,99 €"
               buttonText="Rettungskoffer sichern"
               buttonHref="https://copecart.com/products/054a7b1d/checkout"
@@ -106,6 +110,8 @@ const EssenIstFertig = () => {
               }
               accordionTitle="Das steckt drin"
               accordionItems={rettungskofferItems}
+              accordionOpen={openAccordionCard === "fruktose"}
+              onAccordionToggle={(open) => setOpenAccordionCard(open ? "fruktose" : null)}
               price="Einmalig 24,99 €"
               buttonText="Rettungskoffer sichern"
               buttonHref="https://copecart.com/products/9f09326b/checkout"
@@ -120,6 +126,8 @@ const EssenIstFertig = () => {
               description="37 Seiten Wissen & Orientierung. Egal, ob mit oder ohne Diagnose: Wie tickt der individuelle Stoffwechsel deines Kindes? Entschlüssle euren Bauch-Code."
               accordionTitle="Das steckt drin"
               accordionItems={bauchCodeItems}
+              accordionOpen={openAccordionCard === "basis"}
+              onAccordionToggle={(open) => setOpenAccordionCard(open ? "basis" : null)}
               price="Einmalig 14,99 €"
               buttonText="Basis-Koffer sichern"
               buttonHref="#"
