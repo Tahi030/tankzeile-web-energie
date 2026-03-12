@@ -15,7 +15,7 @@ const bauchCodeItems = [
   { label: "Bauch-Typen-Test:", text: "Finde heraus, welcher Stoffwechsel-Typ dein Kind ist" },
   { label: "Stoffwechsel-Typen:", text: "Verständliche Erklärungen der einzelnen Typen" },
   { label: "Kühlschrankretter:", text: "Dein Spickzettel für den Alltag" },
-  { label: "Entzündungswissen:", text: "Was du über stille Entzündungen wissen solltest" },
+  { label: "Die unsichtbaren Bauch-Stressoren:", text: "Warum es oft nicht nur am Essen liegt und wie ihr den inneren Motor durch Alltagsrituale beruhigt" },
   { label: "Häufige Fragen:", text: "Antworten auf die wichtigsten Eltern-Fragen" },
 ];
 
