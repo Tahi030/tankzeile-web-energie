@@ -33,6 +33,12 @@ const bauchCodeItems = [
 ];
 
 const EssenIstFertig = () => {
+  const [openCard, setOpenCard] = useState<string | null>(null);
+
+  const handleToggle = (id: string) => {
+    setOpenCard(prev => prev === id ? null : id);
+  };
+
   useEffect(() => {
     document.title =
       "Essen ist fertig! – Alltagshilfen bei Nahrungsunverträglichkeiten – Captain Apfel & seine Crew";
