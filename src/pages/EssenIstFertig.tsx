@@ -2,7 +2,18 @@ import { useEffect } from "react";
 import { motion } from "framer-motion";
 import ProductCard from "@/components/essen-ist-fertig/ProductCard";
 
-const rettungskofferItems = [
+const rettungskofferLaktoseItems = [
+  { label: "Kompakte Hilfe:", text: "63 Seiten Wissen für die Zeit direkt nach der Diagnose." },
+  { label: "Sofort-Hilfe:", text: "Direkter Download in Sekunden, statt langes Warten auf einen Arzttermin" },
+  { label: "Sicher einkaufen:", text: "Der praktische Spickzettel für die Hosentasche mit klaren Do's & Don'ts" },
+  { label: "Entspannt abgeben:", text: "Fertige Info-Listen zur sicheren Übergabe an Kita, Schule oder Großeltern" },
+  { label: "Kein Verzicht:", text: "10 blitzschnelle Snackideen & leckere, familienfreundliche Rezepte" },
+  { label: "Stressfrei planen:", text: "Flexibler Wochenbaukasten inklusive alltagstauglichem Beispielplan" },
+  { label: "Exklusives Expertenwissen:", text: "Fundierte Antworten und bewährte Praxis-Lösungen für die wichtigsten Fragen direkt nach der Diagnose" },
+];
+
+const rettungskofferFruktoseItems = [
+  { label: "Kompakte Hilfe:", text: "63 Seiten Wissen (bei intestinaler Fruktosemalabsorption) für die Zeit direkt nach der Diagnose." },
   { label: "Sofort-Hilfe:", text: "Direkter Download in Sekunden, statt langes Warten auf einen Arzttermin" },
   { label: "Sicher einkaufen:", text: "Der praktische Spickzettel für die Hosentasche mit klaren Do's & Don'ts" },
   { label: "Entspannt abgeben:", text: "Fertige Info-Listen zur sicheren Übergabe an Kita, Schule oder Großeltern" },
@@ -12,6 +23,7 @@ const rettungskofferItems = [
 ];
 
 const bauchCodeItems = [
+  { label: "Wissen & Orientierung:", text: "38 Seiten zur Entschlüsselung des individuellen Stoffwechsels – mit oder ohne Diagnose." },
   { label: "Bauch-Typen-Test:", text: "Finde heraus, welcher Stoffwechsel-Typ dein Kind ist" },
   { label: "Die 3 Stoffwechsel-Typen:", text: "Leicht verständliche Erklärungen, wie der Bauch deines Kindes wirklich tickt" },
   { label: "Die unsichtbaren Bauch-Stressoren:", text: "Warum es oft nicht nur am Essen liegt und wie du den inneren Motor durch Alltagsrituale beruhigst" },
@@ -83,9 +95,9 @@ const EssenIstFertig = () => {
               image="/assets/rettungskoffer-laktose.png?v=2"
               imageAlt="Essen ist fertig! Rettungskoffer bei Laktoseintoleranz Cover"
               title="ESSEN IST FERTIG! DEIN RETTUNGSKOFFER BEI LAKTOSEINTOLERANZ"
-              description="Die Hilfe für dein Kind nach der Diagnose – 63 Seiten Wissen, Vorlagen & Rezepte."
+              description="Klassisch & fundiert: Basierend auf der klassischen, modernen Ernährungslehre."
               accordionTitle="Das steckt drin"
-              accordionItems={rettungskofferItems}
+              accordionItems={rettungskofferLaktoseItems}
               price="Einmalig 24,99 €"
               buttonText="Rettungskoffer sichern"
               buttonHref="https://copecart.com/products/054a7b1d/checkout"
@@ -97,15 +109,14 @@ const EssenIstFertig = () => {
               image="/assets/rettungskoffer-fruktose-new.png"
               imageAlt="Essen ist fertig! Rettungskoffer bei Fruktoseintoleranz Cover"
               title="ESSEN IST FERTIG! DEIN RETTUNGSKOFFER BEI FRUKTOSEINTOLERANZ"
-              description="Die Hilfe für dein Kind nach der Diagnose – 63 Seiten Wissen, Vorlagen & Rezepte."
+              description="Klassisch & fundiert: Basierend auf der klassischen, modernen Ernährungslehre."
               notice={
                 <p className="text-xs text-muted-foreground text-center leading-relaxed italic">
-                  Bei intestinaler Fruktosemalabsorption.<br />
                   <span className="font-medium">(Wichtig: Nicht geeignet bei hereditärer Fruktoseintoleranz / HFI)</span>
                 </p>
               }
               accordionTitle="Das steckt drin"
-              accordionItems={rettungskofferItems}
+              accordionItems={rettungskofferFruktoseItems}
               price="Einmalig 24,99 €"
               buttonText="Rettungskoffer sichern"
               buttonHref="https://copecart.com/products/9f09326b/checkout"
@@ -117,7 +128,7 @@ const EssenIstFertig = () => {
               image="/assets/rettungskoffer-bauch-code.png"
               imageAlt="Essen ist fertig! Der Bauch-Code Cover"
               title="ESSEN IST FERTIG! DEIN BASIS-KOFFER FÜR DIE SENSIBLE KINDERMITTE"
-              description="37 Seiten Wissen & Orientierung. Egal, ob mit oder ohne Diagnose: Wie tickt der individuelle Stoffwechsel deines Kindes? Entschlüssle euren Bauch-Code."
+              description="Sonderformat: Eine TCM-inspirierte, ganzheitliche Ergänzung."
               accordionTitle="Das steckt drin"
               accordionItems={bauchCodeItems}
               price="Einmalig 14,99 €"
