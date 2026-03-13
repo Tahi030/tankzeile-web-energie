@@ -23,7 +23,7 @@ const rettungskofferFruktoseItems = [
 ];
 
 const bauchCodeItems = [
-  { label: "Wissen & Orientierung:", text: "38 Seiten zur Entschlüsselung des individuellen Stoffwechsels – mit oder ohne Diagnose einer Nahrungsmittelunverträglichkeit." },
+  { label: "Wissen & Orientierung:", text: "38 Seiten zur Entschlüsselung des individuellen Stoffwechsels – mit oder ohne Diagnose einer Nahrungsmittelunverträglichkeit" },
   { label: "Bauch-Typen-Test:", text: "Finde heraus, welcher Stoffwechsel-Typ dein Kind ist" },
   { label: "Die 3 Stoffwechsel-Typen:", text: "Leicht verständliche Erklärungen, wie der Bauch deines Kindes wirklich tickt" },
   { label: "Die unsichtbaren Bauch-Stressoren:", text: "Warum es oft nicht nur am Essen liegt und wie du den inneren Motor durch Alltagsrituale beruhigst" },
