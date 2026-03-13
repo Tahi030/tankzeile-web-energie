@@ -13,7 +13,7 @@ const rettungskofferLaktoseItems = [
 ];
 
 const rettungskofferFruktoseItems = [
-  { label: "Kompakte Hilfe:", text: "63 Seiten Wissen (bei intestinaler Fruktosemalabsorption) für die Zeit direkt nach der Diagnose." },
+  { label: "Kompakte Hilfe:", text: "63 Seiten Wissen (bei intestinaler Fruktosemalabsorption) für die Zeit direkt nach der Diagnose" },
   { label: "Sofort-Hilfe:", text: "Direkter Download in Sekunden, statt langes Warten auf einen Arzttermin" },
   { label: "Sicher einkaufen:", text: "Der praktische Spickzettel für die Hosentasche mit klaren Do's & Don'ts" },
   { label: "Entspannt abgeben:", text: "Fertige Info-Listen zur sicheren Übergabe an Kita, Schule oder Großeltern" },
