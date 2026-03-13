@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import ProductCard from "@/components/essen-ist-fertig/ProductCard";
 
 const rettungskofferLaktoseItems = [
-  { label: "Kompakte Hilfe:", text: "63 Seiten Wissen für die Zeit direkt nach der Diagnose." },
+  { label: "Kompakte Hilfe:", text: "63 Seiten Wissen für die Zeit direkt nach der Diagnose" },
   { label: "Sofort-Hilfe:", text: "Direkter Download in Sekunden, statt langes Warten auf einen Arzttermin" },
   { label: "Sicher einkaufen:", text: "Der praktische Spickzettel für die Hosentasche mit klaren Do's & Don'ts" },
   { label: "Entspannt abgeben:", text: "Fertige Info-Listen zur sicheren Übergabe an Kita, Schule oder Großeltern" },
@@ -13,7 +13,7 @@ const rettungskofferLaktoseItems = [
 ];
 
 const rettungskofferFruktoseItems = [
-  { label: "Kompakte Hilfe:", text: "63 Seiten Wissen (bei intestinaler Fruktosemalabsorption) für die Zeit direkt nach der Diagnose." },
+  { label: "Kompakte Hilfe:", text: "63 Seiten Wissen (bei intestinaler Fruktosemalabsorption) für die Zeit direkt nach der Diagnose" },
   { label: "Sofort-Hilfe:", text: "Direkter Download in Sekunden, statt langes Warten auf einen Arzttermin" },
   { label: "Sicher einkaufen:", text: "Der praktische Spickzettel für die Hosentasche mit klaren Do's & Don'ts" },
   { label: "Entspannt abgeben:", text: "Fertige Info-Listen zur sicheren Übergabe an Kita, Schule oder Großeltern" },
@@ -23,7 +23,7 @@ const rettungskofferFruktoseItems = [
 ];
 
 const bauchCodeItems = [
-  { label: "Wissen & Orientierung:", text: "38 Seiten zur Entschlüsselung des individuellen Stoffwechsels – mit oder ohne Diagnose einer Nahrungsmittelunverträglichkeit." },
+  { label: "Wissen & Orientierung:", text: "38 Seiten zur Entschlüsselung des individuellen Stoffwechsels – mit oder ohne Diagnose einer Nahrungsmittelunverträglichkeit" },
   { label: "Bauch-Typen-Test:", text: "Finde heraus, welcher Stoffwechsel-Typ dein Kind ist" },
   { label: "Die 3 Stoffwechsel-Typen:", text: "Leicht verständliche Erklärungen, wie der Bauch deines Kindes wirklich tickt" },
   { label: "Die unsichtbaren Bauch-Stressoren:", text: "Warum es oft nicht nur am Essen liegt und wie du den inneren Motor durch Alltagsrituale beruhigst" },
