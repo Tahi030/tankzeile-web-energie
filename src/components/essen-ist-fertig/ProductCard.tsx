@@ -41,8 +41,9 @@ const ProductCard = ({
   buttonDisabled,
   paymentNote,
   delay = 0.3,
+  isOpen = false,
+  onToggle,
 }: ProductCardProps) => {
-  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <motion.div
