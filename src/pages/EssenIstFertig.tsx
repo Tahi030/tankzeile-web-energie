@@ -146,6 +146,8 @@ const EssenIstFertig = () => {
               buttonHref="https://copecart.com/products/23d7dbf2/checkout"
               paymentNote="Die Bezahlung erfolgt sicher über meinen Partner Copecart. Du erhältst das E-Book und die Rechnung automatisch per E‑Mail."
               delay={0.5}
+              isOpen={openCard === "bauchcode"}
+              onToggle={() => handleToggle("bauchcode")}
             />
           </div>
 
