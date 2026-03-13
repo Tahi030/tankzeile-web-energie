@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown } from "lucide-react";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 interface BulletItem {
   label: string;
@@ -40,7 +41,12 @@ const ProductCard = ({
   paymentNote,
   delay = 0.3,
 }: ProductCardProps) => {
-  const [isOpen, setIsOpen] = useState(false);
+  const isMobile = useIsMobile();
+  const [isOpen, setIsOpen] = useState(true);
+
+  useEffect(() => {
+    if (isMobile) setIsOpen(false);
+  }, [isMobile]);
 
   return (
     <motion.div
@@ -58,6 +64,7 @@ const ProductCard = ({
             loading="eager"
             decoding="async"
             fetchPriority="high"
+            style={{ contentVisibility: 'auto' }}
             width={256}
             height={288}
             className="max-h-full w-auto max-w-64 mx-auto rounded-lg shadow-lg bg-muted"
@@ -100,7 +107,7 @@ const ProductCard = ({
         <button
           type="button"
           onClick={() => setIsOpen(!isOpen)}
-          className="flex w-full items-center justify-between py-3 text-sm font-semibold text-foreground transition-all"
+          className="flex w-full items-center justify-between py-3 text-sm font-semibold text-foreground transition-all font-luckiest"
         >
           {accordionTitle}
           <ChevronDown
