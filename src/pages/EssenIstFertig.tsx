@@ -130,6 +130,8 @@ const EssenIstFertig = () => {
               buttonHref="https://copecart.com/products/9f09326b/checkout"
               paymentNote="Die Bezahlung erfolgt sicher über meinen Partner Copecart. Du erhältst das E-Book (63 Seiten) und die Rechnung automatisch per E‑Mail."
               delay={0.4}
+              isOpen={openCard === "fruktose"}
+              onToggle={() => handleToggle("fruktose")}
             />
 
             <ProductCard
