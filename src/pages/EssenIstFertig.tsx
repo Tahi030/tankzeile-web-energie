@@ -12,7 +12,18 @@ const rettungskofferLaktoseItems = [
   { label: "Exklusives Expertenwissen:", text: "Fundierte Antworten und bewährte Praxis-Lösungen für die wichtigsten Fragen direkt nach der Diagnose" },
 ];
 
+const rettungskofferFruktoseItems = [
+  { label: "Kompakte Hilfe:", text: "63 Seiten Wissen (bei intestinaler Fruktosemalabsorption) für die Zeit direkt nach der Diagnose." },
+  { label: "Sofort-Hilfe:", text: "Direkter Download in Sekunden, statt langes Warten auf einen Arzttermin" },
+  { label: "Sicher einkaufen:", text: "Der praktische Spickzettel für die Hosentasche mit klaren Do's & Don'ts" },
+  { label: "Entspannt abgeben:", text: "Fertige Info-Listen zur sicheren Übergabe an Kita, Schule oder Großeltern" },
+  { label: "Kein Verzicht:", text: "10 blitzschnelle Snackideen & leckere, familienfreundliche Rezepte" },
+  { label: "Stressfrei planen:", text: "Flexibler Wochenbaukasten inklusive alltagstauglichem Beispielplan" },
+  { label: "Exklusives Expertenwissen:", text: "Fundierte Antworten und bewährte Praxis-Lösungen für die wichtigsten Fragen direkt nach der Diagnose" },
+];
+
 const bauchCodeItems = [
+  { label: "Wissen & Orientierung:", text: "38 Seiten zur Entschlüsselung des individuellen Stoffwechsels – mit oder ohne Diagnose." },
   { label: "Bauch-Typen-Test:", text: "Finde heraus, welcher Stoffwechsel-Typ dein Kind ist" },
   { label: "Die 3 Stoffwechsel-Typen:", text: "Leicht verständliche Erklärungen, wie der Bauch deines Kindes wirklich tickt" },
   { label: "Die unsichtbaren Bauch-Stressoren:", text: "Warum es oft nicht nur am Essen liegt und wie du den inneren Motor durch Alltagsrituale beruhigst" },
