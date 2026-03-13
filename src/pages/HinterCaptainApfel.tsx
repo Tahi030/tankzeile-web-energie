@@ -47,7 +47,7 @@ const HinterCaptainApfel = () => {
               </p>
 
               <p className="text-base leading-relaxed text-muted-foreground">
-                Gesundheit ist individuell. Ein Apfel ist gesund, aber nicht für jeden Bauch. Genau diese Tiefe fehlte mir oft. Mich fasziniert das große Ganze: Wie spielen Ernährung, Entzündungen und Wohlbefinden zusammen? Ich möchte verstehen, wie unser Körper als System funktioniert – und dieses Wissen kindgerecht weitergeben.
+                Gesundheit ist individuell. Ein Apfel ist gesund, aber nicht für jeden Bauch. Genau diese Tiefe fehlte mir oft. Der Körper ist komplex und ich glaube nicht an starre, einseitige Wege. Deshalb verbinde ich fundiertes Ernährungswissen mit ganzheitlichen, ergänzenden Denkweisen (wie beispielsweise Impulsen aus der TCM). Ich möchte verstehen, wie unser Körper als großes System funktioniert – und dieses Wissen kindgerecht weitergeben.
               </p>
 
               <p className="text-base leading-relaxed text-muted-foreground font-semibold text-foreground">
@@ -55,7 +55,7 @@ const HinterCaptainApfel = () => {
               </p>
 
               <p className="text-base leading-relaxed text-muted-foreground">
-                Ich bilde mich stetig weiter. Aktuell vertiefe ich mein Verständnis für ganzheitliche Zusammenhänge im Selbststudium zur Fachberaterin für holistische Gesundheit an der Akademie der Naturheilkunde. Dabei stehen Entzündungsprozesse und Darmgesundheit im Fokus. Parallel nutze ich pädagogische Weiterbildungen von Indipead, um Methodenkompetenz zu stärken. Nachweise zeige ich auf Anfrage gerne vor.
+                Ich bilde mich stetig weiter. Aktuell vertiefe ich mein Verständnis für ganzheitliche Zusammenhänge im Selbststudium zur Fachberaterin für holistische Gesundheit an der Akademie der Naturheilkunde. Dabei interessieren mich Themen wie Entzündungsprozesse und Darmgesundheit ganz besonders. Parallel nutze ich pädagogische Weiterbildungen von Indipead, um Methodenkompetenz zu stärken. Nachweise zeige ich auf Anfrage gerne vor.
               </p>
 
               <p className="text-base leading-relaxed text-muted-foreground">
