@@ -42,11 +42,8 @@ const ProductCard = ({
   delay = 0.3,
 }: ProductCardProps) => {
   const isMobile = useIsMobile();
-  const [isOpen, setIsOpen] = useState(true);
-
-  useEffect(() => {
-    if (isMobile) setIsOpen(false);
-  }, [isMobile]);
+  const [isOpen, setIsOpen] = useState(false);
+  const showAccordionContent = isMobile ? isOpen : true;
 
   return (
     <motion.div
