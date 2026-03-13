@@ -109,15 +109,14 @@ const EssenIstFertig = () => {
               image="/assets/rettungskoffer-fruktose-new.png"
               imageAlt="Essen ist fertig! Rettungskoffer bei Fruktoseintoleranz Cover"
               title="ESSEN IST FERTIG! DEIN RETTUNGSKOFFER BEI FRUKTOSEINTOLERANZ"
-              description="Die Hilfe für dein Kind nach der Diagnose – 63 Seiten Wissen, Vorlagen & Rezepte."
+              description="Klassisch & fundiert: Basierend auf der klassischen, modernen Ernährungslehre."
               notice={
                 <p className="text-xs text-muted-foreground text-center leading-relaxed italic">
-                  Bei intestinaler Fruktosemalabsorption.<br />
                   <span className="font-medium">(Wichtig: Nicht geeignet bei hereditärer Fruktoseintoleranz / HFI)</span>
                 </p>
               }
               accordionTitle="Das steckt drin"
-              accordionItems={rettungskofferItems}
+              accordionItems={rettungskofferFruktoseItems}
               price="Einmalig 24,99 €"
               buttonText="Rettungskoffer sichern"
               buttonHref="https://copecart.com/products/9f09326b/checkout"
