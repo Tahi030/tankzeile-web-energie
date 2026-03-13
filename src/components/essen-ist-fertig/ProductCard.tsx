@@ -41,9 +41,7 @@ const ProductCard = ({
   paymentNote,
   delay = 0.3,
 }: ProductCardProps) => {
-  const isMobile = useIsMobile();
   const [isOpen, setIsOpen] = useState(false);
-  const showAccordionContent = isMobile ? isOpen : true;
 
   return (
     <motion.div
