@@ -119,8 +119,8 @@ const EssenIstFertig = () => {
               title="ESSEN IST FERTIG! DEIN RETTUNGSKOFFER BEI FRUKTOSEINTOLERANZ"
               description="Klassisch & fundiert: Basierend auf der klassischen, modernen Ernährungslehre."
               notice={
-                <p className="text-xs text-muted-foreground text-center leading-relaxed italic">
-                  <span className="font-medium">(Wichtig: Nicht geeignet bei hereditärer Fruktoseintoleranz / HFI)</span>
+                <p className="text-xs text-muted-foreground text-center leading-relaxed italic whitespace-nowrap">
+                  <span className="font-medium">Nicht geeignet bei hereditärer Fruktoseintoleranz / HFI</span>
                 </p>
               }
               accordionTitle="Das steckt drin"
