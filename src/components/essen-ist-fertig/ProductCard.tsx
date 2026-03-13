@@ -41,7 +41,8 @@ const ProductCard = ({
   paymentNote,
   delay = 0.3,
 }: ProductCardProps) => {
-  const [isOpen, setIsOpen] = useState(false);
+  const isMobile = useIsMobile();
+  const [isOpen, setIsOpen] = useState(!isMobile);
 
   return (
     <motion.div
