@@ -103,7 +103,7 @@ const ProductCard = ({
       <div className="border-t border-border/30 mt-auto">
         <button
           type="button"
-          onClick={() => setIsOpen(!isOpen)}
+          onClick={() => onToggle?.()}
           className="flex w-full items-center justify-between py-3 text-sm font-semibold text-foreground transition-all font-luckiest"
         >
           {accordionTitle}
