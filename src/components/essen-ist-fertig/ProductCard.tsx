@@ -42,7 +42,11 @@ const ProductCard = ({
   delay = 0.3,
 }: ProductCardProps) => {
   const isMobile = useIsMobile();
-  const [isOpen, setIsOpen] = useState(!isMobile);
+  const [isOpen, setIsOpen] = useState(true);
+
+  useEffect(() => {
+    if (isMobile) setIsOpen(false);
+  }, [isMobile]);
 
   return (
     <motion.div
