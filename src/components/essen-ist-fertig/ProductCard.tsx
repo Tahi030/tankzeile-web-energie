@@ -100,7 +100,7 @@ const ProductCard = ({
       <div className="border-t border-border/30 mt-auto">
         <button
           type="button"
-          onClick={() => isMobile && setIsOpen(!isOpen)}
+          onClick={() => setIsOpen(!isOpen)}
           className="flex w-full items-center justify-between py-3 text-sm font-semibold text-foreground transition-all font-luckiest"
         >
           {accordionTitle}
