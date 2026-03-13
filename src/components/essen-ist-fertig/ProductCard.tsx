@@ -102,7 +102,7 @@ const ProductCard = ({
         <button
           type="button"
           onClick={() => setIsOpen(!isOpen)}
-          className="flex w-full items-center justify-between py-3 text-sm font-semibold text-foreground transition-all"
+          className="flex w-full items-center justify-between py-3 text-sm font-semibold text-foreground transition-all font-luckiest"
         >
           {accordionTitle}
           <ChevronDown
