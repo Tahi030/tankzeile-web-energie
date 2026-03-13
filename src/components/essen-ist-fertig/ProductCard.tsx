@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 
@@ -22,6 +21,8 @@ interface ProductCardProps {
   buttonDisabled?: boolean;
   paymentNote: string;
   delay?: number;
+  isOpen?: boolean;
+  onToggle?: () => void;
 }
 
 const ProductCard = ({
@@ -39,8 +40,9 @@ const ProductCard = ({
   buttonDisabled,
   paymentNote,
   delay = 0.3,
+  isOpen = false,
+  onToggle,
 }: ProductCardProps) => {
-  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <motion.div
@@ -100,7 +102,7 @@ const ProductCard = ({
       <div className="border-t border-border/30 mt-auto">
         <button
           type="button"
-          onClick={() => setIsOpen(!isOpen)}
+          onClick={() => onToggle?.()}
           className="flex w-full items-center justify-between py-3 text-sm font-semibold text-foreground transition-all font-luckiest"
         >
           {accordionTitle}

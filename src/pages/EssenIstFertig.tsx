@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import ProductCard from "@/components/essen-ist-fertig/ProductCard";
 
@@ -33,6 +33,12 @@ const bauchCodeItems = [
 ];
 
 const EssenIstFertig = () => {
+  const [openCard, setOpenCard] = useState<string | null>(null);
+
+  const handleToggle = (id: string) => {
+    setOpenCard(prev => prev === id ? null : id);
+  };
+
   useEffect(() => {
     document.title =
       "Essen ist fertig! – Alltagshilfen bei Nahrungsunverträglichkeiten – Captain Apfel & seine Crew";
@@ -103,6 +109,8 @@ const EssenIstFertig = () => {
               buttonHref="https://copecart.com/products/054a7b1d/checkout"
               paymentNote="Die Bezahlung erfolgt sicher über meinen Partner Copecart. Du erhältst das E-Book (63 Seiten) und die Rechnung automatisch per E‑Mail."
               delay={0.3}
+              isOpen={openCard === "laktose"}
+              onToggle={() => handleToggle("laktose")}
             />
 
             <ProductCard
@@ -122,6 +130,8 @@ const EssenIstFertig = () => {
               buttonHref="https://copecart.com/products/9f09326b/checkout"
               paymentNote="Die Bezahlung erfolgt sicher über meinen Partner Copecart. Du erhältst das E-Book (63 Seiten) und die Rechnung automatisch per E‑Mail."
               delay={0.4}
+              isOpen={openCard === "fruktose"}
+              onToggle={() => handleToggle("fruktose")}
             />
 
             <ProductCard
@@ -136,6 +146,8 @@ const EssenIstFertig = () => {
               buttonHref="https://copecart.com/products/23d7dbf2/checkout"
               paymentNote="Die Bezahlung erfolgt sicher über meinen Partner Copecart. Du erhältst das E-Book und die Rechnung automatisch per E‑Mail."
               delay={0.5}
+              isOpen={openCard === "bauchcode"}
+              onToggle={() => handleToggle("bauchcode")}
             />
           </div>
 
