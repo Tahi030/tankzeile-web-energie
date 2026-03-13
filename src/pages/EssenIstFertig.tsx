@@ -95,9 +95,9 @@ const EssenIstFertig = () => {
               image="/assets/rettungskoffer-laktose.png?v=2"
               imageAlt="Essen ist fertig! Rettungskoffer bei Laktoseintoleranz Cover"
               title="ESSEN IST FERTIG! DEIN RETTUNGSKOFFER BEI LAKTOSEINTOLERANZ"
-              description="Die Hilfe für dein Kind nach der Diagnose – 63 Seiten Wissen, Vorlagen & Rezepte."
+              description="Klassisch & fundiert: Basierend auf der klassischen, modernen Ernährungslehre."
               accordionTitle="Das steckt drin"
-              accordionItems={rettungskofferItems}
+              accordionItems={rettungskofferLaktoseItems}
               price="Einmalig 24,99 €"
               buttonText="Rettungskoffer sichern"
               buttonHref="https://copecart.com/products/054a7b1d/checkout"
