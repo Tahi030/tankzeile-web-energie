@@ -108,33 +108,16 @@ const ProductCard = ({
             className={`h-4 w-4 shrink-0 transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`}
           />
         </button>
-        {isMobile ? (
-          <AnimatePresence initial={false}>
-            {isOpen && (
-              <motion.div
-                key="content"
-                initial={{ height: 0, opacity: 0 }}
-                animate={{ height: "auto", opacity: 1 }}
-                exit={{ height: 0, opacity: 0 }}
-                transition={{ duration: 0.25 }}
-                className="overflow-hidden"
-              >
-                <ul className="space-y-2 text-sm text-muted-foreground pb-4">
-                  {accordionItems.map((item) => (
-                    <li key={item.label} className="flex items-start gap-2">
-                      <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                      <span>
-                        <strong>{item.label}</strong> {item.text}
-                      </span>
-                    </li>
-                  ))}
-                </ul>
-              </motion.div>
-            )}
-          </AnimatePresence>
-        ) : (
-          showAccordionContent && (
-            <div className="overflow-hidden">
+        <AnimatePresence initial={false}>
+          {isOpen && (
+            <motion.div
+              key="content"
+              initial={{ height: 0, opacity: 0 }}
+              animate={{ height: "auto", opacity: 1 }}
+              exit={{ height: 0, opacity: 0 }}
+              transition={{ duration: 0.25 }}
+              className="overflow-hidden"
+            >
               <ul className="space-y-2 text-sm text-muted-foreground pb-4">
                 {accordionItems.map((item) => (
                   <li key={item.label} className="flex items-start gap-2">
@@ -145,9 +128,9 @@ const ProductCard = ({
                   </li>
                 ))}
               </ul>
-            </div>
-          )
-        )}
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
 
       {/* Purchase Section */}
