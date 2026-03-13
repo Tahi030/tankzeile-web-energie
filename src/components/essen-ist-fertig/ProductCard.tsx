@@ -22,6 +22,8 @@ interface ProductCardProps {
   buttonDisabled?: boolean;
   paymentNote: string;
   delay?: number;
+  isOpen?: boolean;
+  onToggle?: () => void;
 }
 
 const ProductCard = ({
