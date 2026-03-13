@@ -108,7 +108,7 @@ const ProductCard = ({
         >
           {accordionTitle}
           <ChevronDown
-            className={`h-4 w-4 shrink-0 transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`}
+            className={`h-4 w-4 shrink-0 transition-transform duration-200 ${showAccordionContent ? "rotate-180" : ""}`}
           />
         </button>
         {isMobile ? (
