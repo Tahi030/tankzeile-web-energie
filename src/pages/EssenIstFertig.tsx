@@ -177,6 +177,23 @@ const EssenIstFertig = () => {
               isOpen={openCard === "bauchcode"}
               onToggle={() => handleToggle("bauchcode")}
             />
+
+            <ProductCard
+              image="/assets/kombi-paket-bundle.png"
+              imageAlt="Essen ist fertig! Das große Kombi-Paket Fruktose und Laktose"
+              title="ESSEN IST FERTIG! DAS GROSSE KOMBI-PAKET (FRUKTOSE & LAKTOSE)"
+              description="Die geballte Soforthilfe für die sensible Mitte. Das perfekte Bundle für alle, die an beiden Unverträglichkeiten gleichzeitig leiden. Ein Essen für alle – nie wieder doppelt kochen!"
+              accordionTitle="Das steckt drin"
+              accordionItems={kombiPaketItems}
+              oldPrice="49,98 €"
+              price="Einmalig 39,99 €"
+              buttonText="Kombi-Paket sichern"
+              buttonHref="https://copecart.com/bundle-platzhalter"
+              paymentNote="Die Bezahlung erfolgt sicher über meinen Partner Copecart. Du erhältst die E-Books und die Rechnung automatisch per E‑Mail."
+              delay={0.6}
+              isOpen={openCard === "kombi"}
+              onToggle={() => handleToggle("kombi")}
+            />
           </div>
 
           {/* Mini Preview Images */}
