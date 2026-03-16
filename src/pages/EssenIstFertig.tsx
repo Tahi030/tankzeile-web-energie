@@ -24,7 +24,7 @@ const rettungskofferFruktoseItems = [
 
 const kombiPaketItems = [
   { label: "Rettungskoffer Fruktose:", text: "Alle Spickzettel, Kita-Listen und fruktosefreien Rezepte" },
-  { label: "Rettungskoffer Laktose:", text: "Der komplette Leitfaden für eine stressfreie laktosefreie Ernährung" },
+  { label: "Rettungskoffer Laktose:", text: "Der praktische Leitfaden für einen entspannteren Alltag mit laktosefreier Ernährung" },
   { label: "Preisvorteil:", text: "Du sparst fast 10 € im Vergleich zum Einzelkauf" },
 ];
 
