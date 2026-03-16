@@ -22,6 +22,12 @@ const rettungskofferFruktoseItems = [
   { label: "Exklusives Expertenwissen:", text: "Fundierte Antworten und bewährte Praxis-Lösungen für die wichtigsten Fragen direkt nach der Diagnose" },
 ];
 
+const kombiPaketItems = [
+  { label: "Rettungskoffer Fruktose:", text: "Alle Spickzettel, Kita-Listen und fruktosefreien Rezepte" },
+  { label: "Rettungskoffer Laktose:", text: "Der komplette Leitfaden für eine stressfreie laktosefreie Ernährung" },
+  { label: "Preisvorteil:", text: "Du sparst fast 10 € im Vergleich zum Einzelkauf" },
+];
+
 const bauchCodeItems = [
   { label: "Wissen & Orientierung:", text: "38 Seiten zur Entschlüsselung des individuellen Stoffwechsels – mit oder ohne Diagnose einer Nahrungsmittelunverträglichkeit" },
   { label: "Bauch-Typen-Test:", text: "Finde heraus, welcher Stoffwechsel-Typ dein Kind ist" },
