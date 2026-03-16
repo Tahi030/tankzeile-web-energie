@@ -50,11 +50,7 @@ const ProductCard = ({
 
   return (
     <motion.div
-      className={`rounded-2xl p-6 border shadow-sm flex flex-col h-full relative overflow-hidden ${
-        premium
-          ? "bg-[hsl(280_30%_96%)] border-[hsl(280_30%_80%)] shadow-md"
-          : "bg-card/60 backdrop-blur-sm border-border/30"
-      }`}
+      className={`rounded-2xl p-6 border shadow-sm flex flex-col h-full relative overflow-hidden bg-card/60 backdrop-blur-sm border-border/30`}
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, delay }}
