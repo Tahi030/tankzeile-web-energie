@@ -182,7 +182,7 @@ const EssenIstFertig = () => {
               image="/assets/kombi-paket-bundle.png"
               imageAlt="Essen ist fertig! Das große Kombi-Paket Fruktose und Laktose"
               title="ESSEN IST FERTIG! DAS GROSSE KOMBI-PAKET (FRUKTOSE & LAKTOSE)"
-              description="Manchmal kommen beide Unverträglichkeiten zusammen. Das heißt aber nicht, dass Kochen ab jetzt doppelt so anstrengend sein muss! Dieses Kombi-Paket bündelt mein Wissen zu Fruktose und Laktose und gibt euch praktische Tipps und Rezeptideen an die Hand, damit ihr als Familie wieder entspannter und sicherer am Esstisch sitzen könnt."
+              description="Wenn Fruktose- und Laktoseintoleranz in der Familie zusammenkommen, wird das Kochen zur Herausforderung. Dieses Bundle vereint das wichtigste Wissen beider Rettungskoffer für entspanntere, gemeinsame Mahlzeiten."
               accordionTitle="Das steckt drin"
               accordionItems={kombiPaketItems}
               oldPrice="49,98 €"
