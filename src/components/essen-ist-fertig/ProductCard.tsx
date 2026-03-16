@@ -24,6 +24,7 @@ interface ProductCardProps {
   delay?: number;
   isOpen?: boolean;
   onToggle?: () => void;
+  premium?: boolean;
 }
 
 const ProductCard = ({
@@ -44,29 +45,47 @@ const ProductCard = ({
   delay = 0.3,
   isOpen = false,
   onToggle,
+  premium = false,
 }: ProductCardProps) => {
 
   return (
     <motion.div
-      className="bg-card/60 backdrop-blur-sm rounded-2xl p-6 border border-border/30 shadow-sm flex flex-col h-full"
+      className={`rounded-2xl p-6 border shadow-sm flex flex-col h-full relative overflow-hidden ${
+        premium
+          ? "bg-[hsl(280_30%_96%)] border-[hsl(280_30%_80%)] shadow-md"
+          : "bg-card/60 backdrop-blur-sm border-border/30"
+      }`}
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, delay }}
     >
+      {/* Premium Banner */}
+      {premium && (
+        <div className="absolute top-0 left-0 right-0 bg-[hsl(280_40%_30%)] text-white text-center text-xs font-bold tracking-wide py-1.5 uppercase z-10">
+          ⭐ Am beliebtesten
+        </div>
+      )}
+
       {/* Image */}
-      <div className="text-center mb-5">
-        <div className="h-72 flex items-center justify-center">
+      <div className={`text-center mb-5 ${premium ? "mt-6" : ""}`}>
+        <div className="h-72 flex items-center justify-center relative">
           <img
             src={image}
             alt={imageAlt}
             loading="eager"
             decoding="async"
             fetchPriority="high"
-            
             width={256}
             height={288}
             className="max-h-full w-auto max-w-64 mx-auto rounded-lg shadow-lg bg-muted"
           />
+          {/* Premium Price Sticker */}
+          {premium && (
+            <div className="absolute -top-1 -right-1 w-20 h-20 bg-[hsl(280_40%_30%)] rounded-full flex flex-col items-center justify-center text-white shadow-lg border-2 border-white/80 z-10">
+              <span className="text-[10px] font-medium leading-none">Nur</span>
+              <span className="text-sm font-bold leading-tight">39,99 €</span>
+            </div>
+          )}
         </div>
       </div>
 
@@ -138,11 +157,19 @@ const ProductCard = ({
       </div>
 
       {/* Purchase Section */}
-      <div className="bg-card/50 rounded-lg p-4 border border-border/30 text-center space-y-3 mt-6">
-        {oldPrice && (
+      <div className={`rounded-lg p-4 border text-center space-y-3 mt-6 ${
+        premium ? "bg-[hsl(280_25%_93%)] border-[hsl(280_30%_80%)]" : "bg-card/50 border-border/30"
+      }`}>
+        {oldPrice && !premium && (
           <div className="text-sm text-muted-foreground line-through">{oldPrice}</div>
         )}
-        <div className="text-xl font-bold text-foreground">{price}</div>
+        {premium && oldPrice && (
+          <div className="text-sm text-muted-foreground">
+            <span className="line-through">{oldPrice}</span>
+            <span className="ml-2 text-[hsl(280_40%_30%)] font-semibold text-xs">Du sparst fast 10 €!</span>
+          </div>
+        )}
+        {!premium && <div className="text-xl font-bold text-foreground">{price}</div>}
 
         {buttonDisabled ? (
           <div className="block bg-muted text-muted-foreground px-4 py-2 rounded-lg font-medium w-full text-sm cursor-not-allowed">
@@ -153,7 +180,11 @@ const ProductCard = ({
             href={buttonHref}
             target="_blank"
             rel="noopener noreferrer"
-            className="block bg-[hsl(25_30%_88%)] hover:bg-[hsl(25_35%_82%)] text-[hsl(25_30%_25%)] px-4 py-2 rounded-lg transition-all duration-300 font-medium w-full text-sm shadow-md hover:shadow-lg"
+            className={`block px-4 py-2 rounded-lg transition-all duration-300 font-medium w-full text-sm shadow-md hover:shadow-lg ${
+              premium
+                ? "bg-[hsl(280_40%_30%)] hover:bg-[hsl(280_40%_25%)] text-white"
+                : "bg-[hsl(25_30%_88%)] hover:bg-[hsl(25_35%_82%)] text-[hsl(25_30%_25%)]"
+            }`}
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
           >
