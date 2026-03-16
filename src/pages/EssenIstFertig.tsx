@@ -113,7 +113,7 @@ const EssenIstFertig = () => {
               <div className="space-y-1.5 text-sm text-muted-foreground leading-relaxed">
                 <div className="flex items-start gap-2">
                   <span className="text-[hsl(12_55%_50%)] font-bold mt-0.5 shrink-0">✓</span>
-                  <span><strong className="text-foreground">Für betroffene Erwachsene:</strong> Alltagstaugliche Rezepte und Spickzettel als „Ein Essen für alle"-Konzept (Nie wieder doppelt kochen!).</span>
+                  <span><strong className="text-foreground">Für betroffene Erwachsene:</strong> Alltagstaugliche Rezepte und Spickzettel als „Ein Essen für alle"-Konzept.</span>
                 </div>
                 <div className="flex items-start gap-2">
                   <span className="text-[hsl(12_55%_50%)] font-bold mt-0.5 shrink-0">✓</span>
