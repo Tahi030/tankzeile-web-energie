@@ -15,6 +15,7 @@ interface ProductCardProps {
   notice?: React.ReactNode;
   accordionTitle: string;
   accordionItems: BulletItem[];
+  oldPrice?: string;
   price: string;
   buttonText: string;
   buttonHref: string;
