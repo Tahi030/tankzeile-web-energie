@@ -155,7 +155,7 @@ const EssenIstFertig = () => {
               accordionItems={rettungskofferFruktoseItems}
               price="Einmalig 24,99 €"
               buttonText="Rettungskoffer sichern"
-              buttonHref="https://copecart.com/products/9f09326b/checkout"
+              buttonHref="https://copecart.com/products/7cd183e4/checkout"
               paymentNote="Die Bezahlung erfolgt sicher über meinen Partner Copecart. Du erhältst das E-Book (63 Seiten) und die Rechnung automatisch per E‑Mail."
               delay={0.4}
               isOpen={openCard === "fruktose"}
