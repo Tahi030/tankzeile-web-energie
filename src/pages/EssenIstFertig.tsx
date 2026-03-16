@@ -22,6 +22,12 @@ const rettungskofferFruktoseItems = [
   { label: "Exklusives Expertenwissen:", text: "Fundierte Antworten und bewährte Praxis-Lösungen für die wichtigsten Fragen direkt nach der Diagnose" },
 ];
 
+const kombiPaketItems = [
+  { label: "Rettungskoffer Fruktose:", text: "Alle Spickzettel, Kita-Listen und fruktosefreien Rezepte" },
+  { label: "Rettungskoffer Laktose:", text: "Der komplette Leitfaden für eine stressfreie laktosefreie Ernährung" },
+  { label: "Preisvorteil:", text: "Du sparst fast 10 € im Vergleich zum Einzelkauf" },
+];
+
 const bauchCodeItems = [
   { label: "Wissen & Orientierung:", text: "38 Seiten zur Entschlüsselung des individuellen Stoffwechsels – mit oder ohne Diagnose einer Nahrungsmittelunverträglichkeit" },
   { label: "Bauch-Typen-Test:", text: "Finde heraus, welcher Stoffwechsel-Typ dein Kind ist" },
@@ -118,7 +124,7 @@ const EssenIstFertig = () => {
           </motion.div>
 
           {/* Product Cards Grid */}
-          <div className="grid md:grid-cols-3 gap-8 items-start">
+          <div className="grid md:grid-cols-2 gap-8 items-start max-w-5xl mx-auto">
             <ProductCard
               image="/assets/rettungskoffer-laktose.png?v=2"
               imageAlt="Essen ist fertig! Rettungskoffer bei Laktoseintoleranz Cover"
@@ -170,6 +176,23 @@ const EssenIstFertig = () => {
               delay={0.5}
               isOpen={openCard === "bauchcode"}
               onToggle={() => handleToggle("bauchcode")}
+            />
+
+            <ProductCard
+              image="/assets/kombi-paket-bundle.png"
+              imageAlt="Essen ist fertig! Das große Kombi-Paket Fruktose und Laktose"
+              title="ESSEN IST FERTIG! DAS GROSSE KOMBI-PAKET (FRUKTOSE & LAKTOSE)"
+              description="Die geballte Soforthilfe für die sensible Mitte. Das perfekte Bundle für alle, die an beiden Unverträglichkeiten gleichzeitig leiden. Ein Essen für alle – nie wieder doppelt kochen!"
+              accordionTitle="Das steckt drin"
+              accordionItems={kombiPaketItems}
+              oldPrice="49,98 €"
+              price="Einmalig 39,99 €"
+              buttonText="Kombi-Paket sichern"
+              buttonHref="https://copecart.com/bundle-platzhalter"
+              paymentNote="Die Bezahlung erfolgt sicher über meinen Partner Copecart. Du erhältst die E-Books und die Rechnung automatisch per E‑Mail."
+              delay={0.6}
+              isOpen={openCard === "kombi"}
+              onToggle={() => handleToggle("kombi")}
             />
           </div>
 
