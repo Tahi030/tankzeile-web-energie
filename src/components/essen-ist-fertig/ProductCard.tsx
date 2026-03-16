@@ -157,11 +157,19 @@ const ProductCard = ({
       </div>
 
       {/* Purchase Section */}
-      <div className="bg-card/50 rounded-lg p-4 border border-border/30 text-center space-y-3 mt-6">
-        {oldPrice && (
+      <div className={`rounded-lg p-4 border text-center space-y-3 mt-6 ${
+        premium ? "bg-[hsl(280_25%_93%)] border-[hsl(280_30%_80%)]" : "bg-card/50 border-border/30"
+      }`}>
+        {oldPrice && !premium && (
           <div className="text-sm text-muted-foreground line-through">{oldPrice}</div>
         )}
-        <div className="text-xl font-bold text-foreground">{price}</div>
+        {premium && oldPrice && (
+          <div className="text-sm text-muted-foreground">
+            <span className="line-through">{oldPrice}</span>
+            <span className="ml-2 text-[hsl(280_40%_30%)] font-semibold text-xs">Du sparst fast 10 €!</span>
+          </div>
+        )}
+        {!premium && <div className="text-xl font-bold text-foreground">{price}</div>}
 
         {buttonDisabled ? (
           <div className="block bg-muted text-muted-foreground px-4 py-2 rounded-lg font-medium w-full text-sm cursor-not-allowed">
@@ -172,7 +180,11 @@ const ProductCard = ({
             href={buttonHref}
             target="_blank"
             rel="noopener noreferrer"
-            className="block bg-[hsl(25_30%_88%)] hover:bg-[hsl(25_35%_82%)] text-[hsl(25_30%_25%)] px-4 py-2 rounded-lg transition-all duration-300 font-medium w-full text-sm shadow-md hover:shadow-lg"
+            className={`block px-4 py-2 rounded-lg transition-all duration-300 font-medium w-full text-sm shadow-md hover:shadow-lg ${
+              premium
+                ? "bg-[hsl(280_40%_30%)] hover:bg-[hsl(280_40%_25%)] text-white"
+                : "bg-[hsl(25_30%_88%)] hover:bg-[hsl(25_35%_82%)] text-[hsl(25_30%_25%)]"
+            }`}
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
           >

@@ -193,6 +193,7 @@ const EssenIstFertig = () => {
               delay={0.6}
               isOpen={openCard === "kombi"}
               onToggle={() => handleToggle("kombi")}
+              premium
             />
           </div>
 
