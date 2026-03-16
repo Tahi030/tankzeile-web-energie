@@ -24,6 +24,7 @@ interface ProductCardProps {
   delay?: number;
   isOpen?: boolean;
   onToggle?: () => void;
+  premium?: boolean;
 }
 
 const ProductCard = ({
