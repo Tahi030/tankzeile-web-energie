@@ -139,6 +139,9 @@ const ProductCard = ({
 
       {/* Purchase Section */}
       <div className="bg-card/50 rounded-lg p-4 border border-border/30 text-center space-y-3 mt-6">
+        {oldPrice && (
+          <div className="text-sm text-muted-foreground line-through">{oldPrice}</div>
+        )}
         <div className="text-xl font-bold text-foreground">{price}</div>
 
         {buttonDisabled ? (
