@@ -153,9 +153,7 @@ const ProductCard = ({
       </div>
 
       {/* Purchase Section */}
-      <div className={`rounded-lg p-4 border text-center space-y-3 mt-6 ${
-        premium ? "bg-[hsl(280_25%_93%)] border-[hsl(280_30%_80%)]" : "bg-card/50 border-border/30"
-      }`}>
+      <div className="rounded-lg p-4 border text-center space-y-3 mt-6 bg-card/50 border-border/30">
         {oldPrice && !premium && (
           <div className="text-sm text-muted-foreground line-through">{oldPrice}</div>
         )}
