@@ -45,29 +45,47 @@ const ProductCard = ({
   delay = 0.3,
   isOpen = false,
   onToggle,
+  premium = false,
 }: ProductCardProps) => {
 
   return (
     <motion.div
-      className="bg-card/60 backdrop-blur-sm rounded-2xl p-6 border border-border/30 shadow-sm flex flex-col h-full"
+      className={`rounded-2xl p-6 border shadow-sm flex flex-col h-full relative overflow-hidden ${
+        premium
+          ? "bg-[hsl(280_30%_96%)] border-[hsl(280_30%_80%)] shadow-md"
+          : "bg-card/60 backdrop-blur-sm border-border/30"
+      }`}
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, delay }}
     >
+      {/* Premium Banner */}
+      {premium && (
+        <div className="absolute top-0 left-0 right-0 bg-[hsl(280_40%_30%)] text-white text-center text-xs font-bold tracking-wide py-1.5 uppercase z-10">
+          ⭐ Am beliebtesten
+        </div>
+      )}
+
       {/* Image */}
-      <div className="text-center mb-5">
-        <div className="h-72 flex items-center justify-center">
+      <div className={`text-center mb-5 ${premium ? "mt-6" : ""}`}>
+        <div className="h-72 flex items-center justify-center relative">
           <img
             src={image}
             alt={imageAlt}
             loading="eager"
             decoding="async"
             fetchPriority="high"
-            
             width={256}
             height={288}
             className="max-h-full w-auto max-w-64 mx-auto rounded-lg shadow-lg bg-muted"
           />
+          {/* Premium Price Sticker */}
+          {premium && (
+            <div className="absolute -top-1 -right-1 w-20 h-20 bg-[hsl(280_40%_30%)] rounded-full flex flex-col items-center justify-center text-white shadow-lg border-2 border-white/80 z-10">
+              <span className="text-[10px] font-medium leading-none">Nur</span>
+              <span className="text-sm font-bold leading-tight">39,99 €</span>
+            </div>
+          )}
         </div>
       </div>
 
