@@ -35,6 +35,7 @@ const ProductCard = ({
   notice,
   accordionTitle,
   accordionItems,
+  oldPrice,
   price,
   buttonText,
   buttonHref,
