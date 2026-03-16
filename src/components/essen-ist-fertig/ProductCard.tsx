@@ -58,7 +58,7 @@ const ProductCard = ({
       {/* Premium Banner */}
       {premium && (
         <div className="absolute top-0 left-0 right-0 bg-[hsl(12_55%_50%/0.85)] text-white text-center text-[10px] font-medium tracking-wider py-0.5 uppercase z-10">
-          Am beliebtesten
+          Crew-Liebling
         </div>
       )}
 
