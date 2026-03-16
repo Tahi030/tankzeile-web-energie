@@ -174,11 +174,7 @@ const ProductCard = ({
             href={buttonHref}
             target="_blank"
             rel="noopener noreferrer"
-            className={`block px-4 py-2 rounded-lg transition-all duration-300 font-medium w-full text-sm shadow-md hover:shadow-lg ${
-              premium
-                ? "bg-[hsl(280_40%_30%)] hover:bg-[hsl(280_40%_25%)] text-white"
-                : "bg-[hsl(25_30%_88%)] hover:bg-[hsl(25_35%_82%)] text-[hsl(25_30%_25%)]"
-            }`}
+            className="block px-4 py-2 rounded-lg transition-all duration-300 font-medium w-full text-sm shadow-md hover:shadow-lg bg-[hsl(25_30%_88%)] hover:bg-[hsl(25_35%_82%)] text-[hsl(25_30%_25%)]"
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
           >
