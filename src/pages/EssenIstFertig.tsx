@@ -102,20 +102,8 @@ const EssenIstFertig = () => {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <div className="bg-card border border-border/40 rounded-2xl p-6 md:p-8 shadow-sm">
-              <h3 className="text-lg font-bold text-foreground mb-4">
-                Gut zu wissen: Die Koffer sind nicht nur für Eltern!
-              </h3>
-              <ul className="space-y-4 text-muted-foreground text-base leading-relaxed">
-                <li>
-                  <strong className="text-foreground">Für betroffene Erwachsene:</strong>{" "}
-                  Alltagstaugliche Rezepte und Spickzettel – ideal als „Ein Essen für alle"-Konzept. Nie wieder doppelt kochen!
-                </li>
-                <li>
-                  <strong className="text-foreground">Für Kitas & Schulen:</strong>{" "}
-                  Fertige Listen und klare Leitfäden für den sicheren Umgang mit betroffenen Kindern in der Einrichtung.
-                </li>
-              </ul>
+            <div className="bg-muted/50 rounded-xl px-5 py-4 text-sm text-muted-foreground leading-relaxed">
+              <span className="font-semibold text-foreground">Gut zu wissen:</span> Die Koffer sind nicht nur für Eltern – auch ideal für <span className="font-medium">betroffene Erwachsene</span> (Ein-Essen-für-alle-Konzept) und <span className="font-medium">Kitas & Schulen</span> (fertige Leitfäden für den sicheren Umgang).
             </div>
           </motion.div>
 
