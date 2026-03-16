@@ -188,7 +188,7 @@ const EssenIstFertig = () => {
               oldPrice="49,98 €"
               price="Einmalig 39,99 €"
               buttonText="Kombi-Paket sichern"
-              buttonHref="https://copecart.com/bundle-platzhalter"
+              buttonHref="https://copecart.com/products/5195bd24/checkout"
               paymentNote="Die Bezahlung erfolgt sicher über meinen Partner Copecart. Du erhältst die E-Books und die Rechnung automatisch per E‑Mail."
               delay={0.6}
               isOpen={openCard === "kombi"}
