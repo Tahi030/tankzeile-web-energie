@@ -42,7 +42,7 @@ const Kontakt = () => {
                 
                 <div>
                   <h3 className="font-medium mb-1">Mobil & WhatsApp:</h3>
-                  <p><a href="tel:+4915206339474" className="text-primary-dark hover:underline">+49 152 06339474</a></p>
+                  <p><a href="tel:+4915252411195" className="text-primary-dark hover:underline">+49 15252411195</a></p>
                 </div>
               </div>
               
