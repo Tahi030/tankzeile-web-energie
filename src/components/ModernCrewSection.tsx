@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
-import captainApfel from "@/assets/captain-apfel.svg";
-import kaiMutig from "@/assets/kai-mutig.svg";
-import kimmiSchlau from "@/assets/kimmi-schlau.svg";
-import paffel from "@/assets/paffel.svg";
-import tomatenraumschiff from "@/assets/tomatenraumschiff.svg";
+import captainApfel from "@/assets/captain-apfel.webp";
+import kaiMutig from "@/assets/kai-mutig.webp";
+import kimmiSchlau from "@/assets/kimmi-schlau.webp";
+import paffel from "@/assets/paffel.webp";
+import tomatenraumschiff from "@/assets/tomatenraumschiff.webp";
 
 const crewMembers = [
   {

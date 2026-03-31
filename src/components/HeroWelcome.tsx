@@ -95,8 +95,8 @@ export const HeroWelcome = () => {
                   src={captainApfelJumping} 
                   alt="Captain Apfel schwebt" 
                   className="relative w-full h-auto"
-                  width={1563}
-                  height={1563}
+                  width={800}
+                  height={800}
                   style={{
                     filter: 'drop-shadow(0 20px 30px rgba(150, 120, 90, 0.25))',
                     willChange: 'transform',
