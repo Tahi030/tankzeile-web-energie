@@ -30,7 +30,7 @@ const AlltagLeichterLeben = () => {
               The Walk of Fame
             </h1>
             <p className="text-lg text-muted-foreground">
-              Hier werden Kitas und Einrichtungen sichtbar, die sich besonders f\u00fcr die Gesundheit der Kinder stark machen.
+              Hier werden Kitas und Einrichtungen sichtbar, die sich besonders für die Gesundheit der Kinder stark machen.
             </p>
           </motion.div>
         </div>
@@ -52,10 +52,10 @@ const AlltagLeichterLeben = () => {
               <div className="absolute top-0 right-0 w-32 h-32 bg-secondary/5 rounded-full -translate-y-16 translate-x-16" />
               <div className="relative space-y-4 text-left">
                 <p className="text-base text-muted-foreground leading-relaxed">
-                  Mit der Auszeichnung \u201EPowercrew\u201C bedankt sich Captain Apfel bei den Menschen, die jeden Tag Gro\u00dfes leisten. P\u00e4dagogische Fachkr\u00e4fte sind oft unsichtbare Helden. Hier bekommen sie die B\u00fchne, die sie verdienen.
+                  Mit der Auszeichnung „Powercrew" bedankt sich Captain Apfel bei den Menschen, die jeden Tag Großes leisten. Pädagogische Fachkräfte sind oft unsichtbare Helden. Hier bekommen sie die Bühne, die sie verdienen.
                 </p>
                 <p className="text-base text-muted-foreground leading-relaxed">
-                  Der Walk of Fame ist eine wachsende Galerie: Jedes Jahr kommen neue engagierte Teams hinzu, die den Workshop \u201EReise zur Powerzentrale\u201C durchgef\u00fchrt oder sich besonders engagiert haben.
+                  Der Walk of Fame ist eine wachsende Galerie: Jedes Jahr kommen neue engagierte Teams hinzu, die den Workshop „Reise zur Powerzentrale" durchgeführt oder sich besonders engagiert haben.
                 </p>
               </div>
             </motion.div>
@@ -77,7 +77,7 @@ const AlltagLeichterLeben = () => {
                   <div className="flex justify-center md:justify-start">
                     <img
                       src="/assets/powercrew-uebergabe-dezember-2025.webp"
-                      alt="\u00dcbergabe Powercrew des Jahres an Kita Dreik\u00e4sehoch"
+                      alt="Übergabe Powercrew des Jahres an Kita Dreikäsehoch"
                       className="w-48 md:w-56 rounded-xl shadow-md object-cover"
                       loading="lazy"
                       decoding="async"
@@ -85,13 +85,13 @@ const AlltagLeichterLeben = () => {
                   </div>
                   <div className="space-y-4 text-left">
                     <p className="text-base text-muted-foreground leading-relaxed">
-                      Die Kita Dreik\u00e4sehoch in Berlin-K\u00f6penick hat im Dezember 2025 den Anfang gemacht und sich als allererste Einrichtung den Titel \u201EPowercrew\u201C verdient.
+                      Die Kita Dreikäsehoch in Berlin-Köpenick hat im Dezember 2025 den Anfang gemacht und sich als allererste Einrichtung den Titel „Powercrew" verdient.
                     </p>
                     <p className="text-base text-muted-foreground leading-relaxed">
-                      Hier wird Inklusion gelebt: Als Ackerkita verstehen die Kinder, woher das Essen kommt, und die hauseigene K\u00fcche sorgt daf\u00fcr, dass jedes Kind \u2013 ob mit oder ohne Unvertr\u00e4glichkeit \u2013 satt und gl\u00fccklich wird.
+                      Hier wird Inklusion gelebt: Als Ackerkita verstehen die Kinder, woher das Essen kommt, und die hauseigene Küche sorgt dafür, dass jedes Kind – ob mit oder ohne Unverträglichkeit – satt und glücklich wird.
                     </p>
                     <p className="text-base text-muted-foreground leading-relaxed">
-                      Danke an dieses gro\u00dfartige Team f\u00fcr euren Mut, als Vorbild voranzugehen! Ihr seid der Startschuss f\u00fcr unsere wachsende Gemeinschaft.
+                      Danke an dieses großartige Team für euren Mut, als Vorbild voranzugehen! Ihr seid der Startschuss für unsere wachsende Gemeinschaft.
                     </p>
                   </div>
                 </div>
