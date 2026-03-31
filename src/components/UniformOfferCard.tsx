@@ -25,6 +25,7 @@ export const UniformOfferCard = ({
   description, 
   callToAction,
   imageUrl,
+  imageUrlSm,
   imageClassName,
   videoPlaceholder,
   youtubeLink,
