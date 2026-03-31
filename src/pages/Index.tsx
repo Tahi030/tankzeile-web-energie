@@ -128,7 +128,7 @@ const Index = () => {
               callToAction=""
               imageUrl="/assets/hero-crew.png"
               linkTo="/kontakt"
-              buttonText="Vormerken lassen"
+              buttonText="Ready for take-off"
               accent="primary"
               delay={0.1}
               imageClassName="h-48 object-cover"
