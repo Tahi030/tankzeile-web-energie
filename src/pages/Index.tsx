@@ -142,7 +142,7 @@ const Index = () => {
               buttonText="Direkt zur Soforthilfe"
               accent="secondary"
               delay={0.2}
-              imageClassName="h-56 object-cover object-top"
+              imageClassName="object-top"
             />
           </div>
 
