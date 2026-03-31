@@ -105,10 +105,15 @@ const Header = () => {
               <div className={`px-2 lg:px-3 py-2 rounded-md text-base lg:text-lg font-medium ${getHoverColor()} transition-all duration-200 cursor-pointer whitespace-nowrap active:scale-95 ${location.pathname.includes('/workshop') ? `${getTextColor()} font-semibold bg-white/20` : getTextColor()}`}>
                   Workshop <span className="ml-1 text-xs transition-transform duration-200 inline-block group-hover:rotate-180">▼</span>
                 </div>
-                <div className="absolute left-0 invisible group-hover:visible opacity-0 group-hover:opacity-100 mt-2 w-60 rounded-md shadow-lg bg-white ring-1 ring-primary/20 z-50 transition-all duration-200">
-                  <div className="py-1" role="menu" aria-orientation="vertical">
-                    <DropdownItem to="/meine-angebote/workshop-gesunde-mission" label="Reise zur Powerzentrale" />
-                  </div>
+                <div className="absolute left-1/2 -translate-x-1/2 invisible group-hover:visible opacity-0 group-hover:opacity-100 mt-3 w-64 rounded-xl shadow-xl bg-card/95 backdrop-blur-lg border border-border/40 z-50 transition-all duration-300 p-2">
+                  <Link
+                    to="/meine-angebote/workshop-gesunde-mission"
+                    className={`flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-medium transition-all duration-200 active:scale-95 ${location.pathname === '/meine-angebote/workshop-gesunde-mission' ? 'bg-secondary/15 text-secondary font-semibold' : 'text-foreground hover:bg-muted/60 hover:text-secondary'}`}
+                    onClick={() => window.scrollTo(0, 0)}
+                  >
+                    <span className="w-2 h-2 rounded-full bg-secondary shrink-0" />
+                    Reise zur Powerzentrale
+                  </Link>
                 </div>
               </div>
               
