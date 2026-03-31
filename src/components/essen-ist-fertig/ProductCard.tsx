@@ -25,6 +25,7 @@ interface ProductCardProps {
   isOpen?: boolean;
   onToggle?: () => void;
   premium?: boolean;
+  eagerLoad?: boolean;
 }
 
 const ProductCard = ({
@@ -46,6 +47,7 @@ const ProductCard = ({
   isOpen = false,
   onToggle,
   premium = false,
+  eagerLoad = false,
 }: ProductCardProps) => {
 
   return (
@@ -68,9 +70,9 @@ const ProductCard = ({
           <img
             src={image}
             alt={imageAlt}
-            loading="eager"
+            loading={eagerLoad ? "eager" : "lazy"}
             decoding="async"
-            fetchPriority="high"
+            fetchPriority={eagerLoad ? "high" : "auto"}
             width={256}
             height={288}
             className="max-h-full w-auto max-w-64 mx-auto rounded-lg shadow-lg bg-muted"

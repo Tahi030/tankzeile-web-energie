@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useLayoutEffect } from "react";
 import { motion } from "framer-motion";
 import ProductCard from "@/components/essen-ist-fertig/ProductCard";
 
@@ -40,6 +40,23 @@ const bauchCodeItems = [
 
 const EssenIstFertig = () => {
   const [openCard, setOpenCard] = useState<string | null>(null);
+
+  // Preload above-the-fold product images immediately
+  useLayoutEffect(() => {
+    const images = [
+      "/assets/rettungskoffer-laktose.webp?v=2",
+      "/assets/rettungskoffer-fruktose-new.webp",
+    ];
+    images.forEach((href) => {
+      if (!document.querySelector(`link[href="${href}"]`)) {
+        const link = document.createElement("link");
+        link.rel = "preload";
+        link.as = "image";
+        link.href = href;
+        document.head.appendChild(link);
+      }
+    });
+  }, []);
 
   const handleToggle = (id: string) => {
     setOpenCard(prev => prev === id ? null : id);
@@ -126,6 +143,7 @@ const EssenIstFertig = () => {
               <ProductCard
                 image="/assets/rettungskoffer-laktose.webp?v=2"
                 imageAlt="Essen ist fertig! Rettungskoffer bei Laktoseintoleranz Cover"
+                eagerLoad={true}
                 title="ESSEN IST FERTIG! DEIN RETTUNGSKOFFER BEI LAKTOSEINTOLERANZ"
                 description="Klassisch & fundiert: Basierend auf der klassischen, modernen Ernährungslehre."
                 accordionTitle="Das steckt drin"
@@ -142,6 +160,7 @@ const EssenIstFertig = () => {
               <ProductCard
                 image="/assets/rettungskoffer-fruktose-new.webp"
                 imageAlt="Essen ist fertig! Rettungskoffer bei Fruktoseintoleranz Cover"
+                eagerLoad={true}
                 title="ESSEN IST FERTIG! DEIN RETTUNGSKOFFER BEI FRUKTOSEINTOLERANZ"
                 description="Klassisch & fundiert: Basierend auf der klassischen, modernen Ernährungslehre."
                 notice={
