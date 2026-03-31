@@ -20,4 +20,16 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          'vendor-react': ['react', 'react-dom', 'react-router-dom'],
+          'vendor-motion': ['framer-motion'],
+          'vendor-ui': ['@radix-ui/react-dialog', '@radix-ui/react-accordion', '@radix-ui/react-navigation-menu', '@radix-ui/react-tabs', '@radix-ui/react-toast'],
+        },
+      },
+    },
+    cssCodeSplit: true,
+  },
 }));

@@ -65,6 +65,10 @@ export const ModernCrewSection = () => {
                   src={member.image} 
                   alt={member.name}
                   className="w-full h-auto object-contain drop-shadow-lg"
+                  width={500}
+                  height={500}
+                  loading="lazy"
+                  decoding="async"
                 />
                 
                 {/* Decorative accent */}
