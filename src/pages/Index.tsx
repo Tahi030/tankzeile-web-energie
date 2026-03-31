@@ -175,7 +175,7 @@ const Index = () => {
                   pdfUrl: "/pdfs/powerzentrale-ausmalbild-v4.pdf",
                 },
                 {
-                  imageUrl: "/images/captain-apfel-ausmalbild-thumb.jpg",
+                  imageUrl: "/images/captain-apfel-ausmalbild-thumb.png",
                   pdfUrl: "/pdfs/captain-apfel-ausmalbild-v3.pdf",
                 },
                 {
