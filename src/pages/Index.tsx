@@ -157,7 +157,7 @@ const Index = () => {
               imageUrl="/assets/mitmach-lied-thumbnail.jpg"
               youtubeLink="https://www.youtube.com/watch?v=yXku9Q91tmY"
               downloadLinks={[
-                { text: "Mitmachkarte zum Lied als PDF herunterladen", url: "/pdfs/mitmach-lied-captain-apfel.pdf" },
+                { text: "Mitmachkarte", url: "/pdfs/mitmach-lied-captain-apfel.pdf" },
               ]}
               accent="accent"
               delay={0.4}
