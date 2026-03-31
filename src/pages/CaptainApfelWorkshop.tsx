@@ -74,7 +74,7 @@ const CaptainApfelWorkshop = () => {
           {/* Hero Character Group - Top Formation */}
           <div className="absolute top-2 left-2 md:top-4 md:left-4 flex flex-col gap-2 md:gap-3">
             <img 
-              src="/lovable-uploads/fc011b76-01d0-4e54-87ab-6174605bb7fc.png" 
+              src="/lovable-uploads/fc011b76-01d0-4e54-87ab-6174605bb7fc.webp" 
               alt="Captain Apfelzahn" 
               className="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 animate-bounce opacity-90"
               style={{ animationDelay: '0s', animationDuration: '2s' }}
@@ -83,7 +83,7 @@ const CaptainApfelWorkshop = () => {
           
           <div className="absolute top-2 right-2 md:top-4 md:right-4 flex flex-col gap-2 md:gap-3">
             <img 
-              src="/lovable-uploads/93f05473-274d-4f59-9aa9-06d7eaefa496.png" 
+              src="/lovable-uploads/93f05473-274d-4f59-9aa9-06d7eaefa496.webp" 
               alt="Kai Mutig" 
               className="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 animate-bounce opacity-90"
               style={{ animationDelay: '0.5s', animationDuration: '2.5s' }}
@@ -93,7 +93,7 @@ const CaptainApfelWorkshop = () => {
           {/* Bottom Crew Formation */}
           <div className="absolute bottom-4 md:bottom-8 left-1/2 transform -translate-x-1/2 flex gap-4 md:gap-6">
             <img 
-              src="/lovable-uploads/3d316574-8e30-4bd5-9ac2-43c62f322d8b.png" 
+              src="/lovable-uploads/3d316574-8e30-4bd5-9ac2-43c62f322d8b.webp" 
               alt="Blumi Blumenkohl" 
               className="w-10 h-10 md:w-12 md:h-12 lg:w-16 lg:h-16 animate-pulse opacity-80"
               style={{ animationDelay: '1s' }}
@@ -110,7 +110,7 @@ const CaptainApfelWorkshop = () => {
               
               <div className="flex justify-center mt-6 md:mt-8 mb-6 md:mb-8">
                 <img 
-                  src="/lovable-uploads/99b38d5f-3449-41d1-96c1-6bcf4260e45b.png" 
+                  src="/lovable-uploads/99b38d5f-3449-41d1-96c1-6bcf4260e45b.webp" 
                   alt="Captain Apfelzahn mit der gesunden Crew" 
                   className="w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 drop-shadow-2xl object-contain"
                 />
@@ -213,7 +213,7 @@ const CaptainApfelWorkshop = () => {
                 <div className="text-center group">
                   <div className="bg-gradient-to-br from-green-100 to-green-200 rounded-full shadow-xl mb-4 transform group-hover:scale-105 transition-all duration-300 hover:shadow-2xl w-28 h-28 sm:w-32 sm:h-32 md:w-36 md:h-36 flex items-center justify-center overflow-hidden border-2 border-green-300/30">
                     <img 
-                      src="/lovable-uploads/d12c4083-e2df-4c05-a5ee-22df82546ed7.png" 
+                      src="/lovable-uploads/d12c4083-e2df-4c05-a5ee-22df82546ed7.webp" 
                       alt="Die Powerzentrale" 
                       className="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 object-contain"
                     />
@@ -224,7 +224,7 @@ const CaptainApfelWorkshop = () => {
                 <div className="text-center group">
                   <div className="bg-gradient-to-br from-blue-100 to-blue-200 rounded-full shadow-xl mb-4 transform group-hover:scale-105 transition-all duration-300 hover:shadow-2xl w-28 h-28 sm:w-32 sm:h-32 md:w-36 md:h-36 flex items-center justify-center overflow-hidden border-2 border-blue-300/30">
                     <img 
-                      src="/lovable-uploads/fc011b76-01d0-4e54-87ab-6174605bb7fc.png" 
+                      src="/lovable-uploads/fc011b76-01d0-4e54-87ab-6174605bb7fc.webp" 
                       alt="Captain Apfelzahn" 
                       className="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 object-contain"
                     />
@@ -235,7 +235,7 @@ const CaptainApfelWorkshop = () => {
                 <div className="text-center group">
                   <div className="bg-gradient-to-br from-orange-100 to-orange-200 rounded-full shadow-xl mb-4 transform group-hover:scale-105 transition-all duration-300 hover:shadow-2xl w-28 h-28 sm:w-32 sm:h-32 md:w-36 md:h-36 flex items-center justify-center overflow-hidden border-2 border-orange-300/30">
                     <img 
-                      src="/lovable-uploads/3010b863-5b52-4f66-8512-f9ba4b8c3434.png" 
+                      src="/lovable-uploads/3010b863-5b52-4f66-8512-f9ba4b8c3434.webp" 
                       alt="Kimmi Schlau" 
                       className="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 object-contain"
                     />
@@ -246,7 +246,7 @@ const CaptainApfelWorkshop = () => {
                 <div className="text-center group">
                   <div className="bg-gradient-to-br from-green-100 to-green-200 rounded-full shadow-xl mb-4 transform group-hover:scale-105 transition-all duration-300 hover:shadow-2xl w-28 h-28 sm:w-32 sm:h-32 md:w-36 md:h-36 flex items-center justify-center overflow-hidden border-2 border-green-300/30">
                     <img 
-                      src="/lovable-uploads/93f05473-274d-4f59-9aa9-06d7eaefa496.png" 
+                      src="/lovable-uploads/93f05473-274d-4f59-9aa9-06d7eaefa496.webp" 
                       alt="Kai Mutig" 
                       className="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 object-contain"
                     />
@@ -257,7 +257,7 @@ const CaptainApfelWorkshop = () => {
                 <div className="text-center group col-span-2 sm:col-span-1">
                   <div className="bg-gradient-to-br from-red-100 to-red-200 rounded-full shadow-xl mb-4 transform group-hover:scale-105 transition-all duration-300 hover:shadow-2xl w-28 h-28 sm:w-32 sm:h-32 md:w-36 md:h-36 flex items-center justify-center overflow-hidden mx-auto border-2 border-red-300/30">
                     <img 
-                      src="/lovable-uploads/cefd4c3a-36d6-4898-9a5f-4fca27ee1b7e.png" 
+                      src="/lovable-uploads/cefd4c3a-36d6-4898-9a5f-4fca27ee1b7e.webp" 
                       alt="Das Tomaten-Raumschiff" 
                       className="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 object-contain"
                     />
@@ -304,7 +304,7 @@ const CaptainApfelWorkshop = () => {
                 <div className="text-center group">
                   <div className="bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-full shadow-lg mb-4 transform group-hover:scale-105 transition-all duration-300 hover:shadow-xl w-32 h-32 sm:w-36 sm:h-36 flex items-center justify-center overflow-hidden border-2 border-yellow-300/50">
                     <img 
-                      src="/lovable-uploads/3d316574-8e30-4bd5-9ac2-43c62f322d8b.png" 
+                      src="/lovable-uploads/3d316574-8e30-4bd5-9ac2-43c62f322d8b.webp" 
                       alt="Paffel" 
                       className="w-28 h-28 sm:w-32 sm:h-32 object-cover"
                     />

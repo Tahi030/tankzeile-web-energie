@@ -49,7 +49,7 @@ const RegionallyRooted = () => {
                     >
                       <div className="overflow-hidden rounded-2xl shadow-lg bg-white p-3 h-full">
                         <img
-                          src="/assets/regional-apfelbaum-patenschaft.jpg"
+                          src="/assets/regional-apfelbaum-patenschaft.webp"
                           alt="Apfelbaum-Patenschaft Urkunde"
                           className="w-full h-full min-h-[280px] md:min-h-[360px] object-contain rounded-xl transition-transform duration-300 group-hover:scale-[1.02]"
                         />
@@ -68,7 +68,7 @@ const RegionallyRooted = () => {
                       >
                         <div className="overflow-hidden rounded-xl shadow-md bg-gradient-to-br from-green-100/50 to-primary/10 p-2">
                           <img
-                            src="/assets/regional-apples-tree.jpg"
+                            src="/assets/regional-apples-tree.webp"
                             alt="Rote Äpfel am Baum"
                             className="w-full h-24 md:h-28 object-cover rounded-lg transition-transform duration-300 group-hover:scale-105"
                           />
@@ -85,7 +85,7 @@ const RegionallyRooted = () => {
                       >
                         <div className="overflow-hidden rounded-xl shadow-md bg-gradient-to-bl from-red-100/50 to-accent/10 p-2">
                           <img
-                            src="/assets/regional-apple-hand.jpg"
+                            src="/assets/regional-apple-hand.webp"
                             alt="Apfel in der Hand"
                             className="w-full h-24 md:h-28 object-cover rounded-lg transition-transform duration-300 group-hover:scale-105"
                           />
@@ -102,7 +102,7 @@ const RegionallyRooted = () => {
                       >
                         <div className="overflow-hidden rounded-xl shadow-md bg-gradient-to-t from-amber-100/50 to-primary/10 p-2">
                           <img
-                            src="/assets/regional-apple-basket.jpg"
+                            src="/assets/regional-apple-basket.webp"
                             alt="Apfel im Korb"
                             className="w-full h-24 md:h-28 object-cover rounded-lg transition-transform duration-300 group-hover:scale-105"
                           />

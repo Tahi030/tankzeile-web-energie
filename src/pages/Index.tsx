@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 import { HeroWelcome } from "@/components/HeroWelcome";
 import { ModernCrewSection } from "@/components/ModernCrewSection";
 import { UniformOfferCard } from "@/components/UniformOfferCard";
-import essenIstFertigImage from "@/assets/essen-ist-fertig-card.png";
-import missionBuntstiftImage from "@/assets/mission-buntstift-header.png";
+import essenIstFertigImage from "@/assets/essen-ist-fertig-card.webp";
+import missionBuntstiftImage from "@/assets/mission-buntstift-header.webp";
 
 const Index = () => {
   useEffect(() => {
@@ -126,7 +126,7 @@ const Index = () => {
               subtitle="Start: Frühjahr 2026"
               description="Ob Familienzentrum, Eltern-Kind-Gruppe oder Kita: Die Powerzentrale kommt dorthin, wo Kinder spielen und lernen. Jetzt startet die Mission für mehr Gesundheit und ein gutes Bauchgefühl."
               callToAction=""
-              imageUrl="/assets/hero-crew.png"
+              imageUrl="/assets/hero-crew.webp"
               linkTo="/kontakt"
               buttonText="Ready for take-off"
               accent="primary"
@@ -154,7 +154,7 @@ const Index = () => {
             <UniformOfferCard
               title="Das Captain Apfel - Lied"
               description="Das Mitmach-Lied lädt zum Tanzen, Singen und Spaßhaben ein. Bewegung mit Captain Apfel und seiner Crew – volle Obst- und Gemüsekraft voraus!"
-              imageUrl="/assets/mitmach-lied-thumbnail.jpg"
+              imageUrl="/assets/mitmach-lied-thumbnail.webp"
               youtubeLink="https://www.youtube.com/watch?v=yXku9Q91tmY"
               downloadLinks={[
                 { text: "Mitmachkarte", url: "/pdfs/mitmach-lied-captain-apfel.pdf" },
@@ -169,25 +169,25 @@ const Index = () => {
               imageUrl={missionBuntstiftImage}
               imageClassName="h-56 sm:h-64 object-cover object-[50%_20%]"
               coloringPages={[
-                { imageUrl: "/images/paffel-ausmalbild-thumb.jpg", pdfUrl: "/pdfs/paffel-ausmalbild-v4.pdf" },
+                { imageUrl: "/images/paffel-ausmalbild-thumb.webp", pdfUrl: "/pdfs/paffel-ausmalbild-v4.pdf" },
                 {
-                  imageUrl: "/images/powerzentrale-ausmalbild-thumb.jpg",
+                  imageUrl: "/images/powerzentrale-ausmalbild-thumb.webp",
                   pdfUrl: "/pdfs/powerzentrale-ausmalbild-v4.pdf",
                 },
                 {
-                  imageUrl: "/images/captain-apfel-ausmalbild-thumb-v5.png",
+                  imageUrl: "/images/captain-apfel-ausmalbild-thumb-v5.webp",
                   pdfUrl: "/pdfs/captain-apfel-ausmalbild-v5.pdf",
                 },
                 {
-                  imageUrl: "/images/powerzentrale-ausmalbild-v2-thumb.jpg",
+                  imageUrl: "/images/powerzentrale-ausmalbild-v2-thumb.webp",
                   pdfUrl: "/pdfs/powerzentrale-ausmalbild-v2.pdf",
                 },
                 {
-                  imageUrl: "/images/kai-mutig-ausmalbild-thumb.jpg",
+                  imageUrl: "/images/kai-mutig-ausmalbild-thumb.webp",
                   pdfUrl: "/pdfs/kai-mutig-ausmalbild.pdf",
                 },
                 {
-                  imageUrl: "/images/crew-ausmalbild-thumb.png",
+                  imageUrl: "/images/crew-ausmalbild-thumb.webp",
                   pdfUrl: "/pdfs/crew-ausmalbild.pdf",
                 },
               ]}
