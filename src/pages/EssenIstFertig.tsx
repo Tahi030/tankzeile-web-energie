@@ -99,7 +99,8 @@ const EssenIstFertig = () => {
                     { title: "Sicher im Alltag", text: "Listen für Kita, Schule & Betreuung – einfach ausdrucken und Sicherheit schaffen." },
                     { title: "Sofort starten", text: "Hilfe in Sekunden als E-Book-Download – ohne Wartezeit auf Termine." },
                   ].map((item) => (
-                    <div key={item.title} className="text-left space-y-1">
+                    <div key={item.title} className="text-center space-y-1">
+                      <span className="text-[hsl(12_55%_50%)] text-2xl font-bold">✓</span>
                       <p className="font-semibold text-foreground">{item.title}</p>
                       <p className="text-sm text-muted-foreground">{item.text}</p>
                     </div>
