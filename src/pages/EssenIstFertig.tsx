@@ -98,7 +98,7 @@ const EssenIstFertig = () => {
                     { title: "Klarheit & Verstehen", text: "Zusammenhänge begreifen – ohne Fachchinesisch." },
                     { title: "Sicher im Alltag", text: "Listen für Kita, Schule & Betreuung – ausdrucken und Sicherheit schaffen." },
                     { title: "Sofort starten", text: "Hilfe in Sekunden als E-Book-Download – ohne Wartezeit auf Termine." },
-                    { title: "Für Erwachsene", text: "Alltagstaugliche Rezepte und Spickzettel als „Ein Essen für alle"-Konzept." },
+                    { title: "Für Erwachsene", text: "Alltagstaugliche Rezepte und Spickzettel als \u201EEin Essen für alle\u201C-Konzept." },
                     { title: "Für Kitas & Schulen", text: "Fertige Leitfäden und Listen für den sicheren Umgang mit betroffenen Kindern." },
                   ].map((item) => (
                     <div key={item.title} className="text-center space-y-1">
