@@ -131,7 +131,7 @@ const Index = () => {
               buttonText="Ready for take-off"
               accent="primary"
               delay={0.1}
-              imageClassName="h-48 object-cover"
+              imageClassName=""
             />
 
             <UniformOfferCard
@@ -142,7 +142,7 @@ const Index = () => {
               buttonText="Direkt zur Soforthilfe"
               accent="secondary"
               delay={0.2}
-              imageClassName="h-56 object-cover object-top"
+              imageClassName="object-top"
             />
           </div>
 
@@ -167,7 +167,7 @@ const Index = () => {
               title="Mission Buntstift"
               description="Jetzt heißt es: Stifte raus und los! Hier warten Ausmalbilder mit Captain Apfel und seiner Crew zum Herunterladen – ideal für eine kreative Pause zuhause oder in der Kita."
               imageUrl={missionBuntstiftImage}
-              imageClassName="h-56 sm:h-64 object-cover object-[50%_20%]"
+              imageClassName="object-[50%_20%]"
               coloringPages={[
                 { imageUrl: "/images/paffel-ausmalbild-thumb.webp", pdfUrl: "/pdfs/paffel-ausmalbild-v4.pdf" },
                 {
