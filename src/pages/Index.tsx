@@ -131,7 +131,7 @@ const Index = () => {
               buttonText="Ready for take-off"
               accent="primary"
               delay={0.1}
-              imageClassName="h-48 object-cover"
+              imageClassName=""
             />
 
             <UniformOfferCard
