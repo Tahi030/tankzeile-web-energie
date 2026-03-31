@@ -186,6 +186,10 @@ const Index = () => {
                   imageUrl: "/images/kai-mutig-ausmalbild-thumb.jpg",
                   pdfUrl: "/pdfs/kai-mutig-ausmalbild.pdf",
                 },
+                {
+                  imageUrl: "/images/crew-ausmalbild-thumb.png",
+                  pdfUrl: "/pdfs/crew-ausmalbild.pdf",
+                },
               ]}
               accent="secondary"
               delay={0.5}
