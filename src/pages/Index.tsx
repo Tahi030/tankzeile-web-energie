@@ -178,6 +178,14 @@ const Index = () => {
                   imageUrl: "/images/captain-apfel-ausmalbild-thumb.jpg",
                   pdfUrl: "/pdfs/captain-apfel-ausmalbild-v3.pdf",
                 },
+                {
+                  imageUrl: "/images/powerzentrale-ausmalbild-v2-thumb.jpg",
+                  pdfUrl: "/pdfs/powerzentrale-ausmalbild-v2.pdf",
+                },
+                {
+                  imageUrl: "/images/kai-mutig-ausmalbild-thumb.jpg",
+                  pdfUrl: "/pdfs/kai-mutig-ausmalbild.pdf",
+                },
               ]}
               accent="secondary"
               delay={0.5}
