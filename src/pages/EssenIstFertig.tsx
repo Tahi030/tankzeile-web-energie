@@ -126,6 +126,7 @@ const EssenIstFertig = () => {
               <ProductCard
                 image="/assets/rettungskoffer-laktose.webp?v=2"
                 imageAlt="Essen ist fertig! Rettungskoffer bei Laktoseintoleranz Cover"
+                eagerLoad={true}
                 title="ESSEN IST FERTIG! DEIN RETTUNGSKOFFER BEI LAKTOSEINTOLERANZ"
                 description="Klassisch & fundiert: Basierend auf der klassischen, modernen Ernährungslehre."
                 accordionTitle="Das steckt drin"
@@ -142,6 +143,7 @@ const EssenIstFertig = () => {
               <ProductCard
                 image="/assets/rettungskoffer-fruktose-new.webp"
                 imageAlt="Essen ist fertig! Rettungskoffer bei Fruktoseintoleranz Cover"
+                eagerLoad={true}
                 title="ESSEN IST FERTIG! DEIN RETTUNGSKOFFER BEI FRUKTOSEINTOLERANZ"
                 description="Klassisch & fundiert: Basierend auf der klassischen, modernen Ernährungslehre."
                 notice={
