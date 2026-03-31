@@ -121,6 +121,8 @@ export const UniformOfferCard = ({
                       className="w-full h-24 sm:h-28 md:h-32 object-contain rounded-lg border border-border/30 bg-white"
                       loading="lazy"
                       decoding="async"
+                      width={200}
+                      height={284}
                     />
                     <motion.a 
                       href={page.pdfUrl}
