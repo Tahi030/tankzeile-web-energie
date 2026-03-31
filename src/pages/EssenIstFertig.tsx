@@ -96,8 +96,10 @@ const EssenIstFertig = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                   {[
                     { title: "Klarheit & Verstehen", text: "Zusammenhänge begreifen – ohne Fachchinesisch." },
-                    { title: "Sicher im Alltag", text: "Listen für Kita, Schule & Betreuung – einfach ausdrucken und Sicherheit schaffen." },
+                    { title: "Sicher im Alltag", text: "Listen für Kita, Schule & Betreuung – ausdrucken und Sicherheit schaffen." },
                     { title: "Sofort starten", text: "Hilfe in Sekunden als E-Book-Download – ohne Wartezeit auf Termine." },
+                    { title: "Für Erwachsene", text: "Alltagstaugliche Rezepte und Spickzettel als „Ein Essen für alle"-Konzept." },
+                    { title: "Für Kitas & Schulen", text: "Fertige Leitfäden und Listen für den sicheren Umgang mit betroffenen Kindern." },
                   ].map((item) => (
                     <div key={item.title} className="text-center space-y-1">
                       <span className="text-[hsl(12_55%_50%)] text-2xl font-bold">✓</span>
@@ -106,28 +108,6 @@ const EssenIstFertig = () => {
                     </div>
                   ))}
                 </div>
-              </div>
-            </motion.div>
-
-            {/* Gut zu wissen Card */}
-            <motion.div
-              className="bg-card/80 rounded-2xl sm:rounded-3xl p-5 sm:p-8 shadow-lg border border-border/30 relative overflow-hidden"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.15 }}
-              viewport={{ once: true }}
-            >
-              <div className="absolute bottom-0 left-0 w-24 h-24 bg-primary/5 rounded-full translate-y-12 -translate-x-12" />
-              <div className="relative space-y-3">
-                <p className="text-sm font-semibold text-foreground">Gut zu wissen: Die Koffer sind nicht nur für Eltern!</p>
-                <ul className="text-base text-muted-foreground space-y-2">
-                  <li>
-                    <strong className="text-foreground">Für betroffene Erwachsene:</strong> Alltagstaugliche Rezepte und Spickzettel als „Ein Essen für alle"-Konzept.
-                  </li>
-                  <li>
-                    <strong className="text-foreground">Für Kitas & Schulen:</strong> Fertige Leitfäden und Listen für den sicheren Umgang mit betroffenen Kindern in der Einrichtung.
-                  </li>
-                </ul>
               </div>
             </motion.div>
 
