@@ -115,7 +115,7 @@ const WorkshopGesundeMission = () => {
                 to="/kontakt"
                 className="inline-block bg-[hsl(18_65%_65%)] text-white px-8 py-4 rounded-full font-semibold hover:bg-[hsl(18_65%_58%)] transition-all duration-300 shadow-lg hover:shadow-xl active:scale-95"
               >
-                Jetzt Einrichtung vormerken und Teil der Power-Mission werden!
+                Jetzt Teil der Power-Mission werden!
               </Link>
             </div>
 
