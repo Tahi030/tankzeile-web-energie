@@ -55,178 +55,186 @@ const EssenIstFertig = () => {
         "Essen ist fertig! Alltagshilfen bei Nahrungsunverträglichkeiten - fundiertes Wissen, Vorlagen und Rezepte für den Familienalltag."
       );
     }
-    document.body.classList.add("bg-background");
-    return () => {
-      document.body.classList.remove("bg-background");
-    };
   }, []);
 
   return (
-    <main className="min-h-screen bg-muted pt-8 pb-16 md:pt-12 md:pb-24">
-      <div className="container-custom">
-        <div className="max-w-6xl mx-auto">
-          {/* Hero Section */}
+    <main className="min-h-screen bg-muted">
+      {/* Hero Section */}
+      <section className="pt-8 pb-4 md:pt-12 md:pb-6">
+        <div className="container-custom">
           <motion.div
-            className="text-center mb-12 md:mb-16"
-            initial={{ opacity: 0, y: 30 }}
+            className="max-w-4xl mx-auto text-center"
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.1 }}
+            transition={{ duration: 0.6 }}
           >
-            <h1 className="text-3xl md:text-5xl font-bold mb-6 md:mb-8 text-foreground font-luckiest">
+            <h1 className="text-3xl md:text-4xl font-bold mb-3 text-foreground font-luckiest">
               Deine Begleiter für einen entspannten Kinderbauch
             </h1>
-
-            <div className="max-w-4xl mx-auto space-y-6 text-muted-foreground mb-8">
-              <p className="text-lg leading-relaxed">
-                Schluss mit endlosem Google-Chaos, ewigen Wartelisten und teuren Beratungen. Hol dir hier fundierte Soforthilfe und lerne, die Bauchgesundheit deines Kindes selbst zu verstehen.
-              </p>
-
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8 max-w-3xl mx-auto">
-                <div className="flex flex-col items-center text-center gap-1">
-                  <span className="text-[hsl(12_55%_50%)] text-2xl font-bold">✓</span>
-                  <span className="font-semibold text-foreground">Klarheit & Verstehen</span>
-                  <span className="text-sm">Zusammenhänge begreifen – ohne Fachchinesisch.</span>
-                </div>
-                <div className="flex flex-col items-center text-center gap-1">
-                  <span className="text-[hsl(12_55%_50%)] text-2xl font-bold">✓</span>
-                  <span className="font-semibold text-foreground">Sicher im Alltag</span>
-                  <span className="text-sm">Listen für Kita, Schule & Betreuung – einfach ausdrucken und Sicherheit schaffen.</span>
-                </div>
-                <div className="flex flex-col items-center text-center gap-1">
-                  <span className="text-[hsl(12_55%_50%)] text-2xl font-bold">✓</span>
-                  <span className="font-semibold text-foreground">Sofort starten</span>
-                  <span className="text-sm">Hilfe in Sekunden als E-Book-Download – ohne Wartezeit auf Termine.</span>
-                </div>
-              </div>
-            </div>
-          </motion.div>
-          {/* Gut zu wissen Hinweis */}
-          <motion.div
-            className="mb-12 md:mb-16 max-w-4xl mx-auto"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-          >
-            <div className="bg-muted rounded-xl px-5 py-4 border border-border/50 space-y-2.5">
-              <p className="text-sm font-semibold text-foreground">Gut zu wissen: Die Koffer sind nicht nur für Eltern!</p>
-              <div className="space-y-1.5 text-sm text-muted-foreground leading-relaxed">
-                <div className="flex items-start gap-2">
-                  <span className="text-[hsl(12_55%_50%)] font-bold mt-0.5 shrink-0">✓</span>
-                  <span><strong className="text-foreground">Für betroffene Erwachsene:</strong> Alltagstaugliche Rezepte und Spickzettel als „Ein Essen für alle"-Konzept.</span>
-                </div>
-                <div className="flex items-start gap-2">
-                  <span className="text-[hsl(12_55%_50%)] font-bold mt-0.5 shrink-0">✓</span>
-                  <span><strong className="text-foreground">Für Kitas & Schulen:</strong> Fertige Leitfäden und Listen für den sicheren Umgang mit betroffenen Kindern in der Einrichtung.</span>
-                </div>
-              </div>
-            </div>
-          </motion.div>
-
-          {/* Product Cards Grid */}
-          <div className="grid md:grid-cols-2 gap-8 items-start max-w-5xl mx-auto">
-            <ProductCard
-              image="/assets/rettungskoffer-laktose.webp?v=2"
-              imageAlt="Essen ist fertig! Rettungskoffer bei Laktoseintoleranz Cover"
-              title="ESSEN IST FERTIG! DEIN RETTUNGSKOFFER BEI LAKTOSEINTOLERANZ"
-              description="Klassisch & fundiert: Basierend auf der klassischen, modernen Ernährungslehre."
-              accordionTitle="Das steckt drin"
-              accordionItems={rettungskofferLaktoseItems}
-              price="Einmalig 24,99 €"
-              buttonText="Rettungskoffer sichern"
-              buttonHref="https://copecart.com/products/705befb3/checkout"
-              paymentNote="Die Bezahlung erfolgt sicher über meinen Partner Copecart. Du erhältst das E-Book (63 Seiten) und die Rechnung automatisch per E‑Mail."
-              delay={0.3}
-              isOpen={openCard === "laktose"}
-              onToggle={() => handleToggle("laktose")}
-            />
-
-            <ProductCard
-              image="/assets/rettungskoffer-fruktose-new.webp"
-              imageAlt="Essen ist fertig! Rettungskoffer bei Fruktoseintoleranz Cover"
-              title="ESSEN IST FERTIG! DEIN RETTUNGSKOFFER BEI FRUKTOSEINTOLERANZ"
-              description="Klassisch & fundiert: Basierend auf der klassischen, modernen Ernährungslehre."
-              notice={
-                <p className="text-xs text-muted-foreground text-center leading-relaxed italic whitespace-nowrap">
-                  <span className="font-medium">Nicht geeignet bei hereditärer Fruktoseintoleranz / HFI</span>
-                </p>
-              }
-              accordionTitle="Das steckt drin"
-              accordionItems={rettungskofferFruktoseItems}
-              price="Einmalig 24,99 €"
-              buttonText="Rettungskoffer sichern"
-              buttonHref="https://copecart.com/products/7cd183e4/checkout"
-              paymentNote="Die Bezahlung erfolgt sicher über meinen Partner Copecart. Du erhältst das E-Book (63 Seiten) und die Rechnung automatisch per E‑Mail."
-              delay={0.4}
-              isOpen={openCard === "fruktose"}
-              onToggle={() => handleToggle("fruktose")}
-            />
-
-            <ProductCard
-              image="/assets/rettungskoffer-bauch-code.webp"
-              imageAlt="Essen ist fertig! Der Bauch-Code Cover"
-              title="ESSEN IST FERTIG! DEIN BASIS-KOFFER FÜR DIE SENSIBLE KINDERMITTE"
-              description="Sonderformat: Eine TCM-inspirierte, ganzheitliche Ergänzung."
-              accordionTitle="Das steckt drin"
-              accordionItems={bauchCodeItems}
-              price="Einmalig 14,99 €"
-              buttonText="Basis-Koffer sichern"
-              buttonHref="https://copecart.com/products/23d7dbf2/checkout"
-              paymentNote="Die Bezahlung erfolgt sicher über meinen Partner Copecart. Du erhältst das E-Book und die Rechnung automatisch per E‑Mail."
-              delay={0.5}
-              isOpen={openCard === "bauchcode"}
-              onToggle={() => handleToggle("bauchcode")}
-            />
-
-            <ProductCard
-              image="/assets/kombi-paket-bundle.webp"
-              imageAlt="Essen ist fertig! Das große Kombi-Paket Fruktose und Laktose"
-              title="ESSEN IST FERTIG! DAS GROSSE KOMBI-PAKET (FRUKTOSE & LAKTOSE)"
-              description="Wenn Fruktose- und Laktoseintoleranz in der Familie zusammenkommen, wird das Kochen zur Herausforderung. Dieses Bundle vereint das wichtigste Wissen beider Rettungskoffer für entspanntere, gemeinsame Mahlzeiten."
-              accordionTitle="Das steckt drin"
-              accordionItems={kombiPaketItems}
-              oldPrice="49,98 €"
-              price="Einmalig 39,99 €"
-              buttonText="Kombi-Paket sichern"
-              buttonHref="https://copecart.com/products/5195bd24/checkout"
-              paymentNote="Die Bezahlung erfolgt sicher über meinen Partner Copecart. Du erhältst die E-Books und die Rechnung automatisch per E‑Mail."
-              delay={0.6}
-              isOpen={openCard === "kombi"}
-              onToggle={() => handleToggle("kombi")}
-              premium
-            />
-          </div>
-
-          {/* Mini Preview Images */}
-          <motion.div
-            className="mt-16"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.5 }}
-          >
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 max-w-4xl mx-auto">
-              {[
-                { src: "/assets/vorschau-rezept.webp", alt: "Rezept Ausschnitt", rotate: "rotate-1" },
-                { src: "/assets/vorschau-wochenplaner.webp", alt: "Wochenplaner Ausschnitt", rotate: "-rotate-1" },
-                { src: "/assets/vorschau-tagebuch.webp", alt: "Ernährungstagebuch Ausschnitt", rotate: "rotate-1" },
-                { src: "/assets/vorschau-bauchposter.webp", alt: "Bauchgefühl-Poster Ausschnitt", rotate: "-rotate-1" },
-              ].map((img) => (
-                <div key={img.alt} className={`transform ${img.rotate} hover:rotate-0 transition-transform duration-300`}>
-                  <img
-                    src={img.src}
-                    alt={img.alt}
-                    loading="lazy"
-                    decoding="async"
-                    width={400}
-                    height={300}
-                    className="w-full h-auto object-cover aspect-[4/3] rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 border border-border/30 bg-muted"
-                  />
-                </div>
-              ))}
-            </div>
+            <p className="text-lg text-muted-foreground">
+              Schluss mit endlosem Google-Chaos, ewigen Wartelisten und teuren Beratungen. Hol dir hier fundierte Soforthilfe und lerne, die Bauchgesundheit deines Kindes selbst zu verstehen.
+            </p>
           </motion.div>
         </div>
-      </div>
+      </section>
+
+      {/* Main Content */}
+      <section className="section-padding">
+        <div className="container-custom">
+          <div className="max-w-5xl mx-auto space-y-8">
+
+            {/* Vorteile Card */}
+            <motion.div
+              className="bg-card/80 rounded-2xl sm:rounded-3xl p-5 sm:p-8 md:p-10 shadow-lg border border-border/30 relative overflow-hidden"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              viewport={{ once: true }}
+            >
+              <div className="absolute top-0 right-0 w-32 h-32 bg-secondary/5 rounded-full -translate-y-16 translate-x-16" />
+              <div className="relative">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                  {[
+                    { title: "Klarheit & Verstehen", text: "Zusammenhänge begreifen – ohne Fachchinesisch." },
+                    { title: "Sicher im Alltag", text: "Listen für Kita, Schule & Betreuung – einfach ausdrucken und Sicherheit schaffen." },
+                    { title: "Sofort starten", text: "Hilfe in Sekunden als E-Book-Download – ohne Wartezeit auf Termine." },
+                  ].map((item) => (
+                    <div key={item.title} className="text-left space-y-1">
+                      <p className="font-semibold text-foreground">{item.title}</p>
+                      <p className="text-sm text-muted-foreground">{item.text}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Gut zu wissen Card */}
+            <motion.div
+              className="bg-card/80 rounded-2xl sm:rounded-3xl p-5 sm:p-8 shadow-lg border border-border/30 relative overflow-hidden"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.15 }}
+              viewport={{ once: true }}
+            >
+              <div className="absolute bottom-0 left-0 w-24 h-24 bg-primary/5 rounded-full translate-y-12 -translate-x-12" />
+              <div className="relative space-y-3">
+                <p className="text-sm font-semibold text-foreground">Gut zu wissen: Die Koffer sind nicht nur für Eltern!</p>
+                <ul className="text-base text-muted-foreground space-y-2">
+                  <li>
+                    <strong className="text-foreground">Für betroffene Erwachsene:</strong> Alltagstaugliche Rezepte und Spickzettel als „Ein Essen für alle"-Konzept.
+                  </li>
+                  <li>
+                    <strong className="text-foreground">Für Kitas & Schulen:</strong> Fertige Leitfäden und Listen für den sicheren Umgang mit betroffenen Kindern in der Einrichtung.
+                  </li>
+                </ul>
+              </div>
+            </motion.div>
+
+            {/* Product Cards Grid */}
+            <div className="grid md:grid-cols-2 gap-8">
+              <ProductCard
+                image="/assets/rettungskoffer-laktose.webp?v=2"
+                imageAlt="Essen ist fertig! Rettungskoffer bei Laktoseintoleranz Cover"
+                title="ESSEN IST FERTIG! DEIN RETTUNGSKOFFER BEI LAKTOSEINTOLERANZ"
+                description="Klassisch & fundiert: Basierend auf der klassischen, modernen Ernährungslehre."
+                accordionTitle="Das steckt drin"
+                accordionItems={rettungskofferLaktoseItems}
+                price="Einmalig 24,99 €"
+                buttonText="Rettungskoffer sichern"
+                buttonHref="https://copecart.com/products/705befb3/checkout"
+                paymentNote="Die Bezahlung erfolgt sicher über meinen Partner Copecart. Du erhältst das E-Book (63 Seiten) und die Rechnung automatisch per E‑Mail."
+                delay={0.3}
+                isOpen={openCard === "laktose"}
+                onToggle={() => handleToggle("laktose")}
+              />
+
+              <ProductCard
+                image="/assets/rettungskoffer-fruktose-new.webp"
+                imageAlt="Essen ist fertig! Rettungskoffer bei Fruktoseintoleranz Cover"
+                title="ESSEN IST FERTIG! DEIN RETTUNGSKOFFER BEI FRUKTOSEINTOLERANZ"
+                description="Klassisch & fundiert: Basierend auf der klassischen, modernen Ernährungslehre."
+                notice={
+                  <p className="text-xs text-muted-foreground text-center leading-relaxed italic whitespace-nowrap">
+                    <span className="font-medium">Nicht geeignet bei hereditärer Fruktoseintoleranz / HFI</span>
+                  </p>
+                }
+                accordionTitle="Das steckt drin"
+                accordionItems={rettungskofferFruktoseItems}
+                price="Einmalig 24,99 €"
+                buttonText="Rettungskoffer sichern"
+                buttonHref="https://copecart.com/products/7cd183e4/checkout"
+                paymentNote="Die Bezahlung erfolgt sicher über meinen Partner Copecart. Du erhältst das E-Book (63 Seiten) und die Rechnung automatisch per E‑Mail."
+                delay={0.4}
+                isOpen={openCard === "fruktose"}
+                onToggle={() => handleToggle("fruktose")}
+              />
+
+              <ProductCard
+                image="/assets/rettungskoffer-bauch-code.webp"
+                imageAlt="Essen ist fertig! Der Bauch-Code Cover"
+                title="ESSEN IST FERTIG! DEIN BASIS-KOFFER FÜR DIE SENSIBLE KINDERMITTE"
+                description="Sonderformat: Eine TCM-inspirierte, ganzheitliche Ergänzung."
+                accordionTitle="Das steckt drin"
+                accordionItems={bauchCodeItems}
+                price="Einmalig 14,99 €"
+                buttonText="Basis-Koffer sichern"
+                buttonHref="https://copecart.com/products/23d7dbf2/checkout"
+                paymentNote="Die Bezahlung erfolgt sicher über meinen Partner Copecart. Du erhältst das E-Book und die Rechnung automatisch per E‑Mail."
+                delay={0.5}
+                isOpen={openCard === "bauchcode"}
+                onToggle={() => handleToggle("bauchcode")}
+              />
+
+              <ProductCard
+                image="/assets/kombi-paket-bundle.webp"
+                imageAlt="Essen ist fertig! Das große Kombi-Paket Fruktose und Laktose"
+                title="ESSEN IST FERTIG! DAS GROSSE KOMBI-PAKET (FRUKTOSE & LAKTOSE)"
+                description="Wenn Fruktose- und Laktoseintoleranz in der Familie zusammenkommen, wird das Kochen zur Herausforderung. Dieses Bundle vereint das wichtigste Wissen beider Rettungskoffer für entspanntere, gemeinsame Mahlzeiten."
+                accordionTitle="Das steckt drin"
+                accordionItems={kombiPaketItems}
+                oldPrice="49,98 €"
+                price="Einmalig 39,99 €"
+                buttonText="Kombi-Paket sichern"
+                buttonHref="https://copecart.com/products/5195bd24/checkout"
+                paymentNote="Die Bezahlung erfolgt sicher über meinen Partner Copecart. Du erhältst die E-Books und die Rechnung automatisch per E‑Mail."
+                delay={0.6}
+                isOpen={openCard === "kombi"}
+                onToggle={() => handleToggle("kombi")}
+                premium
+              />
+            </div>
+
+            {/* Mini Preview Images */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              viewport={{ once: true }}
+            >
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+                {[
+                  { src: "/assets/vorschau-rezept.webp", alt: "Rezept Ausschnitt", rotate: "rotate-1" },
+                  { src: "/assets/vorschau-wochenplaner.webp", alt: "Wochenplaner Ausschnitt", rotate: "-rotate-1" },
+                  { src: "/assets/vorschau-tagebuch.webp", alt: "Ernährungstagebuch Ausschnitt", rotate: "rotate-1" },
+                  { src: "/assets/vorschau-bauchposter.webp", alt: "Bauchgefühl-Poster Ausschnitt", rotate: "-rotate-1" },
+                ].map((img) => (
+                  <div key={img.alt} className={`transform ${img.rotate} hover:rotate-0 transition-transform duration-300`}>
+                    <img
+                      src={img.src}
+                      alt={img.alt}
+                      loading="lazy"
+                      decoding="async"
+                      width={400}
+                      height={300}
+                      className="w-full h-auto object-cover aspect-[4/3] rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 border border-border/30 bg-muted"
+                    />
+                  </div>
+                ))}
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
     </main>
   );
 };
