@@ -7,6 +7,7 @@ interface UniformOfferCardProps {
   description: string | React.ReactNode;
   callToAction?: string;
   imageUrl?: string;
+  imageUrlSm?: string;
   imageClassName?: string;
   videoPlaceholder?: boolean;
   youtubeLink?: string;
