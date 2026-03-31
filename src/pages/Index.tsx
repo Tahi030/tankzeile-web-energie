@@ -4,7 +4,9 @@ import { HeroWelcome } from "@/components/HeroWelcome";
 import { ModernCrewSection } from "@/components/ModernCrewSection";
 import { UniformOfferCard } from "@/components/UniformOfferCard";
 import essenIstFertigImage from "@/assets/essen-ist-fertig-card.webp";
+import essenIstFertigImageSm from "@/assets/essen-ist-fertig-card-sm.webp";
 import missionBuntstiftImage from "@/assets/mission-buntstift-header.webp";
+import missionBuntstiftImageSm from "@/assets/mission-buntstift-header-sm.webp";
 
 const Index = () => {
   useEffect(() => {
@@ -127,6 +129,7 @@ const Index = () => {
               description="Ob Familienzentrum, Eltern-Kind-Gruppe oder Kita: Die Powerzentrale kommt dorthin, wo Kinder spielen und lernen. Jetzt startet die Mission für mehr Gesundheit und ein gutes Bauchgefühl."
               callToAction=""
               imageUrl="/assets/hero-crew.webp"
+              imageUrlSm="/assets/hero-crew-sm.webp"
               linkTo="/kontakt"
               buttonText="Ready for take-off"
               accent="primary"
@@ -138,6 +141,7 @@ const Index = () => {
               title="Essen ist fertig!"
               description={<>Bauchweh oder die frische Diagnose Nahrungsmittelunverträglichkeit bestimmen den Alltag? Mit der digitalen Serie „Essen ist fertig!" bekommst du statt Medizin-Kauderwelsch direkt anwendbares Praxis-Wissen, um den Ernährungs-Dschungel stressfrei zu meistern.</>}
               imageUrl={essenIstFertigImage}
+              imageUrlSm={essenIstFertigImageSm}
               linkTo="/essen-ist-fertig"
               buttonText="Direkt zur Soforthilfe"
               accent="secondary"
@@ -155,6 +159,7 @@ const Index = () => {
               title="Das Captain Apfel - Lied"
               description="Das Mitmach-Lied lädt zum Tanzen, Singen und Spaßhaben ein. Bewegung mit Captain Apfel und seiner Crew – volle Obst- und Gemüsekraft voraus!"
               imageUrl="/assets/mitmach-lied-thumbnail.webp"
+              imageUrlSm="/assets/mitmach-lied-thumbnail-sm.webp"
               youtubeLink="https://www.youtube.com/watch?v=yXku9Q91tmY"
               downloadLinks={[
                 { text: "Mitmachkarte", url: "/pdfs/mitmach-lied-captain-apfel.pdf" },
@@ -167,6 +172,7 @@ const Index = () => {
               title="Mission Buntstift"
               description="Jetzt heißt es: Stifte raus und los! Hier warten Ausmalbilder mit Captain Apfel und seiner Crew zum Herunterladen – ideal für eine kreative Pause zuhause oder in der Kita."
               imageUrl={missionBuntstiftImage}
+              imageUrlSm={missionBuntstiftImageSm}
               imageClassName="object-[50%_20%]"
               coloringPages={[
                 { imageUrl: "/images/paffel-ausmalbild-thumb.webp", pdfUrl: "/pdfs/paffel-ausmalbild-v4.pdf" },

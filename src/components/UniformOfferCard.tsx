@@ -7,6 +7,7 @@ interface UniformOfferCardProps {
   description: string | React.ReactNode;
   callToAction?: string;
   imageUrl?: string;
+  imageUrlSm?: string;
   imageClassName?: string;
   videoPlaceholder?: boolean;
   youtubeLink?: string;
@@ -24,6 +25,7 @@ export const UniformOfferCard = ({
   description, 
   callToAction,
   imageUrl,
+  imageUrlSm,
   imageClassName,
   videoPlaceholder,
   youtubeLink,
@@ -46,13 +48,18 @@ export const UniformOfferCard = ({
         {/* Image */}
         {imageUrl && (
           <div className="mb-6">
-            <img 
-              src={imageUrl} 
-              alt={typeof title === 'string' ? title : 'Angebot'} 
-              className={`w-full rounded-lg shadow-md h-48 sm:h-56 object-cover ${imageClassName || ''}`}
-              loading="lazy"
-              decoding="async"
-            />
+            <picture>
+              {imageUrlSm && <source media="(max-width: 640px)" srcSet={imageUrlSm} />}
+              <img 
+                src={imageUrl} 
+                alt={typeof title === 'string' ? title : 'Angebot'} 
+                className={`w-full rounded-lg shadow-md h-48 sm:h-56 object-cover ${imageClassName || ''}`}
+                loading="lazy"
+                decoding="async"
+                width={700}
+                height={430}
+              />
+            </picture>
             {youtubeLink && (
               <button 
                 onClick={() => window.open(youtubeLink, '_blank', 'noopener,noreferrer')}
@@ -114,6 +121,8 @@ export const UniformOfferCard = ({
                       className="w-full h-24 sm:h-28 md:h-32 object-contain rounded-lg border border-border/30 bg-white"
                       loading="lazy"
                       decoding="async"
+                      width={200}
+                      height={284}
                     />
                     <motion.a 
                       href={page.pdfUrl}
