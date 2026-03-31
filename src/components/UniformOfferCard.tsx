@@ -48,13 +48,18 @@ export const UniformOfferCard = ({
         {/* Image */}
         {imageUrl && (
           <div className="mb-6">
-            <img 
-              src={imageUrl} 
-              alt={typeof title === 'string' ? title : 'Angebot'} 
-              className={`w-full rounded-lg shadow-md h-48 sm:h-56 object-cover ${imageClassName || ''}`}
-              loading="lazy"
-              decoding="async"
-            />
+            <picture>
+              {imageUrlSm && <source media="(max-width: 640px)" srcSet={imageUrlSm} />}
+              <img 
+                src={imageUrl} 
+                alt={typeof title === 'string' ? title : 'Angebot'} 
+                className={`w-full rounded-lg shadow-md h-48 sm:h-56 object-cover ${imageClassName || ''}`}
+                loading="lazy"
+                decoding="async"
+                width={700}
+                height={430}
+              />
+            </picture>
             {youtubeLink && (
               <button 
                 onClick={() => window.open(youtubeLink, '_blank', 'noopener,noreferrer')}
