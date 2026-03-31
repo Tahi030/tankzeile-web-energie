@@ -2,123 +2,166 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import CustomerFeedback from "@/components/CustomerFeedback";
-import powerzentraleCharacter from "@/assets/powerzentrale-character.svg";
 
 const WorkshopGesundeMission = () => {
   useEffect(() => {
-    // Set page metadata for SEO
-    document.title = "Workshop - auf gesunder Mission | Captain Apfel";
+    document.title = "Reise zur Powerzentrale – Workshop | Captain Apfel";
   }, []);
 
   return (
     <div className="min-h-screen bg-muted">
       {/* Hero Section */}
-      <section className="pt-8 pb-6 md:pt-12 md:pb-8">
+      <section className="pt-8 pb-4 md:pt-12 md:pb-6">
         <div className="container-custom">
-          <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-foreground font-luckiest">
+          <motion.div
+            className="max-w-4xl mx-auto text-center"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+          >
+            <h1 className="text-3xl md:text-4xl font-bold mb-3 text-foreground font-luckiest">
               Reise zur Powerzentrale
             </h1>
-            <p className="text-xl text-muted-foreground mb-2">Das Abenteuer für mehr Bauchgefühl & Gesundheit</p>
-            <p className="text-lg text-muted-foreground/80">
-              Für Familienzentren, Eltern-Kind-Gruppen & Kitas
+            <p className="text-lg text-muted-foreground">
+              Das Abenteuer für mehr Bauchgefühl & Gesundheit – für Familienzentren, Eltern-Kind-Gruppen & Kitas
             </p>
-          </div>
+          </motion.div>
         </div>
       </section>
 
-      {/* Powerzentrale Character */}
-      <div className="flex justify-center items-center py-4 md:py-6">
-        <motion.img 
-          src={powerzentraleCharacter} 
-          alt="Powerzentrale" 
-          className="w-[32rem] h-auto sm:w-[40rem] md:w-[48rem] lg:w-[56rem]"
-          loading="eager"
-          decoding="async"
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ 
-            opacity: 1, 
-            scale: 1,
-            y: [0, -8, 0]
-          }}
-          transition={{
-            opacity: { duration: 0.6 },
-            scale: { duration: 0.6 },
-            y: {
-              duration: 2.5,
-              repeat: Infinity,
-              ease: "easeInOut"
-            }
-          }}
-        />
-      </div>
-
       {/* Main Content */}
-      <section className="pb-12 md:pb-16">
+      <section className="section-padding">
         <div className="container-custom">
-          <div className="max-w-3xl mx-auto">
-            <div className="prose prose-lg max-w-none">
-              <div className="mt-4 mb-8 bg-card/60 backdrop-blur-sm p-6 rounded-lg border border-border/30">
-                <p className="text-base mb-6 text-muted-foreground leading-relaxed">
-                  Schluss mit langweiligen Vorträgen!<br />
-                  Damit Wissen hängen bleibt, wird es hier anschaulich und kindgerecht vermittelt.
-                </p>
+          <div className="max-w-4xl mx-auto space-y-8">
 
-                <h2 className="text-xl font-bold mb-3 text-[hsl(12_55%_50%)] font-luckiest">Was Kinder erleben</h2>
-
-                <p className="text-base mb-4 text-muted-foreground leading-relaxed">
-                  Ernährung, Bewegung und Gefühle werden hier greifbar – beim Erleben, Spielen und Staunen.
+            {/* Intro Card */}
+            <motion.div
+              className="bg-card/80 rounded-2xl sm:rounded-3xl p-5 sm:p-8 md:p-10 shadow-lg border border-border/30 relative overflow-hidden"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              viewport={{ once: true }}
+            >
+              <div className="absolute top-0 right-0 w-32 h-32 bg-secondary/5 rounded-full -translate-y-16 translate-x-16" />
+              <div className="relative space-y-4">
+                <p className="text-base text-muted-foreground leading-relaxed">
+                  Schluss mit langweiligen Vorträgen! Damit Wissen hängen bleibt, wird es hier anschaulich und kindgerecht vermittelt.
                 </p>
-
-                <p className="text-base mb-2 text-foreground font-semibold">Erforscht wird:</p>
-                <ul className="text-base mb-6 text-muted-foreground list-disc list-inside space-y-1 ml-2">
-                  <li><strong className="text-foreground">Der richtige Treibstoff:</strong> Wie viel Obst und Gemüse braucht das Raumschiff wirklich?</li>
-                  <li><strong className="text-foreground">Die Paffel-Falle:</strong> Wie viel Zucker versteckt sich in Cola & Co.?</li>
-                  <li><strong className="text-foreground">Das Geheimnis der Powerzentrale (Darm):</strong> Was bringt den Körper von innen zum Leuchten?</li>
-                  <li><strong className="text-foreground">Die Bremse:</strong> Was verklebt die Energie und bremst aus?</li>
-                </ul>
-
-                <h2 className="text-xl font-bold mb-3 text-[hsl(12_55%_50%)] font-luckiest">Die 5 Power Level</h2>
-
-                <p className="text-base mb-2 text-muted-foreground">
-                  <strong className="text-foreground">1. Bewegen & Tanzen</strong> – Stärkt Körpergefühl und Motorik.
+                <p className="text-base text-muted-foreground leading-relaxed">
+                  Ernährung, Bewegung und Gefühle werden greifbar – beim Erleben, Spielen und Staunen.
                 </p>
-                <p className="text-base mb-2 text-muted-foreground">
-                  <strong className="text-foreground">2. Entdecken & Staunen</strong> – Fördert Wissen und Neugier.
-                </p>
-                <p className="text-base mb-2 text-muted-foreground">
-                  <strong className="text-foreground">3. Teamgefühl erleben</strong> – Stärkt den Zusammenhalt.
-                </p>
-                <p className="text-base mb-2 text-muted-foreground">
-                  <strong className="text-foreground">4. Mitmachen & Vorbereiten</strong> – Vermittelt Verantwortung und Selbstwirksamkeit.
-                </p>
-                <p className="text-base mb-6 text-muted-foreground">
-                  <strong className="text-foreground">5. Probieren & Genießen</strong> – Öffnet neue Geschmackserlebnisse und stärkt das Selbstvertrauen.
-                </p>
-
-                <h2 className="text-xl font-bold mb-3 text-[hsl(12_55%_50%)] font-luckiest">Ziel & Nutzen für die Einrichtung</h2>
-
-                <p className="text-base mb-4 text-muted-foreground leading-relaxed">
-                  Die Einrichtung erhält im Anschluss das Zertifikat "Captain Apfel Powercrew". Es dient als sichtbares Zeichen für gelebte Prävention und ganzheitliche Gesundheitsförderung – ideal für den Eingangsbereich oder das Team-Portfolio.
-                </p>
-
-                <p className="text-base mb-2 text-foreground font-semibold">Besonderer Mehrwert:</p>
-                <ul className="text-base mb-6 text-muted-foreground list-disc list-inside space-y-1 ml-2">
-                  <li><strong className="text-foreground">Walk of Fame:</strong> Auf Wunsch erfolgt die Aufnahme als Vorbild-Einrichtung auf der Website.</li>
-                  <li><strong className="text-foreground">Jährlich verlängerbar:</strong> Das Siegel kann jährlich aktualisiert werden, um das dauerhafte Engagement nach außen sichtbar zu machen.</li>
-                </ul>
               </div>
+            </motion.div>
+
+            {/* Two-Column: Was Kinder erleben + 5 Power Level */}
+            <div className="grid md:grid-cols-2 gap-8">
+              {/* Was Kinder erleben */}
+              <motion.div
+                className="bg-card/80 rounded-2xl sm:rounded-3xl p-5 sm:p-8 shadow-lg border border-border/30 relative overflow-hidden"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.15 }}
+                viewport={{ once: true }}
+              >
+                <div className="absolute bottom-0 left-0 w-24 h-24 bg-primary/5 rounded-full translate-y-12 -translate-x-12" />
+                <div className="relative space-y-4">
+                  <h2 className="text-xl font-bold text-foreground font-luckiest">Was Kinder erleben</h2>
+                  <p className="text-sm text-foreground font-semibold">Erforscht wird:</p>
+                  <ul className="text-base text-muted-foreground space-y-2">
+                    <li>
+                      <strong className="text-foreground">Der richtige Treibstoff:</strong> Wie viel Obst und Gemüse braucht das Raumschiff wirklich?
+                    </li>
+                    <li>
+                      <strong className="text-foreground">Die Paffel-Falle:</strong> Wie viel Zucker versteckt sich in Cola & Co.?
+                    </li>
+                    <li>
+                      <strong className="text-foreground">Das Geheimnis der Powerzentrale:</strong> Was bringt den Körper von innen zum Leuchten?
+                    </li>
+                    <li>
+                      <strong className="text-foreground">Die Bremse:</strong> Was verklebt die Energie und bremst aus?
+                    </li>
+                  </ul>
+                </div>
+              </motion.div>
+
+              {/* Die 5 Power Level */}
+              <motion.div
+                className="bg-card/80 rounded-2xl sm:rounded-3xl p-5 sm:p-8 shadow-lg border border-border/30 relative overflow-hidden"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                viewport={{ once: true }}
+              >
+                <div className="absolute top-0 right-0 w-24 h-24 bg-accent/5 rounded-full -translate-y-12 translate-x-12" />
+                <div className="relative space-y-4">
+                  <h2 className="text-xl font-bold text-foreground font-luckiest">Die 5 Power Level</h2>
+                  <div className="space-y-3">
+                    {[
+                      { nr: "1", title: "Bewegen & Tanzen", text: "Stärkt Körpergefühl und Motorik." },
+                      { nr: "2", title: "Entdecken & Staunen", text: "Fördert Wissen und Neugier." },
+                      { nr: "3", title: "Teamgefühl erleben", text: "Stärkt den Zusammenhalt." },
+                      { nr: "4", title: "Mitmachen & Vorbereiten", text: "Vermittelt Verantwortung und Selbstwirksamkeit." },
+                      { nr: "5", title: "Probieren & Genießen", text: "Öffnet neue Geschmackserlebnisse und stärkt das Selbstvertrauen." },
+                    ].map((level) => (
+                      <div key={level.nr} className="flex gap-3 items-start">
+                        <span className="flex-shrink-0 w-7 h-7 rounded-full bg-primary/10 text-primary text-sm font-bold flex items-center justify-center mt-0.5">
+                          {level.nr}
+                        </span>
+                        <p className="text-base text-muted-foreground">
+                          <strong className="text-foreground">{level.title}</strong> – {level.text}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </motion.div>
             </div>
 
-            <div className="mt-12 text-center">
+            {/* Ziel & Nutzen */}
+            <motion.div
+              className="bg-card/80 rounded-2xl sm:rounded-3xl p-5 sm:p-8 md:p-10 shadow-lg border border-border/30 relative overflow-hidden"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.25 }}
+              viewport={{ once: true }}
+            >
+              <div className="absolute bottom-0 right-0 w-28 h-28 bg-secondary/5 rounded-full translate-y-14 translate-x-14" />
+              <div className="relative space-y-4">
+                <h2 className="text-xl font-bold text-foreground font-luckiest">Ziel & Nutzen für die Einrichtung</h2>
+                <p className="text-base text-muted-foreground leading-relaxed">
+                  Die Einrichtung erhält im Anschluss das Zertifikat „Captain Apfel Powercrew". Es dient als sichtbares Zeichen für gelebte Prävention und ganzheitliche Gesundheitsförderung – ideal für den Eingangsbereich oder das Team-Portfolio.
+                </p>
+                <div className="space-y-2">
+                  <p className="text-sm text-foreground font-semibold">Besonderer Mehrwert:</p>
+                  <ul className="text-base text-muted-foreground space-y-2">
+                    <li>
+                      <strong className="text-foreground">Walk of Fame:</strong> Auf Wunsch erfolgt die Aufnahme als Vorbild-Einrichtung auf der Website.
+                    </li>
+                    <li>
+                      <strong className="text-foreground">Jährlich verlängerbar:</strong> Das Siegel kann jährlich aktualisiert werden, um das dauerhafte Engagement nach außen sichtbar zu machen.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* CTA */}
+            <motion.div
+              className="text-center pt-4"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              viewport={{ once: true }}
+            >
               <Link
                 to="/kontakt"
                 className="inline-block bg-[hsl(18_65%_65%)] text-white px-8 py-4 rounded-full font-semibold hover:bg-[hsl(18_65%_58%)] transition-all duration-300 shadow-lg hover:shadow-xl active:scale-95"
               >
                 Jetzt Teil der Power-Mission werden!
               </Link>
-            </div>
+            </motion.div>
 
+            {/* Feedback */}
             <CustomerFeedback />
           </div>
         </div>
