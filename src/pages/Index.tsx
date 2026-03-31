@@ -125,7 +125,7 @@ const Index = () => {
               title="Reise zur Powerzentrale"
               subtitle="Start: Frühjahr 2026"
               description="Ob Familienzentrum, Eltern-Kind-Gruppe oder Kita: Die Powerzentrale kommt dorthin, wo Kinder spielen und lernen. Jetzt startet die Mission für mehr Gesundheit und ein gutes Bauchgefühl."
-              callToAction="Bald landet Captain Apfel direkt vor Ort!"
+              callToAction=""
               imageUrl="/assets/hero-crew.png"
               linkTo="/kontakt"
               buttonText="Vormerken lassen"
