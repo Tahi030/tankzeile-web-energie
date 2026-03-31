@@ -123,7 +123,7 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             <UniformOfferCard
               title="Reise zur Powerzentrale"
-              subtitle="Start: Frühjahr 2026"
+              subtitle="Frühjahr 2026"
               description="Ob Familienzentrum, Eltern-Kind-Gruppe oder Kita: Die Powerzentrale kommt dorthin, wo Kinder spielen und lernen. Jetzt startet die Mission für mehr Gesundheit und ein gutes Bauchgefühl."
               callToAction=""
               imageUrl="/assets/hero-crew.webp"
