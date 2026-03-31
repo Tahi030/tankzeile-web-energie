@@ -82,7 +82,7 @@ const Header = () => {
   };
 
   return (
-    <header className={`${getHeaderColor()} sticky top-0 z-50 shadow-md`}>
+    <header className={`${getHeaderColor()} bg-opacity-85 backdrop-blur-md sticky top-0 z-50 shadow-md rounded-b-2xl mx-2 mt-0`}>
       <div className="container-custom">
         <div className="flex justify-between items-center py-1">
           {/* Logo on the left */}
