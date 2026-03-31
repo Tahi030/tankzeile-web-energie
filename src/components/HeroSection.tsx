@@ -27,7 +27,7 @@ const HeroSection = () => {
       {/* Mobile-specific heart graphic - smaller */}
       <div className="absolute inset-0 md:hidden pointer-events-none flex justify-center items-center overflow-hidden">
         <img 
-          src="/lovable-uploads/17a7f60a-a1a3-4e82-afda-a989d7696ecb.png" 
+          src="/lovable-uploads/17a7f60a-a1a3-4e82-afda-a989d7696ecb.webp" 
           alt="Decorative heart line" 
           className="h-2/3 w-2/3 object-contain opacity-20 scale-75"
         />

@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { motion } from "framer-motion";
-import powercrewBanner from "@/assets/powercrew-banner-new.png";
+import powercrewBanner from "@/assets/powercrew-banner-new.webp";
 
 const AlltagLeichterLeben = () => {
   useEffect(() => {
@@ -56,7 +56,7 @@ const AlltagLeichterLeben = () => {
             <div className="grid md:grid-cols-[auto_1fr] gap-6 md:gap-10 items-start">
               <div className="flex items-start justify-center md:justify-start">
                 <img
-                  src="/assets/powercrew-uebergabe-dezember-2025.jpg"
+                  src="/assets/powercrew-uebergabe-dezember-2025.webp"
                   alt="Übergabe Powercrew des Jahres an Kita Dreikäsehoch"
                   className="w-48 md:w-56 lg:w-64 rounded-lg shadow-md object-cover"
                 />

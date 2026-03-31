@@ -36,7 +36,7 @@ const Schatzruhe = () => {
               <div className="my-8">
                 <AspectRatio ratio={16/9} className="bg-muted">
                   <img 
-                    src="/lovable-uploads/4b878cec-1fcb-4ff6-a1c2-ddce369393a7.png" 
+                    src="/lovable-uploads/4b878cec-1fcb-4ff6-a1c2-ddce369393a7.webp" 
                     alt="Mutter und Kind beim Schatz(t)ruhe Ritual" 
                     className="rounded-lg shadow-md w-full h-full object-cover"
                   />

@@ -50,7 +50,7 @@ const ErlebenVerbinden = () => {
                 <div>
                   <AspectRatio ratio={16/9} className="bg-muted">
                     <img 
-                      src="/lovable-uploads/8138e97e-63f6-4434-a88a-13d9b92ff7cb.png" 
+                      src="/lovable-uploads/8138e97e-63f6-4434-a88a-13d9b92ff7cb.webp" 
                       alt="Captain Apfel und seine Gemüse-Crew" 
                       className="rounded-lg shadow-md w-full h-full object-cover"
                     />
@@ -59,7 +59,7 @@ const ErlebenVerbinden = () => {
                 <div>
                   <AspectRatio ratio={16/9} className="bg-muted">
                     <img 
-                      src="/lovable-uploads/4b878cec-1fcb-4ff6-a1c2-ddce369393a7.png" 
+                      src="/lovable-uploads/4b878cec-1fcb-4ff6-a1c2-ddce369393a7.webp" 
                       alt="Mutter und Kind beim Schatz(t)ruhe Ritual" 
                       className="rounded-lg shadow-md w-full h-full object-cover"
                     />

@@ -126,7 +126,7 @@ const EssenIstFertig = () => {
           {/* Product Cards Grid */}
           <div className="grid md:grid-cols-2 gap-8 items-start max-w-5xl mx-auto">
             <ProductCard
-              image="/assets/rettungskoffer-laktose.png?v=2"
+              image="/assets/rettungskoffer-laktose.webp?v=2"
               imageAlt="Essen ist fertig! Rettungskoffer bei Laktoseintoleranz Cover"
               title="ESSEN IST FERTIG! DEIN RETTUNGSKOFFER BEI LAKTOSEINTOLERANZ"
               description="Klassisch & fundiert: Basierend auf der klassischen, modernen Ernährungslehre."
@@ -142,7 +142,7 @@ const EssenIstFertig = () => {
             />
 
             <ProductCard
-              image="/assets/rettungskoffer-fruktose-new.png"
+              image="/assets/rettungskoffer-fruktose-new.webp"
               imageAlt="Essen ist fertig! Rettungskoffer bei Fruktoseintoleranz Cover"
               title="ESSEN IST FERTIG! DEIN RETTUNGSKOFFER BEI FRUKTOSEINTOLERANZ"
               description="Klassisch & fundiert: Basierend auf der klassischen, modernen Ernährungslehre."
@@ -163,7 +163,7 @@ const EssenIstFertig = () => {
             />
 
             <ProductCard
-              image="/assets/rettungskoffer-bauch-code.png"
+              image="/assets/rettungskoffer-bauch-code.webp"
               imageAlt="Essen ist fertig! Der Bauch-Code Cover"
               title="ESSEN IST FERTIG! DEIN BASIS-KOFFER FÜR DIE SENSIBLE KINDERMITTE"
               description="Sonderformat: Eine TCM-inspirierte, ganzheitliche Ergänzung."
@@ -179,7 +179,7 @@ const EssenIstFertig = () => {
             />
 
             <ProductCard
-              image="/assets/kombi-paket-bundle.png"
+              image="/assets/kombi-paket-bundle.webp"
               imageAlt="Essen ist fertig! Das große Kombi-Paket Fruktose und Laktose"
               title="ESSEN IST FERTIG! DAS GROSSE KOMBI-PAKET (FRUKTOSE & LAKTOSE)"
               description="Wenn Fruktose- und Laktoseintoleranz in der Familie zusammenkommen, wird das Kochen zur Herausforderung. Dieses Bundle vereint das wichtigste Wissen beider Rettungskoffer für entspanntere, gemeinsame Mahlzeiten."
@@ -206,10 +206,10 @@ const EssenIstFertig = () => {
           >
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 max-w-4xl mx-auto">
               {[
-                { src: "/assets/vorschau-rezept.png", alt: "Rezept Ausschnitt", rotate: "rotate-1" },
-                { src: "/assets/vorschau-wochenplaner.png", alt: "Wochenplaner Ausschnitt", rotate: "-rotate-1" },
-                { src: "/assets/vorschau-tagebuch.png", alt: "Ernährungstagebuch Ausschnitt", rotate: "rotate-1" },
-                { src: "/assets/vorschau-bauchposter.png", alt: "Bauchgefühl-Poster Ausschnitt", rotate: "-rotate-1" },
+                { src: "/assets/vorschau-rezept.webp", alt: "Rezept Ausschnitt", rotate: "rotate-1" },
+                { src: "/assets/vorschau-wochenplaner.webp", alt: "Wochenplaner Ausschnitt", rotate: "-rotate-1" },
+                { src: "/assets/vorschau-tagebuch.webp", alt: "Ernährungstagebuch Ausschnitt", rotate: "rotate-1" },
+                { src: "/assets/vorschau-bauchposter.webp", alt: "Bauchgefühl-Poster Ausschnitt", rotate: "-rotate-1" },
               ].map((img) => (
                 <div key={img.alt} className={`transform ${img.rotate} hover:rotate-0 transition-transform duration-300`}>
                   <img
