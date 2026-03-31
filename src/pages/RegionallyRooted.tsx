@@ -79,50 +79,34 @@ const RegionallyRooted = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
               viewport={{ once: true }}
             >
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {/* Patenschaftsurkunde */}
-                <div className="md:row-span-2">
-                  <div className="overflow-hidden rounded-xl shadow-md bg-white p-3 h-full">
-                    <img
-                      src="/assets/regional-apfelbaum-patenschaft.webp"
-                      alt="Apfelbaum-Patenschaft Urkunde"
-                      className="w-full h-full min-h-[280px] md:min-h-[360px] object-contain rounded-lg"
-                      loading="lazy"
-                      decoding="async"
-                    />
-                  </div>
-                </div>
+              {/* Urkunde full width */}
+              <div className="overflow-hidden rounded-xl shadow-md bg-white p-3 mb-6">
+                <img
+                  src="/assets/regional-apfelbaum-patenschaft.webp"
+                  alt="Apfelbaum-Patenschaft Urkunde"
+                  className="w-full max-w-lg mx-auto object-contain rounded-lg"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
 
-                {/* Rechte Spalte */}
-                <div className="grid grid-cols-3 md:grid-cols-1 gap-4">
-                  <div className="overflow-hidden rounded-xl shadow-md">
+              {/* 3 Bilder gleichmäßig */}
+              <div className="grid grid-cols-3 gap-4">
+                {[
+                  { src: "/assets/regional-apples-tree.webp", alt: "Rote Äpfel am Baum" },
+                  { src: "/assets/regional-apple-hand.webp", alt: "Apfel in der Hand" },
+                  { src: "/assets/regional-apple-basket.webp", alt: "Apfel im Korb" },
+                ].map((img) => (
+                  <div key={img.alt} className="overflow-hidden rounded-xl shadow-md">
                     <img
-                      src="/assets/regional-apples-tree.webp"
-                      alt="Rote Äpfel am Baum"
-                      className="w-full h-24 md:h-28 object-cover rounded-lg"
+                      src={img.src}
+                      alt={img.alt}
+                      className="w-full h-32 sm:h-40 md:h-48 object-cover rounded-xl"
                       loading="lazy"
                       decoding="async"
                     />
                   </div>
-                  <div className="overflow-hidden rounded-xl shadow-md">
-                    <img
-                      src="/assets/regional-apple-hand.webp"
-                      alt="Apfel in der Hand"
-                      className="w-full h-24 md:h-28 object-cover rounded-lg"
-                      loading="lazy"
-                      decoding="async"
-                    />
-                  </div>
-                  <div className="overflow-hidden rounded-xl shadow-md">
-                    <img
-                      src="/assets/regional-apple-basket.webp"
-                      alt="Apfel im Korb"
-                      className="w-full h-24 md:h-28 object-cover rounded-lg"
-                      loading="lazy"
-                      decoding="async"
-                    />
-                  </div>
-                </div>
+                ))}
               </div>
             </motion.div>
 
