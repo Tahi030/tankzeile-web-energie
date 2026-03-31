@@ -152,7 +152,7 @@ const Index = () => {
           {/* Additional Content Boxes */}
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             <UniformOfferCard
-              title="Mitmach-Lied Video"
+              title="Das Captain Apfel - Lied"
               description="Das Mitmach-Lied lädt zum Tanzen, Singen und Spaßhaben ein. Bewegung mit Captain Apfel und seiner Crew – volle Obst- und Gemüsekraft voraus!"
               imageUrl="/assets/mitmach-lied-thumbnail.jpg"
               youtubeLink="https://www.youtube.com/watch?v=yXku9Q91tmY"
