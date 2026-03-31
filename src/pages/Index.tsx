@@ -129,6 +129,7 @@ const Index = () => {
               description="Ob Familienzentrum, Eltern-Kind-Gruppe oder Kita: Die Powerzentrale kommt dorthin, wo Kinder spielen und lernen. Jetzt startet die Mission für mehr Gesundheit und ein gutes Bauchgefühl."
               callToAction=""
               imageUrl="/assets/hero-crew.webp"
+              imageUrlSm="/assets/hero-crew-sm.webp"
               linkTo="/kontakt"
               buttonText="Ready for take-off"
               accent="primary"
