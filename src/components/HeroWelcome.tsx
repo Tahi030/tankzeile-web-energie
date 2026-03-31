@@ -92,25 +92,28 @@ export const HeroWelcome = () => {
                 />
                 
                 {/* Captain Apfel image - static on mobile, floating on desktop */}
-                <motion.img 
-                  src={captainApfelJumping} 
-                  alt="Captain Apfel schwebt" 
-                  className="relative w-full h-auto"
-                  width={800}
-                  height={800}
-                  style={{
-                    filter: 'drop-shadow(0 20px 30px rgba(150, 120, 90, 0.25))',
-                    willChange: 'transform',
-                  }}
-                  animate={{
-                    y: [0, -12, 0],
-                  }}
-                  transition={{
-                    duration: 4,
-                    repeat: Infinity,
-                    ease: "easeInOut"
-                  }}
-                />
+                <motion.picture>
+                  <source media="(max-width: 640px)" srcSet={captainApfelJumpingSm} />
+                  <motion.img 
+                    src={captainApfelJumping} 
+                    alt="Captain Apfel schwebt" 
+                    className="relative w-full h-auto"
+                    width={800}
+                    height={800}
+                    style={{
+                      filter: 'drop-shadow(0 20px 30px rgba(150, 120, 90, 0.25))',
+                      willChange: 'auto',
+                    }}
+                    animate={{
+                      y: [0, -12, 0],
+                    }}
+                    transition={{
+                      duration: 4,
+                      repeat: Infinity,
+                      ease: "easeInOut"
+                    }}
+                  />
+                </motion.picture>
               </div>
 
               {/* Elegant decorative arc */}
