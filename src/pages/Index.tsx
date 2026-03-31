@@ -159,6 +159,7 @@ const Index = () => {
               title="Das Captain Apfel - Lied"
               description="Das Mitmach-Lied lädt zum Tanzen, Singen und Spaßhaben ein. Bewegung mit Captain Apfel und seiner Crew – volle Obst- und Gemüsekraft voraus!"
               imageUrl="/assets/mitmach-lied-thumbnail.webp"
+              imageUrlSm="/assets/mitmach-lied-thumbnail-sm.webp"
               youtubeLink="https://www.youtube.com/watch?v=yXku9Q91tmY"
               downloadLinks={[
                 { text: "Mitmachkarte", url: "/pdfs/mitmach-lied-captain-apfel.pdf" },
