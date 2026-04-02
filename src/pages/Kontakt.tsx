@@ -15,11 +15,8 @@ const Kontakt = () => {
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-foreground font-luckiest">Ich freue mich über jede Nachricht!</h1>
-            <p className="text-lg text-muted-foreground mb-4">
-              Gibt es Fragen, Anregungen oder Interesse, mehr über die Angebote zu erfahren?
-            </p>
             <p className="text-lg text-muted-foreground">
-              Auch Buchungen oder unverbindliche Vormerkungen für den Start im Frühjahr 2026 laufen ganz unkompliziert auf diesem Weg – einfach melden, ganz ohne Formulare.
+              Egal ob du Fragen hast, direkt buchen oder dich unverbindlich für einen Workshop vormerken möchtest – eine kurze Nachricht genügt.
             </p>
           </div>
         </div>
