@@ -49,7 +49,7 @@ const WorkshopGesundeMission = () => {
                 <motion.img
                   src="/images/powerzentrale-bg.webp"
                   alt="Reise zur Powerzentrale – Captain Apfel und die Crew im Tomatenraumschiff"
-                  className="w-28 sm:w-32 md:w-36 rounded-2xl shadow-md flex-shrink-0"
+                  className="w-36 sm:w-40 md:w-44 rounded-2xl shadow-md flex-shrink-0"
                   loading="lazy"
                   decoding="async"
                   width={1000}
