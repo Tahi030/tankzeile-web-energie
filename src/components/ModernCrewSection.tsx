@@ -8,39 +8,39 @@ import tomatenraumschiff from "@/assets/tomatenraumschiff.webp";
 
 const crewMembers = [
   {
-    name: "Powerzentrale",
-    image: powerzentrale,
-    color: "primary",
-    delay: 0.1
-  },
-  {
     name: "Captain Apfel",
     image: captainApfel,
     color: "primary",
-    delay: 0.15
+    delay: 0.1
   },
   {
     name: "Kimmi Schlau",
     image: kimmiSchlau,
     color: "secondary",
-    delay: 0.2
+    delay: 0.15
   },
   {
     name: "Kai Mutig",
     image: kaiMutig,
     color: "accent",
-    delay: 0.25
+    delay: 0.2
   },
   {
     name: "Tomatenraumschiff",
     image: tomatenraumschiff,
     color: "primary",
-    delay: 0.3
+    delay: 0.25
   },
   {
     name: "Paffel",
     image: paffel,
     color: "accent",
+    delay: 0.3
+  },
+  {
+    name: "Powerzentrale",
+    image: powerzentrale,
+    color: "primary",
     delay: 0.35
   }
 ];
