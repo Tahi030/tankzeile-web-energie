@@ -72,7 +72,7 @@ export const UniformOfferCard = ({
         </div>
       )}
 
-      <div className="p-8 flex-1 flex flex-col">
+      <div className="px-8 pb-8 pt-5 flex-1 flex flex-col">
 
         {/* Video Placeholder (no iframe) */}
         {videoPlaceholder && (
