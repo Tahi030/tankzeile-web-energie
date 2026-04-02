@@ -3,10 +3,9 @@ import { motion } from "framer-motion";
 import { HeroWelcome } from "@/components/HeroWelcome";
 import { ModernCrewSection } from "@/components/ModernCrewSection";
 import { UniformOfferCard } from "@/components/UniformOfferCard";
-import essenIstFertigImage from "@/assets/essen-ist-fertig-card.webp";
-import essenIstFertigImageSm from "@/assets/essen-ist-fertig-card-sm.webp";
-import missionBuntstiftImage from "@/assets/mission-buntstift-header.webp";
-import missionBuntstiftImageSm from "@/assets/mission-buntstift-header-sm.webp";
+import essenIstFertigImage from "@/assets/essen-ist-fertig-card-new.png";
+import missionBuntstiftImage from "@/assets/mission-buntstift-card-new.png";
+import powerzentraleImage from "@/assets/powerzentrale-card-new.png";
 
 const Index = () => {
   useEffect(() => {
