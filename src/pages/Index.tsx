@@ -99,6 +99,28 @@ const Index = () => {
               verarbeitete Seite und versucht nun als ehemaliger Mais, alles auszubremsen.
             </p>
           </motion.div>
+
+          {/* Hero Crew Illustration */}
+          <motion.div
+            className="flex justify-center my-8"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            viewport={{ once: true }}
+          >
+            <div className="bg-card/50 backdrop-blur-sm rounded-2xl p-4 border border-border/20 shadow-sm">
+              <img
+                src="/images/captain-apfel-hero-crew.webp"
+                alt="Captain Apfel und seine Crew"
+                className="w-40 sm:w-48 md:w-56 rounded-xl"
+                loading="lazy"
+                decoding="async"
+                width={600}
+                height={803}
+              />
+            </div>
+          </motion.div>
+
           <ModernCrewSection />
         </div>
       </section>
