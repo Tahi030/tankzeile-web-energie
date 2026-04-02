@@ -63,7 +63,7 @@ export const UniformOfferCard = ({
             {youtubeLink && (
               <button 
                 onClick={() => window.open(youtubeLink, '_blank', 'noopener,noreferrer')}
-                className="block w-full mt-3 bg-blue-600 hover:bg-blue-700 text-white px-4 py-3 rounded-lg font-medium transition-all duration-300 text-center shadow-md hover:shadow-lg hover:scale-[1.02] active:scale-[0.98] cursor-pointer"
+                className="block w-full mt-3 bg-foreground hover:bg-foreground/85 text-white px-4 py-3 rounded-lg font-medium transition-all duration-300 text-center shadow-md hover:shadow-lg hover:scale-[1.02] active:scale-[0.98] cursor-pointer"
               >
                 Video auf YouTube ansehen
               </button>
