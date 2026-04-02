@@ -35,7 +35,25 @@ const WorkshopGesundeMission = () => {
         <div className="container-custom">
           <div className="max-w-4xl mx-auto space-y-8">
 
-            {/* Intro Card */}
+            {/* Illustration */}
+            <motion.div
+              className="flex justify-center"
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6, delay: 0.05 }}
+              viewport={{ once: true }}
+            >
+              <img
+                src="/images/powerzentrale-bg.webp"
+                alt="Reise zur Powerzentrale – Captain Apfel und die Crew im Tomatenraumschiff"
+                className="w-full max-w-md rounded-2xl shadow-lg"
+                loading="lazy"
+                decoding="async"
+                width={1000}
+                height={1339}
+              />
+            </motion.div>
+
             <motion.div
               className="bg-card rounded-2xl sm:rounded-3xl p-5 sm:p-8 md:p-10 shadow-lg border border-border/30 relative overflow-hidden"
               initial={{ opacity: 0, y: 30 }}
