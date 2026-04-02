@@ -10,21 +10,6 @@ const WorkshopGesundeMission = () => {
 
   return (
     <div className="min-h-screen bg-muted relative">
-      {/* Decorative Background Image */}
-      <div 
-        className="absolute z-0 pointer-events-none"
-        style={{
-          backgroundImage: "url('/images/powerzentrale-bg.webp')",
-          backgroundSize: "min(80vw, 900px) auto",
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "center top",
-          opacity: 0.25,
-          top: "280px",
-          left: 0,
-          right: 0,
-          bottom: 0,
-        }}
-      />
 
       {/* Hero Section */}
       <section className="pt-8 pb-4 md:pt-12 md:pb-6 relative z-10">
