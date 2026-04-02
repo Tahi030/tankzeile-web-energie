@@ -22,7 +22,7 @@ const WorkshopGesundeMission = () => {
       />
 
       {/* Hero Section */}
-      <section className="pt-8 pb-4 md:pt-12 md:pb-6">
+      <section className="pt-8 pb-4 md:pt-12 md:pb-6 relative z-10">
         <div className="container-custom">
           <motion.div
             className="max-w-4xl mx-auto text-center"
