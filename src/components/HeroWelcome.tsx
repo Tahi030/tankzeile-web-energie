@@ -1,7 +1,6 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
-import captainApfelJumping from "@/assets/captain-apfel-jumping.webp";
-import captainApfelJumpingSm from "@/assets/captain-apfel-jumping-sm.webp";
+import captainApfelHero from "@/assets/captain-apfel-hero.png";
 
 const rotatingWords = ["Bäuche", "Eltern", "Familien", "Einrichtungen"];
 
