@@ -132,13 +132,13 @@ const Index = () => {
               subtitle="Frühjahr 2026"
               description="Ob Familienzentrum, Eltern-Kind-Gruppe oder Kita: Die Powerzentrale kommt dorthin, wo Kinder spielen und lernen. Jetzt startet die Mission für mehr Gesundheit und ein gutes Bauchgefühl."
               callToAction=""
-              imageUrl="/assets/hero-crew.webp"
-              imageUrlSm="/assets/hero-crew-sm.webp"
+              imageUrl={reisePowerzentraleImage}
+              imageUrlSm={reisePowerzentraleImage}
               linkTo="/kontakt"
               buttonText="Ready for take-off"
               accent="primary"
               delay={0.1}
-               imageClassName="object-[50%_30%]"
+              imageClassName="object-[50%_35%]"
              />
 
             <UniformOfferCard
