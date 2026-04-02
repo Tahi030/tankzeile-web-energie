@@ -15,10 +15,10 @@ const WorkshopGesundeMission = () => {
         className="absolute inset-0 z-0 pointer-events-none"
         style={{
           backgroundImage: "url('/images/powerzentrale-bg.webp')",
-          backgroundSize: "min(78vw, 900px) auto",
+          backgroundSize: "min(90vw, 1100px) auto",
           backgroundRepeat: "no-repeat",
-          backgroundPosition: "right 8% bottom 10%",
-          opacity: 0.1,
+          backgroundPosition: "center 55%",
+          opacity: 0.12,
         }}
       />
 
