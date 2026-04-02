@@ -137,8 +137,8 @@ const Index = () => {
               buttonText="Ready for take-off"
               accent="primary"
               delay={0.1}
-              imageClassName=""
-            />
+               imageClassName="object-[50%_40%]"
+             />
 
             <UniformOfferCard
               title="Essen ist fertig!"
@@ -176,7 +176,7 @@ const Index = () => {
               description="Jetzt heißt es: Stifte raus und los! Hier warten Ausmalbilder mit Captain Apfel und seiner Crew zum Herunterladen – ideal für eine kreative Pause zuhause oder in der Kita."
               imageUrl={missionBuntstiftImage}
               imageUrlSm={missionBuntstiftImageSm}
-              imageClassName="object-[50%_80%]"
+              imageClassName="object-[50%_30%]"
               coloringPages={[
                 { imageUrl: "/images/paffel-ausmalbild-thumb.webp", pdfUrl: "/pdfs/paffel-ausmalbild-v4.pdf" },
                 {
