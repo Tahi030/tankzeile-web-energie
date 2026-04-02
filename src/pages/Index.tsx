@@ -143,7 +143,6 @@ const Index = () => {
               title="Essen ist fertig!"
               description={<>Bauchweh oder die frische Diagnose Nahrungsmittelunverträglichkeit bestimmen den Alltag? Mit der digitalen Serie „Essen ist fertig!" bekommst du statt Medizin-Kauderwelsch direkt anwendbares Praxis-Wissen, um den Ernährungs-Dschungel stressfrei zu meistern.</>}
               imageUrl={essenIstFertigImage}
-              imageUrlSm={essenIstFertigImageSm}
               linkTo="/essen-ist-fertig"
               buttonText="Direkt zur Soforthilfe"
               accent="secondary"
