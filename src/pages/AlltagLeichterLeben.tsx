@@ -19,13 +19,6 @@ const AlltagLeichterLeben = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <img
-              src={powercrewBanner}
-              alt="Powercrew des Jahres"
-              className="w-full max-w-md mx-auto mb-6"
-              loading="eager"
-              decoding="async"
-            />
             <h1 className="text-3xl md:text-4xl font-bold mb-3 text-foreground font-luckiest">
               The Walk of Fame
             </h1>
