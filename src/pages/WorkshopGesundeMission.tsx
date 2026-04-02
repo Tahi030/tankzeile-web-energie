@@ -12,12 +12,13 @@ const WorkshopGesundeMission = () => {
     <div className="min-h-screen bg-muted relative">
       {/* Decorative Background Image */}
       <div 
-        className="fixed inset-0 z-0 opacity-[0.06] pointer-events-none"
+        className="absolute inset-0 z-0 pointer-events-none"
         style={{
           backgroundImage: "url('/images/powerzentrale-bg.webp')",
-          backgroundSize: "600px auto",
-          backgroundRepeat: "repeat",
-          backgroundPosition: "center top",
+          backgroundSize: "contain",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center 40%",
+          opacity: 0.04,
         }}
       />
 
