@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import powerzentrale from "@/assets/powerzentrale.webp";
 import captainApfel from "@/assets/captain-apfel.webp";
 import kaiMutig from "@/assets/kai-mutig.webp";
 import kimmiSchlau from "@/assets/kimmi-schlau.webp";
@@ -7,10 +8,16 @@ import tomatenraumschiff from "@/assets/tomatenraumschiff.webp";
 
 const crewMembers = [
   {
+    name: "Powerzentrale",
+    image: powerzentrale,
+    color: "primary",
+    delay: 0.1
+  },
+  {
     name: "Captain Apfel",
     image: captainApfel,
     color: "primary",
-    delay: 0.1
+    delay: 0.15
   },
   {
     name: "Kimmi Schlau",
@@ -22,19 +29,19 @@ const crewMembers = [
     name: "Kai Mutig",
     image: kaiMutig,
     color: "accent",
-    delay: 0.3
+    delay: 0.25
   },
   {
     name: "Tomatenraumschiff",
     image: tomatenraumschiff,
     color: "primary",
-    delay: 0.4
+    delay: 0.3
   },
   {
     name: "Paffel",
     image: paffel,
     color: "accent",
-    delay: 0.5
+    delay: 0.35
   }
 ];
 
