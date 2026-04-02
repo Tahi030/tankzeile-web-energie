@@ -69,14 +69,14 @@ export const ModernCrewSection = () => {
               }}
             >
               {/* Image Container */}
-              <div className="relative p-8 bg-card rounded-2xl shadow-lg border border-border/50 transition-all duration-300 group-hover:shadow-xl w-full">
+              <div className="relative p-8 bg-card rounded-2xl shadow-lg border border-border/50 transition-all duration-300 group-hover:shadow-xl w-full aspect-[4/5] flex items-center justify-center overflow-hidden">
                 <img 
                   src={member.image} 
                   alt={member.name}
-                  className="w-full h-auto object-contain drop-shadow-lg"
+                  className="w-full h-full object-contain drop-shadow-lg"
                   width={500}
-                  height={500}
-                  loading="lazy"
+                  height={625}
+                  loading={index < 2 ? "eager" : "lazy"}
                   decoding="async"
                 />
                 
