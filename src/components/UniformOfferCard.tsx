@@ -9,6 +9,7 @@ interface UniformOfferCardProps {
   imageUrl?: string;
   imageUrlSm?: string;
   imageClassName?: string;
+  imageHeightClassName?: string;
   videoPlaceholder?: boolean;
   youtubeLink?: string;
   coloringPages?: { imageUrl: string; pdfUrl: string }[];
@@ -27,6 +28,7 @@ export const UniformOfferCard = ({
   imageUrl,
   imageUrlSm,
   imageClassName,
+  imageHeightClassName,
   videoPlaceholder,
   youtubeLink,
   coloringPages,
@@ -52,7 +54,7 @@ export const UniformOfferCard = ({
             <img 
               src={imageUrl} 
               alt={typeof title === 'string' ? title : 'Angebot'} 
-              className={`w-full h-56 sm:h-64 object-cover ${imageClassName || ''}`}
+              className={`w-full ${imageHeightClassName || 'h-56 sm:h-64'} object-cover ${imageClassName || ''}`}
               loading="lazy"
               decoding="async"
               width={700}

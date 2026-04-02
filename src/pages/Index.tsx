@@ -137,7 +137,8 @@ const Index = () => {
               buttonText="Ready for take-off"
               accent="primary"
               delay={0.1}
-               imageClassName="object-[50%_30%]"
+              imageClassName="object-[50%_18%]"
+              imageHeightClassName="h-72 sm:h-80"
              />
 
             <UniformOfferCard
