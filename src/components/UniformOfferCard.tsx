@@ -44,32 +44,35 @@ export const UniformOfferCard = ({
       transition={{ duration: 0.6, delay }}
       viewport={{ once: true, margin: "-50px" }}
     >
-      <div className="p-8 flex-1 flex flex-col">
-        {/* Image */}
-        {imageUrl && (
-          <div className="mb-6">
-            <picture>
-              {imageUrlSm && <source media="(max-width: 640px)" srcSet={imageUrlSm} />}
-              <img 
-                src={imageUrl} 
-                alt={typeof title === 'string' ? title : 'Angebot'} 
-                className={`w-full rounded-lg shadow-md h-48 sm:h-56 object-cover ${imageClassName || ''}`}
-                loading="lazy"
-                decoding="async"
-                width={700}
-                height={430}
-              />
-            </picture>
-            {youtubeLink && (
+      {/* Image - edge to edge, no padding */}
+      {imageUrl && (
+        <div>
+          <picture>
+            {imageUrlSm && <source media="(max-width: 640px)" srcSet={imageUrlSm} />}
+            <img 
+              src={imageUrl} 
+              alt={typeof title === 'string' ? title : 'Angebot'} 
+              className={`w-full h-48 sm:h-56 object-cover ${imageClassName || ''}`}
+              loading="lazy"
+              decoding="async"
+              width={700}
+              height={430}
+            />
+          </picture>
+          {youtubeLink && (
+            <div className="px-8 pt-3">
               <button 
                 onClick={() => window.open(youtubeLink, '_blank', 'noopener,noreferrer')}
-                className="block w-full mt-3 bg-foreground hover:bg-foreground/85 text-white px-4 py-3 rounded-lg font-medium transition-all duration-300 text-center shadow-md hover:shadow-lg hover:scale-[1.02] active:scale-[0.98] cursor-pointer"
+                className="block w-full bg-foreground hover:bg-foreground/85 text-white px-4 py-3 rounded-lg font-medium transition-all duration-300 text-center shadow-md hover:shadow-lg hover:scale-[1.02] active:scale-[0.98] cursor-pointer"
               >
                 Video auf YouTube ansehen
               </button>
-            )}
-          </div>
-        )}
+            </div>
+          )}
+        </div>
+      )}
+
+      <div className="p-8 flex-1 flex flex-col">
 
         {/* Video Placeholder (no iframe) */}
         {videoPlaceholder && (
