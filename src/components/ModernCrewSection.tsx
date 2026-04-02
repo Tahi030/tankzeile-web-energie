@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import powerzentrale from "@/assets/powerzentrale.webp";
-import captainApfel from "@/assets/captain-apfel.png";
+import captainApfel from "@/assets/captain-apfel.webp";
 import kaiMutig from "@/assets/kai-mutig.webp";
 import kimmiSchlau from "@/assets/kimmi-schlau.webp";
 import paffel from "@/assets/paffel.webp";
