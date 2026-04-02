@@ -14,9 +14,9 @@ const Kontakt = () => {
       <section className="pt-8 pb-12 md:pt-12 md:pb-16">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-foreground font-luckiest">Ich freue mich über jede Nachricht!</h1>
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-foreground font-luckiest">Kontakt</h1>
             <p className="text-lg text-muted-foreground">
-              Egal ob du Fragen hast, direkt buchen oder dich unverbindlich für einen Workshop vormerken möchtest – eine kurze Nachricht genügt.
+              Ob bei Fragen, für direkte Buchungen oder eine unverbindliche Workshop-Vormerkung – eine kurze Nachricht genügt.
             </p>
           </div>
         </div>
