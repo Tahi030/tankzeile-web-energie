@@ -1,7 +1,6 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
-import captainApfelJumping from "@/assets/captain-apfel-jumping.webp";
-import captainApfelJumpingSm from "@/assets/captain-apfel-jumping-sm.webp";
+import captainApfelHero from "@/assets/captain-apfel-hero.png";
 
 const rotatingWords = ["Bäuche", "Eltern", "Familien", "Einrichtungen"];
 
@@ -92,10 +91,9 @@ export const HeroWelcome = () => {
                 />
                 
                 {/* Captain Apfel image - static on mobile, floating on desktop */}
-                <motion.picture>
-                  <source media="(max-width: 640px)" srcSet={captainApfelJumpingSm} />
+                <motion.div>
                   <motion.img 
-                    src={captainApfelJumping} 
+                    src={captainApfelHero}
                     alt="Captain Apfel schwebt" 
                     className="relative w-full h-auto"
                     width={800}
@@ -113,7 +111,7 @@ export const HeroWelcome = () => {
                       ease: "easeInOut"
                     }}
                   />
-                </motion.picture>
+                </motion.div>
               </div>
 
               {/* Elegant decorative arc */}
