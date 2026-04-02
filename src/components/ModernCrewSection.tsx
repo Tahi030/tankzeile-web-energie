@@ -45,7 +45,7 @@ export const ModernCrewSection = () => {
         
 
         {/* Crew Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+        <div className="flex flex-wrap justify-center gap-8 max-w-5xl mx-auto">
           {crewMembers.map((member, index) => (
             <motion.div
               key={member.name}
@@ -60,7 +60,7 @@ export const ModernCrewSection = () => {
               }}
             >
               {/* Image Container */}
-              <div className="relative p-8 bg-card rounded-2xl shadow-lg border border-border/50 transition-all duration-300 group-hover:shadow-xl w-full">
+              <div className="relative p-5 bg-card rounded-2xl shadow-lg border border-border/50 transition-all duration-300 group-hover:shadow-xl w-40 sm:w-48 md:w-56">
                 <img 
                   src={member.image} 
                   alt={member.name}
