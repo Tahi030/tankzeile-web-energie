@@ -111,7 +111,7 @@ export const HeroWelcome = () => {
                       ease: "easeInOut"
                     }}
                   />
-                </motion.picture>
+                </motion.div>
               </div>
 
               {/* Elegant decorative arc */}
