@@ -100,36 +100,8 @@ const Index = () => {
             </p>
           </motion.div>
 
-          {/* Hero Crew Illustration */}
-          <motion.div
-            className="flex justify-center my-8"
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.1 }}
-            viewport={{ once: true }}
-          >
-            <div className="group">
-              <motion.div
-                whileHover={{ 
-                  y: -8,
-                  transition: { type: "spring", stiffness: 300, damping: 10 }
-                }}
-              >
-                <div className="relative p-8 bg-card rounded-2xl shadow-lg border border-border/50 transition-all duration-300 group-hover:shadow-xl">
-                  <img
-                    src="/images/captain-apfel-hero-crew.webp"
-                    alt="Captain Apfel und seine Crew"
-                    className="w-40 sm:w-48 md:w-56 rounded-xl"
-                    loading="lazy"
-                    decoding="async"
-                    width={600}
-                    height={803}
-                  />
-                  <div className="absolute -top-2 -right-2 w-6 h-6 rounded-full bg-primary opacity-20 group-hover:opacity-40 transition-opacity" />
-                </div>
-              </motion.div>
-            </div>
-          </motion.div>
+
+
 
           <ModernCrewSection />
         </div>
