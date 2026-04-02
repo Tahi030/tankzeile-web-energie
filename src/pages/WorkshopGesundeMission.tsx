@@ -9,9 +9,20 @@ const WorkshopGesundeMission = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-muted">
+    <div className="min-h-screen bg-muted relative">
+      {/* Decorative Background Image */}
+      <div 
+        className="fixed inset-0 z-0 opacity-[0.06] pointer-events-none"
+        style={{
+          backgroundImage: "url('/images/powerzentrale-bg.webp')",
+          backgroundSize: "600px auto",
+          backgroundRepeat: "repeat",
+          backgroundPosition: "center top",
+        }}
+      />
+
       {/* Hero Section */}
-      <section className="pt-8 pb-4 md:pt-12 md:pb-6">
+      <section className="pt-8 pb-4 md:pt-12 md:pb-6 relative z-10">
         <div className="container-custom">
           <motion.div
             className="max-w-4xl mx-auto text-center"
@@ -30,7 +41,7 @@ const WorkshopGesundeMission = () => {
       </section>
 
       {/* Main Content */}
-      <section className="section-padding">
+      <section className="section-padding relative z-10">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto space-y-8">
 
