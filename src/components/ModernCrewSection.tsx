@@ -56,9 +56,7 @@ export const ModernCrewSection = () => {
           {crewMembers.map((member, index) => (
             <motion.div
               key={member.name}
-              className={`flex flex-col items-center text-center group ${
-                index === crewMembers.length - 1 ? 'md:col-span-2 md:max-w-[calc(50%-1.5rem)] md:mx-auto' : ''
-              }`}
+              className="flex flex-col items-center text-center group"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: member.delay }}
