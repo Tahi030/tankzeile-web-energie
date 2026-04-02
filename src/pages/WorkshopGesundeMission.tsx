@@ -48,7 +48,7 @@ const WorkshopGesundeMission = () => {
 
             {/* Intro Card */}
             <motion.div
-              className="bg-card/80 rounded-2xl sm:rounded-3xl p-5 sm:p-8 md:p-10 shadow-lg border border-border/30 relative overflow-hidden"
+              className="bg-card rounded-2xl sm:rounded-3xl p-5 sm:p-8 md:p-10 shadow-lg border border-border/30 relative overflow-hidden"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
@@ -69,7 +69,7 @@ const WorkshopGesundeMission = () => {
             <div className="grid md:grid-cols-2 gap-8">
               {/* Was Kinder erleben */}
               <motion.div
-                className="bg-card/80 rounded-2xl sm:rounded-3xl p-5 sm:p-8 shadow-lg border border-border/30 relative overflow-hidden"
+                className="bg-card rounded-2xl sm:rounded-3xl p-5 sm:p-8 shadow-lg border border-border/30 relative overflow-hidden"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.15 }}
@@ -98,7 +98,7 @@ const WorkshopGesundeMission = () => {
 
               {/* Die 5 Power Level */}
               <motion.div
-                className="bg-card/80 rounded-2xl sm:rounded-3xl p-5 sm:p-8 shadow-lg border border-border/30 relative overflow-hidden"
+                className="bg-card rounded-2xl sm:rounded-3xl p-5 sm:p-8 shadow-lg border border-border/30 relative overflow-hidden"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
@@ -131,7 +131,7 @@ const WorkshopGesundeMission = () => {
 
             {/* Ziel & Nutzen */}
             <motion.div
-              className="bg-card/80 rounded-2xl sm:rounded-3xl p-5 sm:p-8 md:p-10 shadow-lg border border-border/30 relative overflow-hidden"
+              className="bg-card rounded-2xl sm:rounded-3xl p-5 sm:p-8 md:p-10 shadow-lg border border-border/30 relative overflow-hidden"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.25 }}
