@@ -53,6 +53,23 @@ const AlltagLeichterLeben = () => {
               </div>
             </motion.div>
 
+            {/* Powercrew Banner */}
+            <motion.div
+              className="flex justify-center"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.12 }}
+              viewport={{ once: true }}
+            >
+              <img
+                src={powercrewBanner}
+                alt="Powercrew des Jahres"
+                className="w-full max-w-sm rounded-xl"
+                loading="lazy"
+                decoding="async"
+              />
+            </motion.div>
+
             {/* Pioniere Card */}
             <motion.div
               className="bg-card/80 rounded-2xl sm:rounded-3xl p-5 sm:p-8 md:p-10 shadow-lg border border-border/30 relative overflow-hidden"
