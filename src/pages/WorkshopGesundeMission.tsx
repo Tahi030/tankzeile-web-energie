@@ -35,40 +35,22 @@ const WorkshopGesundeMission = () => {
         <div className="container-custom">
           <div className="max-w-4xl mx-auto space-y-8">
 
-            {/* Illustration Fan */}
+            {/* Illustration */}
             <motion.div
-              className="flex items-end justify-center gap-3 sm:gap-4 py-2"
+              className="flex justify-center py-2"
               initial={{ opacity: 0, y: 15 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.05 }}
               viewport={{ once: true }}
             >
               <img
-                src="/images/powerzentrale-hero.webp"
-                alt="Captain Apfel Held mit der Powercrew"
-                className="w-16 sm:w-20 md:w-24 rounded-lg shadow-sm -rotate-2 opacity-90"
-                loading="lazy"
-                decoding="async"
-                width={600}
-                height={803}
-              />
-              <img
                 src="/images/powerzentrale-bg.webp"
                 alt="Reise zur Powerzentrale – Captain Apfel und die Crew im Tomatenraumschiff"
-                className="w-24 sm:w-32 md:w-40 rounded-lg shadow-md z-10"
+                className="w-24 sm:w-32 md:w-40 rounded-lg shadow-md"
                 loading="lazy"
                 decoding="async"
                 width={1000}
                 height={1339}
-              />
-              <img
-                src="/images/powerzentrale-paffel.webp"
-                alt="Paffel auf dem Tomatenraumschiff"
-                className="w-16 sm:w-20 md:w-24 rounded-lg shadow-sm rotate-2 opacity-90"
-                loading="lazy"
-                decoding="async"
-                width={500}
-                height={447}
               />
             </motion.div>
 
