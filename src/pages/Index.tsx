@@ -176,7 +176,7 @@ const Index = () => {
               description="Jetzt heißt es: Stifte raus und los! Hier warten Ausmalbilder mit Captain Apfel und seiner Crew zum Herunterladen – ideal für eine kreative Pause zuhause oder in der Kita."
               imageUrl={missionBuntstiftImage}
               imageUrlSm={missionBuntstiftImageSm}
-              imageClassName="object-[50%_40%]"
+              imageClassName="object-[50%_45%]"
               coloringPages={[
                 { imageUrl: "/images/paffel-ausmalbild-thumb.webp", pdfUrl: "/pdfs/paffel-ausmalbild-v4.pdf" },
                 {

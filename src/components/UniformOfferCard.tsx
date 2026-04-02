@@ -52,7 +52,7 @@ export const UniformOfferCard = ({
             <img 
               src={imageUrl} 
               alt={typeof title === 'string' ? title : 'Angebot'} 
-              className={`w-full h-48 sm:h-56 object-cover ${imageClassName || ''}`}
+              className={`w-full h-56 sm:h-64 object-cover ${imageClassName || ''}`}
               loading="lazy"
               decoding="async"
               width={700}
