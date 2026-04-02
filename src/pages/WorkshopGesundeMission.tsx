@@ -37,56 +37,39 @@ const WorkshopGesundeMission = () => {
 
             {/* Illustration Fan */}
             <motion.div
-              className="relative bg-card/40 backdrop-blur-sm rounded-3xl p-6 sm:p-8 border border-border/20"
-              initial={{ opacity: 0, y: 20 }}
+              className="flex items-end justify-center gap-3 sm:gap-4 py-2"
+              initial={{ opacity: 0, y: 15 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.05 }}
+              transition={{ duration: 0.5, delay: 0.05 }}
               viewport={{ once: true }}
             >
-              <div className="flex items-center justify-center gap-3 sm:gap-5 md:gap-8">
-                {/* Left image - tilted */}
-                <motion.img
-                  src="/images/powerzentrale-hero.webp"
-                  alt="Captain Apfel Held mit der Powercrew"
-                  className="w-28 sm:w-36 md:w-44 rounded-xl shadow-md -rotate-3"
-                  loading="lazy"
-                  decoding="async"
-                  width={600}
-                  height={803}
-                  initial={{ opacity: 0, x: -20, rotate: -8 }}
-                  whileInView={{ opacity: 1, x: 0, rotate: -3 }}
-                  transition={{ duration: 0.5, delay: 0.1 }}
-                  viewport={{ once: true }}
-                />
-                {/* Center image - main */}
-                <motion.img
-                  src="/images/powerzentrale-bg.webp"
-                  alt="Reise zur Powerzentrale – Captain Apfel und die Crew im Tomatenraumschiff"
-                  className="w-40 sm:w-52 md:w-64 rounded-xl shadow-lg z-10"
-                  loading="lazy"
-                  decoding="async"
-                  width={1000}
-                  height={1339}
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.5, delay: 0.15 }}
-                  viewport={{ once: true }}
-                />
-                {/* Right image - tilted */}
-                <motion.img
-                  src="/images/powerzentrale-paffel.webp"
-                  alt="Paffel auf dem Tomatenraumschiff"
-                  className="w-28 sm:w-36 md:w-44 rounded-xl shadow-md rotate-3"
-                  loading="lazy"
-                  decoding="async"
-                  width={500}
-                  height={447}
-                  initial={{ opacity: 0, x: 20, rotate: 8 }}
-                  whileInView={{ opacity: 1, x: 0, rotate: 3 }}
-                  transition={{ duration: 0.5, delay: 0.2 }}
-                  viewport={{ once: true }}
-                />
-              </div>
+              <img
+                src="/images/powerzentrale-hero.webp"
+                alt="Captain Apfel Held mit der Powercrew"
+                className="w-16 sm:w-20 md:w-24 rounded-lg shadow-sm -rotate-2 opacity-90"
+                loading="lazy"
+                decoding="async"
+                width={600}
+                height={803}
+              />
+              <img
+                src="/images/powerzentrale-bg.webp"
+                alt="Reise zur Powerzentrale – Captain Apfel und die Crew im Tomatenraumschiff"
+                className="w-24 sm:w-32 md:w-40 rounded-lg shadow-md z-10"
+                loading="lazy"
+                decoding="async"
+                width={1000}
+                height={1339}
+              />
+              <img
+                src="/images/powerzentrale-paffel.webp"
+                alt="Paffel auf dem Tomatenraumschiff"
+                className="w-16 sm:w-20 md:w-24 rounded-lg shadow-sm rotate-2 opacity-90"
+                loading="lazy"
+                decoding="async"
+                width={500}
+                height={447}
+              />
             </motion.div>
 
             <motion.div
