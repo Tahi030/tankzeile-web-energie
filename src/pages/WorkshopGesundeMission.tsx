@@ -41,7 +41,7 @@ const WorkshopGesundeMission = () => {
       </section>
 
       {/* Main Content */}
-      <section className="section-padding">
+      <section className="section-padding relative z-10">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto space-y-8">
 
