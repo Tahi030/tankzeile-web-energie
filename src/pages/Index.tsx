@@ -6,6 +6,7 @@ import { UniformOfferCard } from "@/components/UniformOfferCard";
 import essenIstFertigImage from "@/assets/essen-ist-fertig-card.png";
 import missionBuntstiftImage from "@/assets/mission-buntstift-header.png";
 import missionBuntstiftImageSm from "@/assets/mission-buntstift-header.png";
+import reisePowerzentraleImage from "@/assets/reise-powerzentrale-card.png";
 
 const Index = () => {
   useEffect(() => {
