@@ -91,10 +91,9 @@ export const HeroWelcome = () => {
                 />
                 
                 {/* Captain Apfel image - static on mobile, floating on desktop */}
-                <motion.picture>
-                  <source media="(max-width: 640px)" srcSet={captainApfelJumpingSm} />
+                <motion.div>
                   <motion.img 
-                    src={captainApfelJumping} 
+                    src={captainApfelHero}
                     alt="Captain Apfel schwebt" 
                     className="relative w-full h-auto"
                     width={800}
