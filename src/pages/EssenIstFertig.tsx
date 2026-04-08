@@ -148,7 +148,7 @@ const EssenIstFertig = () => {
                 description="Klassisch & fundiert: Basierend auf der klassischen, modernen Ernährungslehre."
                 accordionTitle="Das steckt drin"
                 accordionItems={rettungskofferLaktoseItems}
-                price="Einmalig 24,99 €"
+                price="Einmalig 19,90 €"
                 buttonText="Rettungskoffer sichern"
                 buttonHref="https://copecart.com/products/705befb3/checkout"
                 paymentNote="Die Bezahlung erfolgt sicher über meinen Partner Copecart. Du erhältst das E-Book (63 Seiten) und die Rechnung automatisch per E‑Mail."
@@ -170,7 +170,7 @@ const EssenIstFertig = () => {
                 }
                 accordionTitle="Das steckt drin"
                 accordionItems={rettungskofferFruktoseItems}
-                price="Einmalig 24,99 €"
+                price="Einmalig 19,90 €"
                 buttonText="Rettungskoffer sichern"
                 buttonHref="https://copecart.com/products/7cd183e4/checkout"
                 paymentNote="Die Bezahlung erfolgt sicher über meinen Partner Copecart. Du erhältst das E-Book (63 Seiten) und die Rechnung automatisch per E‑Mail."
@@ -203,7 +203,7 @@ const EssenIstFertig = () => {
                 accordionTitle="Das steckt drin"
                 accordionItems={kombiPaketItems}
                 oldPrice="49,98 €"
-                price="Einmalig 39,99 €"
+                price="Einmalig 34,90 €"
                 buttonText="Kombi-Paket sichern"
                 buttonHref="https://copecart.com/products/5195bd24/checkout"
                 paymentNote="Die Bezahlung erfolgt sicher über meinen Partner Copecart. Du erhältst die E-Books und die Rechnung automatisch per E‑Mail."

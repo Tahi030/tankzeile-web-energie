@@ -81,7 +81,7 @@ const ProductCard = ({
           {premium && (
             <div className="absolute -top-0.5 -right-0.5 w-16 h-16 bg-[hsl(12_55%_50%)] rounded-full flex flex-col items-center justify-center text-white shadow-md border-2 border-white/80 z-10">
               <span className="text-[9px] font-medium leading-none">Nur</span>
-              <span className="text-xs font-bold leading-tight">39,99 €</span>
+              <span className="text-xs font-bold leading-tight">34,90 €</span>
             </div>
           )}
         </div>
