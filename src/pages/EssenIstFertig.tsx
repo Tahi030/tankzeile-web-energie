@@ -151,7 +151,7 @@ const EssenIstFertig = () => {
                 price="Einmalig 24,99 €"
                 buttonText="Rettungskoffer sichern"
                 buttonHref="https://copecart.com/products/705befb3/checkout"
-                paymentNote="Die Bezahlung erfolgt sicher über meinen Partner Copecart. Du erhältst das E-Book (63 Seiten) und die Rechnung automatisch per E‑Mail."
+                price="Einmalig 19,90 €"
                 delay={0.3}
                 isOpen={openCard === "laktose"}
                 onToggle={() => handleToggle("laktose")}
