@@ -148,10 +148,10 @@ const EssenIstFertig = () => {
                 description="Klassisch & fundiert: Basierend auf der klassischen, modernen Ernährungslehre."
                 accordionTitle="Das steckt drin"
                 accordionItems={rettungskofferLaktoseItems}
-                price="Einmalig 24,99 €"
+                price="Einmalig 19,90 €"
                 buttonText="Rettungskoffer sichern"
                 buttonHref="https://copecart.com/products/705befb3/checkout"
-                price="Einmalig 19,90 €"
+                paymentNote="Die Bezahlung erfolgt sicher über meinen Partner Copecart. Du erhältst das E-Book (63 Seiten) und die Rechnung automatisch per E‑Mail."
                 delay={0.3}
                 isOpen={openCard === "laktose"}
                 onToggle={() => handleToggle("laktose")}
