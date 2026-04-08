@@ -186,7 +186,7 @@ const EssenIstFertig = () => {
                 description="Sonderformat: Eine TCM-inspirierte, ganzheitliche Ergänzung."
                 accordionTitle="Das steckt drin"
                 accordionItems={bauchCodeItems}
-                price="Einmalig 14,99 €"
+                price="Einmalig 14,90 €"
                 buttonText="Basis-Koffer sichern"
                 buttonHref="https://copecart.com/products/23d7dbf2/checkout"
                 paymentNote="Die Bezahlung erfolgt sicher über meinen Partner Copecart. Du erhältst das E-Book und die Rechnung automatisch per E‑Mail."
