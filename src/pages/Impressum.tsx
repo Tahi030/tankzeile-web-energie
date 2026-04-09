@@ -23,7 +23,7 @@ const Impressum = () => {
               
               <h2>Kontakt</h2>
               <p>
-                Telefon: +49 152 06339474<br />
+                Telefon: +49 15252411195<br />
                 E-Mail: kontakt@captain-apfel.de
               </p>
               
