@@ -51,13 +51,10 @@ const Index = () => {
 
                 <div className="space-y-4 text-left">
                   <p className="text-base text-muted-foreground leading-relaxed">
-                    Captain Apfel zeigt Kindern, Familien und Kitas, was dem Bauch guttut.
+                    Ich zeige Kindern, Familien und Kitas, wie Ernährung im Alltag leicht verständlich und mit Freude erlebbar wird.
                   </p>
                   <p className="text-base text-muted-foreground leading-relaxed">
-                    Der Darm ist unsere Powerzentrale. Er beeinflusst Energie, Konzentration und Wohlbefinden.
-                  </p>
-                  <p className="text-base text-muted-foreground leading-relaxed">
-                    Workshops und alltagstaugliche Unterstützung rund um Ernährung und Unverträglichkeiten.
+                    Mit Workshops und alltagstauglicher Unterstützung rund um Essen, Unverträglichkeiten und gute Gewohnheiten.
                   </p>
                 </div>
 
