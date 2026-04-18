@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { HeroWelcome } from "@/components/HeroWelcome";
 import { ModernCrewSection } from "@/components/ModernCrewSection";
@@ -50,33 +51,42 @@ const Index = () => {
 
                 <div className="space-y-4 text-left">
                   <p className="text-base text-muted-foreground leading-relaxed">
-                    Schon gewusst? In jedem Kinderbauch steckt ein Kraftwerk: die Powerzentrale (der Darm). Hier sitzen 80 Prozent des Immunsystems. Das ist der Motor für Energie, Konzentration und gute Laune.
+                    Captain Apfel zeigt Kindern, Familien und Kitas, was dem Bauch guttut.
                   </p>
-
                   <p className="text-base text-muted-foreground leading-relaxed">
-                    Captain Apfel macht Ernährungsbildung greifbar. Vorschulkinder lernen, ihren Antrieb zu pflegen. Statt der Regel „Obst ist gesund" zählt das Erleben: Was bringt die Powerzentrale zum Leuchten? Und wer ist dieser „Paffel", der das System verkleben möchte?
+                    Mit Workshops und alltagstauglicher Unterstützung rund um Ernährung und Unverträglichkeiten.
+                  </p>
+                  <p className="text-base text-muted-foreground leading-relaxed">
+                    Für alle, die praktische Hilfe suchen oder eine gute Idee weitergeben möchten.
+                  </p>
+                  <p className="text-base text-muted-foreground leading-relaxed">
+                    Offen für Kooperationen mit passenden Werten: regional, pestizidfrei und ohne unnötigen Zucker.
                   </p>
                 </div>
 
-                <div className="space-y-4">
-                  <p className="text-base font-semibold text-foreground">Passgenaue Angebote für Kitas und Familien:</p>
-                  <ul className="text-base leading-relaxed text-muted-foreground space-y-3 text-left max-w-2xl">
-                    <li>
-                      <strong className="text-foreground">Reise zur Powerzentrale</strong>
-                      <br />
-                      Der Erlebnisworkshop für Familienzentren und Kitas in Berlin und Umgebung. Ohne Einkaufsstress und mit minimaler Vorbereitung. Die Organisation bleibt schlank, damit die volle Aufmerksamkeit den Kindern gilt. Persönlich, greifbar und verlässlich.
-                    </li>
-                    <li>
-                      <strong className="text-foreground">Essen ist fertig!</strong>
-                      <br />
-                      Die E-Books der Serie „Essen ist fertig!" bieten Soforthilfe für zu Hause. Sie geben einen roten Faden bei Bauchschmerzen, Unverträglichkeiten oder Überforderung am Esstisch. Als Rettungskoffer bringen sie Sicherheit in Familien, sodass der Bauch endlich zur Ruhe kommt.
-                    </li>
-                  </ul>
+                <div className="flex flex-col sm:flex-row flex-wrap gap-3 pt-2 justify-center">
+                  <Link
+                    to="/meine-angebote/workshop-gesunde-mission"
+                    onClick={() => window.scrollTo(0, 0)}
+                    className="inline-flex items-center justify-center bg-[hsl(18_65%_65%)] hover:bg-[hsl(18_65%_58%)] text-white px-6 py-3 rounded-full transition-all duration-300 text-base font-medium shadow-md hover:shadow-lg active:scale-95"
+                  >
+                    Zur Reise zur Powerzentrale
+                  </Link>
+                  <Link
+                    to="/essen-ist-fertig"
+                    onClick={() => window.scrollTo(0, 0)}
+                    className="inline-flex items-center justify-center bg-[hsl(80_40%_45%)] hover:bg-[hsl(80_40%_38%)] text-white px-6 py-3 rounded-full transition-all duration-300 text-base font-medium shadow-md hover:shadow-lg active:scale-95"
+                  >
+                    Zu Essen ist fertig!
+                  </Link>
+                  <Link
+                    to="/kontakt"
+                    onClick={() => window.scrollTo(0, 0)}
+                    className="inline-flex items-center justify-center bg-[hsl(220_15%_30%)] hover:bg-[hsl(220_15%_22%)] text-white px-6 py-3 rounded-full transition-all duration-300 text-base font-medium shadow-md hover:shadow-lg active:scale-95"
+                  >
+                    Kooperation anfragen
+                  </Link>
                 </div>
-
-                <p className="text-base text-muted-foreground leading-relaxed text-center italic border-t border-primary/10 pt-6">
-                  „Jedes Kind ist einzigartig. Seine Gesundheit und sein Tempo stehen für mich im Mittelpunkt."
-                </p>
               </div>
             </div>
           </motion.div>
