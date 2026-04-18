@@ -91,7 +91,7 @@ const Header = () => {
               <img 
                 src={logoText} 
                 alt="Captain Apfel Logo" 
-                className="h-20 md:h-24 lg:h-28 w-auto"
+                className="h-14 md:h-16 lg:h-20 w-auto"
                 width={200}
                 height={112}
               />
@@ -137,7 +137,7 @@ const Header = () => {
           <div className="hidden md:block">
             <Link 
               to="/kontakt"
-              className="bg-[hsl(18_65%_65%)] hover:bg-[hsl(18_65%_58%)] text-white px-6 py-3 rounded-full transition-all duration-300 text-base font-medium whitespace-nowrap shadow-md hover:shadow-lg active:scale-95"
+              className="bg-[hsl(18_65%_65%)] hover:bg-[hsl(18_65%_58%)] text-white px-5 py-2 rounded-full transition-all duration-300 text-sm lg:text-base font-medium whitespace-nowrap shadow-md hover:shadow-lg active:scale-95"
               onClick={() => window.scrollTo(0, 0)}
             >
               Kontakt
