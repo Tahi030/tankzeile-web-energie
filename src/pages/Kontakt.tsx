@@ -16,7 +16,7 @@ const Kontakt = () => {
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-foreground font-luckiest">Kontakt</h1>
             <p className="text-lg text-muted-foreground">
-              Ob bei Fragen, für direkte Buchungen oder eine unverbindliche Workshop-Vormerkung – eine kurze Nachricht genügt.
+              Ob Fragen, Buchung, Workshop-Vormerkung oder Kooperationsanfrage – eine kurze Nachricht genügt.
             </p>
           </div>
         </div>
