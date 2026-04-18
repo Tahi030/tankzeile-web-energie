@@ -3,13 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: 'Sisterhood';
-  src: url('/fonts/Sisterhood.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
+/* Sisterhood font removed: ttf file not bundled — fall back to Kalam (handwritten cursive) */
 
 @layer base {
   :root {
@@ -295,6 +289,6 @@
   }
 
   .font-sisterhood {
-    font-family: 'Sisterhood', cursive;
+    font-family: 'Kalam', cursive;
   }
 }
