@@ -93,7 +93,7 @@ const Index = () => {
       </section>
 
       {/* Crew Section - Modern display */}
-      <section className="section-padding">
+      <section className="section-padding pb-20 sm:pb-28 md:pb-36">
         <div className="container-custom">
           <motion.div
             className="text-center mb-12"
