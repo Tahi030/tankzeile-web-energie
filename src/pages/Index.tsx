@@ -54,35 +54,34 @@ const Index = () => {
                     Captain Apfel zeigt Kindern, Familien und Kitas, was dem Bauch guttut.
                   </p>
                   <p className="text-base text-muted-foreground leading-relaxed">
-                    Mit Workshops und alltagstauglicher Unterstützung rund um Ernährung und Unverträglichkeiten.
+                    Der Darm ist unsere Powerzentrale. Er beeinflusst Energie, Konzentration und Wohlbefinden.
                   </p>
                   <p className="text-base text-muted-foreground leading-relaxed">
-                    Für alle, die praktische Hilfe suchen oder eine gute Idee weitergeben möchten.
-                  </p>
-                  <p className="text-base text-muted-foreground leading-relaxed">
-                    Offen für Kooperationen mit passenden Werten: regional, pestizidfrei und ohne unnötigen Zucker.
+                    Workshops und alltagstaugliche Unterstützung rund um Ernährung und Unverträglichkeiten.
                   </p>
                 </div>
 
-                <div className="flex flex-col sm:flex-row flex-wrap gap-3 pt-2 justify-center">
-                  <Link
-                    to="/meine-angebote/workshop-gesunde-mission"
-                    onClick={() => window.scrollTo(0, 0)}
-                    className="inline-flex items-center justify-center bg-[hsl(18_65%_65%)] hover:bg-[hsl(18_65%_58%)] text-white px-6 py-3 rounded-full transition-all duration-300 text-base font-medium shadow-md hover:shadow-lg active:scale-95"
-                  >
-                    Zur Reise zur Powerzentrale
-                  </Link>
-                  <Link
-                    to="/essen-ist-fertig"
-                    onClick={() => window.scrollTo(0, 0)}
-                    className="inline-flex items-center justify-center bg-[hsl(80_40%_45%)] hover:bg-[hsl(80_40%_38%)] text-white px-6 py-3 rounded-full transition-all duration-300 text-base font-medium shadow-md hover:shadow-lg active:scale-95"
-                  >
-                    Zu Essen ist fertig!
-                  </Link>
+                <div className="flex flex-col items-center gap-4 pt-2">
+                  <div className="flex flex-col sm:flex-row flex-wrap gap-3 justify-center">
+                    <Link
+                      to="/meine-angebote/workshop-gesunde-mission"
+                      onClick={() => window.scrollTo(0, 0)}
+                      className="inline-flex items-center justify-center bg-[hsl(18_65%_65%)] hover:bg-[hsl(18_65%_58%)] text-white px-6 py-3 rounded-full transition-all duration-300 text-base font-medium shadow-md hover:shadow-lg active:scale-95"
+                    >
+                      Zur Reise zur Powerzentrale
+                    </Link>
+                    <Link
+                      to="/essen-ist-fertig"
+                      onClick={() => window.scrollTo(0, 0)}
+                      className="inline-flex items-center justify-center bg-[hsl(80_40%_45%)] hover:bg-[hsl(80_40%_38%)] text-white px-6 py-3 rounded-full transition-all duration-300 text-base font-medium shadow-md hover:shadow-lg active:scale-95"
+                    >
+                      Zu Essen ist fertig!
+                    </Link>
+                  </div>
                   <Link
                     to="/kontakt"
                     onClick={() => window.scrollTo(0, 0)}
-                    className="inline-flex items-center justify-center bg-[hsl(220_15%_30%)] hover:bg-[hsl(220_15%_22%)] text-white px-6 py-3 rounded-full transition-all duration-300 text-base font-medium shadow-md hover:shadow-lg active:scale-95"
+                    className="text-sm text-muted-foreground hover:text-foreground underline underline-offset-4 transition-colors"
                   >
                     Kooperation anfragen
                   </Link>
@@ -105,8 +104,7 @@ const Index = () => {
           >
             <h2 className="text-3xl font-bold font-luckiest mb-4">Lerne die Crew kennen</h2>
             <p className="text-base text-muted-foreground max-w-2xl mx-auto">
-              Mit Mut und Wissen hält die Crew die Powerzentrale aktiv. Ganz anders Paffel: Er entschied sich für die
-              verarbeitete Seite und versucht nun als ehemaliger Mais, alles auszubremsen.
+              Die Crew zeigt Kindern, was ihrer Powerzentrale guttut. So werden Ernährung, Bauchgefühl und gute Gewohnheiten spielerisch verständlich.
             </p>
           </motion.div>
 
