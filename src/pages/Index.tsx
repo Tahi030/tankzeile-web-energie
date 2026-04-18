@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { HeroWelcome } from "@/components/HeroWelcome";
 import { ModernCrewSection } from "@/components/ModernCrewSection";
