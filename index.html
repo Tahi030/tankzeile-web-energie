@@ -28,7 +28,14 @@
     
     <link rel="canonical" href="https://www.captain-apfel.de/" />
     <link rel="icon" href="/captain-apfel-logo.png" type="image/png">
+
+    <!-- Preload critical fonts to prevent FOUT (Flash of Unstyled Text) -->
+    <link rel="preload" href="/fonts/luckiest-guy-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/opensans-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/fredoka-latin.woff2" as="font" type="font/woff2" crossorigin>
+
     <style>
+      /* font-display: swap keeps text visible; preloaded fonts arrive before first paint, eliminating the swap flash */
       @font-face{font-family:'Luckiest Guy';font-style:normal;font-weight:400;font-display:swap;src:url('/fonts/luckiest-guy-latin.woff2') format('woff2')}
       @font-face{font-family:'Fredoka';font-style:normal;font-weight:300 700;font-display:swap;src:url('/fonts/fredoka-latin.woff2') format('woff2')}
       @font-face{font-family:'Open Sans';font-style:normal;font-weight:300 700;font-display:swap;src:url('/fonts/opensans-latin.woff2') format('woff2')}
@@ -36,7 +43,22 @@
       @font-face{font-family:'Kalam';font-style:normal;font-weight:300;font-display:swap;src:url('/fonts/kalam-300-latin.woff2') format('woff2')}
       @font-face{font-family:'Kalam';font-style:normal;font-weight:400;font-display:swap;src:url('/fonts/kalam-400-latin.woff2') format('woff2')}
       @font-face{font-family:'Kalam';font-style:normal;font-weight:700;font-display:swap;src:url('/fonts/kalam-700-latin.woff2') format('woff2')}
+
+      /* Prevent layout shift / FOUT: hide app shell paint until first font byte loaded (max 200ms) */
+      html:not(.fonts-ready) body { opacity: 0; }
+      html.fonts-ready body { opacity: 1; transition: opacity 0.15s ease-in; }
     </style>
+    <script>
+      // Mark fonts ready as soon as the critical heading font is available, with a hard 250ms fallback so we never block paint.
+      (function () {
+        var done = false;
+        function ready() { if (done) return; done = true; document.documentElement.classList.add('fonts-ready'); }
+        if (document.fonts && document.fonts.load) {
+          document.fonts.load('1em "Luckiest Guy"').then(ready).catch(ready);
+        }
+        setTimeout(ready, 250);
+      })();
+    </script>
   </head>
 
   <body>
