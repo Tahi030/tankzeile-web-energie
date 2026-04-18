@@ -119,7 +119,7 @@ const Index = () => {
       </section>
 
       {/* Direct Homepage Offers Integration */}
-      <section className="section-padding">
+      <section className="section-padding pt-20 sm:pt-28 md:pt-36">
         <div className="container-custom">
           {/* Section Title */}
           <motion.div
