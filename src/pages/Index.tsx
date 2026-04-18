@@ -73,7 +73,7 @@ const Index = () => {
                     <Link
                       to="/essen-ist-fertig"
                       onClick={() => window.scrollTo(0, 0)}
-                      className="inline-flex items-center justify-center bg-[hsl(80_40%_45%)] hover:bg-[hsl(80_40%_38%)] text-white px-6 py-3 rounded-full transition-all duration-300 text-base font-medium shadow-md hover:shadow-lg active:scale-95"
+                      className="inline-flex items-center justify-center bg-[hsl(18_65%_65%)] hover:bg-[hsl(18_65%_58%)] text-white px-6 py-3 rounded-full transition-all duration-300 text-base font-medium shadow-md hover:shadow-lg active:scale-95"
                     >
                       Zu Essen ist fertig!
                     </Link>
@@ -102,10 +102,13 @@ const Index = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl font-bold font-luckiest mb-4">Lerne die Crew kennen</h2>
-            <p className="text-base text-muted-foreground max-w-2xl mx-auto">
-              Die Crew zeigt Kindern, was ihrer Powerzentrale guttut. So werden Ernährung, Bauchgefühl und gute Gewohnheiten spielerisch verständlich.
-            </p>
+            <h2 className="text-3xl font-bold font-luckiest mb-4">Schon gewusst?</h2>
+            <div className="text-base text-muted-foreground max-w-2xl mx-auto space-y-4">
+              <p>In jedem Kinderbauch steckt ein Kraftwerk: unsere Powerzentrale, der Darm.</p>
+              <p>Hier sitzen 80 Prozent des Immunsystems. Das ist der Motor für Energie, Konzentration und gute Laune.</p>
+              <p>Mit Mut und Wissen hält die Crew die Powerzentrale in Schwung.</p>
+              <p>Und dann ist da noch Paffel: Als ehemaliger Mais hat er sich für die verarbeitete Seite entschieden und versucht, alles auszubremsen und zu verkleben.</p>
+            </div>
           </motion.div>
 
 
