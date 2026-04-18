@@ -30,7 +30,7 @@ const Index = () => {
       <HeroWelcome />
 
       {/* Captain Apfel Introduction */}
-      <section className="section-padding -mt-6 sm:-mt-14 md:-mt-20 lg:-mt-28 xl:-mt-36 relative z-10 px-4 sm:px-6">
+      <section className="section-padding pb-20 sm:pb-28 md:pb-36 -mt-6 sm:-mt-14 md:-mt-20 lg:-mt-28 xl:-mt-36 relative z-10 px-4 sm:px-6">
         <div className="container-custom">
           <motion.div
             className="max-w-4xl mx-auto"
