@@ -30,7 +30,7 @@ const Index = () => {
       <HeroWelcome />
 
       {/* Captain Apfel Introduction */}
-      <section className="section-padding -mt-6 sm:-mt-14 md:-mt-20 lg:-mt-28 xl:-mt-36 relative z-10 px-4 sm:px-6">
+      <section className="section-padding pb-20 sm:pb-28 md:pb-36 -mt-6 sm:-mt-14 md:-mt-20 lg:-mt-28 xl:-mt-36 relative z-10 px-4 sm:px-6">
         <div className="container-custom">
           <motion.div
             className="max-w-4xl mx-auto"
@@ -93,7 +93,7 @@ const Index = () => {
       </section>
 
       {/* Crew Section - Modern display */}
-      <section className="section-padding">
+      <section className="section-padding pb-20 sm:pb-28 md:pb-36">
         <div className="container-custom">
           <motion.div
             className="text-center mb-12"
@@ -119,7 +119,7 @@ const Index = () => {
       </section>
 
       {/* Direct Homepage Offers Integration */}
-      <section className="section-padding">
+      <section className="section-padding pt-20 sm:pt-28 md:pt-36">
         <div className="container-custom">
           {/* Section Title */}
           <motion.div
