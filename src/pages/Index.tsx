@@ -73,7 +73,7 @@ const Index = () => {
                     <Link
                       to="/essen-ist-fertig"
                       onClick={() => window.scrollTo(0, 0)}
-                      className="inline-flex items-center justify-center bg-[hsl(80_40%_45%)] hover:bg-[hsl(80_40%_38%)] text-white px-6 py-3 rounded-full transition-all duration-300 text-base font-medium shadow-md hover:shadow-lg active:scale-95"
+                      className="inline-flex items-center justify-center bg-[hsl(18_65%_65%)] hover:bg-[hsl(18_65%_58%)] text-white px-6 py-3 rounded-full transition-all duration-300 text-base font-medium shadow-md hover:shadow-lg active:scale-95"
                     >
                       Zu Essen ist fertig!
                     </Link>
