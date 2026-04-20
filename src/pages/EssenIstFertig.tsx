@@ -102,7 +102,7 @@ const EssenIstFertig = () => {
 
             {/* Vorteile Card */}
             <motion.div
-              className="bg-card/80 rounded-2xl sm:rounded-3xl p-5 sm:p-8 md:p-10 shadow-lg border border-border/30 relative overflow-hidden"
+              className="bg-card/80 rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-8 shadow-lg border border-border/30 relative overflow-hidden"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
@@ -110,28 +110,16 @@ const EssenIstFertig = () => {
             >
               <div className="absolute top-0 right-0 w-32 h-32 bg-secondary/5 rounded-full -translate-y-16 translate-x-16" />
               <div className="relative">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                   {[
                     { title: "Klarheit & Verstehen", text: "Zusammenhänge begreifen – ohne Fachchinesisch." },
-                    { title: "Sicher im Alltag", text: "Listen für Kita, Schule & Betreuung – ausdrucken und Sicherheit schaffen." },
+                    { title: "Überall sicher", text: "Fertige Listen für Kita, Schule und zu Hause – einfach ausdrucken und Sicherheit schaffen." },
                     { title: "Sofort starten", text: "Hilfe in Sekunden als E-Book-Download – ohne Wartezeit auf Termine." },
                   ].map((item) => (
                     <div key={item.title} className="text-center space-y-1">
-                      <span className="text-[hsl(12_55%_50%)] text-2xl font-bold">✓</span>
-                      <p className="font-semibold text-foreground">{item.title}</p>
-                      <p className="text-sm text-muted-foreground">{item.text}</p>
-                    </div>
-                  ))}
-                </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto mt-6">
-                  {[
-                    { title: "Für Erwachsene", text: "Alltagstaugliche Rezepte und Spickzettel als \u201EEin Essen für alle\u201C-Konzept." },
-                    { title: "Für Kitas & Schulen", text: "Fertige Leitfäden und Listen für den sicheren Umgang mit betroffenen Kindern." },
-                  ].map((item) => (
-                    <div key={item.title} className="text-center space-y-1">
-                      <span className="text-[hsl(12_55%_50%)] text-2xl font-bold">✓</span>
-                      <p className="font-semibold text-foreground">{item.title}</p>
-                      <p className="text-sm text-muted-foreground">{item.text}</p>
+                      <span className="text-[hsl(12_55%_50%)] text-lg font-bold">✔</span>
+                      <p className="font-semibold text-foreground text-sm">{item.title}</p>
+                      <p className="text-xs text-muted-foreground leading-relaxed">{item.text}</p>
                     </div>
                   ))}
                 </div>
