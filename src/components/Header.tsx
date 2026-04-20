@@ -91,9 +91,9 @@ const Header = () => {
               <img 
                 src={logoText} 
                 alt="Captain Apfel Logo" 
-                className="h-14 md:h-16 lg:h-20 w-auto"
-                width={200}
-                height={112}
+                className="h-20 md:h-24 lg:h-28 w-auto"
+                width={240}
+                height={134}
               />
             </Link>
           </div>
