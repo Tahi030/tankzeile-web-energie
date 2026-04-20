@@ -67,9 +67,9 @@ const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const location = useLocation();
 
-  // Header color - helles Apricot
+  // Header color - helles Apricot, leicht transparent mit Backdrop-Blur
   const getHeaderColor = () => {
-    return 'bg-[hsl(28_55%_88%)]';
+    return 'bg-[hsl(28_55%_88%/0.80)] backdrop-blur-md supports-[backdrop-filter]:bg-[hsl(28_55%_88%/0.70)]';
   };
 
   // Neutrales Dunkelgrau für Text - kein Braun
