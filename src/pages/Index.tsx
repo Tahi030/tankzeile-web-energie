@@ -51,10 +51,13 @@ const Index = () => {
 
                 <div className="space-y-4 text-left">
                   <p className="text-base text-muted-foreground leading-relaxed">
-                    Ich zeige Kindern, Familien und Kitas, wie Ernährung im Alltag leicht verständlich und mit Freude erlebbar wird.
+                    Ich mache Ernährungsbildung für Kinder und Familien greifbar.
                   </p>
                   <p className="text-base text-muted-foreground leading-relaxed">
                     Mit Workshops und alltagstauglicher Unterstützung rund um Essen, Unverträglichkeiten und gute Gewohnheiten.
+                  </p>
+                  <p className="text-base text-muted-foreground leading-relaxed italic">
+                    „Jedes Kind ist einzigartig. Seine Gesundheit und sein eigenes Tempo stehen für mich im Mittelpunkt."
                   </p>
                 </div>
 
