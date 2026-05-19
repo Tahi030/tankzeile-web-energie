@@ -199,14 +199,6 @@ const Index = () => {
                   imageUrl: "/images/crew-ausmalbild-thumb.webp",
                   pdfUrl: "/pdfs/crew-ausmalbild.pdf",
                 },
-                {
-                  imageUrl: "/images/kai-mutig-ausmalbild-thumb.webp",
-                  pdfUrl: "/pdfs/kai-mutig-ausmalbild.pdf",
-                },
-                {
-                  imageUrl: "/images/crew-ausmalbild-thumb.webp",
-                  pdfUrl: "/pdfs/crew-ausmalbild.pdf",
-                },
               ]}
               accent="secondary"
               delay={0.5}
