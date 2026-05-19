@@ -192,16 +192,12 @@ const Index = () => {
               coloringPages={[
                 { imageUrl: "/images/paffel-ausmalbild-thumb.webp", pdfUrl: "/pdfs/paffel-ausmalbild-v4.pdf" },
                 {
-                  imageUrl: "/images/powerzentrale-ausmalbild-thumb.webp",
-                  pdfUrl: "/pdfs/powerzentrale-ausmalbild-v4.pdf",
+                  imageUrl: "/images/kai-mutig-ausmalbild-thumb.webp",
+                  pdfUrl: "/pdfs/kai-mutig-ausmalbild.pdf",
                 },
                 {
-                  imageUrl: "/images/captain-apfel-ausmalbild-thumb-v5.webp",
-                  pdfUrl: "/pdfs/captain-apfel-ausmalbild-v5.pdf",
-                },
-                {
-                  imageUrl: "/images/powerzentrale-ausmalbild-v2-thumb.webp",
-                  pdfUrl: "/pdfs/powerzentrale-ausmalbild-v2.pdf",
+                  imageUrl: "/images/crew-ausmalbild-thumb.webp",
+                  pdfUrl: "/pdfs/crew-ausmalbild.pdf",
                 },
                 {
                   imageUrl: "/images/kai-mutig-ausmalbild-thumb.webp",
