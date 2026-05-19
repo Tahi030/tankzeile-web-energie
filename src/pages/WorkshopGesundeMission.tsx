@@ -44,27 +44,13 @@ const WorkshopGesundeMission = () => {
               viewport={{ once: true }}
             >
               <div className="absolute top-0 right-0 w-32 h-32 bg-secondary/5 rounded-full -translate-y-16 translate-x-16" />
-              <div className="relative flex flex-col sm:flex-row items-center gap-5 sm:gap-8">
-                {/* Floating illustration */}
-                <motion.img
-                  src="/images/powerzentrale-bg.webp"
-                  alt="Reise zur Powerzentrale – Captain Apfel und die Crew im Tomatenraumschiff"
-                  className="w-36 sm:w-40 md:w-44 rounded-2xl shadow-md flex-shrink-0"
-                  loading="lazy"
-                  decoding="async"
-                  width={1000}
-                  height={1339}
-                  animate={{ x: [0, 6, -6, 0] }}
-                  transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-                />
-                <div className="space-y-4">
-                  <p className="text-base text-muted-foreground leading-relaxed">
-                    Schluss mit langweiligen Vorträgen! Damit Wissen hängen bleibt, wird es hier anschaulich und kindgerecht vermittelt.
-                  </p>
-                  <p className="text-base text-muted-foreground leading-relaxed">
-                    Ernährung, Bewegung und Gefühle werden greifbar – beim Erleben, Spielen und Staunen.
-                  </p>
-                </div>
+              <div className="relative space-y-4">
+                <p className="text-base text-muted-foreground leading-relaxed">
+                  Schluss mit langweiligen Vorträgen! Damit Wissen hängen bleibt, wird es hier anschaulich und kindgerecht vermittelt.
+                </p>
+                <p className="text-base text-muted-foreground leading-relaxed">
+                  Ernährung, Bewegung und Gefühle werden greifbar – beim Erleben, Spielen und Staunen.
+                </p>
               </div>
             </motion.div>
 
