@@ -36,13 +36,8 @@ const crewMembers = [
     image: paffel,
     color: "accent",
     delay: 0.3
-  },
-  {
-    name: "Powerzentrale",
-    image: powerzentrale,
-    color: "primary",
-    delay: 0.35
   }
+
 ];
 
 export const ModernCrewSection = () => {
