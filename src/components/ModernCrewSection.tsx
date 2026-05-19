@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import powerzentrale from "@/assets/powerzentrale.webp";
+import powerzentrale from "@/assets/powerzentrale-crew.webp";
 import captainApfel from "@/assets/captain-apfel.webp";
 import kaiMutig from "@/assets/kai-mutig.webp";
 import kimmiSchlau from "@/assets/kimmi-schlau.webp";
@@ -36,6 +36,12 @@ const crewMembers = [
     image: paffel,
     color: "accent",
     delay: 0.3
+  },
+  {
+    name: "Powerzentrale",
+    image: powerzentrale,
+    color: "secondary",
+    delay: 0.35
   }
 
 ];
